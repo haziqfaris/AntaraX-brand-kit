@@ -38,6 +38,8 @@ Reference lines:
 | Managed AI beyond the pilots | Talk to us about Managed AI |
 | Secondary | See the products · See [product] · How the pilot works · See pricing |
 
+Reassurance line under main CTAs (only while true): "About two minutes of questions. The demo starts from your answers, and there is no commitment." Pilots: "A few questions about your work. No commitment; the team replies to say whether the pilot fits."
+
 Rules: one primary CTA per view; the same label everywhere for the same action; the CTA matches the product's real maturity. Add risk reversal near the CTA when true ("about two minutes", "the demo starts from your answers").
 
 ## Claims rules (never break)

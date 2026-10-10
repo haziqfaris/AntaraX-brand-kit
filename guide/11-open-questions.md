@@ -14,3 +14,5 @@ Decisions the owner has not made yet. Each needs an answer before the related wo
 10. **Blog location.** Confirm reka.re/blog as the shared blog.
 11. **Product marketing pages on reka.re.** reka.re/<product> pages with AntaraX branding on REKA's theme: confirm scope and which products first.
 12. **Pilot pricing.** Is there a published starting point for a Managed AI pilot, or "terms set per pilot" only?
+13. **REKA guidelines vs this kit.** REKA Brand Guidelines v1.0 (June 2026) give AntaraX Heuristik blue `#1268F7` (this kit: `#0459F7`), describe AntaraX as an AI operations platform with Loom (ingest), Ripple (stream), Frame (vision) and Edge (on-device) as sub-products, and keep PLExyz and Tinara as REKA division products. This kit follows the October decisions; the REKA guidelines need updating, or this kit does. See the REKA kit's `guide/01-reconciliation.md`.
+14. **Motion and OVERride.** REKA's guidelines list OVERride (Kinetik) as an autonomous vehicle and fleet platform. How does it relate to AntaraX Motion?

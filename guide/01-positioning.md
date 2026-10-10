@@ -26,12 +26,17 @@ Never say "whatever your challenge, we'll build something bespoke". Novel, multi
 
 ## How AntaraX relates to REKA
 
+REKA's master brand rules are in [haziqfaris/reka-brand-kit](https://github.com/haziqfaris/reka-brand-kit) (`brand-guidelines.html` v1.0). That file predates the October portfolio; its `guide/01-reconciliation.md` lists the differences (for example, it still files PLExyz and Tinara under REKA divisions and describes Loom, Ripple, Frame and Edge as AI-pipeline sub-products).
+
+
 | | REKA | AntaraX |
 |---|---|---|
 | Role | R&D, innovation, strategic implementation | Products, recurring intelligence, scalable adoption |
 | Verbs | Explore, research, prototype, engineer, validate | Productize, deploy, operate, improve, scale |
 | Sells | Perspective, R&D capability, implementation, **Managed AI** | Product subscriptions; closed pilots run through REKA's Managed AI |
 | Site | reka.re (About, story, careers, legal for both) | antarax.ai (products, pilots, solutions, industries, technology, pricing, families, demo) |
+| Line | AI for the physical world. | Put intelligence to work. |
+| Home in REKA | Four R&D divisions: Harmonik, Kinetik, Heuristik, Esoterik | Heuristik (AI-driven applications) |
 
 - **Legal line:** "AntaraX, a product line of REKA Inisiatif Sdn Bhd."
 - **Heritage line,** used once per page at most: "Born from years of R&D. AntaraX was spun out of REKA, where we've been building with AI since 2016." Or: "We didn't discover AI yesterday."

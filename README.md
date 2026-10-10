@@ -31,6 +31,7 @@ guide/        the brand guide, numbered in reading order
 tokens/       tokens.json and tokens.css: colours, type, radius, spacing, motion
 assets/logo/  the A mark (blue and white) and the full lockup
 assets/families/  the five family icons and famicons.json (paths for the families animation)
+photography/  PHOTO_BRIEF.md: shot list and image-AI prompts for every photo slot on antarax.ai
 reference/    the master logo file, and the source strategy, design and research documents the guide was built from
 ```
 

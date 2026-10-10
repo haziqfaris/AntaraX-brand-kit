@@ -46,7 +46,7 @@ Use these names, one-liners and questions exactly.
 - **PLExyz Crowd:** counts people per space from the Wi-Fi signals already in a building. No cameras, no faces, no identities. Claims rules in 03.
 - **Angka:** areas Capture, Match, Books, Forecast, Assist. Free while the pilot runs.
 - **Tinara:** Malaysia-first B2B intelligence. Ranks companies by fit, signals and match, and writes a brief: who to call, the opening angle, next steps on days 1, 3 and 7.
-- **Loom:** the single automation name. AI agents, a shared knowledge layer and workflows, with a person approving what matters. If Lapisan Automations ships, it is Loom's API surface.
+- **Loom:** data synthesis. Weaves data from systems, spreadsheets, sensors and documents into one picture, and generates synthetic data where real data is short or too sensitive to use. Automation is not Loom: it runs on Ripple (see 10, 10 October 2026).
 - **Motion:** telematics and fleet management, built first for autonomous and remotely controlled vehicles. Carries forward REKA's 2016 self-driving car work. No claims of deployments, customers, pricing or certification until they exist.
 - **Lapisan:** the platform under the products, for developers, at lapisan.antarax.ai.
 

@@ -25,7 +25,7 @@
 | Ripple | `#08B0B3` | riak, awan larat, sungai, gear | Yara: riak |
 | Edge | `#12B76A` | petak, orbit, telang, benih, wau | Grid: petak · Crowd: orbit |
 | Frame | `#074AF8` | intan, cakerawala, ketam guri, suria, atom | Frame: intan |
-| Loom | `#4904B3` | tenun, jaring, komet, awan larat | Loom: tenun |
+| Loom | `#4904B3` | tenun, jaring, komet, awan larat (sources woven together, records moving between systems) | Loom: tenun |
 | Motion | `#FC5D04` | cengkih, tanjung, percik, gasing | Motion: cengkih |
 | Tide | `#E9579D` | bunga raya, padi, congkak, kerawang, gelombang | Janka: padi · Angka: congkak · Tinara: kerawang |
 

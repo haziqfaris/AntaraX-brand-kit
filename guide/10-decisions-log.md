@@ -4,6 +4,8 @@ Owner decisions that shape the brand, newest first. Add to the top; never rewrit
 
 ## 10 October 2026
 
+- **Automation runs on Ripple.** Yara is the SaaS that takes work from manual to digital; Ripple then takes it from digital to automated. REKA's Intelligent Automation service is built on AntaraX Ripple, not Loom. This replaces "Loom is the single automation name" (playbook v0.3).
+- **Loom is data synthesis.** Its verb changes from Orchestrate to **Synthesize**, motto unchanged ("Weave it together."). It covers both bringing data from many sources into one picture and generating synthetic data. The v0.3 retirement of "AX Loom = synthetic data" is reversed. AI agents and workflows are no longer Loom's story.
 - **Replace the live antarax.ai with the new site** (after the pre-launch fixes). One CTA label for main products: **Book a demo** ("Book a walkthrough" retired).
 - **Technology page motifs glow in the dark** instead of showing their usual colours.
 - **reka.re goes multi-page** after the AntaraX work is finished (plan to follow; see the REKA kit).

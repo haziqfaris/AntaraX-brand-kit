@@ -20,7 +20,7 @@ AntaraX is the AI product line of **REKA Inisiatif Sdn Bhd** (Kuala Lumpur, Mala
 - **What we are:** AI products for business. A product company, not a consultancy.
 - **Main products:** Yara (jobs and work orders), Janka (inventory forecasting), PLExyz Grid (warehouse and yard space).
 - **Closed pilots,** each run as part of REKA's **Managed AI** service: Frame, PLExyz Crowd, Angka, Tinara, Loom, Motion.
-- **Six families:** Ripple (Operate), Edge (Perceive), Frame (Understand), Loom (Orchestrate), Motion (Navigate), Tide (Optimize).
+- **Six families:** Ripple (Operate), Edge (Perceive), Frame (Understand), Loom (Synthesize), Motion (Navigate), Tide (Optimize).
 - **Look:** AntaraX blue `#0459F7`, navy text, white ground, Poppins and JetBrains Mono, and the BaTech corak (Malaysian batik rebuilt from technology).
 - **Voice:** plain language for non-technical buyers. Problem first, product second. Never invent customers, numbers or maturity.
 

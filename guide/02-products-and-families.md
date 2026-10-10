@@ -57,16 +57,16 @@ Use these names, one-liners and questions exactly.
 | **Ripple** | Operate | "Work that moves." | Yara | `#08B0B3` | riak (one tap, spreading) |
 | **Edge** | Perceive | "Sense the real world." | PLExyz Grid, PLExyz Crowd | `#12B76A` | petak (Grid), orbit (Crowd) |
 | **Frame** | Understand | "Know what you depend on." | Frame | `#074AF8` | intan |
-| **Loom** | Orchestrate | "Weave it together." | Loom | `#4904B3` | tenun |
+| **Loom** | Synthesize | "Weave it together." | Loom | `#4904B3` | tenun |
 | **Motion** | Navigate | "Every vehicle, within reach." | Motion | `#FC5D04` | cengkih (a quadcopter from above) |
 | **Tide** | Optimize | "Read what's coming." | Janka, Angka, Tinara | `#E9579D` | bunga raya; padi (Janka), congkak (Angka), kerawang (Tinara) |
 
 Family descriptions for the Families page:
 
-- **Ripple:** keeping everyday work moving: jobs, work orders, teams and requests, from the first tap on the floor to the finished job. For operations floors, supervisors and the people doing the work.
+- **Ripple:** keeping everyday work moving, then automating it: jobs, work orders, teams and requests, from the first tap on the floor to the finished job. Yara takes the work from manual to digital; Ripple's automation takes it from digital to automatic. REKA's Intelligent Automation service is built on Ripple. For operations floors, supervisors and the people doing the work.
 - **Edge:** understanding physical spaces: what is in them, where it should go, and how busy they are. For warehouses, yards, ports, offices and venues. Edge is the oldest bloodline: its roots are the sensors and edge computing REKA built for the 2016 car.
 - **Frame:** seeing the digital estate behind a business: the systems, subscriptions, costs and renewals it runs on, and how they fit together. For SMEs, startups and agencies who have outgrown a spreadsheet of subscriptions.
-- **Loom:** making AI agents, knowledge and workflows work as one. For teams with repeatable work across people, tools and AI.
+- **Loom:** data synthesis. It weaves data from many sources (systems, spreadsheets, sensors, documents) into one usable picture, and generates synthetic data where real data is short or too sensitive to use. For teams whose data is scattered, and teams training or testing AI.
 - **Motion:** keeping vehicles in view and in hand: telematics and fleet management, built first for autonomous vehicles and remote control. For fleets, autonomous vehicles and remotely controlled machines.
 - **Tide:** turning numbers into the next step: forecasting the stock you'll need, understanding where money goes, and knowing which companies to sell to next. For procurement, finance, operations and sales leads.
 
@@ -74,11 +74,11 @@ Tide has no icon in the master logo file yet; until it does, use the bunga raya 
 
 ## Customer-facing categories
 
-Understand → Operate → Optimize → Perceive → Navigate → Act → Orchestrate. These organise the portfolio internally; the public grouping is simpler:
+Understand → Operate → Optimize → Perceive → Navigate → Act → Synthesize. These organise the portfolio internally; the public grouping is simpler:
 
 - **Run your business:** Yara
 - **Understand your business:** Janka, Frame
-- **Automate your world:** PLExyz, Loom, Motion
+- **Automate your world:** PLExyz, Ripple automation, Loom, Motion
 
 ## Naming rules
 

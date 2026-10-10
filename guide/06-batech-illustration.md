@@ -40,6 +40,7 @@ Each family cloth packs only its own motifs in its own colours, as a **mirrored 
 | **Family swatch** | Open, brushed, mirrored medallions in one family's colours | Families page, pilot heroes and cards |
 | **Quiet** | One light ink, no fills | Behind content, only where text sits on a solid card |
 | **White on blue** | White at about 25–30% opacity | Blue panels and CTAs |
+| **Glow in the dark** | Luminous outlines in each motif's own hue, deep jewel fills, soft bloom | The dark blueprint (Technology page, developer material) only |
 
 ## The three cameos (owner rule, 10 October 2026)
 

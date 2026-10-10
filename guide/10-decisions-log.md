@@ -4,6 +4,8 @@ Owner decisions that shape the brand, newest first. Add to the top; never rewrit
 
 ## 10 October 2026
 
+- **Technology page motifs glow in the dark** instead of showing their usual colours.
+- **reka.re goes multi-page** after the AntaraX work is finished (plan to follow; see the REKA kit).
 - **Brand kits split:** AntaraX and REKA each get their own brand kit repository; these are the reference for all development and marketing.
 - **Benchmark:** synapsys-ai.com reviewed as a layman-friendly, cut-to-the-chase reference; patterns adopted and rejected are listed in 08.
 - **Pilots run as part of Managed AI.** Every closed pilot is a REKA Managed AI engagement; say so on every pilot page.

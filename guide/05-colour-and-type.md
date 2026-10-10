@@ -37,6 +37,8 @@ ok `#12B76A` · warn `#F79009` · fault `#F04438`: **only for real signal**, nev
 
 The **Technology page** is dark: ground `#071233`, a **dotted** blueprint grid (1px dots every 24px, fainter dots every 120px), ink `#EAF0FF`, body `#B6C3EA`. Dots, never ruled lines. Product mocks on it stay as white cards. Use the blueprint only for technical depth (Technology, developer docs, Lapisan), not for selling pages.
 
+**Glow in the dark.** On the blueprint, BaTech motifs glow instead of showing their daylight colours: each outline becomes a luminous tint of its own hue, each fill sinks to a deep jewel tone of its hue, batik lukis gradients become dark and softly lit from the upper left, and a soft blue bloom sits around each drawing. Masks and fades keep their original values. The recolouring happens at build time (`glow()` in antarax-ai `build.mjs`), so it works for drawings served as image files too.
+
 ### Gradients
 
 Restrained. Allowed: a soft blue-to-violet wash on one feature tile; batik lukis gradients inside open family cloths. Not allowed: rainbow or neon gradients, gradients inside BaTech motif fills, gradient text. (REKA's orange gradient belongs to REKA.)

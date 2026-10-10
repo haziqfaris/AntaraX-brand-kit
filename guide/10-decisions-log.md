@@ -4,6 +4,7 @@ Owner decisions that shape the brand, newest first. Add to the top; never rewrit
 
 ## 10 October 2026
 
+- **Replace the live antarax.ai with the new site** (after the pre-launch fixes). One CTA label for main products: **Book a demo** ("Book a walkthrough" retired).
 - **Technology page motifs glow in the dark** instead of showing their usual colours.
 - **reka.re goes multi-page** after the AntaraX work is finished (plan to follow; see the REKA kit).
 - **Brand kits split:** AntaraX and REKA each get their own brand kit repository; these are the reference for all development and marketing.

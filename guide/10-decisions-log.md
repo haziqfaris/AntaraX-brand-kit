@@ -6,7 +6,7 @@ Owner decisions that shape the brand, newest first. Add to the top; never rewrit
 
 - **Photography presents a global company with Southeast Asian roots.** Workplace scenes include diverse people rather than exclusively Malaysian teams.
 - **Natural, everyday workplaces.** The owner supplied REKA office references and approved the modest shared-office direction: practical desks, mesh chairs, striped blinds, warm walls and workshop equipment. Avoid glossy corporate-stock staging.
-- **Generated photos illustrate work, not customer proof.** Publish the reviewed AntaraX photo set for live evaluation with a small AI-generated illustration label. Preserve real product screenshots separately.
+- **Generated photos illustrate work, not customer proof.** Publish the reviewed AntaraX photo set for live evaluation with a small blue diamond beside the caption (owner preference), accessible name and tooltip "Illustrative image", rather than a visible text label. Preserve real product screenshots separately.
 
 ## 10 October 2026
 

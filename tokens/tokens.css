@@ -1,0 +1,60 @@
+/* AntaraX design tokens v1.0.0 (2026-10-10). Mirrors tokens.json. Import first, then build on the variables. */
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  /* brand */
+  --ax-blue: #0459F7;
+  --ax-blue-hover: #0347C8;
+  --ax-blue-100: #E6EEFE;
+  --ax-blue-200: #C9DAFD;
+
+  /* neutrals */
+  --ax-navy: #0B1B4F;
+  --ax-body: #3B4469;
+  --ax-line: rgba(11, 27, 79, .12);
+  --ax-bg: #FFFFFF;
+  --ax-alt: #F4F6FB;
+
+  /* families: colour, tint (86% to white), dark (55%) */
+  --ax-ripple: #08B0B3; --ax-ripple-tint: #DCF4F4; --ax-ripple-dark: #046162;
+  --ax-edge:   #12B76A; --ax-edge-tint:   #DEF5EA; --ax-edge-dark:   #0A653A;
+  --ax-frame:  #074AF8; --ax-frame-tint:  #DCE6FE; --ax-frame-dark:  #042988;
+  --ax-loom:   #4904B3; --ax-loom-tint:   #E6DCF4; --ax-loom-dark:   #280262;
+  --ax-motion: #FC5D04; --ax-motion-tint: #FFE8DC; --ax-motion-dark: #8B3302;
+  --ax-tide:   #E9579D; --ax-tide-tint:   #FCE7F1; --ax-tide-dark:   #803056;
+
+  /* status: only on real signal, never decoration */
+  --ax-ok: #12B76A; --ax-warn: #F79009; --ax-fault: #F04438;
+
+  /* dark blueprint (Technology page) */
+  --ax-bp: #071233; --ax-bp-2: #0C1B47; --ax-bp-ink: #EAF0FF; --ax-bp-body: #B6C3EA; --ax-bp-line: rgba(157, 184, 255, .16);
+
+  /* type */
+  --ax-font: 'Poppins', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --ax-mono: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+  --ax-h1: clamp(2.3rem, 4.2vw, 3.6rem);
+  --ax-h2: clamp(1.8rem, 3vw, 2.6rem);
+  --ax-sub: clamp(1.05rem, 1.4vw, 1.25rem);
+
+  /* shape and space */
+  --ax-r-button: 12px; --ax-r-card: 20px; --ax-r-panel: 24px; --ax-r-panel-lg: 28px; --ax-r-pill: 999px;
+  --ax-gutter: clamp(16px, 2.8vw, 40px);
+  --ax-section: clamp(88px, 10.8vw, 156px);
+
+  /* motion */
+  --ax-ease: cubic-bezier(.2, .7, .2, 1);
+  --ax-spring: cubic-bezier(.34, 1.56, .64, 1);
+}
+
+/* the dotted blueprint ground: dots, never ruled lines */
+.ax-blueprint {
+  background-color: var(--ax-bp); color: var(--ax-bp-body);
+  background-image: radial-gradient(rgba(157, 184, 255, .22) 1px, transparent 1.3px), radial-gradient(rgba(157, 184, 255, .08) 1px, transparent 1.3px);
+  background-size: 24px 24px, 120px 120px; background-position: 0 0, 12px 12px;
+}
+
+/* the eyebrow: sentence case with an intan (diamond) marker */
+.ax-eyebrow { display: inline-flex; align-items: center; gap: 10px; font: 600 .9375rem/1.3 var(--ax-font); color: var(--ax-blue); }
+.ax-eyebrow::before { content: ""; width: 9px; height: 9px; background: currentColor; transform: rotate(45deg); border-radius: 2px; flex: none; }
+
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }

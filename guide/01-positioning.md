@@ -28,7 +28,6 @@ Never say "whatever your challenge, we'll build something bespoke". Novel, multi
 
 REKA's master brand rules are in [haziqfaris/reka-brand-kit](https://github.com/haziqfaris/reka-brand-kit) (`brand-guidelines.html` v1.0). That file predates the October portfolio; its `guide/01-reconciliation.md` lists the differences (for example, it still files PLExyz and Tinara under REKA divisions and describes Loom, Ripple, Frame and Edge as AI-pipeline sub-products).
 
-
 | | REKA | AntaraX |
 |---|---|---|
 | Role | R&D, innovation, strategic implementation | Products, recurring intelligence, scalable adoption |
@@ -42,7 +41,7 @@ REKA's master brand rules are in [haziqfaris/reka-brand-kit](https://github.com/
 - **Heritage line,** used once per page at most: "Born from years of R&D. AntaraX was spun out of REKA, where we've been building with AI since 2016." Or: "We didn't discover AI yesterday."
 - **Graduation rule (from REKA):** a capability moves to AntaraX when it has a repeatable deployment, a published starting price and a fast path to first value. Until then it stays at REKA. Robotics and autonomy research stays with REKA's Kinetik division.
 - **Managed AI** is REKA's service: REKA hosts, watches, improves and keeps the AI reliable on one subscription. Every AntaraX closed pilot runs as part of Managed AI (see 02).
-- **REKA-only claims:** "Malaysia's first self-driving car" is REKA's claim. AntaraX may say "the work REKA began with its 2016 self-driving car", not the "first" claim.
+- **REKA-only claims:** "Malaysia's first self-driving car on open roads" is REKA's claim. AntaraX may say "the work REKA began with its 2016 self-driving car", not the "first" claim.
 - Do not make REKA explain AntaraX products, and do not make AntaraX sell REKA consulting.
 
 ## Origin story (AntaraX's version)

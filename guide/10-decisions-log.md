@@ -2,6 +2,37 @@
 
 Owner decisions that shape the brand, newest first. Add to the top; never rewrite history. Earlier strategy changes are in `reference/strategy/` (playbook amendments v0.3–v0.5, RECONCILIATION).
 
+## 11 October 2026 (fourteenth review)
+
+The owner accepted every recommendation in 11 except WhatsApp:
+
+- **Seth:** the batik cameo is a motif and appears on any ground; the full Seth character stays dark-only.
+- **AX Frame's colours:** the app's `#0062FB` becomes Frame blue `#074AF8`; the orange gives way to halo indigo `#524FE9`.
+- **Sparkle colours** are final; the sparkle file is cut from the master A.
+- **Edge sliver:** back to the source size before any Edge art is printed.
+- **WhatsApp: not yet.**
+- **Trust strip:** nothing stated until a scheme is confirmed in writing; until then, real facts only (made in Malaysia, by REKA).
+- **Proof:** start with Yara's first customer (one named quote, one figure) with written permission; until then "a Malaysian metal fabricator".
+- **Blog:** reka.re/blog, linked from antarax.ai.
+- **Product pages** live on antarax.ai only; reka.re carries a short overview that links out.
+- **Pilot pricing:** "terms set per pilot" until two or three pilots are priced.
+- **REKA's guidelines** are updated to follow this kit.
+- **Motion and OVERride:** Motion is the product name; OVERride is REKA Kinetik's research platform, used only as heritage.
+- **Janka:** actions in `#077DA1`, cyan accent, tagline "Track. Forecast. Reorder."
+- **"PLExyz Edge Gateway" becomes "PLExyz Gateway".**
+- **Heritage in copy:** REKA's own history may be told; customer names, pricing and figures only once cleared.
+- **One PLExyz purple:** Grid's violet `#2C09B2`; Crowd keeps `#6040CC` as its accent for now.
+- **The PLExyz master mark** is the proposal (force field and shard on an empty floor, on a violet disc and bare).
+- **PLExyz Crowd** is about occupancy and space use in buildings; event safety comes later through the safety module pack.
+- **Grid's top-bordered stat cards** are replaced with zone-coloured icon tiles.
+- **Where PLExyz is sold:** antarax.ai leads ("Book a demo" for Grid); REKA runs the consultative sale; reka.re links to antarax.ai.
+- **The BaTech guidelines page** in antarax-ai is updated to this kit.
+- **One set of family colours:** BaTech's family pairs; the computed tints and darks are retired (tokens 1.8.0).
+- **First signature moment:** Yara's awan larat from Complete to the next stage, then Janka's padi while forecasting.
+- **Elements and charts** are approved as proposed in 12.
+- **Yara's Flow line is renamed Relay;** AX Frame's Lens stays.
+- **antarax.ai uses each app's own section names;** the playbook's lines stay working names.
+
 ## 11 October 2026 (thirteenth review)
 
 - **Yara's motif is awan larat** (owner). Sungai stays reserved for Yara's automation screens.

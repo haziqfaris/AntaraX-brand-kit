@@ -1,4 +1,4 @@
-/* AntaraX design tokens v1.7.0 (2026-10-11). Mirrors tokens.json; full product palettes in product-palettes.css. Import first, then build on the variables. */
+/* AntaraX design tokens v1.8.0 (2026-10-11). Mirrors tokens.json; full product palettes in product-palettes.css. Import first, then build on the variables. */
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap");
 
 :root {
@@ -16,14 +16,14 @@
   --ax-alt: #F4F6FB;
 
   /* families: colour, tint (86% to white), dark (55%) */
-  --ax-ripple: #08B0B3; --ax-ripple-tint: #DCF4F4; --ax-ripple-dark: #046162;
-  --ax-edge:   #12B76A; --ax-edge-tint:   #DEF5EA; --ax-edge-dark:   #0A653A;
-  --ax-frame:  #074AF8; --ax-frame-tint:  #DCE6FE; --ax-frame-dark:  #042988;
-  --ax-loom:   #4904B3; --ax-loom-tint:   #E6DCF4; --ax-loom-dark:   #280262;
-  --ax-motion: #FC5D04; --ax-motion-tint: #FFE8DC; --ax-motion-dark: #8B3302;
-  --ax-tide:   #E9579D; --ax-tide-tint:   #FCE7F1; --ax-tide-dark:   #803056;
+  --ax-ripple: #08B0B3; --ax-ripple-tint: #D9F3F2; --ax-ripple-dark: #0B6E72;
+  --ax-edge:   #12B76A; --ax-edge-tint:   #DCF5E8; --ax-edge-dark:   #0B7A47;
+  --ax-frame:  #074AF8; --ax-frame-tint:  #E2EAFE; --ax-frame-dark:  #0533A8;
+  --ax-loom:   #4904B3; --ax-loom-tint:   #EEE6FA; --ax-loom-dark:   #33027D;
+  --ax-motion: #FC5D04; --ax-motion-tint: #FFE9DC; --ax-motion-dark: #A83A00;
+  --ax-tide:   #E9579D; --ax-tide-tint:   #FDE8F1; --ax-tide-dark:   #9C2B63;
 
-  /* BaTech family pairs (dark, ground) and the Quiet ink, for motifs (guide/12) */
+  /* BaTech family pairs (dark, ground), the same values as --ax-<family>-dark and -tint above, and the Quiet ink (guide/12) */
   --bt-ripple-dark: #0B6E72; --bt-ripple-ground: #D9F3F2; --bt-edge-dark: #0B7A47; --bt-edge-ground: #DCF5E8; --bt-frame-dark: #0533A8; --bt-frame-ground: #E2EAFE;
   --bt-loom-dark: #33027D; --bt-loom-ground: #EEE6FA; --bt-motion-dark: #A83A00; --bt-motion-ground: #FFE9DC; --bt-tide-dark: #9C2B63; --bt-tide-ground: #FDE8F1;
   --bt-quiet: #C5CCF7;
@@ -35,7 +35,7 @@
   --ax-yara:   #08B0B3; --ax-yara-tint:   #DCF4F4; --ax-yara-dark:   #046162; --ax-yara-action:   #098284;
   --ax-frame-app: #074AF8; --ax-frame-app-tint: #DCE6FE; --ax-frame-app-dark: #042988; --ax-frame-app-action: #074AF8;
   --ax-janka:  #0CC4FB; --ax-janka-tint:  #DDF7FE; --ax-janka-dark:  #077DA1; --ax-janka-action:  #077DA1;
-  --ax-plexyz: #6040CC; /* line purple; Grid keeps its own violet below */
+  --ax-plexyz: #2C09B2; /* the PLExyz line purple: Grid's violet (11 October 2026) */
   --ax-grid: #2C09B2; --ax-grid-tint: #E1DDF4; --ax-grid-dark: #180562; --ax-grid-action: #2C09B2; --ax-grid-hover: #3A14D6;
   --ax-grid-north: #B9B8F5; --ax-grid-west: #0CC4FB; --ax-grid-east: #F47B3D; --ax-grid-south: #E9579D;
   --ax-angka:  #6B3F6B; --ax-angka-tint:  #EAE4EA; --ax-angka-dark:  #3B233B; --ax-angka-action:  #6B3F6B; --ax-angka-ground: #FAF7F2;

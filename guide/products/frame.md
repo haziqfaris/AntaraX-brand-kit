@@ -27,7 +27,7 @@ A-mark product, and the one product that shares its family's name (Frame, Unders
 | Role | Today | Target |
 |---|---|---|
 | Primary action | `#0062FB` (REKA's former blue) | AntaraX blue `#0459F7` |
-| Accent | orange `#FB9800` "REKA signal accent" | Frame `#074AF8`, tint `#DCE6FE`, dark `#042988`; orange dropped |
+| Accent | orange `#FB9800` "REKA signal accent" | Frame `#074AF8`, tint `#E2EAFE`, dark `#0533A8`; orange gives way to halo indigo `#524FE9` (owner, 11 October 2026). The app's primary `#0062FB` becomes Frame blue `#074AF8` |
 | Status, type | shared core | aligned |
 
 Note that AntaraX blue and the Frame accent are close. Use the Frame accent for selection, charts and identity moments, and AntaraX blue for actions, so both stay distinct by role.

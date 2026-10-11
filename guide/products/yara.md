@@ -26,7 +26,7 @@ A-mark product in the Ripple family. Main product and the portfolio lead. Live a
 | Role | Value |
 |---|---|
 | Primary action | teal `#098284`, hover `#05686A` (closer to Ripple teal than AntaraX blue; full palette in 14). AntaraX blue stays the focus ring |
-| Accent | Ripple `#08B0B3`, tint `#DCF4F4`, dark `#046162` |
+| Accent | Ripple `#08B0B3`, tint `#D9F3F2`, dark `#0B6E72` |
 | Status | shared core |
 
 The app's own tokens (`design-system/tokens.css`) use tint `#E1F6F6`, dark `#078F92`, blue strong `#0246C9`, blue tint `#E7EEFE`. These are near enough; align them with `tokens/tokens.css` when the file is next touched.

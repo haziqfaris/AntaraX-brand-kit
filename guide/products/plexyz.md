@@ -25,7 +25,7 @@ Concepts are proposed directions, not launches. Never show them as available (03
 
 - Always **PLExyz**: capital P, L, E; lower-case xyz. Products are "PLExyz Grid", "PLExyz Trace" and so on.
 - Stop using in anything customers see: "JWI" and "JohorPort Warehouse Intelligence" (Grid's working name), "PLExyz WiFi" (Crowd's old name), "SPECTRA OS", and **AXLE** (the Crowd app is currently branded AXLE).
-- **Rename "PLExyz Edge Gateway"** (a Crowd hardware name) to "PLExyz Gateway": "Edge" is an AntaraX family name.
+- **"PLExyz Edge Gateway" is renamed "PLExyz Gateway"** (owner): "Edge" is an AntaraX family name.
 
 ## Where it came from
 
@@ -45,9 +45,9 @@ Every PLExyz mark is the same three parts. Only the middle one changes per produ
 | **Core entity** | The floating faceted obelisk (the shard) | Identical in every product; centred on the vertical axis |
 | **Spatial context** | What the product reads | Grid: a 2×2 zone grid. Flow: a path across the grid. Transit: a route between points. Crowd: scattered entities on the grid. Site: stacked layers. Ward: walled rooms. Yard: parking lanes. Trace: a tag and its last-seen trail |
 
-- **The PLExyz master mark** (the purple circular mark in the line overview) is not in any repository yet. Add its file here when it is final.
+- **The PLExyz master mark** (approved 11 October 2026): the force field and shard on an empty floor, the space and the entity with no behaviour. `plexyz-master-disc.svg` (on a violet disc) and `plexyz-master-mark.svg` (bare).
 - **Every product's mark is drawn and approved** (11 October 2026, `tools/build-logos.mjs`): `plexyz-crowd-mark.svg`, `plexyz-trace-mark.svg`, `plexyz-flow-mark.svg`, `plexyz-transit-mark.svg`, `plexyz-site-mark.svg`, `plexyz-ward-mark.svg`, `plexyz-yard-mark.svg`. Each keeps Grid's force field and shard and puts its own spatial context on the floor. Concepts stay concepts: a mark is not a launch.
-- **Line purple:** `#6040CC` (line brief), with shard accents `#865ACE`, `#6040CC`, `#281B4F`.
+- **Line purple:** Grid's violet `#2C09B2` for the whole line (owner, 11 October 2026); the line brief's `#6040CC` stays only as PLExyz Crowd's product accent until Crowd has its own theme.
 
 ### PLExyz Grid mark
 
@@ -59,9 +59,9 @@ Every PLExyz mark is the same three parts. Only the middle one changes per produ
 - Minimum 48px for the full-colour mark; the solid variant below that.
 - Open in Grid's own reference: shard proportion (15.5% measured against 30% in the spec sheet); the north zone is a deliberate addition.
 
-### Two purples
+### One purple
 
-The line brief gives PLExyz purple `#6040CC`; the Grid mark and app use violet `#2C09B2` and shard purples `#8542ED` / `#6A2EF0` / `#4407FB`. Grid keeps its own. Which purple future PLExyz products take is open (11).
+The line brief gave PLExyz purple `#6040CC`; the Grid mark and app use violet `#2C09B2`. Decided (owner, 11 October 2026): the line takes Grid's violet, which every PLExyz mark already uses.
 
 ## The AntaraX layer in PLExyz
 
@@ -80,7 +80,7 @@ Grid keeps everything above. AntaraX adds (12):
 
 | Role | Grid | Other PLExyz products |
 |---|---|---|
-| Primary action | violet `#2C09B2`, hover `#3A14D6` | PLExyz purple `#6040CC` until each has a theme |
+| Primary action | violet `#2C09B2`, hover `#3A14D6` | the line's violet `#2C09B2` until each has a theme (Crowd: `#6040CC`) |
 | Data and charts | the four zone colours, never invented colours | the product's spatial-context colours |
 | Ground and text | `#F7F7FA`, `#FFFFFF`; text `#1C1B2E`, `#75758C` | |
 | Status | shared core (ok `#12B76A`, warn `#F79009`, fault `#F04438`) | shared core |
@@ -114,8 +114,11 @@ Grid keeps everything above. AntaraX adds (12):
 
 Audited against [13 Shared product standards](../13-shared-product-standards.md) on 11 October 2026. The full list is under PLExyz Grid and PLExyz Crowd in 13's audit; in short: for Grid: one account word, shared roles, `grid.antarax.ai`, plan names, money and dates, invite and reset emails, the AXLE look, exports, focus outlines; for Crowd: rename from AXLE, `crowd.antarax.ai`, organisation and members, error copy, report header, light first, reduced motion.
 
-## Open
+## Decided (11 October 2026)
 
-- Which purple the line uses: `#6040CC` or Grid's `#2C09B2` family (11).
-- Crowd's focus: building occupancy (the app) or event safety (the brief) (11).
-- Rename "PLExyz Edge Gateway" (11).
+- **One purple:** Grid's violet `#2C09B2` for the line.
+- **Crowd is about occupancy and space use in buildings,** which is what is built. Event safety comes later, through the planned safety module pack.
+- **"PLExyz Edge Gateway" becomes "PLExyz Gateway".**
+- **Where PLExyz is sold:** antarax.ai leads, with "Book a demo" for Grid; the conversation is REKA's consultative sale; reka.re links to antarax.ai.
+- **Grid's top-bordered stat cards are replaced** with a zone-coloured icon tile.
+- **The master mark** is the proposal: the force field and shard on an empty floor, on a violet disc (`plexyz-master-disc.svg`) and bare (`plexyz-master-mark.svg`).

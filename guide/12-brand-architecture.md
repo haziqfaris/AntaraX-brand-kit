@@ -125,9 +125,9 @@ A logo and a motif are always different (14). Tinara's logo was its motif; it no
 - Cameos on single motifs (empty states, loaders). Bands carry BaTech's hidden cameos (Seth, the REKA mark, the AntaraX A) as the motif code places them, at most one each per area.
 - Motion that is not slow and rare: nothing spins or flips; all motion stops for reduced motion.
 
-## Signature moments (proposed)
+## Signature moments
 
-Beyond the quiet placements, each product can give its motif **one job**: a moment where the motif does what the product does. Each follows BaTech: the official drawing, the family pair, at least 24px, motion slow and rare (draw on, fill, turn), never behind data, and nothing moves for people who turn motion off.
+Approved by the owner (11 October 2026). Build Yara's first, then Janka's. Beyond the quiet placements, each product can give its motif **one job**: a moment where the motif does what the product does. Each follows BaTech: the official drawing, the family pair, at least 24px, motion slow and rare (draw on, fill, turn), never behind data, and nothing moves for people who turn motion off.
 
 | Product | Moment | What the motif does |
 |---|---|---|
@@ -148,7 +148,7 @@ Across every product:
 
 One moment per product. Never on screens people work through quickly (tables, forms, the board itself).
 
-## Elements, charts, loading and naming (proposed)
+## Elements, charts, loading and naming
 
 ### Elements
 
@@ -193,7 +193,7 @@ Products are named on their own (02). Inside a product, its parts are named in o
 
 | Kind | What it is | How it is named | Examples |
 |---|---|---|---|
-| **Lines** | Distinct ways of using one product, each with its own screen and person | One evocative English word | AX Frame: Atlas, Layers, Orbit, Pulse, Ledger, Lens. Yara: Work, Desk, Crew, Flow, View, Assist |
+| **Lines** | Distinct ways of using one product, each with its own screen and person | One evocative English word | AX Frame: Atlas, Layers, Orbit, Pulse, Ledger, Lens. Yara: Work, Desk, Crew, Relay, View, Assist |
 | **Areas** | Sections of the app | The job, in a plain word | Janka: Inventory, Forecast, Replenish, Risk, Insights. Angka: Capture, Match, Books, Forecast, Assist |
 | **Products in a line** | Separate products under one line name | Always the line name first | PLExyz Grid, PLExyz Trace, PLExyz Flow |
 
@@ -207,11 +207,12 @@ How to write them:
 - **Malay words** may name a line only when the meaning is the job and it is explained once, as Lapis and Lapisan ("layer") are. Motif names (awan larat, padi, intan) stay design vocabulary, not feature names.
 - **Working names** stay marked as working until the owner confirms them (Yara View and Assist today).
 
-Clashes in today's names (11):
+Name clashes, settled (11 October 2026):
 
-1. **Flow** is both a Yara line and a PLExyz product (concept). Rename Yara's line, since PLExyz Flow names a product.
-2. **Lens** is AX Frame's AI analysis line, while Assist is the AI assistant elsewhere. If Lens is the assistant, call it Assist; if it is a view of analysis, Lens can stay.
+1. **Yara's Flow line is renamed Relay** (passing work on by rules, approvals and reminders), so PLExyz Flow keeps its name.
+2. **AX Frame's Lens stays:** it is a view of analysis (risks, opportunities, recommendations), not an assistant.
 3. **Orbit** is AX Frame's renewals line and the BaTech motif for PLExyz Crowd. Motif names never reach customers, so this is allowed.
+4. **Ask Angka stays** as Angka's assistant name.
 
 BaTech's words are the vocabulary for design and code (component and token names such as `intan`, `pad`, `drift`, `quiet`, `loader-padi`); customers never see them.
 
@@ -267,8 +268,8 @@ Own accent, for the primary action, selection, charts and identity moments, with
 
 | Product | Accent | Tint | Dark | Primary action |
 |---|---|---|---|---|
-| Yara | Ripple `#08B0B3` | `#DCF4F4` | `#046162` | teal `#098284` |
-| AX Frame | Frame `#074AF8` | `#DCE6FE` | `#042988` | `#074AF8` |
+| Yara | Ripple `#08B0B3` | `#D9F3F2` | `#0B6E72` | teal `#098284` |
+| AX Frame | Frame `#074AF8` | `#E2EAFE` | `#0533A8` | `#074AF8` |
 | Janka | cyan `#0CC4FB` | `#DDF7FE` | `#077DA1` | `#077DA1` |
 | PLExyz Grid | violet `#2C09B2`; zones `#4FD7D1` `#FD9001` `#FD4F85` `#CBB6FA` for data | `#E1DDF4` | `#180562` | `#2C09B2` |
 | Angka | plum `#6B3F6B` | `#EAE4EA` | `#3B233B` | `#6B3F6B` |

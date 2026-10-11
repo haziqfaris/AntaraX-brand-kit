@@ -31,7 +31,7 @@ Family        what kind of work          Tide: Optimize, "Read what's coming."
 | Frame · Understand | four corners | AX Frame | the A with the Frame icon | **intan** | One world, seen many ways |
 | Loom · Orchestrate | woven bars | Loom | the A with the Loom icon (drawn) | **tenun** | The weave itself |
 | Motion · Navigate | split bolt | Motion | the A with the Motion icon (drawn) | **bunga cengkih** | Every vehicle, seen from above |
-| Tide · Optimize | crescent with a dot (proposed) | Janka | the J that never closes | **padi** | Reading the harvest before it comes |
+| Tide · Optimize | crescent with a dot | Janka | the J that never closes | **padi** | Reading the harvest before it comes |
 | Tide · Optimize | | Angka | the sheet-stack face | **congkak** | Counting where it all goes |
 | Tide · Optimize | | Tinara | the signal | **kerawang** | One path found in the noise |
 
@@ -82,7 +82,7 @@ Every product has a logo, and every logo follows one colour rule so they sit tog
 | PLExyz Grid | force field, shard, zones | **zones in their AntaraX equivalents** (owner): teal to sparkle cyan, orange to sparkle orange, pink to Tide pink, lavender to an indigo tint. Mark, wordmark and lockups; the owner's files stay as `*-original.svg` |
 | PLExyz Crowd, Trace, Flow, Transit, Site, Ward, Yard | the PLExyz system: Grid's force field and shard, each with its own spatial context on the floor, in the same AntaraX colours | approved by the owner: `plexyz/plexyz-<product>-mark.svg` |
 | Tinara | **the signal** (C1, chosen by the owner): a garnet company, two gold arcs and a dot | `tinara/tinara-logo.svg`, with `-small` (24px and below) and `-light` (dark grounds) |
-| PLExyz master mark | proposed: the force field and shard on an empty floor (the space and the entity, no behaviour), on a violet disc and bare | `plexyz/plexyz-master-disc.svg`, `-master-mark.svg`; unless the owner has the original (11) |
+| PLExyz master mark | the force field and shard on an empty floor (the space and the entity, no behaviour), on a violet disc and bare | approved: `plexyz/plexyz-master-disc.svg`, `-master-mark.svg` |
 
 Tinara's logo is **the signal**: one garnet company with a gold signal reaching out from it, the company that is ready to buy. Chosen by the owner from six variations on 11 October 2026.
 
@@ -251,7 +251,7 @@ Inside a product, parts are named in one of the kinds below (naming rules in 12)
 | **Hardware** | a device sold with the product | PLExyz Crowd Node |
 | **Internal** | REKA's own tools; customers never see them | AXLE |
 
-**Lines exist only on the website so far.** The lines and areas in the website playbook (AX Frame's Atlas, Layers, Orbit, Pulse, Ledger, Lens; Yara's Work, Desk, Crew, Flow, View, Assist; Janka's and Angka's areas) are not what the apps show. Each app names its own areas, listed below. Until the owner decides, antarax.ai should describe what is built using the app's own names, and keep the lines as working names (11).
+**Lines exist only on the website so far.** The lines and areas in the website playbook (AX Frame's Atlas, Layers, Orbit, Pulse, Ledger, Lens; Yara's Work, Desk, Crew, Relay, View, Assist; Janka's and Angka's areas) are not what the apps show. Each app names its own areas, listed below. antarax.ai describes what is built using the app's own names, and the lines stay working names until a product is built around them (owner, 11 October 2026).
 
 ### Yara
 
@@ -264,7 +264,7 @@ Inside a product, parts are named in one of the kinds below (naming rules in 12)
 | Commission | module | planned | Splits worker commission by stage |
 | Reverse engineer | module | planned | Adds a reverse-engineering order type |
 | AI intake | feature | backlog | Drafts a work order from a document or email |
-| Working lines (website) | lines | working names | Work, Desk, Crew, Flow, View, Assist |
+| Working lines (website) | lines | working names | Work, Desk, Crew, Relay, View, Assist |
 
 ### AX Frame
 
@@ -339,7 +339,7 @@ Inside a product, parts are named in one of the kinds below (naming rules in 12)
 | Devices | area | built | The data sources and hardware tiers |
 | Client view | area | built | The simple occupancy view for customers |
 | PLExyz Crowd Node | hardware | simulated | Wall-mounted sensors that count people through walls |
-| Gateway (now "Edge Gateway") | hardware | planned | One per site; runs the sensing locally. Rename to "PLExyz Gateway" |
+| PLExyz Gateway | hardware | planned | One per site; runs the sensing locally (renamed from "Edge Gateway") |
 | Wi-Fi controller and signal agent | hardware and software | planned | Occupancy from existing Wi-Fi |
 | Safety module pack | add-on | planned | Forklift proximity, restricted zones and queues |
 

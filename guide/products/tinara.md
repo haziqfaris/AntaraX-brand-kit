@@ -15,15 +15,18 @@ Own-mark product in the Tide family. Closed pilot, invite-only. Malaysia-first B
 - Redefined as B2B intelligence on 10 October 2026.
 - No customers to name. Pilot partners are invited; REKA staff run it.
 
-## Logo: to choose
+## Logo: the signal
 
-A logo and a motif are always different (14), so Tinara's logo is no longer the kerawang motif. Three options, in garnet and gold (`assets/products/tinara/options/`):
+A logo and a motif are always different (14), so Tinara's logo is no longer the kerawang motif. The owner chose **the signal**: one company, with a gold signal reaching out from it, the one ready to buy. Six variations, in garnet and gold (`assets/products/tinara/options/`, square versions in `assets/logos/`):
 
-| Option | File | Idea |
+| Variation | File | Idea |
 |---|---|---|
-| A · The next one | `tinara-logo-a-rank.svg` | Three rising bars, the tallest in garnet, a gold dot above it: the company to call next |
-| B · The opening | `tinara-logo-b-opening.svg` | A speech bubble with a T and a gold dot: how to open the conversation |
-| C · The signal | `tinara-logo-c-signal.svg` | A company with a gold signal reaching out: the one ready to buy |
+| C1 · Signal | `tinara-logo-c1-signal.svg` | A garnet company, two gold arcs and a dot |
+| C2 · Tile | `tinara-logo-c2-tile.svg` | The company as a rounded tile, the signal from its corner |
+| C3 · Antenna | `tinara-logo-c3-antenna.svg` | A T that broadcasts |
+| C4 · Chosen | `tinara-logo-c4-chosen.svg` | Several companies, one signalling |
+| C5 · Ping | `tinara-logo-c5-ping.svg` | A wider signal arcing over the company |
+| C6 · Open | `tinara-logo-c6-open.svg` | The company as a speech bubble, opening the conversation |
 
 - Wordmark: "Tinara" in Poppins 600, navy or garnet, beside the logo.
 - Once chosen, draw its small version (24px and below) and a light version for dark grounds.

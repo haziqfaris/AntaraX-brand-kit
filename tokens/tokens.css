@@ -1,4 +1,4 @@
-/* AntaraX design tokens v1.6.0 (2026-10-11). Mirrors tokens.json; full product palettes in product-palettes.css. Import first, then build on the variables. */
+/* AntaraX design tokens v1.7.0 (2026-10-11). Mirrors tokens.json; full product palettes in product-palettes.css. Import first, then build on the variables. */
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap");
 
 :root {
@@ -37,7 +37,7 @@
   --ax-janka:  #0CC4FB; --ax-janka-tint:  #DDF7FE; --ax-janka-dark:  #077DA1; --ax-janka-action:  #077DA1;
   --ax-plexyz: #6040CC; /* line purple; Grid keeps its own violet below */
   --ax-grid: #2C09B2; --ax-grid-tint: #E1DDF4; --ax-grid-dark: #180562; --ax-grid-action: #2C09B2; --ax-grid-hover: #3A14D6;
-  --ax-grid-north: #CBB6FA; --ax-grid-west: #4FD7D1; --ax-grid-east: #FD9001; --ax-grid-south: #FD4F85;
+  --ax-grid-north: #B9B8F5; --ax-grid-west: #0CC4FB; --ax-grid-east: #F47B3D; --ax-grid-south: #E9579D;
   --ax-angka:  #6B3F6B; --ax-angka-tint:  #EAE4EA; --ax-angka-dark:  #3B233B; --ax-angka-action:  #6B3F6B; --ax-angka-ground: #FAF7F2;
   --ax-tinara: #7A1E3C; --ax-tinara-tint: #FEF4F6; --ax-tinara-dark: #511A2A; --ax-tinara-action: #7A1E3C; --ax-tinara-gold: #D6A84F; /* garnet, proposed */
 

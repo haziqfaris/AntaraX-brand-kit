@@ -2,7 +2,6 @@
 
 Decisions the owner has not made yet. Each needs an answer before the related work can be called final. When one is answered, move it to the decisions log.
 
-1. **Tide icon.** A crescent with the family's dot is drawn as a proposal (`assets/families/tide-icon.svg`, 14): the moon turns the tide, as Tide reads what is coming. Approve it, or ask for another idea, before it goes into the master logo file.
 2. **Seth on light grounds.** The REKA character guide says Seth appears only on dark backgrounds (`#07090f`), while the owner's rule puts a Seth batik cameo in every AntaraX illustration, most of them on light cloth. Proposal: the batik cameo is a motif, not the character render, so it is exempt; the full character stays dark-only. Confirm.
 3. **Frame app colours.** Converge Frame's primary `#0062FB` to AntaraX blue `#0459F7`? Keep or drop its orange accent `#FB9800` (REKA's brand orange)? *Recommendation (11 October): converge and drop the orange. The palette in 14 does this: Frame blue as the accent, AntaraX blue for actions, halo indigo `#524FE9` in place of the orange.*
 5. **Sparkle colour values.** Recorded in `tokens.json` on 11 October from the master file layers (purple `#524FE9`, orange `#F47B3D`, cyan `#0CC4FB`, emerald `#12B76A`, indigo `#7171EA`), because the restyle rule in 12 uses them. Confirm they are final.
@@ -49,8 +48,7 @@ Decisions the owner has not made yet. Each needs an answer before the related wo
 41. **Tinara in garnet.** Tinara moves from plum `#5B2B4A` to garnet `#7A1E3C` with gold, so it no longer sits beside Angka's plum. The marks are rebuilt in garnet. Confirm, or keep plum.
 42. **Website lines and app areas.** The playbook's lines (AX Frame's Atlas, Layers, Orbit, Pulse, Ledger, Lens; Yara's Work, Desk, Crew, Flow, View, Assist) and areas (Janka's, Angka's) appear in no app; each app names its own areas (14). Either the apps adopt the lines, or antarax.ai describes products with the apps' own names. Recommended: the website uses the app names now; lines stay working names until a product is built around them.
 43. **Ask Angka.** It is Angka's AI assistant, so the shared name is Assist. Rename it, or keep "Ask Angka" as Angka's own voice?
-44. **Family compositions and loading.** Approve the six family shapes (Rings, Field, Corners, Thread, Trail, Swell) and the loaders, which no longer spin or flip (14).
-45. **Tinara's logo.** Option A (the next one: rising bars), B (the opening: a speech bubble) or C (the signal). `assets/products/tinara/options/`.
-46. **Grid and Janka logos.** Keep each as it is, or take the reconciled option: Grid's zones in their AntaraX equivalents, Janka's J bolder in its own colour (14, Logos).
+44. **BaTech sets and loaders.** Approve the seven sets (AntaraX and six families, three variations, three strengths) and the loaders (14).
+45. **Tinara's logo.** Which signal: C1 signal, C2 tile, C3 antenna, C4 chosen, C5 ping or C6 open (`assets/products/tinara/options/`).
 47. **The PLExyz line marks.** Approve the marks for Crowd, Trace, Flow, Transit, Site, Ward and Yard (they keep Grid's force field and shard).
 48. **Create the role mailboxes.** `support@`, `sales@` and `privacy@antarax.ai` must exist before the apps point at them.

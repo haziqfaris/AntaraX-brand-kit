@@ -2,6 +2,20 @@
 
 Owner decisions that shape the brand, newest first. Add to the top; never rewrite history. Earlier strategy changes are in `reference/strategy/` (playbook amendments v0.3–v0.5, RECONCILIATION).
 
+## 11 October 2026 (tenth review)
+
+- **Tinara's logo is the signal** (owner chose option C). Six variations drawn to choose from; options A and B withdrawn.
+- **PLExyz Grid takes the AntaraX colours** (owner): the zones move to their AntaraX equivalents in the mark, wordmark, lockups and the rest of the PLExyz line. The owner's files are kept as `*-original.svg`.
+- **Janka's logo stays as it is** (owner); the bolder option is withdrawn.
+- **Tide's family icon, the crescent, is approved** (owner).
+- **Every logo on the same square** (owner): `assets/logos/`, measured from each drawn shape with the same margin.
+- **BaTech sets** (owner asked):
+  - AntaraX gets a set of its own, the Constellation.
+  - Every set comes in three variations (panel, band, spot) and three strengths (colour, quiet, white).
+  - The colour strength is allowed on covers, splash and sign-in panels, never behind text or data.
+- **PLExyz Grid's sign-in carries one Edge spot** in a corner: something there, but not a full-panel BaTech.
+- **AI thinking is the AntaraX sparkle** in every product, morphing into the product's logo and back (owner).
+
 ## 11 October 2026 (ninth review)
 
 - **Role addresses only** (owner): `support@antarax.ai`, `sales@antarax.ai` and `privacy@antarax.ai` replace every personal address in the products.

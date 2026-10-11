@@ -33,7 +33,7 @@ Family        what kind of work          Tide: Optimize, "Read what's coming."
 | Motion · Navigate | split bolt | Motion | the A with the Motion icon (drawn) | **bunga cengkih** | Every vehicle, seen from above |
 | Tide · Optimize | crescent with a dot (proposed) | Janka | the J that never closes | **padi** | Reading the harvest before it comes |
 | Tide · Optimize | | Angka | the sheet-stack face | **congkak** | Counting where it all goes |
-| Tide · Optimize | | Tinara | a new logo, to choose from three options | **kerawang** | One path found in the noise |
+| Tide · Optimize | | Tinara | the signal, to choose from six variations | **kerawang** | One path found in the noise |
 
 What each link gives:
 
@@ -58,7 +58,7 @@ What each link gives:
 | AX Frame | the A and four corners | intan: one world, many faces |
 | Janka | a J still sensing | padi: a harvest read early |
 | Angka | a friendly stack of sheets | congkak: counting where it goes |
-| Tinara | a new logo (options below) | kerawang: one path found in the noise |
+| Tinara | the signal (variations below) | kerawang: one path found in the noise |
 | PLExyz Grid | force field, shard, zones | petak: spaces in a layout |
 | PLExyz Crowd | force field, shard, entities | orbit: signals counted |
 | Loom | the A and woven bars | tenun: the weave |
@@ -76,22 +76,28 @@ Every product has a logo, and every logo follows one colour rule so they sit tog
 | Product | Logo | Status |
 |---|---|---|
 | Yara, AX Frame | A-mark | as is |
-| Loom, Motion | A-mark, now drawn: `assets/products/loom/loom-mark.svg`, `motion/motion-mark.svg` | new |
-| Janka | the J | as is; **option:** a bolder J in Janka's own colour, so its weight sits with the flat marks (`janka/options/janka-mark-bold.svg`) |
+| Loom, Motion | A-mark: `assets/products/loom/loom-mark.svg`, `motion/motion-mark.svg` | drawn |
+| Janka | the J | kept as it is (owner) |
 | Angka | the sheet stack | as is |
-| PLExyz Grid | force field, shard, zones | as is; **option:** the zones in their AntaraX equivalents (teal to cyan, orange to sparkle orange, pink to Tide pink, lavender to indigo tint: `plexyz/options/plexyz-grid-mark-antarax-colours.svg`) |
-| PLExyz Crowd, Trace, Flow, Transit, Site, Ward, Yard | the PLExyz system: Grid's force field and shard, each with its own spatial context on the floor | new: `plexyz/plexyz-<product>-mark.svg` |
-| Tinara | **three options**, in garnet and gold | new: `tinara/options/` |
+| PLExyz Grid | force field, shard, zones | **zones in their AntaraX equivalents** (owner): teal to sparkle cyan, orange to sparkle orange, pink to Tide pink, lavender to an indigo tint. Mark, wordmark and lockups; the owner's files stay as `*-original.svg` |
+| PLExyz Crowd, Trace, Flow, Transit, Site, Ward, Yard | the PLExyz system: Grid's force field and shard, each with its own spatial context on the floor, in the same AntaraX colours | drawn: `plexyz/plexyz-<product>-mark.svg` |
+| Tinara | **the signal** (owner's choice of idea); six variations to choose from | `tinara/options/` |
 | PLExyz master mark | the purple circular mark | the file is still missing (11) |
 
-Tinara's options:
+Tinara's signal: one company, with a gold signal reaching out from it, the one ready to buy. Six variations:
 
-- **A · The next one.** Three rising bars, the tallest in garnet, with a gold dot above it: the company to call next.
-- **B · The opening.** A speech bubble with a T and a gold dot: how to open the conversation.
-- **C · The signal.** A company with a gold signal reaching out from it: the one that is ready to buy.
+- **C1 · Signal.** A garnet company, two gold arcs and a dot.
+- **C2 · Tile.** The company as a rounded tile, the signal from its corner.
+- **C3 · Antenna.** A T that broadcasts: the stem and a node, the arcs above it.
+- **C4 · Chosen.** Several companies in a row, one of them signalling.
+- **C5 · Ping.** A wider signal, arcing over the company.
+- **C6 · Open.** The company as a speech bubble, the signal opening the conversation.
+
+### Every logo on the same square
+
+`assets/logos/` holds every logo on a square canvas, measured from its drawn shape with the same 8% margin on every side, so tiles, lockups and lists line up whatever the original file's proportions (`tools/build-square-logos.mjs`). Use these files in products and on antarax.ai; the files in `assets/products/` stay the sources.
 
 Logos are built by `tools/build-logos.mjs`.
-
 
 ## Icons
 
@@ -99,7 +105,7 @@ Three kinds of icon, with three different rules:
 
 | Kind | Different per | Where | Rule |
 |---|---|---|---|
-| **Family icon** | family | inside an A-mark; family badges on antarax.ai; the Families page | Six icons, one per family, each a single shape and a dot in the family colour. Tide's crescent (`assets/families/tide-icon.svg`) is proposed: the moon turns the tide, as Tide reads what is coming |
+| **Family icon** | family | inside an A-mark; family badges on antarax.ai; the Families page | Six icons, one per family, each a single shape and a dot in the family colour. Tide's crescent (`assets/families/tide-icon.svg`), approved by the owner: the moon turns the tide, as Tide reads what is coming |
 | **Product icon** (app tile, favicon) | product | home screens, browser tabs, app stores | The product's logo on the shared tile (12). Two products never share a tile |
 | **Interface icons** | nothing: the same everywhere | buttons, menus, tables, feature introductions | One line set for every product (12, Elements; 60 drawn in `assets/icons/features/`, built by `tools/build-feature-icons.mjs`). Someone moving from Janka to Angka finds Settings, Export and Search drawn the same way. The product's colour reaches an icon only through state (selected, active) |
 
@@ -110,40 +116,55 @@ Two consequences:
 
 ## BaTech by family
 
-Each family's BaTech takes **its own shape**, so a glance at a sign-in screen or a report cover tells you which family you are in. All six follow the same BaTech rules (06, 12):
+Each family's BaTech takes **its own shape**, so a glance at a sign-in screen or a report cover tells you which family you are in. AntaraX has a set of its own, for the brand's own pages and for anything that speaks for every product. Every set follows the BaTech rules (06, 12):
 
-- the official drawings in the Quiet ink;
-- mixed motifs from the family's niche, never a row of identical motifs;
+- the official drawings;
+- mixed motifs from the family's niche (AntaraX: the whole vocabulary), never a row of identical motifs;
 - no straight cut: each one fades out, or meets only a container's own edge;
-- the three cameos once each, small, inside the area.
+- Seth, the REKA mark and the AntaraX A once each, drawn large enough to find.
 
-| Family | Shape | What it shows | Where it sits | File |
-|---|---|---|---|---|
-| Ripple | **Rings** | motifs on arcs spreading from one corner, getting smaller as they travel | one corner of the panel; the two edges of that corner are its only crop | `ripple-rings.svg` |
-| Edge | **Field** | a loose grid of motifs seen through one soft spot, like a sensor's view | behind an empty area, away from text; fades on every side | `edge-field.svg` |
-| Frame | **Corners** | two small fans in opposite corners, framing what sits between them | top left and bottom right | `frame-corners.svg` |
-| Loom | **Thread** | one awan larat thread wandering across, motifs strung on it | across the top of a panel or cover; both ends fade | `loom-thread.svg` |
-| Motion | **Trail** | motifs rising along a path and growing toward the leading end; under 24px they become dots | rising from bottom left to top right | `motion-trail.svg` |
-| Tide | **Swell** | the family's corak rising from the bottom edge in a wave, fading upward | along the bottom edge | `tide-swell.svg` |
+| Set | Shape | What it shows |
+|---|---|---|
+| **AntaraX** | **Constellation** | the whole vocabulary scattered loosely, clearing toward the middle where a logo sits; the band is the site's drift band |
+| Ripple | **Rings** | motifs on arcs spreading out, smaller as they travel |
+| Edge | **Field** | a loose grid of motifs seen through one soft spot, like a sensor's view |
+| Frame | **Corners** | small fans in the corners, framing what sits between them |
+| Loom | **Thread** | one awan larat thread wandering across, motifs strung on it |
+| Motion | **Trail** | motifs rising along a path, growing toward the leading end; under 24px they become dots |
+| Tide | **Swell** | the family's corak rising in a wave, fading upward |
 
-Files are in `assets/families/compositions/`, built by `tools/build-product-motifs.mjs`:
+### Three variations, for three situations
 
-- **Two strengths.** Quiet (the light ink) on white or near-white grounds, and **White on colour** (`-white.svg`, white at 32%) on a panel in the product's own colour. On a tinted panel the Quiet ink all but disappears, so a sign-in panel is either near-white with Quiet, or the product's colour with white.
-- **Frame Corners comes as two files** (`frame-corner-tl` and `-br`), one per corner, so it fits a panel of any shape.
-- **The cameos are findable.** Seth, the REKA mark and the AntaraX A are drawn at a size you can find, once each in every composition; their places are in `cameos.json`, and the visual guide can show them.
-- **PLExyz Grid has no BaTech for now.** It keeps its own sign-in. Crowd and the other PLExyz products take the Edge Field when they need it.
+| Variation | Size | For | How the shape adapts |
+|---|---|---|---|
+| **Panel** | 16:10 | sign-in panels, splash screens, report and guide covers, onboarding | the full shape, in the place it gives: Ripple in a corner, Frame in two corners, Tide along the bottom |
+| **Band** | 6:1 | page and email headers, banners, wide section breaks | the shape stretched across: ripples rising from the bottom middle, a field strip, corners at both ends, a long thread, a level trail, a wave band |
+| **Spot** | 1:1 | cards, empty areas beside a message, avatars and small squares | the shape gathered in: full rings, a round field, four corners, a looped thread, an arcing trail, a wave in a circle |
+
+### Three strengths
+
+| Strength | On | Use |
+|---|---|---|
+| **Colour** | white or near-white | the family pair (AntaraX: each motif in its own family's pair). Covers, splash, sign-in panels, marketing; never behind text or data |
+| **Quiet** | white or near-white | BaTech's light ink. Inside the app: dividers, headers, quiet backgrounds |
+| **White** | the product's own colour | white at 32%. Coloured panels and banners. Never Quiet on a tint, where it disappears |
+
+Files: `assets/batech/<set>/<variation>-<strength>.svg` (for example `assets/batech/tide/panel-colour.svg`), 63 in all, built by `tools/build-batech-sets.mjs`. The cameos' places are in `assets/batech/cameos.json`, and the visual guide can show them.
+
+**PLExyz Grid takes no full-panel BaTech for now** (owner). Its sign-in carries one Edge spot in a corner; Crowd and the other PLExyz products take the Edge set when they need it.
 
 Where each piece of BaTech goes in a product:
 
 | Place | What |
 |---|---|
-| Sign-in panel, splash, report and guide covers, onboarding | The family composition, Quiet, in the place its shape gives it. Text sits clear of it, on a solid surface |
+| Sign-in panel, splash, report and guide covers, onboarding | The family's panel, Colour on near-white or White on the product's colour. Text sits clear of it, on a solid surface |
+| Headers, banners, email headers | The family's band, Quiet inside the app, Colour on marketing and covers |
+| Cards, empty areas, avatars | The family's spot |
 | Empty states | The product's motif alone, in the family pair, 72px |
-| Dividers and email headers | The family's drift band (12): short and narrow, so it keeps one form for every family, with each family's own motifs |
 | Signature moment | The product's motif does its one job (12) |
 | Loader | The product's motif or mark (see "Loading") |
 
-Products in the same family share the composition; their motifs, logos and colours keep them apart. Janka, Angka and Tinara all sit on the Tide swell.
+Products in the same family share the set; their motifs, logos and colours keep them apart. Janka, Angka and Tinara all sit on the Tide swell.
 
 ## Loading
 
@@ -155,26 +176,28 @@ Every product has the same seven loading states, so people always know what kind
 | **Inline** | inside a button, a row or a field | the product's own small loop, drawn from its mark (not its motif: motifs are never under 24px) | 16 to 20px |
 | **Skeleton** | a screen or table loading | shared shapes, shimmering in the product's `subtle` colour | the content's own size |
 | **Section** | a panel or chart waiting on data | the product's motif, moving | 48 to 64px |
-| **Thinking** | AI working for more than a moment | the product's mark in its thinking motion, the sparkle beside it, and the action in words ("Forecasting 48 items") | 48 to 72px |
+| **Thinking** | AI working for more than a moment | the AntaraX sparkle, alive, which every few seconds morphs into the product's logo and back; the action in words ("Forecasting 48 items") | 48 to 72px |
 | **Progress** | a task with a known end (an import, a month-end match) | a bar in the product's colour ending in a pad, the count in words, and the product's own measure | full width |
 | **Splash** | the app opening (installed app, first sign-in) | the logo and the credit line; the family composition draws on once | full screen |
 
 **Nothing spins and nothing flips.** Loaders move the way the product works: they draw on, light in sequence, travel along a path, grow, gather and breathe. Each product's loaders come from its own logo and motif.
 
-| Product | Inline | Section | Thinking | Progress measure |
-|---|---|---|---|---|
-| Yara | three dots travel along a wave, stage to stage | awan larat draws itself on, its leaves open one by one, and a pad runs along the trace | the A breathes while dots travel along its wave | stages done on the job's route |
-| AX Frame | four corners close in and open | intan's facets light in turn while a pad travels round its edge | the corners breathe round the A, like the halo | parts of the record filled |
-| Janka | six ticks rise in turn, like a level meter | padi grows, its grains appear from the bottom up, and it sways | the bar floats free of the J; the spark blinks; the ticks rise | grains on the stalk |
-| Angka | a seed hops between two holes | seeds hop from hole to hole along the board | the top sheet lifts and settles; the face blinks | seeds in the store |
-| Tinara | the small lattice lights along its path | kerawang's openings shimmer while the gold path draws and a pad runs along it | the chosen logo's own motion (for option A: the bars rise in turn and the gold dot lands) | steps along the path |
-| PLExyz Grid | the four zones fill in turn | petak's cells fill one by one, then clear | the shard floats while the zones light in turn | zones placed |
-| PLExyz Crowd | dots gather, then spread | a pad travels orbit's path while its dots gather | entities gather on the floor under the shard | nodes reporting |
+**Thinking is the same in every product:** the AntaraX sparkle, alive, which every few seconds morphs into the product's logo, holds, and morphs back. The sparkle says "AntaraX intelligence is at work"; the logo says whose. The other loaders are each product's own:
+
+| Product | Inline | Section | Progress measure |
+|---|---|---|---|
+| Yara | three dots travel along a wave, stage to stage | awan larat draws itself on, its leaves open one by one, and a pad runs along the trace | stages done on the job's route |
+| AX Frame | four corners close in and open | intan's facets light in turn while a pad travels round its edge | parts of the record filled |
+| Janka | six ticks rise in turn, like a level meter | padi grows, its grains appear from the bottom up, and it sways | grains on the stalk |
+| Angka | a seed hops between two holes | seeds hop from hole to hole along the board | seeds in the store |
+| Tinara | the small lattice lights along its path | kerawang's openings shimmer as the path lights | steps along the path |
+| PLExyz Grid | the four zones fill in turn | petak's cells fill one by one, then clear | zones placed |
+| PLExyz Crowd | dots gather, then spread | orbit's dots light around the ring | nodes reporting |
 
 Timing and care:
 
-- Inline loops take 1.2 to 1.6 seconds. Section loaders run 2.4 to 3.6 seconds a cycle, and thinking pieces 1.8 to 2.6 seconds, each part a little out of step with the next.
-- **Reduced motion:** every loader becomes still. Inline shows its first frame, section shows the motif whole, thinking shows the mark with the sparkle, and the words carry the state.
+- Inline loops take 1.2 to 1.6 seconds. Section loaders run 2.4 to 3.6 seconds a cycle, each part a little out of step with the next. Thinking runs a 6-second cycle: sparkle, morph (0.6 seconds), logo, morph back.
+- **Reduced motion:** every loader becomes still. Inline shows its first frame, section shows the motif whole, thinking shows the sparkle, and the words carry the state.
 - A loader never sits on top of data. If something takes longer than 10 seconds, say what is happening and offer a way out.
 - The working animations are in the visual guide (Loading).
 

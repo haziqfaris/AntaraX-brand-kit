@@ -433,7 +433,7 @@
     "grid": {
       "name": "PLExyz Grid",
       "kind": "own-mark",
-      "character": "Shard violet with the four zone colours: spatial, vivid, exact",
+      "character": "Shard violet with the four zones in AntaraX colours: spatial, vivid, exact",
       "anchor": "#2C09B2",
       "anchor-step": 800,
       "scale": {
@@ -450,17 +450,17 @@
         "950": "#131155"
       },
       "secondary-scale": {
-        "50": "#EEF9F9",
-        "100": "#DAF3F1",
-        "200": "#B3E6E3",
-        "300": "#4FD7D1",
-        "400": "#46BDB7",
-        "500": "#0CA19C",
-        "600": "#01837F",
-        "700": "#076965",
-        "800": "#05504D",
-        "900": "#013937",
-        "950": "#012524"
+        "50": "#EDF9FF",
+        "100": "#D7F2FE",
+        "200": "#ADE4FD",
+        "300": "#76D2F8",
+        "400": "#0CC4FB",
+        "500": "#069AC6",
+        "600": "#077DA1",
+        "700": "#066482",
+        "800": "#004C64",
+        "900": "#023647",
+        "950": "#002330"
       },
       "neutral": {
         "50": "#F9FAFD",
@@ -485,7 +485,7 @@
         "subtle": "#E7ECFF",
         "accent-border": "#D0D9FE",
         "on-tint": "#2C09B2",
-        "secondary": "#4FD7D1",
+        "secondary": "#0CC4FB",
         "dark-accent": "#6C7CFE",
         "focus": "#0459F7"
       },
@@ -593,17 +593,17 @@
         "950": "#1F104D"
       },
       "secondary-scale": {
-        "50": "#EEF9F9",
-        "100": "#DAF3F1",
-        "200": "#B3E6E3",
-        "300": "#4FD7D1",
-        "400": "#46BDB7",
-        "500": "#0CA19C",
-        "600": "#01837F",
-        "700": "#076965",
-        "800": "#05504D",
-        "900": "#013937",
-        "950": "#012524"
+        "50": "#EDF9FF",
+        "100": "#D7F2FE",
+        "200": "#ADE4FD",
+        "300": "#76D2F8",
+        "400": "#0CC4FB",
+        "500": "#069AC6",
+        "600": "#077DA1",
+        "700": "#066482",
+        "800": "#004C64",
+        "900": "#023647",
+        "950": "#002330"
       },
       "neutral": {
         "50": "#FAFAFD",
@@ -628,7 +628,7 @@
         "subtle": "#EBEBFF",
         "accent-border": "#D7D6FF",
         "on-tint": "#442C95",
-        "secondary": "#4FD7D1",
+        "secondary": "#0CC4FB",
         "dark-accent": "#8870FE",
         "focus": "#0459F7"
       },

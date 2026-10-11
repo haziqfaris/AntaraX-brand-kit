@@ -52,10 +52,10 @@ Every PLExyz mark is the same three parts. Only the middle one changes per produ
 ### PLExyz Grid mark
 
 - Files: `assets/products/plexyz/plexyz-grid-mark.svg` (device mark), `plexyz-grid-wordmark.svg`, `plexyz-grid-lockup-horizontal.svg`, `plexyz-grid-lockup-centered.svg`, from the owner on 11 October 2026; full rules in `plexyz-grid-brand-theme.md`.
-- **Kept as it is.** Its colours already meet AntaraX: the teal zone `#4FD7D1` sits near the sparkle cyan and Ripple; the pink zone `#FD4F85` sits near Tide pink; the lavender zone is a tint of Grid's own violet. The orange zone is REKA's orange, right for a REKA platform.
+- **In AntaraX colours** (owner, 11 October 2026). The shape is unchanged; the zones move to their AntaraX equivalents so Grid sits with the other logos: teal `#4FD7D1` to sparkle cyan `#0CC4FB`, orange `#FD9001` to sparkle orange `#F47B3D`, pink `#FD4F85` to Tide pink `#E9579D`, lavender `#CBB6FA` to an indigo tint `#B9B8F5`. The owner's files stay as `*-original.svg`.
 - Shard: top `#8542ED`, left `#6A2EF0`, lower left `#4407FB`, right `#2C09B2`; outlines `#2C09B2`, 7 units throughout.
-- Zones: north `#CBB6FA`, west `#4FD7D1`, east `#FD9001`, south `#FD4F85`.
-- Wordmark: "PLExyz" bold in `#2C09B2`; "Grid" with each letter in a zone colour and a 1px outline. Keep it.
+- Zones: north `#B9B8F5`, west `#0CC4FB`, east `#F47B3D`, south `#E9579D` (were `#CBB6FA`, `#4FD7D1`, `#FD9001`, `#FD4F85`). The app's zone and chart colours follow.
+- Wordmark: "PLExyz" bold in `#2C09B2`; "Grid" with each letter in a zone colour (the new ones) and a 1px outline.
 - Minimum 48px for the full-colour mark; the solid variant below that.
 - Open in Grid's own reference: shard proportion (15.5% measured against 30% in the spec sheet); the north zone is a deliberate addition.
 
@@ -68,7 +68,7 @@ The line brief gives PLExyz purple `#6040CC`; the Grid mark and app use violet `
 Grid keeps everything above. AntaraX adds (12):
 
 1. **Credit:** "PLExyz Grid · by AntaraX" in the chrome; "PLExyz Grid by AntaraX, from REKA." on sign-in and reports.
-2. **BaTech:** Grid's motif is **petak** (`grid-motif.svg`, Edge pair: spaces in a real layout); Crowd's is **orbit** (`crowd-motif.svg`, Edge pair: signals counted, never faces). Each as the picture in its empty states. **Grid has no BaTech on its screens for now** (owner, 11 October 2026): it keeps its own sign-in and hex tiles. Crowd and the other PLExyz products take the Edge **Field** (14) on splash and report covers when they need it.
+2. **BaTech:** Grid's motif is **petak** (`grid-motif.svg`, Edge pair: spaces in a real layout); Crowd's is **orbit** (`crowd-motif.svg`, Edge pair: signals counted, never faces). Each as the picture in its empty states. **Grid takes no full-panel BaTech for now** (owner, 11 October 2026): its sign-in carries one Edge spot in a corner (14). Crowd and the other PLExyz products take the Edge set when they need it.
 3. **The AI sparkle** beside placement recommendations ("Suggested slot").
 4. **Thinking motion:** the shard and the four zones drift out of step while a placement is computed.
 5. **Shared core:** already Poppins and JetBrains Mono. Move status colours to the shared set.

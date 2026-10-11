@@ -1,4 +1,4 @@
-/* AntaraX design tokens v1.5.0 (2026-10-11). Mirrors tokens.json; full product palettes in product-palettes.css. Import first, then build on the variables. */
+/* AntaraX design tokens v1.6.0 (2026-10-11). Mirrors tokens.json; full product palettes in product-palettes.css. Import first, then build on the variables. */
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap");
 
 :root {
@@ -32,8 +32,8 @@
   --ax-sparkle-purple: #524FE9; --ax-sparkle-orange: #F47B3D; --ax-sparkle-cyan: #0CC4FB; --ax-sparkle-emerald: #12B76A; --ax-sparkle-indigo: #7171EA;
 
   /* products: one accent per product app (guide/12) */
-  --ax-yara:   #08B0B3; --ax-yara-tint:   #DCF4F4; --ax-yara-dark:   #046162; --ax-yara-action:   #0459F7;
-  --ax-frame-app: #074AF8; --ax-frame-app-tint: #DCE6FE; --ax-frame-app-dark: #042988; --ax-frame-app-action: #0459F7;
+  --ax-yara:   #08B0B3; --ax-yara-tint:   #DCF4F4; --ax-yara-dark:   #046162; --ax-yara-action:   #098284;
+  --ax-frame-app: #074AF8; --ax-frame-app-tint: #DCE6FE; --ax-frame-app-dark: #042988; --ax-frame-app-action: #074AF8;
   --ax-janka:  #0CC4FB; --ax-janka-tint:  #DDF7FE; --ax-janka-dark:  #077DA1; --ax-janka-action:  #077DA1;
   --ax-plexyz: #6040CC; /* line purple; Grid keeps its own violet below */
   --ax-grid: #2C09B2; --ax-grid-tint: #E1DDF4; --ax-grid-dark: #180562; --ax-grid-action: #2C09B2; --ax-grid-hover: #3A14D6;

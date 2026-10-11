@@ -25,15 +25,15 @@ Family        what kind of work          Tide: Optimize, "Read what's coming."
 
 | Family | Family icon | Product | Logo | Motif | What the motif says |
 |---|---|---|---|---|---|
-| Ripple · Operate | wave with two dots | Yara | the A with the Ripple icon | **gear** (roda gigi) | Every stage turns the next |
+| Ripple · Operate | wave with two dots | Yara | the A with the Ripple icon | **awan larat** | Human work, carried into digital (later, **sungai** for digital to automation) |
 | Edge · Perceive | open hexagon with a node | PLExyz Grid | force field, shard, four zones | **petak** | Spaces in a real layout |
-| Edge · Perceive | | PLExyz Crowd | force field, shard, scattered entities (to be drawn) | **orbit** | Signals counted, never faces |
+| Edge · Perceive | | PLExyz Crowd | force field, shard, scattered entities | **orbit** | Signals counted, never faces |
 | Frame · Understand | four corners | AX Frame | the A with the Frame icon | **intan** | One world, seen many ways |
-| Loom · Orchestrate | woven bars | Loom | the A with the Loom icon | **tenun** | The weave itself |
-| Motion · Navigate | split bolt | Motion | the A with the Motion icon | **bunga cengkih** | Every vehicle, seen from above |
+| Loom · Orchestrate | woven bars | Loom | the A with the Loom icon (drawn) | **tenun** | The weave itself |
+| Motion · Navigate | split bolt | Motion | the A with the Motion icon (drawn) | **bunga cengkih** | Every vehicle, seen from above |
 | Tide · Optimize | crescent with a dot (proposed) | Janka | the J that never closes | **padi** | Reading the harvest before it comes |
 | Tide · Optimize | | Angka | the sheet-stack face | **congkak** | Counting where it all goes |
-| Tide · Optimize | | Tinara | the kerawang lattice (the motif itself) | bunga raya in empty states | One path found in the noise |
+| Tide · Optimize | | Tinara | a new logo, to choose from three options | **kerawang** | One path found in the noise |
 
 What each link gives:
 
@@ -45,24 +45,53 @@ What each link gives:
 
 ## Logo and motif
 
-**They are different by default.** A logo has to work at 16px on every screen and stay the same for years. A motif carries meaning, appears rarely and can move. If the two say the same thing, the motif adds nothing, and the product looks as if it repeats its own logo.
+**A logo and a motif are always different.** A logo has to work at 16px on every screen and stay the same for years. A motif carries meaning, appears rarely and can move. If the two say the same thing, the motif adds nothing, and the product looks as if it repeats its own logo.
 
-1. **A motif never repeats the idea in the logo.** Yara's logo already holds the Ripple wave, so its motif moves from riak (a ripple, the same idea) to **gear**: the work itself, each stage turning the next.
-2. **The one exception is a motif that becomes the logo.** This is allowed when a product has no logo people know yet and its motif says the product better than a new drawing could. Tinara is the only case. When it happens:
-   - the motif is redrawn as a logo, in product colours, with a tile and a small version;
-   - the product's empty states use the family flower instead, so the logo never appears twice.
-3. **A motif never stands in for the logo.** It never sits beside the logo in a lockup, and it never appears in the product's own colours (the exception aside).
-4. **An own mark keeps its own idea.** Janka's J and padi both speak of sensing, but in different forms: a letter with signal ticks, and a stalk ripening. That is related, not repeated, which is the goal.
+1. **A motif never repeats the idea in the logo.** Yara's logo already holds the Ripple wave. Its motif is **awan larat**: the old Malay scroll redrawn as a circuit trace, which is Yara's job today, carrying people's work on the floor into digital. When Yara automates that work, it takes a second motif, **sungai** (fibre optics, the flow that runs by itself), for its automation screens.
+2. **No motif is a logo.** Tinara's logo was the kerawang motif; it now gets a logo of its own (see "Logos"), and kerawang goes back to being its motif.
+3. **A motif never stands in for the logo,** never sits beside it in a lockup, and never takes the product's own colours.
+4. **An own mark keeps its own idea.** Janka's J and padi both speak of sensing, in different forms: a letter with signal ticks, and a stalk ripening. Related, not repeated.
 
-| Product | The logo's idea | The motif's idea | Verdict |
-|---|---|---|---|
-| Yara | the A and the Ripple wave | gear: work turning | Different |
-| AX Frame | the A and four corners | intan: one world, many faces | Different |
-| Janka | a J still sensing | padi: a harvest read early | Related, different form |
-| Angka | a friendly stack of sheets | congkak: counting where it goes | Different |
-| Tinara | the kerawang lattice | the same; empty states use bunga raya | The one exception |
-| PLExyz Grid | force field, shard, zones | petak: spaces in a layout | Related, different form |
-| PLExyz Crowd | force field, shard, entities | orbit: signals counted | Different |
+| Product | The logo's idea | The motif's idea |
+|---|---|---|
+| Yara | the A and the Ripple wave | awan larat: work carried into digital |
+| AX Frame | the A and four corners | intan: one world, many faces |
+| Janka | a J still sensing | padi: a harvest read early |
+| Angka | a friendly stack of sheets | congkak: counting where it goes |
+| Tinara | a new logo (options below) | kerawang: one path found in the noise |
+| PLExyz Grid | force field, shard, zones | petak: spaces in a layout |
+| PLExyz Crowd | force field, shard, entities | orbit: signals counted |
+| Loom | the A and woven bars | tenun: the weave |
+| Motion | the A and a split bolt | bunga cengkih: seen from above |
+
+## Logos
+
+Every product has a logo, and every logo follows one colour rule so they sit together as a family:
+
+- **Main body in the product's own colour,** flat, no gradients.
+- **AntaraX navy `#0B1B4F` for ink** (outlines, letters, small marks), or the product's own deep colour.
+- **One or two highlights from the sparkle colours** inside the A: purple `#524FE9`, orange `#F47B3D`, cyan `#0CC4FB`, emerald `#12B76A`, indigo `#7171EA`; Tide pink `#E9579D` stands in for Grid's pink.
+- A-marks are the A in AntaraX blue with the family icon in the family colour.
+
+| Product | Logo | Status |
+|---|---|---|
+| Yara, AX Frame | A-mark | as is |
+| Loom, Motion | A-mark, now drawn: `assets/products/loom/loom-mark.svg`, `motion/motion-mark.svg` | new |
+| Janka | the J | as is; **option:** a bolder J in Janka's own colour, so its weight sits with the flat marks (`janka/options/janka-mark-bold.svg`) |
+| Angka | the sheet stack | as is |
+| PLExyz Grid | force field, shard, zones | as is; **option:** the zones in their AntaraX equivalents (teal to cyan, orange to sparkle orange, pink to Tide pink, lavender to indigo tint: `plexyz/options/plexyz-grid-mark-antarax-colours.svg`) |
+| PLExyz Crowd, Trace, Flow, Transit, Site, Ward, Yard | the PLExyz system: Grid's force field and shard, each with its own spatial context on the floor | new: `plexyz/plexyz-<product>-mark.svg` |
+| Tinara | **three options**, in garnet and gold | new: `tinara/options/` |
+| PLExyz master mark | the purple circular mark | the file is still missing (11) |
+
+Tinara's options:
+
+- **A · The next one.** Three rising bars, the tallest in garnet, with a gold dot above it: the company to call next.
+- **B · The opening.** A speech bubble with a T and a gold dot: how to open the conversation.
+- **C · The signal.** A company with a gold signal reaching out from it: the one that is ready to buy.
+
+Logos are built by `tools/build-logos.mjs`.
+
 
 ## Icons
 
@@ -72,7 +101,7 @@ Three kinds of icon, with three different rules:
 |---|---|---|---|
 | **Family icon** | family | inside an A-mark; family badges on antarax.ai; the Families page | Six icons, one per family, each a single shape and a dot in the family colour. Tide's crescent (`assets/families/tide-icon.svg`) is proposed: the moon turns the tide, as Tide reads what is coming |
 | **Product icon** (app tile, favicon) | product | home screens, browser tabs, app stores | The product's logo on the shared tile (12). Two products never share a tile |
-| **Interface icons** | nothing: the same everywhere | buttons, menus, tables | One line set for every product (12, Elements). Someone moving from Janka to Angka finds Settings, Export and Search drawn the same way. The product's colour reaches an icon only through state (selected, active) |
+| **Interface icons** | nothing: the same everywhere | buttons, menus, tables, feature introductions | One line set for every product (12, Elements; 60 drawn in `assets/icons/features/`, built by `tools/build-feature-icons.mjs`). Someone moving from Janka to Angka finds Settings, Export and Search drawn the same way. The product's colour reaches an icon only through state (selected, active) |
 
 Two consequences:
 
@@ -97,7 +126,12 @@ Each family's BaTech takes **its own shape**, so a glance at a sign-in screen or
 | Motion | **Trail** | motifs rising along a path and growing toward the leading end; under 24px they become dots | rising from bottom left to top right | `motion-trail.svg` |
 | Tide | **Swell** | the family's corak rising from the bottom edge in a wave, fading upward | along the bottom edge | `tide-swell.svg` |
 
-Files are in `assets/families/compositions/`, built by `tools/build-product-motifs.mjs`.
+Files are in `assets/families/compositions/`, built by `tools/build-product-motifs.mjs`:
+
+- **Two strengths.** Quiet (the light ink) on white or near-white grounds, and **White on colour** (`-white.svg`, white at 32%) on a panel in the product's own colour. On a tinted panel the Quiet ink all but disappears, so a sign-in panel is either near-white with Quiet, or the product's colour with white.
+- **Frame Corners comes as two files** (`frame-corner-tl` and `-br`), one per corner, so it fits a panel of any shape.
+- **The cameos are findable.** Seth, the REKA mark and the AntaraX A are drawn at a size you can find, once each in every composition; their places are in `cameos.json`, and the visual guide can show them.
+- **PLExyz Grid has no BaTech for now.** It keeps its own sign-in. Crowd and the other PLExyz products take the Edge Field when they need it.
 
 Where each piece of BaTech goes in a product:
 
@@ -125,20 +159,22 @@ Every product has the same seven loading states, so people always know what kind
 | **Progress** | a task with a known end (an import, a month-end match) | a bar in the product's colour ending in a pad, the count in words, and the product's own measure | full width |
 | **Splash** | the app opening (installed app, first sign-in) | the logo and the credit line; the family composition draws on once | full screen |
 
+**Nothing spins and nothing flips.** Loaders move the way the product works: they draw on, light in sequence, travel along a path, grow, gather and breathe. Each product's loaders come from its own logo and motif.
+
 | Product | Inline | Section | Thinking | Progress measure |
 |---|---|---|---|---|
-| Yara | three stage dots: a job passing from stage to stage | the gear turns | the A's pieces drift out of step; the wave sways | stages done on the job's route |
-| AX Frame | four corners close in and open | intan turns its facets | the corners breathe around the A, the halo in step | parts of the record filled |
-| Janka | six ticks light in turn: the third orange, the sixth cyan | padi grows, then its grains fill | the bar floats free of the J; the spark blinks | grains on the stalk |
-| Angka | a seed hops between two holes | congkak passes a seed from hole to hole | the top sheet lifts and settles; the face blinks | seeds in the store |
-| Tinara | the 3×3 lattice lights along its path | the lattice lights opening by opening | the gold path re-routes until it settles | steps along the path |
-| PLExyz Grid | the four zones fill in turn | petak fills cell by cell | the shard floats over the zones | zones filled |
-| PLExyz Crowd | dots gather, then spread | orbit's dot travels | orbit with the sparkle (until Crowd's mark is drawn) | readings in |
+| Yara | three dots travel along a wave, stage to stage | awan larat draws itself on, its leaves open one by one, and a pad runs along the trace | the A breathes while dots travel along its wave | stages done on the job's route |
+| AX Frame | four corners close in and open | intan's facets light in turn while a pad travels round its edge | the corners breathe round the A, like the halo | parts of the record filled |
+| Janka | six ticks rise in turn, like a level meter | padi grows, its grains appear from the bottom up, and it sways | the bar floats free of the J; the spark blinks; the ticks rise | grains on the stalk |
+| Angka | a seed hops between two holes | seeds hop from hole to hole along the board | the top sheet lifts and settles; the face blinks | seeds in the store |
+| Tinara | the small lattice lights along its path | kerawang's openings shimmer while the gold path draws and a pad runs along it | the chosen logo's own motion (for option A: the bars rise in turn and the gold dot lands) | steps along the path |
+| PLExyz Grid | the four zones fill in turn | petak's cells fill one by one, then clear | the shard floats while the zones light in turn | zones placed |
+| PLExyz Crowd | dots gather, then spread | a pad travels orbit's path while its dots gather | entities gather on the floor under the shard | nodes reporting |
 
 Timing and care:
 
-- Inline loops take 1.2 to 1.6 seconds. Section motifs turn once every 6 seconds, or draw on over about 2.4 seconds and hold. Thinking pieces move on 1.8 to 2.5 second cycles, out of step.
-- **Reduced motion:** every loader becomes still. Inline shows the loop's first frame, section shows the motif, thinking shows the mark with the sparkle, and the words carry the state.
+- Inline loops take 1.2 to 1.6 seconds. Section loaders run 2.4 to 3.6 seconds a cycle, and thinking pieces 1.8 to 2.6 seconds, each part a little out of step with the next.
+- **Reduced motion:** every loader becomes still. Inline shows its first frame, section shows the motif whole, thinking shows the mark with the sparkle, and the words carry the state.
 - A loader never sits on top of data. If something takes longer than 10 seconds, say what is happening and offer a way out.
 - The working animations are in the visual guide (Loading).
 
@@ -148,26 +184,30 @@ Each product has a full palette, built from its own colour by `tools/build-produ
 
 - **Scale:** 11 steps, 50 to 950, in OKLCH, with the product's own colour sitting exactly on its nearest step.
 - **Roles:**
-  - `action` and `action-hover`: AntaraX blue for A-mark products.
+  - `action`, `action-hover`, `action-pressed`: the product's own colour, at the first step that passes 4.5:1 with white text. Every product acts in its own colour; AntaraX blue is the focus ring everywhere.
   - `accent`, plus `accent-text`: the first step that reads as text on white (4.5:1).
   - `tint`, `subtle`, `border`, `on-tint`, `secondary`.
   - `dark-accent`: 4.5:1 on the dark ground `#071233`.
+- **Secondary scale:** 11 steps around the product's second colour.
+- **Neutrals:** 11 greys leaning a little toward the product's hue, for grounds, borders and quiet fills. Text keeps the shared navy and body colours, so every product reads the same.
+- **Interface colours:** surfaces (ground, raised, sunken, hover, selected, overlay), text (strong, body, muted, disabled, on action, link), borders (subtle, default, strong, input), status (ok, warn, fault, info, each with its tint and its text colour), and the dark set.
 - **Chart set:** five colours, the product's own first, then four shared chart hues in a fixed order. Each set passes the palette validator in light and dark: colour-blind separation, normal-vision difference, lightness band and contrast. Status colours are never in a chart set.
 
 | Product | Character | Own colour | Action | Secondary | Chart order after the product |
 |---|---|---|---|---|---|
-| Yara | Ripple teal and navy: calm, clear, made for the shop floor | `#08B0B3` | AntaraX blue `#0459F7` | navy `#0B1B4F` | blue, orange, magenta, violet |
-| AX Frame | Frame blue with halo indigo: precise, technical | `#074AF8` | AntaraX blue | indigo `#524FE9` | aqua, orange, magenta, gold |
+| Yara | Ripple teal and navy: calm, clear, made for the shop floor | `#08B0B3` | teal `#098284` | navy `#0B1B4F` | blue, orange, magenta, violet |
+| AX Frame | Frame blue with halo indigo: precise, technical | `#074AF8` | `#074AF8` | indigo `#524FE9` | aqua, orange, magenta, gold |
 | Janka | signal cyan with the spark orange from its mark | `#0CC4FB` | `#077DA1` | orange `#F47B3D` | orange, aqua, violet, magenta |
 | PLExyz Grid | shard violet with the four zone colours | `#2C09B2` | `#2C09B2` | zone teal `#4FD7D1` | aqua, orange, magenta, gold (or the four zones) |
 | PLExyz Crowd | PLExyz purple until Crowd has its own theme | `#6040CC` | `#6040CC` | zone teal | orange, aqua, blue, magenta |
 | Angka | warm plum with Lapis peach, on paper | `#6B3F6B` | `#6B3F6B` | peach `#E9906B` | blue, orange, aqua, violet |
 | Tinara | **garnet** with gold: discreet, valuable (proposed) | `#7A1E3C` | `#7A1E3C` | gold `#D6A84F` | blue, orange, aqua, violet |
-| Loom, Motion | the family colour | `#4904B3`, `#FC5D04` | AntaraX blue | navy | see tokens |
+| Loom, Motion | the family colour | `#4904B3`, `#FC5D04` | `#4904B3`, `#BE4402` | navy | see tokens |
 
 What changed and why:
 
-- **Tinara moves from plum to garnet** (proposed). Its plum `#5B2B4A` sat within a few steps of Angka's `#6B3F6B`, and the two are in the same family. Garnet keeps Tinara's heritage maroon, sits closer to Tide's pink, and gold reads as a highlight on it. The kerawang marks are rebuilt in garnet and gold.
+- **Yara acts in teal, `#098284`,** the first step of Ripple teal that passes 4.5:1 with white text, not AntaraX blue.
+- **Tinara moves from plum to garnet** (proposed). Its plum `#5B2B4A` sat within a few steps of Angka's `#6B3F6B`, and the two are in the same family. Garnet keeps Tinara's heritage maroon, sits closer to Tide's pink, and gold reads as a highlight on it. Its new logo options are drawn in garnet and gold.
 - **AX Frame's secondary is halo indigo, not orange.** The app's orange `#FB9800` is REKA's colour and almost the warn colour, so a highlight read as a warning.
 - **Janka's action is `#077DA1`**, the first step of its cyan that passes 4.5:1 with white text.
 - **PLExyz Crowd gets PLExyz purple** until its theme is drawn.

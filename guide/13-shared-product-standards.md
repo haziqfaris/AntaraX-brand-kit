@@ -32,29 +32,33 @@ One word for each shared idea, in every product. Product-specific things keep th
 | Product's public page | antarax.ai under `/products/` or `/pilots/` (02) |
 | Product email sender | `<Product> <product@antarax.ai>`, for example `Janka <janka@antarax.ai>`. Mail sent on a customer's behalf: `<Organisation> via <Product> <product@antarax.ai>` (Angka's pattern). Replies go to support |
 | Support | **`support@antarax.ai` for every product**, answered by the team at REKA. Wording, everywhere: "Need help? Email support@antarax.ai and the team will reply." Do not promise a reply time until one is kept |
-| Sales and demos | The antarax.ai form (it emails holla@reka.re today). An Enterprise "Talk to us" link goes to `support@antarax.ai` with the product and plan in the subject until a sales address exists |
-| Privacy and legal requests | A role address on the terms and privacy pages; recommended `privacy@antarax.ai` **(owner)** |
+| Sales and demos | The antarax.ai form (it emails holla@reka.re today). An Enterprise "Talk to us" link goes to **`sales@antarax.ai`** with the product and plan in the subject |
+| Privacy and legal requests | **`privacy@antarax.ai`** on every terms and privacy page, and as the legal contact |
+
+Role addresses only, decided by the owner on 11 October 2026: `support@`, `sales@`, `privacy@` and each product's sender. Create the three mailboxes before the apps point at them.
 
 Never show a personal address, "contact your REKA account manager" unless one is really assigned, or a platform address. A personal address in a product sends customers' mail to one person's inbox: it is lost when that person is away or leaves, it ties the product to a person rather than the company, and it puts that address in front of anyone who scrapes the page. Internal settings, such as AXLE's list of super-admins and test data, are not customer-facing and may keep named people.
 
 ## 3 Plans, money, dates and times
 
-**Plans.** One ladder of plan names, drawn from the AntaraX theme of Earth, Cosmos and Quantum (playbook §13). The ladder climbs from the ground to the cosmos to the quantum: from one person getting started, to teams and connected organisations, to the deepest intelligence. Every product except Angka uses it, taking only the steps it needs, in this order:
+**Plans.** One ladder of plan names, drawn from the AntaraX theme of Earth, Cosmos and Quantum (playbook §13). Every product except Angka uses the chosen ladder, taking only the steps it needs, in order. Six ladders to choose from **(owner)**:
 
-| Step | Name | Theme | For | Says |
-|---|---|---|---|---|
-| 1 | **Seed** | Earth | starting out, free | "Seed · free to start" |
-| 2 | **Terra** | Earth | one person or one site | "Terra · for one person" |
-| 3 | **Nova** | Cosmos | a team | "Nova · for teams" |
-| 4 | **Galaxy** | Cosmos | a business with several teams or sites | "Galaxy · for growing businesses" |
-| 5 | **Quantum** | Quantum | enterprise terms, the most intelligence | "Quantum · for enterprises" |
+| Ladder | 1 · free | 2 · one person | 3 · a team | 4 · a business | 5 · enterprise | The idea |
+|---|---|---|---|---|---|---|
+| **A · Rise** (recommended) | Seed | Terra | Nova | Galaxy | Quantum | From the ground, to the stars, to the quantum: all three themes in one climb |
+| **B · Earth** | Seed | Sapling | Grove | Forest | Rainforest | Growth you can picture; the rainforest is Malaysia's own |
+| **C · Cosmos** | Moon | Planet | Star | Galaxy | Universe | Scale, from one body to everything |
+| **D · Quantum** | Bit | Qubit | Circuit | Processor | Quantum | Computing power, from one bit to the whole machine |
+| **E · Three steps** | Terra | | Cosmos | | Quantum | For products with three plans (Grid, Tinara): one word per theme |
+| **F · Malay** (when Bahasa Malaysia reopens) | Benih | Bumi | Bintang | Cakerawala | Kuantum | Seed, earth, star, universe, quantum |
 
+- **Or by family:** each family takes the ladder of its theme. Ripple and Tide (real work and real numbers) take Earth, Frame and Edge (connections and spaces) take Cosmos, Loom and Motion (intelligence and autonomy) take Quantum. Families then differ, and products within a family match.
 - **Always pair the name with who it is for**, on plan cards, upgrade prompts and invoices ("Nova · for teams"). A themed name alone does not tell a buyer which plan is bigger; the descriptor does.
 - On invoices and receipts: the product then the plan, "Janka Galaxy".
 - A trial is a period on a plan, and a closed pilot is a stage, not a plan. Neither is a plan name.
 - **Angka keeps its own names** (Solo, Business, Team, Enterprise, and Lapis Business): its plans are live with customers and written for owner-run businesses.
-- Names never reuse a line, area, motif or family name. That is why there is no "Orbit" plan: Orbit is an AX Frame line and a BaTech motif.
-- Prices stay the product's own; names are shared. Mappings are in the audit below.
+- Names never reuse a line, area, motif or family name. That is why there is no "Orbit" or "Pulse" plan.
+- Prices stay the product's own; names are shared. Mappings in the audit below use ladder A.
 
 **Money**
 

@@ -2,6 +2,25 @@
 
 Owner decisions that shape the brand, newest first. Add to the top; never rewrite history. Earlier strategy changes are in `reference/strategy/` (playbook amendments v0.3–v0.5, RECONCILIATION).
 
+## 11 October 2026 (ninth review)
+
+- **Role addresses only** (owner): `support@antarax.ai`, `sales@antarax.ai` and `privacy@antarax.ai` replace every personal address in the products.
+- **Yara's motif is flowing, not mechanical** (owner: "gears are overrated"). Awan larat for today's job, people's work carried into digital; sungai later, for digital to automation.
+- **Yara acts in teal** `#098284`, not AntaraX blue (owner). Every product now acts in its own colour; AntaraX blue stays the focus ring.
+- **A logo and a motif are always different** (owner). Tinara gets a new logo (three options drawn), and kerawang goes back to being its motif. Logos share one colour rule: product colour, navy ink, sparkle highlights. Reconciled options drawn for PLExyz Grid and Janka.
+- **Missing logos drawn** (owner asked):
+  - the PLExyz line: Crowd, Trace, Flow, Transit, Site, Ward and Yard;
+  - the A-marks for Loom and Motion.
+- **PLExyz Grid has no BaTech on its screens for now** (owner).
+- **Loaders never spin or flip** (owner). They draw on, light in sequence, travel, grow, gather and breathe.
+- **The AI sparkle is the one inside the A** (owner), taken from the master mark (`assets/ai/sparkle.svg`).
+- **Seth must be findable** (owner). Cameos are drawn larger in every composition, and the guide shows where they are.
+- **Palettes extended** (owner asked):
+  - neutrals and a secondary scale;
+  - surfaces, text, borders and status;
+  - the dark set.
+- **Plan names:** six ladders to choose from, plus a by-family option (owner asked for variations).
+
 ## 11 October 2026 (eighth review)
 
 - **Support is `support@antarax.ai`** for every product (owner).

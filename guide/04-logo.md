@@ -28,7 +28,7 @@ Each family has its own icon (in its family colour) that sits in the A's open ce
 | Edge | `#12B76A` | 3 shapes: an organic curve, a rounded rect, a true circle (recoloured from teal to emerald to separate it from Ripple) |
 | Frame | `#074AF8` | 5 shapes: symmetric brackets, lines and arcs |
 | Loom | `#4904B3` | 10 rounded rects |
-| Tide | `#E9579D` | **no icon yet**; the bunga raya motif stands in (see 11 Open questions) |
+| Tide | `#E9579D` | **proposed:** a crescent with the family's dot (`assets/families/tide-icon.svg`, 11) |
 
 Name variants per family: Full "AntaraX Motion", Centered and Medium "AX Motion", Short "AXM".
 

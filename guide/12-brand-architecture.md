@@ -35,7 +35,7 @@ REKA Inisiatif Sdn Bhd            the company: R&D, Managed AI, legal entity
 | Kind | Products | Mark | Primary action | Accent |
 |---|---|---|---|---|
 | **Own-mark** | PLExyz products, Janka, Angka, Tinara | The product's own logo | The product's own colour (its dark shade if it fails 4.5:1 with white) | The product's own colours |
-| **A-mark** | Yara, AX Frame, Loom, Motion, and every new product | The AntaraX A with the family icon in its centre (04) | AntaraX blue `#0459F7` | The family colour |
+| **A-mark** | Yara, AX Frame, Loom, Motion, and every new product | The AntaraX A with the family icon in its centre (04) | The product's own colour (14) | The family colour |
 
 A product is own-mark when it arrived with an identity people already recognise. Everything else starts as A-mark.
 
@@ -48,7 +48,7 @@ A product is own-mark when it arrived with an identity people already recognise.
 | PLExyz Grid | Force field, shard and zone grid; the four zone colours; the multicoloured "Grid" wordmark; the hex-tile sign-in |
 | Janka | The J that never closes; the signal ticks; its splash and thinking animations |
 | Angka | The sheet-stack face; paper ground; plum and Lapis peach |
-| Tinara | Garnet and gold (proposed, 14); the kerawang mark |
+| Tinara | Garnet and gold (proposed, 14); a new logo to choose (14) |
 | AX Frame | The breathing cube halo |
 | Yara | The A with the Ripple wave; teal |
 
@@ -56,7 +56,7 @@ A product is own-mark when it arrived with an identity people already recognise.
 
 1. **Credit line:** "by AntaraX" (see below).
 2. **BaTech, quietly:** the product's signature motif in empty states, and a Quiet band of its family's corak on dividers, sign-in and email headers, following the BaTech guidelines (see below).
-3. **AI sparkle:** the four-petal sparkle (`assets/ai/spark-x.svg`) beside every piece of AI work: a forecast, a ranking, a drafted order or brief, a suggested match. The same sign in every product tells a customer that this is AntaraX intelligence. Never decoration, never a logo.
+3. **AI sparkle:** the AntaraX sparkle, the one inside the A (`assets/ai/sparkle.svg`, taken from the master mark) beside every piece of AI work: a forecast, a ranking, a drafted order or brief, a suggested match. The same sign in every product tells a customer that this is AntaraX intelligence. Never decoration, never a logo.
 4. **Thinking motion:** while AI works for more than a moment, the product's own mark moves the AntaraX way, its separate pieces drifting in and out of step (04, animation 2). Respect reduced motion.
 5. **Shared core:** Poppins, JetBrains Mono for every number, the shared status colours, the AntaraX-blue focus ring (see "Colour").
 6. **Intan eyebrow:** section eyebrows start with the intan (a 9px diamond) in the product's accent.
@@ -73,10 +73,10 @@ Each product has one signature motif, from its family's niche. The wording is Ba
 
 | Family | Product | Motif | Built from | What it says |
 |---|---|---|---|---|
-| Ripple | Yara | **gear** (roda gigi), proposed in place of riak (14) | a mechanism | Every stage turns the next |
+| Ripple | Yara | **awan larat** (trailing clouds); later **sungai** for automation (14) | an endless circuit trace | Human work, carried into digital |
 | Tide | Janka | **padi** (paddy) | signal bars | Reading the harvest before it comes |
 | Tide | Angka | **congkak** (counting board) | a ledger, seeds moving like money | Counting where it all goes |
-| Tide | Tinara | **kerawang** (carved lattice), which is also Tinara's logo | one path found in the noise | One path found in the noise |
+| Tide | Tinara | **kerawang** (carved lattice) | one path found in the noise | One path found in the noise |
 | Edge | PLExyz Grid | **petak** (grid of spaces) | spaces in a layout | Spaces in a real layout |
 | Edge | PLExyz Crowd | **orbit** | wireless | Signals counted, never faces |
 | Frame | AX Frame | **intan** (diamond) | one world, seen many ways | One world, seen many ways |
@@ -108,11 +108,11 @@ Each place uses one BaTech strength, keeps text on a solid surface, and appears 
 | Dividers, email and report headers | A drift band of the family's corak: it thins out and fades with no edge | Quiet, 40 to 64px tall, shown whole, never cropped |
 | Sign-in brand panel | An edge band along the bottom of the panel: cropped by the panel's own edge, fading out upward into the ground; the logo sits above it | Quiet, no more than a quarter of the panel |
 | Avatar and image placeholders | The family's corak behind initials or an empty image | Quiet or family pair, texture scale |
-| Loading | A radial motif turns slowly, or the product's mark does its thinking motion (04) | Full colour, 48 to 72px |
+| Loading | The motif draws on, lights in sequence or carries a travelling pad; or the mark does its thinking motion. Never spinning or flipping (14) | Full colour, 48 to 72px |
 
 Files: `assets/products/<product>/<product>-motif.svg` (signature motif, family pair) and `assets/families/bands/<family>-quiet-drift.svg` and `-quiet-edge.svg` (Quiet bands), built by `tools/build-product-motifs.mjs` with the BaTech guideline recipes.
 
-Tinara's logo is its signature motif, so its empty states use **bunga raya**, the Tide family flower (`tinara-empty-motif.svg`), and the logo never appears twice in two colourways.
+A logo and a motif are always different (14). Tinara's logo was its motif; it now gets a logo of its own, and kerawang stays its motif.
 
 ### Never
 
@@ -123,7 +123,7 @@ Tinara's logo is its signature motif, so its empty states use **bunga raya**, th
 - A motif recoloured in the product's own colours, stretched or squashed.
 - **A straight cut.** BaTech is mixed patterns, never straight lines (06): no hard-edged strip inside content, no ruled line, row of dots or row of identical motifs as decoration. Bands drift (fade out with no edge) or sit against a container's own edge, where BaTech allows a crop.
 - Cameos on single motifs (empty states, loaders). Bands carry BaTech's hidden cameos (Seth, the REKA mark, the AntaraX A) as the motif code places them, at most one each per area.
-- Motion that is not slow and rare: radial motifs turn once every 30 to 60 seconds; all motion stops for reduced motion.
+- Motion that is not slow and rare: nothing spins or flips; all motion stops for reduced motion.
 
 ## Signature moments (proposed)
 
@@ -131,10 +131,10 @@ Beyond the quiet placements, each product can give its motif **one job**: a mome
 
 | Product | Moment | What the motif does |
 |---|---|---|
-| Yara · gear | A job is completed | The gear turns one notch beside the Complete button, and the next stage's card lights: every stage turns the next |
+| Yara · awan larat | A job is completed | A short awan larat trace draws from the Complete button to the next stage's card, and a pad travels along it: the work carried on |
 | Janka · padi | A forecast runs | The padi stalk draws on while the forecast runs; its grains fill when it is ready |
 | Angka · congkak | Month-end matching | Progress is the congkak board: each matched receipt drops a seed into a hole |
-| Tinara · kerawang | Ranking companies | The logo's lattice lights opening by opening until one path settles |
+| Tinara · kerawang | Ranking companies | The lattice lights opening by opening until one path settles |
 | PLExyz Grid · petak | An empty layout | Before a facility is drawn, the canvas shows petak as the picture and asks for the first zone |
 | PLExyz Crowd · orbit | Live sensing | The live indicator is the orbit, its dot travelling slowly, in place of a pulsing dot |
 | AX Frame · intan | A record fills in | The intan's facets fill as each part of an asset's record is completed |
@@ -185,7 +185,7 @@ The full loading system (seven states, and each product's own loaders) is in 14.
 | A task the person started (a forecast, a ranking, an import) | The signature motif as the loader, with the action in words ("Forecasting 48 items") |
 | Long AI work | The product's own mark in its thinking motion (04) |
 
-Radial motifs **turn** (gear, intan, orbit; one turn every 6 seconds as a loader); the others **draw on** and fill (padi, petak); congkak passes a seed from hole to hole; Tinara's lattice lights its path one opening at a time. All motion stops for reduced motion.
+Motifs **draw on**, **light in sequence** or carry a **travelling pad**; marks **breathe** and their pieces drift out of step. Nothing spins or flips. Each product's loaders are in 14.
 
 ### Naming lines and areas
 
@@ -204,7 +204,7 @@ How to write them:
 - **One word, capitalised as a name.** No all caps, no prefixes, no version numbers in the name.
 - **Shared names mean the same thing everywhere.** **Assist** is the AI assistant in every product, always shown with the sparkle. **Forecast** is a product's forecasting. A product that adds an AI assistant calls it Assist.
 - **Never reuse** a family name (Ripple, Edge, Frame, Loom, Motion, Tide), a product or PLExyz product name, another product's line for a different thing, or an internal name (AXLE).
-- **Malay words** may name a line only when the meaning is the job and it is explained once, as Lapis and Lapisan ("layer") are. Motif names (gear, padi, intan) stay design vocabulary, not feature names.
+- **Malay words** may name a line only when the meaning is the job and it is explained once, as Lapis and Lapisan ("layer") are. Motif names (awan larat, padi, intan) stay design vocabulary, not feature names.
 - **Working names** stay marked as working until the owner confirms them (Yara View and Assist today).
 
 Clashes in today's names (11):
@@ -267,13 +267,13 @@ Own accent, for the primary action, selection, charts and identity moments, with
 
 | Product | Accent | Tint | Dark | Primary action |
 |---|---|---|---|---|
-| Yara | Ripple `#08B0B3` | `#DCF4F4` | `#046162` | AntaraX blue `#0459F7` |
-| AX Frame | Frame `#074AF8` | `#DCE6FE` | `#042988` | AntaraX blue `#0459F7` |
+| Yara | Ripple `#08B0B3` | `#DCF4F4` | `#046162` | teal `#098284` |
+| AX Frame | Frame `#074AF8` | `#DCE6FE` | `#042988` | `#074AF8` |
 | Janka | cyan `#0CC4FB` | `#DDF7FE` | `#077DA1` | `#077DA1` |
 | PLExyz Grid | violet `#2C09B2`; zones `#4FD7D1` `#FD9001` `#FD4F85` `#CBB6FA` for data | `#E1DDF4` | `#180562` | `#2C09B2` |
 | Angka | plum `#6B3F6B` | `#EAE4EA` | `#3B233B` | `#6B3F6B` |
 | Tinara | garnet `#7A1E3C` (proposed); gold `#D6A84F` for highlights | `#FEF4F6` | `#511A2A` | `#7A1E3C` |
-| Loom, Motion | family colour | see tokens | see tokens | AntaraX blue |
+| Loom, Motion | family colour | see tokens | see tokens | the family colour's action step |
 
 Full palettes (11-step scales, roles, chart sets, dark mode) are in 14 and `tokens/product-palettes.json`. On antarax.ai the family colour leads (05). Inside a product's own app, the product's colours lead; BaTech motifs inside it keep their family pair.
 
@@ -301,7 +301,7 @@ Full palettes (11-step scales, roles, chart sets, dark mode) are in 14 and `toke
 
 ## Adding a product
 
-1. Start as A-mark in its family, with the family accent and AntaraX blue for actions.
+1. Start as A-mark in its family (if the family has none yet; otherwise draw its own mark, 14), acting in its own colour.
 2. Give it the AntaraX layer: "by AntaraX", a signature motif from its family's niche (drawn by the BaTech rules), the AI sparkle, the shared core.
 3. Write its sheet in `guide/products/` and add it to 02 and the motif map.
 

@@ -38,7 +38,7 @@ Poppins and JetBrains Mono, "every number, always" in mono. Aligned.
 
 ## The AntaraX layer in AX Frame
 
-AX Frame is A-mark, so it is AntaraX already. It keeps its breathing cube halo and adds BaTech: **intan** (`frame-motif.svg`, Frame pair) as the picture in empty states, and the Frame **Corners** composition (`assets/families/compositions/frame-corners.svg`, 14) on the sign-in panel, splash and report covers, with the Frame drift band under email headers.
+AX Frame is A-mark, so it is AntaraX already. It keeps its breathing cube halo and adds BaTech: **intan** (`frame-motif.svg`, Frame pair) as the picture in empty states, and the Frame **Corners** composition (14) on the sign-in panel, splash and report covers: white on Frame blue (`frame-corner-tl-white.svg`, `-br-white.svg`) on a blue panel, Quiet on a white one, with the Frame drift band under email headers.
 
 ## Credit lines
 

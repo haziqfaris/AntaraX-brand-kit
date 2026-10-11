@@ -33,14 +33,15 @@ const LT = [0.975, 0.945, 0.89, 0.82, 0.73, 0.64, 0.55, 0.47, 0.39, 0.31, 0.24];
 const CF = [0.1, 0.22, 0.45, 0.7, 0.9, 1, 1, 0.92, 0.8, 0.66, 0.52]; // share of the anchor's chroma per step
 const BLUE = '#0459F7', DARK = '#071233';
 
-// anchor: the product's own colour, placed exactly on its nearest step. A-mark products act in AntaraX blue.
+// anchor: the product's own colour, placed exactly on its nearest step. Every product acts in its own colour
+// (the first step that passes 4.5:1 with white text); AntaraX blue stays the focus ring.
 const PRODUCTS = {
   yara: { name: 'Yara', anchor: '#08B0B3', secondary: '#0B1B4F', amark: true, character: 'Ripple teal and navy: calm, clear, made for the shop floor' },
   frame: { name: 'AX Frame', anchor: '#074AF8', secondary: '#524FE9', amark: true, character: 'Frame blue with halo indigo: precise, technical, one world in view' },
   janka: { name: 'Janka', anchor: '#0CC4FB', secondary: '#F47B3D', character: 'Signal cyan with the spark orange from its mark: alert, forward-looking' },
-  grid: { name: 'PLExyz Grid', anchor: '#2C09B2', secondary: '#4FD7D1', character: 'Shard violet with the four zone colours: spatial, vivid, exact' },
+  grid: { name: 'PLExyz Grid', anchor: '#2C09B2', secondary: '#4FD7D1', character: 'Shard violet with the four zone colours: spatial, vivid, exact', ground: '#F7F7FA' },
   crowd: { name: 'PLExyz Crowd', anchor: '#6040CC', secondary: '#4FD7D1', character: 'PLExyz purple with a zone teal, until Crowd has its own theme' },
-  angka: { name: 'Angka', anchor: '#6B3F6B', secondary: '#E9906B', character: 'Warm plum with Lapis peach on a paper ground: friendly money' },
+  angka: { name: 'Angka', anchor: '#6B3F6B', secondary: '#E9906B', character: 'Warm plum with Lapis peach on a paper ground: friendly money', ground: '#FAF7F2' },
   tinara: { name: 'Tinara', anchor: '#7A1E3C', secondary: '#D6A84F', character: 'Garnet with gold: discreet, valuable, considered (proposed)' },
   loom: { name: 'Loom', anchor: '#4904B3', secondary: '#0B1B4F', amark: true, character: 'Loom violet' },
   motion: { name: 'Motion', anchor: '#FC5D04', secondary: '#0B1B4F', amark: true, character: 'Motion orange' },
@@ -49,22 +50,38 @@ const CHARTS = JSON.parse(fs.readFileSync(new URL('./product-charts.json', impor
 
 const out = {}, css = [];
 for (const [k, p] of Object.entries(PRODUCTS)) {
-  const [L, C, H] = hex2oklch(p.anchor);
-  const s = LT.map((l, i) => oklch2hex([l, Math.max(C, 0.06) * CF[i], H]));
-  let at = 0; LT.forEach((l, i) => { if (Math.abs(l - L) < Math.abs(LT[at] - L)) at = i; });
-  s[at] = p.anchor;
+  const build = (hex, exact = true) => { const [L, C, H] = hex2oklch(hex); const out = LT.map((l, i) => oklch2hex([l, Math.max(C, 0.06) * CF[i], H]));
+    let at = 0; LT.forEach((l, i) => { if (Math.abs(l - L) < Math.abs(LT[at] - L)) at = i; }); if (exact) out[at] = hex; return [out, at, H]; };
+  const [s, at, H] = build(p.anchor);
   const scale = Object.fromEntries(STEPS.map((n, i) => [n, s[i]]));
+  const [s2] = build(p.secondary);
+  const secondaryScale = Object.fromEntries(STEPS.map((n, i) => [n, s2[i]]));
+  // neutrals: greys leaning a little toward the product's hue, for grounds, borders and quiet fills.
+  // Text stays the shared navy and body colours (05), so every product reads the same.
+  const NL = [0.985, 0.965, 0.93, 0.88, 0.78, 0.66, 0.55, 0.45, 0.36, 0.27, 0.2];
+  const n = NL.map((l, i) => oklch2hex([l, [0.004, 0.006, 0.009, 0.012, 0.016, 0.018, 0.02, 0.022, 0.024, 0.026, 0.028][i], H]));
+  const neutral = Object.fromEntries(STEPS.map((k, i) => [k, n[i]]));
   const own = contrast(p.anchor, '#FFFFFF') >= 4.5 ? at : s.findIndex((h, i) => i >= at && contrast(h, '#FFFFFF') >= 4.5);
   const onDark = [...s.keys()].filter((i) => i <= 5 && contrast(s[i], DARK) >= 4.5).pop();
   const roles = {
-    action: p.amark ? BLUE : s[own], 'action-hover': p.amark ? '#0347C8' : s[own + 1], accent: p.anchor, 'accent-text': s[own],
-    tint: s[0], subtle: s[1], border: s[2], 'on-tint': s[8], secondary: p.secondary, 'dark-accent': s[onDark],
+    action: s[own], 'action-hover': s[own + 1], 'action-pressed': s[own + 2], accent: p.anchor, 'accent-text': s[own],
+    tint: s[0], subtle: s[1], 'accent-border': s[2], 'on-tint': s[8], secondary: p.secondary, 'dark-accent': s[onDark], focus: BLUE,
   };
-  out[k] = { name: p.name, kind: p.amark ? 'A-mark' : 'own-mark', character: p.character, anchor: p.anchor, 'anchor-step': STEPS[at], scale, roles, chart: CHARTS[k].chart, 'chart-dark': CHARTS[k].chartDark, 'chart-after-product': CHARTS[k].names,
+  const ui = {
+    surface: { ground: p.ground || '#FFFFFF', raised: '#FFFFFF', sunken: neutral[50], hover: neutral[100], selected: s[0], overlay: 'rgba(11,27,79,.48)' },
+    text: { strong: '#0B1B4F', body: '#3B4469', muted: '#5B6488', disabled: neutral[400], 'on-action': '#FFFFFF', link: s[own] },
+    border: { subtle: neutral[100], default: neutral[200], strong: neutral[400], input: neutral[500] },
+    status: { ok: ['#12B76A', '#E7F8EF', '#067647'], warn: ['#F79009', '#FEF4E6', '#B54708'], fault: ['#F04438', '#FEECEB', '#B42318'], info: ['#0459F7', '#E6EEFE', '#0347C8'] },
+    dark: { ground: '#071233', raised: '#0C1B47', sunken: '#050D26', border: 'rgba(157,184,255,.16)', strong: '#EAF0FF', body: '#B6C3EA', muted: '#8E9CC8', accent: s[onDark], action: s[onDark], 'on-action': '#071233' },
+  };
+  out[k] = { name: p.name, kind: p.amark ? 'A-mark' : 'own-mark', character: p.character, anchor: p.anchor, 'anchor-step': STEPS[at], scale, 'secondary-scale': secondaryScale, neutral, roles, ui, chart: CHARTS[k].chart, 'chart-dark': CHARTS[k].chartDark, 'chart-after-product': CHARTS[k].names,
     contrast: { 'action-on-white': +contrast(roles.action, '#FFFFFF').toFixed(2), 'accent-text-on-white': +contrast(roles['accent-text'], '#FFFFFF').toFixed(2), 'dark-accent-on-dark': +contrast(roles['dark-accent'], DARK).toFixed(2) } };
   css.push(`  /* ${p.name}: ${p.character} */`);
   css.push('  ' + STEPS.map((n) => `--${k}-${n}: ${scale[n]};`).join(' '));
   css.push('  ' + Object.entries(roles).map(([r, v]) => `--${k}-${r}: ${v};`).join(' '));
+  css.push('  ' + STEPS.map((n) => `--${k}-secondary-${n}: ${secondaryScale[n]};`).join(' '));
+  css.push('  ' + STEPS.map((n) => `--${k}-neutral-${n}: ${neutral[n]};`).join(' '));
+  css.push('  ' + [...Object.entries(ui.surface).map(([r, v]) => [`surface-${r}`, v]), ...Object.entries(ui.text).map(([r, v]) => [`text-${r}`, v]), ...Object.entries(ui.border).map(([r, v]) => [`border-${r}`, v])].map(([r, v]) => `--${k}-${r}: ${v};`).join(' '));
   css.push('  ' + CHARTS[k].chart.map((v, i) => `--${k}-chart-${i + 1}: ${v};`).join(' '));
 }
 fs.writeFileSync(new URL('../tokens/product-palettes.json', import.meta.url), JSON.stringify({ note: 'Built by tools/build-product-palettes.mjs (guide/14). Do not edit by hand.', products: out }, null, 2) + '\n');

@@ -17,7 +17,7 @@ A-mark product in the Ripple family. Main product and the portfolio lead. Live a
 
 ## Mark
 
-- The AntaraX A with the Ripple icon in its centre: `assets/products/yara/yara-mark.svg` (from `public/brand/antarax-ax-ripple-centered.svg`). Blue `#0459F7` A, teal `#08B0B3` riak.
+- The AntaraX A with the Ripple icon in its centre: `assets/products/yara/yara-mark.svg` (from `public/brand/antarax-ax-ripple-centered.svg`). Blue `#0459F7` A, teal `#08B0B3` Ripple wave.
 - The product name sits beside it as live text (`src/components/brand/BrandLockup.tsx`). Do not bake the name into the SVG.
 - Splash: the A opens and the Ripple icon fades in. Long AI work: the "thinking" animation (04).
 
@@ -25,7 +25,7 @@ A-mark product in the Ripple family. Main product and the portfolio lead. Live a
 
 | Role | Value |
 |---|---|
-| Primary action | AntaraX blue `#0459F7`, hover `#0347C8` |
+| Primary action | teal `#098284`, hover `#05686A` (closer to Ripple teal than AntaraX blue; full palette in 14). AntaraX blue stays the focus ring |
 | Accent | Ripple `#08B0B3`, tint `#DCF4F4`, dark `#046162` |
 | Status | shared core |
 
@@ -43,7 +43,7 @@ Poppins and JetBrains Mono. Aligned. (The mono font's variable is still named `p
 
 ## The AntaraX layer in Yara
 
-Yara is A-mark and already carries most of the layer. BaTech: **gear** (`yara-motif.svg`, Ripple pair; proposed in place of riak, which repeated the Ripple wave in Yara's logo, 14) as the picture in empty states; the Ripple **Rings** composition (`assets/families/compositions/ripple-rings.svg`) in a corner of the sign-in panel and splash; the Ripple drift band under email headers. The AI sparkle (Yara's own `design-system/brand/spark-x.svg` is the source of `assets/ai/spark-x.svg`) beside AI intake and suggestions.
+Yara is A-mark and already carries most of the layer. BaTech: **awan larat** (`yara-motif.svg`, Ripple pair) as the picture in empty states: the old scroll redrawn as a circuit trace, Yara's job today of carrying people's work into digital. When Yara automates, its automation screens take **sungai** (`yara-automation-motif.svg`). Riak was not used because it repeats the Ripple wave in Yara's logo (14); the Ripple **Rings** composition (`assets/families/compositions/ripple-rings.svg`) in a corner of the sign-in panel and splash; the Ripple drift band under email headers. The AI sparkle (Yara's own `design-system/brand/spark-x.svg` is the source of `assets/ai/spark-x.svg`) beside AI intake and suggestions.
 
 ## Gaps in the app today
 
@@ -56,7 +56,7 @@ Yara is A-mark and already carries most of the layer. BaTech: **gear** (`yara-mo
 
 1. Fix the byline separator and spelling.
 2. Replace the local product registry with a link to `guide/products/`.
-3. Add the sign-in trust line, gear in empty states and the Ripple Rings on sign-in, and the AI sparkle on AI suggestions.
+3. Add the sign-in trust line, awan larat in empty states and the Ripple Rings on sign-in, and the AI sparkle on AI suggestions.
 
 ## Shared standards (13)
 

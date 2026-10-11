@@ -15,24 +15,22 @@ Own-mark product in the Tide family. Closed pilot, invite-only. Malaysia-first B
 - Redefined as B2B intelligence on 10 October 2026.
 - No customers to name. Pilot partners are invited; REKA staff run it.
 
-## Mark: the kerawang motif
+## Logo: to choose
 
-**Tinara's logo is the BaTech kerawang motif itself**: the official drawing of a carved lattice tile with one path stepping through it, in Tinara's garnet and gold (garnet proposed, 14; the marks were plum until 11 October).
+A logo and a motif are always different (14), so Tinara's logo is no longer the kerawang motif. Three options, in garnet and gold (`assets/products/tinara/options/`):
 
-**What kerawang is.** Ukiran kerawang is the pierced woodcarving set into Malay houses above windows and doors: a carved lattice that lets light and air through while screening the view. In BaTech it is the motif for "one path found in the noise".
+| Option | File | Idea |
+|---|---|---|
+| A · The next one | `tinara-logo-a-rank.svg` | Three rising bars, the tallest in garnet, a gold dot above it: the company to call next |
+| B · The opening | `tinara-logo-b-opening.svg` | A speech bubble with a T and a gold dot: how to open the conversation |
+| C · The signal | `tinara-logo-c-signal.svg` | A company with a gold signal reaching out: the one ready to buy |
 
-**Why it fits Tinara.** The market is the lattice: thousands of companies, each one an opening. Tinara finds the path through it: who to call, why, and how to open the conversation.
+- Wordmark: "Tinara" in Poppins 600, navy or garnet, beside the logo.
+- Once chosen, draw its small version (24px and below) and a light version for dark grounds.
 
-| File | Use |
-|---|---|
-| `assets/products/tinara/tinara-mark.svg` | The mark: garnet tile, white openings, gold path. 32px and up |
-| `tinara-mark-small.svg` | The same construction with a 3×3 lattice, for 24px and below (favicon, small tiles) |
-| `tinara-mark-light.svg`, `tinara-mark-small-light.svg` | Light tile, for navy and dark grounds |
-| `tinara-empty-motif.svg` | Bunga raya, the Tide family flower, in the Tide pair: Tinara's empty-state picture (the logo is not repeated as a motif) |
+## Motif: kerawang
 
-- Built by `tools/build-product-motifs.mjs` from the official drawing; never redraw it by hand.
-- Wordmark: "Tinara" in Poppins 600, navy or garnet, beside the mark.
-- Thinking motion: the openings light in turn until the path settles.
+**Kerawang** (`tinara-motif.svg`, Tide pair) is Tinara's motif: the pierced woodcarving set into Malay houses above windows and doors, a carved lattice that lets light and air through while screening the view. In BaTech it is "one path found in the noise". The market is the lattice, thousands of companies, each one an opening; Tinara finds the path through it. It is the picture in empty states, and its lattice lights in the loader.
 
 ## Colour
 
@@ -49,7 +47,7 @@ Own-mark product in the Tide family. Closed pilot, invite-only. Malaysia-first B
 
 ## The AntaraX layer in Tinara
 
-The credit line; BaTech: **bunga raya** (`tinara-empty-motif.svg`, Tide pair) as the picture in empty states (the kerawang is the logo), and the Tide **Swell** composition along the bottom of the sign-in panel (in place of the blur orbs) and under report headers; **the AI sparkle** beside every ranking and brief; intan eyebrows in plum; the app tile; the legal footer.
+The credit line; BaTech: **kerawang** (`tinara-motif.svg`, Tide pair) as the picture in empty states, and the Tide **Swell** composition along the bottom of the sign-in panel (in place of the blur orbs) and under report headers; **the AI sparkle** beside every ranking and brief; intan eyebrows in plum; the app tile; the legal footer.
 
 ## Type
 
@@ -73,7 +71,7 @@ Today Inter (body) and Poppins (display). Target: Poppins only, JetBrains Mono f
 1. Credit lines and metadata name.
 2. Wordmark lockup; Poppins only.
 3. Shared status colours; dark surfaces to the dark product ground.
-4. Put the kerawang mark in; add the app tile and manifest.
+4. Choose the logo; add the app tile and manifest.
 
 ## Shared standards (13)
 

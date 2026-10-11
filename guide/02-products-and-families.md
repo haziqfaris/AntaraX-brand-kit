@@ -56,7 +56,7 @@ Use these names, one-liners and questions exactly.
 
 | Family | Verb | Motto | Products | Colour | Signature motif |
 |---|---|---|---|---|---|
-| **Ripple** | Operate | "Work that moves." | Yara | `#08B0B3` | riak (one tap, spreading); Yara's own motif is gear (14) |
+| **Ripple** | Operate | "Work that moves." | Yara | `#08B0B3` | riak (one tap, spreading); Yara's own motif is awan larat, later sungai (14) |
 | **Edge** | Perceive | "Sense the real world." | PLExyz Grid, PLExyz Crowd | `#12B76A` | petak (Grid), orbit (Crowd) |
 | **Frame** | Understand | "Know what you depend on." | AX Frame | `#074AF8` | intan |
 | **Loom** | Synthesize | "Weave it together." | Loom | `#4904B3` | tenun |
@@ -72,7 +72,7 @@ Family descriptions for the Families page:
 - **Motion:** keeping vehicles in view and in hand: telematics and fleet management, built first for autonomous vehicles and remote control. For fleets, autonomous vehicles and remotely controlled machines.
 - **Tide:** turning numbers into the next step: forecasting the stock you'll need, understanding where money goes, and knowing which companies to sell to next. For procurement, finance, operations and sales leads.
 
-Tide has no icon in the master logo file yet; until it does, use the bunga raya motif as its mark (see 11 Open questions).
+Tide has no icon in the master logo file yet; a crescent with the family's dot is proposed (`assets/families/tide-icon.svg`, 14, 11).
 
 ## Customer-facing categories
 

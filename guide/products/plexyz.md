@@ -43,9 +43,10 @@ Every PLExyz mark is the same three parts. Only the middle one changes per produ
 |---|---|---|
 | **Force field** | The isometric cube boundary, drawn as a pointed-top hexagon | Identical size and proportion in every product |
 | **Core entity** | The floating faceted obelisk (the shard) | Identical in every product; centred on the vertical axis |
-| **Spatial context** | What the product reads | Grid: a 2×2 zone grid. Flow: a path across the grid. Transit: a route between points. Crowd: scattered entities on the grid. Site: stacked layers. Ward: walled rooms. Yard: parking lanes. Trace: to be drawn (tags and last-seen points) |
+| **Spatial context** | What the product reads | Grid: a 2×2 zone grid. Flow: a path across the grid. Transit: a route between points. Crowd: scattered entities on the grid. Site: stacked layers. Ward: walled rooms. Yard: parking lanes. Trace: a tag and its last-seen trail |
 
 - **The PLExyz master mark** (the purple circular mark in the line overview) is not in any repository yet. Add its file here when it is final.
+- **Every product's mark is drawn** (11 October 2026, `tools/build-logos.mjs`): `plexyz-crowd-mark.svg`, `plexyz-trace-mark.svg`, `plexyz-flow-mark.svg`, `plexyz-transit-mark.svg`, `plexyz-site-mark.svg`, `plexyz-ward-mark.svg`, `plexyz-yard-mark.svg`. Each keeps Grid's force field and shard and puts its own spatial context on the floor. Concepts stay concepts: a mark is not a launch.
 - **Line purple:** `#6040CC` (line brief), with shard accents `#865ACE`, `#6040CC`, `#281B4F`.
 
 ### PLExyz Grid mark
@@ -67,7 +68,7 @@ The line brief gives PLExyz purple `#6040CC`; the Grid mark and app use violet `
 Grid keeps everything above. AntaraX adds (12):
 
 1. **Credit:** "PLExyz Grid · by AntaraX" in the chrome; "PLExyz Grid by AntaraX, from REKA." on sign-in and reports.
-2. **BaTech:** Grid's motif is **petak** (`grid-motif.svg`, Edge pair: spaces in a real layout); Crowd's is **orbit** (`crowd-motif.svg`, Edge pair: signals counted, never faces). Each as the picture in its empty states. The Edge **Field** composition (14) on the splash, report covers and the empty layout canvas; Grid's sign-in keeps its own hex tiles, where a field would compete. The Edge drift band under email headers.
+2. **BaTech:** Grid's motif is **petak** (`grid-motif.svg`, Edge pair: spaces in a real layout); Crowd's is **orbit** (`crowd-motif.svg`, Edge pair: signals counted, never faces). Each as the picture in its empty states. **Grid has no BaTech on its screens for now** (owner, 11 October 2026): it keeps its own sign-in and hex tiles. Crowd and the other PLExyz products take the Edge **Field** (14) on splash and report covers when they need it.
 3. **The AI sparkle** beside placement recommendations ("Suggested slot").
 4. **Thinking motion:** the shard and the four zones drift out of step while a placement is computed.
 5. **Shared core:** already Poppins and JetBrains Mono. Move status colours to the shared set.
@@ -95,7 +96,7 @@ Grid keeps everything above. AntaraX adds (12):
 
 **Crowd** (the existing app, `haziqfaris/plexyz-crowd`)
 1. The shipped app is branded "AXLE · REKA Operations Console" (`app/app/layout.tsx:18-19`, `app/app/login/page.tsx:44`), with the AXLE icon and "REKA · OPERATIONS" eyebrows. AXLE is internal; customers must never see it. **Most urgent fix in the portfolio.**
-2. Stock framework favicon; no mark. The mark follows the line system: force field and shard over scattered entities.
+2. Stock framework favicon. Its mark is now drawn: `plexyz-crowd-mark.svg`, force field and shard over scattered entities.
 3. Its focus (building occupancy from Wi-Fi) differs from the line brief's (stadiums and event safety). Settle which Crowd is (11).
 
 **Trace**
@@ -105,9 +106,9 @@ Grid keeps everything above. AntaraX adds (12):
 
 1. Crowd: rename the app to PLExyz Crowd and remove AXLE from every screen and the print footer.
 2. Grid: credit lines, the eyebrow, the guide cover.
-3. Grid: petak in empty states, the Edge Field on splash and covers, the drift band in emails; the AI sparkle on suggestions; status colours; the app tile.
+3. Grid: petak in empty states; the AI sparkle on suggestions; status colours; the app tile. No BaTech on Grid's screens for now.
 4. Grid: replace top-bordered stat cards.
-5. Draw the Crowd and Trace marks in the line system; add the PLExyz master mark file.
+5. Put the Crowd and Trace marks in their apps; add the PLExyz master mark file.
 
 ## Shared standards (13)
 

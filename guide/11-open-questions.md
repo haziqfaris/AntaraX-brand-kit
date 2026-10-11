@@ -19,7 +19,6 @@ Decisions the owner has not made yet. Each needs an answer before the related wo
 ### Added 11 October 2026 (brand architecture, 12)
 
 16. **Janka accent and tagline.** Confirm moving the app's primary from REKA orange to Janka's action `#077DA1` with cyan `#0CC4FB` as accent, and the tagline "Track. Forecast. Reorder." (replaces "Unlock", a banned word).
-18. **PLExyz Crowd and Trace marks.** Draw both in the PLExyz system: the force field and shard, with scattered entities on the grid (Crowd) and tags with last-seen points (Trace).
 22. **"PLExyz Edge Gateway".** Rename to "PLExyz Gateway" so it does not collide with the AntaraX Edge family.
 23. **Product heritage in copy.** Which origin facts may customers see (for example, the year PLExyz started, Grid's flagship customer and pricing, Yara's first customer, the pandemic origin of Yara)? Until confirmed, product sheets keep them internal.
 
@@ -35,20 +34,23 @@ Decisions the owner has not made yet. Each needs an answer before the related wo
 
 29. **BaTech guidelines page is behind the kit.** `antarax-ai/docs/design/batech-guidelines.mjs` still gives Loom the verb Orchestrate (AI agents and workflows) and a waitlist, Motion a waitlist, Frame "Live" and Tinara "Beta", and names the product "Frame". Update it to the October decisions (Loom Synthesize, closed pilots, AX Frame) and add the product placements from 12.
 30. **Two sets of family darks and tints.** `tokens.json` family tints and darks are computed (86% and 55%); BaTech's family pairs use their own darks and grounds (for example Ripple dark `#0B6E72` against `#046162`). Both are now in the tokens. Settle on one set.
-31. **Signature moments.** Which of the product moments in 12 to build first (Yara's ripple on Complete, Janka's padi while forecasting, Angka's congkak progress, Tinara's lattice while ranking, Grid's empty layout, Crowd's orbit live indicator, AX Frame's intan record)?
+31. **Signature moments.** Which of the product moments in 12 to build first (Yara's awan larat on Complete, Janka's padi while forecasting, Angka's congkak progress, Tinara's lattice while ranking, Grid's empty layout, Crowd's orbit live indicator, AX Frame's intan record)?
 32. **Elements, charts and loading.** Approve the proposals in 12 (pad end caps, intan markers, drift-band dividers, the awan larat curl under the active tab, motif loaders).
 33. **Yara's "Flow" line** clashes with PLExyz Flow. Rename Yara's line (recommended), or rename the PLExyz concept.
 34. **AX Frame's "Lens"** (AI analysis): if it is the AI assistant, rename it Assist, the shared name; if it is a view of analysis, keep Lens.
 
 ### Added 11 October 2026 (shared product standards, 13)
 
-36. **Plan names.** Confirm the themed ladder in 13: Seed · Terra · Nova · Galaxy · Quantum (Earth, Cosmos, Quantum), always with who it is for, and the mappings in 13's audit. Angka keeps its own names.
-39. **Privacy address.** Personal addresses in AX Frame's and Angka's terms and privacy pages and Angka's Enterprise link move to role addresses. Support is `support@antarax.ai`; create `privacy@antarax.ai` for data and legal requests (recommended), or send those to support too?
+36. **Plan names.** Choose a ladder in 13: A Rise (Seed · Terra · Nova · Galaxy · Quantum, recommended), B Earth, C Cosmos, D Quantum, E Three steps, F Malay, or one ladder per family. Angka keeps its own names.
 
 ### Added 11 October 2026 (product identity system, 14)
 
-40. **Yara's motif.** Gear (roda gigi: every stage turns the next) replaces riak, which repeated the Ripple wave already in Yara's logo. Alternatives in the visual guide: sungai (the river, work flowing stage to stage) and lengan (the arm doing the work). Confirm gear.
+40. **Yara's motif.** Awan larat now (people's work carried into digital), sungai later for automation. Confirm.
 41. **Tinara in garnet.** Tinara moves from plum `#5B2B4A` to garnet `#7A1E3C` with gold, so it no longer sits beside Angka's plum. The marks are rebuilt in garnet. Confirm, or keep plum.
 42. **Website lines and app areas.** The playbook's lines (AX Frame's Atlas, Layers, Orbit, Pulse, Ledger, Lens; Yara's Work, Desk, Crew, Flow, View, Assist) and areas (Janka's, Angka's) appear in no app; each app names its own areas (14). Either the apps adopt the lines, or antarax.ai describes products with the apps' own names. Recommended: the website uses the app names now; lines stay working names until a product is built around them.
 43. **Ask Angka.** It is Angka's AI assistant, so the shared name is Assist. Rename it, or keep "Ask Angka" as Angka's own voice?
-44. **Family compositions and loading.** Approve the six family shapes (Rings, Field, Corners, Thread, Trail, Swell) and the seven loading states with each product's loaders (14).
+44. **Family compositions and loading.** Approve the six family shapes (Rings, Field, Corners, Thread, Trail, Swell) and the loaders, which no longer spin or flip (14).
+45. **Tinara's logo.** Option A (the next one: rising bars), B (the opening: a speech bubble) or C (the signal). `assets/products/tinara/options/`.
+46. **Grid and Janka logos.** Keep each as it is, or take the reconciled option: Grid's zones in their AntaraX equivalents, Janka's J bolder in its own colour (14, Logos).
+47. **The PLExyz line marks.** Approve the marks for Crowd, Trace, Flow, Transit, Site, Ward and Yard (they keep Grid's force field and shard).
+48. **Create the role mailboxes.** `support@`, `sales@` and `privacy@antarax.ai` must exist before the apps point at them.

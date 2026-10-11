@@ -64,20 +64,16 @@ const CONTEXT = {
 const SIDE = { crowd: Z.teal, trace: Z.orange, flow: Z.pink, transit: Z.orange, site: Z.teal, ward: Z.teal, yard: Z.orange };
 for (const [k, ctx] of Object.entries(CONTEXT)) write(`assets/products/plexyz/plexyz-${k}-mark.svg`, mark(ctx, SIDE[k]));
 
-// ---- Tinara logo options (none of them its motif, kerawang) ----
+// ---- Tinara's logo: the signal (owner chose C1 on 11 October 2026) ----
+// One garnet company, two gold arcs and a dot reaching out from it: the company ready to buy. Never its motif (kerawang).
 {
-  const G = '#7A1E3C', GL = '#CB6881', AU = '#D6A84F';
+  const G = '#7A1E3C', AU = '#D6A84F';
   const svg = (b, label) => `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="${label}">${b}</svg>\n`;
-  write('assets/products/tinara/options/tinara-logo-c1-signal.svg', svg(
-    `<circle cx="38" cy="62" r="26" fill="${G}"/><circle cx="38" cy="62" r="9" fill="#FFFFFF"/><path d="M62,34 A30,30 0 0 1 66,46" stroke="${AU}" stroke-width="8" stroke-linecap="round" fill="none"/><path d="M68,20 A46,46 0 0 1 80,46" stroke="${AU}" stroke-width="8" stroke-linecap="round" fill="none"/><circle cx="86" cy="14" r="6" fill="${AU}"/>`, 'Tinara, option C: the signal'));
-  // variations of the signal (the owner's choice): one company, and a gold signal reaching out from it
-  const arcs = (cx, cy, r1, r2, a0, a1, w = 8) => [r1, r2].map((r) => { const p = (a) => [cx + r * Math.cos(a * Math.PI / 180), cy + r * Math.sin(a * Math.PI / 180)].map(f).join(','); return `<path d="M${p(a0)} A${r},${r} 0 0 1 ${p(a1)}" stroke="${AU}" stroke-width="${w}" stroke-linecap="round" fill="none"/>`; }).join('');
-  const V = {
-    'c2-tile': [`<rect x="8" y="44" width="48" height="48" rx="14" fill="${G}"/><circle cx="32" cy="68" r="8" fill="#FFFFFF"/>${arcs(56, 44, 18, 32, -80, -10)}<circle cx="88" cy="12" r="6" fill="${AU}"/>`, 'the company as a tile'],
-    'c3-antenna': [`<path d="M50,92 V46" stroke="${G}" stroke-width="14" stroke-linecap="round"/><circle cx="50" cy="40" r="13" fill="${G}"/><circle cx="50" cy="40" r="5" fill="#FFFFFF"/>${arcs(50, 40, 24, 38, -150, -30)}`, 'a T that broadcasts'],
-    'c4-chosen': [`<circle cx="18" cy="70" r="10" fill="${GL}"/><circle cx="44" cy="70" r="10" fill="${GL}"/><circle cx="74" cy="66" r="16" fill="${G}"/><circle cx="74" cy="66" r="6" fill="#FFFFFF"/>${arcs(74, 66, 26, 40, -110, -30)}`, 'many companies, one signalling'],
-    'c5-ping': [`<circle cx="44" cy="56" r="22" fill="${G}"/><circle cx="44" cy="56" r="8" fill="#FFFFFF"/>${arcs(44, 56, 32, 44, -170, -10)}<circle cx="86" cy="22" r="6" fill="${AU}"/>`, 'a wider ping'],
-    'c6-open': [`<path d="M14,40 A30,30 0 1 1 30,82 L14,92 Z" fill="${G}"/><circle cx="44" cy="58" r="8" fill="#FFFFFF"/>${arcs(44, 58, 34, 46, -70, 10)}`, 'a signal that opens a conversation'],
-  };
-  for (const [k, [b, label]] of Object.entries(V)) write(`assets/products/tinara/options/tinara-logo-${k}.svg`, svg(b, `Tinara, signal option: ${label}`));
+  const signal = (body, core, gold, w = 8) => `<circle cx="38" cy="62" r="26" fill="${body}"/><circle cx="38" cy="62" r="9" fill="${core}"/><path d="M62,34 A30,30 0 0 1 66,46" stroke="${gold}" stroke-width="${w}" stroke-linecap="round" fill="none"/><path d="M68,20 A46,46 0 0 1 80,46" stroke="${gold}" stroke-width="${w}" stroke-linecap="round" fill="none"/><circle cx="86" cy="14" r="6" fill="${gold}"/>`;
+  write('assets/products/tinara/tinara-logo.svg', svg(signal(G, '#FFFFFF', AU), 'Tinara'));
+  // for navy and dark grounds: the company in a light garnet, its core the ground colour
+  write('assets/products/tinara/tinara-logo-light.svg', svg(signal('#F7ACBB', '#071233', AU), 'Tinara'));
+  // 24px and below: one heavier arc and the dot, so the signal still reads
+  write('assets/products/tinara/tinara-logo-small.svg', svg(`<circle cx="38" cy="62" r="28" fill="${G}"/><circle cx="38" cy="62" r="10" fill="#FFFFFF"/><path d="M64,30 A40,40 0 0 1 72,52" stroke="${AU}" stroke-width="12" stroke-linecap="round" fill="none"/><circle cx="84" cy="16" r="9" fill="${AU}"/>`, 'Tinara'));
 }
+

@@ -41,24 +41,22 @@ Never show a personal address, "contact your REKA account manager" unless one is
 
 ## 3 Plans, money, dates and times
 
-**Plans.** One ladder of plan names, drawn from the AntaraX theme of Earth, Cosmos and Quantum (playbook §13). Every product except Angka uses the chosen ladder, taking only the steps it needs, in order. Six ladders to choose from **(owner)**:
+**Plans.** One ladder of plan names, **Rise**, chosen by the owner on 11 October 2026. It is drawn from the AntaraX theme of Earth, Cosmos and Quantum (playbook §13) and climbs from the ground, to the stars, to the quantum. Every product except Angka uses it, taking only the steps it needs, in order:
 
-| Ladder | 1 · free | 2 · one person | 3 · a team | 4 · a business | 5 · enterprise | The idea |
-|---|---|---|---|---|---|---|
-| **A · Rise** (recommended) | Seed | Terra | Nova | Galaxy | Quantum | From the ground, to the stars, to the quantum: all three themes in one climb |
-| **B · Earth** | Seed | Sapling | Grove | Forest | Rainforest | Growth you can picture; the rainforest is Malaysia's own |
-| **C · Cosmos** | Moon | Planet | Star | Galaxy | Universe | Scale, from one body to everything |
-| **D · Quantum** | Bit | Qubit | Circuit | Processor | Quantum | Computing power, from one bit to the whole machine |
-| **E · Three steps** | Terra | | Cosmos | | Quantum | For products with three plans (Grid, Tinara): one word per theme |
-| **F · Malay** (when Bahasa Malaysia reopens) | Benih | Bumi | Bintang | Cakerawala | Kuantum | Seed, earth, star, universe, quantum |
+| Step | Name | Theme | For | Shown as |
+|---|---|---|---|---|
+| 1 | **Seed** | Earth | starting out, free | "Seed · free to start" |
+| 2 | **Terra** | Earth | one person or one site | "Terra · for one person" |
+| 3 | **Nova** | Cosmos | a team | "Nova · for teams" |
+| 4 | **Galaxy** | Cosmos | a business with several teams or sites | "Galaxy · for growing businesses" |
+| 5 | **Quantum** | Quantum | enterprise terms, the most intelligence | "Quantum · for enterprises" |
 
-- **Or by family:** each family takes the ladder of its theme. Ripple and Tide (real work and real numbers) take Earth, Frame and Edge (connections and spaces) take Cosmos, Loom and Motion (intelligence and autonomy) take Quantum. Families then differ, and products within a family match.
 - **Always pair the name with who it is for**, on plan cards, upgrade prompts and invoices ("Nova · for teams"). A themed name alone does not tell a buyer which plan is bigger; the descriptor does.
 - On invoices and receipts: the product then the plan, "Janka Galaxy".
 - A trial is a period on a plan, and a closed pilot is a stage, not a plan. Neither is a plan name.
 - **Angka keeps its own names** (Solo, Business, Team, Enterprise, and Lapis Business): its plans are live with customers and written for owner-run businesses.
 - Names never reuse a line, area, motif or family name. That is why there is no "Orbit" or "Pulse" plan.
-- Prices stay the product's own; names are shared. Mappings in the audit below use ladder A.
+- Prices stay the product's own; names are shared. Mappings are in the audit below.
 
 **Money**
 

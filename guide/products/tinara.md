@@ -17,19 +17,17 @@ Own-mark product in the Tide family. Closed pilot, invite-only. Malaysia-first B
 
 ## Logo: the signal
 
-A logo and a motif are always different (14), so Tinara's logo is no longer the kerawang motif. The owner chose **the signal**: one company, with a gold signal reaching out from it, the one ready to buy. Six variations, in garnet and gold (`assets/products/tinara/options/`, square versions in `assets/logos/`):
+A logo and a motif are always different (14), so Tinara's logo is not the kerawang motif. Tinara's logo is **the signal** (chosen by the owner, 11 October 2026): one garnet company with a gold signal reaching out from it, the company that is ready to buy.
 
-| Variation | File | Idea |
-|---|---|---|
-| C1 · Signal | `tinara-logo-c1-signal.svg` | A garnet company, two gold arcs and a dot |
-| C2 · Tile | `tinara-logo-c2-tile.svg` | The company as a rounded tile, the signal from its corner |
-| C3 · Antenna | `tinara-logo-c3-antenna.svg` | A T that broadcasts |
-| C4 · Chosen | `tinara-logo-c4-chosen.svg` | Several companies, one signalling |
-| C5 · Ping | `tinara-logo-c5-ping.svg` | A wider signal arcing over the company |
-| C6 · Open | `tinara-logo-c6-open.svg` | The company as a speech bubble, opening the conversation |
+| File | Use |
+|---|---|
+| `assets/products/tinara/tinara-logo.svg` | The logo: a garnet company, a white core, two gold arcs and a gold dot. 32px and up |
+| `tinara-logo-small.svg` | 24px and below (favicon, small tiles): one heavier arc and the dot |
+| `tinara-logo-light.svg` | For navy and dark grounds: the company in light garnet |
+| `assets/logos/tinara.svg` | The same logo on the shared square, for tiles and lists |
 
 - Wordmark: "Tinara" in Poppins 600, navy or garnet, beside the logo.
-- Once chosen, draw its small version (24px and below) and a light version for dark grounds.
+- Thinking: the AntaraX sparkle morphs into the signal and back (14).
 
 ## Motif: kerawang
 

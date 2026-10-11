@@ -2,6 +2,11 @@
 
 Owner decisions that shape the brand, newest first. Add to the top; never rewrite history. Earlier strategy changes are in `reference/strategy/` (playbook amendments v0.3–v0.5, RECONCILIATION).
 
+## 11 October 2026 (eleventh review)
+
+- **Tinara's logo is the signal, C1** (owner): a garnet company, two gold arcs and a dot. Its small and light versions are drawn; the other five variations are withdrawn.
+- **Plan names are ladder A, Rise** (owner): Seed · Terra · Nova · Galaxy · Quantum, always with who each is for. Angka keeps its own names. The other ladders (Earth, Cosmos, Quantum, Three steps, Malay, by family) are withdrawn.
+
 ## 11 October 2026 (tenth review)
 
 - **Tinara's logo is the signal** (owner chose option C). Six variations drawn to choose from; options A and B withdrawn.

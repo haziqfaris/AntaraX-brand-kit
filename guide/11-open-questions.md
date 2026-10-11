@@ -40,7 +40,6 @@ Decisions the owner has not made yet. Each needs an answer before the related wo
 
 ### Added 11 October 2026 (shared product standards, 13)
 
-36. **Plan names.** Choose a ladder in 13: A Rise (Seed · Terra · Nova · Galaxy · Quantum, recommended), B Earth, C Cosmos, D Quantum, E Three steps, F Malay, or one ladder per family. Angka keeps its own names.
 
 ### Added 11 October 2026 (product identity system, 14)
 
@@ -49,6 +48,5 @@ Decisions the owner has not made yet. Each needs an answer before the related wo
 42. **Website lines and app areas.** The playbook's lines (AX Frame's Atlas, Layers, Orbit, Pulse, Ledger, Lens; Yara's Work, Desk, Crew, Flow, View, Assist) and areas (Janka's, Angka's) appear in no app; each app names its own areas (14). Either the apps adopt the lines, or antarax.ai describes products with the apps' own names. Recommended: the website uses the app names now; lines stay working names until a product is built around them.
 43. **Ask Angka.** It is Angka's AI assistant, so the shared name is Assist. Rename it, or keep "Ask Angka" as Angka's own voice?
 44. **BaTech sets and loaders.** Approve the seven sets (AntaraX and six families, three variations, three strengths) and the loaders (14).
-45. **Tinara's logo.** Which signal: C1 signal, C2 tile, C3 antenna, C4 chosen, C5 ping or C6 open (`assets/products/tinara/options/`).
 47. **The PLExyz line marks.** Approve the marks for Crowd, Trace, Flow, Transit, Site, Ward and Yard (they keep Grid's force field and shard).
 48. **Create the role mailboxes.** `support@`, `sales@` and `privacy@antarax.ai` must exist before the apps point at them.

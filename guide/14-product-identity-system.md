@@ -33,7 +33,7 @@ Family        what kind of work          Tide: Optimize, "Read what's coming."
 | Motion · Navigate | split bolt | Motion | the A with the Motion icon (drawn) | **bunga cengkih** | Every vehicle, seen from above |
 | Tide · Optimize | crescent with a dot (proposed) | Janka | the J that never closes | **padi** | Reading the harvest before it comes |
 | Tide · Optimize | | Angka | the sheet-stack face | **congkak** | Counting where it all goes |
-| Tide · Optimize | | Tinara | the signal, to choose from six variations | **kerawang** | One path found in the noise |
+| Tide · Optimize | | Tinara | the signal | **kerawang** | One path found in the noise |
 
 What each link gives:
 
@@ -58,7 +58,7 @@ What each link gives:
 | AX Frame | the A and four corners | intan: one world, many faces |
 | Janka | a J still sensing | padi: a harvest read early |
 | Angka | a friendly stack of sheets | congkak: counting where it goes |
-| Tinara | the signal (variations below) | kerawang: one path found in the noise |
+| Tinara | the signal: a company reaching out | kerawang: one path found in the noise |
 | PLExyz Grid | force field, shard, zones | petak: spaces in a layout |
 | PLExyz Crowd | force field, shard, entities | orbit: signals counted |
 | Loom | the A and woven bars | tenun: the weave |
@@ -81,17 +81,10 @@ Every product has a logo, and every logo follows one colour rule so they sit tog
 | Angka | the sheet stack | as is |
 | PLExyz Grid | force field, shard, zones | **zones in their AntaraX equivalents** (owner): teal to sparkle cyan, orange to sparkle orange, pink to Tide pink, lavender to an indigo tint. Mark, wordmark and lockups; the owner's files stay as `*-original.svg` |
 | PLExyz Crowd, Trace, Flow, Transit, Site, Ward, Yard | the PLExyz system: Grid's force field and shard, each with its own spatial context on the floor, in the same AntaraX colours | drawn: `plexyz/plexyz-<product>-mark.svg` |
-| Tinara | **the signal** (owner's choice of idea); six variations to choose from | `tinara/options/` |
+| Tinara | **the signal** (C1, chosen by the owner): a garnet company, two gold arcs and a dot | `tinara/tinara-logo.svg`, with `-small` (24px and below) and `-light` (dark grounds) |
 | PLExyz master mark | the purple circular mark | the file is still missing (11) |
 
-Tinara's signal: one company, with a gold signal reaching out from it, the one ready to buy. Six variations:
-
-- **C1 · Signal.** A garnet company, two gold arcs and a dot.
-- **C2 · Tile.** The company as a rounded tile, the signal from its corner.
-- **C3 · Antenna.** A T that broadcasts: the stem and a node, the arcs above it.
-- **C4 · Chosen.** Several companies in a row, one of them signalling.
-- **C5 · Ping.** A wider signal, arcing over the company.
-- **C6 · Open.** The company as a speech bubble, the signal opening the conversation.
+Tinara's logo is **the signal**: one garnet company with a gold signal reaching out from it, the company that is ready to buy. Chosen by the owner from six variations on 11 October 2026.
 
 ### Every logo on the same square
 

@@ -110,7 +110,7 @@ Each place uses one BaTech strength, keeps text on a solid surface, and appears 
 | Avatar and image placeholders | The family's corak behind initials or an empty image | Quiet or family pair, texture scale |
 | Loading | The motif draws on, lights in sequence or carries a travelling pad; or the mark does its thinking motion. Never spinning or flipping (14) | Full colour, 48 to 72px |
 
-Files: `assets/products/<product>/<product>-motif.svg` (signature motif, family pair) and `assets/families/bands/<family>-quiet-drift.svg` and `-quiet-edge.svg` (Quiet bands), built by `tools/build-product-motifs.mjs` with the BaTech guideline recipes.
+Files: `assets/products/<product>/<product>-motif.svg` (signature motif, family pair; Loom's and Motion's are still to be drawn) and `assets/families/bands/<family>-quiet-drift.svg` and `-quiet-edge.svg` (Quiet bands), built by `tools/build-product-motifs.mjs` with the BaTech guideline recipes.
 
 A logo and a motif are always different (14). Tinara's logo was its motif; it now gets a logo of its own, and kerawang stays its motif.
 

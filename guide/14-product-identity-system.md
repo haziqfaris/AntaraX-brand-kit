@@ -29,7 +29,7 @@ Family        what kind of work          Tide: Optimize, "Read what's coming."
 | Edge · Perceive | open hexagon with a node | PLExyz Grid | force field, shard, four zones | **petak** | Spaces in a real layout |
 | Edge · Perceive | | PLExyz Crowd | force field, shard, scattered entities | **orbit** | Signals counted, never faces |
 | Frame · Understand | four corners | AX Frame | the A with the Frame icon | **intan** | One world, seen many ways |
-| Loom · Orchestrate | woven bars | Loom | the A with the Loom icon (drawn) | **tenun** | The weave itself |
+| Loom · Synthesize | woven bars | Loom | the A with the Loom icon (drawn) | **tenun** | The weave itself |
 | Motion · Navigate | split bolt | Motion | the A with the Motion icon (drawn) | **bunga cengkih** | Every vehicle, seen from above |
 | Tide · Optimize | crescent with a dot | Janka | the J that never closes | **padi** | Reading the harvest before it comes |
 | Tide · Optimize | | Angka | the sheet-stack face | **congkak** | Counting where it all goes |

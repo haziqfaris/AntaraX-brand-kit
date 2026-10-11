@@ -2,6 +2,35 @@
 
 A-mark product, and the one product that shares its family's name (Frame, Understand). Closed pilot while the owner validates it. Live at frame.antarax.ai. A manual-first ledger of every subscription, domain, login and renewal a business runs on.
 
+## Brief
+
+*Who AX Frame serves, what it does and what it may claim. Names, the one-liner and the question are in 02; features and prices live in the product's own repo, whose `CLAUDE.md` holds its product rules. Checked against `haziqfaris/axframe` at `692d57b` (11 October 2026). Open questions are in 11.*
+
+**For whom.** Buyer: the founder, operations lead or agency owner at a small company, startup or agency that has outgrown a spreadsheet of subscriptions. User: whoever looks after the company's domains, subscriptions, logins and renewals.
+
+**The problem.** "What does our business pay for, and when does it renew?" Domains, subscriptions, AI bills and logins pile up faster than anyone can remember, so renewals lapse unnoticed.
+
+**What it does.** AX Frame keeps one record of every domain, subscription, AI tool and login a business runs on. It warns by email before something renews and keeps totals in their own currency. It maps how those services fit together, so the business knows what it depends on.
+
+**What it is not.**
+- A discovery tool: no scanning, no shadow-IT detection, no guessed connections.
+- A payments tool: it never pays, and it never cancels anything with a provider.
+- A password store: it records where a password is kept, never the password.
+
+**Claims.**
+- May say:
+  - Email reminders before a renewal is charged (built).
+  - Totals by currency, never silently converted (product rule).
+  - Pointers, never secrets (product rule, enforced in the app and the database).
+  - Lookups, imports and AI suggestions wait for a person to approve them (product rule).
+- Never say: that it discovers or scans anything; customers, usage numbers or savings; the name of an AI model; enterprise IT asset management; payments, consolidated billing or e-signing; future stages as if they were live.
+
+**How it is sold.** Closed pilot, run as part of REKA's Managed AI service. Call to action: Request pilot access. Inside the app there is a capped free plan and one paid plan, priced by currency. **Today the app's own landing page signs people up directly and shows prices**, which does not match a closed pilot (11).
+
+**Lines and areas.** In the app: Insight, Health, Projects, Estate (Map, Ledger, Stacks & Systems), Money (Spend, Savings, Renewals, Vendors & Groups) and Connect your AI. On the website: Atlas, Layers, Orbit, Pulse, Ledger, Lens (working names; only Ledger is a real screen).
+
+**Source of truth.** `haziqfaris/axframe`: `CLAUDE.md` (product rules and non-goals), `src/features/shell/pageMeta.ts` (screens). Pricing: `src/lib/billing/stripe.ts`, `src/lib/limits.ts`.
+
 ## Name
 
 - The product is **AX Frame**, everywhere: in the app, in emails, on its own site and beside other products. "Frame" alone is too common: Nutanix sells a cloud desktop product listed simply as "Frame", and Frame.io and Framer are other well-known software names, so "Frame" alone is hard to find in search and weak as a mark.

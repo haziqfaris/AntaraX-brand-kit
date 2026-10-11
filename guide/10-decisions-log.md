@@ -4,6 +4,8 @@ Owner decisions that shape the brand, newest first. Add to the top; never rewrit
 
 ## 11 October 2026 (fifteenth review)
 
+- **Product briefs** (owner): every product sheet opens with a short brief (who it is for, the problem, what it does, what it is not, what it may and may never claim, how it is sold, its lines and where the facts live). Briefs change rarely; features and prices stay in each product's repository. Loom and Motion get full sheets. Briefs were checked against each repository; what could not be confirmed is in 11 (questions 8 to 17).
+- **Facts corrected from the briefs:** in 02, Yara's line Flow is Relay and its office screens are English only; Grid checks placements against the site's rules (it does not rank by retrieval distance) and its bookings and movements are paid; Crowd is designed to count from Wi-Fi and runs on simulated signals today; AX Frame's Ledger is every asset in one grid; Janka's and Angka's area lists are website working names; Tinara's brief names buyer roles, not people. In 14 and the visual guide, Loom's verb is Synthesize. In 09, every product acts in its own colour.
 - **Role addresses move to `go.antarax.ai`** (owner): `support@go.antarax.ai`, `sales@go.antarax.ai` and `privacy@go.antarax.ai`, as Google Groups. `go.antarax.ai` already receives mail into Google (it is where `insta@go.antarax.ai` lands, and AX Frame's renewal emails come from `no-reply@go.antarax.ai`); `antarax.ai` only sends, through Resend. Product senders stay `<Product> <product@antarax.ai>`, with Reply-To set to support. This replaces the `@antarax.ai` role addresses agreed earlier the same day.
 
 ## 11 October 2026 (fourteenth review)

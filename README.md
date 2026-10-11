@@ -48,6 +48,7 @@ Nine products, every one "by AntaraX". Tap a card for its brand sheet.
 | Designing anything | [04 Logo](guide/04-logo.md), [05 Colour and type](guide/05-colour-and-type.md), [06 BaTech illustration](guide/06-batech-illustration.md), [07 Interface rules](guide/07-interface-rules.md) |
 | Building the website | [08 Website, SEO and conversion](guide/08-website-seo-conversion.md), plus `tokens/` |
 | Building a product UI | [05 Colour and type](guide/05-colour-and-type.md), [09 Product app alignment](guide/09-product-app-alignment.md), your product's sheet in [products/](guide/products/README.md), `tokens/` |
+| Describing a product: who it is for, what it does, what it may claim | The **Brief** at the top of its sheet in [products/](guide/products/README.md) |
 | Building a product's words, emails, addresses, plans, formats, help or exports | [13 Shared product standards](guide/13-shared-product-standards.md) and its audit |
 | How a product's family, logo, motif, icons, BaTech, loaders, palette and sub-products fit together | [14 Product identity system](guide/14-product-identity-system.md) |
 | Working on a product's logo, name or credit line | [12 Brand architecture](guide/12-brand-architecture.md), [products/](guide/products/README.md), [the visual guide](guide/product-brands.html) |

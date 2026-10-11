@@ -2,6 +2,35 @@
 
 Own-mark product in the Tide family. Main product. Live at janka.antarax.ai. AI inventory forecasting for manufacturers.
 
+## Brief
+
+*Who Janka serves, what it does and what it may claim. Names, the one-liner and the question are in 02; features and prices live in the product's own repo. Checked against `haziqfaris/janka-inventory-intelligence` at `6e16390` (11 October 2026). Open questions are in 11.*
+
+**For whom.** Buyer: an operations, supply-chain or finance lead at a manufacturer whose stock records are patchy. User: managers who run forecasts and decide orders; workers who receive, move and count stock, often on a phone.
+
+**The problem.** "What should we reorder, and how much, before we run out?" Spreadsheet stock figures drift, and one forecasting method rarely fits every item.
+
+**What it does.** Janka works out stock on hand from every recorded movement. It sorts each item by how it is used, forecasts with a method that fits, and says when and how much to reorder, with how far to trust each figure. It drafts purchase orders for a person to approve and sends nothing to a supplier.
+
+**What it is not.**
+- Accounting or ERP software, and it has no integrations.
+- A purchasing system: its drafts are advice.
+- Live RFID hardware: PLExyz Trace runs on simulated readers today.
+
+**Claims.**
+- May say:
+  - The forecasting method is matched to each item's demand pattern (built).
+  - Every forecast shows how far it can be trusted (built).
+  - AI review is advisory; people decide (built).
+  - Reorder figures are in ringgit (built).
+- Never say: customers or outcomes, prices, integrations, certifications, a native app, or "unlock".
+
+**How it is sold.** Main product. Call to action: Book a demo. No prices are set and billing is not live. The app's plans (Free, Growth, Enterprise) move to the Rise names (13).
+
+**Lines and areas.** In the app: Dashboard, Stock, Scan & tag, Plan, Watch and Organisation. **PLExyz Trace** (RFID tags, zones, last seen) sits inside Scan & tag on every plan. The website's Inventory, Forecast, Replenish, Risk and Insights are working names.
+
+**Source of truth.** `haziqfaris/janka-inventory-intelligence`: `docs/guide/parts/` (what it does, as built), `src/layout/navConfig.ts`, `src/lib/features.ts`, `src/lib/plan.ts`. There is no pricing file yet.
+
 ## Name
 
 - Write **Janka**. The drawn wordmark is in capitals; in text it is always "Janka".

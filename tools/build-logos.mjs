@@ -2,8 +2,9 @@
 //   - Loom and Motion A-marks, in the same construction as Yara's and AX Frame's;
 //   - the PLExyz line marks (Crowd, Trace, Flow, Transit, Site, Ward, Yard): the force field and shard
 //     from PLExyz Grid's official mark, with each product's spatial context on the floor;
-//   - three Tinara logo options, none of them its motif;
-//   - reconciled options for PLExyz Grid (zones in their AntaraX equivalents) and Janka (a bolder J in its own colour).
+//   - Tinara logo options, none of them its motif (the owner chose the signal idea; variations of it);
+//   - PLExyz Grid in AntaraX colours (owner, 11 October 2026): the owner's files stay as *-original.svg and the
+//     zone colours move to their AntaraX equivalents in the mark, wordmark and lockups.
 //   node tools/build-logos.mjs
 import fs from 'node:fs';
 
@@ -28,6 +29,9 @@ const f = (n) => +n.toFixed(1);
 }
 
 // ---- PLExyz line marks ----
+// Grid's zones in their AntaraX equivalents: teal to sparkle cyan, orange to sparkle orange, pink to Tide pink, lavender to an indigo tint
+const AXC = (t) => t.replaceAll('#4FD7D1', '#0CC4FB').replaceAll('#FD9001', '#F47B3D').replaceAll('#FD4F85', '#E9579D').replaceAll('#CBB6FA', '#B9B8F5');
+for (const n of ['mark', 'wordmark', 'lockup-horizontal', 'lockup-centered']) write(`assets/products/plexyz/plexyz-grid-${n}.svg`, AXC(read(`assets/products/plexyz/plexyz-grid-${n}-original.svg`)));
 const grid = read('assets/products/plexyz/plexyz-grid-mark.svg');
 const paths = [...grid.matchAll(/<path [^>]*\/>/g)].map((m) => m[0]);
 const FIELD = paths[0], SHARD = paths.slice(9).join('');
@@ -37,7 +41,7 @@ const pt = (u, v) => P(u, v).map(f).join(',');
 const quad = (u0, v0, u1, v1) => `M${pt(u0, v0)} L${pt(u1, v0)} L${pt(u1, v1)} L${pt(u0, v1)} Z`;
 const dot = (u, v, r, fill, stroke = '#2C09B2') => { const [x, y] = P(u, v); return `<ellipse cx="${f(x)}" cy="${f(y)}" rx="${r}" ry="${f(r * 0.62)}" fill="${fill}" stroke="${stroke}" stroke-width="6"/>`; };
 const line = (pts, stroke, w = 14, extra = '') => `<path d="M${pts.map(([u, v]) => pt(u, v)).join(' L')}" fill="none" stroke="${stroke}" stroke-width="${w}" stroke-linecap="round" stroke-linejoin="round" ${extra}/>`;
-const Z = { lav: '#CBB6FA', teal: '#4FD7D1', orange: '#FD9001', pink: '#FD4F85', ink: '#2C09B2', floor: '#EFE9FE' };
+const Z = { lav: '#B9B8F5', teal: '#0CC4FB', orange: '#F47B3D', pink: '#E9579D', ink: '#2C09B2', floor: '#EFEFFD' };
 const slab = (c) => `<path d="M4,620 L390,865 L773,620 L773,670 L390,915 L4,670 Z" fill="${c}" stroke="${Z.ink}" stroke-width="7" stroke-linejoin="round"/><path d="M390,865 L390,915" stroke="${Z.ink}" stroke-width="7"/>`;
 const floor = `<path d="M${pt(0, 0)} L${pt(1, 0)} L${pt(1, 1)} L${pt(0, 1)} Z" fill="${Z.floor}" stroke="${Z.ink}" stroke-width="7" stroke-linejoin="round"/>`;
 const mark = (ctx, sideColour) => `<svg viewBox="-40 -40 860 1000" xmlns="http://www.w3.org/2000/svg">${FIELD}${slab(sideColour)}${floor}${ctx}${SHARD}</svg>\n`;
@@ -60,24 +64,20 @@ const CONTEXT = {
 const SIDE = { crowd: Z.teal, trace: Z.orange, flow: Z.pink, transit: Z.orange, site: Z.teal, ward: Z.teal, yard: Z.orange };
 for (const [k, ctx] of Object.entries(CONTEXT)) write(`assets/products/plexyz/plexyz-${k}-mark.svg`, mark(ctx, SIDE[k]));
 
-// ---- Reconciled options ----
-// Grid: the same mark, its zones in their AntaraX equivalents (Grid keeps its own until the owner chooses)
-write('assets/products/plexyz/options/plexyz-grid-mark-antarax-colours.svg', grid.replaceAll('#4FD7D1', '#0CC4FB').replaceAll('#FD9001', '#F47B3D').replaceAll('#FD4F85', '#E9579D').replaceAll('#CBB6FA', '#B9B8F5'));
-// Janka: a bolder J in Janka's own colour, so its weight sits with the flat marks; ticks and spark unchanged
-{
-  const j = read('assets/products/janka/janka-mark.svg');
-  let n = 0;
-  write('assets/products/janka/options/janka-mark-bold.svg', j.replace(/<path d="([^"]+)" fill="#0B1B4F"\/>/g, (m, d) => (++n === 1 ? `<path d="${d}" fill="#077DA1" stroke="#077DA1" stroke-width="7" stroke-linejoin="round"/>` : m)).replace(/fill="#0CC4FB"\/>/, 'fill="#0CC4FB" stroke="#0CC4FB" stroke-width="5" stroke-linejoin="round"/>'));
-}
-
 // ---- Tinara logo options (none of them its motif, kerawang) ----
 {
   const G = '#7A1E3C', GL = '#CB6881', AU = '#D6A84F';
   const svg = (b, label) => `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="${label}">${b}</svg>\n`;
-  write('assets/products/tinara/options/tinara-logo-a-rank.svg', svg(
-    `<rect x="14" y="52" width="18" height="34" rx="9" fill="${GL}"/><rect x="41" y="38" width="18" height="48" rx="9" fill="${GL}"/><rect x="68" y="24" width="18" height="62" rx="9" fill="${G}"/><circle cx="77" cy="12" r="8" fill="${AU}"/>`, 'Tinara, option A: the next one'));
-  write('assets/products/tinara/options/tinara-logo-b-opening.svg', svg(
-    `<path d="M22,12 H78 A14,14 0 0 1 92,26 V62 A14,14 0 0 1 78,76 H40 L22,92 V76 A14,14 0 0 1 8,62 V26 A14,14 0 0 1 22,12 Z" fill="${G}"/><path d="M30,32 H62 M46,32 V60" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round"/><circle cx="72" cy="32" r="6.5" fill="${AU}"/>`, 'Tinara, option B: the opening line'));
-  write('assets/products/tinara/options/tinara-logo-c-signal.svg', svg(
+  write('assets/products/tinara/options/tinara-logo-c1-signal.svg', svg(
     `<circle cx="38" cy="62" r="26" fill="${G}"/><circle cx="38" cy="62" r="9" fill="#FFFFFF"/><path d="M62,34 A30,30 0 0 1 66,46" stroke="${AU}" stroke-width="8" stroke-linecap="round" fill="none"/><path d="M68,20 A46,46 0 0 1 80,46" stroke="${AU}" stroke-width="8" stroke-linecap="round" fill="none"/><circle cx="86" cy="14" r="6" fill="${AU}"/>`, 'Tinara, option C: the signal'));
+  // variations of the signal (the owner's choice): one company, and a gold signal reaching out from it
+  const arcs = (cx, cy, r1, r2, a0, a1, w = 8) => [r1, r2].map((r) => { const p = (a) => [cx + r * Math.cos(a * Math.PI / 180), cy + r * Math.sin(a * Math.PI / 180)].map(f).join(','); return `<path d="M${p(a0)} A${r},${r} 0 0 1 ${p(a1)}" stroke="${AU}" stroke-width="${w}" stroke-linecap="round" fill="none"/>`; }).join('');
+  const V = {
+    'c2-tile': [`<rect x="8" y="44" width="48" height="48" rx="14" fill="${G}"/><circle cx="32" cy="68" r="8" fill="#FFFFFF"/>${arcs(56, 44, 18, 32, -80, -10)}<circle cx="88" cy="12" r="6" fill="${AU}"/>`, 'the company as a tile'],
+    'c3-antenna': [`<path d="M50,92 V46" stroke="${G}" stroke-width="14" stroke-linecap="round"/><circle cx="50" cy="40" r="13" fill="${G}"/><circle cx="50" cy="40" r="5" fill="#FFFFFF"/>${arcs(50, 40, 24, 38, -150, -30)}`, 'a T that broadcasts'],
+    'c4-chosen': [`<circle cx="18" cy="70" r="10" fill="${GL}"/><circle cx="44" cy="70" r="10" fill="${GL}"/><circle cx="74" cy="66" r="16" fill="${G}"/><circle cx="74" cy="66" r="6" fill="#FFFFFF"/>${arcs(74, 66, 26, 40, -110, -30)}`, 'many companies, one signalling'],
+    'c5-ping': [`<circle cx="44" cy="56" r="22" fill="${G}"/><circle cx="44" cy="56" r="8" fill="#FFFFFF"/>${arcs(44, 56, 32, 44, -170, -10)}<circle cx="86" cy="22" r="6" fill="${AU}"/>`, 'a wider ping'],
+    'c6-open': [`<path d="M14,40 A30,30 0 1 1 30,82 L14,92 Z" fill="${G}"/><circle cx="44" cy="58" r="8" fill="#FFFFFF"/>${arcs(44, 58, 34, 46, -70, 10)}`, 'a signal that opens a conversation'],
+  };
+  for (const [k, [b, label]] of Object.entries(V)) write(`assets/products/tinara/options/tinara-logo-${k}.svg`, svg(b, `Tinara, signal option: ${label}`));
 }

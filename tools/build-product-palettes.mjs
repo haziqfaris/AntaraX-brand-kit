@@ -42,7 +42,7 @@ const PRODUCTS = {
   grid: { name: 'PLExyz Grid', anchor: '#2C09B2', secondary: '#0CC4FB', character: 'Shard violet with the four zones in AntaraX colours: spatial, vivid, exact', ground: '#F7F7FA' },
   crowd: { name: 'PLExyz Crowd', anchor: '#6040CC', secondary: '#0CC4FB', character: 'PLExyz purple with a zone teal, until Crowd has its own theme' },
   angka: { name: 'Angka', anchor: '#6B3F6B', secondary: '#E9906B', character: 'Warm plum with Lapis peach on a paper ground: friendly money', ground: '#FAF7F2' },
-  tinara: { name: 'Tinara', anchor: '#7A1E3C', secondary: '#D6A84F', character: 'Garnet with gold: discreet, valuable, considered (proposed)' },
+  tinara: { name: 'Tinara', anchor: '#7A1E3C', secondary: '#D6A84F', character: 'Garnet with gold: discreet, valuable, considered' },
   loom: { name: 'Loom', anchor: '#4904B3', secondary: '#0B1B4F', amark: true, character: 'Loom violet' },
   motion: { name: 'Motion', anchor: '#FC5D04', secondary: '#0B1B4F', amark: true, character: 'Motion orange' },
 };

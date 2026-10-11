@@ -82,7 +82,7 @@ Every product has a logo, and every logo follows one colour rule so they sit tog
 | PLExyz Grid | force field, shard, zones | **zones in their AntaraX equivalents** (owner): teal to sparkle cyan, orange to sparkle orange, pink to Tide pink, lavender to an indigo tint. Mark, wordmark and lockups; the owner's files stay as `*-original.svg` |
 | PLExyz Crowd, Trace, Flow, Transit, Site, Ward, Yard | the PLExyz system: Grid's force field and shard, each with its own spatial context on the floor, in the same AntaraX colours | approved by the owner: `plexyz/plexyz-<product>-mark.svg` |
 | Tinara | **the signal** (C1, chosen by the owner): a garnet company, two gold arcs and a dot | `tinara/tinara-logo.svg`, with `-small` (24px and below) and `-light` (dark grounds) |
-| PLExyz master mark | the purple circular mark | the file is still missing (11) |
+| PLExyz master mark | proposed: the force field and shard on an empty floor (the space and the entity, no behaviour), on a violet disc and bare | `plexyz/plexyz-master-disc.svg`, `-master-mark.svg`; unless the owner has the original (11) |
 
 Tinara's logo is **the signal**: one garnet company with a gold signal reaching out from it, the company that is ready to buy. Chosen by the owner from six variations on 11 October 2026.
 
@@ -219,13 +219,13 @@ Each product has a full palette, built from its own colour by `tools/build-produ
 | PLExyz Grid | shard violet with the four zone colours | `#2C09B2` | `#2C09B2` | zone teal `#4FD7D1` | aqua, orange, magenta, gold (or the four zones) |
 | PLExyz Crowd | PLExyz purple until Crowd has its own theme | `#6040CC` | `#6040CC` | zone teal | orange, aqua, blue, magenta |
 | Angka | warm plum with Lapis peach, on paper | `#6B3F6B` | `#6B3F6B` | peach `#E9906B` | blue, orange, aqua, violet |
-| Tinara | **garnet** with gold: discreet, valuable (proposed) | `#7A1E3C` | `#7A1E3C` | gold `#D6A84F` | blue, orange, aqua, violet |
+| Tinara | **garnet** with gold: discreet, valuable | `#7A1E3C` | `#7A1E3C` | gold `#D6A84F` | blue, orange, aqua, violet |
 | Loom, Motion | the family colour | `#4904B3`, `#FC5D04` | `#4904B3`, `#BE4402` | navy | see tokens |
 
 What changed and why:
 
 - **Yara acts in teal, `#098284`,** the first step of Ripple teal that passes 4.5:1 with white text, not AntaraX blue.
-- **Tinara moves from plum to garnet** (proposed). Its plum `#5B2B4A` sat within a few steps of Angka's `#6B3F6B`, and the two are in the same family. Garnet keeps Tinara's heritage maroon, sits closer to Tide's pink, and gold reads as a highlight on it. Its new logo options are drawn in garnet and gold.
+- **Tinara moves from plum to garnet** (confirmed by the owner). Its plum `#5B2B4A` sat within a few steps of Angka's `#6B3F6B`, and the two are in the same family. Garnet keeps Tinara's heritage maroon, sits closer to Tide's pink, and gold reads as a highlight on it. Its new logo options are drawn in garnet and gold.
 - **AX Frame's secondary is halo indigo, not orange.** The app's orange `#FB9800` is REKA's colour and almost the warn colour, so a highlight read as a warning.
 - **Janka's action is `#077DA1`**, the first step of its cyan that passes 4.5:1 with white text.
 - **PLExyz Crowd gets PLExyz purple** until its theme is drawn.

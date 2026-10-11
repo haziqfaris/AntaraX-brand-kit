@@ -2,6 +2,13 @@
 
 Owner decisions that shape the brand, newest first. Add to the top; never rewrite history. Earlier strategy changes are in `reference/strategy/` (playbook amendments v0.3–v0.5, RECONCILIATION).
 
+## 11 October 2026 (thirteenth review)
+
+- **Yara's motif is awan larat** (owner). Sungai stays reserved for Yara's automation screens.
+- **Tinara stays in garnet** with gold (owner).
+- **Role mailboxes agreed** (owner): `support@`, `sales@` and `privacy@antarax.ai`, to be created before the apps point at them.
+- **A PLExyz master mark proposed** (the owner asked what it was): the force field and shard on an empty floor, on a violet disc and bare. Recommendations written for every other open question (11).
+
 ## 11 October 2026 (twelfth review)
 
 - **BaTech sets approved** (owner): AntaraX and the six families, each as panel, band and spot, in colour, quiet and white.

@@ -63,6 +63,15 @@ const CONTEXT = {
 };
 const SIDE = { crowd: Z.teal, trace: Z.orange, flow: Z.pink, transit: Z.orange, site: Z.teal, ward: Z.teal, yard: Z.orange };
 for (const [k, ctx] of Object.entries(CONTEXT)) write(`assets/products/plexyz/plexyz-${k}-mark.svg`, mark(ctx, SIDE[k]));
+// PLExyz master mark (proposed): the line's own mark, for PLExyz as a whole. "Same space. Same entity. Different
+// behaviour": the master shows the space and the entity with no behaviour, so the floor is empty. Two forms: the
+// mark on a violet disc (the round mark in the line overview), and the bare mark.
+{
+  const bare = mark('', Z.lav);
+  write('assets/products/plexyz/plexyz-master-mark.svg', bare);
+  const inner = bare.replace(/^<svg[^>]*>/, '').replace(/<\/svg>\s*$/, '');
+  write('assets/products/plexyz/plexyz-master-disc.svg', `<svg viewBox="-150 -110 1080 1080" xmlns="http://www.w3.org/2000/svg"><circle cx="390" cy="430" r="530" fill="${Z.ink}"/><g transform="translate(390 430) scale(.78) translate(-390 -460)">${inner.replaceAll('stroke="#2C09B2"', 'stroke="#FFFFFF"').replace('fill="#EFEFFD"', 'fill="#3A1FC4"')}</g></svg>\n`);
+}
 
 // ---- Tinara's logo: the signal (owner chose C1 on 11 October 2026) ----
 // One garnet company, two gold arcs and a dot reaching out from it: the company ready to buy. Never its motif (kerawang).

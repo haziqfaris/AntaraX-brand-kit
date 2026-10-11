@@ -48,7 +48,7 @@ A product is own-mark when it arrived with an identity people already recognise.
 | PLExyz Grid | Force field, shard and zone grid; the four zone colours; the multicoloured "Grid" wordmark; the hex-tile sign-in |
 | Janka | The J that never closes; the signal ticks; its splash and thinking animations |
 | Angka | The sheet-stack face; paper ground; plum and Lapis peach |
-| Tinara | Garnet and gold (proposed, 14); a new logo to choose (14) |
+| Tinara | Garnet and gold; the signal logo (14) |
 | AX Frame | The breathing cube halo |
 | Yara | The A with the Ripple wave; teal |
 
@@ -272,7 +272,7 @@ Own accent, for the primary action, selection, charts and identity moments, with
 | Janka | cyan `#0CC4FB` | `#DDF7FE` | `#077DA1` | `#077DA1` |
 | PLExyz Grid | violet `#2C09B2`; zones `#4FD7D1` `#FD9001` `#FD4F85` `#CBB6FA` for data | `#E1DDF4` | `#180562` | `#2C09B2` |
 | Angka | plum `#6B3F6B` | `#EAE4EA` | `#3B233B` | `#6B3F6B` |
-| Tinara | garnet `#7A1E3C` (proposed); gold `#D6A84F` for highlights | `#FEF4F6` | `#511A2A` | `#7A1E3C` |
+| Tinara | garnet `#7A1E3C`; gold `#D6A84F` for highlights | `#FEF4F6` | `#511A2A` | `#7A1E3C` |
 | Loom, Motion | family colour | see tokens | see tokens | the family colour's action step |
 
 Full palettes (11-step scales, roles, chart sets, dark mode) are in 14 and `tokens/product-palettes.json`. On antarax.ai the family colour leads (05). Inside a product's own app, the product's colours lead; BaTech motifs inside it keep their family pair.

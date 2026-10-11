@@ -35,7 +35,7 @@ A logo and a motif are always different (14), so Tinara's logo is not the kerawa
 
 ## Colour
 
-**Garnet `#7A1E3C` leads (proposed), with gold `#D6A84F`.** Tinara's plum `#5B2B4A` sat beside Angka's plum `#6B3F6B` in the same family; garnet keeps the heritage maroon, sits nearer Tide's pink, and carries gold well. Full palette in 14.
+**Garnet `#7A1E3C` leads, with gold `#D6A84F`** (confirmed by the owner, 11 October 2026). Tinara's plum `#5B2B4A` sat beside Angka's plum `#6B3F6B` in the same family; garnet keeps the heritage maroon, sits nearer Tide's pink, and carries gold well. Full palette in 14.
 
 | Role | Value |
 |---|---|

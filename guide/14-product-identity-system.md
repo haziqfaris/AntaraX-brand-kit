@@ -80,7 +80,7 @@ Every product has a logo, and every logo follows one colour rule so they sit tog
 | Janka | the J | kept as it is (owner) |
 | Angka | the sheet stack | as is |
 | PLExyz Grid | force field, shard, zones | **zones in their AntaraX equivalents** (owner): teal to sparkle cyan, orange to sparkle orange, pink to Tide pink, lavender to an indigo tint. Mark, wordmark and lockups; the owner's files stay as `*-original.svg` |
-| PLExyz Crowd, Trace, Flow, Transit, Site, Ward, Yard | the PLExyz system: Grid's force field and shard, each with its own spatial context on the floor, in the same AntaraX colours | drawn: `plexyz/plexyz-<product>-mark.svg` |
+| PLExyz Crowd, Trace, Flow, Transit, Site, Ward, Yard | the PLExyz system: Grid's force field and shard, each with its own spatial context on the floor, in the same AntaraX colours | approved by the owner: `plexyz/plexyz-<product>-mark.svg` |
 | Tinara | **the signal** (C1, chosen by the owner): a garnet company, two gold arcs and a dot | `tinara/tinara-logo.svg`, with `-small` (24px and below) and `-light` (dark grounds) |
 | PLExyz master mark | the purple circular mark | the file is still missing (11) |
 
@@ -108,6 +108,8 @@ Two consequences:
 - **Interface icons never carry motifs or family shapes.** A family is shown by its icon, its colour pair and its BaTech composition, never by restyling the controls people use.
 
 ## BaTech by family
+
+*Approved by the owner on 11 October 2026.*
 
 Each family's BaTech takes **its own shape**, so a glance at a sign-in screen or a report cover tells you which family you are in. AntaraX has a set of its own, for the brand's own pages and for anything that speaks for every product. Every set follows the BaTech rules (06, 12):
 
@@ -173,7 +175,7 @@ Every product has the same seven loading states, so people always know what kind
 | **Progress** | a task with a known end (an import, a month-end match) | a bar in the product's colour ending in a pad, the count in words, and the product's own measure | full width |
 | **Splash** | the app opening (installed app, first sign-in) | the logo and the credit line; the family composition draws on once | full screen |
 
-**Nothing spins and nothing flips.** Loaders move the way the product works: they draw on, light in sequence, travel along a path, grow, gather and breathe. Each product's loaders come from its own logo and motif.
+*Loaders approved by the owner on 11 October 2026.* **Nothing spins and nothing flips.** Loaders move the way the product works: they draw on, light in sequence, travel along a path, grow, gather and breathe. Each product's loaders come from its own logo and motif.
 
 **Thinking is the same in every product:** the AntaraX sparkle, alive, which every few seconds morphs into the product's logo, holds, and morphs back. The sparkle says "AntaraX intelligence is at work"; the logo says whose. The other loaders are each product's own:
 
@@ -303,7 +305,7 @@ Inside a product, parts are named in one of the kinds below (naming rules in 12)
 | Lapisan Automations | add-on | not built, not on sale | Recipes, schedules and connectors across products |
 | Working areas (website) | areas | working names | Capture, Match, Books, Forecast, Assist |
 
-**Ask Angka** is Angka's AI assistant, so by the shared-names rule it should be called **Assist** (11). **Ledger** names a screen in both AX Frame (every asset) and Angka (every transaction). That is allowed: both are the product's full record of its own things. It must never be used for anything else.
+**Ask Angka** stays as it is (owner): it is easier for a business owner to understand than Assist, so Angka is the one exception to the shared name. **Ledger** names a screen in both AX Frame (every asset) and Angka (every transaction). That is allowed: both are the product's full record of its own things. It must never be used for anything else.
 
 ### Tinara
 

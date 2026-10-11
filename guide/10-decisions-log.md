@@ -2,6 +2,13 @@
 
 Owner decisions that shape the brand, newest first. Add to the top; never rewrite history. Earlier strategy changes are in `reference/strategy/` (playbook amendments v0.3–v0.5, RECONCILIATION).
 
+## 11 October 2026 (twelfth review)
+
+- **BaTech sets approved** (owner): AntaraX and the six families, each as panel, band and spot, in colour, quiet and white.
+- **Loaders approved** (owner): seven states, nothing spins or flips, and AI thinking is the sparkle morphing into the product's logo.
+- **PLExyz line marks approved** (owner): Crowd, Trace, Flow, Transit, Site, Ward and Yard.
+- **Ask Angka stays** (owner): easier to understand than Assist, so Angka is the one exception to the shared name.
+
 ## 11 October 2026 (eleventh review)
 
 - **Tinara's logo is the signal, C1** (owner): a garnet company, two gold arcs and a dot. Its small and light versions are drawn; the other five variations are withdrawn.

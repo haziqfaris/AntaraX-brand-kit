@@ -46,7 +46,7 @@ Every PLExyz mark is the same three parts. Only the middle one changes per produ
 | **Spatial context** | What the product reads | Grid: a 2×2 zone grid. Flow: a path across the grid. Transit: a route between points. Crowd: scattered entities on the grid. Site: stacked layers. Ward: walled rooms. Yard: parking lanes. Trace: a tag and its last-seen trail |
 
 - **The PLExyz master mark** (the purple circular mark in the line overview) is not in any repository yet. Add its file here when it is final.
-- **Every product's mark is drawn** (11 October 2026, `tools/build-logos.mjs`): `plexyz-crowd-mark.svg`, `plexyz-trace-mark.svg`, `plexyz-flow-mark.svg`, `plexyz-transit-mark.svg`, `plexyz-site-mark.svg`, `plexyz-ward-mark.svg`, `plexyz-yard-mark.svg`. Each keeps Grid's force field and shard and puts its own spatial context on the floor. Concepts stay concepts: a mark is not a launch.
+- **Every product's mark is drawn and approved** (11 October 2026, `tools/build-logos.mjs`): `plexyz-crowd-mark.svg`, `plexyz-trace-mark.svg`, `plexyz-flow-mark.svg`, `plexyz-transit-mark.svg`, `plexyz-site-mark.svg`, `plexyz-ward-mark.svg`, `plexyz-yard-mark.svg`. Each keeps Grid's force field and shard and puts its own spatial context on the floor. Concepts stay concepts: a mark is not a launch.
 - **Line purple:** `#6040CC` (line brief), with shard accents `#865ACE`, `#6040CC`, `#281B4F`.
 
 ### PLExyz Grid mark

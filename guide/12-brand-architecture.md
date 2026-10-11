@@ -202,7 +202,7 @@ How to write them:
 - **Inside the product**, the line or area alone: "Atlas", "Forecast".
 - **Outside the product** (antarax.ai, sales, docs), the product comes first: "Atlas in AX Frame" in running text; "AX Frame · Atlas" where space is short. Lines are ways of using one product, not products, so never "AX Atlas", "AntaraX Atlas" or "Frame Atlas" as a product name.
 - **One word, capitalised as a name.** No all caps, no prefixes, no version numbers in the name.
-- **Shared names mean the same thing everywhere.** **Assist** is the AI assistant in every product, always shown with the sparkle. **Forecast** is a product's forecasting. A product that adds an AI assistant calls it Assist.
+- **Shared names mean the same thing everywhere.** **Assist** is the AI assistant in every product, always shown with the sparkle. One exception: Angka keeps **Ask Angka**, because a business owner understands "ask" at once (owner, 11 October 2026). **Forecast** is a product's forecasting. A product that adds an AI assistant calls it Assist.
 - **Never reuse** a family name (Ripple, Edge, Frame, Loom, Motion, Tide), a product or PLExyz product name, another product's line for a different thing, or an internal name (AXLE).
 - **Malay words** may name a line only when the meaning is the job and it is explained once, as Lapis and Lapisan ("layer") are. Motif names (awan larat, padi, intan) stay design vocabulary, not feature names.
 - **Working names** stay marked as working until the owner confirms them (Yara View and Assist today).

@@ -19,7 +19,7 @@ One word for each shared idea, in every product. Product-specific things keep th
 | Paying | **Plan** and **Billing** | tier, package, subscription level |
 | REKA people helping inside a customer's organisation | **REKA support** | AXLE, REKA admin, platform admin |
 | Getting in and out | **Sign in**, **Sign out** | Log in, Login, Logout, Sign on |
-| The AI assistant | **Assist**, with the sparkle (12) | Copilot, bot, a new name per product |
+| The AI assistant | **Assist**, with the sparkle (12). Angka keeps **Ask Angka** (owner) | Copilot, bot, a new name per product |
 | Settings | **Settings** | Preferences, Config, Admin |
 
 ## 2 Addresses and contacts

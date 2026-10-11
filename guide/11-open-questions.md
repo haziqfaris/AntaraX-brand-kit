@@ -34,7 +34,7 @@ Decisions the owner has not made yet. Each needs an answer before the related wo
 29. **BaTech guidelines page is behind the kit.** `antarax-ai/docs/design/batech-guidelines.mjs` still gives Loom the verb Orchestrate (AI agents and workflows) and a waitlist, Motion a waitlist, Frame "Live" and Tinara "Beta", and names the product "Frame". Update it to the October decisions (Loom Synthesize, closed pilots, AX Frame) and add the product placements from 12.
 30. **Two sets of family darks and tints.** `tokens.json` family tints and darks are computed (86% and 55%); BaTech's family pairs use their own darks and grounds (for example Ripple dark `#0B6E72` against `#046162`). Both are now in the tokens. Settle on one set.
 31. **Signature moments.** Which of the product moments in 12 to build first (Yara's awan larat on Complete, Janka's padi while forecasting, Angka's congkak progress, Tinara's lattice while ranking, Grid's empty layout, Crowd's orbit live indicator, AX Frame's intan record)?
-32. **Elements, charts and loading.** Approve the proposals in 12 (pad end caps, intan markers, drift-band dividers, the awan larat curl under the active tab, motif loaders).
+32. **Elements and charts.** Approve the proposals in 12 (loading is approved, 14) (pad end caps, intan markers, drift-band dividers, the awan larat curl under the active tab, motif loaders).
 33. **Yara's "Flow" line** clashes with PLExyz Flow. Rename Yara's line (recommended), or rename the PLExyz concept.
 34. **AX Frame's "Lens"** (AI analysis): if it is the AI assistant, rename it Assist, the shared name; if it is a view of analysis, keep Lens.
 
@@ -46,7 +46,4 @@ Decisions the owner has not made yet. Each needs an answer before the related wo
 40. **Yara's motif.** Awan larat now (people's work carried into digital), sungai later for automation. Confirm.
 41. **Tinara in garnet.** Tinara moves from plum `#5B2B4A` to garnet `#7A1E3C` with gold, so it no longer sits beside Angka's plum. The marks are rebuilt in garnet. Confirm, or keep plum.
 42. **Website lines and app areas.** The playbook's lines (AX Frame's Atlas, Layers, Orbit, Pulse, Ledger, Lens; Yara's Work, Desk, Crew, Flow, View, Assist) and areas (Janka's, Angka's) appear in no app; each app names its own areas (14). Either the apps adopt the lines, or antarax.ai describes products with the apps' own names. Recommended: the website uses the app names now; lines stay working names until a product is built around them.
-43. **Ask Angka.** It is Angka's AI assistant, so the shared name is Assist. Rename it, or keep "Ask Angka" as Angka's own voice?
-44. **BaTech sets and loaders.** Approve the seven sets (AntaraX and six families, three variations, three strengths) and the loaders (14).
-47. **The PLExyz line marks.** Approve the marks for Crowd, Trace, Flow, Transit, Site, Ward and Yard (they keep Grid's force field and shard).
 48. **Create the role mailboxes.** `support@`, `sales@` and `privacy@antarax.ai` must exist before the apps point at them.

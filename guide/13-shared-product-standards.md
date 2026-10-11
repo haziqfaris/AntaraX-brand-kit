@@ -31,14 +31,30 @@ One word for each shared idea, in every product. Product-specific things keep th
 | Developers | `api.antarax.ai` and `lapisan.antarax.ai` |
 | Product's public page | antarax.ai under `/products/` or `/pilots/` (02) |
 | Product email sender | `<Product> <product@antarax.ai>`, for example `Janka <janka@antarax.ai>`. Mail sent on a customer's behalf: `<Organisation> via <Product> <product@antarax.ai>` (Angka's pattern). Replies go to support |
-| Support | **One address for every product (owner).** Recommended `support@antarax.ai`, answered by the team at REKA. Wording, everywhere: "Need help? Email support@antarax.ai and the team will reply." Do not promise a reply time until one is kept |
-| Sales and demos | The antarax.ai form (it emails holla@reka.re today) |
+| Support | **`support@antarax.ai` for every product**, answered by the team at REKA. Wording, everywhere: "Need help? Email support@antarax.ai and the team will reply." Do not promise a reply time until one is kept |
+| Sales and demos | The antarax.ai form (it emails holla@reka.re today). An Enterprise "Talk to us" link goes to `support@antarax.ai` with the product and plan in the subject until a sales address exists |
+| Privacy and legal requests | A role address on the terms and privacy pages; recommended `privacy@antarax.ai` **(owner)** |
 
-Never show a personal address, "contact your REKA account manager" unless one is really assigned, or a platform address.
+Never show a personal address, "contact your REKA account manager" unless one is really assigned, or a platform address. A personal address in a product sends customers' mail to one person's inbox: it is lost when that person is away or leaves, it ties the product to a person rather than the company, and it puts that address in front of anyone who scrapes the page. Internal settings, such as AXLE's list of super-admins and test data, are not customer-facing and may keep named people.
 
 ## 3 Plans, money, dates and times
 
-**Plans (owner).** One ladder of plan names across products, each product using the steps it needs, in this order: **Free · Solo · Team · Business · Enterprise**. A closed pilot is a stage, not a plan ("Pilot" is not a plan name). Prices are the product's own; names are shared. Suggested mappings are in the audit below.
+**Plans.** One ladder of plan names, drawn from the AntaraX theme of Earth, Cosmos and Quantum (playbook §13). The ladder climbs from the ground to the cosmos to the quantum: from one person getting started, to teams and connected organisations, to the deepest intelligence. Every product except Angka uses it, taking only the steps it needs, in this order:
+
+| Step | Name | Theme | For | Says |
+|---|---|---|---|---|
+| 1 | **Seed** | Earth | starting out, free | "Seed · free to start" |
+| 2 | **Terra** | Earth | one person or one site | "Terra · for one person" |
+| 3 | **Nova** | Cosmos | a team | "Nova · for teams" |
+| 4 | **Galaxy** | Cosmos | a business with several teams or sites | "Galaxy · for growing businesses" |
+| 5 | **Quantum** | Quantum | enterprise terms, the most intelligence | "Quantum · for enterprises" |
+
+- **Always pair the name with who it is for**, on plan cards, upgrade prompts and invoices ("Nova · for teams"). A themed name alone does not tell a buyer which plan is bigger; the descriptor does.
+- On invoices and receipts: the product then the plan, "Janka Galaxy".
+- A trial is a period on a plan, and a closed pilot is a stage, not a plan. Neither is a plan name.
+- **Angka keeps its own names** (Solo, Business, Team, Enterprise, and Lapis Business): its plans are live with customers and written for owner-run businesses.
+- Names never reuse a line, area, motif or family name. That is why there is no "Orbit" plan: Orbit is an AX Frame line and a BaTech motif.
+- Prices stay the product's own; names are shared. Mappings are in the audit below.
 
 **Money**
 
@@ -55,7 +71,8 @@ Never show a personal address, "contact your REKA account manager" unless one is
 | On screen | `11 Oct 2026` |
 | In sentences and emails | `11 October 2026` |
 | Exports, file names, APIs | `2026-10-11` |
-| Times | 24-hour, `14:30` **(owner: or 12-hour, `2:30 pm`)** |
+| Times on screen and in exports | 24-hour, `14:30` |
+| Times in sentences (emails, notifications) | 12-hour, `2:30 pm`: "Your report is ready, sent at 2:30 pm MYT." |
 | Relative | "5 min ago" up to a day, then the date |
 | Time zone | The organisation's time zone, default Malaysia (`Asia/Kuala_Lumpur`). Write `MYT` after a time in emails and exports |
 
@@ -95,7 +112,7 @@ AXLE is REKA's internal console for running every product. Customers never see i
 ## 7 Languages
 
 - **British English** in every product (03): organisation, colour, cancelled.
-- **Bahasa Malaysia (owner):** recommended for every screen used by front-line staff (Yara's workers today), and for sign-in, emails and help in every product. Formats (dates, money) do not change with the language.
+- **Bahasa Malaysia is parked** (owner, 11 October 2026). Products are English only for now. What already exists in Malay stays as it is (Yara's worker screens and its Malay help answers); nothing new is translated until the owner reopens it. When it reopens, start with front-line screens. Formats (dates, money) do not change with the language.
 - Translations are written, not machine output left unchecked.
 
 ## 8 Guides and help
@@ -159,7 +176,7 @@ No product yet has an automated accessibility check, a shared plan name, or the 
 **Janka**
 - Words: roles Admin, Manager, Worker; add Owner, and map Manager to Admin or keep it as a product role.
 - Addresses: `hello@reka.re` on sign-in and access screens (`src/auth/LoginScreen.tsx:105`, `src/layout/RoleGuard.tsx:49`) → the support line; set a sender.
-- Plans and money: Growth and Enterprise → the ladder (suggested Growth → Business); `RM 12,345` → `RM12,345` (`src/lib/format.ts`); pin dates to the organisation's time zone (they follow the browser today).
+- Plans and money: Growth and Enterprise → Galaxy and Quantum; `RM 12,345` → `RM12,345` (`src/lib/format.ts`); pin dates to the organisation's time zone (they follow the browser today).
 - Emails: none of its own; password reset uses the auth provider's default. Move it to the shared template.
 - Copy: "Upgrade to unlock this page." uses a banned word (03) → "Upgrade to use this page."
 - AXLE: title "AXLE — REKA Admin" (`axle.html:7`) → "AXLE · Janka". Help: add `/help`. Access: focus ring in AntaraX blue, not orange; an axe check.
@@ -167,7 +184,7 @@ No product yet has an automated accessibility check, a shared plan name, or the 
 **PLExyz Grid**
 - Words: "organization" and "workspace" both mean the customer; use organisation (and workspace for sites, if needed). Roles Superadmin → Owner, Administrator → Admin, Viewer stays; Operations Manager, Supervisor, Operator, Customs Officer and Tenant Portal are product roles; drop the short forms ("Ops Mgr").
 - Addresses: `plexyz-grid.pages.dev` and `plexyz-grid-axle.pages.dev` → `grid.antarax.ai` and AXLE; "Contact your REKA account manager" → the support line.
-- Plans and money: Free, Trial, Standard, Advanced, Intelligent → the ladder (a trial is a period, not a plan; suggested Standard → Team, Advanced → Business, Intelligent → Enterprise); `RM 1,234` → `RM1,234`; one date format; wire the time-zone setting (it has no effect today).
+- Plans and money: Free, Trial, Standard, Advanced, Intelligent → Seed, then Nova, Galaxy, Quantum (a trial is a period, not a plan; Standard → Nova, Advanced → Galaxy, Intelligent → Quantum); `RM 1,234` → `RM1,234`; one date format; wire the time-zone setting (it has no effect today).
 - Emails: none; invites and password resets happen on screen. Add invite and reset emails on the template.
 - AXLE: "PLExyz Grid AXLE — Platform Admin", light and violet → the AXLE look. Languages: one spelling (British). Help: move the guide to `/guide` and add `/help`. Exports: every export is disabled; build CSV and PDF to 9. Access: focus outlines are removed on inputs (`apps/grid/src/index.css:81-84`); add reduced motion and an axe check.
 
@@ -180,21 +197,21 @@ No product yet has an automated accessibility check, a shared plan name, or the 
 - Languages: US spelling → British. Help: none. Access: dark-only (add light first), no reduced motion though a shimmer loops forever (`globals.css:39`), no tests.
 
 **AX Frame**
-- Addresses: app and AXLE on `vercel.app` (`antarax-frame.vercel.app`, `axle-antarax.vercel.app`) → `frame.antarax.ai` and AXLE; sender `notifications@antaraxframe.com` → `AX Frame <frame@antarax.ai>`; a personal address on the legal pages (`lib/legal/processors.ts:155`) → the support or privacy address.
-- Money: `$` → `US$` (`src/lib/money.ts:14-16`; the landing page already writes US$). Plans: Free and Paid → the ladder (suggested Paid → Team).
+- Addresses: app and AXLE on `vercel.app` (`antarax-frame.vercel.app`, `axle-antarax.vercel.app`) → `frame.antarax.ai` and AXLE; sender `notifications@antaraxframe.com` → `AX Frame <frame@antarax.ai>`; a personal address as the legal contact (`lib/legal/processors.ts:155`, shown on the terms and privacy pages) → the privacy address.
+- Money: `$` → `US$` (`src/lib/money.ts:14-16`; the landing page already writes US$). Plans: Free and Paid → Seed and Nova.
 - Emails: the digest frame is the closest to the standard; the invite (`app/api/invites/route.ts:59`) and admin broadcast are bare HTML → the template; rename "AntaraX Frame" to "AX Frame" in emails.
 - Words: the account is called a workspace; on settings and billing, call it the organisation. AXLE: "REKA operator console" → "AXLE · AX Frame". Copy: an em dash in "Couldn't revoke that connection — it's still active." Help: add `/guide` and `/help` (an in-app FAQ exists). Access: add an axe check.
 
 **Angka**
-- Addresses: sender `hello@angka.antarax.ai` → `angka@antarax.ai` (keep "{Business} via Angka"); inquiries to `holla@reka.re` and Enterprise to a personal address (`lib/billing/catalog.ts:115`) → the support line.
+- Addresses: sender `hello@angka.antarax.ai` → `angka@antarax.ai` (keep "{Business} via Angka"); inquiries to `holla@reka.re`, and a personal address on the Enterprise link (`lib/billing/catalog.ts:115`) and on the terms and privacy pages (`app/(legal)/terms/page.tsx:75`, `privacy/page.tsx:138`) → `support@antarax.ai` and the privacy address.
 - Emails: the shared shell fits; change the footer credit "Angka, by REKA Inisiatif Sdn Bhd." (`lib/mail/invite-mail.ts:49`) to the credit and legal lines.
-- Plans: Pilot, Solo, Business, Team → the ladder in order (Free, Solo, Team, Business); Lapis Free and Business fit. Money: `USD 1,200.00` → `US$1,200.00`.
+- Plans: Angka keeps its own names (Solo, Business, Team, Enterprise); "Pilot" is a stage, not a plan. Money: `USD 1,200.00` → `US$1,200.00`.
 - Copy: "This page tripped over itself" (`app/error.tsx:41`) → say what failed and what to do.
 - AXLE: shares the app's plum and a theme toggle → the AXLE look. Languages: the app is English only (the marketing site has Malay). Access: add an axe check.
 
 **Tinara**
 - Addresses: `workers.dev` hosts → `tinara.antarax.ai`; no support contact or sender.
-- Plans and money: Explorer, Scout, Operator → the ladder (suggested Free, Team, Business); plan currency defaults to USD and the admin mock shows `$49` → the organisation's currency, `US$` for dollars.
+- Plans and money: Explorer, Scout, Operator → Seed, Nova, Galaxy; plan currency defaults to USD and the admin mock shows `$49` → the organisation's currency, `US$` for dollars.
 - Emails: the auth provider's defaults → the template.
 - Words: "organization" → organisation; roles shown as ADMIN and USER → Owner, Admin, Member, Viewer (the database already has them).
 - AXLE: "Tinara Admin" inside the app → AXLE. Languages: US spelling → British. Help: none. Exports: `Tinara_CRM_Import.csv`-style names and the "Tinara Intelligence Engine by REKA" footer (`ReportMemoView.tsx:773`) → 9. Access: no reduced motion (animations always on), few focus styles, no tests.

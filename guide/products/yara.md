@@ -43,7 +43,7 @@ Poppins and JetBrains Mono. Aligned. (The mono font's variable is still named `p
 
 ## The AntaraX layer in Yara
 
-Yara is A-mark and already carries most of the layer. BaTech: **riak** (`yara-motif.svg`, Ripple pair) as the picture in empty states, and the Ripple Quiet band (`assets/families/bands/ripple-quiet-edge.svg`; `-quiet-drift.svg` for email headers) along the bottom of the sign-in panel and under email headers. The AI sparkle (Yara's own `design-system/brand/spark-x.svg` is the source of `assets/ai/spark-x.svg`) beside AI intake and suggestions.
+Yara is A-mark and already carries most of the layer. BaTech: **gear** (`yara-motif.svg`, Ripple pair; proposed in place of riak, which repeated the Ripple wave in Yara's logo, 14) as the picture in empty states; the Ripple **Rings** composition (`assets/families/compositions/ripple-rings.svg`) in a corner of the sign-in panel and splash; the Ripple drift band under email headers. The AI sparkle (Yara's own `design-system/brand/spark-x.svg` is the source of `assets/ai/spark-x.svg`) beside AI intake and suggestions.
 
 ## Gaps in the app today
 
@@ -56,7 +56,7 @@ Yara is A-mark and already carries most of the layer. BaTech: **riak** (`yara-mo
 
 1. Fix the byline separator and spelling.
 2. Replace the local product registry with a link to `guide/products/`.
-3. Add the sign-in trust line, riak in empty states and the Ripple Quiet edge band on sign-in, and the AI sparkle on AI suggestions.
+3. Add the sign-in trust line, gear in empty states and the Ripple Rings on sign-in, and the AI sparkle on AI suggestions.
 
 ## Shared standards (13)
 

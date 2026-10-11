@@ -17,7 +17,7 @@ Own-mark product in the Tide family. Closed pilot, invite-only. Malaysia-first B
 
 ## Mark: the kerawang motif
 
-**Tinara's logo is the BaTech kerawang motif itself**: the official drawing of a carved lattice tile with one path stepping through it, in Tinara's plum and gold.
+**Tinara's logo is the BaTech kerawang motif itself**: the official drawing of a carved lattice tile with one path stepping through it, in Tinara's garnet and gold (garnet proposed, 14; the marks were plum until 11 October).
 
 **What kerawang is.** Ukiran kerawang is the pierced woodcarving set into Malay houses above windows and doors: a carved lattice that lets light and air through while screening the view. In BaTech it is the motif for "one path found in the noise".
 
@@ -25,31 +25,31 @@ Own-mark product in the Tide family. Closed pilot, invite-only. Malaysia-first B
 
 | File | Use |
 |---|---|
-| `assets/products/tinara/tinara-mark.svg` | The mark: plum tile, white openings, gold path. 32px and up |
+| `assets/products/tinara/tinara-mark.svg` | The mark: garnet tile, white openings, gold path. 32px and up |
 | `tinara-mark-small.svg` | The same construction with a 3×3 lattice, for 24px and below (favicon, small tiles) |
 | `tinara-mark-light.svg`, `tinara-mark-small-light.svg` | Light tile, for navy and dark grounds |
 | `tinara-empty-motif.svg` | Bunga raya, the Tide family flower, in the Tide pair: Tinara's empty-state picture (the logo is not repeated as a motif) |
 
 - Built by `tools/build-product-motifs.mjs` from the official drawing; never redraw it by hand.
-- Wordmark: "Tinara" in Poppins 600, navy or plum, beside the mark.
+- Wordmark: "Tinara" in Poppins 600, navy or garnet, beside the mark.
 - Thinking motion: the openings light in turn until the path settles.
 
 ## Colour
 
-Plum `#5B2B4A` leads, with gold `#D6A84F` for highlights and amethyst `#8B4E87` as a secondary. The gold keeps Tinara apart from Angka's plum.
+**Garnet `#7A1E3C` leads (proposed), with gold `#D6A84F`.** Tinara's plum `#5B2B4A` sat beside Angka's plum `#6B3F6B` in the same family; garnet keeps the heritage maroon, sits nearer Tide's pink, and carries gold well. Full palette in 14.
 
 | Role | Value |
 |---|---|
-| Primary action | plum `#5B2B4A`, tint `#E8E1E6`, dark `#321829` |
-| Highlight | gold `#D6A84F` (never as text on white; with plum text) |
-| Secondary | amethyst `#8B4E87` |
+| Primary action | garnet `#7A1E3C`, hover `#511A2A`, tint `#FEF4F6` |
+| Highlight | gold `#D6A84F` (never as text on white; with garnet text) |
+| Secondary | gold, as above; amethyst is retired |
 | REKA label | REKA orange `#FB9800`: remove |
 | Dark surfaces | `#1A0515`, `#0F172A` today; move to the dark product ground `#071233` |
 | Status | shared core |
 
 ## The AntaraX layer in Tinara
 
-The credit line; BaTech: **bunga raya** (`tinara-empty-motif.svg`, Tide pair) as the picture in empty states (the kerawang is the logo), and the Tide Quiet edge band along the bottom of the sign-in panel (in place of the blur orbs) and under report headers; **the AI sparkle** beside every ranking and brief; intan eyebrows in plum; the app tile; the legal footer.
+The credit line; BaTech: **bunga raya** (`tinara-empty-motif.svg`, Tide pair) as the picture in empty states (the kerawang is the logo), and the Tide **Swell** composition along the bottom of the sign-in panel (in place of the blur orbs) and under report headers; **the AI sparkle** beside every ranking and brief; intan eyebrows in plum; the app tile; the legal footer.
 
 ## Type
 

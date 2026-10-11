@@ -2,6 +2,27 @@
 
 Owner decisions that shape the brand, newest first. Add to the top; never rewrite history. Earlier strategy changes are in `reference/strategy/` (playbook amendments v0.3–v0.5, RECONCILIATION).
 
+## 11 October 2026 (eighth review)
+
+- **Support is `support@antarax.ai`** for every product (owner).
+- **Plan names come from Earth, Cosmos and Quantum** (owner). The ladder proposed in 13 is Seed · Terra · Nova · Galaxy · Quantum, always shown with who it is for; the names wait on confirmation (11). **Angka keeps its current plan names.**
+- **Bahasa Malaysia is parked** (owner): English only for now; existing Malay stays.
+- **Times:** 24-hour on screens and in exports, 12-hour in sentences. Recommended by the kit at the owner's request, in the same pattern as dates (short on screen, long in prose).
+- **Product identity system (14)**, asked for by the owner. It covers:
+  - the chain from family to sub-product;
+  - logo and motif kept different (Tinara the one exception);
+  - three kinds of icon: family and product icons differ, interface icons are shared;
+  - a BaTech shape per family;
+  - seven loading states with each product's own loaders;
+  - full product palettes with validated chart sets;
+  - every product's built sub-products.
+- **Proposed in 14, waiting on the owner (11):**
+  - Yara's motif becomes gear (riak repeated its logo);
+  - Tinara moves to garnet;
+  - Tide's crescent icon;
+  - the family compositions and loaders.
+- **Found:** the playbook's lines and areas appear in no app. 14 lists each app's real areas.
+
 ## 11 October 2026 (seventh review)
 
 - **Shared product standards (13)**, asked for in full by the owner: one set of words (organisation, member, Owner · Admin · Member · Viewer, Sign in), addresses (`<product>.antarax.ai`, `axle.antarax.ai`, `<product>@antarax.ai`, one support line), plans, money, dates and times, one email template (the Lapisan mailer), copy patterns, one AXLE, British English and Bahasa Malaysia, `/guide` and `/help`, report and export formats, and an accessibility baseline. Every app audited against them. Open choices: 35 to 39.

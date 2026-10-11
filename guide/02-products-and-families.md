@@ -56,7 +56,7 @@ Use these names, one-liners and questions exactly.
 
 | Family | Verb | Motto | Products | Colour | Signature motif |
 |---|---|---|---|---|---|
-| **Ripple** | Operate | "Work that moves." | Yara | `#08B0B3` | riak (one tap, spreading) |
+| **Ripple** | Operate | "Work that moves." | Yara | `#08B0B3` | riak (one tap, spreading); Yara's own motif is gear (14) |
 | **Edge** | Perceive | "Sense the real world." | PLExyz Grid, PLExyz Crowd | `#12B76A` | petak (Grid), orbit (Crowd) |
 | **Frame** | Understand | "Know what you depend on." | AX Frame | `#074AF8` | intan |
 | **Loom** | Synthesize | "Weave it together." | Loom | `#4904B3` | tenun |

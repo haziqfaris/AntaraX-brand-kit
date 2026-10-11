@@ -2,9 +2,9 @@
 
 Decisions the owner has not made yet. Each needs an answer before the related work can be called final. When one is answered, move it to the decisions log.
 
-1. **Tide icon.** The master logo file has icons for Motion, Ripple, Edge, Frame and Loom, not Tide. The bunga raya motif stands in. Draw a Tide icon in the same construction (separated flat shapes)?
+1. **Tide icon.** A crescent with the family's dot is drawn as a proposal (`assets/families/tide-icon.svg`, 14): the moon turns the tide, as Tide reads what is coming. Approve it, or ask for another idea, before it goes into the master logo file.
 2. **Seth on light grounds.** The REKA character guide says Seth appears only on dark backgrounds (`#07090f`), while the owner's rule puts a Seth batik cameo in every AntaraX illustration, most of them on light cloth. Proposal: the batik cameo is a motif, not the character render, so it is exempt; the full character stays dark-only. Confirm.
-3. **Frame app colours.** Converge Frame's primary `#0062FB` to AntaraX blue `#0459F7`? Keep or drop its orange accent `#FB9800` (REKA's brand orange)? *Recommendation (11 October): converge and drop the orange; Frame is an A-mark product and orange is REKA's (12, products/frame.md).*
+3. **Frame app colours.** Converge Frame's primary `#0062FB` to AntaraX blue `#0459F7`? Keep or drop its orange accent `#FB9800` (REKA's brand orange)? *Recommendation (11 October): converge and drop the orange. The palette in 14 does this: Frame blue as the accent, AntaraX blue for actions, halo indigo `#524FE9` in place of the orange.*
 5. **Sparkle colour values.** Recorded in `tokens.json` on 11 October from the master file layers (purple `#524FE9`, orange `#F47B3D`, cyan `#0CC4FB`, emerald `#12B76A`, indigo `#7171EA`), because the restyle rule in 12 uses them. Confirm they are final.
 6. **Edge sliver.** Nudge Edge's highlight sliver (about 19% larger than source) before Edge art goes to print?
 7. **WhatsApp.** Add a WhatsApp click-to-chat button for Malaysian SME buyers? Which number, and who answers?
@@ -18,7 +18,7 @@ Decisions the owner has not made yet. Each needs an answer before the related wo
 
 ### Added 11 October 2026 (brand architecture, 12)
 
-16. **Janka accent and tagline.** Confirm moving the app's primary from REKA orange to Janka dark `#076C8A` with cyan `#0CC4FB` as accent, and the tagline "Track. Forecast. Reorder." (replaces "Unlock", a banned word).
+16. **Janka accent and tagline.** Confirm moving the app's primary from REKA orange to Janka's action `#077DA1` with cyan `#0CC4FB` as accent, and the tagline "Track. Forecast. Reorder." (replaces "Unlock", a banned word).
 18. **PLExyz Crowd and Trace marks.** Draw both in the PLExyz system: the force field and shard, with scattered entities on the grid (Crowd) and tags with last-seen points (Trace).
 22. **"PLExyz Edge Gateway".** Rename to "PLExyz Gateway" so it does not collide with the AntaraX Edge family.
 23. **Product heritage in copy.** Which origin facts may customers see (for example, the year PLExyz started, Grid's flagship customer and pricing, Yara's first customer, the pandemic origin of Yara)? Until confirmed, product sheets keep them internal.
@@ -42,9 +42,13 @@ Decisions the owner has not made yet. Each needs an answer before the related wo
 
 ### Added 11 October 2026 (shared product standards, 13)
 
-35. **Support address.** One address for every product; recommended `support@antarax.ai`, answered by the team at REKA. Confirm the address and who answers, and create the mailbox.
-36. **Plan names.** Confirm the ladder Free · Solo · Team · Business · Enterprise and the suggested mappings in 13 (Janka Growth → Business; Grid Standard, Advanced, Intelligent → Team, Business, Enterprise; AX Frame Paid → Team; Tinara Explorer, Scout, Operator → Free, Team, Business; Angka in ladder order).
-37. **Bahasa Malaysia.** Confirm the scope: every front-line screen (Yara's workers today), plus sign-in, emails and help in every product.
-38. **Time format.** 24-hour (`14:30`, recommended for operations products) or 12-hour (`2:30 pm`).
-39. **Personal addresses in products.** AX Frame's legal pages and Angka's Enterprise link show a personal REKA address; confirm they move to the support or privacy address.
+36. **Plan names.** Confirm the themed ladder in 13: Seed · Terra · Nova · Galaxy · Quantum (Earth, Cosmos, Quantum), always with who it is for, and the mappings in 13's audit. Angka keeps its own names.
+39. **Privacy address.** Personal addresses in AX Frame's and Angka's terms and privacy pages and Angka's Enterprise link move to role addresses. Support is `support@antarax.ai`; create `privacy@antarax.ai` for data and legal requests (recommended), or send those to support too?
 
+### Added 11 October 2026 (product identity system, 14)
+
+40. **Yara's motif.** Gear (roda gigi: every stage turns the next) replaces riak, which repeated the Ripple wave already in Yara's logo. Alternatives in the visual guide: sungai (the river, work flowing stage to stage) and lengan (the arm doing the work). Confirm gear.
+41. **Tinara in garnet.** Tinara moves from plum `#5B2B4A` to garnet `#7A1E3C` with gold, so it no longer sits beside Angka's plum. The marks are rebuilt in garnet. Confirm, or keep plum.
+42. **Website lines and app areas.** The playbook's lines (AX Frame's Atlas, Layers, Orbit, Pulse, Ledger, Lens; Yara's Work, Desk, Crew, Flow, View, Assist) and areas (Janka's, Angka's) appear in no app; each app names its own areas (14). Either the apps adopt the lines, or antarax.ai describes products with the apps' own names. Recommended: the website uses the app names now; lines stay working names until a product is built around them.
+43. **Ask Angka.** It is Angka's AI assistant, so the shared name is Assist. Rename it, or keep "Ask Angka" as Angka's own voice?
+44. **Family compositions and loading.** Approve the six family shapes (Rings, Field, Corners, Thread, Trail, Swell) and the seven loading states with each product's loaders (14).

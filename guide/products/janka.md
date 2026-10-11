@@ -35,8 +35,8 @@ Own-mark product in the Tide family. Main product. Live at janka.antarax.ai. AI 
 
 | Role | Today | Target |
 |---|---|---|
-| Primary action | REKA orange `#FB9800` | Janka dark `#076C8A` |
-| Accent | cyan `#06B6D4` | Janka cyan `#0CC4FB`, tint `#DDF7FE`, dark `#076C8A` |
+| Primary action | REKA orange `#FB9800` | Janka action `#077DA1` |
+| Accent | cyan `#06B6D4` | Janka cyan `#0CC4FB`, tint `#EDF9FF`; text in cyan uses `#077DA1` (full palette in 14) |
 | Status | `#22C55E` / `#EAB308` / `#EF4444` | shared core |
 | Neutrals | `#1A1A1A` text | shared core (navy, body) |
 
@@ -64,13 +64,13 @@ Poppins and JetBrains Mono (`src/main.tsx:10-15`). Aligned. The AXLE console loa
 
 ## The AntaraX layer in Janka
 
-Janka keeps its J, ticks, splash and thinking animations. AntaraX adds (12): the credit line; BaTech: **padi** (`janka-motif.svg`, Tide pair) as the picture in empty states, and the Tide Quiet edge band along the bottom of the sign-in panel (in place of the dark gradient) and under email headers; **the AI sparkle** beside every forecast and drafted order; intan eyebrows in Janka cyan; the app tile; the legal footer.
+Janka keeps its J, ticks, splash and thinking animations. AntaraX adds (12): the credit line; BaTech: **padi** (`janka-motif.svg`, Tide pair) as the picture in empty states, and the Tide **Swell** composition along the bottom of the sign-in panel (in place of the dark gradient) and under email headers; **the AI sparkle** beside every forecast and drafted order; intan eyebrows in Janka cyan; the app tile; the legal footer.
 
 ## Steps to converge
 
 1. Tagline and credit lines.
 2. Swap the logo colours in `src/brand/colors.ts` (three values: ink `#0B1B4F`, orange `#F47B3D`, cyan `#0CC4FB`).
-3. Move the primary colour to Janka dark and the status colours to the shared core.
+3. Move the primary colour to `#077DA1` and the status colours to the shared core.
 4. Sign-in panel to navy; add the app tile and manifest.
 
 ## Shared standards (13)

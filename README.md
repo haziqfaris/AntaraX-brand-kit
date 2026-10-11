@@ -13,6 +13,7 @@ AntaraX is the AI product line of **REKA Inisiatif Sdn Bhd** (Kuala Lumpur, Mala
 | Building the website | [08 Website, SEO and conversion](guide/08-website-seo-conversion.md), plus `tokens/` |
 | Building a product UI | [05 Colour and type](guide/05-colour-and-type.md), [09 Product app alignment](guide/09-product-app-alignment.md), your product's sheet in [products/](guide/products/README.md), `tokens/` |
 | Building a product's words, emails, addresses, plans, formats, help or exports | [13 Shared product standards](guide/13-shared-product-standards.md) and its audit |
+| How a product's family, logo, motif, icons, BaTech, loaders, palette and sub-products fit together | [14 Product identity system](guide/14-product-identity-system.md) |
 | Working on a product's logo, name or credit line | [12 Brand architecture](guide/12-brand-architecture.md), [products/](guide/products/README.md), [the visual guide](guide/product-brands.html) |
 | Checking what was decided, and when | [10 Decisions log](guide/10-decisions-log.md), [11 Open questions](guide/11-open-questions.md) |
 

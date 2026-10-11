@@ -48,9 +48,9 @@ A product is own-mark when it arrived with an identity people already recognise.
 | PLExyz Grid | Force field, shard and zone grid; the four zone colours; the multicoloured "Grid" wordmark; the hex-tile sign-in |
 | Janka | The J that never closes; the signal ticks; its splash and thinking animations |
 | Angka | The sheet-stack face; paper ground; plum and Lapis peach |
-| Tinara | Plum and gold; the kerawang mark |
+| Tinara | Garnet and gold (proposed, 14); the kerawang mark |
 | AX Frame | The breathing cube halo |
-| Yara | The A with riak; teal |
+| Yara | The A with the Ripple wave; teal |
 
 **The AntaraX layer is the same in every product**, and small enough that it never changes how the product looks:
 
@@ -73,7 +73,7 @@ Each product has one signature motif, from its family's niche. The wording is Ba
 
 | Family | Product | Motif | Built from | What it says |
 |---|---|---|---|---|
-| Ripple | Yara | **riak** (ripple) | one tap, spreading | One tap, spreading |
+| Ripple | Yara | **gear** (roda gigi), proposed in place of riak (14) | a mechanism | Every stage turns the next |
 | Tide | Janka | **padi** (paddy) | signal bars | Reading the harvest before it comes |
 | Tide | Angka | **congkak** (counting board) | a ledger, seeds moving like money | Counting where it all goes |
 | Tide | Tinara | **kerawang** (carved lattice), which is also Tinara's logo | one path found in the noise | One path found in the noise |
@@ -131,7 +131,7 @@ Beyond the quiet placements, each product can give its motif **one job**: a mome
 
 | Product | Moment | What the motif does |
 |---|---|---|
-| Yara · riak | A job is completed | One riak ripple spreads once from the Complete button, over about a second: one tap, spreading to the board |
+| Yara · gear | A job is completed | The gear turns one notch beside the Complete button, and the next stage's card lights: every stage turns the next |
 | Janka · padi | A forecast runs | The padi stalk draws on while the forecast runs; its grains fill when it is ready |
 | Angka · congkak | Month-end matching | Progress is the congkak board: each matched receipt drops a seed into a hole |
 | Tinara · kerawang | Ranking companies | The logo's lattice lights opening by opening until one path settles |
@@ -175,6 +175,9 @@ Gridlines are plain and recessive (dotted is fine; they are not corak). An empty
 
 ### Loading
 
+The full loading system (seven states, and each product's own loaders) is in 14. In short:
+
+
 | Wait | What shows |
 |---|---|
 | Under a second | Nothing |
@@ -182,7 +185,7 @@ Gridlines are plain and recessive (dotted is fine; they are not corak). An empty
 | A task the person started (a forecast, a ranking, an import) | The signature motif as the loader, with the action in words ("Forecasting 48 items") |
 | Long AI work | The product's own mark in its thinking motion (04) |
 
-Radial motifs **turn** (riak, intan, orbit; one turn every 6 seconds as a loader); the others **draw on** and fill (padi, petak); congkak passes a seed from hole to hole; Tinara's lattice lights its path one opening at a time. All motion stops for reduced motion.
+Radial motifs **turn** (gear, intan, orbit; one turn every 6 seconds as a loader); the others **draw on** and fill (padi, petak); congkak passes a seed from hole to hole; Tinara's lattice lights its path one opening at a time. All motion stops for reduced motion.
 
 ### Naming lines and areas
 
@@ -201,7 +204,7 @@ How to write them:
 - **One word, capitalised as a name.** No all caps, no prefixes, no version numbers in the name.
 - **Shared names mean the same thing everywhere.** **Assist** is the AI assistant in every product, always shown with the sparkle. **Forecast** is a product's forecasting. A product that adds an AI assistant calls it Assist.
 - **Never reuse** a family name (Ripple, Edge, Frame, Loom, Motion, Tide), a product or PLExyz product name, another product's line for a different thing, or an internal name (AXLE).
-- **Malay words** may name a line only when the meaning is the job and it is explained once, as Lapis and Lapisan ("layer") are. Motif names (riak, padi, intan) stay design vocabulary, not feature names.
+- **Malay words** may name a line only when the meaning is the job and it is explained once, as Lapis and Lapisan ("layer") are. Motif names (gear, padi, intan) stay design vocabulary, not feature names.
 - **Working names** stay marked as working until the owner confirms them (Yara View and Assist today).
 
 Clashes in today's names (11):
@@ -266,13 +269,13 @@ Own accent, for the primary action, selection, charts and identity moments, with
 |---|---|---|---|---|
 | Yara | Ripple `#08B0B3` | `#DCF4F4` | `#046162` | AntaraX blue `#0459F7` |
 | AX Frame | Frame `#074AF8` | `#DCE6FE` | `#042988` | AntaraX blue `#0459F7` |
-| Janka | cyan `#0CC4FB` | `#DDF7FE` | `#076C8A` | `#076C8A` |
+| Janka | cyan `#0CC4FB` | `#DDF7FE` | `#077DA1` | `#077DA1` |
 | PLExyz Grid | violet `#2C09B2`; zones `#4FD7D1` `#FD9001` `#FD4F85` `#CBB6FA` for data | `#E1DDF4` | `#180562` | `#2C09B2` |
 | Angka | plum `#6B3F6B` | `#EAE4EA` | `#3B233B` | `#6B3F6B` |
-| Tinara | plum `#5B2B4A`; gold `#D6A84F` for highlights | `#E8E1E6` | `#321829` | `#5B2B4A` |
+| Tinara | garnet `#7A1E3C` (proposed); gold `#D6A84F` for highlights | `#FEF4F6` | `#511A2A` | `#7A1E3C` |
 | Loom, Motion | family colour | see tokens | see tokens | AntaraX blue |
 
-On antarax.ai the family colour leads (05). Inside a product's own app, the product's colours lead; BaTech motifs inside it keep their family pair.
+Full palettes (11-step scales, roles, chart sets, dark mode) are in 14 and `tokens/product-palettes.json`. On antarax.ai the family colour leads (05). Inside a product's own app, the product's colours lead; BaTech motifs inside it keep their family pair.
 
 ## Credit lines
 

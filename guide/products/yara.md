@@ -5,7 +5,7 @@ A-mark product in the Ripple family. Main product and the portfolio lead. Live a
 ## Name
 
 - Write **Yara**. Never "YARA" or "Yara Ripple" (retired 7 October 2026).
-- Endorsement: **"Powered by AntaraX Ripple"**.
+- Credit: **"by AntaraX"**, as for every product. Its family, Ripple, shows on antarax.ai, not in the credit.
 - In-app tagline: "Simple work tracking, from order to done." (`src/lib/brand.ts:12`). Website one-liner: as in 02.
 - Stop using: "Yara for BRIC Operations" and "YARA: Project & Workforce Intelligence by REKA" (old reka.re landing page) in anything customer-facing. "Yara AXLE" is internal.
 
@@ -37,17 +37,17 @@ Poppins and JetBrains Mono. Aligned. (The mono font's variable is still named `p
 
 ## Credit lines
 
-- Chrome: "Yara · Powered by AntaraX Ripple".
-- Sign-in and splash: "Yara, powered by AntaraX Ripple. From REKA." (decided, 12).
+- Chrome: "Yara · by AntaraX".
+- Sign-in and splash: "Yara by AntaraX, from REKA."
 - REKA as operator: "Managed by REKA for your organisation" (`src/components/settings/LookupsPanel.tsx:53`) is true and may stay; use British spelling.
 
 ## The AntaraX layer in Yara
 
-Yara is A-mark and already carries most of the layer. Add its cloth (`yara-cloth.svg`: riak, awan larat and sungai in Ripple teal and AntaraX blue) to the sign-in panel and empty states, and the AI sparkle (Yara's own `design-system/brand/spark-x.svg` is the source of `assets/ai/spark-x.svg`) beside AI intake and suggestions.
+Yara is A-mark and already carries most of the layer. Add its motif, **riak** (`yara-motif.svg`, a ripple from one point: one tap moves the whole job), faintly on the sign-in panel and in empty states; and the AI sparkle (Yara's own `design-system/brand/spark-x.svg` is the source of `assets/ai/spark-x.svg`) beside AI intake and suggestions.
 
 ## Gaps in the app today
 
-1. The byline uses an em dash: "Yara — powered by AntaraX Ripple" (`src/lib/brand.ts:11`). Use a middle dot.
+1. The byline reads "Yara — powered by AntaraX Ripple" (`src/lib/brand.ts:11`). Change it to "Yara · by AntaraX", here and in the sidebar, login, splash, email header and README.
 2. US spelling "organization" in UI copy (`LookupsPanel.tsx:53`).
 3. `design-system/brand/README.md` keeps its own product registry, which is out of date (it lists Janka as "Inline 'J' tile (no asset yet)"). Point it at this kit instead of keeping a copy.
 4. No "from REKA" trust line on sign-in.
@@ -56,4 +56,4 @@ Yara is A-mark and already carries most of the layer. Add its cloth (`yara-cloth
 
 1. Fix the byline separator and spelling.
 2. Replace the local product registry with a link to `guide/products/`.
-3. Add the sign-in trust line; the cloth on sign-in and empty states; the AI sparkle on AI suggestions.
+3. Add the sign-in trust line, the riak motif on sign-in and empty states, and the AI sparkle on AI suggestions.

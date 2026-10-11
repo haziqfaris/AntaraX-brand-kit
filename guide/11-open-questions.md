@@ -5,7 +5,6 @@ Decisions the owner has not made yet. Each needs an answer before the related wo
 1. **Tide icon.** The master logo file has icons for Motion, Ripple, Edge, Frame and Loom, not Tide. The bunga raya motif stands in. Draw a Tide icon in the same construction (separated flat shapes)?
 2. **Seth on light grounds.** The REKA character guide says Seth appears only on dark backgrounds (`#07090f`), while the owner's rule puts a Seth batik cameo in every AntaraX illustration, most of them on light cloth. Proposal: the batik cameo is a motif, not the character render, so it is exempt; the full character stays dark-only. Confirm.
 3. **Frame app colours.** Converge Frame's primary `#0062FB` to AntaraX blue `#0459F7`? Keep or drop its orange accent `#FB9800` (REKA's brand orange)? *Recommendation (11 October): converge and drop the orange; Frame is an A-mark product and orange is REKA's (12, products/frame.md).*
-4. ~~**Angka app colours.**~~ Answered 11 October by "shared core, own accent": Angka keeps plum and moves to Poppins and JetBrains Mono (products/angka.md).
 5. **Sparkle colour values.** Recorded in `tokens.json` on 11 October from the master file layers (purple `#524FE9`, orange `#F47B3D`, cyan `#0CC4FB`, emerald `#12B76A`, indigo `#7171EA`), because the restyle rule in 12 uses them. Confirm they are final.
 6. **Edge sliver.** Nudge Edge's highlight sliver (about 19% larger than source) before Edge art goes to print?
 7. **WhatsApp.** Add a WhatsApp click-to-chat button for Malaysian SME buyers? Which number, and who answers?
@@ -19,19 +18,15 @@ Decisions the owner has not made yet. Each needs an answer before the related wo
 
 ### Added 11 October 2026 (brand architecture, 12)
 
-15. ~~**Credit lines.**~~ Approved 11 October (10).
-16. **Janka accent and tagline.** The restyled mark is approved (10). Still to confirm: moving the app's primary from REKA orange to Janka dark `#076C8A` with cyan `#0CC4FB` as accent, and the tagline "Track. Forecast. Reorder." (replaces "Unlock", a banned word).
-17. ~~**PLExyz Grid restyle.**~~ Withdrawn: Grid keeps its mark (10).
+16. **Janka accent and tagline.** Confirm moving the app's primary from REKA orange to Janka dark `#076C8A` with cyan `#0CC4FB` as accent, and the tagline "Track. Forecast. Reorder." (replaces "Unlock", a banned word).
 18. **PLExyz Crowd and Trace marks.** Draw both in the PLExyz system: the force field and shard, with scattered entities on the grid (Crowd) and tags with last-seen points (Trace).
-19. **Tinara mark option.** Choose A (pierced tile, recommended, with B for large moments), B or C (`assets/products/tinara/`, products/tinara.md).
-20. ~~**Frame's name.**~~ AX Frame (10).
-21. ~~**PLExyz Trace inside Janka.**~~ A PLExyz product built inside Janka (10).
+19. **Tinara mark.** Choose the kerawang window (recommended), the lattice or the trellis (`assets/products/tinara/`, products/tinara.md).
 22. **"PLExyz Edge Gateway".** Rename to "PLExyz Gateway" so it does not collide with the AntaraX Edge family.
 23. **Product heritage in copy.** Which origin facts may customers see (for example, the year PLExyz started, Grid's flagship customer and pricing, Yara's first customer, the pandemic origin of Yara)? Until confirmed, product sheets keep them internal.
 
 ### Added 11 October 2026 (second review)
 
-24. **PLExyz purple.** The line brief gives `#6040CC` (shard accents `#865ACE`, `#281B4F`); the Grid mark and app use violet `#2C09B2` and shard purples `#8542ED` / `#6A2EF0` / `#4407FB`. Grid keeps its own. Which do new PLExyz products take?
+24. **PLExyz purple.** The line brief gives `#6040CC` (shard accents `#865ACE`, `#281B4F`); the Grid mark and app use violet `#2C09B2` and shard purples `#8542ED` / `#6A2EF0` / `#4407FB`. Which do new PLExyz products take?
 25. **PLExyz master mark.** The purple circular PLExyz mark in the line overview has no file in any repository. Add the final SVG to `assets/products/plexyz/`.
 26. **PLExyz Crowd's focus.** The pilot app counts building occupancy from Wi-Fi; the line brief describes event safety and congestion in stadiums and venues. One product or two?
 27. **Grid's top-bordered stat cards.** 07 rules out coloured top borders in every product UI; Grid's dashboard uses them in zone colours. Replace them (recommended), or allow them inside PLExyz?

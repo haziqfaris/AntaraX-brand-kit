@@ -7,7 +7,7 @@ Own-mark product in the Tide family. Main product. Live at janka.antarax.ai. AI 
 - Write **Janka**. The drawn wordmark is in capitals; in text it is always "Janka".
 - Website one-liner: as in 02 ("Know what you'll need before you run out.").
 - **In-app tagline needs replacing.** "Track. Forecast. Unlock." uses "unlock", which is on the words-to-avoid list (03), and the app sets it as uppercase mono ("TRACK · FORECAST · UNLOCK"), which 07 forbids. Proposed: **"Track. Forecast. Reorder."** in Poppins, sentence case.
-- **PLExyz Trace** (RFID tags, zones, last-seen locations) is a PLExyz product built inside Janka (owner, 11 October 2026). Inside Janka write it "PLExyz Trace, powered by AntaraX", and keep Janka's own pages Janka's. See the PLExyz sheet.
+- **PLExyz Trace** (RFID tags, zones, last-seen locations) is a PLExyz product built inside Janka. Inside Janka write it "PLExyz Trace", and keep Janka's own pages Janka's. See the PLExyz sheet.
 
 ## Where it came from
 
@@ -20,7 +20,7 @@ Own-mark product in the Tide family. Main product. Live at janka.antarax.ai. AI 
 
 - **The J that never closes**, with a row of signal ticks. The hook stops short ("it keeps sensing"); the bar floats clear of the stem; one orange spark marks the gap; the third tick is orange and the sixth cyan. Keep all of this.
 - Generated from the app's `src/brand/paths.ts`, which holds the source geometry.
-- **Restyled** (approved 11 October 2026; colours only, same paths): `janka-mark.svg`, `janka-mark-white.svg`, `janka-wordmark.svg`. The previous colours are kept as `janka-mark-previous.svg` and `janka-wordmark-previous.svg` for reference.
+- **Files** (colours refreshed, same paths): `janka-mark.svg`, `janka-mark-white.svg`, `janka-wordmark.svg`. Earlier colours: `janka-mark-previous.svg`.
 
 | Part | Before | Now |
 |---|---|---|
@@ -33,7 +33,7 @@ Own-mark product in the Tide family. Main product. Live at janka.antarax.ai. AI 
 
 ## Colour
 
-| Role | Today | Target (with the approved restyle) |
+| Role | Today | Target |
 |---|---|---|
 | Primary action | REKA orange `#FB9800` | Janka dark `#076C8A` |
 | Accent | cyan `#06B6D4` | Janka cyan `#0CC4FB`, tint `#DDF7FE`, dark `#076C8A` |
@@ -49,7 +49,7 @@ Poppins and JetBrains Mono (`src/main.tsx:10-15`). Aligned. The AXLE console loa
 ## Credit lines
 
 - Chrome: "Janka · by AntaraX".
-- Sign-in, splash, reports: "Janka by AntaraX, from REKA." (decided, 12)
+- Sign-in, splash, reports: "Janka by AntaraX, from REKA."
 - Replace "A product of REKA Inisiatif Sdn Bhd" and "Built by REKA Inisiatif" with the lines above and the legal line.
 - Contact text naming hello@reka.re may stay while REKA answers it.
 
@@ -64,7 +64,7 @@ Poppins and JetBrains Mono (`src/main.tsx:10-15`). Aligned. The AXLE console loa
 
 ## The AntaraX layer in Janka
 
-Janka keeps its J, ticks, splash and thinking animations. AntaraX adds (12): the credit line; **Janka's cloth** (`janka-cloth.svg`: padi, bunga raya and gelombang in Janka's cyan and orange with navy ink) on the sign-in panel in place of the dark gradient, on the splash and on empty states; **the AI sparkle** beside every forecast and drafted order; intan eyebrows in Janka cyan; the app tile; the legal footer.
+Janka keeps its J, ticks, splash and thinking animations. AntaraX adds (12): the credit line; its motif, **padi** (`janka-motif.svg`, a rice stalk: know the harvest before you need it), faintly on the sign-in panel in place of the dark gradient and in empty states; **the AI sparkle** beside every forecast and drafted order; intan eyebrows in Janka cyan; the app tile; the legal footer.
 
 ## Steps to converge
 
@@ -75,4 +75,4 @@ Janka keeps its J, ticks, splash and thinking animations. AntaraX adds (12): the
 
 ## Open
 
-- The cyan accent and the tagline "Track. Forecast. Reorder." were proposed with the restyle; confirm both (11).
+- The cyan accent and the tagline "Track. Forecast. Reorder." (11).

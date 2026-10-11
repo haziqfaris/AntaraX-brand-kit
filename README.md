@@ -20,7 +20,7 @@ AntaraX is the AI product line of **REKA Inisiatif Sdn Bhd** (Kuala Lumpur, Mala
 - **Promise:** Put intelligence to work.
 - **What we are:** AI products for business. A product company, not a consultancy.
 - **Main products:** Yara (jobs and work orders), Janka (inventory forecasting), PLExyz Grid (warehouse and yard space).
-- **Architecture:** most products are older than AntaraX. They keep their own names, logos and style, and are endorsed **"by AntaraX"** (PLExyz, REKA's platform: **"Powered by AntaraX"**). AntaraX reaches into every product through one shared layer: the credit line, a cloth of AntaraX motifs in the product's own colours, the AI sparkle, the shared type and status colours, the intan eyebrow, the app tile and the footer (12).
+- **Architecture:** most products are older than AntaraX. They keep their own names, logos and style, and every one is credited **"by AntaraX"**. AntaraX reaches into each product through one small shared layer: the credit line, one signature motif used faintly, the AI sparkle, shared type and status colours, the intan eyebrow, the app tile and the footer (12).
 - **Closed pilots,** each run as part of REKA's **Managed AI** service: AX Frame, PLExyz Crowd, Angka, Tinara, Loom, Motion.
 - **Six families:** Ripple (Operate), Edge (Perceive), Frame (Understand), Loom (Synthesize), Motion (Navigate), Tide (Optimize).
 - **Look:** AntaraX blue `#0459F7`, navy text, white ground, Poppins and JetBrains Mono, and the BaTech corak (Malaysian batik rebuilt from technology).
@@ -33,9 +33,9 @@ guide/        the brand guide, numbered in reading order
 tokens/       tokens.json and tokens.css: colours, type, radius, spacing, motion
 assets/logo/  the A mark (blue and white) and the full lockup
 assets/families/  the five family icons and famicons.json (paths for the families animation)
-assets/products/  each product's mark, lockups and cloth (AntaraX motifs in the product's colours)
+assets/products/  each product's mark, lockups and signature motif
 assets/ai/        the AI sparkle that marks AI work in every product
-tools/            build-product-cloths.mjs (needs the antarax-ai checkout for the motif code)
+tools/            build-product-motifs.mjs (needs the antarax-ai checkout for the motif code)
 guide/products/   one brand sheet per product
 guide/product-brands.html  the visual guide to product brands: every mark, restyle, lockup and accent
 photography/  PHOTO_BRIEF.md: shot list and image-AI prompts for every photo slot on antarax.ai

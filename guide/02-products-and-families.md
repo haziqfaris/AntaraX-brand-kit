@@ -6,7 +6,7 @@
 
 > Product clarity first. Ecosystem power second.
 
-Visitors choose by **problem**, then product. Families are endorsements, shown on the Families and Technology pages and as "Powered by AntaraX Ripple"-style lines. Never make a visitor learn the families to buy.
+Visitors choose by **problem**, then product. Families group the products on the Families and Technology pages and in family badges and colours; every product is credited "by AntaraX". Never make a visitor learn the families to buy.
 
 How each product carries its own mark, colour and credit line (own-mark and A-mark products, "by AntaraX") is in [12 Brand architecture](12-brand-architecture.md); each product's details are in [products/](products/README.md).
 
@@ -41,7 +41,7 @@ Use these names, one-liners and questions exactly.
 
 ### Product facts worth knowing
 
-- **Yara:** work orders and job cards. Workers tap Start, Hold or Complete on their phone; managers see live status, working time and full history. Installable on phones, tablets and desktops; English and Malay. Lead product and first subscription success. Endorsement: "Powered by AntaraX Ripple". Working lines: Work, Desk, Crew, Flow, View, Assist (View and Assist are working names).
+- **Yara:** work orders and job cards. Workers tap Start, Hold or Complete on their phone; managers see live status, working time and full history. Installable on phones, tablets and desktops; English and Malay. Lead product and first subscription success. Credit: "by AntaraX". Working lines: Work, Desk, Crew, Flow, View, Assist (View and Assist are working names).
 - **Janka:** AI inventory forecasting for manufacturers. Reads real consumption, recommends when and how much to reorder, drafts the order for a person to approve. It is not accounting software. Areas: Inventory, Forecast, Replenish, Risk, Insights.
 - **PLExyz Grid:** shows what is in a warehouse or yard on the site's own layout, tracks cargo, bookings and movements, and ranks where new stock should go by fit and retrieval distance. Free for one facility.
 - **AX Frame (AXF):** a manual-first digital-asset ledger: every subscription, API, domain and renewal in one list, warnings before a charge. Working lines: **Atlas** (inventory and location), **Layers** (stacks and dependencies), **Orbit** (renewals), **Pulse** (health), **Ledger** (costs), **Lens** (AI analysis). Rule: one world, six ways of seeing it, not six products. Frame never auto-discovers assets (see the axframe repo's guardrails).
@@ -85,11 +85,11 @@ Understand → Operate → Optimize → Perceive → Navigate → Act → Synthe
 ## Naming rules
 
 - Write **AntaraX** (capital A, capital X). The wordmark is set lower case ("antarax") in the logo only.
-- Products are named on their own: "Yara", not "AntaraX Yara". Families take the prefix: "AntaraX Ripple". Frame shares its family's name, so the product is **AX Frame** (owner, 11 October 2026; "Frame" alone is crowded in software). The family stays AntaraX Frame.
-- Every product is endorsed **"by AntaraX"** (12); PLExyz products, REKA's platform, say **"Powered by AntaraX"**. Never credit an AntaraX product "by REKA".
+- Products are named on their own: "Yara", not "AntaraX Yara". Families take the prefix: "AntaraX Ripple". Frame shares its family's name, so the product is **AX Frame** ("Frame" alone is crowded in software). The family stays AntaraX Frame.
+- Every product is credited **"by AntaraX"** (12), PLExyz included. Never "Powered by", never "by REKA".
 - Write **AntaraX**, never "AntaraX AI".
 - Family name variants (from the master logo file): Full "AntaraX Motion", Medium "AX Motion", Short "AXM" (AXR, AXE, AXF, AXL). Use Full in customer copy; Medium and Short are for space-constrained marks and internal use.
-- **PLExyz** is always written PLExyz. It is REKA's spatial intelligence platform, powered by AntaraX: Grid (flagship), Trace (built inside Janka), and the concepts Flow, Transit, Crowd, Site, Ward and Yard (products/plexyz.md).
+- **PLExyz** is always written PLExyz. It is REKA's spatial intelligence platform, built on AntaraX: Grid (flagship), Trace (built inside Janka), and the concepts Flow, Transit, Crowd, Site, Ward and Yard (products/plexyz.md).
 - **Never show internal codenames** to customers: AXLE (REKA's admin console), puzzle-ceplok, puzzle-parang and similar.
 
 ### Retired names (never use in new copy)
@@ -97,6 +97,7 @@ Understand → Operate → Optimize → Perceive → Navigate → Act → Synthe
 - "AX Edge" meaning fleet updates; "AX Motion" meaning workflow automation (Motion now means telematics and fleet management).
 - "AX Kinetics" (REKA's Kinetik owns robotics).
 - Loom as AI agents, workflows or automation (automation runs on Ripple; Loom is data synthesis, 10 October 2026). "AX Loom" meaning synthetic data is no longer retired: it is part of Loom again.
-- "Yara Ripple" as a product name (use "Yara", with "Powered by AntaraX Ripple").
+- "Yara Ripple" as a product name (use "Yara · by AntaraX").
+- "Powered by AntaraX" and "Powered by AntaraX [Family]" as product credits (use "by AntaraX", 11 October 2026).
 - "Waitlist" for any product (replaced by closed pilots, 10 October 2026).
 - Tinara as "scattered data into one clear next move" (replaced by the B2B intelligence line, 10 October 2026).

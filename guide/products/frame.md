@@ -2,10 +2,10 @@
 
 A-mark product, and the one product that shares its family's name (Frame, Understand). Closed pilot while the owner validates it. Live at frame.antarax.ai. A manual-first ledger of every subscription, domain, login and renewal a business runs on.
 
-## Name (owner, 11 October 2026)
+## Name
 
-- The product is **AX Frame**, everywhere: in the app, in emails, on its own site and beside other products. The owner chose "Frame by AntaraX", or "AX Frame" if "Frame" is too common; it is. Nutanix sells a cloud desktop product listed simply as "Frame", and Frame.io and Framer are other well-known software names, so "Frame" alone is hard to find in search and weak as a mark.
-- "AX" is short for AntaraX, so AX Frame needs no "by AntaraX" beside its name; its mark is the A.
+- The product is **AX Frame**, everywhere: in the app, in emails, on its own site and beside other products. "Frame" alone is too common: Nutanix sells a cloud desktop product listed simply as "Frame", and Frame.io and Framer are other well-known software names, so "Frame" alone is hard to find in search and weak as a mark.
+- Credit: "AX Frame · by AntaraX", the same line as every product.
 - The family stays **AntaraX Frame** (Understand) on the Families page. The short code AXF stays internal and in key prefixes.
 - Replace "AntaraX Frame" as the product name in the app title, manifest, emails ("AntaraX Frame <notifications@...>") and landing page. The domain antaraxframe.com can stay.
 - Working lines (Atlas, Layers, Orbit, Pulse, Ledger, Lens) are ways of seeing one world, not products (02).
@@ -38,11 +38,11 @@ Poppins and JetBrains Mono, "every number, always" in mono. Aligned.
 
 ## The AntaraX layer in AX Frame
 
-AX Frame is A-mark, so it is AntaraX already. It keeps its breathing cube halo, and takes its cloth (`frame-cloth.svg`: intan, cakerawala, ketam guri and suria in Frame blues) for sign-in, empty states and the digest email band; the AI sparkle beside every AI suggestion and Lens analysis; the shared core; the legal footer.
+AX Frame is A-mark, so it is AntaraX already. It keeps its breathing cube halo and adds its motif, **intan** (`frame-motif.svg`, the cut gem: one world, many faces), faintly on the sign-in panel, in empty states and on the digest email; the AI sparkle beside every AI suggestion and Lens analysis; the shared core; the legal footer.
 
 ## Credit lines
 
-- The name already carries AntaraX. On the About and billing screens, "Built by REKA" becomes "AX Frame, from REKA." (decided, 12).
+- Chrome: "AX Frame · by AntaraX". On sign-in, About and billing, "Built by REKA" becomes "AX Frame by AntaraX, from REKA."
 - "courtesy of REKA" (`src/features/billing/BillingScreen.tsx:107`) may stay only if REKA really pays for something there.
 - Footer: add the legal line.
 
@@ -57,7 +57,7 @@ AX Frame is A-mark, so it is AntaraX already. It keeps its breathing cube halo, 
 
 1. Swap `#0062FB` for `#0459F7` and drop the orange accent, updating the repo's `CLAUDE.md` design tokens in the same change.
 2. Rename to AX Frame everywhere customers see it; put the mark on the social image.
-3. Credit lines; the cloth on sign-in; the AI sparkle.
+3. Credit lines; the intan motif on sign-in and empty states; the AI sparkle.
 
 ## Open
 

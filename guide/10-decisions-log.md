@@ -2,6 +2,13 @@
 
 Owner decisions that shape the brand, newest first. Add to the top; never rewrite history. Earlier strategy changes are in `reference/strategy/` (playbook amendments v0.3–v0.5, RECONCILIATION).
 
+## 11 October 2026 (third review)
+
+- **One credit line: "by AntaraX"** for every product, PLExyz and Yara included. "Powered by AntaraX" and "Powered by AntaraX [Family]" are retired as product credits; families show on antarax.ai only.
+- **No batik cloths inside products.** The full BaTech pattern is too strong for product UIs. Each product has one signature motif from its family's set, drawn simply in the product's colour, used once per screen and faintly (sign-in panel, empty states, email header, splash). The motif map in 12 shows which motif belongs to which product and why. The product cloths are withdrawn.
+- **Tinara's first mark options are withdrawn.** New options drawn: the kerawang window (recommended), lattice and trellis.
+- **The guide states rules, not history.** Decision notes live in this log; 11 keeps only what is still open.
+
 ## 11 October 2026 (second review)
 
 - **Keep each product's style; add the AntaraX layer.** Products keep their logos, palettes and signature details. AntaraX integrates through eight touchpoints in every product: the credit line, a product cloth (BaTech motifs in the product's own colours), the AI sparkle, thinking motion, the shared core, the intan eyebrow, the app tile and the footer (12). This narrows the morning's "own logos are restyled": a restyle is now chosen per product.

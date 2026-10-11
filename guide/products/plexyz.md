@@ -1,8 +1,8 @@
 # PLExyz
 
-REKA's spatial intelligence platform, **powered by AntaraX**. Own-mark product line, shown on antarax.ai in the Edge family. Owned by REKA's Harmonik division. **PLExyz Grid** is the flagship and a main product (free for one facility, live at grid.antarax.ai); **PLExyz Trace** is built as a module inside Janka; the rest are concepts. PLExyz is the oldest name in the portfolio.
+REKA's spatial intelligence platform, built on AntaraX and credited **"by AntaraX"** like every product. Own-mark product line, shown on antarax.ai in the Edge family. Owned by REKA's Harmonik division. **PLExyz Grid** is the flagship and a main product (free for one facility, live at grid.antarax.ai); **PLExyz Trace** is built as a module inside Janka; the rest are concepts. PLExyz is the oldest name in the portfolio.
 
-Sources: the PLExyz product line overview and brief (owner, 11 October 2026) and the PLExyz Grid brand and theme reference (`assets/products/plexyz/plexyz-grid-brand-theme.md`, pixel-verified against the source logo). Where this sheet and those disagree, they win on PLExyz's own design; this sheet wins on how PLExyz meets AntaraX.
+Sources: the PLExyz product line overview and brief, and the PLExyz Grid brand and theme reference (`assets/products/plexyz/plexyz-grid-brand-theme.md`, pixel-verified against the source logo). Where this sheet and those disagree, they win on PLExyz's own design; this sheet wins on how PLExyz meets AntaraX.
 
 ## The line
 
@@ -51,7 +51,7 @@ Every PLExyz mark is the same three parts. Only the middle one changes per produ
 ### PLExyz Grid mark
 
 - Files: `assets/products/plexyz/plexyz-grid-mark.svg` (device mark), `plexyz-grid-wordmark.svg`, `plexyz-grid-lockup-horizontal.svg`, `plexyz-grid-lockup-centered.svg`, from the owner on 11 October 2026; full rules in `plexyz-grid-brand-theme.md`.
-- **No restyle** (owner, 11 October 2026). Its colours already meet AntaraX: the teal zone `#4FD7D1` sits near the sparkle cyan and Ripple; the pink zone `#FD4F85` sits near Tide pink; the lavender zone is a tint of Grid's own violet. The orange zone is REKA's orange, right for a REKA platform.
+- **Kept as it is.** Its colours already meet AntaraX: the teal zone `#4FD7D1` sits near the sparkle cyan and Ripple; the pink zone `#FD4F85` sits near Tide pink; the lavender zone is a tint of Grid's own violet. The orange zone is REKA's orange, right for a REKA platform.
 - Shard: top `#8542ED`, left `#6A2EF0`, lower left `#4407FB`, right `#2C09B2`; outlines `#2C09B2`, 7 units throughout.
 - Zones: north `#CBB6FA`, west `#4FD7D1`, east `#FD9001`, south `#FD4F85`.
 - Wordmark: "PLExyz" bold in `#2C09B2`; "Grid" with each letter in a zone colour and a 1px outline. Keep it.
@@ -66,14 +66,14 @@ The line brief gives PLExyz purple `#6040CC`; the Grid mark and app use violet `
 
 Grid keeps everything above. AntaraX adds (12):
 
-1. **Credit:** "PLExyz Grid · Powered by AntaraX" in the chrome; "PLExyz Grid, from REKA. Powered by AntaraX." on sign-in and reports.
-2. **Grid's cloth** (`grid-cloth.svg`): the Edge family motifs (petak, orbit, telang, benih, wau, daun) in Grid's own zone colours with its violet ink. Use it on the sign-in brand panel in place of the oversized faded mark shapes, on the splash and on empty states.
+1. **Credit:** "PLExyz Grid · by AntaraX" in the chrome; "PLExyz Grid by AntaraX, from REKA." on sign-in and reports.
+2. **Motif:** Grid's is **petak** (`grid-motif.svg`, field plots: every space in its place); Crowd's is **orbit** (`crowd-motif.svg`: people sensed, never seen). Faintly on the sign-in panel (beside the hex-tile pattern, not on top of it) and in empty states.
 3. **The AI sparkle** beside placement recommendations ("Suggested slot").
 4. **Thinking motion:** the shard and the four zones drift out of step while a placement is computed.
 5. **Shared core:** already Poppins and JetBrains Mono. Move status colours to the shared set.
 6. **Intan eyebrows** in violet.
 7. **The app tile** with the device mark.
-8. **Footer:** the PLExyz legal line.
+8. **Footer:** the legal line.
 
 ## Colour
 
@@ -99,13 +99,13 @@ Grid keeps everything above. AntaraX adds (12):
 3. Its focus (building occupancy from Wi-Fi) differs from the line brief's (stadiums and event safety). Settle which Crowd is (11).
 
 **Trace**
-1. Lives inside Janka as a setting and an RFID page. It is a PLExyz product: in Janka it reads "PLExyz Trace, powered by AntaraX", and its page carries the PLExyz Trace mark once drawn.
+1. Lives inside Janka as a setting and an RFID page. It is a PLExyz product: in Janka it reads "PLExyz Trace", and its page carries the PLExyz Trace mark once drawn.
 
 ## Steps to converge
 
 1. Crowd: rename the app to PLExyz Crowd and remove AXLE from every screen and the print footer.
 2. Grid: credit lines, the eyebrow, the guide cover.
-3. Grid: the cloth on sign-in and splash; the AI sparkle on suggestions; status colours; the app tile.
+3. Grid: the petak motif on sign-in and empty states; the AI sparkle on suggestions; status colours; the app tile.
 4. Grid: replace top-bordered stat cards.
 5. Draw the Crowd and Trace marks in the line system; add the PLExyz master mark file.
 

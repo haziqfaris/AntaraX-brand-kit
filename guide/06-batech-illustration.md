@@ -18,6 +18,10 @@
 - **Meaning motifs:** riak (one tap, spreading), petak (a grid of spaces), tenun (the weave), percik (sparks).
 - **Cosmos and quantum:** cakerawala, orbit, komet, atom, suria, gelombang, jaring. Kubit is reserved.
 
+## Inside products
+
+Product apps never use a cloth or pattern. Each product has one signature motif from its family's set, drawn simply in the product's colour and used faintly in a few places: see the motif map in [12 Brand architecture](12-brand-architecture.md#product-motifs).
+
 ## Families and their cloth
 
 | Family | Colour | Signature motifs | Product motif |

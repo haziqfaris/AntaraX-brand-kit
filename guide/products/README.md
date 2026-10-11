@@ -8,7 +8,7 @@ Sheets were written on 11 October 2026 from an audit of each product's repositor
 |---|---|---|---|---|---|
 | Yara | A-mark | A + Ripple icon | Ripple `#08B0B3` | Main (lead) | [yara.md](yara.md) |
 | Janka | Own-mark | The J that never closes (restyled) | Janka cyan `#0CC4FB` | Main | [janka.md](janka.md) |
-| PLExyz Grid | Own-mark, REKA platform powered by AntaraX | Force field, shard and zone grid (kept) | Grid violet `#2C09B2` | Main | [plexyz.md](plexyz.md) |
+| PLExyz Grid | Own-mark, REKA platform | Force field, shard and zone grid (kept) | Grid violet `#2C09B2` | Main | [plexyz.md](plexyz.md) |
 | PLExyz Trace | Own-mark, REKA platform | To be drawn in the PLExyz system | PLExyz | Module inside Janka | [plexyz.md](plexyz.md) |
 | PLExyz Crowd, Flow, Transit, Site, Ward, Yard | Own-mark, REKA platform | PLExyz system | PLExyz | Concepts (Crowd has a pilot app) | [plexyz.md](plexyz.md) |
 | AX Frame | A-mark | A + Frame icon | Frame `#074AF8` | Closed pilot | [frame.md](frame.md) |

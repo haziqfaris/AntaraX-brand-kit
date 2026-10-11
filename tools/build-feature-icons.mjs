@@ -1,0 +1,75 @@
+// Builds the interface icons used for products' parts (guide/14, "Sub-products"): one line set for every product,
+// 24px grid, 1.75px stroke, round caps and joins, currentColor. Writes assets/icons/features/<name>.svg.
+//   node tools/build-feature-icons.mjs
+import fs from 'node:fs';
+
+export const ICONS = {
+  dashboard: 'M4 4h7v7H4z M13 4h7v4h-7z M13 10h7v10h-7z M4 13h7v7H4z',
+  'work-orders': 'M8 4h8v3H8z M6 5.5H5v15h14v-15h-1 M8.5 11h7 M8.5 14.5h7 M8.5 18h4',
+  projects: 'M3.5 7.5V18a1.5 1.5 0 0 0 1.5 1.5h14a1.5 1.5 0 0 0 1.5-1.5V9a1.5 1.5 0 0 0-1.5-1.5h-7l-2-3H5A1.5 1.5 0 0 0 3.5 6z',
+  'job-cards': 'M5 4h14v16H5z M8.5 9l1.5 1.5L13 7.5 M8.5 15l1.5 1.5L13 13.5 M15 9h1 M15 15h1',
+  customers: 'M4 20V9l8-5 8 5v11 M9 20v-6h6v6 M4 20h16',
+  teams: 'M9 11a3 3 0 1 0 0-6a3 3 0 0 0 0 6z M3.5 19a5.5 5.5 0 0 1 11 0 M16 11a2.5 2.5 0 1 0 0-5 M17 14.5a4.5 4.5 0 0 1 3.5 4.5',
+  'worker-app': 'M7 3h10v18H7z M11 18h2 M10 6h4',
+  'value-split': 'M12 3.5a8.5 8.5 0 1 0 8.5 8.5H12z M15 3.8A8.5 8.5 0 0 1 20.2 9H15z',
+  api: 'M8 7l-5 5 5 5 M16 7l5 5-5 5 M13.5 5l-3 14',
+  commission: 'M5 7c0-1.7 3.1-3 7-3s7 1.3 7 3-3.1 3-7 3-7-1.3-7-3z M5 7v5c0 1.7 3.1 3 7 3s7-1.3 7-3V7 M5 12v5c0 1.7 3.1 3 7 3s7-1.3 7-3v-5',
+  reverse: 'M4 12a8 8 0 0 1 14-5.3 M18 3v4h-4 M20 12a8 8 0 0 1-14 5.3 M6 21v-4h4',
+  insight: 'M9 18h6 M10 21h4 M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z',
+  health: 'M3 12h4l2-5 4 10 2-5h6',
+  blueprint: 'M4 4h16v16H4z M4 9h5 M9 4v16 M13 13h4v4h-4z',
+  map: 'M6 6.5a2.5 2.5 0 1 0 0-.01z M18 6.5a2.5 2.5 0 1 0 0-.01z M12 17.5a2.5 2.5 0 1 0 0-.01z M8.3 7.5l2.6 7.6 M15.7 7.5l-2.6 7.6 M8.5 6.5h7',
+  ledger: 'M4 5h16v14H4z M4 9.5h16 M4 14h16 M10 5v14',
+  stacks: 'M12 3l9 5-9 5-9-5z M3 12l9 5 9-5 M3 16l9 5 9-5',
+  spend: 'M6 3h12v18l-3-2-3 2-3-2-3 2z M9 8h6 M9 12h6 M9 16h3',
+  savings: 'M4 14l5-5 4 4 7-7 M14 6h6v6',
+  renewals: 'M4 6h16v14H4z M4 10h16 M8 3v4 M16 3v4 M15 15.5a3 3 0 1 1-1-2.2 M15 12v2h-2',
+  vendors: 'M4 9l1.5-5h13L20 9 M4 9h16 M4 9v1.5a2.7 2.7 0 0 0 5.3 0 2.7 2.7 0 0 0 5.4 0 2.7 2.7 0 0 0 5.3 0V9 M5.5 13v7h13v-7 M10 20v-4h4v4',
+  'connect-ai': 'M9 3v4 M15 3v4 M6 7h12v4a6 6 0 0 1-12 0z M12 17v4 M19 16l1 1.5 1.5 1-1.5 1-1 1.5-1-1.5-1.5-1 1.5-1z',
+  stock: 'M12 3l8 4.5v9L12 21l-8-4.5v-9z M4 7.5l8 4.5 8-4.5 M12 12v9',
+  scan: 'M4 8V5a1 1 0 0 1 1-1h3 M16 4h3a1 1 0 0 1 1 1v3 M20 16v3a1 1 0 0 1-1 1h-3 M8 20H5a1 1 0 0 1-1-1v-3 M8 9v6 M11 9v6 M14 9v6 M17 9v6',
+  trace: 'M9 3h6l4 4v6l-4 4H9l-4-4V7z M12 10a1.5 1.5 0 1 0 0-.01z M8 20.5a6 6 0 0 0 8 0',
+  plan: 'M4 20V4 M4 20h16 M7 15l4-5 3 3 5-6 M19 7v3 M16 7h3',
+  watch: 'M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15z M10 20.5a2 2 0 0 0 4 0',
+  organisation: 'M4 21V5h10v16 M14 9h6v12 M7 9h1 M10 9h1 M7 13h1 M10 13h1 M7 17h1 M10 17h1 M17 13h0 M17 17h0 M3 21h18',
+  home: 'M4 11 12 4l8 7v9H4z M10 20v-6h4v6',
+  inbox: 'M4 13l2.5-8h11l2.5 8v6H4z M4 13h4.5l1 2.5h5l1-2.5H20',
+  'to-pay': 'M3 6h18v12H3z M3 10h18 M7 15h4',
+  activities: 'M9 6h11 M9 12h11 M9 18h11 M4 6l1 1 2-2 M4 12l1 1 2-2 M4 18l1 1 2-2',
+  people: 'M12 11a4 4 0 1 0 0-8a4 4 0 0 0 0 8z M4.5 21a7.5 7.5 0 0 1 15 0',
+  documents: 'M7 3h7l5 5v13H7z M14 3v5h5 M10 13h6 M10 17h6',
+  figures: 'M5 20V12 M10 20V6 M15 20v-9 M20 20V4',
+  ahead: 'M4 12h14 M13 6l6 6-6 6',
+  reports: 'M6 3h9l4 4v14H6z M9 17v-3 M12 17v-6 M15 17v-4',
+  ask: 'M4 5h16v11H9l-5 4z M15.5 7.5l.8 1.6 1.7.8-1.7.8-.8 1.7-.8-1.7-1.7-.8 1.7-.8z',
+  automations: 'M13 3 5 14h6l-1 7 8-11h-6z',
+  campaign: 'M5 21V4 M5 4h12l-2 4 2 4H5',
+  overview: 'M2.5 12s3.5-7 9.5-7 9.5 7 9.5 7-3.5 7-9.5 7-9.5-7-9.5-7z M12 15a3 3 0 1 0 0-6a3 3 0 0 0 0 6z',
+  watchlist: 'M6 3h12v18l-6-4-6 4z',
+  profiles: 'M3 5h18v14H3z M9 12a2.5 2.5 0 1 0 0-5a2.5 2.5 0 0 0 0 5z M5.5 16.5a3.5 3.5 0 0 1 7 0 M15 9h3 M15 13h3',
+  'saved-reports': 'M6 3h9l4 4v14H6z M10 10v6l2-1.5 2 1.5v-6z',
+  credits: 'M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18z M15 9.5c-.5-1-1.6-1.5-3-1.5-1.7 0-3 .9-3 2s1.3 1.7 3 2 3 1 3 2-1.3 2-3 2c-1.4 0-2.5-.5-3-1.5 M12 6v2 M12 16v2',
+  operations: 'M3 21V9l9-5 9 5v12 M7 21v-8h10v8 M7 17h10',
+  commercial: 'M4 12.5V4h8.5L20 11.5 11.5 20z M8 8.5a.5.5 0 1 0 0-.01z',
+  monitoring: 'M3 5h18v11H3z M8 20h8 M12 16v4 M6 12l3-3 2 2 4-4 3 3',
+  system: 'M4 6h10 M18 6h2 M4 12h4 M12 12h8 M4 18h12 M20 18h0 M14 4v4 M8 10v4 M16 16v4',
+  'tenant-portal': 'M5 21V4h11l3 3v14 M5 21h14 M13 12h.01 M15.5 21V9',
+  'ai-pack': 'M4 8l8-4 8 4v8l-8 4-8-4z M12 8.5l1 2 2 1-2 1-1 2-1-2-2-1 2-1z',
+  port: 'M12 7a2 2 0 1 0 0-4a2 2 0 0 0 0 4z M12 7v14 M8 11h8 M4 14a8 8 0 0 0 16 0 M4 14l-1.5 1.5 M20 14l1.5 1.5',
+  live: 'M12 14a2 2 0 1 0 0-4a2 2 0 0 0 0 4z M8 8a5.7 5.7 0 0 0 0 8 M16 8a5.7 5.7 0 0 1 0 8 M5 5a10 10 0 0 0 0 14 M19 5a10 10 0 0 1 0 14',
+  devices: 'M5 4h14v10H5z M9 18h6 M12 14v4 M8 21h8',
+  alerts: 'M12 4 2.5 20h19z M12 10v4 M12 17h.01',
+  analytics: 'M4 20V4 M4 20h16 M8 16v-3 M12 16V8 M16 16v-5',
+  'client-view': 'M3 4h18v12H3z M9 20h6 M12 16v4 M8 10h8',
+  node: 'M12 3l7.8 4.5v9L12 21l-7.8-4.5v-9z M12 12a2 2 0 1 0 0-.01z M9 8.5a5 5 0 0 1 6 0',
+  gateway: 'M3 14h18v6H3z M7 17h.01 M11 17h.01 M8 10a5.7 5.7 0 0 1 8 0 M5.5 7.5a9.2 9.2 0 0 1 13 0 M12 14v-1',
+  safety: 'M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6z M9 12l2 2 4-4',
+};
+
+const svg = (d) => `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="${d}"/></svg>\n`;
+if (import.meta.url === `file://${process.argv[1]}`) {
+  const dir = new URL('../assets/icons/features/', import.meta.url);
+  fs.mkdirSync(dir, { recursive: true });
+  for (const [k, d] of Object.entries(ICONS)) fs.writeFileSync(new URL(`${k}.svg`, dir), svg(d));
+  console.log(Object.keys(ICONS).length, 'icons in assets/icons/features/');
+}

@@ -1,17 +1,44 @@
-# AntaraX brand kit
+<p align="center"><img src="assets/readme/hero.svg" width="100%" alt="AntaraX brand kit. The AI sparkle becomes each product's logo in turn."></p>
 
-![version 1.4](https://img.shields.io/badge/version-1.4-0459F7?style=flat-square)
-![six families](https://img.shields.io/badge/families-6-0B1B4F?style=flat-square)
-![nine products](https://img.shields.io/badge/products-9-0B1B4F?style=flat-square)
-![spinning loaders: never](https://img.shields.io/badge/spinning%20loaders-never-F04438?style=flat-square)
-![credit line: by AntaraX](https://img.shields.io/badge/credit%20line-by%20AntaraX-12B76A?style=flat-square)
+<p align="center">
+<img alt="version 1.4" src="https://img.shields.io/badge/version-1.4-0459F7?style=flat-square">
+<img alt="six families" src="https://img.shields.io/badge/families-6-0B1B4F?style=flat-square">
+<img alt="nine products" src="https://img.shields.io/badge/products-9-0B1B4F?style=flat-square">
+<img alt="spinning loaders: never" src="https://img.shields.io/badge/spinning%20loaders-never-F04438?style=flat-square">
+<img alt="credit line: by AntaraX" src="https://img.shields.io/badge/credit%20line-by%20AntaraX-12B76A?style=flat-square">
+</p>
 
-The single reference for how AntaraX looks, sounds and is organised. Every AntaraX product, the antarax.ai website, decks, campaigns and anything written about AntaraX should follow this kit.
+<p align="center"><b>The single reference for how AntaraX looks, sounds and is organised.</b><br>
+Every AntaraX product, the antarax.ai website, decks, campaigns and anything written about AntaraX follows this kit.</p>
 
 AntaraX is the AI product line of **REKA Inisiatif Sdn Bhd** (Kuala Lumpur, Malaysia). REKA has its own kit: [haziqfaris/reka-brand-kit](https://github.com/haziqfaris/reka-brand-kit). Where the two meet, [guide/01-positioning.md](guide/01-positioning.md) sets the boundary.
 
 > [!TIP]
 > **Here from a product repo?** Skip to [Using this kit from a product repo](#using-this-kit-from-a-product-repo): find your product, follow the map, paste two snippets, take the quiz.
+
+## Meet the families
+
+<p align="center"><img src="assets/readme/families.svg" width="100%" alt="The six families: Ripple (Operate), Edge (Perceive), Frame (Understand), Loom (Synthesize), Motion (Navigate) and Tide (Optimize), with their products"></p>
+
+Every product belongs to one family, and the family decides its BaTech shape. Full story in [02 Products and families](guide/02-products-and-families.md).
+
+## Meet the products
+
+Nine products, every one "by AntaraX". Tap a card for its brand sheet.
+
+<p align="center">
+<a href="guide/products/yara.md"><img src="assets/readme/card-yara.svg" width="32%" alt="Yara by AntaraX"></a>
+<a href="guide/products/janka.md"><img src="assets/readme/card-janka.svg" width="32%" alt="Janka by AntaraX"></a>
+<a href="guide/products/plexyz.md"><img src="assets/readme/card-plexyz-grid.svg" width="32%" alt="PLExyz Grid by AntaraX"></a>
+<br>
+<a href="guide/products/plexyz.md"><img src="assets/readme/card-plexyz-crowd.svg" width="32%" alt="PLExyz Crowd by AntaraX"></a>
+<a href="guide/products/frame.md"><img src="assets/readme/card-ax-frame.svg" width="32%" alt="AX Frame by AntaraX"></a>
+<a href="guide/products/angka.md"><img src="assets/readme/card-angka.svg" width="32%" alt="Angka by AntaraX"></a>
+<br>
+<a href="guide/products/tinara.md"><img src="assets/readme/card-tinara.svg" width="32%" alt="Tinara by AntaraX"></a>
+<a href="guide/products/README.md"><img src="assets/readme/card-loom.svg" width="32%" alt="Loom by AntaraX"></a>
+<a href="guide/products/README.md"><img src="assets/readme/card-motion.svg" width="32%" alt="Motion by AntaraX"></a>
+</p>
 
 ## Start here
 
@@ -53,7 +80,9 @@ assets/families/       the six family icons, famicons.json, and Quiet bands per 
 assets/batech/         seven BaTech sets (AntaraX and six families): panel, band, spot in colour, quiet, white
 assets/icons/features/ 60 line icons for features and sub-products
 assets/ai/             the AI sparkle, drawn from the master A
+assets/readme/         the pictures on this page, built by tools/build-readme-art.mjs
 tools/                 the scripts that build all of the above (each says how to run it at the top)
+tools/fonts/           Poppins and JetBrains Mono, for drawing text into SVGs (SIL Open Font License)
 photography/           PHOTO_BRIEF.md: shot list and image-AI prompts for every photo slot on antarax.ai
 reference/             the master logo file, and the source documents the guide was built from
 ```
@@ -64,19 +93,7 @@ Every AntaraX product points here for how it looks, sounds and credits AntaraX. 
 
 ### Step 1 · Find your product
 
-| | Product | Family | Motif | Acts in | Palette | Sheet |
-|:---:|---|---|---|---|---|---|
-| <img src="assets/logos/yara.svg" width="44" alt="Yara logo"> | **Yara** | Ripple · Operate | awan larat | ![#098284](https://img.shields.io/badge/%23098284-098284?style=flat-square) | `--yara-*` | [yara.md](guide/products/yara.md) |
-| <img src="assets/logos/janka.svg" width="44" alt="Janka logo"> | **Janka** | Tide · Optimize | padi | ![#077DA1](https://img.shields.io/badge/%23077DA1-077DA1?style=flat-square) | `--janka-*` | [janka.md](guide/products/janka.md) |
-| <img src="assets/logos/plexyz-grid.svg" width="44" alt="PLExyz Grid logo"> | **PLExyz Grid** | Edge · Perceive | petak | ![#2C09B2](https://img.shields.io/badge/%232C09B2-2C09B2?style=flat-square) | `--grid-*` | [plexyz.md](guide/products/plexyz.md) |
-| <img src="assets/logos/plexyz-crowd.svg" width="44" alt="PLExyz Crowd logo"> | **PLExyz Crowd** | Edge · Perceive | orbit | ![#6040CC](https://img.shields.io/badge/%236040CC-6040CC?style=flat-square) | `--crowd-*` | [plexyz.md](guide/products/plexyz.md) |
-| <img src="assets/logos/ax-frame.svg" width="44" alt="AX Frame logo"> | **AX Frame** | Frame · Understand | intan | ![#074AF8](https://img.shields.io/badge/%23074AF8-074AF8?style=flat-square) | `--frame-*` | [frame.md](guide/products/frame.md) |
-| <img src="assets/logos/angka.svg" width="44" alt="Angka logo"> | **Angka** | Tide · Optimize | congkak | ![#6B3F6B](https://img.shields.io/badge/%236B3F6B-6B3F6B?style=flat-square) | `--angka-*` | [angka.md](guide/products/angka.md) |
-| <img src="assets/logos/tinara.svg" width="44" alt="Tinara logo"> | **Tinara** | Tide · Optimize | kerawang | ![#7A1E3C](https://img.shields.io/badge/%237A1E3C-7A1E3C?style=flat-square) | `--tinara-*` | [tinara.md](guide/products/tinara.md) |
-| <img src="assets/logos/loom.svg" width="44" alt="Loom logo"> | **Loom** | Loom · Synthesize | tenun | ![#4904B3](https://img.shields.io/badge/%234904B3-4904B3?style=flat-square) | `--loom-*` | [products/](guide/products/README.md) |
-| <img src="assets/logos/motion.svg" width="44" alt="Motion logo"> | **Motion** | Motion · Navigate | cengkih | ![#BE4402](https://img.shields.io/badge/%23BE4402-BE4402?style=flat-square) | `--motion-*` | [products/](guide/products/README.md) |
-
-"Acts in" is your primary button. Every product acts in its own colour; the focus ring is always AntaraX blue `#0459F7` (`--<product>-focus`).
+Your card is in [Meet the products](#meet-the-products): family, motif, the colour you act in and your token prefix. Every product acts in its own colour; the focus ring is always AntaraX blue `#0459F7` (`--<product>-focus`).
 
 Open your product for its kit in one place:
 
@@ -213,6 +230,8 @@ disagree, the kit wins. If the kit doesn't answer a question, ask the owner; don
 .amount { font-family: var(--ax-mono); font-variant-numeric: tabular-nums; }
 ```
 
+<p align="center"><img src="assets/readme/palettes.svg" width="100%" alt="Nine product palettes, eleven steps each, with the step each product acts in outlined"></p>
+
 Dark mode takes each product's `dark-accent` and dark chart colours from `tokens/product-palettes.json`, on navy `#071233`.
 
 ### Step 4 · Choose your BaTech
@@ -248,7 +267,11 @@ Copy this list into an issue in your product repo and tick it off there:
 
 ### Pop quiz
 
-Eight questions. Answer before you peek.
+Warm up first: the seven slips products make most often.
+
+<p align="center"><img src="assets/readme/spot-the-difference.svg" width="100%" alt="Spot the difference: by AntaraX not Powered by AntaraX; RM1,200 not RM 1,200; 11 Oct 2026 14:30 not 10/11/2026 2:30 PM; Nova for teams not Nova; support@antarax.ai not hello@reka.re; Organisation not Organization; loaders draw on and breathe, never spin or flip"></p>
+
+Now eight questions. Answer before you peek.
 
 <details>
 <summary><b>1.</b> The footer says "Powered by AntaraX". Ship it?</summary>

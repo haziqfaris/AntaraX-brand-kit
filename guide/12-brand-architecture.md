@@ -105,8 +105,8 @@ Each place uses one BaTech strength, keeps text on a solid surface, and appears 
 | Place | What | Strength and size |
 |---|---|---|
 | Empty states | The product's signature motif alone, as the picture | Full colour (family pair), 72px |
-| Dividers, email and report headers | A drift band of the family's corak: it thins out and fades with no edge | Quiet, 40 to 64px tall, shown whole, never cropped |
-| Sign-in brand panel | An edge band along the bottom of the panel: cropped by the panel's own edge, fading out upward into the ground; the logo sits above it | Quiet, no more than a quarter of the panel |
+| Dividers, email and report headers | The family's BaTech **band** (14), or a drift band that thins out with no edge | Quiet inside the app, Colour on covers |
+| Sign-in brand panel, splash, covers | The family's BaTech **panel** (14): its own shape, in Colour on near-white or White on the product's colour; the logo sits clear of it | Colour or White; PLExyz Grid takes only an Edge spot for now |
 | Avatar and image placeholders | The family's corak behind initials or an empty image | Quiet or family pair, texture scale |
 | Loading | The motif draws on, lights in sequence or carries a travelling pad; or the mark does its thinking motion. Never spinning or flipping (14) | Full colour, 48 to 72px |
 
@@ -116,7 +116,7 @@ A logo and a motif are always different (14). Tinara's logo was its motif; it no
 
 ### Never
 
-- A full cloth, medallion or full-colour corak area inside a product.
+- A full cloth or medallion inside a product. Full colour only in the family sets' places (sign-in panels, splash, covers, spots; 14), never behind text or data.
 - Text or data on top of full-colour corak (BaTech: never behind paragraphs).
 - A motif under 24px on screen (6mm in print); below that, dots only.
 - One motif shown large on its own: above about 120px, show at least two motifs so it reads as corak, not a logo.

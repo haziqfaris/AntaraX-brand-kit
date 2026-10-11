@@ -2,6 +2,37 @@
 
 Own-mark product in the Tide family. Closed pilot, free while the pilot runs. Its own landing page lives at antarax.ai/angka (a separate Worker; link to it, do not replace it). A finance workspace for business owners who are not accountants.
 
+## Brief
+
+*Who Angka serves, what it does and what it may claim. Names, the one-liner and the question are in 02; features and prices live in the product's own repo. Checked against `haziqfaris/angka` at `6f0ed1b` (10 October 2026). Open questions are in 11.*
+
+**For whom.** Buyer: the founder or owner-manager of a small business (services, studios, agencies, contractors, small traders), Malaysia first. User: the same owner, on a phone or laptop between other work, plus anyone they invite. Their accountant receives a hand-off.
+
+**The problem.** "Where does our money go, without needing an accountant to tell us?" Most finance tools assume the owner already understands finance, so many owners hand everything to an accountant once a year and spend the rest of it not knowing how the business is doing.
+
+**What it does.** You give Angka what you already have: bank statements, receipts, photos, forwarded emails or a voice note. It reads each one, matches every payment to its paperwork and asks in plain words for what is missing. When it is time, your accountant gets a read-only hand-off of the figures and the paperwork behind them.
+
+**What it is not.**
+- A replacement for an accountant, and it does not file tax.
+- Accounting software for accountants: there is no chart of accounts to learn.
+
+**Claims.**
+- May say:
+  - Closed pilot, free while the pilot runs (owner decision).
+  - Every figure shows what it rests on: confirmed, inferred or missing (built).
+  - The AI proposes and you confirm; a guess stays marked until you do (built).
+  - Export everything at any time; delete the workspace and it is gone (built).
+  - Data is kept in Singapore (product documents).
+- Never say: that it replaces an accountant, files tax or produces statutory filings; customer numbers, savings or accuracy figures; that tax invoices, MyInvois or online payment are available; "beta", "waitlist", "AntaraX AI" or "by REKA".
+
+**How it is sold.** Closed pilot, run as part of REKA's Managed AI service. Call to action: Request pilot access, at antarax.ai/angka. Free while the pilot runs; afterwards a monthly subscription per business, with a yearly option, priced by country. Angka keeps its own plan names: Solo, Business, Team, and Enterprise by conversation. Every paid plan includes Lapis Business. No prices are published. People may sign up from the landing page: it stays a closed pilot because REKA watches every account (owner, 11 October 2026). Say "pilot", not "trial".
+
+**Lines and areas.** In the app: Home, Inbox, To pay and Ledger; Your business (Activities, People, Documents); How it's going (Figures, Ahead, Reports). The question feature is **Ask Angka**. The website's Capture, Match, Books, Forecast and Assist are working names.
+
+**Lapis.** Written "Lapis by Angka": where a business makes the documents it sends (quotations, invoices, receipts). Free, with or without Angka, and Angka reads its PDFs back. Lapis Business comes with every paid Angka plan; the Lapis API runs on Lapisan by AntaraX.
+
+**Source of truth.** `haziqfaris/angka`: `docs/angka-brief.md`, `docs/lapis-brief.md`, `components/shell/nav-items.ts`, `lib/site/copy-angka.ts` (the landing page). Pricing: `lib/billing/catalog.ts`, `lib/billing/lineup.ts`.
+
 ## Name
 
 - Write **Angka**. Core line: "Every number has a story." Other lines in use: "Simpler together.", "Business clarity for what's next.", "Less busywork. More forward." Use the 02 one-liner on antarax.ai; inside the product, pick one line and retire the rest.

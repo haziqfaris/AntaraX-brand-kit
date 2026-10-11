@@ -14,11 +14,12 @@ How each product carries its own mark, colour and credit line (own-mark and A-ma
 
 | Tier | Products | Where they appear | Primary CTA |
 |---|---|---|---|
-| **Main products** | Yara (lead), Janka, PLExyz Grid | Homepage, navigation, published pricing, own page under `/products/` | Book a demo |
-| **Closed pilots** | AX Frame, PLExyz Crowd, Angka, Tinara, Loom, Motion | Closed pilots page and their own landing page under `/pilots/` | Request pilot access |
+| **Main products** | Yara (lead), Janka, PLExyz Grid | Homepage, navigation, pricing on request, own page under `/products/` | Book a demo |
+| **Closed pilots** | AX Frame, PLExyz Crowd, Angka, Tinara, AX Loom, AX Motion | Closed pilots page and their own landing page under `/pilots/` | Request pilot access |
 
+- **For now every product, main products and closed pilots alike, is sold as part of REKA's Managed AI service** (owner, 11 October 2026). Prices are quoted, not published.
 - **Every closed pilot runs as part of REKA's Managed AI service.** REKA sets it up on the customer's site and data, keeps it running, and improves it with them. Say so on every pilot page.
-- There is **no waitlist**. Pilots use "Request pilot access" (form at `/pilots/request`).
+- There is **no waitlist**. Pilots use "Request pilot access" (form at `/pilots/request`). A closed pilot may still let people sign up in the product itself while REKA watches every account (owner, 11 October 2026): AX Frame and Angka do. It stays a closed pilot.
 - **AX Frame** is a closed pilot while the owner validates it.
 - **Angka** keeps its own live landing page at `antarax.ai/angka` (a separate Worker). Link to it; do not replace it.
 - **Event organisers:** for PLExyz Crowd and event technology, AntaraX works with **Mole** ([mole.is](https://mole.is), [sense.mole.is](https://sense.mole.is)). Wherever events come up, say: "For event organisers we work with Mole (sense.mole.is) to provide event technology for your organisation."
@@ -36,20 +37,20 @@ Use these names, one-liners and questions exactly.
 | **PLExyz Crowd** | Closed pilot | Know how your building is really used. No cameras. | "How many people are actually in this building right now, and do we need all this space?" | Edge | /pilots/plexyz-crowd |
 | **Angka** | Closed pilot | A finance workspace for business owners who are not accountants. | "Where does our money go, without needing an accountant to tell us?" | Tide | antarax.ai/angka |
 | **Tinara** | Closed pilot | Know which Malaysian companies to sell to, why, and how to open the conversation. | "Which companies should we call next, and what do we say when they pick up?" | Tide | /pilots/tinara |
-| **Loom** | Closed pilot | Your data, woven together. | "How much more could we do with our data, if it were all in one place?" | Loom | /pilots/loom |
-| **Motion** | Closed pilot | Every vehicle in view, and within reach. | "Where is every vehicle right now, how is it doing, and can we take control from here?" | Motion | /pilots/motion |
+| **AX Loom** | Closed pilot | Your data, woven together. | "How much more could we do with our data, if it were all in one place?" | Loom | /pilots/loom |
+| **AX Motion** | Closed pilot | Every vehicle in view, and within reach. | "Where is every vehicle right now, how is it doing, and can we take control from here?" | Motion | /pilots/motion |
 
 ### Product facts worth knowing
 
-- **Yara:** work orders and job cards. Workers tap Start, Hold or Complete on their phone; managers see live status, working time and full history. Installable on phones, tablets and desktops; English and Malay. Lead product and first subscription success. Credit: "by AntaraX". Working lines: Work, Desk, Crew, Flow, View, Assist (View and Assist are working names).
-- **Janka:** AI inventory forecasting for manufacturers. Reads real consumption, recommends when and how much to reorder, drafts the order for a person to approve. It is not accounting software. Areas: Inventory, Forecast, Replenish, Risk, Insights.
-- **PLExyz Grid:** shows what is in a warehouse or yard on the site's own layout, tracks cargo, bookings and movements, and ranks where new stock should go by fit and retrieval distance. Free for one facility.
-- **AX Frame (AXF):** a manual-first digital-asset ledger: every subscription, API, domain and renewal in one list, warnings before a charge. Working lines: **Atlas** (inventory and location), **Layers** (stacks and dependencies), **Orbit** (renewals), **Pulse** (health), **Ledger** (costs), **Lens** (AI analysis). Rule: one world, six ways of seeing it, not six products. Frame never auto-discovers assets (see the axframe repo's guardrails).
-- **PLExyz Crowd:** counts people per space from the Wi-Fi signals already in a building. No cameras, no faces, no identities. Claims rules in 03.
-- **Angka:** areas Capture, Match, Books, Forecast, Assist. Free while the pilot runs.
-- **Tinara:** Malaysia-first B2B intelligence. Ranks companies by fit, signals and match, and writes a brief: who to call, the opening angle, next steps on days 1, 3 and 7.
-- **Loom:** data synthesis. Weaves data from systems, spreadsheets, sensors and documents into one picture, and generates synthetic data where real data is short or too sensitive to use. Automation is not Loom: it runs on Ripple (see 10, 10 October 2026).
-- **Motion:** telematics and fleet management, built first for autonomous and remotely controlled vehicles. Carries forward REKA's 2016 self-driving car work. No claims of deployments, customers, pricing or certification until they exist.
+- **Yara:** work orders and job cards. Workers tap Start, Hold or Complete on their phone; managers see live status, working time and full history. Installable on phones, tablets and desktops; worker screens in English and Malay, office screens in English. Lead product and first subscription success: live with its first customer since 30 September 2026 (owner); name the customer only with written permission. Credit: "by AntaraX". Working lines: Work, Desk, Crew, Relay, View, Assist (View and Assist are working names).
+- **Janka:** AI inventory forecasting for manufacturers. Reads real consumption, recommends when and how much to reorder, drafts the order for a person to approve. It is not accounting software. Website working names: Inventory, Forecast, Replenish, Risk, Insights (the app's areas are in 14).
+- **PLExyz Grid:** shows what is in a warehouse or yard on the site's own layout, tracks cargo from arrival to dispatch, and checks every placement against the site's rules. Free for one facility; bookings, movements and analytics come with paid plans.
+- **AX Frame (AXF):** a manual-first digital-asset ledger: every subscription, API, domain and renewal in one list, warnings before a charge. Working lines: **Atlas** (inventory and location), **Layers** (stacks and dependencies), **Orbit** (renewals), **Pulse** (health), **Ledger** (every asset in one grid), **Lens** (AI analysis). Rule: one world, six ways of seeing it, not six products. Frame never auto-discovers assets (see the axframe repo's guardrails).
+- **PLExyz Crowd:** not in active development (owner, 11 October 2026). It is designed to count people per space from the Wi-Fi signals already in a building; the pilot runs on simulated signals today. No cameras, no faces, no identities. Claims rules in 03.
+- **Angka:** website working names Capture, Match, Books, Forecast, Assist (the app's areas are in 14). Free while the pilot runs.
+- **Tinara:** Malaysia-first B2B intelligence. Ranks companies by fit, signals and match, and writes a brief: the buyer roles to approach, the opening angle, next steps on days 1, 3 and 7.
+- **AX Loom:** data synthesis. Weaves data from systems, spreadsheets, sensors and documents into one picture, and generates synthetic data where real data is short or too sensitive to use. Automation is not Loom: it runs on Ripple (see 10, 10 October 2026).
+- **AX Motion:** telematics and fleet management, built first for autonomous and remotely controlled vehicles. Carries forward REKA's 2016 self-driving car work. No claims of deployments, customers, pricing or certification until they exist.
 - **Lapisan:** the platform under the products, for developers, at lapisan.antarax.ai.
 
 ## The six families
@@ -59,8 +60,8 @@ Use these names, one-liners and questions exactly.
 | **Ripple** | Operate | "Work that moves." | Yara | `#08B0B3` | riak (one tap, spreading); Yara's own motif is awan larat, later sungai (14) |
 | **Edge** | Perceive | "Sense the real world." | PLExyz Grid, PLExyz Crowd | `#12B76A` | petak (Grid), orbit (Crowd) |
 | **Frame** | Understand | "Know what you depend on." | AX Frame | `#074AF8` | intan |
-| **Loom** | Synthesize | "Weave it together." | Loom | `#4904B3` | tenun |
-| **Motion** | Navigate | "Every vehicle, within reach." | Motion | `#FC5D04` | cengkih (a quadcopter from above) |
+| **Loom** | Synthesize | "Weave it together." | AX Loom | `#4904B3` | tenun |
+| **Motion** | Navigate | "Every vehicle, within reach." | AX Motion | `#FC5D04` | cengkih (a quadcopter from above) |
 | **Tide** | Optimize | "Read what's coming." | Janka, Angka, Tinara | `#E9579D` | bunga raya; padi (Janka), congkak (Angka), kerawang (Tinara) |
 
 Family descriptions for the Families page:
@@ -80,7 +81,7 @@ Understand → Operate → Optimize → Perceive → Navigate → Act → Synthe
 
 - **Run your business:** Yara
 - **Understand your business:** Janka, AX Frame
-- **Automate your world:** PLExyz, Ripple automation, Loom, Motion
+- **Automate your world:** PLExyz, Ripple automation, AX Loom, AX Motion
 
 ## Naming rules
 
@@ -95,9 +96,9 @@ Understand → Operate → Optimize → Perceive → Navigate → Act → Synthe
 
 ### Retired names (never use in new copy)
 
-- "AX Edge" meaning fleet updates; "AX Motion" meaning workflow automation (Motion now means telematics and fleet management).
+- "AX Edge" meaning fleet updates; "AX Motion" meaning workflow automation (AX Motion is now the telematics and fleet product).
 - "AX Kinetics" (REKA's Kinetik owns robotics).
-- Loom as AI agents, workflows or automation (automation runs on Ripple; Loom is data synthesis, 10 October 2026). "AX Loom" meaning synthetic data is no longer retired: it is part of Loom again.
+- Loom as AI agents, workflows or automation (automation runs on Ripple; Loom is data synthesis, 10 October 2026). "AX Loom" meaning synthetic data is no longer retired: AX Loom is the product name (owner, 11 October 2026), and synthetic data is part of it again.
 - "Yara Ripple" as a product name (use "Yara · by AntaraX").
 - "Powered by AntaraX" and "Powered by AntaraX [Family]" as product credits (use "by AntaraX", 11 October 2026).
 - "Waitlist" for any product (replaced by closed pilots, 10 October 2026).

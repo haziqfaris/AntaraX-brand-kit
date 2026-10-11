@@ -52,7 +52,7 @@ Shared with REKA (REKA Brand Guidelines v1.0): **"Founder", never CEO**, for Muh
 3. **Numbers in page copy** are published industry benchmarks with a named source (percentages, ranges, hours, ratios). Money appears only inside calculators driven by the visitor's own inputs: USD first, MYR toggle, the reference rate stated, ranges where the benchmark is a range. Never promise outcomes.
 4. **Maturity is stated honestly.** Closed pilot means closed pilot. Do not present roadmap as shipping.
 5. **PLExyz Crowd:** no accuracy percentages, no named customers or logos, no vital-sign sensing claims, no roadmap shown as shipping; its demo is simulated and must say so; the internal codename AXLE is never shown. Describe the sensing as "Wi-Fi signals already in the building" (Bluetooth may be mentioned where the product does it).
-6. **Motion:** no claims of deployments, customers, pricing or certification. "Malaysia's first self-driving car on open roads" is REKA's claim only.
+6. **AX Motion:** no claims of deployments, customers, pricing or certification. "Malaysia's first self-driving car on open roads" is REKA's claim only.
 7. **Frame:** never imply auto-discovery, network scanning or shadow-IT detection. Frame is manual-first; the user tells it what exists.
 8. **REKA recognition:** Frost & Sullivan "recognised" REKA's crowd analytics work; never "award".
 9. **Mole:** describe as a collaboration for event technology, nothing more.

@@ -2,6 +2,40 @@
 
 A-mark product in the Ripple family. Main product and the portfolio lead. Live at yara.antarax.ai. Yara is the **reference implementation** for every other product app: it already follows the shared core.
 
+## Brief
+
+*Who Yara serves, what it does and what it may claim. Names, the one-liner and the question are in 02; features and prices live in the product's own repo. Checked against `haziqfaris/yara` at `1fabac8` (5 October 2026). Open questions are in 11.*
+
+**For whom.** Buyer: the owner or operations manager of a small to mid-sized fabrication or light manufacturing business. User: floor workers on their phones; supervisors and office staff on a laptop or tablet.
+
+**The problem.** "Where is every job right now, without phoning the floor?" Orders sit on paper worksheets or spreadsheets, so managers walk the floor or phone workers to learn where each order has got to.
+
+**What it does.** Yara follows each customer order from the PO to the last stage on the floor. Workers start, hold and complete jobs on a phone, and the office sees live status, working time and full history. Each company sets its own stages, and only owners and managers see what an order is worth.
+
+**What it is not.**
+- An ERP: no inventory, bill of materials, accounting or payroll.
+- A stock forecaster: that is Janka.
+
+**Claims.**
+- May say:
+  - Workers start, hold and complete jobs on a phone (built).
+  - Worker screens are in English and Bahasa Malaysia; office screens are in English (built).
+  - Working time counts shift hours only and leaves out holds (built).
+  - Workers never see order values (a locked product rule).
+  - Built first for a Malaysian metal fabricator, and live with it since 30 September 2026 (owner).
+- Never say:
+  - The customer's name, a quote or a figure, without written permission.
+  - AI intake, Commission or Reverse engineer as available: they are planned.
+  - Online payment: in-product payments are off.
+  - "Powered by AntaraX Ripple", "Yara Ripple" or "Yara AXLE".
+  - The pandemic origin story, until the owner confirms it.
+
+**How it is sold.** Main product and the portfolio lead, sold as part of REKA's Managed AI service for now. Call to action: Book a demo. Quoted to the size of the floor and its shifts rather than per seat, and invoiced by REKA. The Rise plan names apply once its packages are named (13).
+
+**Lines and areas.** In the app: Dashboard, Work Orders, Projects, Job Cards, Customers, Team Tasks, Production setup and the worker app. Modules: Value split and Status API (built), Commission and Reverse engineer (planned). On the website: Work, Desk, Crew, Relay, View, Assist (working names).
+
+**Source of truth.** `haziqfaris/yara`: `content/guide/yara-user-guide.md` (what it does, as built), `docs/state-of-play.md`, `docs/platform-tiers.md`. Website pricing copy: `haziqfaris/antarax-ai` `site/pricing.html`. `docs/product-overview.md` dates from July and is out of date.
+
 ## Name
 
 - Write **Yara**. Never "YARA" or "Yara Ripple" (retired 7 October 2026).

@@ -5,7 +5,7 @@ Each AntaraX product is its own app with its own codebase. They should read as o
 ## Shared rules for every product UI
 
 - **Type:** Poppins for UI, JetBrains Mono for every number (tabular figures).
-- **Primary action:** AntaraX blue `#0459F7` in A-mark products (Yara, Frame, Loom, Motion); the product's own accent, or its dark shade, in own-mark products (12).
+- **Primary action:** every product acts in its own colour (10, 11 October 2026), from its palette in `tokens/product-palettes.css` (`--<product>-action`). AntaraX blue `#0459F7` is the focus ring in every product (14).
 - **Product accent:** one per product (the family colour for A-mark products, the product's own colour for own-mark products), with its tint and dark, for selection, charts, badges and identity moments. Values in `tokens/` under `color.product`.
 - **Status colours** only for real signal: ok `#12B76A`, warn `#F79009`, fault `#F04438`.
 - **Logo:** the product's own mark (own-mark products) or the AntaraX A with the family icon (A-mark products), with the AntaraX credit (12).

@@ -2,6 +2,37 @@
 
 Own-mark product in the Tide family. Closed pilot, invite-only. Malaysia-first B2B intelligence: which companies to sell to, why, and how to open the conversation.
 
+## Brief
+
+*Who Tinara serves, what it does and what it may claim. Names, the one-liner and the question are in 02; features and prices live in the product's own repo. Checked against `haziqfaris/tinara` at `02d53b7` on `build/production-foundation` (24 July 2026; the repo has no `main`). Open questions are in 11.*
+
+**For whom.** Buyer: a head of sales or business development, a revenue operations lead or a founder at a company selling into Malaysia. User: sales, business development and corporate development teams deciding which companies to approach.
+
+**The problem.** "Which companies should we call next, and what do we say when they pick up?" Today the choice is a global database with thin Malaysian coverage, or hours of manual research per account.
+
+**What it does.** You set out what you sell, who buys it and your goal, then narrow by industry, size, revenue band and state. Tinara ranks Malaysian companies by profile fit, signal strength and solution match, and shows the reasons. For each company you choose, it writes a brief: the buyer roles to approach, an opening angle, and next steps for days 1, 3 and 7.
+
+**What it is not.**
+- A contact list, or a company database to download.
+- A CRM or an outreach tool.
+- A live web search: it works from datasets that REKA reviews and releases.
+
+**Claims.**
+- May say:
+  - Malaysia first, with revenue in ringgit bands (built).
+  - Every ranking shows its three scores and the reasons (built).
+  - Estimated figures are labelled as estimates (built).
+  - A closed pilot for invited partners.
+- Never say: a company count or coverage figure; "SSM-verified" or "verified data"; named people, emails or phone numbers; real-time signals or monitoring; CRM integrations; pilot partners or results.
+
+**Before any partner uses real data** (owner, 11 October 2026): remove the key-people view and the contact export (names, emails, LinkedIn profiles) from the app, and review the licence of every data source. Until then Tinara runs on its synthetic release.
+
+**How it is sold.** Closed pilot, run as part of REKA's Managed AI service. Call to action: Request pilot access. Usage is counted in credits, and a brief costs more than a search. The app's Explorer, Scout and Operator become Seed, Nova and Galaxy (13). Prices are set after the pilot; billing is manual during it.
+
+**Lines and areas.** In the app: New campaign, Overview, Campaigns, Watchlist (its signal feed is switched off for partners), Profiles, Saved reports and Credits. No website lines.
+
+**Source of truth.** `haziqfaris/tinara`, branch `build/production-foundation`: `docs/Tinara_Handover_Brief.md`, `supabase/functions/generate-brief/index.ts` (what a brief may say), `supabase/migrations/` (the data model). Pricing: `types.ts` (credits), `components/Subscription.tsx` (plans).
+
 ## Name
 
 - Write **Tinara**. Retire **"Tinara by REKA"**, "REKA Intelligence", "Tinara Intelligence Engine by REKA" and "Strategic Intelligence Platform v2.0".

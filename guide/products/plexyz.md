@@ -21,6 +21,69 @@ Brand statement: **"Spatial intelligence, made readable."** Design principle: **
 
 Concepts are proposed directions, not launches. Never show them as available (03, claims rule 4).
 
+## Briefs
+
+*Who each PLExyz product serves, what it does and what it may claim. Names, one-liners and questions are in 02; features and prices live in each product's own repo. Checked against `haziqfaris/plexyz-grid` at `7e1b9a4` (11 October 2026) and `haziqfaris/plexyz-crowd` at `ed08e96` (21 July 2026). Open questions are in 11. PLExyz Trace is briefed inside Janka.*
+
+### PLExyz Grid
+
+**For whom.** Buyer: the operations lead at a third-party logistics firm, port, bonded warehouse or container freight station that manages storage space. User: operations managers, supervisors and operators; tenants, through their own portal.
+
+**The problem.** "What is where, and where should the next load go?" Most operators track space and cargo on spreadsheets, whiteboards and memory, with no live view of how full a site is.
+
+**What it does.** PLExyz Grid draws a warehouse or yard as it really is, from the site plan down to each bay, and shows what is stored where. It tracks cargo from arrival to dispatch, with incidents and regular floor checks; paid plans add bookings, tenants, movements and analytics. Before cargo is placed, it checks the bay against the site's rules and warns or blocks.
+
+**What it is not.**
+- Only for ports: port features are add-ons.
+- Fed by live sensors: weights and measurements are entered by hand today.
+- A working simulation engine, yet.
+
+**Claims.**
+- May say:
+  - Free for one facility (plan data).
+  - Bays shown on the site's own layout (built).
+  - Cargo, incidents and floor checks tracked (built).
+  - Every placement checked against the site's rules (built).
+  - Tenants see only their own bays and bookings (built, an add-on).
+- Never say: AI placement suggestions as live; "retrieval distance"; the flagship customer's name; prices; customer counts, uptime or quotes; analytics trends or simulation as real; live weighbridge or sensor feeds; exports; Malay.
+
+**How it is sold.** Main product, sold as part of REKA's Managed AI service for now. Call to action: Book a demo. The free plan has no AI. Paid plans are a subscription that REKA sets per organisation and invoices; prices are not published. REKA reviews each new workspace before it goes live. Plans move to Seed (free), Nova, Galaxy and Quantum (13).
+
+**Lines and areas.** In the app: Operations, Commercial, Monitoring and System. Add-ons: Tenant portal, AI pack, Port add-ons. No website lines.
+
+**Source of truth.** `haziqfaris/plexyz-grid`: `PRODUCT_BRIEF.md`, `PROGRESS.md`, `apps/grid/src/App.tsx`, `docs/ai/AI-usage-framework.md`. Plans: `packages/shared/src/entitlements.ts`.
+
+### PLExyz Crowd
+
+**Not in active development** (owner, 11 October 2026). Its pilot page stays on antarax.ai; claim nothing new, and keep the heart-rate screens in its app out of every demo.
+
+**For whom.** Buyer: a facilities or workplace lead, an operations manager, or a finance lead weighing a lease renewal; offices first. User: the facilities team, reading live occupancy and the monthly report.
+
+**The problem.** "How many people are actually in this building right now, and do we need all this space?" Leases are signed on headcount and assumption, and nobody learns how the space is really used.
+
+**What it does.** PLExyz Crowd shows how many people are in each space of a building, live, and how that changes through the day and the week. It works out what unused space and empty, powered rooms cost, and puts it in a monthly report you can forward. Every number says whether it is estimated or measured, and a space with no data says so instead of showing zero.
+
+**What it is not.**
+- A camera system: no video, no faces, no identities.
+- A health or vital-signs product.
+- Reading a building's own Wi-Fi yet: the pilot runs on simulated signals.
+
+**Claims.**
+- May say:
+  - No cameras; no video ever exists (how it senses).
+  - It counts people per space and never identifies anyone (product rule).
+  - Every number is marked estimated or measured (built).
+  - Space and energy cost, worked out from your own figures (built).
+  - A monthly report and CSV export (built).
+  - The demo is simulated (a required disclosure).
+- Never say: accuracy percentages; customers, logos or case studies; vital signs; existing Wi-Fi, through-wall sensing, falls or safety alerts as available; money figures from the simulated site; Malaysian data residency (it is hosted in Singapore); AXLE; awards.
+
+**How it is sold.** Closed pilot, run as part of REKA's Managed AI service: REKA sets it up on site, keeps it running and improves it with the customer. Call to action: Request pilot access. No waitlist and no sign-up. Pricing is not published; the drafts pair a monthly software fee with hardware sold separately. A pilot is a stage, not a plan. For events, use the Mole line (02).
+
+**Lines and areas.** In the app: Live, Alerts, Analytics, Reports, Devices and the client view. Hardware: PLExyz Crowd Node (simulated today) and PLExyz Gateway (planned). Planned: reading a building's Wi-Fi controller, and a safety module.
+
+**Source of truth.** `haziqfaris/plexyz-crowd`: `README.md`, `app/lib/nav.ts`, `docs/plexyz-crowd-landing-page-brief.md` (its claims and pricing sections are out of date: follow this brief and 03). The repo's last commit is 21 July 2026.
+
 ## Name
 
 - Always **PLExyz**: capital P, L, E; lower-case xyz. Products are "PLExyz Grid", "PLExyz Trace" and so on.

@@ -1,8 +1,17 @@
 # AntaraX brand kit
 
+![version 1.4](https://img.shields.io/badge/version-1.4-0459F7?style=flat-square)
+![six families](https://img.shields.io/badge/families-6-0B1B4F?style=flat-square)
+![nine products](https://img.shields.io/badge/products-9-0B1B4F?style=flat-square)
+![spinning loaders: never](https://img.shields.io/badge/spinning%20loaders-never-F04438?style=flat-square)
+![credit line: by AntaraX](https://img.shields.io/badge/credit%20line-by%20AntaraX-12B76A?style=flat-square)
+
 The single reference for how AntaraX looks, sounds and is organised. Every AntaraX product, the antarax.ai website, decks, campaigns and anything written about AntaraX should follow this kit.
 
 AntaraX is the AI product line of **REKA Inisiatif Sdn Bhd** (Kuala Lumpur, Malaysia). REKA has its own kit: [haziqfaris/reka-brand-kit](https://github.com/haziqfaris/reka-brand-kit). Where the two meet, [guide/01-positioning.md](guide/01-positioning.md) sets the boundary.
+
+> [!TIP]
+> **Here from a product repo?** Skip to [Using this kit from a product repo](#using-this-kit-from-a-product-repo): find your product, follow the map, paste two snippets, take the quiz.
 
 ## Start here
 
@@ -15,6 +24,7 @@ AntaraX is the AI product line of **REKA Inisiatif Sdn Bhd** (Kuala Lumpur, Mala
 | Building a product's words, emails, addresses, plans, formats, help or exports | [13 Shared product standards](guide/13-shared-product-standards.md) and its audit |
 | How a product's family, logo, motif, icons, BaTech, loaders, palette and sub-products fit together | [14 Product identity system](guide/14-product-identity-system.md) |
 | Working on a product's logo, name or credit line | [12 Brand architecture](guide/12-brand-architecture.md), [products/](guide/products/README.md), [the visual guide](guide/product-brands.html) |
+| Building or fixing a product, from its own repo | [Using this kit from a product repo](#using-this-kit-from-a-product-repo) |
 | Checking what was decided, and when | [10 Decisions log](guide/10-decisions-log.md), [11 Open questions](guide/11-open-questions.md) |
 
 ## The one-minute version
@@ -31,18 +41,273 @@ AntaraX is the AI product line of **REKA Inisiatif Sdn Bhd** (Kuala Lumpur, Mala
 ## What is in this repository
 
 ```
-guide/        the brand guide, numbered in reading order
-tokens/       tokens.json and tokens.css: colours, type, radius, spacing, motion
-assets/logo/  the A mark (blue and white) and the full lockup
-assets/families/  the five family icons and famicons.json (paths for the families animation)
-assets/products/  each product's mark, lockups and signature motif
-assets/ai/        the AI sparkle that marks AI work in every product
-tools/            build-product-motifs.mjs (needs the antarax-ai checkout for the motif code)
-guide/products/   one brand sheet per product
-guide/product-brands.html  the visual guide to product brands: every mark, restyle, lockup and accent
-photography/  PHOTO_BRIEF.md: shot list and image-AI prompts for every photo slot on antarax.ai
-reference/    the master logo file, and the source documents the guide was built from
+guide/                 the brand guide, numbered in reading order
+guide/products/        one brand sheet per product
+guide/product-brands.html  the visual guide: every logo, motif, BaTech set, loader and palette, side by side
+tokens/tokens.css      AntaraX tokens: colours, family pairs, type, radius, spacing, motion (and tokens.json)
+tokens/product-palettes.css  each product's full palette: scales, roles, neutrals, surfaces, charts (and .json)
+assets/logo/           the AntaraX A (blue and white) and the full lockup
+assets/logos/          every product logo on the same square, ready to drop in
+assets/products/       each product's marks, lockups, motifs and loaders, at their source sizes
+assets/families/       the six family icons, famicons.json, and Quiet bands per family
+assets/batech/         seven BaTech sets (AntaraX and six families): panel, band, spot in colour, quiet, white
+assets/icons/features/ 60 line icons for features and sub-products
+assets/ai/             the AI sparkle, drawn from the master A
+tools/                 the scripts that build all of the above (each says how to run it at the top)
+photography/           PHOTO_BRIEF.md: shot list and image-AI prompts for every photo slot on antarax.ai
+reference/             the master logo file, and the source documents the guide was built from
 ```
+
+## Using this kit from a product repo
+
+Every AntaraX product points here for how it looks, sounds and credits AntaraX. This section gets a product repo from "where do I start?" to "on brand" in five steps.
+
+### Step 1 · Find your product
+
+| | Product | Family | Motif | Acts in | Palette | Sheet |
+|:---:|---|---|---|---|---|---|
+| <img src="assets/logos/yara.svg" width="44" alt="Yara logo"> | **Yara** | Ripple · Operate | awan larat | ![#098284](https://img.shields.io/badge/%23098284-098284?style=flat-square) | `--yara-*` | [yara.md](guide/products/yara.md) |
+| <img src="assets/logos/janka.svg" width="44" alt="Janka logo"> | **Janka** | Tide · Optimize | padi | ![#077DA1](https://img.shields.io/badge/%23077DA1-077DA1?style=flat-square) | `--janka-*` | [janka.md](guide/products/janka.md) |
+| <img src="assets/logos/plexyz-grid.svg" width="44" alt="PLExyz Grid logo"> | **PLExyz Grid** | Edge · Perceive | petak | ![#2C09B2](https://img.shields.io/badge/%232C09B2-2C09B2?style=flat-square) | `--grid-*` | [plexyz.md](guide/products/plexyz.md) |
+| <img src="assets/logos/plexyz-crowd.svg" width="44" alt="PLExyz Crowd logo"> | **PLExyz Crowd** | Edge · Perceive | orbit | ![#6040CC](https://img.shields.io/badge/%236040CC-6040CC?style=flat-square) | `--crowd-*` | [plexyz.md](guide/products/plexyz.md) |
+| <img src="assets/logos/ax-frame.svg" width="44" alt="AX Frame logo"> | **AX Frame** | Frame · Understand | intan | ![#074AF8](https://img.shields.io/badge/%23074AF8-074AF8?style=flat-square) | `--frame-*` | [frame.md](guide/products/frame.md) |
+| <img src="assets/logos/angka.svg" width="44" alt="Angka logo"> | **Angka** | Tide · Optimize | congkak | ![#6B3F6B](https://img.shields.io/badge/%236B3F6B-6B3F6B?style=flat-square) | `--angka-*` | [angka.md](guide/products/angka.md) |
+| <img src="assets/logos/tinara.svg" width="44" alt="Tinara logo"> | **Tinara** | Tide · Optimize | kerawang | ![#7A1E3C](https://img.shields.io/badge/%237A1E3C-7A1E3C?style=flat-square) | `--tinara-*` | [tinara.md](guide/products/tinara.md) |
+| <img src="assets/logos/loom.svg" width="44" alt="Loom logo"> | **Loom** | Loom · Synthesize | tenun | ![#4904B3](https://img.shields.io/badge/%234904B3-4904B3?style=flat-square) | `--loom-*` | [products/](guide/products/README.md) |
+| <img src="assets/logos/motion.svg" width="44" alt="Motion logo"> | **Motion** | Motion · Navigate | cengkih | ![#BE4402](https://img.shields.io/badge/%23BE4402-BE4402?style=flat-square) | `--motion-*` | [products/](guide/products/README.md) |
+
+"Acts in" is your primary button. Every product acts in its own colour; the focus ring is always AntaraX blue `#0459F7` (`--<product>-focus`).
+
+Open your product for its kit in one place:
+
+<details>
+<summary><img src="assets/logos/yara.svg" width="20" align="absmiddle"> <b>Yara</b>: work orders and job cards</summary>
+
+- **Logo:** `assets/logos/yara.svg`, the A with the Ripple icon. Motif and loaders: `assets/products/yara/`.
+- **BaTech:** the Ripple **Rings**, `assets/batech/ripple/`.
+- **Your section in 14:** [Yara](guide/14-product-identity-system.md#yara). **Your to-do list:** [13, what each app needs](guide/13-shared-product-standards.md#what-each-app-needs).
+- **Lives at:** `yara.antarax.ai`, sends as `Yara <yara@antarax.ai>`.
+- **Biggest quick win:** "Powered by AntaraX Ripple" in the email footer becomes "by AntaraX".
+</details>
+
+<details>
+<summary><img src="assets/logos/janka.svg" width="20" align="absmiddle"> <b>Janka</b>: inventory forecasting (with PLExyz Trace inside)</summary>
+
+- **Logo:** `assets/logos/janka.svg`, the J that never closes, kept. Motif and loaders: `assets/products/janka/`.
+- **BaTech:** the Tide **Swell**, `assets/batech/tide/`.
+- **Your section in 14:** [Janka](guide/14-product-identity-system.md#janka). **Your to-do list:** [13, what each app needs](guide/13-shared-product-standards.md#what-each-app-needs).
+- **Lives at:** `janka.antarax.ai`, sends as `Janka <janka@antarax.ai>`.
+- **Biggest quick win:** `hello@reka.re` on sign-in becomes support@antarax.ai, and the focus ring turns from orange to AntaraX blue.
+</details>
+
+<details>
+<summary><img src="assets/logos/plexyz-grid.svg" width="20" align="absmiddle"> <b>PLExyz Grid</b>: warehouse and yard space</summary>
+
+- **Logo:** `assets/logos/plexyz-grid.svg`, the force field, shard and zones, now in AntaraX colours. The owner's originals stay as `*-original.svg` in `assets/products/plexyz/`.
+- **BaTech:** no full panel for now. One Edge **spot** in a corner of sign-in, `assets/batech/edge/spot-colour.svg`.
+- **Your section in 14:** [PLExyz Grid](guide/14-product-identity-system.md#plexyz-grid). **Your to-do list:** [13, what each app needs](guide/13-shared-product-standards.md#what-each-app-needs).
+- **Lives at:** `grid.antarax.ai`, not a `pages.dev` address.
+- **Biggest quick win:** focus outlines are removed on inputs; put them back.
+</details>
+
+<details>
+<summary><img src="assets/logos/plexyz-crowd.svg" width="20" align="absmiddle"> <b>PLExyz Crowd</b>: how a building is really used</summary>
+
+- **Logo:** `assets/logos/plexyz-crowd.svg`, the PLExyz mark with people counted as dots, never faces.
+- **BaTech:** the Edge **Field**, `assets/batech/edge/`.
+- **Your section in 14:** [PLExyz Crowd](guide/14-product-identity-system.md#plexyz-crowd). **Your to-do list:** [13, what each app needs](guide/13-shared-product-standards.md#what-each-app-needs).
+- **Lives at:** `crowd.antarax.ai`.
+- **Biggest quick win, and the most urgent fix in the portfolio:** the app is titled "AXLE · REKA Operations Console". It is PLExyz Crowd; AXLE is the internal console only.
+</details>
+
+<details>
+<summary><img src="assets/logos/ax-frame.svg" width="20" align="absmiddle"> <b>AX Frame</b>: know what your business depends on</summary>
+
+- **Logo:** `assets/logos/ax-frame.svg`, the A with the Frame icon. It keeps its breathing cube halo.
+- **BaTech:** the Frame **Corners**, `assets/batech/frame/`, and intan in empty states.
+- **Your section in 14:** [AX Frame](guide/14-product-identity-system.md#ax-frame). **Your to-do list:** [13, what each app needs](guide/13-shared-product-standards.md#what-each-app-needs).
+- **Lives at:** `frame.antarax.ai`, sends as `AX Frame <frame@antarax.ai>`.
+- **Already ahead:** money grouped by currency, never converted, is AX Frame's rule and now everyone's.
+- **Biggest quick win:** move off the `vercel.app` addresses, and `$` becomes `US$`.
+</details>
+
+<details>
+<summary><img src="assets/logos/angka.svg" width="20" align="absmiddle"> <b>Angka</b>: finance for owners who are not accountants</summary>
+
+- **Logo:** `assets/logos/angka.svg`, the sheet stack, kept. Lapis has its own: `assets/logos/lapis.svg`.
+- **BaTech:** the Tide **Swell**, `assets/batech/tide/`.
+- **Your section in 14:** [Angka](guide/14-product-identity-system.md#angka). **Your to-do list:** [13, what each app needs](guide/13-shared-product-standards.md#what-each-app-needs).
+- **The exception:** Angka keeps its own plan names (Solo, Business, Team, Enterprise) and "Ask Angka".
+- **Biggest quick win:** the email footer "Angka, by REKA Inisiatif Sdn Bhd." becomes the credit line, and `USD 1,200.00` becomes `US$1,200.00`.
+</details>
+
+<details>
+<summary><img src="assets/logos/tinara.svg" width="20" align="absmiddle"> <b>Tinara</b>: which Malaysian companies to sell to</summary>
+
+- **Logo:** `assets/logos/tinara.svg`, the signal: a garnet company with a gold signal reaching out. Use `tinara-light.svg` on dark grounds and `tinara-small.svg` at 24px and below.
+- **Colour:** garnet leads, gold highlights, and gold is never text on white.
+- **BaTech:** the Tide **Swell**, `assets/batech/tide/`, with kerawang as its motif.
+- **Your section in 14:** [Tinara](guide/14-product-identity-system.md#tinara). **Your to-do list:** [13, what each app needs](guide/13-shared-product-standards.md#what-each-app-needs).
+- **Biggest quick win:** the report footer "Tinara Intelligence Engine by REKA" becomes "by AntaraX", and Explorer, Scout, Operator become Seed, Nova, Galaxy.
+</details>
+
+<details>
+<summary><img src="assets/logos/loom.svg" width="20" align="absmiddle"> <b>Loom</b> and <img src="assets/logos/motion.svg" width="20" align="absmiddle"> <b>Motion</b>: closed pilots, no app yet</summary>
+
+- **Logos:** `assets/logos/loom.svg` and `assets/logos/motion.svg`, A-marks drawn in the same way as Yara's and AX Frame's.
+- **BaTech:** Loom's **Thread** and Motion's **Trail**, in `assets/batech/loom/` and `assets/batech/motion/`.
+- **Starting an app?** Begin from the A-mark rules in [12](guide/12-brand-architecture.md) and the palette in `tokens/product-palettes.css`, and write a sheet for it in `guide/products/` from the template there.
+- **Motion:** no claims of deployments, customers, pricing or certification until they exist ([03](guide/03-voice-and-claims.md)).
+</details>
+
+### Step 2 · Follow the map
+
+```mermaid
+flowchart LR
+    S([You, in a product repo]) --> A[Your product sheet<br/>guide/products/]
+    A --> B[12 Brand architecture<br/>the credit line and the AntaraX layer]
+    B --> C[13 Shared standards<br/>find your row in the audit]
+    C --> D[14 Identity system<br/>your logo, motif, BaTech, loaders, palette]
+    D --> T[tokens/ and assets/<br/>copy, never retype]
+    T --> Q{Kit doesn't say?}
+    Q -->|check| L[10 Decisions log<br/>11 Open questions]
+    L -->|still nothing| O([Ask the owner,<br/>then update the kit first])
+
+    classDef you fill:#0459F7,stroke:#0459F7,color:#FFFFFF
+    classDef read fill:#E2EAFE,stroke:#074AF8,color:#0B1B4F
+    classDef ask fill:#FFE9DC,stroke:#FC5D04,color:#0B1B4F
+    class S,O you
+    class A,B,C,D,T read
+    class Q,L ask
+```
+
+Twenty minutes, most of it in your own sheet. Sections 01 to 09 are worth reading once; 12 to 14 are the ones you come back to.
+
+### Step 3 · Paste two snippets
+
+**Tell your agents.** Add this to the product repo's `CLAUDE.md` or `AGENTS.md`. Change only the product name and the sheet:
+
+```markdown
+## Brand
+
+This product follows the AntaraX brand kit: https://github.com/haziqfaris/AntaraX-brand-kit
+Before any work on UI, copy, emails, logos, colours, loaders or plan names, read the kit in this order:
+the README's "Using this kit from a product repo", guide/products/yara.md,
+guide/12-brand-architecture.md, guide/13-shared-product-standards.md (our row in the audit)
+and guide/14-product-identity-system.md (our section).
+Copy tokens and assets from the kit; never retype a hex value. Where the kit and this repo
+disagree, the kit wins. If the kit doesn't answer a question, ask the owner; don't invent a rule.
+```
+
+**Bring in the tokens.** Copy the two token files (and your logo) from a checkout of this kit, then use the variables. The example is Yara; swap the prefix for yours:
+
+```css
+/* Copied from AntaraX brand kit 1.4. Don't edit; copy again when the kit changes. */
+@import "./brand/tokens.css";
+@import "./brand/product-palettes.css";
+
+.button-primary { background: var(--yara-action); color: var(--yara-text-on-action); }
+.button-primary:hover { background: var(--yara-action-hover); }
+.button-primary:focus-visible { outline: 2px solid var(--yara-focus); outline-offset: 2px; }
+.card { background: var(--yara-surface-raised); border: 1px solid var(--yara-border-default); }
+.amount { font-family: var(--ax-mono); font-variant-numeric: tabular-nums; }
+```
+
+Dark mode takes each product's `dark-accent` and dark chart colours from `tokens/product-palettes.json`, on navy `#071233`.
+
+### Step 4 · Choose your BaTech
+
+Every file is `assets/batech/<set>/<variation>-<strength>.svg`. Two questions pick it:
+
+| Where is it going? | Variation | | What is behind it? | Strength |
+|---|---|---|---|---|
+| Sign-in, splash, report or guide cover, onboarding | `panel` (16:10) | | White, on a cover or marketing | `colour` |
+| Page or email header, banner, section break | `band` (6:1) | | White, inside the app | `quiet` |
+| Card, empty area, avatar, small square | `spot` (1:1) | | Your product's own colour | `white` |
+
+So Janka's sign-in panel is `assets/batech/tide/panel-colour.svg`, and Yara's in-app header is `assets/batech/ripple/band-quiet.svg`. BaTech never sits behind text or data, and Quiet never goes on a tint, where it disappears. To compare them all at once, open [the visual guide](guide/product-brands.html).
+
+### Step 5 · Your first hour
+
+Copy this list into an issue in your product repo and tick it off there:
+
+```markdown
+- [ ] The Brand snippet is in CLAUDE.md or AGENTS.md
+- [ ] I have read our product sheet and our section of 14
+- [ ] Our row of the 13 audit is copied into issues, one per ✗
+- [ ] The credit line reads "by AntaraX" in the footer, on sign-in and in every email
+- [ ] Our logo comes from assets/logos/, at its square size
+- [ ] Every hex value in our CSS is a token from tokens/
+- [ ] Buttons act in our colour; focus rings are AntaraX blue
+- [ ] Customers see support@antarax.ai, never a personal or platform address
+- [ ] Plans read Seed, Terra, Nova, Galaxy, Quantum, each with who it is for (Angka keeps its own)
+- [ ] Money reads RM1,200; dates read 11 Oct 2026; times read 14:30 on screen
+- [ ] No loader spins or flips, and every loader stands still under reduced motion
+- [ ] AI work shows the sparkle; AI thinking morphs the sparkle into our logo and back
+```
+
+### Pop quiz
+
+Eight questions. Answer before you peek.
+
+<details>
+<summary><b>1.</b> The footer says "Powered by AntaraX". Ship it?</summary>
+
+No. Every product is credited **"by AntaraX"**. "Powered by", "by REKA" and "AntaraX AI" are never used ([12](guide/12-brand-architecture.md)).
+</details>
+
+<details>
+<summary><b>2.</b> Your motif is beautiful. Can it be your logo too?</summary>
+
+No. A logo and a motif are always different ([14](guide/14-product-identity-system.md#logo-and-motif)). The logo says *who*; the motif is the picture in empty states and the shape your loaders move in. Tinara learned this one: its logo was once its kerawang, and now it is the signal.
+</details>
+
+<details>
+<summary><b>3.</b> A designer pitches a loader where your logo spins, then flips. Yes?</summary>
+
+No. **Nothing spins and nothing flips.** Loaders draw on, light in sequence, travel along a path, grow, gather and breathe. Under reduced motion they stand still and the words carry the state ([14](guide/14-product-identity-system.md#loading)).
+</details>
+
+<details>
+<summary><b>4.</b> The AI has been working for eight seconds. What is on screen?</summary>
+
+The AntaraX sparkle, alive, which every few seconds morphs into your product's logo and back, beside words saying what it is doing: "Forecasting 48 items". The sparkle says AntaraX intelligence is at work; the logo says whose.
+</details>
+
+<details>
+<summary><b>5.</b> Name the plans, smallest to biggest. Bonus: who is excused?</summary>
+
+**Seed · Terra · Nova · Galaxy · Quantum**, the Rise ladder, always with who it is for ("Nova · for teams"). Products take only the steps they need, in order. Bonus: **Angka**, which keeps Solo, Business, Team and Enterprise ([13](guide/13-shared-product-standards.md#3-plans-money-dates-and-times)).
+</details>
+
+<details>
+<summary><b>6.</b> Spot the three mistakes: <code>Due: RM 1,200 on 10/11/2026 at 2:30 PM</code></summary>
+
+`RM 1,200` should be `RM1,200` (no space). `10/11/2026` should be `11 Oct 2026` on screen. `2:30 PM` should be `14:30` on screen; 12-hour `2:30 pm` is only for sentences in emails and notifications.
+</details>
+
+<details>
+<summary><b>7.</b> Your sign-in panel is your product's colour. Which BaTech strength goes on it?</summary>
+
+**White** (white at 32%). Quiet disappears on colour and on tints; Colour is for white or near-white grounds.
+</details>
+
+<details>
+<summary><b>8.</b> A customer needs help. Which address do they see?</summary>
+
+**support@antarax.ai**, for every product: "Need help? Email support@antarax.ai and the team will reply." Not a personal inbox, not `hello@reka.re`, and no promised reply time until one is kept.
+</details>
+
+**Scoring:** eight right and you are ready to ship. Six or seven: re-read the two you missed. Fewer: back to Step 2, no shame.
+
+### When the kit doesn't say
+
+1. Check [10 Decisions log](guide/10-decisions-log.md): it may have been decided after your sheet was written.
+2. Check [11 Open questions](guide/11-open-questions.md): it may be waiting on the owner. Don't build around an open question; leave it as it is today.
+3. Still nothing? Ask the owner. Once it is decided, **update the kit first**, then the product. A rule that lives only in one product repo isn't a rule.
+
+> [!NOTE]
+> The kit's default branch is `claude/inspiring-davinci-6ehjo4`; there is no `main` yet. Link to files on the default branch rather than a pinned commit, so your links follow the kit as it changes.
 
 ## How to use and change this kit
 
@@ -64,4 +329,4 @@ reference/    the master logo file, and the source documents the guide was built
 | Tinara | `haziqfaris/tinara` |
 | REKA (parent brand) | `haziqfaris/reka.re`, `haziqfaris/reka-brand-kit` |
 
-Version 1.3, 11 October 2026: brand architecture, product sheets, the AntaraX layer and shared product standards.
+Version 1.4, 11 October 2026: the product identity system (logos, motifs, BaTech sets, loaders, palettes) and this guide for product repos. Version 1.3 added brand architecture, product sheets, the AntaraX layer and shared product standards.

@@ -13,7 +13,7 @@ Sheets were written on 11 October 2026 from an audit of each product's repositor
 | PLExyz Crowd, Flow, Transit, Site, Ward, Yard | Own-mark, REKA platform | PLExyz system | PLExyz | Concepts (Crowd has a pilot app) | [plexyz.md](plexyz.md) |
 | AX Frame | A-mark | A + Frame icon | Frame `#074AF8` | Closed pilot | [frame.md](frame.md) |
 | Angka | Own-mark | The sheet stack (kept) | Angka plum `#6B3F6B` | Closed pilot | [angka.md](angka.md) |
-| Tinara | Own-mark | Kerawang (new) | Tinara plum `#5B2B4A`, gold | Closed pilot | [tinara.md](tinara.md) |
+| Tinara | Own-mark | The signal (new); kerawang is its motif | Tinara garnet `#7A1E3C`, gold | Closed pilot | [tinara.md](tinara.md) |
 | Loom | A-mark | A + Loom icon | Loom `#4904B3` | Closed pilot, no app yet | this page |
 | Motion | A-mark | A + Motion icon | Motion `#FC5D04` | Closed pilot, no app yet | this page |
 

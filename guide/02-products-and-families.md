@@ -8,6 +8,8 @@
 
 Visitors choose by **problem**, then product. Families are endorsements, shown on the Families and Technology pages and as "Powered by AntaraX Ripple"-style lines. Never make a visitor learn the families to buy.
 
+How each product carries its own mark, colour and credit line (own-mark and A-mark products, "by AntaraX") is in [12 Brand architecture](12-brand-architecture.md); each product's details are in [products/](products/README.md).
+
 ## Status tiers (owner decision, 10 October 2026)
 
 | Tier | Products | Where they appear | Primary CTA |
@@ -83,7 +85,9 @@ Understand → Operate → Optimize → Perceive → Navigate → Act → Synthe
 ## Naming rules
 
 - Write **AntaraX** (capital A, capital X). The wordmark is set lower case ("antarax") in the logo only.
-- Products are named on their own: "Yara", not "AntaraX Yara". Families take the prefix: "AntaraX Ripple".
+- Products are named on their own: "Yara", not "AntaraX Yara". Families take the prefix: "AntaraX Ripple". Frame shares its family's name; its app calls it "AntaraX Frame" (see 12).
+- Every product is endorsed **"by AntaraX"** (12). Never credit a product "by REKA".
+- Write **AntaraX**, never "AntaraX AI".
 - Family name variants (from the master logo file): Full "AntaraX Motion", Medium "AX Motion", Short "AXM" (AXR, AXE, AXF, AXL). Use Full in customer copy; Medium and Short are for space-constrained marks and internal use.
 - **PLExyz** is always written PLExyz; the two products are "PLExyz Grid" and "PLExyz Crowd".
 - **Never show internal codenames** to customers: AXLE (REKA's admin console), puzzle-ceplok, puzzle-parang and similar.

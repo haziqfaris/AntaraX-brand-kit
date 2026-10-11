@@ -4,6 +4,11 @@ Owner decisions that shape the brand, newest first. Add to the top; never rewrit
 
 ## 11 October 2026
 
+- **Endorsed products.** Most products are older than the AntaraX brand, and people know REKA better than AntaraX. Products keep their own logos and are endorsed "by AntaraX"; AntaraX does not replace them. Products with an identity of their own (PLExyz, Janka, Angka, Tinara) are **own-mark**; Yara, Frame, Loom, Motion and new products are **A-mark** (the A with the family icon). See 12.
+- **Own logos are restyled, not replaced.** Each keeps its shape and idea and adopts the AntaraX finish (navy ink, flat fills, highlights from the sparkle palette, no REKA colours). The specific restyles for Janka and PLExyz Grid are proposals awaiting approval (11).
+- **Shared core, own accent** in product apps: every app shares AntaraX type, text colours, status colours, focus ring and interface rules, and keeps one accent of its own. This supersedes the 10 October recommendation in 09 to move Angka to Tide pink.
+- **Brand guidelines** for the architecture and each product live in this kit (12, `guide/products/`) with a visual reference (`guide/product-brands.html`).
+- **Fact corrected:** Loom's verb in `tokens.json` was still "Orchestrate"; it is "Synthesize" (decided 10 October).
 - **Photography presents a global company with Southeast Asian roots.** Workplace scenes include diverse people rather than exclusively Malaysian teams.
 - **Natural, everyday workplaces.** The owner supplied REKA office references and approved the modest shared-office direction: practical desks, mesh chairs, striped blinds, warm walls and workshop equipment. Avoid glossy corporate-stock staging.
 - **Generated photos illustrate work, not customer proof.** Publish the reviewed AntaraX photo set for live evaluation with a small blue diamond beside the caption (owner preference), accessible name and tooltip "Illustrative image", rather than a visible text label. Preserve real product screenshots separately.

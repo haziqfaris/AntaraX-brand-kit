@@ -147,6 +147,50 @@ Across every product:
 
 One moment per product. Never on screens people work through quickly (tables, forms, the board itself).
 
+## Elements, charts, loading and naming (proposed)
+
+BaTech's construction gives products a small kit of details that are recognisably AntaraX without putting corak near data. Each one borrows a named part of BaTech: the **trace and solder pad** (awan larat bands and bridges), the **isen-isen dots** that fill the gaps, the **intan**, the **thread** under the active link, and the **draw on** and **turn** motion.
+
+### Elements
+
+| Element | Detail | From BaTech |
+|---|---|---|
+| Progress bar | A trace that ends in a solder pad at the current value; the rest of the track is a row of dots | traces ending in pads; isen-isen |
+| Stepper and timeline | Steps are pads joined by a trace; done steps filled, the current one ringed (onboarding, a job's history, an audit trail) | bridges: short traces with solder pads |
+| Divider | A row of isen-isen dots in the Quiet ink, with an intan at the centre for major breaks | isen-isen; intan |
+| Active tab or nav item | The thread under the active item, the same as antarax.ai | hover and focus thread |
+| List markers and eyebrows | The intan, 9px | intan |
+| UI icons | A plain line icon set drawn like BaTech: one stroke weight (1.75px at 24px), round caps and joins. Icons are not motifs | one outline, round caps |
+
+### Charts
+
+The product's own colours draw the data (05, and the dataviz rules in each product). BaTech never sits behind or inside a plot. Four details carry the family resemblance:
+
+- **Dotted gridlines** (isen-isen), recessive, in the hairline colour.
+- **The latest value ends in a pad:** a filled dot with a white ring at the end of a line.
+- **Flagged points are an intan** (a diamond marker, at least 8px): an anomaly, a breach, a renewal.
+- **AI forecasts** continue the line dashed, with the sparkle beside their label.
+
+An empty chart shows the product's empty state (its signature motif). Series identity is never carried by motif shapes; colour plus a label does that.
+
+### Loading
+
+| Wait | What shows |
+|---|---|
+| Under a second | Nothing |
+| A screen loading | A skeleton in the product's neutrals; no motif over data |
+| A task the person started (a forecast, a ranking, an import) | The signature motif as the loader, with the action in words ("Forecasting 48 items") |
+| Long AI work | The product's own mark in its thinking motion (04) |
+
+How each motif loads, by BaTech's motion rules (slow, rare, stops for reduced motion): radial motifs **turn** (riak, intan, orbit; one turn every 6 seconds as a loader); the others **draw on** and fill (padi, petak); congkak passes a seed from hole to hole; Tinara's lattice lights its path one opening at a time.
+
+### Naming
+
+- **Product names stay as they are, with no invented meanings.** BaTech's rule: only Lapisan ("layer") has a documented meaning.
+- **BaTech's words are the shared vocabulary for design and code:** component and token names such as `intan` (markers, eyebrows), `isen` (dot dividers, gridlines), `trace` and `pad` (progress, steppers, line ends), `thread` (active state), `quiet` (the light ink), and each motif's name for its loader. Customers never see these names.
+- **Customer copy names things plainly** (03): "Forecasting", "Matching receipts", not the motif.
+- **A Malay word may name a customer-facing thing only when its literal meaning describes the job** and it is explained once on first use, as Lapisan is. New candidates go to the owner (11).
+
 ## Own marks
 
 Own marks stay as they are. A mark may be refreshed when it has a problem (trace noise, colours that clash with the shared core), keeping its shape:

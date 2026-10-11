@@ -4,6 +4,8 @@ Owner decisions that shape the brand, newest first. Add to the top; never rewrit
 
 ## 11 October 2026 (fifth review)
 
+- **Elements, charts, loading and naming proposed** from BaTech's construction (12): traces and pads, isen dots, intan markers, the thread, draw-on and turn loaders, and BaTech's words as the vocabulary for design and code.
+
 - **Tinara's logo is the kerawang motif itself:** the official BaTech drawing in Tinara's plum and gold, with a small 3×3 version for 24px and below and light versions for dark grounds. The window, lattice and trellis options are withdrawn. Tinara's empty states use bunga raya, the Tide flower, so the logo is not repeated.
 - **Signature moments proposed:** one functional moment per product where its motif does the product's job (12).
 

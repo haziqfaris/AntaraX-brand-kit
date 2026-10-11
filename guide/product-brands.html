@@ -754,11 +754,265 @@ footer.end { margin-top: 72px; padding-top: 24px; border-top: 1px solid var(--li
 .topt-art img:first-child { width: 104px; height: 104px; }
 .sys-parts div.line-chips { display: flex; flex-wrap: wrap; gap: 8px; border-bottom: 0; padding-bottom: 0; }
 @media (max-width: 860px) { .uses { grid-template-columns: 1fr; } .mm-row { grid-template-columns: 1fr; gap: 8px; } }
+
+.mm { display: grid; gap: 14px; }
+.mm-row { display: grid; grid-template-columns: 110px 1fr; gap: 16px; align-items: start; padding-top: 14px; border-top: 1px solid var(--line); }
+.mm-fam { display: flex; align-items: center; gap: 8px; padding-top: 6px; color: var(--navy); }
+.mm-fam i { width: 12px; height: 12px; border-radius: 50%; display: block; }
+.mm-items { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
+.mc { display: grid; grid-template-columns: 84px 1fr; gap: 14px; align-items: center; padding: 12px; border: 1px solid var(--line); border-radius: 16px; background: var(--card); }
+.mc-art { width: 84px; height: 84px; border-radius: 14px; display: grid; place-items: center; }
+.mc-art img { width: 64px; height: 64px; }
+.mc-txt { display: grid; gap: 2px; font-size: .8125rem; min-width: 0; }
+.mc-prod { font-weight: 600; color: var(--navy); font-size: .9375rem; }
+.mc-name { font-family: var(--mono); font-weight: 600; font-size: .8125rem; }
+.si-brand { position: relative; overflow: hidden; background: var(--tint); display: grid; place-items: center; min-height: 220px; }
+.si-band { position: absolute; left: 0; right: 0; bottom: 0; width: 100%; height: 22%; object-fit: cover; object-position: center top; }
+.si-brand { padding-bottom: 22%; }
+.si-lock { position: relative; display: flex; align-items: center; gap: 12px; }
+.si-lock > img { height: 52px; width: auto; }
+.si-lock > img.mk-a { height: 86px; margin: -14px -12px; }
+.si-lock .si-name { font-size: 1.4rem; }
+.si .si-form .trust { margin-top: 2px; }
+.uses { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.use { display: grid; gap: 10px; }
+.use-label { font-size: .8125rem; font-weight: 600; color: var(--muted); }
+.empty { background: #fff; border: 1px solid var(--spec-line); border-radius: 18px; padding: 28px 22px; display: grid; justify-items: center; gap: 10px; text-align: center; color: #3B4469; }
+.empty img { width: 72px; height: 72px; }
+.empty h4 { margin: 0; color: #0B1B4F; font-size: 1rem; font-weight: 600; }
+.empty p { font-size: .8125rem; max-width: 34ch; }
+.empty .go { min-height: 38px; padding: 0 16px; border-radius: 10px; color: #fff; font-weight: 600; font-size: .8125rem; display: grid; place-items: center; }
+.mail { background: #fff; border: 1px solid var(--spec-line); border-radius: 18px; overflow: hidden; color: #3B4469; }
+.mail-head { display: flex; align-items: center; gap: 10px; padding: 16px 20px; border-bottom: 1px solid rgba(11,27,79,.08); position: relative; }
+.mail-head img.mk { height: 28px; }
+.mail-head img.mk.mk-a { height: 46px; margin: -10px -8px; }
+.mail-band { display: block; width: 100%; height: 44px; object-fit: cover; }
+.mail-head b { color: #0B1B4F; font-weight: 600; }
+.mail-head .sub { font-size: .6875rem; display: block; }
+.mail-body { padding: 18px 20px; display: grid; gap: 8px; font-size: .8125rem; }
+.mail-body h4 { margin: 0; color: #0B1B4F; font-size: .95rem; font-weight: 600; }
+.mail-foot { padding: 12px 20px; font-size: .6875rem; color: #5B6488; border-top: 1px solid rgba(11,27,79,.08); }
+.avs { display: flex; gap: 14px; flex-wrap: wrap; background: #fff; border: 1px solid var(--spec-line); border-radius: 18px; padding: 22px; justify-content: center; }
+.av { position: relative; width: 64px; height: 64px; border-radius: 50%; overflow: hidden; border: 2px solid #E3E6F6; background: #fff; }
+.av img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transform: scale(2.4); }
+.av b { position: absolute; inset: 0; margin: auto; width: 54%; height: 54%; border-radius: 50%; background: #fff; display: grid; place-items: center; font: 600 .75rem/1 var(--mono); color: #0B1B4F; }
+.turn { animation: turn 40s linear infinite; }
+@keyframes turn { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .turn { animation: none; } }
+.bt { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 18px; }
+.pairs { display: grid; gap: 8px; }
+.pair { display: grid; grid-template-columns: 70px repeat(3, 1fr); gap: 6px; align-items: center; font-size: .8125rem; }
+.pair i { height: 26px; border-radius: 6px; display: block; box-shadow: inset 0 0 0 1px rgba(11,27,79,.1); }
+@media (max-width: 860px) { .bt { grid-template-columns: 1fr; } }
+.tin-row { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+.tin-fig { margin: 0; display: grid; gap: 8px; font-size: .8125rem; }
+.tin-art { background: #fff; border: 1px solid var(--spec-line); border-radius: 16px; min-height: 170px; display: flex; gap: 14px; align-items: center; justify-content: center; padding: 14px; flex-wrap: wrap; }
+.tin-art.navy { background: #0B1B4F; border-color: transparent; }
+@media (max-width: 860px) { .tin-row { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.sms { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 14px; }
+.smc { display: grid; align-content: start; border: 1px solid var(--line); border-radius: var(--r-card); background: var(--card); overflow: hidden; }
+.smc-demo { background: #fff; border-bottom: 1px solid var(--spec-line); height: 170px; display: grid; place-items: center; align-content: center; gap: 10px; padding: 14px; color: #3B4469; font-size: .8125rem; text-align: center; }
+.smc-demo img { width: 64px; height: 64px; }
+.smc-body { display: grid; gap: 4px; padding: 14px 16px 16px; font-size: .875rem; }
+.smc-body .k { font: 600 .75rem/1.2 var(--mono); }
+.smc-body strong { color: var(--navy); font-size: .9375rem; }
+.rip { position: relative; display: grid; place-items: center; width: 150px; height: 110px; }
+.rip i { position: absolute; border-radius: 50%; border: 2px solid #08B0B3; }
+.rip i:nth-child(1) { width: 104px; height: 104px; opacity: .25; } .rip i:nth-child(2) { width: 140px; height: 140px; opacity: .12; }
+.rip span { position: relative; padding: 9px 18px; border-radius: 10px; background: #12B76A; color: #fff; font-weight: 600; }
+.bar { width: 150px; height: 6px; border-radius: 999px; background: #DDF7FE; overflow: hidden; } .bar i { display: block; width: 38%; height: 100%; background: #076C8A; }
+.cgk { display: grid; grid-template-columns: 22px repeat(5, 18px) 22px; grid-template-rows: 18px 18px; gap: 6px; padding: 10px 12px; border: 2px solid #9C2B63; border-radius: 22px; background: #FDE8F1; }
+.cgk .st { border-radius: 11px; border: 2px solid #9C2B63; background: #fff; }
+.cgk .st:first-child { grid-column: 1; grid-row: 1 / 3; } .cgk .st:last-child { grid-column: 7; grid-row: 1 / 3; }
+.cgk b { border-radius: 50%; border: 2px solid #9C2B63; background: #fff; } .cgk b.on { background: #E9579D; }
+.canvas { width: 170px; height: 104px; border: 2px dashed #C5CCF7; border-radius: 12px; display: grid; place-items: center; gap: 6px; align-content: center; }
+.canvas img { width: 44px; height: 44px; }
+.canvas span { font-size: .75rem; color: #2C09B2; font-weight: 600; }
+.live { display: inline-flex; gap: 8px; align-items: center; padding: 6px 12px; border-radius: 999px; background: #F7F7FA; border: 1px solid #E7E7EE; color: #1C1B2E; }
+.live img { width: 30px; height: 30px; }
+.across { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+@media (max-width: 860px) { .across { grid-template-columns: 1fr 1fr; } }
+.el-h { margin: 8px 0 0; font-size: 1.125rem; color: var(--navy); }
+.els { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; }
+.el { margin: 0; display: grid; gap: 8px; align-content: start; }
+.el-demo { background: #fff; border: 1px solid var(--spec-line); border-radius: 16px; height: 120px; display: grid; place-items: center; align-content: center; gap: 10px; padding: 14px; }
+.el figcaption { font-size: .8125rem; display: grid; gap: 2px; } .el figcaption strong, .ld figcaption strong { color: var(--navy); font-size: .875rem; }
+.el-cap { font-size: .75rem; color: #3B4469; }
+.tprog { position: relative; width: 160px; height: 14px; }
+.tp-dots { position: absolute; inset: 5px 0 auto 0; height: 4px; background: radial-gradient(circle, #C5CCF7 1.6px, transparent 1.9px) 0 0 / 8px 4px repeat-x; }
+.tp-trace { position: absolute; left: 0; top: 4px; height: 6px; border-radius: 3px; background: #2C09B2; z-index: 1; }
+.tp-trace i { position: absolute; right: -7px; top: -4px; width: 14px; height: 14px; border-radius: 50%; background: #2C09B2; box-shadow: 0 0 0 2.5px #fff inset, 0 0 0 0 #fff; border: 2px solid #2C09B2; box-sizing: border-box; background: #fff; }
+.step { display: flex; align-items: center; width: 170px; }
+.step b { width: 14px; height: 14px; border-radius: 50%; border: 2px solid #C5CCF7; background: #fff; flex: none; }
+.step b.done { background: #0459F7; border-color: #0459F7; } .step b.now { border-color: #0459F7; box-shadow: 0 0 0 3px #E6EEFE; }
+.step i { flex: 1; height: 2px; background: #C5CCF7; } .step i.done { background: #0459F7; }
+.step-l { display: flex; justify-content: space-between; width: 190px; font-size: .625rem; color: #3B4469; }
+.isen { display: flex; align-items: center; gap: 10px; width: 170px; }
+.isen span { flex: 1; height: 4px; background: radial-gradient(circle, #C5CCF7 1.6px, transparent 1.9px) 0 0 / 8px 4px repeat-x; }
+.isen em { width: 9px; height: 9px; background: #8E9CE8; transform: rotate(45deg); border-radius: 2px; }
+.tabs { display: flex; gap: 18px; font-size: .8125rem; color: #3B4469; }
+.tabs .on { color: #0B1B4F; font-weight: 600; position: relative; padding-bottom: 8px; }
+.tabs .on::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 5px; background: repeating-linear-gradient(-55deg, #0459F7 0 1.6px, transparent 1.6px 5px); }
+.icons { display: flex; gap: 14px; }
+.chart-row { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 18px; align-items: start; }
+.chart { margin: 0; background: #fff; border: 1px solid var(--spec-line); border-radius: 16px; padding: 16px; display: grid; gap: 8px; color: #3B4469; }
+.chart-head { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; font-size: .875rem; }
+.chart-head strong { color: #0B1B4F; font-weight: 600; }
+.chart .ai-chip { padding: 4px 8px; }
+.ct { font: 500 11px/1 'JetBrains Mono', monospace; fill: #3B4469; } .ctb { fill: #0B1B4F; font-weight: 600; }
+.chart-rules { align-content: start; }
+.loads { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 12px; }
+.ld { margin: 0; display: grid; gap: 6px; text-align: center; font-size: .75rem; }
+.ld figcaption { display: grid; gap: 2px; }
+.ld-art { background: #fff; border: 1px solid var(--spec-line); border-radius: 16px; height: 120px; display: grid; place-items: center; }
+.ld-art svg { width: 64px; height: 64px; }
+.turn6 { animation: turn 6s linear infinite; }
+.drawon path { stroke-dasharray: 400; animation: draw 4s ease-in-out infinite alternate; }
+@keyframes draw { from { stroke-dashoffset: 400; fill-opacity: 0; } 70% { fill-opacity: 0; } to { stroke-dashoffset: 0; fill-opacity: 1; } }
+.seeds { display: flex; gap: 6px; padding: 8px 10px; border: 2px solid #9C2B63; border-radius: 16px; background: #FDE8F1; }
+.seeds b { width: 14px; height: 14px; border-radius: 50%; border: 2px solid #9C2B63; background: #fff; animation: seed 2.5s steps(1) infinite; }
+@keyframes seed { 0% { background: #E9579D; } 20% { background: #fff; } }
+.tload circle { opacity: .2; animation: lit 1.8s ease-in-out infinite; }
+@keyframes lit { 0%, 100% { opacity: .2; } 30%, 60% { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .turn6, .drawon path, .seeds b, .tload circle { animation: none !important; } .tload circle { opacity: 1; } .drawon path { stroke-dasharray: none; } }
+@media (max-width: 860px) { .chart-row { grid-template-columns: 1fr; } }
+.never { display: flex; flex-wrap: wrap; gap: 8px; }
+.never span { font-size: .8125rem; padding: 5px 12px; border-radius: 999px; background: var(--fault-bg); color: var(--navy); }
+.topt-art img:first-child { width: 104px; height: 104px; }
+.sys-parts div.line-chips { display: flex; flex-wrap: wrap; gap: 8px; border-bottom: 0; padding-bottom: 0; }
+@media (max-width: 860px) { .uses { grid-template-columns: 1fr; } .mm-row { grid-template-columns: 1fr; gap: 8px; } }
+
+.mm { display: grid; gap: 14px; }
+.mm-row { display: grid; grid-template-columns: 110px 1fr; gap: 16px; align-items: start; padding-top: 14px; border-top: 1px solid var(--line); }
+.mm-fam { display: flex; align-items: center; gap: 8px; padding-top: 6px; color: var(--navy); }
+.mm-fam i { width: 12px; height: 12px; border-radius: 50%; display: block; }
+.mm-items { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
+.mc { display: grid; grid-template-columns: 84px 1fr; gap: 14px; align-items: center; padding: 12px; border: 1px solid var(--line); border-radius: 16px; background: var(--card); }
+.mc-art { width: 84px; height: 84px; border-radius: 14px; display: grid; place-items: center; }
+.mc-art img { width: 64px; height: 64px; }
+.mc-txt { display: grid; gap: 2px; font-size: .8125rem; min-width: 0; }
+.mc-prod { font-weight: 600; color: var(--navy); font-size: .9375rem; }
+.mc-name { font-family: var(--mono); font-weight: 600; font-size: .8125rem; }
+.si-brand { position: relative; overflow: hidden; background: var(--tint); display: grid; place-items: center; min-height: 220px; }
+.si-band { position: absolute; left: 0; right: 0; bottom: 0; width: 100%; height: 22%; object-fit: cover; object-position: center top; }
+.si-brand { padding-bottom: 22%; }
+.si-lock { position: relative; display: flex; align-items: center; gap: 12px; }
+.si-lock > img { height: 52px; width: auto; }
+.si-lock > img.mk-a { height: 86px; margin: -14px -12px; }
+.si-lock .si-name { font-size: 1.4rem; }
+.si .si-form .trust { margin-top: 2px; }
+.uses { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.use { display: grid; gap: 10px; }
+.use-label { font-size: .8125rem; font-weight: 600; color: var(--muted); }
+.empty { background: #fff; border: 1px solid var(--spec-line); border-radius: 18px; padding: 28px 22px; display: grid; justify-items: center; gap: 10px; text-align: center; color: #3B4469; }
+.empty img { width: 72px; height: 72px; }
+.empty h4 { margin: 0; color: #0B1B4F; font-size: 1rem; font-weight: 600; }
+.empty p { font-size: .8125rem; max-width: 34ch; }
+.empty .go { min-height: 38px; padding: 0 16px; border-radius: 10px; color: #fff; font-weight: 600; font-size: .8125rem; display: grid; place-items: center; }
+.mail { background: #fff; border: 1px solid var(--spec-line); border-radius: 18px; overflow: hidden; color: #3B4469; }
+.mail-head { display: flex; align-items: center; gap: 10px; padding: 16px 20px; border-bottom: 1px solid rgba(11,27,79,.08); position: relative; }
+.mail-head img.mk { height: 28px; }
+.mail-head img.mk.mk-a { height: 46px; margin: -10px -8px; }
+.mail-band { display: block; width: 100%; height: 44px; object-fit: cover; }
+.mail-head b { color: #0B1B4F; font-weight: 600; }
+.mail-head .sub { font-size: .6875rem; display: block; }
+.mail-body { padding: 18px 20px; display: grid; gap: 8px; font-size: .8125rem; }
+.mail-body h4 { margin: 0; color: #0B1B4F; font-size: .95rem; font-weight: 600; }
+.mail-foot { padding: 12px 20px; font-size: .6875rem; color: #5B6488; border-top: 1px solid rgba(11,27,79,.08); }
+.avs { display: flex; gap: 14px; flex-wrap: wrap; background: #fff; border: 1px solid var(--spec-line); border-radius: 18px; padding: 22px; justify-content: center; }
+.av { position: relative; width: 64px; height: 64px; border-radius: 50%; overflow: hidden; border: 2px solid #E3E6F6; background: #fff; }
+.av img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transform: scale(2.4); }
+.av b { position: absolute; inset: 0; margin: auto; width: 54%; height: 54%; border-radius: 50%; background: #fff; display: grid; place-items: center; font: 600 .75rem/1 var(--mono); color: #0B1B4F; }
+.turn { animation: turn 40s linear infinite; }
+@keyframes turn { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .turn { animation: none; } }
+.bt { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 18px; }
+.pairs { display: grid; gap: 8px; }
+.pair { display: grid; grid-template-columns: 70px repeat(3, 1fr); gap: 6px; align-items: center; font-size: .8125rem; }
+.pair i { height: 26px; border-radius: 6px; display: block; box-shadow: inset 0 0 0 1px rgba(11,27,79,.1); }
+@media (max-width: 860px) { .bt { grid-template-columns: 1fr; } }
+.tin-row { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+.tin-fig { margin: 0; display: grid; gap: 8px; font-size: .8125rem; }
+.tin-art { background: #fff; border: 1px solid var(--spec-line); border-radius: 16px; min-height: 170px; display: flex; gap: 14px; align-items: center; justify-content: center; padding: 14px; flex-wrap: wrap; }
+.tin-art.navy { background: #0B1B4F; border-color: transparent; }
+@media (max-width: 860px) { .tin-row { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.sms { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 14px; }
+.smc { display: grid; align-content: start; border: 1px solid var(--line); border-radius: var(--r-card); background: var(--card); overflow: hidden; }
+.smc-demo { background: #fff; border-bottom: 1px solid var(--spec-line); height: 170px; display: grid; place-items: center; align-content: center; gap: 10px; padding: 14px; color: #3B4469; font-size: .8125rem; text-align: center; }
+.smc-demo img { width: 64px; height: 64px; }
+.smc-body { display: grid; gap: 4px; padding: 14px 16px 16px; font-size: .875rem; }
+.smc-body .k { font: 600 .75rem/1.2 var(--mono); }
+.smc-body strong { color: var(--navy); font-size: .9375rem; }
+.rip { position: relative; display: grid; place-items: center; width: 150px; height: 110px; }
+.rip i { position: absolute; border-radius: 50%; border: 2px solid #08B0B3; }
+.rip i:nth-child(1) { width: 104px; height: 104px; opacity: .25; } .rip i:nth-child(2) { width: 140px; height: 140px; opacity: .12; }
+.rip span { position: relative; padding: 9px 18px; border-radius: 10px; background: #12B76A; color: #fff; font-weight: 600; }
+.bar { width: 150px; height: 6px; border-radius: 999px; background: #DDF7FE; overflow: hidden; } .bar i { display: block; width: 38%; height: 100%; background: #076C8A; }
+.cgk { display: grid; grid-template-columns: 22px repeat(5, 18px) 22px; grid-template-rows: 18px 18px; gap: 6px; padding: 10px 12px; border: 2px solid #9C2B63; border-radius: 22px; background: #FDE8F1; }
+.cgk .st { border-radius: 11px; border: 2px solid #9C2B63; background: #fff; }
+.cgk .st:first-child { grid-column: 1; grid-row: 1 / 3; } .cgk .st:last-child { grid-column: 7; grid-row: 1 / 3; }
+.cgk b { border-radius: 50%; border: 2px solid #9C2B63; background: #fff; } .cgk b.on { background: #E9579D; }
+.canvas { width: 170px; height: 104px; border: 2px dashed #C5CCF7; border-radius: 12px; display: grid; place-items: center; gap: 6px; align-content: center; }
+.canvas img { width: 44px; height: 44px; }
+.canvas span { font-size: .75rem; color: #2C09B2; font-weight: 600; }
+.live { display: inline-flex; gap: 8px; align-items: center; padding: 6px 12px; border-radius: 999px; background: #F7F7FA; border: 1px solid #E7E7EE; color: #1C1B2E; }
+.live img { width: 30px; height: 30px; }
+.across { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+@media (max-width: 860px) { .across { grid-template-columns: 1fr 1fr; } }
+.el-h { margin: 8px 0 0; font-size: 1.125rem; color: var(--navy); }
+.els { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; }
+.el { margin: 0; display: grid; gap: 8px; align-content: start; }
+.el-demo { background: #fff; border: 1px solid var(--spec-line); border-radius: 16px; height: 120px; display: grid; place-items: center; align-content: center; gap: 10px; padding: 14px; }
+.el figcaption { font-size: .8125rem; display: grid; gap: 2px; } .el figcaption strong, .ld figcaption strong { color: var(--navy); font-size: .875rem; }
+.el-cap { font-size: .75rem; color: #3B4469; }
+.tprog { position: relative; width: 160px; height: 14px; }
+.tp-dots { position: absolute; inset: 5px 0 auto 0; height: 4px; background: radial-gradient(circle, #C5CCF7 1.6px, transparent 1.9px) 0 0 / 8px 4px repeat-x; }
+.tp-trace { position: absolute; left: 0; top: 4px; height: 6px; border-radius: 3px; background: #2C09B2; z-index: 1; }
+.tp-trace i { position: absolute; right: -7px; top: -4px; width: 14px; height: 14px; border-radius: 50%; background: #2C09B2; box-shadow: 0 0 0 2.5px #fff inset, 0 0 0 0 #fff; border: 2px solid #2C09B2; box-sizing: border-box; background: #fff; }
+.step { display: flex; align-items: center; width: 170px; }
+.step b { width: 14px; height: 14px; border-radius: 50%; border: 2px solid #C5CCF7; background: #fff; flex: none; }
+.step b.done { background: #0459F7; border-color: #0459F7; } .step b.now { border-color: #0459F7; box-shadow: 0 0 0 3px #E6EEFE; }
+.step i { flex: 1; height: 2px; background: #C5CCF7; } .step i.done { background: #0459F7; }
+.step-l { display: flex; justify-content: space-between; width: 190px; font-size: .625rem; color: #3B4469; }
+.isen { display: flex; align-items: center; gap: 10px; width: 170px; }
+.isen span { flex: 1; height: 4px; background: radial-gradient(circle, #C5CCF7 1.6px, transparent 1.9px) 0 0 / 8px 4px repeat-x; }
+.isen em { width: 9px; height: 9px; background: #8E9CE8; transform: rotate(45deg); border-radius: 2px; }
+.tabs { display: flex; gap: 18px; font-size: .8125rem; color: #3B4469; }
+.tabs .on { color: #0B1B4F; font-weight: 600; position: relative; padding-bottom: 8px; }
+.tabs .on::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 5px; background: repeating-linear-gradient(-55deg, #0459F7 0 1.6px, transparent 1.6px 5px); }
+.icons { display: flex; gap: 14px; }
+.chart-row { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 18px; align-items: start; }
+.chart { margin: 0; background: #fff; border: 1px solid var(--spec-line); border-radius: 16px; padding: 16px; display: grid; gap: 8px; color: #3B4469; }
+.chart-head { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; font-size: .875rem; }
+.chart-head strong { color: #0B1B4F; font-weight: 600; }
+.chart .ai-chip { padding: 4px 8px; }
+.ct { font: 500 11px/1 'JetBrains Mono', monospace; fill: #3B4469; } .ctb { fill: #0B1B4F; font-weight: 600; }
+.chart-rules { align-content: start; }
+.loads { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 12px; }
+.ld { margin: 0; display: grid; gap: 6px; text-align: center; font-size: .75rem; }
+.ld figcaption { display: grid; gap: 2px; }
+.ld-art { background: #fff; border: 1px solid var(--spec-line); border-radius: 16px; height: 120px; display: grid; place-items: center; }
+.ld-art svg { width: 64px; height: 64px; }
+.turn6 { animation: turn 6s linear infinite; }
+.drawon path { stroke-dasharray: 400; animation: draw 4s ease-in-out infinite alternate; }
+@keyframes draw { from { stroke-dashoffset: 400; fill-opacity: 0; } 70% { fill-opacity: 0; } to { stroke-dashoffset: 0; fill-opacity: 1; } }
+.seeds { display: flex; gap: 6px; padding: 8px 10px; border: 2px solid #9C2B63; border-radius: 16px; background: #FDE8F1; }
+.seeds b { width: 14px; height: 14px; border-radius: 50%; border: 2px solid #9C2B63; background: #fff; animation: seed 2.5s steps(1) infinite; }
+@keyframes seed { 0% { background: #E9579D; } 20% { background: #fff; } }
+.tload circle { opacity: .2; animation: lit 1.8s ease-in-out infinite; }
+@keyframes lit { 0%, 100% { opacity: .2; } 30%, 60% { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .turn6, .drawon path, .seeds b, .tload circle { animation: none !important; } .tload circle { opacity: 1; } .drawon path { stroke-dasharray: none; } }
+@media (max-width: 860px) { .chart-row { grid-template-columns: 1fr; } }
+.never { display: flex; flex-wrap: wrap; gap: 8px; }
+.never span { font-size: .8125rem; padding: 5px 12px; border-radius: 999px; background: var(--fault-bg); color: var(--navy); }
+.topt-art img:first-child { width: 104px; height: 104px; }
+.sys-parts div.line-chips { display: flex; flex-wrap: wrap; gap: 8px; border-bottom: 0; padding-bottom: 0; }
+@media (max-width: 860px) { .uses { grid-template-columns: 1fr; } .mm-row { grid-template-columns: 1fr; gap: 8px; } }
 </style>
 
 <div class="wrap">
 <header class="mast">
-  <div class="mast-row"><img class="mast-a" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTI1NCAxMjU0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHJvbGU9ImltZyIgYXJpYS1sYWJlbD0iQW50YXJhWCI+CiAgPCEtLSBBbnRhcmFYIG1hc3RlciAiQSIgbWFyayDigJQgYnJhbmQgYmx1ZS4gU2VsZi1jb250YWluZWQ7IHNhZmUgdG8gPGltZz4gb3IgaW5saW5lLiAtLT4KICA8ZGVmcz4KICAgIDxtYXNrIGlkPSJheC1ob2xlLW1hc2siIG1hc2tVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9Ii01MDAiIHk9Ii01MDAiIHdpZHRoPSIyMDAwIiBoZWlnaHQ9IjIwMDAiPgogICAgICA8cmVjdCB4PSItNTAwIiB5PSItNTAwIiB3aWR0aD0iMjAwMCIgaGVpZ2h0PSIyMDAwIiBmaWxsPSIjZmZmZmZmIi8+CiAgICAgIDxjaXJjbGUgY3g9IjM1Ny41IiBjeT0iNDQxIiByPSI5NSIgZmlsbD0iIzAwMDAwMCIvPgogICAgPC9tYXNrPgogIDwvZGVmcz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyNjgsMjY1KSIgZmlsbD0iIzA0NTlGNyI+CiAgICA8ZyBtYXNrPSJ1cmwoI2F4LWhvbGUtbWFzaykiPgogICAgICA8cGF0aCBkPSJNMzU4LjUsMi4xNDFDMzU5LjkzNiwyLjE3NCA0MzcuMjU0LC0zLjE1NiA0NzcuMTM3LDc2LjY4NkM1MDkuNDI4LDE0MS4zMjkgNTc0LjcwNywyNjEuNjg2IDU3NS42MjQsMjY1LjQ3NEM1NzYuMDE0LDI2Ny4wODIgNTc1LjkzMiwyNjcuODM0IDU1OS4yNDcsMjc4LjEwM0M1NTIuNDI0LDI4Mi4zMDIgNTEzLjQ0NCwzMDYuMjkxIDQ3NC44MTYsMzMxLjk2NUM0NzAuMzAzLDMzNC45NjUgNDY5Ljk2NCwzMzIuNjU3IDQ2My45MTIsMzI3LjA2MkMzNzguMjQzLDI0Ny44NTYgMjQ5Ljc1NywyOTEuMzA1IDIxNS44NjMsMzgyLjYzNUMxODkuMzUxLDQ1NC4wNzQgMjE4LjgxLDQ5My45NCAyMTcuMTk4LDQ5OS40MDJDMjE2LjM2LDUwMi4yNCAxNTguNTg2LDU0Mi43MTUgMTUzLjM5Niw1NDYuMzUxQzEyOC4xNjgsNTY0LjAyNSAyMS44OTksNjQxLjUzOCAyMS41MDcsNjQxLjU3MUMxOS40MjEsNjQxLjc0NiAtMTIuODE2LDU4Mi44NDQgMTAuNzIxLDUxOC41ODVDMTcuMDEsNTAxLjQxNSAxOC4xMDgsNTAxLjkzOSAxMTcuMDM1LDMxNi4yNDZDMjA4LjQ0NywxNDQuNjU3IDIwNi40NiwxNDMuNzgzIDIxNS4zMywxMjkuNDFDMjQyLjU0Niw4NS4zMDggMjU2LjQyLDUuNTc5IDM1OC41LDIuMTQxWiIvPgogICAgICA8cGF0aCBkPSJNNzEyLjg2LDU2OS41QzcwNy42ODQsNzIyLjE5NCA1MjguNzA5LDc2NS41MjEgNDYwLjM0Myw2NTguNTg2QzQ1OS4xMDUsNjU2LjY1IDQzMy4zMjUsNjExLjE5MSA0MzIuOTg5LDYxMC4yN0M0MjAuMzMxLDU3NS41ODEgNDUxLjI5NCw1NjMuNjAyIDQ1Ny41MTksNTU3LjUyQzQ2My44OTQsNTUxLjI5MSA1MjcuMDQsNTAyLjg0NSA1MTAuMDY3LDQwOC42MDNDNTA1LjYyOSwzODMuOTYxIDQ4OS4zOTIsMzYwLjU0OCA0OTEuNjIzLDM1OC42NUM1MTQuMDg0LDMzOS41MzkgNTc2LjE4NywyOTEuNDIxIDU4My42MTMsMjg1LjY2OEM1ODcuMjI1LDI4Mi44NjkgNTg3LjM2NywyODYuNjQ4IDYxMS43NTUsMzM1LjM3NUM2OTguNjI1LDUwOC45NDMgNzExLjMxNiw1MTEuNDc3IDcxMi44Niw1NjkuNVoiLz4KICAgICAgPHBhdGggZD0iTTI4Ny44ODcsNTkxLjQ3MUMyODguODE4LDU5Ni44OTUgMjkwLjQ2NSw2MDYuNDk5IDI2MC45MTMsNjU0Ljc1MkMyMjcuMjcxLDcwOS42ODEgMTg2LjM4OSw3MTMuNDg0IDE2MC40NCw3MTcuMjI5QzEyNS4xNDcsNzIyLjMyMyA2NS45OTgsNzAxLjI3NiA0My4yNzQsNjcyLjY3MkMzNi43MjUsNjY0LjQyOSAyOC40MDQsNjYwLjkwMiAzNS44OTIsNjU1Ljk5MUM0NS45NjYsNjQ5LjM4NiAxNDcuOTAyLDU4Mi41NDMgMTYyLjMzNiw1NzQuMjMxQzE2OC44MDIsNTcwLjUwOCAyMzIuNjk3LDUyNy4yMjQgMjM0LjEyNyw1MjguOTdDMjUyLjgyOSw1NTEuODAzIDI1My4wMDMsNTUxLjU4MSAyNzYuNDM5LDU2OS41OTJDMjg2Ljg1OSw1NzcuNjAxIDI4Ny4yNzUsNTg2LjQwMyAyODcuODg3LDU5MS40NzFaIi8+CiAgICA8L2c+CiAgICA8Y2lyY2xlIGN4PSIzNTcuNSIgY3k9IjQ0MSIgcj0iOSIgZmlsbD0iIzA0NTlGNyIgb3BhY2l0eT0iLjE4Ii8+CiAgPC9nPgo8L3N2Zz4K" alt="AntaraX"><span>AntaraX brand kit · guide 12 and the product sheets · version 1.5, 11 October 2026</span></div>
+  <div class="mast-row"><img class="mast-a" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTI1NCAxMjU0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHJvbGU9ImltZyIgYXJpYS1sYWJlbD0iQW50YXJhWCI+CiAgPCEtLSBBbnRhcmFYIG1hc3RlciAiQSIgbWFyayDigJQgYnJhbmQgYmx1ZS4gU2VsZi1jb250YWluZWQ7IHNhZmUgdG8gPGltZz4gb3IgaW5saW5lLiAtLT4KICA8ZGVmcz4KICAgIDxtYXNrIGlkPSJheC1ob2xlLW1hc2siIG1hc2tVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9Ii01MDAiIHk9Ii01MDAiIHdpZHRoPSIyMDAwIiBoZWlnaHQ9IjIwMDAiPgogICAgICA8cmVjdCB4PSItNTAwIiB5PSItNTAwIiB3aWR0aD0iMjAwMCIgaGVpZ2h0PSIyMDAwIiBmaWxsPSIjZmZmZmZmIi8+CiAgICAgIDxjaXJjbGUgY3g9IjM1Ny41IiBjeT0iNDQxIiByPSI5NSIgZmlsbD0iIzAwMDAwMCIvPgogICAgPC9tYXNrPgogIDwvZGVmcz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyNjgsMjY1KSIgZmlsbD0iIzA0NTlGNyI+CiAgICA8ZyBtYXNrPSJ1cmwoI2F4LWhvbGUtbWFzaykiPgogICAgICA8cGF0aCBkPSJNMzU4LjUsMi4xNDFDMzU5LjkzNiwyLjE3NCA0MzcuMjU0LC0zLjE1NiA0NzcuMTM3LDc2LjY4NkM1MDkuNDI4LDE0MS4zMjkgNTc0LjcwNywyNjEuNjg2IDU3NS42MjQsMjY1LjQ3NEM1NzYuMDE0LDI2Ny4wODIgNTc1LjkzMiwyNjcuODM0IDU1OS4yNDcsMjc4LjEwM0M1NTIuNDI0LDI4Mi4zMDIgNTEzLjQ0NCwzMDYuMjkxIDQ3NC44MTYsMzMxLjk2NUM0NzAuMzAzLDMzNC45NjUgNDY5Ljk2NCwzMzIuNjU3IDQ2My45MTIsMzI3LjA2MkMzNzguMjQzLDI0Ny44NTYgMjQ5Ljc1NywyOTEuMzA1IDIxNS44NjMsMzgyLjYzNUMxODkuMzUxLDQ1NC4wNzQgMjE4LjgxLDQ5My45NCAyMTcuMTk4LDQ5OS40MDJDMjE2LjM2LDUwMi4yNCAxNTguNTg2LDU0Mi43MTUgMTUzLjM5Niw1NDYuMzUxQzEyOC4xNjgsNTY0LjAyNSAyMS44OTksNjQxLjUzOCAyMS41MDcsNjQxLjU3MUMxOS40MjEsNjQxLjc0NiAtMTIuODE2LDU4Mi44NDQgMTAuNzIxLDUxOC41ODVDMTcuMDEsNTAxLjQxNSAxOC4xMDgsNTAxLjkzOSAxMTcuMDM1LDMxNi4yNDZDMjA4LjQ0NywxNDQuNjU3IDIwNi40NiwxNDMuNzgzIDIxNS4zMywxMjkuNDFDMjQyLjU0Niw4NS4zMDggMjU2LjQyLDUuNTc5IDM1OC41LDIuMTQxWiIvPgogICAgICA8cGF0aCBkPSJNNzEyLjg2LDU2OS41QzcwNy42ODQsNzIyLjE5NCA1MjguNzA5LDc2NS41MjEgNDYwLjM0Myw2NTguNTg2QzQ1OS4xMDUsNjU2LjY1IDQzMy4zMjUsNjExLjE5MSA0MzIuOTg5LDYxMC4yN0M0MjAuMzMxLDU3NS41ODEgNDUxLjI5NCw1NjMuNjAyIDQ1Ny41MTksNTU3LjUyQzQ2My44OTQsNTUxLjI5MSA1MjcuMDQsNTAyLjg0NSA1MTAuMDY3LDQwOC42MDNDNTA1LjYyOSwzODMuOTYxIDQ4OS4zOTIsMzYwLjU0OCA0OTEuNjIzLDM1OC42NUM1MTQuMDg0LDMzOS41MzkgNTc2LjE4NywyOTEuNDIxIDU4My42MTMsMjg1LjY2OEM1ODcuMjI1LDI4Mi44NjkgNTg3LjM2NywyODYuNjQ4IDYxMS43NTUsMzM1LjM3NUM2OTguNjI1LDUwOC45NDMgNzExLjMxNiw1MTEuNDc3IDcxMi44Niw1NjkuNVoiLz4KICAgICAgPHBhdGggZD0iTTI4Ny44ODcsNTkxLjQ3MUMyODguODE4LDU5Ni44OTUgMjkwLjQ2NSw2MDYuNDk5IDI2MC45MTMsNjU0Ljc1MkMyMjcuMjcxLDcwOS42ODEgMTg2LjM4OSw3MTMuNDg0IDE2MC40NCw3MTcuMjI5QzEyNS4xNDcsNzIyLjMyMyA2NS45OTgsNzAxLjI3NiA0My4yNzQsNjcyLjY3MkMzNi43MjUsNjY0LjQyOSAyOC40MDQsNjYwLjkwMiAzNS44OTIsNjU1Ljk5MUM0NS45NjYsNjQ5LjM4NiAxNDcuOTAyLDU4Mi41NDMgMTYyLjMzNiw1NzQuMjMxQzE2OC44MDIsNTcwLjUwOCAyMzIuNjk3LDUyNy4yMjQgMjM0LjEyNyw1MjguOTdDMjUyLjgyOSw1NTEuODAzIDI1My4wMDMsNTUxLjU4MSAyNzYuNDM5LDU2OS41OTJDMjg2Ljg1OSw1NzcuNjAxIDI4Ny4yNzUsNTg2LjQwMyAyODcuODg3LDU5MS40NzFaIi8+CiAgICA8L2c+CiAgICA8Y2lyY2xlIGN4PSIzNTcuNSIgY3k9IjQ0MSIgcj0iOSIgZmlsbD0iIzA0NTlGNyIgb3BhY2l0eT0iLjE4Ii8+CiAgPC9nPgo8L3N2Zz4K" alt="AntaraX"><span>AntaraX brand kit · guide 12 and the product sheets · version 1.6, 11 October 2026</span></div>
   <span class="eyebrow">Brand architecture</span>
   <h1>Keep each product’s style. Add the AntaraX layer.</h1>
   <p class="lead">Most AntaraX products are older than the AntaraX name. So every product keeps its own name, logo, colours and signature details, and every one is “by AntaraX”. AntaraX reaches into each product through the same small touchpoints, among them a little BaTech, used by its own rules, and one sign for AI.</p>
@@ -932,6 +1186,60 @@ footer.end { margin-top: 72px; padding-top: 24px; border-top: 1px solid var(--li
   <p class="mock-note">Example screens built in HTML; names and figures are examples.</p>
 </section>
 
+
+<section id="elements" aria-labelledby="h-el">
+  <div class="sec-head"><span class="eyebrow">Elements, charts, loading and naming</span><h2 id="h-el">BaTech’s construction, in the small things <span class="chip chip-prop">Proposed</span></h2>
+  <p>Each detail borrows a named part of BaTech: the trace and solder pad, the isen-isen dots, the intan, the thread, and the draw-on and turn motion. None of them puts corak near data.</p></div>
+  <h3 class="el-h">Elements</h3>
+  <div class="els">
+    <figure class="el"><div class="el-demo"><div class="tprog"><div class="tp-trace" style="width:62%"><i></i></div><div class="tp-dots"></div></div><span class="el-cap mono">62% imported</span></div><figcaption><strong>Progress</strong>A trace ending in a solder pad; the rest of the track is isen dots.</figcaption></figure>
+    <figure class="el"><div class="el-demo"><div class="step"><b class="done"></b><i class="done"></i><b class="done"></b><i class="done"></i><b class="now"></b><i></i><b></b></div><div class="step-l"><span>Layout</span><span>Zones</span><span>Cargo</span><span>Go live</span></div></div><figcaption><strong>Stepper and timeline</strong>Pads joined by a trace: done filled, current ringed.</figcaption></figure>
+    <figure class="el"><div class="el-demo"><div class="isen"><span></span><em></em><span></span></div></div><figcaption><strong>Divider</strong>A row of isen dots in the Quiet ink; an intan marks a major break.</figcaption></figure>
+    <figure class="el"><div class="el-demo"><div class="tabs"><span class="on">Board</span><span>Jobs</span><span>History</span></div></div><figcaption><strong>Active tab</strong>The thread under the active item, as on antarax.ai.</figcaption></figure>
+    <figure class="el"><div class="el-demo"><div class="icons"><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M4 11 12 4l8 7v9H4z M10 20v-6h4v6" fill="none" stroke="#0B1B4F" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M4 7h16v13H4z M4 11h16 M8 4v5 M16 4v5" fill="none" stroke="#0B1B4F" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M4 8l8-4 8 4v8l-8 4-8-4z M4 8l8 4 8-4 M12 12v8" fill="none" stroke="#0B1B4F" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M4 20V4 M4 20h16 M8 16l4-5 3 3 5-6" fill="none" stroke="#0B1B4F" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div><figcaption><strong>Icons</strong>A plain line set drawn like BaTech: one stroke, round caps and joins. Not motifs.</figcaption></figure>
+  </div>
+  <h3 class="el-h">Charts</h3>
+  <div class="chart-row">
+    <figure class="chart"><div class="chart-head"><strong>Weeks of stock cover · resin pellets</strong><span class="ai-chip"><img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSItNzAgLTcwIDE0MCAxNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJBbnRhcmFYIHNwYXJrIj4KICA8IS0tIEFudGFyYVggZm91ci1jb2xvciAic3BhcmsteCIg4oCUIHRoZSBmYW1pbHkgYWNjZW50IG1hcmsuIFRoZSBmb3VyIHBldGFscyBjYXJyeQogICAgICAgdGhlIHBsYXRmb3JtJ3MgcHJvZHVjdC1hY2NlbnQgc3BlY3RydW0uIFVzZSBhcyBhbiBvcm5hbWVudGFsIGZhbWlseSBzdGFtcAogICAgICAgKGxvYWRlcnMsIGVtcHR5IHN0YXRlcywgc2VjdGlvbiBtYXJrcyksIE5PVCBhcyBhIHN1YnN0aXR1dGUgZm9yIHRoZSAiQSIuIC0tPgogIDxnIHRyYW5zZm9ybT0icm90YXRlKDQ1KSI+PHBhdGggZD0iTSAwLC03MCBDIDI2LC01OCAzNCwtMzQgMzQsLTggQyAyNiwyIDgsNCAwLDAgQyAtOCw0IC0yNiwyIC0zNCwtOCBDIC0zNCwtMzQgLTI2LC01OCAwLC03MCBaIiBmaWxsPSJyZ2IoODIsNzksMjMzKSIvPjwvZz4KICA8ZyB0cmFuc2Zvcm09InJvdGF0ZSgxMzUpIj48cGF0aCBkPSJNIDAsLTcwIEMgMjYsLTU4IDM0LC0zNCAzNCwtOCBDIDI2LDIgOCw0IDAsMCBDIC04LDQgLTI2LDIgLTM0LC04IEMgLTM0LC0zNCAtMjYsLTU4IDAsLTcwIFoiIGZpbGw9InJnYigyNDQsMTIzLDYxKSIvPjwvZz4KICA8ZyB0cmFuc2Zvcm09InJvdGF0ZSgyMjUpIj48cGF0aCBkPSJNIDAsLTcwIEMgMjYsLTU4IDM0LC0zNCAzNCwtOCBDIDI2LDIgOCw0IDAsMCBDIC04LDQgLTI2LDIgLTM0LC04IEMgLTM0LC0zNCAtMjYsLTU4IDAsLTcwIFoiIGZpbGw9InJnYigxMiwxOTYsMjUxKSIvPjwvZz4KICA8ZyB0cmFuc2Zvcm09InJvdGF0ZSgzMTUpIj48cGF0aCBkPSJNIDAsLTcwIEMgMjYsLTU4IDM0LC0zNCAzNCwtOCBDIDI2LDIgOCw0IDAsMCBDIC04LDQgLTI2LDIgLTM0LC04IEMgLTM0LC0zNCAtMjYsLTU4IDAsLTcwIFoiIGZpbGw9InJnYigxOCwxODMsMTA2KSIvPjwvZz4KPC9zdmc+Cg==" alt="">Forecast by AI</span></div><svg viewBox="0 0 520 220" role="img" aria-label="Example data: weeks of stock cover, falling from 6.1 to 3.6 over eight weeks, forecast to reach 2.4">
+    <line x1="34" x2="502" y1="190" y2="190" stroke="#0B1B4F" stroke-opacity=".18" stroke-dasharray="1 5" stroke-linecap="round"/><text x="26" y="194" text-anchor="end" class="ct">0</text><line x1="34" x2="502" y1="140.28571428571428" y2="140.28571428571428" stroke="#0B1B4F" stroke-opacity=".18" stroke-dasharray="1 5" stroke-linecap="round"/><text x="26" y="144.28571428571428" text-anchor="end" class="ct">2</text><line x1="34" x2="502" y1="90.57142857142857" y2="90.57142857142857" stroke="#0B1B4F" stroke-opacity=".18" stroke-dasharray="1 5" stroke-linecap="round"/><text x="26" y="94.57142857142857" text-anchor="end" class="ct">4</text><line x1="34" x2="502" y1="40.85714285714286" y2="40.85714285714286" stroke="#0B1B4F" stroke-opacity=".18" stroke-dasharray="1 5" stroke-linecap="round"/><text x="26" y="44.85714285714286" text-anchor="end" class="ct">6</text>
+    <path d="M331.8,100.5 L374.4,112.9 L416.9,122.9 L459.5,130.3" fill="none" stroke="#076C8A" stroke-width="2" stroke-dasharray="5 5" stroke-linecap="round"/>
+    <path d="M34.0,38.4 L76.5,45.8 L119.1,60.7 L161.6,50.8 L204.2,68.2 L246.7,80.6 L289.3,93.1 L331.8,100.5" fill="none" stroke="#076C8A" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M204.1818181818182,61.19999999999999 l7,7 l-7,7 l-7,-7 Z" fill="#E9579D" stroke="#FFFFFF" stroke-width="2"/>
+    <circle cx="331.8181818181818" cy="100.51428571428572" r="6" fill="#076C8A" stroke="#FFFFFF" stroke-width="2.5"/>
+    <text x="216.1818181818182" y="92.19999999999999" class="ct">Supplier late</text>
+    <text x="339.8181818181818" y="90.51428571428572" class="ct ctb">3.6 weeks</text>
+    <text x="500" y="120.34285714285716" text-anchor="end" class="ct">Forecast</text>
+    <circle cx="34" cy="38.37142857142858" r="9" fill="transparent"><title>Week 1: 6.1 weeks of cover</title></circle><circle cx="76.54545454545455" cy="45.828571428571436" r="9" fill="transparent"><title>Week 2: 5.8 weeks of cover</title></circle><circle cx="119.0909090909091" cy="60.74285714285714" r="9" fill="transparent"><title>Week 3: 5.2 weeks of cover</title></circle><circle cx="161.63636363636363" cy="50.800000000000004" r="9" fill="transparent"><title>Week 4: 5.6 weeks of cover</title></circle><circle cx="204.1818181818182" cy="68.19999999999999" r="9" fill="transparent"><title>Week 5: 4.9 weeks of cover</title></circle><circle cx="246.72727272727272" cy="80.62857142857142" r="9" fill="transparent"><title>Week 6: 4.4 weeks of cover</title></circle><circle cx="289.27272727272725" cy="93.05714285714285" r="9" fill="transparent"><title>Week 7: 3.9 weeks of cover</title></circle><circle cx="331.8181818181818" cy="100.51428571428572" r="9" fill="transparent"><title>Week 8: 3.6 weeks of cover</title></circle><circle cx="374.3636363636364" cy="112.94285714285715" r="9" fill="transparent"><title>Week 9 (forecast): 3.1 weeks</title></circle><circle cx="416.90909090909093" cy="122.88571428571427" r="9" fill="transparent"><title>Week 10 (forecast): 2.7 weeks</title></circle><circle cx="459.45454545454544" cy="130.34285714285716" r="9" fill="transparent"><title>Week 11 (forecast): 2.4 weeks</title></circle>
+    <text x="34" y="212" class="ct">Week 1</text><text x="502" y="212" text-anchor="end" class="ct">Week 11</text>
+  </svg><figcaption class="mock-note">Example data</figcaption></figure>
+    <ul class="pc-gaps chart-rules"><li><b>Dotted gridlines</b> (isen-isen), recessive.</li><li><b>The latest value ends in a pad:</b> a filled dot with a white ring.</li><li><b>Flagged points are an intan,</b> at least 8px, labelled.</li><li><b>AI forecasts continue dashed,</b> with the sparkle beside their label.</li><li>The product’s colours draw the data; BaTech never sits behind or inside a plot.</li><li>An empty chart shows the product’s empty state.</li></ul>
+  </div>
+  <h3 class="el-h">Loading</h3>
+  <div class="loads">
+    <figure class="ld"><div class="ld-art"><svg class="turn6" viewBox="-6 -6 112 112" aria-hidden="true"><circle cx="50" cy="50" r="38" fill="#FFFFFF" stroke="#0B6E72" stroke-width="1.8"/><circle cx="50" cy="50" r="28" fill="#08B0B3" stroke="#0B6E72" stroke-width="2"/><circle cx="50" cy="50" r="18" fill="#FFFFFF" stroke="#0B6E72" stroke-width="2"/><circle cx="50" cy="12" r="2.6" fill="#FFFFFF" stroke="#0B6E72" stroke-width="1.4"/><circle cx="82.9" cy="31" r="2.6" fill="#FFFFFF" stroke="#0B6E72" stroke-width="1.4"/><circle cx="82.9" cy="69" r="2.6" fill="#FFFFFF" stroke="#0B6E72" stroke-width="1.4"/><circle cx="50" cy="88" r="2.6" fill="#FFFFFF" stroke="#0B6E72" stroke-width="1.4"/><circle cx="17.1" cy="69" r="2.6" fill="#FFFFFF" stroke="#0B6E72" stroke-width="1.4"/><circle cx="17.1" cy="31" r="2.6" fill="#FFFFFF" stroke="#0B6E72" stroke-width="1.4"/><circle cx="74.2" cy="36" r="3" fill="#0B6E72" stroke="#0B6E72" stroke-width="1.6"/><circle cx="50" cy="78" r="3" fill="#0B6E72" stroke="#0B6E72" stroke-width="1.6"/><circle cx="25.8" cy="36" r="3" fill="#0B6E72" stroke="#0B6E72" stroke-width="1.6"/><circle cx="50" cy="50" r="7" fill="#0B6E72" stroke="#0B6E72" stroke-width="1.6"/><circle cx="50" cy="50" r="2.6" fill="#0B6E72"/></svg></div><figcaption><strong>Yara · riak</strong>Turns</figcaption></figure>
+    <figure class="ld"><div class="ld-art"><svg class="drawon" viewBox="-6 -6 112 112" aria-hidden="true"><path d="M34,94 C38,62 46,34 66,8" fill="none" stroke="#9C2B63" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><rect x="40.5" y="73.8" width="5" height="6" rx="2" fill="#9C2B63" stroke="#9C2B63" stroke-width="1.6" transform="rotate(-24 36.5 76.8)"/><rect x="44" y="59.4" width="7.4" height="9" rx="2" fill="#FFFFFF" stroke="#9C2B63" stroke-width="1.6" transform="rotate(-24 40 63.9)"/><rect x="49" y="45" width="9.8" height="12" rx="2" fill="#9C2B63" stroke="#9C2B63" stroke-width="1.6" transform="rotate(-24 45 51)"/><rect x="55.4" y="30.6" width="12.2" height="15" rx="2" fill="#FFFFFF" stroke="#9C2B63" stroke-width="1.6" transform="rotate(-24 51.4 38.1)"/><rect x="63.3" y="16.2" width="14.6" height="18" rx="2" fill="#9C2B63" stroke="#9C2B63" stroke-width="1.6" transform="rotate(-24 59.3 25.2)"/></svg></div><figcaption><strong>Janka · padi</strong>Draws on, then fills</figcaption></figure>
+    <figure class="ld"><div class="ld-art"><div class="seeds"><b style="animation-delay:0s"></b><b style="animation-delay:0.5s"></b><b style="animation-delay:1s"></b><b style="animation-delay:1.5s"></b><b style="animation-delay:2s"></b></div></div><figcaption><strong>Angka · congkak</strong>A seed passes hole to hole</figcaption></figure>
+    <figure class="ld"><div class="ld-art"><svg class="tload" viewBox="4 4 92 92" aria-hidden="true"><rect x="8" y="8" width="84" height="84" rx="14" fill="#5B2B4A"/><path d="M26,17 l9,9 l-9,9 l-9,-9 Z" fill="#FFFFFF"/><path d="M50,17 l9,9 l-9,9 l-9,-9 Z" fill="#FFFFFF"/><path d="M74,17 l9,9 l-9,9 l-9,-9 Z" fill="#FFFFFF"/><path d="M26,41 l9,9 l-9,9 l-9,-9 Z" fill="#FFFFFF"/><path d="M50,41 l9,9 l-9,9 l-9,-9 Z" fill="#FFFFFF"/><path d="M74,41 l9,9 l-9,9 l-9,-9 Z" fill="#FFFFFF"/><path d="M26,65 l9,9 l-9,9 l-9,-9 Z" fill="#FFFFFF"/><path d="M50,65 l9,9 l-9,9 l-9,-9 Z" fill="#FFFFFF"/><path d="M74,65 l9,9 l-9,9 l-9,-9 Z" fill="#FFFFFF"/><circle cx="26" cy="74" r="6" fill="#D6A84F" style="animation-delay:0s"/><circle cx="50" cy="50" r="6" fill="#D6A84F" style="animation-delay:0.45s"/><circle cx="74" cy="50" r="6" fill="#D6A84F" style="animation-delay:0.9s"/><circle cx="74" cy="26" r="6" fill="#D6A84F" style="animation-delay:1.35s"/></svg></div><figcaption><strong>Tinara · kerawang</strong>The path lights, opening by opening</figcaption></figure>
+    <figure class="ld"><div class="ld-art"><svg class="drawon" viewBox="-6 -6 112 112" aria-hidden="true"><g transform="rotate(45 50 50)"><rect x="16" y="16" width="20" height="20" rx="4" fill="#FFFFFF" stroke="#0B7A47" stroke-width="2"/><rect x="40" y="16" width="20" height="20" rx="4" fill="#12B76A" stroke="#0B7A47" stroke-width="2"/><rect x="64" y="16" width="20" height="20" rx="4" fill="#FFFFFF" stroke="#0B7A47" stroke-width="2"/><rect x="16" y="40" width="20" height="20" rx="4" fill="#12B76A" stroke="#0B7A47" stroke-width="2"/><rect x="40" y="40" width="20" height="20" rx="10" fill="#0B7A47" stroke="#0B7A47" stroke-width="2"/><rect x="64" y="40" width="20" height="20" rx="4" fill="#12B76A" stroke="#0B7A47" stroke-width="2"/><rect x="16" y="64" width="20" height="20" rx="4" fill="#12B76A" stroke="#0B7A47" stroke-width="2"/><rect x="40" y="64" width="20" height="20" rx="4" fill="#FFFFFF" stroke="#0B7A47" stroke-width="2"/><rect x="64" y="64" width="20" height="20" rx="4" fill="#12B76A" stroke="#0B7A47" stroke-width="2"/><circle cx="50" cy="50" r="3" fill="#FFFFFF" stroke="#0B7A47" stroke-width="1.4"/></g></svg></div><figcaption><strong>PLExyz Grid · petak</strong>Draws on, then fills</figcaption></figure>
+    <figure class="ld"><div class="ld-art"><svg class="turn6" viewBox="-6 -6 112 112" aria-hidden="true"><ellipse cx="50" cy="50" rx="44" ry="17" fill="none" stroke="#0B7A47" stroke-width="1.8" transform="rotate(-22 50 50)"/><ellipse cx="50" cy="50" rx="31" ry="11" fill="none" stroke="#0B7A47" stroke-width="1.3" stroke-dasharray="3 4" transform="rotate(-22 50 50)"/><circle cx="50" cy="50" r="10" fill="#12B76A" stroke="#0B7A47" stroke-width="1.6"/><circle cx="50" cy="50" r="3.4" fill="#12B76A" stroke="#0B7A47" stroke-width="1.6"/><path d="M42,38 A11,11 0 0 1 58,38" fill="none" stroke="#0B7A47" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="90" cy="34" r="4.6" fill="#0B7A47" stroke="#0B7A47" stroke-width="1.6"/><circle cx="14" cy="64" r="3" fill="#FFFFFF" stroke="#0B7A47" stroke-width="1.6"/></svg></div><figcaption><strong>PLExyz Crowd · orbit</strong>Turns</figcaption></figure>
+    <figure class="ld"><div class="ld-art"><svg class="turn6" viewBox="-6 -6 112 112" aria-hidden="true"><path d="M50,6 L94,50 L50,94 L6,50 Z" fill="#FFFFFF" stroke="#0533A8" stroke-width="2" stroke-linejoin="round"/><path d="M50,26 L74,50 L50,74 L26,50 Z" fill="#074AF8" stroke="#0533A8" stroke-width="2" stroke-linejoin="round"/><path d="M28,28 L72,72 M72,28 L28,72" fill="none" stroke="#0533A8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="50" cy="50" r="9" fill="#0533A8" stroke="#0533A8" stroke-width="1.6"/><circle cx="50" cy="6" r="4.5" fill="#074AF8" stroke="#0533A8" stroke-width="1.6"/><circle cx="94" cy="50" r="4.5" fill="#074AF8" stroke="#0533A8" stroke-width="1.6"/><circle cx="50" cy="94" r="4.5" fill="#074AF8" stroke="#0533A8" stroke-width="1.6"/><circle cx="6" cy="50" r="4.5" fill="#074AF8" stroke="#0533A8" stroke-width="1.6"/></svg></div><figcaption><strong>AX Frame · intan</strong>Turns</figcaption></figure>
+  </div>
+  <div class="spec-grid">
+    <div class="spec"><strong>Under a second</strong><span>Nothing shows.</span></div>
+    <div class="spec"><strong>A screen loading</strong><span>A skeleton in the product’s neutrals. No motif over data.</span></div>
+    <div class="spec"><strong>A task the person started</strong><span>The signature motif, with the action in words: “Forecasting 48 items”.</span></div>
+  </div>
+  <h3 class="el-h">Naming</h3>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th scope="col">Rule</th><th scope="col">Example</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Product names stay, with no invented meanings</th><td>Only Lapisan (“layer”) has a documented meaning (BaTech)</td></tr>
+      <tr><th scope="row">BaTech words name things in design and code</th><td><code>intan</code> · <code>isen</code> · <code>trace</code> · <code>pad</code> · <code>thread</code> · <code>quiet</code> · <code>loader-padi</code></td></tr>
+      <tr><th scope="row">Customer copy names the action plainly</th><td>“Forecasting 48 items”, not “Padi is growing”</td></tr>
+      <tr><th scope="row">A Malay name only if its meaning is the job</th><td>Explained once on first use, as Lapisan is; new candidates go to the owner</td></tr>
+    </tbody></table></div>
+</section>
+
 <section id="sparkle" aria-labelledby="h-spark">
   <div class="sec-head"><span class="eyebrow">One sign for AI</span><h2 id="h-spark">The sparkle marks AntaraX intelligence</h2>
   <p>The same sparkle, in the colours inside the A, sits beside AI work in every product. Never decoration, never a logo.</p></div>
@@ -1055,6 +1363,7 @@ footer.end { margin-top: 72px; padding-top: 24px; border-top: 1px solid var(--li
   <div class="sec-head"><span class="eyebrow">Still open</span><h2 id="h-open">What is left to choose</h2><p>Numbered as in <code>guide/11-open-questions.md</code>.</p></div>
   <ul class="open">
     <li><b>31</b><span><strong>Signature moments.</strong> Which product moments to build first.</span></li>
+    <li><b>32</b><span><strong>Elements, charts, loading, naming.</strong> Approve the proposals; any Malay feature names?</span></li>
     <li><b>16</b><span><strong>Janka accent and tagline.</strong> Cyan instead of REKA orange; “Track. Forecast. Reorder.”</span></li>
     <li><b>18</b><span><strong>Crowd and Trace marks.</strong> Draw both in the PLExyz system.</span></li>
     <li><b>22</b><span><strong>“PLExyz Edge Gateway”.</strong> Rename to “PLExyz Gateway”.</span></li>

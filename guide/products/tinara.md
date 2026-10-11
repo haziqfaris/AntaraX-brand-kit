@@ -15,21 +15,24 @@ Own-mark product in the Tide family. Closed pilot, invite-only. Malaysia-first B
 - Redefined as B2B intelligence on 10 October 2026.
 - No customers to name. Pilot partners are invited; REKA staff run it.
 
-## Mark: the kerawang window
+## Mark: the kerawang motif
 
-**What kerawang is.** Ukiran kerawang is the pierced woodcarving set into Malay houses above windows and doors: a carved lattice that lets light and air through while screening the view.
+**Tinara's logo is the BaTech kerawang motif itself**: the official drawing of a carved lattice tile with one path stepping through it, in Tinara's plum and gold.
 
-**Why it fits Tinara.** The market is the lattice: thousands of companies, each one an opening. Tinara looks through it and finds the one worth calling, why, and how to open the conversation. In the mark, **the lattice is the market, and the lit gold opening is the next company to call.**
+**What kerawang is.** Ukiran kerawang is the pierced woodcarving set into Malay houses above windows and doors: a carved lattice that lets light and air through while screening the view. In BaTech it is the motif for "one path found in the noise".
 
-| Option | Files | Reads as |
-|---|---|---|
-| **Window** (recommended) | `assets/products/tinara/tinara-mark-window.svg`, `-white.svg` | An arched Malay window, its carved lattice of nine openings, the top one lit gold. The most specific to kerawang, and unlike any other mark in the portfolio |
-| Lattice | `tinara-mark-lattice.svg`, `-white.svg` | Nine solid diamonds forming one larger diamond, the top piece gold. The boldest at small sizes |
-| Trellis | `tinara-mark-trellis.svg`, `-white.svg` | A diamond lattice of lines, one cell gold. The lightest |
+**Why it fits Tinara.** The market is the lattice: thousands of companies, each one an opening. Tinara finds the path through it: who to call, why, and how to open the conversation.
 
-- All three: flat fills, Tinara plum `#5B2B4A`, gold `#D6A84F` for the lit opening, a white version for dark grounds, clear at 16px.
+| File | Use |
+|---|---|
+| `assets/products/tinara/tinara-mark.svg` | The mark: plum tile, white openings, gold path. 32px and up |
+| `tinara-mark-small.svg` | The same construction with a 3×3 lattice, for 24px and below (favicon, small tiles) |
+| `tinara-mark-light.svg`, `tinara-mark-small-light.svg` | Light tile, for navy and dark grounds |
+| `tinara-empty-motif.svg` | Bunga raya, the Tide family flower, in the Tide pair: Tinara's empty-state picture (the logo is not repeated as a motif) |
+
+- Built by `tools/build-product-motifs.mjs` from the official drawing; never redraw it by hand.
 - Wordmark: "Tinara" in Poppins 600, navy or plum, beside the mark.
-- Thinking motion: the openings light in turn.
+- Thinking motion: the openings light in turn until the path settles.
 
 ## Colour
 
@@ -46,7 +49,7 @@ Plum `#5B2B4A` leads, with gold `#D6A84F` for highlights and amethyst `#8B4E87` 
 
 ## The AntaraX layer in Tinara
 
-The credit line; BaTech: **kerawang** (`tinara-motif.svg`, Tide pair) as the picture in empty states, and the Tide Quiet band along the bottom of the sign-in panel (in place of the blur orbs) and under report headers; **the AI sparkle** beside every ranking and brief; intan eyebrows in plum; the app tile; the legal footer.
+The credit line; BaTech: **bunga raya** (`tinara-empty-motif.svg`, Tide pair) as the picture in empty states (the kerawang is the logo), and the Tide Quiet band along the bottom of the sign-in panel (in place of the blur orbs) and under report headers; **the AI sparkle** beside every ranking and brief; intan eyebrows in plum; the app tile; the legal footer.
 
 ## Type
 
@@ -74,4 +77,4 @@ Today Inter (body) and Poppins (display). Target: Poppins only, JetBrains Mono f
 
 ## Open
 
-- Choose the kerawang mark: window (recommended), lattice or trellis (11).
+- None.

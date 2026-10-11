@@ -20,7 +20,6 @@ Decisions the owner has not made yet. Each needs an answer before the related wo
 
 16. **Janka accent and tagline.** Confirm moving the app's primary from REKA orange to Janka dark `#076C8A` with cyan `#0CC4FB` as accent, and the tagline "Track. Forecast. Reorder." (replaces "Unlock", a banned word).
 18. **PLExyz Crowd and Trace marks.** Draw both in the PLExyz system: the force field and shard, with scattered entities on the grid (Crowd) and tags with last-seen points (Trace).
-19. **Tinara mark.** Choose the kerawang window (recommended), the lattice or the trellis (`assets/products/tinara/`, products/tinara.md).
 22. **"PLExyz Edge Gateway".** Rename to "PLExyz Gateway" so it does not collide with the AntaraX Edge family.
 23. **Product heritage in copy.** Which origin facts may customers see (for example, the year PLExyz started, Grid's flagship customer and pricing, Yara's first customer, the pandemic origin of Yara)? Until confirmed, product sheets keep them internal.
 
@@ -36,4 +35,4 @@ Decisions the owner has not made yet. Each needs an answer before the related wo
 
 29. **BaTech guidelines page is behind the kit.** `antarax-ai/docs/design/batech-guidelines.mjs` still gives Loom the verb Orchestrate (AI agents and workflows) and a waitlist, Motion a waitlist, Frame "Live" and Tinara "Beta", and names the product "Frame". Update it to the October decisions (Loom Synthesize, closed pilots, AX Frame) and add the product placements from 12.
 30. **Two sets of family darks and tints.** `tokens.json` family tints and darks are computed (86% and 55%); BaTech's family pairs use their own darks and grounds (for example Ripple dark `#0B6E72` against `#046162`). Both are now in the tokens. Settle on one set.
-
+31. **Signature moments.** Which of the product moments in 12 to build first (Yara's ripple on Complete, Janka's padi while forecasting, Angka's congkak progress, Tinara's lattice while ranking, Grid's empty layout, Crowd's orbit live indicator, AX Frame's intan record)?

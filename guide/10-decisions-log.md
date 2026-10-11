@@ -2,6 +2,11 @@
 
 Owner decisions that shape the brand, newest first. Add to the top; never rewrite history. Earlier strategy changes are in `reference/strategy/` (playbook amendments v0.3–v0.5, RECONCILIATION).
 
+## 11 October 2026 (fifth review)
+
+- **Tinara's logo is the kerawang motif itself:** the official BaTech drawing in Tinara's plum and gold, with a small 3×3 version for 24px and below and light versions for dark grounds. The window, lattice and trellis options are withdrawn. Tinara's empty states use bunga raya, the Tide flower, so the logo is not repeated.
+- **Signature moments proposed:** one functional moment per product where its motif does the product's job (12).
+
 ## 11 October 2026 (fourth review)
 
 - **Product guidelines follow the BaTech guidelines.** Inside products, BaTech uses the official motif drawings, the family colour pairs (never the product's own colours), BaTech's Quiet ink `#C5CCF7`, its three strengths and its size limits (24px minimum; at least two motifs above about 120px). Places: the signature motif as the empty-state picture; a Quiet band of the family's corak on dividers, sign-in edges and email headers; avatar and image placeholders; loading. The single large sign-in motif and the product-coloured motif files are withdrawn. Motif meanings use BaTech's wording.

@@ -48,7 +48,7 @@ A product is own-mark when it arrived with an identity people already recognise.
 | PLExyz Grid | Force field, shard and zone grid; the four zone colours; the multicoloured "Grid" wordmark; the hex-tile sign-in |
 | Janka | The J that never closes; the signal ticks; its splash and thinking animations |
 | Angka | The sheet-stack face; paper ground; plum and Lapis peach |
-| Tinara | Plum and gold; the kerawang window mark |
+| Tinara | Plum and gold; the kerawang mark |
 | AX Frame | The breathing cube halo |
 | Yara | The A with riak; teal |
 
@@ -76,7 +76,7 @@ Each product has one signature motif, from its family's niche. The wording is Ba
 | Ripple | Yara | **riak** (ripple) | one tap, spreading | One tap, spreading |
 | Tide | Janka | **padi** (paddy) | signal bars | Reading the harvest before it comes |
 | Tide | Angka | **congkak** (counting board) | a ledger, seeds moving like money | Counting where it all goes |
-| Tide | Tinara | **kerawang** (carved lattice) | one path found in the noise | One path found in the noise |
+| Tide | Tinara | **kerawang** (carved lattice), which is also Tinara's logo | one path found in the noise | One path found in the noise |
 | Edge | PLExyz Grid | **petak** (grid of spaces) | spaces in a layout | Spaces in a real layout |
 | Edge | PLExyz Crowd | **orbit** | wireless | Signals counted, never faces |
 | Frame | AX Frame | **intan** (diamond) | one world, seen many ways | One world, seen many ways |
@@ -112,6 +112,8 @@ Each place uses one BaTech strength, keeps text on a solid surface, and appears 
 
 Files: `assets/products/<product>/<product>-motif.svg` (signature motif, family pair) and `assets/families/bands/<family>-quiet.svg` (Quiet band), built by `tools/build-product-motifs.mjs` with the BaTech guideline recipes.
 
+Tinara's logo is its signature motif, so its empty states use **bunga raya**, the Tide family flower (`tinara-empty-motif.svg`), and the logo never appears twice in two colourways.
+
 ### Never
 
 - A full cloth, medallion or full-colour corak area inside a product.
@@ -121,6 +123,29 @@ Files: `assets/products/<product>/<product>-motif.svg` (signature motif, family 
 - A motif recoloured in the product's own colours, stretched or squashed.
 - Cameos (Seth, the REKA mark) in product placements: BaTech keeps them out of product rows, and its empty-state and avatar examples carry none.
 - Motion that is not slow and rare: radial motifs turn once every 30 to 60 seconds; all motion stops for reduced motion.
+
+## Signature moments (proposed)
+
+Beyond the quiet placements, each product can give its motif **one job**: a moment where the motif does what the product does. Each follows BaTech: the official drawing, the family pair, at least 24px, motion slow and rare (draw on, fill, turn), never behind data, and nothing moves for people who turn motion off.
+
+| Product | Moment | What the motif does |
+|---|---|---|
+| Yara · riak | A job is completed | One riak ripple spreads once from the Complete button, over about a second: one tap, spreading to the board |
+| Janka · padi | A forecast runs | The padi stalk draws on while the forecast runs; its grains fill when it is ready |
+| Angka · congkak | Month-end matching | Progress is the congkak board: each matched receipt drops a seed into a hole |
+| Tinara · kerawang | Ranking companies | The logo's lattice lights opening by opening until one path settles |
+| PLExyz Grid · petak | An empty layout | Before a facility is drawn, the canvas shows petak as the picture and asks for the first zone |
+| PLExyz Crowd · orbit | Live sensing | The live indicator is the orbit, its dot travelling slowly, in place of a pulsing dot |
+| AX Frame · intan | A record fills in | The intan's facets fill as each part of an asset's record is completed |
+
+Across every product:
+
+- **Milestones:** the first job done, the first forecast, the first match. A one-time card with the motif in full colour and the family's Quiet band.
+- **User guides and help:** the Quiet band as the chapter divider; the motif on the guide cover.
+- **Reports and exports:** the Quiet band across the cover, the motif beside the title.
+- **Hardware and signage:** Crowd nodes, Grid bay signs and Trace RFID tags carry the motif (6mm minimum in print).
+
+One moment per product. Never on screens people work through quickly (tables, forms, the board itself).
 
 ## Own marks
 

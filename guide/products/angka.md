@@ -62,6 +62,10 @@ Angka keeps its face, paper and plum. AntaraX adds: BaTech: **congkak** (`angka-
 2. Swap Geist Mono for JetBrains Mono; remove Caveat.
 3. Update the canonical brief's "standalone REKA brand" line.
 
+## Shared standards (13)
+
+Audited against [13 Shared product standards](../13-shared-product-standards.md) on 11 October 2026. The full list is under Angka in 13's audit; in short: the sender `angka@antarax.ai`, the support line instead of holla@reka.re and a personal address, the email footer credit, plan names in ladder order, `US$`, a plain error page, the AXLE look, an axe check.
+
 ## Open
 
 - None.

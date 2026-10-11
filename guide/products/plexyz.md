@@ -109,6 +109,10 @@ Grid keeps everything above. AntaraX adds (12):
 4. Grid: replace top-bordered stat cards.
 5. Draw the Crowd and Trace marks in the line system; add the PLExyz master mark file.
 
+## Shared standards (13)
+
+Audited against [13 Shared product standards](../13-shared-product-standards.md) on 11 October 2026. The full list is under PLExyz Grid and PLExyz Crowd in 13's audit; in short: for Grid: one account word, shared roles, `grid.antarax.ai`, plan names, money and dates, invite and reset emails, the AXLE look, exports, focus outlines; for Crowd: rename from AXLE, `crowd.antarax.ai`, organisation and members, error copy, report header, light first, reduced motion.
+
 ## Open
 
 - Which purple the line uses: `#6040CC` or Grid's `#2C09B2` family (11).

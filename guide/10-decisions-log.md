@@ -2,6 +2,10 @@
 
 Owner decisions that shape the brand, newest first. Add to the top; never rewrite history. Earlier strategy changes are in `reference/strategy/` (playbook amendments v0.3–v0.5, RECONCILIATION).
 
+## 11 October 2026 (seventh review)
+
+- **Shared product standards (13)**, asked for in full by the owner: one set of words (organisation, member, Owner · Admin · Member · Viewer, Sign in), addresses (`<product>.antarax.ai`, `axle.antarax.ai`, `<product>@antarax.ai`, one support line), plans, money, dates and times, one email template (the Lapisan mailer), copy patterns, one AXLE, British English and Bahasa Malaysia, `/guide` and `/help`, report and export formats, and an accessibility baseline. Every app audited against them. Open choices: 35 to 39.
+
 ## 11 October 2026 (sixth review)
 
 - **BaTech is never straight-cut.** Bands are drift bands (fade out with no edge) or edge bands cropped only by a container's own edge; no ruled lines, rows of dots or hard strips as decoration. Functional lines (progress, steppers, gridlines) stay plain and are not corak. The straight Quiet bands, dot-row divider and hatched tab thread are withdrawn.

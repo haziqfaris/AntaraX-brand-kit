@@ -37,6 +37,7 @@ One-line summary: kind, family, status.
 ## The AntaraX layer   the eight touchpoints from 12, for this product
 ## Credit lines   exactly what the product says about AntaraX and REKA
 ## Gaps in the app today   audit findings with file references
+## Shared standards (13)   the product's row of the audit in 13
 ## Steps to converge       ordered, smallest first
 ## Open           items waiting on the owner (also listed in 11)
 ```

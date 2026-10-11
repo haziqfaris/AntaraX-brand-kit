@@ -73,6 +73,10 @@ Janka keeps its J, ticks, splash and thinking animations. AntaraX adds (12): the
 3. Move the primary colour to Janka dark and the status colours to the shared core.
 4. Sign-in panel to navy; add the app tile and manifest.
 
+## Shared standards (13)
+
+Audited against [13 Shared product standards](../13-shared-product-standards.md) on 11 October 2026. The full list is under Janka in 13's audit; in short: an Owner role, the support line instead of hello@reka.re, plan names, `RM12,345`, the organisation time zone, the shared email template, "Upgrade to use this page", "AXLE · Janka", `/help`, a blue focus ring, an axe check.
+
 ## Open
 
 - The cyan accent and the tagline "Track. Forecast. Reorder." (11).

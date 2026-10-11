@@ -12,6 +12,7 @@ AntaraX is the AI product line of **REKA Inisiatif Sdn Bhd** (Kuala Lumpur, Mala
 | Designing anything | [04 Logo](guide/04-logo.md), [05 Colour and type](guide/05-colour-and-type.md), [06 BaTech illustration](guide/06-batech-illustration.md), [07 Interface rules](guide/07-interface-rules.md) |
 | Building the website | [08 Website, SEO and conversion](guide/08-website-seo-conversion.md), plus `tokens/` |
 | Building a product UI | [05 Colour and type](guide/05-colour-and-type.md), [09 Product app alignment](guide/09-product-app-alignment.md), your product's sheet in [products/](guide/products/README.md), `tokens/` |
+| Building a product's words, emails, addresses, plans, formats, help or exports | [13 Shared product standards](guide/13-shared-product-standards.md) and its audit |
 | Working on a product's logo, name or credit line | [12 Brand architecture](guide/12-brand-architecture.md), [products/](guide/products/README.md), [the visual guide](guide/product-brands.html) |
 | Checking what was decided, and when | [10 Decisions log](guide/10-decisions-log.md), [11 Open questions](guide/11-open-questions.md) |
 
@@ -62,4 +63,4 @@ reference/    the master logo file, and the source documents the guide was built
 | Tinara | `haziqfaris/tinara` |
 | REKA (parent brand) | `haziqfaris/reka.re`, `haziqfaris/reka-brand-kit` |
 
-Version 1.2, 11 October 2026: brand architecture, product sheets and the AntaraX layer.
+Version 1.3, 11 October 2026: brand architecture, product sheets, the AntaraX layer and shared product standards.

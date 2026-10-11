@@ -75,6 +75,10 @@ Today Inter (body) and Poppins (display). Target: Poppins only, JetBrains Mono f
 3. Shared status colours; dark surfaces to the dark product ground.
 4. Put the kerawang mark in; add the app tile and manifest.
 
+## Shared standards (13)
+
+Audited against [13 Shared product standards](../13-shared-product-standards.md) on 11 October 2026. The full list is under Tinara in 13's audit; in short: `tinara.antarax.ai`, a support line and sender, plan names and currency, the shared email template, organisation and role names, the AXLE console, British spelling, `/guide` and `/help`, export names and footer, reduced motion and focus, tests.
+
 ## Open
 
 - None.

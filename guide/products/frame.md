@@ -59,6 +59,10 @@ AX Frame is A-mark, so it is AntaraX already. It keeps its breathing cube halo a
 2. Rename to AX Frame everywhere customers see it; put the mark on the social image.
 3. Credit lines; intan in empty states and the Frame Quiet edge band on sign-in; the AI sparkle.
 
+## Shared standards (13)
+
+Audited against [13 Shared product standards](../13-shared-product-standards.md) on 11 October 2026. The full list is under AX Frame in 13's audit; in short: `frame.antarax.ai` instead of vercel.app, the sender `AX Frame <frame@antarax.ai>`, no personal address on legal pages, `US$`, plan names, the template for invites, "AXLE · AX Frame", `/guide` and `/help`, an axe check.
+
 ## Open
 
 - None.

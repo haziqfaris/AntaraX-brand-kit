@@ -57,3 +57,8 @@ Yara is A-mark and already carries most of the layer. BaTech: **riak** (`yara-mo
 1. Fix the byline separator and spelling.
 2. Replace the local product registry with a link to `guide/products/`.
 3. Add the sign-in trust line, riak in empty states and the Ripple Quiet edge band on sign-in, and the AI sparkle on AI suggestions.
+
+## Shared standards (13)
+
+Audited against [13 Shared product standards](../13-shared-product-standards.md) on 11 October 2026. The full list is under Yara in 13's audit; in short: organisation and role names, the sender address, the email credit line, plan names, "AXLE · Yara", British spelling, export names, focus and reduced motion, an axe check.
+

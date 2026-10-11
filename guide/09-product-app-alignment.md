@@ -27,6 +27,10 @@ Audited from each repository on 11 October 2026. Details and file references are
 | **Angka** | Own-mark | Angka plum `#6B3F6B` | Own sheet-stack mark, plum, paper ground; Poppins, Caveat, Geist Mono; "by REKA" credits | Credits; extra faces. The mark already meets 12. Replaces the earlier recommendation to move Angka to Tide pink. |
 | **Tinara** | Own-mark | Tinara plum `#5B2B4A`, gold | Placeholder "T" tile, plum and gold, Inter + Poppins, "Tinara by REKA" | No logo (kerawang mark drawn); "by REKA" throughout; second typeface. |
 
+## Shared standards
+
+Words, addresses, plans, money and dates, emails, copy patterns, the admin console, languages, help, exports and accessibility are standardised in [13 Shared product standards](13-shared-product-standards.md), with an audit of every app.
+
 ## Admin console
 
 **AXLE** is REKA's internal operations console across products. It is never named or shown to customers.

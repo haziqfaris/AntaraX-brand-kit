@@ -40,3 +40,11 @@ Decisions the owner has not made yet. Each needs an answer before the related wo
 33. **Yara's "Flow" line** clashes with PLExyz Flow. Rename Yara's line (recommended), or rename the PLExyz concept.
 34. **AX Frame's "Lens"** (AI analysis): if it is the AI assistant, rename it Assist, the shared name; if it is a view of analysis, keep Lens.
 
+### Added 11 October 2026 (shared product standards, 13)
+
+35. **Support address.** One address for every product; recommended `support@antarax.ai`, answered by the team at REKA. Confirm the address and who answers, and create the mailbox.
+36. **Plan names.** Confirm the ladder Free · Solo · Team · Business · Enterprise and the suggested mappings in 13 (Janka Growth → Business; Grid Standard, Advanced, Intelligent → Team, Business, Enterprise; AX Frame Paid → Team; Tinara Explorer, Scout, Operator → Free, Team, Business; Angka in ladder order).
+37. **Bahasa Malaysia.** Confirm the scope: every front-line screen (Yara's workers today), plus sign-in, emails and help in every product.
+38. **Time format.** 24-hour (`14:30`, recommended for operations products) or 12-hour (`2:30 pm`).
+39. **Personal addresses in products.** AX Frame's legal pages and Angka's Enterprise link show a personal REKA address; confirm they move to the support or privacy address.
+

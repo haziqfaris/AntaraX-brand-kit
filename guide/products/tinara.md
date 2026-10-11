@@ -46,7 +46,7 @@ Plum `#5B2B4A` leads, with gold `#D6A84F` for highlights and amethyst `#8B4E87` 
 
 ## The AntaraX layer in Tinara
 
-The credit line; its motif, **kerawang** (`tinara-motif.svg`), faintly on the sign-in panel in place of the blur orbs and in empty states; **the AI sparkle** beside every ranking and brief; intan eyebrows in plum; the app tile; the legal footer.
+The credit line; BaTech: **kerawang** (`tinara-motif.svg`, Tide pair) as the picture in empty states, and the Tide Quiet band along the bottom of the sign-in panel (in place of the blur orbs) and under report headers; **the AI sparkle** beside every ranking and brief; intan eyebrows in plum; the app tile; the legal footer.
 
 ## Type
 

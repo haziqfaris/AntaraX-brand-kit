@@ -67,7 +67,7 @@ The line brief gives PLExyz purple `#6040CC`; the Grid mark and app use violet `
 Grid keeps everything above. AntaraX adds (12):
 
 1. **Credit:** "PLExyz Grid · by AntaraX" in the chrome; "PLExyz Grid by AntaraX, from REKA." on sign-in and reports.
-2. **Motif:** Grid's is **petak** (`grid-motif.svg`, field plots: every space in its place); Crowd's is **orbit** (`crowd-motif.svg`: people sensed, never seen). Faintly on the sign-in panel (beside the hex-tile pattern, not on top of it) and in empty states.
+2. **BaTech:** Grid's motif is **petak** (`grid-motif.svg`, Edge pair: spaces in a real layout); Crowd's is **orbit** (`crowd-motif.svg`, Edge pair: signals counted, never faces). Each as the picture in its empty states; the Edge Quiet band along the bottom of the sign-in panel (clear of the hex-tile pattern) and under email headers.
 3. **The AI sparkle** beside placement recommendations ("Suggested slot").
 4. **Thinking motion:** the shard and the four zones drift out of step while a placement is computed.
 5. **Shared core:** already Poppins and JetBrains Mono. Move status colours to the shared set.
@@ -105,7 +105,7 @@ Grid keeps everything above. AntaraX adds (12):
 
 1. Crowd: rename the app to PLExyz Crowd and remove AXLE from every screen and the print footer.
 2. Grid: credit lines, the eyebrow, the guide cover.
-3. Grid: the petak motif on sign-in and empty states; the AI sparkle on suggestions; status colours; the app tile.
+3. Grid: petak in empty states and the Edge Quiet band on sign-in and emails; the AI sparkle on suggestions; status colours; the app tile.
 4. Grid: replace top-bordered stat cards.
 5. Draw the Crowd and Trace marks in the line system; add the PLExyz master mark file.
 

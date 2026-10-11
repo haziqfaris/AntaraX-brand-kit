@@ -20,7 +20,7 @@
 
 ## Inside products
 
-Product apps never use a cloth or pattern. Each product has one signature motif from its family's set, drawn simply in the product's colour and used faintly in a few places: see the motif map in [12 Brand architecture](12-brand-architecture.md#product-motifs).
+Product apps never use a cloth, medallion or full-colour corak area. They use BaTech in a few quiet places only: the product's signature motif in empty states (full colour, family pair), and a Quiet band of the family's corak on dividers, sign-in edges and email headers. Motifs are always drawn in the family pair, never in a product's own colours. The rules and the motif map are in [12 Brand architecture](12-brand-architecture.md#product-motifs).
 
 ## Families and their cloth
 

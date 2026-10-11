@@ -2,6 +2,10 @@
 
 Owner decisions that shape the brand, newest first. Add to the top; never rewrite history. Earlier strategy changes are in `reference/strategy/` (playbook amendments v0.3–v0.5, RECONCILIATION).
 
+## 11 October 2026 (fourth review)
+
+- **Product guidelines follow the BaTech guidelines.** Inside products, BaTech uses the official motif drawings, the family colour pairs (never the product's own colours), BaTech's Quiet ink `#C5CCF7`, its three strengths and its size limits (24px minimum; at least two motifs above about 120px). Places: the signature motif as the empty-state picture; a Quiet band of the family's corak on dividers, sign-in edges and email headers; avatar and image placeholders; loading. The single large sign-in motif and the product-coloured motif files are withdrawn. Motif meanings use BaTech's wording.
+
 ## 11 October 2026 (third review)
 
 - **One credit line: "by AntaraX"** for every product, PLExyz and Yara included. "Powered by AntaraX" and "Powered by AntaraX [Family]" are retired as product credits; families show on antarax.ai only.

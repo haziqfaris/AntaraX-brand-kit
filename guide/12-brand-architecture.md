@@ -25,7 +25,7 @@ REKA Inisiatif Sdn Bhd            the company: R&D, Managed AI, legal entity
 
 - **The product is the brand the customer buys.** Lead with the product name and its plain outcome (03 Voice).
 - **Every product is "by AntaraX".** One credit line, the same everywhere.
-- **AntaraX owns the shared layer:** type, text and status colours, interface rules, the motif language, the AI sparkle, antarax.ai, Lapisan and the API.
+- **AntaraX owns the shared layer:** type, text and status colours, interface rules, the BaTech motif language, the AI sparkle, antarax.ai, Lapisan and the API.
 - **Families group products** on antarax.ai (the Families and Technology pages, family badges and colours). They are not part of a product's credit line.
 - **REKA is the company behind AntaraX:** the legal line, the Managed AI operator, and the "from REKA" trust line.
 - **PLExyz** is REKA's spatial intelligence platform (Harmonik division), built on AntaraX. Its products are credited "by AntaraX" like every other product.
@@ -55,7 +55,7 @@ A product is own-mark when it arrived with an identity people already recognise.
 **The AntaraX layer is the same in every product**, and small enough that it never changes how the product looks:
 
 1. **Credit line:** "by AntaraX" (see below).
-2. **Product motif:** one BaTech motif per product, drawn simply in the product's colour, used rarely and quietly (see below).
+2. **BaTech, quietly:** the product's signature motif in empty states, and a Quiet band of its family's corak on dividers, sign-in and email headers, following the BaTech guidelines (see below).
 3. **AI sparkle:** the four-petal sparkle (`assets/ai/spark-x.svg`) beside every piece of AI work: a forecast, a ranking, a drafted order or brief, a suggested match. The same sign in every product tells a customer that this is AntaraX intelligence. Never decoration, never a logo.
 4. **Thinking motion:** while AI works for more than a moment, the product's own mark moves the AntaraX way, its separate pieces drifting in and out of step (04, animation 2). Respect reduced motion.
 5. **Shared core:** Poppins, JetBrains Mono for every number, the shared status colours, the AntaraX-blue focus ring (see "Colour").
@@ -65,41 +65,62 @@ A product is own-mark when it arrived with an identity people already recognise.
 
 ## Product motifs
 
-The full BaTech cloth is antarax.ai's language (06). **Inside a product it is never used as a pattern.** Each product instead has **one signature motif**, drawn simply in one colour, which ties it to AntaraX and says something true about the product.
+Every use of BaTech inside a product follows the **BaTech guidelines** (the BaTech brand book, generated from `antarax-ai/docs/design/batech-guidelines.mjs`; summary in 06): the official motif drawings, one outline weight, the AntaraX palette and family pairs, the three strengths, and the size limits. Inside a product, BaTech is used only in the small, quiet ways below; the full cloth stays on antarax.ai.
 
 ### The motif map
 
-| Family | Product | Motif | What it says |
+Each product has one signature motif, from its family's niche. The wording is BaTech's own.
+
+| Family | Product | Motif | Built from | What it says |
+|---|---|---|---|---|
+| Ripple | Yara | **riak** (ripple) | one tap, spreading | One tap, spreading |
+| Tide | Janka | **padi** (paddy) | signal bars | Reading the harvest before it comes |
+| Tide | Angka | **congkak** (counting board) | a ledger, seeds moving like money | Counting where it all goes |
+| Tide | Tinara | **kerawang** (carved lattice) | one path found in the noise | One path found in the noise |
+| Edge | PLExyz Grid | **petak** (grid of spaces) | spaces in a layout | Spaces in a real layout |
+| Edge | PLExyz Crowd | **orbit** | wireless | Signals counted, never faces |
+| Frame | AX Frame | **intan** (diamond) | one world, seen many ways | One world, seen many ways |
+| Loom | Loom | **tenun** (weave) | cables over and under | The weave itself |
+| Motion | Motion | **bunga cengkih** | a quadcopter seen from above | Every vehicle, seen from above |
+
+### Colour: the family pair, never the product's colours
+
+BaTech's rule is "use the palette and the family pairs; never recolour with off-brand colours". So a product's motif is always drawn in **its family's pair** (colour, dark, ground), not in the product's own colours: Janka's padi is Tide pink, Grid's petak is Edge green. This is also how the motif shows which family a product belongs to. The product's own colours stay in its own interface.
+
+| Family | Colour | Dark (ink) | Ground |
 |---|---|---|---|
-| Ripple | Yara | **riak**, a ripple from one point | One tap on the floor moves the whole job |
-| Tide | Janka | **padi**, a rice stalk | Know the harvest before you need it: what to reorder, before you run out |
-| Tide | Angka | **congkak**, the counting board | Numbers you can follow, hole by hole |
-| Tide | Tinara | **kerawang**, the carved lattice | One opening worth calling, found in the lattice of the market |
-| Edge | PLExyz Grid | **petak**, field plots | Every space in its place |
-| Edge | PLExyz Crowd | **orbit**, presence around a point | People sensed, never seen |
-| Frame | AX Frame | **intan**, the cut gem | One world, many faces |
-| Loom | Loom | **tenun**, the weave | Data woven together |
-| Motion | Motion | **cengkih**, the clove flower | A quadcopter seen from above |
+| Ripple | `#08B0B3` | `#0B6E72` | `#D9F3F2` |
+| Edge | `#12B76A` | `#0B7A47` | `#DCF5E8` |
+| Frame | `#074AF8` | `#0533A8` | `#E2EAFE` |
+| Loom | `#4904B3` | `#33027D` | `#EEE6FA` |
+| Motion | `#FC5D04` | `#A83A00` | `#FFE9DC` |
+| Tide | `#E9579D` | `#9C2B63` | `#FDE8F1` |
 
-Each motif belongs to its family's set (06), so a product's motif also says which family it is in. Files: `assets/products/<product>/<product>-motif.svg` (line) and `-motif-tint.svg` (line with a light fill), built by `tools/build-product-motifs.mjs`.
+The Quiet strength uses BaTech's one light ink, `#C5CCF7`, for every family.
 
-### Where a motif goes
+### Where it goes in a product
 
-Only these places, **once per screen**:
+Each place uses one BaTech strength, keeps text on a solid surface, and appears **once per screen**.
 
-| Place | How |
-|---|---|
-| Sign-in brand panel | One motif, line only, large (about 60% of the panel width), at 8 to 12% opacity, cropped by a corner. The logo stays the hero |
-| Empty states | One motif, tint version, 56 to 72px, above the message |
-| Email header and report cover | One motif, line only, 24px, beside the product name or in a corner |
-| Splash screen | Optional, behind the logo, at 8% opacity |
+| Place | What | Strength and size |
+|---|---|---|
+| Empty states | The product's signature motif alone, as the picture | Full colour (family pair), 72px |
+| Dividers, email and report headers | A thin band of the family's corak | Quiet, texture scale (about 0.28), 40 to 64px tall |
+| Sign-in brand panel | A Quiet band along the bottom edge of the panel; the logo sits above it on the plain ground | Quiet, texture scale, no more than a quarter of the panel |
+| Avatar and image placeholders | The family's corak behind initials or an empty image | Quiet or family pair, texture scale |
+| Loading | A radial motif turns slowly, or the product's mark does its thinking motion (04) | Full colour, 48 to 72px |
+
+Files: `assets/products/<product>/<product>-motif.svg` (signature motif, family pair) and `assets/families/bands/<family>-quiet.svg` (Quiet band), built by `tools/build-product-motifs.mjs` with the BaTech guideline recipes.
 
 ### Never
 
-- a repeated pattern, cloth or band of motifs inside a product;
-- more than one motif on a screen, or another product's motif;
-- behind data, tables, forms or running text;
-- at full strength as decoration, or in place of the logo.
+- A full cloth, medallion or full-colour corak area inside a product.
+- Text or data on top of full-colour corak (BaTech: never behind paragraphs).
+- A motif under 24px on screen (6mm in print); below that, dots only.
+- One motif shown large on its own: above about 120px, show at least two motifs so it reads as corak, not a logo.
+- A motif recoloured in the product's own colours, stretched or squashed.
+- Cameos (Seth, the REKA mark) in product placements: BaTech keeps them out of product rows, and its empty-state and avatar examples carry none.
+- Motion that is not slow and rare: radial motifs turn once every 30 to 60 seconds; all motion stops for reduced motion.
 
 ## Own marks
 
@@ -161,7 +182,7 @@ Own accent, for the primary action, selection, charts and identity moments, with
 | Tinara | plum `#5B2B4A`; gold `#D6A84F` for highlights | `#E8E1E6` | `#321829` | `#5B2B4A` |
 | Loom, Motion | family colour | see tokens | see tokens | AntaraX blue |
 
-On antarax.ai the family colour leads (05). Inside a product's own app, the product's colours lead.
+On antarax.ai the family colour leads (05). Inside a product's own app, the product's colours lead; BaTech motifs inside it keep their family pair.
 
 ## Credit lines
 
@@ -188,7 +209,7 @@ On antarax.ai the family colour leads (05). Inside a product's own app, the prod
 ## Adding a product
 
 1. Start as A-mark in its family, with the family accent and AntaraX blue for actions.
-2. Give it the AntaraX layer: "by AntaraX", a motif from its family's set, the AI sparkle, the shared core.
+2. Give it the AntaraX layer: "by AntaraX", a signature motif from its family's niche (drawn by the BaTech rules), the AI sparkle, the shared core.
 3. Write its sheet in `guide/products/` and add it to 02 and the motif map.
 
 ## Do and don't
@@ -196,7 +217,7 @@ On antarax.ai the family colour leads (05). Inside a product's own app, the prod
 - **Do** keep each product's logo, colours and signature details.
 - **Do** credit every product "by AntaraX".
 - **Do** mark every piece of AI work with the sparkle.
-- **Do** use the product motif once, faintly, in the places listed.
+- **Do** follow the BaTech guidelines for every motif: family pairs, three strengths, 24px minimum.
 - **Don't** put a batik pattern or cloth inside a product.
 - **Don't** put two marks side by side (the product's and the A).
 - **Don't** credit a product "by REKA" or "Powered by".

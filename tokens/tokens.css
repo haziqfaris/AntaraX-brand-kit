@@ -1,4 +1,4 @@
-/* AntaraX design tokens v1.3.0 (2026-10-11). Mirrors tokens.json. Import first, then build on the variables. */
+/* AntaraX design tokens v1.4.0 (2026-10-11). Mirrors tokens.json. Import first, then build on the variables. */
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap");
 
 :root {
@@ -22,6 +22,11 @@
   --ax-loom:   #4904B3; --ax-loom-tint:   #E6DCF4; --ax-loom-dark:   #280262;
   --ax-motion: #FC5D04; --ax-motion-tint: #FFE8DC; --ax-motion-dark: #8B3302;
   --ax-tide:   #E9579D; --ax-tide-tint:   #FCE7F1; --ax-tide-dark:   #803056;
+
+  /* BaTech family pairs (dark, ground) and the Quiet ink, for motifs (guide/12) */
+  --bt-ripple-dark: #0B6E72; --bt-ripple-ground: #D9F3F2; --bt-edge-dark: #0B7A47; --bt-edge-ground: #DCF5E8; --bt-frame-dark: #0533A8; --bt-frame-ground: #E2EAFE;
+  --bt-loom-dark: #33027D; --bt-loom-ground: #EEE6FA; --bt-motion-dark: #A83A00; --bt-motion-ground: #FFE9DC; --bt-tide-dark: #9C2B63; --bt-tide-ground: #FDE8F1;
+  --bt-quiet: #C5CCF7;
 
   /* sparkle: inside the A mark, and the highlight palette for restyled product logos (guide/12) */
   --ax-sparkle-purple: #524FE9; --ax-sparkle-orange: #F47B3D; --ax-sparkle-cyan: #0CC4FB; --ax-sparkle-emerald: #12B76A; --ax-sparkle-indigo: #7171EA;

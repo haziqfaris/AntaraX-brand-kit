@@ -31,3 +31,9 @@ Decisions the owner has not made yet. Each needs an answer before the related wo
 26. **PLExyz Crowd's focus.** The pilot app counts building occupancy from Wi-Fi; the line brief describes event safety and congestion in stadiums and venues. One product or two?
 27. **Grid's top-bordered stat cards.** 07 rules out coloured top borders in every product UI; Grid's dashboard uses them in zone colours. Replace them (recommended), or allow them inside PLExyz?
 28. **Where PLExyz is sold.** The line brief describes enterprise-led, consultative sales by REKA; antarax.ai lists Grid as a main product with "Book a demo", and the reka.re playbook says REKA does not sell PLExyz. Settle which site leads for PLExyz.
+
+### Added 11 October 2026 (BaTech alignment)
+
+29. **BaTech guidelines page is behind the kit.** `antarax-ai/docs/design/batech-guidelines.mjs` still gives Loom the verb Orchestrate (AI agents and workflows) and a waitlist, Motion a waitlist, Frame "Live" and Tinara "Beta", and names the product "Frame". Update it to the October decisions (Loom Synthesize, closed pilots, AX Frame) and add the product placements from 12.
+30. **Two sets of family darks and tints.** `tokens.json` family tints and darks are computed (86% and 55%); BaTech's family pairs use their own darks and grounds (for example Ripple dark `#0B6E72` against `#046162`). Both are now in the tokens. Settle on one set.
+

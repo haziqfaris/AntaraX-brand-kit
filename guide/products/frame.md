@@ -38,7 +38,7 @@ Poppins and JetBrains Mono, "every number, always" in mono. Aligned.
 
 ## The AntaraX layer in AX Frame
 
-AX Frame is A-mark, so it is AntaraX already. It keeps its breathing cube halo and adds its motif, **intan** (`frame-motif.svg`, the cut gem: one world, many faces), faintly on the sign-in panel, in empty states and on the digest email; the AI sparkle beside every AI suggestion and Lens analysis; the shared core; the legal footer.
+AX Frame is A-mark, so it is AntaraX already. It keeps its breathing cube halo and adds BaTech: **intan** (`frame-motif.svg`, Frame pair) as the picture in empty states, and the Frame Quiet band under the digest email header and along the sign-in panel; the AI sparkle beside every AI suggestion and Lens analysis; the shared core; the legal footer.
 
 ## Credit lines
 
@@ -57,7 +57,7 @@ AX Frame is A-mark, so it is AntaraX already. It keeps its breathing cube halo a
 
 1. Swap `#0062FB` for `#0459F7` and drop the orange accent, updating the repo's `CLAUDE.md` design tokens in the same change.
 2. Rename to AX Frame everywhere customers see it; put the mark on the social image.
-3. Credit lines; the intan motif on sign-in and empty states; the AI sparkle.
+3. Credit lines; intan in empty states and the Frame Quiet band on sign-in; the AI sparkle.
 
 ## Open
 

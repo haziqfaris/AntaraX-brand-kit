@@ -105,6 +105,7 @@ for (const fam of Object.keys(FAM)) {
     const W = 800, H = 420;
     C['frame-corners'] = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" aria-hidden="true"><image href="data:image/svg+xml;base64,${Buffer.from(C['frame-corner-tl']).toString('base64')}" width="${S}" height="${S}"/><image href="data:image/svg+xml;base64,${Buffer.from(C['frame-corner-br']).toString('base64')}" x="${W - S}" y="${H - S}" width="${S}" height="${S}"/></svg>\n`; }
 
+  cur = 'loom-thread';
   // Loom · Thread: one awan larat thread wandering across, motifs strung on it, both ends fading out.
   { const W = 1200, H = 150, R = rng(41), k = pick(NICHE.loom, R); const y = (x) => 75 + 26 * Math.sin(x / 110) + 10 * Math.sin(x / 37);
     let d = `M0,${f(y(0))}`; for (let x = 8; x <= W; x += 8) d += ` L${x},${f(y(x))}`;

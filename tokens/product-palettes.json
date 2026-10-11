@@ -1,0 +1,518 @@
+{
+  "note": "Built by tools/build-product-palettes.mjs (guide/14). Do not edit by hand.",
+  "products": {
+    "yara": {
+      "name": "Yara",
+      "kind": "A-mark",
+      "character": "Ripple teal and navy: calm, clear, made for the shop floor",
+      "anchor": "#08B0B3",
+      "anchor-step": 400,
+      "scale": {
+        "50": "#EEF9F9",
+        "100": "#DAF3F3",
+        "200": "#B3E6E7",
+        "300": "#82D5D6",
+        "400": "#08B0B3",
+        "500": "#07A0A3",
+        "600": "#098284",
+        "700": "#05686A",
+        "800": "#044F51",
+        "900": "#003839",
+        "950": "#012526"
+      },
+      "roles": {
+        "action": "#0459F7",
+        "action-hover": "#0347C8",
+        "accent": "#08B0B3",
+        "accent-text": "#098284",
+        "tint": "#EEF9F9",
+        "subtle": "#DAF3F3",
+        "border": "#B3E6E7",
+        "on-tint": "#044F51",
+        "secondary": "#0B1B4F",
+        "dark-accent": "#07A0A3"
+      },
+      "chart": [
+        "#08B0B3",
+        "#2A78D6",
+        "#EB6834",
+        "#D9579C",
+        "#6250D6"
+      ],
+      "chart-dark": [
+        "#03A7AA",
+        "#2A78D6",
+        "#E76530",
+        "#D9579C",
+        "#6857DE"
+      ],
+      "chart-after-product": [
+        "blue",
+        "orange",
+        "magenta",
+        "violet"
+      ],
+      "contrast": {
+        "action-on-white": 5.56,
+        "accent-text-on-white": 4.63,
+        "dark-accent-on-dark": 5.74
+      }
+    },
+    "frame": {
+      "name": "AX Frame",
+      "kind": "A-mark",
+      "character": "Frame blue with halo indigo: precise, technical, one world in view",
+      "anchor": "#074AF8",
+      "anchor-step": 700,
+      "scale": {
+        "50": "#F3F7FE",
+        "100": "#E4EDFF",
+        "200": "#C9DBFE",
+        "300": "#A7C4FE",
+        "400": "#7AA5FE",
+        "500": "#4D84FE",
+        "600": "#1C5DFF",
+        "700": "#074AF8",
+        "800": "#002EB2",
+        "900": "#001E83",
+        "950": "#00125C"
+      },
+      "roles": {
+        "action": "#0459F7",
+        "action-hover": "#0347C8",
+        "accent": "#074AF8",
+        "accent-text": "#074AF8",
+        "tint": "#F3F7FE",
+        "subtle": "#E4EDFF",
+        "border": "#C9DBFE",
+        "on-tint": "#002EB2",
+        "secondary": "#524FE9",
+        "dark-accent": "#4D84FE"
+      },
+      "chart": [
+        "#074AF8",
+        "#13A8A0",
+        "#EB6834",
+        "#D9579C",
+        "#B98A12"
+      ],
+      "chart-dark": [
+        "#1C5DFF",
+        "#12A8A0",
+        "#E76530",
+        "#D9579C",
+        "#B98A11"
+      ],
+      "chart-after-product": [
+        "aqua",
+        "orange",
+        "magenta",
+        "gold"
+      ],
+      "contrast": {
+        "action-on-white": 5.56,
+        "accent-text-on-white": 6.28,
+        "dark-accent-on-dark": 5.29
+      }
+    },
+    "janka": {
+      "name": "Janka",
+      "kind": "own-mark",
+      "character": "Signal cyan with the spark orange from its mark: alert, forward-looking",
+      "anchor": "#0CC4FB",
+      "anchor-step": 400,
+      "scale": {
+        "50": "#EDF9FF",
+        "100": "#D7F2FE",
+        "200": "#ADE4FD",
+        "300": "#76D2F8",
+        "400": "#0CC4FB",
+        "500": "#069AC6",
+        "600": "#077DA1",
+        "700": "#066482",
+        "800": "#004C64",
+        "900": "#023647",
+        "950": "#002330"
+      },
+      "roles": {
+        "action": "#077DA1",
+        "action-hover": "#066482",
+        "accent": "#0CC4FB",
+        "accent-text": "#077DA1",
+        "tint": "#EDF9FF",
+        "subtle": "#D7F2FE",
+        "border": "#ADE4FD",
+        "on-tint": "#004C64",
+        "secondary": "#F47B3D",
+        "dark-accent": "#069AC6"
+      },
+      "chart": [
+        "#078DB5",
+        "#EB6834",
+        "#13A8A0",
+        "#6250D6",
+        "#D9579C"
+      ],
+      "chart-dark": [
+        "#06A0CE",
+        "#E76530",
+        "#12A8A0",
+        "#6857DE",
+        "#D9579C"
+      ],
+      "chart-after-product": [
+        "orange",
+        "aqua",
+        "violet",
+        "magenta"
+      ],
+      "contrast": {
+        "action-on-white": 4.71,
+        "accent-text-on-white": 4.71,
+        "dark-accent-on-dark": 5.64
+      }
+    },
+    "grid": {
+      "name": "PLExyz Grid",
+      "kind": "own-mark",
+      "character": "Shard violet with the four zone colours: spatial, vivid, exact",
+      "anchor": "#2C09B2",
+      "anchor-step": 800,
+      "scale": {
+        "50": "#F4F6FE",
+        "100": "#E7ECFF",
+        "200": "#D0D9FE",
+        "300": "#B2C0FF",
+        "400": "#8E9FFE",
+        "500": "#6C7CFE",
+        "600": "#5257F1",
+        "700": "#4041CC",
+        "800": "#2C09B2",
+        "900": "#201D79",
+        "950": "#131155"
+      },
+      "roles": {
+        "action": "#2C09B2",
+        "action-hover": "#201D79",
+        "accent": "#2C09B2",
+        "accent-text": "#2C09B2",
+        "tint": "#F4F6FE",
+        "subtle": "#E7ECFF",
+        "border": "#D0D9FE",
+        "on-tint": "#2C09B2",
+        "secondary": "#4FD7D1",
+        "dark-accent": "#6C7CFE"
+      },
+      "chart": [
+        "#4646E0",
+        "#13A8A0",
+        "#EB6834",
+        "#D9579C",
+        "#B98A12"
+      ],
+      "chart-dark": [
+        "#5257F1",
+        "#12A8A0",
+        "#E76530",
+        "#D9579C",
+        "#B98A11"
+      ],
+      "chart-after-product": [
+        "aqua",
+        "orange",
+        "magenta",
+        "gold"
+      ],
+      "contrast": {
+        "action-on-white": 11.74,
+        "accent-text-on-white": 11.74,
+        "dark-accent-on-dark": 5.21
+      }
+    },
+    "crowd": {
+      "name": "PLExyz Crowd",
+      "kind": "own-mark",
+      "character": "PLExyz purple with a zone teal, until Crowd has its own theme",
+      "anchor": "#6040CC",
+      "anchor-step": 700,
+      "scale": {
+        "50": "#F6F6FE",
+        "100": "#EBEBFF",
+        "200": "#D7D6FF",
+        "300": "#BFBBFE",
+        "400": "#A298FE",
+        "500": "#8870FE",
+        "600": "#6F53E0",
+        "700": "#6040CC",
+        "800": "#442C95",
+        "900": "#301C6F",
+        "950": "#1F104D"
+      },
+      "roles": {
+        "action": "#6040CC",
+        "action-hover": "#442C95",
+        "accent": "#6040CC",
+        "accent-text": "#6040CC",
+        "tint": "#F6F6FE",
+        "subtle": "#EBEBFF",
+        "border": "#D7D6FF",
+        "on-tint": "#442C95",
+        "secondary": "#4FD7D1",
+        "dark-accent": "#8870FE"
+      },
+      "chart": [
+        "#6242CE",
+        "#EB6834",
+        "#13A8A0",
+        "#2A78D6",
+        "#D9579C"
+      ],
+      "chart-dark": [
+        "#6F53E0",
+        "#E76530",
+        "#12A8A0",
+        "#2A78D6",
+        "#D9579C"
+      ],
+      "chart-after-product": [
+        "orange",
+        "aqua",
+        "blue",
+        "magenta"
+      ],
+      "contrast": {
+        "action-on-white": 6.77,
+        "accent-text-on-white": 6.77,
+        "dark-accent-on-dark": 5.07
+      }
+    },
+    "angka": {
+      "name": "Angka",
+      "kind": "own-mark",
+      "character": "Warm plum with Lapis peach on a paper ground: friendly money",
+      "anchor": "#6B3F6B",
+      "anchor-step": 700,
+      "scale": {
+        "50": "#FAF5FA",
+        "100": "#F4E9F4",
+        "200": "#EAD2E9",
+        "300": "#DAB7D9",
+        "400": "#C396C2",
+        "500": "#A979A8",
+        "600": "#8D5F8D",
+        "700": "#6B3F6B",
+        "800": "#593759",
+        "900": "#402540",
+        "950": "#2B172B"
+      },
+      "roles": {
+        "action": "#6B3F6B",
+        "action-hover": "#593759",
+        "accent": "#6B3F6B",
+        "accent-text": "#6B3F6B",
+        "tint": "#FAF5FA",
+        "subtle": "#F4E9F4",
+        "border": "#EAD2E9",
+        "on-tint": "#593759",
+        "secondary": "#E9906B",
+        "dark-accent": "#A979A8"
+      },
+      "chart": [
+        "#834B84",
+        "#2A78D6",
+        "#EB6834",
+        "#13A8A0",
+        "#6250D6"
+      ],
+      "chart-dark": [
+        "#935993",
+        "#2A78D6",
+        "#E76530",
+        "#12A8A0",
+        "#6857DE"
+      ],
+      "chart-after-product": [
+        "blue",
+        "orange",
+        "aqua",
+        "violet"
+      ],
+      "contrast": {
+        "action-on-white": 8.24,
+        "accent-text-on-white": 8.24,
+        "dark-accent-on-dark": 5.24
+      }
+    },
+    "tinara": {
+      "name": "Tinara",
+      "kind": "own-mark",
+      "character": "Garnet with gold: discreet, valuable, considered (proposed)",
+      "anchor": "#7A1E3C",
+      "anchor-step": 800,
+      "scale": {
+        "50": "#FEF4F6",
+        "100": "#FFE6EA",
+        "200": "#FDCCD5",
+        "300": "#F7ACBB",
+        "400": "#E4889D",
+        "500": "#CB6881",
+        "600": "#AD4D67",
+        "700": "#8F3A51",
+        "800": "#7A1E3C",
+        "900": "#511A2A",
+        "950": "#380F1B"
+      },
+      "roles": {
+        "action": "#7A1E3C",
+        "action-hover": "#511A2A",
+        "accent": "#7A1E3C",
+        "accent-text": "#7A1E3C",
+        "tint": "#FEF4F6",
+        "subtle": "#FFE6EA",
+        "border": "#FDCCD5",
+        "on-tint": "#7A1E3C",
+        "secondary": "#D6A84F",
+        "dark-accent": "#CB6881"
+      },
+      "chart": [
+        "#9C3E58",
+        "#2A78D6",
+        "#EB6834",
+        "#13A8A0",
+        "#6250D6"
+      ],
+      "chart-dark": [
+        "#AD4D67",
+        "#2A78D6",
+        "#E76530",
+        "#12A8A0",
+        "#6857DE"
+      ],
+      "chart-after-product": [
+        "blue",
+        "orange",
+        "aqua",
+        "violet"
+      ],
+      "contrast": {
+        "action-on-white": 10.1,
+        "accent-text-on-white": 10.1,
+        "dark-accent-on-dark": 5.1
+      }
+    },
+    "loom": {
+      "name": "Loom",
+      "kind": "A-mark",
+      "character": "Loom violet",
+      "anchor": "#4904B3",
+      "anchor-step": 800,
+      "scale": {
+        "50": "#F6F6FF",
+        "100": "#EBEBFF",
+        "200": "#D8D6FE",
+        "300": "#BFBBFF",
+        "400": "#A297FF",
+        "500": "#8870FF",
+        "600": "#704DEA",
+        "700": "#5A37C5",
+        "800": "#4904B3",
+        "900": "#311775",
+        "950": "#200C52"
+      },
+      "roles": {
+        "action": "#0459F7",
+        "action-hover": "#0347C8",
+        "accent": "#4904B3",
+        "accent-text": "#4904B3",
+        "tint": "#F6F6FF",
+        "subtle": "#EBEBFF",
+        "border": "#D8D6FE",
+        "on-tint": "#4904B3",
+        "secondary": "#0B1B4F",
+        "dark-accent": "#8870FF"
+      },
+      "chart": [
+        "#633BD8",
+        "#EB6834",
+        "#13A8A0",
+        "#2A78D6",
+        "#D9579C"
+      ],
+      "chart-dark": [
+        "#704DEA",
+        "#E76530",
+        "#12A8A0",
+        "#2A78D6",
+        "#D9579C"
+      ],
+      "chart-after-product": [
+        "orange",
+        "aqua",
+        "blue",
+        "magenta"
+      ],
+      "contrast": {
+        "action-on-white": 5.56,
+        "accent-text-on-white": 10.76,
+        "dark-accent-on-dark": 5.08
+      }
+    },
+    "motion": {
+      "name": "Motion",
+      "kind": "A-mark",
+      "character": "Motion orange",
+      "anchor": "#FC5D04",
+      "anchor-step": 500,
+      "scale": {
+        "50": "#FFF4F0",
+        "100": "#FEE7DF",
+        "200": "#FFCEBD",
+        "300": "#FEAD90",
+        "400": "#FE7D4A",
+        "500": "#FC5D04",
+        "600": "#BE4402",
+        "700": "#993602",
+        "800": "#762802",
+        "900": "#561A00",
+        "950": "#3B0F00"
+      },
+      "roles": {
+        "action": "#0459F7",
+        "action-hover": "#0347C8",
+        "accent": "#FC5D04",
+        "accent-text": "#BE4402",
+        "tint": "#FFF4F0",
+        "subtle": "#FEE7DF",
+        "border": "#FFCEBD",
+        "on-tint": "#762802",
+        "secondary": "#0B1B4F",
+        "dark-accent": "#FC5D04"
+      },
+      "chart": [
+        "#FC5D04",
+        "#2A78D6",
+        "#13A8A0",
+        "#6250D6",
+        "#D9579C"
+      ],
+      "chart-dark": [
+        "#F25903",
+        "#2A78D6",
+        "#12A8A0",
+        "#6857DE",
+        "#D9579C"
+      ],
+      "chart-after-product": [
+        "blue",
+        "aqua",
+        "violet",
+        "magenta"
+      ],
+      "contrast": {
+        "action-on-white": 5.56,
+        "accent-text-on-white": 5.23,
+        "dark-accent-on-dark": 5.87
+      }
+    }
+  }
+}

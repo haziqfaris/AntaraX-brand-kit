@@ -1,0 +1,40 @@
+/* Product palettes (guide/14). Built by tools/build-product-palettes.mjs; do not edit by hand.
+   Dark mode: use each product's --<p>-dark-accent and chart-dark values from product-palettes.json on #071233. */
+:root {
+  /* Yara: Ripple teal and navy: calm, clear, made for the shop floor */
+  --yara-50: #EEF9F9; --yara-100: #DAF3F3; --yara-200: #B3E6E7; --yara-300: #82D5D6; --yara-400: #08B0B3; --yara-500: #07A0A3; --yara-600: #098284; --yara-700: #05686A; --yara-800: #044F51; --yara-900: #003839; --yara-950: #012526;
+  --yara-action: #0459F7; --yara-action-hover: #0347C8; --yara-accent: #08B0B3; --yara-accent-text: #098284; --yara-tint: #EEF9F9; --yara-subtle: #DAF3F3; --yara-border: #B3E6E7; --yara-on-tint: #044F51; --yara-secondary: #0B1B4F; --yara-dark-accent: #07A0A3;
+  --yara-chart-1: #08B0B3; --yara-chart-2: #2A78D6; --yara-chart-3: #EB6834; --yara-chart-4: #D9579C; --yara-chart-5: #6250D6;
+  /* AX Frame: Frame blue with halo indigo: precise, technical, one world in view */
+  --frame-50: #F3F7FE; --frame-100: #E4EDFF; --frame-200: #C9DBFE; --frame-300: #A7C4FE; --frame-400: #7AA5FE; --frame-500: #4D84FE; --frame-600: #1C5DFF; --frame-700: #074AF8; --frame-800: #002EB2; --frame-900: #001E83; --frame-950: #00125C;
+  --frame-action: #0459F7; --frame-action-hover: #0347C8; --frame-accent: #074AF8; --frame-accent-text: #074AF8; --frame-tint: #F3F7FE; --frame-subtle: #E4EDFF; --frame-border: #C9DBFE; --frame-on-tint: #002EB2; --frame-secondary: #524FE9; --frame-dark-accent: #4D84FE;
+  --frame-chart-1: #074AF8; --frame-chart-2: #13A8A0; --frame-chart-3: #EB6834; --frame-chart-4: #D9579C; --frame-chart-5: #B98A12;
+  /* Janka: Signal cyan with the spark orange from its mark: alert, forward-looking */
+  --janka-50: #EDF9FF; --janka-100: #D7F2FE; --janka-200: #ADE4FD; --janka-300: #76D2F8; --janka-400: #0CC4FB; --janka-500: #069AC6; --janka-600: #077DA1; --janka-700: #066482; --janka-800: #004C64; --janka-900: #023647; --janka-950: #002330;
+  --janka-action: #077DA1; --janka-action-hover: #066482; --janka-accent: #0CC4FB; --janka-accent-text: #077DA1; --janka-tint: #EDF9FF; --janka-subtle: #D7F2FE; --janka-border: #ADE4FD; --janka-on-tint: #004C64; --janka-secondary: #F47B3D; --janka-dark-accent: #069AC6;
+  --janka-chart-1: #078DB5; --janka-chart-2: #EB6834; --janka-chart-3: #13A8A0; --janka-chart-4: #6250D6; --janka-chart-5: #D9579C;
+  /* PLExyz Grid: Shard violet with the four zone colours: spatial, vivid, exact */
+  --grid-50: #F4F6FE; --grid-100: #E7ECFF; --grid-200: #D0D9FE; --grid-300: #B2C0FF; --grid-400: #8E9FFE; --grid-500: #6C7CFE; --grid-600: #5257F1; --grid-700: #4041CC; --grid-800: #2C09B2; --grid-900: #201D79; --grid-950: #131155;
+  --grid-action: #2C09B2; --grid-action-hover: #201D79; --grid-accent: #2C09B2; --grid-accent-text: #2C09B2; --grid-tint: #F4F6FE; --grid-subtle: #E7ECFF; --grid-border: #D0D9FE; --grid-on-tint: #2C09B2; --grid-secondary: #4FD7D1; --grid-dark-accent: #6C7CFE;
+  --grid-chart-1: #4646E0; --grid-chart-2: #13A8A0; --grid-chart-3: #EB6834; --grid-chart-4: #D9579C; --grid-chart-5: #B98A12;
+  /* PLExyz Crowd: PLExyz purple with a zone teal, until Crowd has its own theme */
+  --crowd-50: #F6F6FE; --crowd-100: #EBEBFF; --crowd-200: #D7D6FF; --crowd-300: #BFBBFE; --crowd-400: #A298FE; --crowd-500: #8870FE; --crowd-600: #6F53E0; --crowd-700: #6040CC; --crowd-800: #442C95; --crowd-900: #301C6F; --crowd-950: #1F104D;
+  --crowd-action: #6040CC; --crowd-action-hover: #442C95; --crowd-accent: #6040CC; --crowd-accent-text: #6040CC; --crowd-tint: #F6F6FE; --crowd-subtle: #EBEBFF; --crowd-border: #D7D6FF; --crowd-on-tint: #442C95; --crowd-secondary: #4FD7D1; --crowd-dark-accent: #8870FE;
+  --crowd-chart-1: #6242CE; --crowd-chart-2: #EB6834; --crowd-chart-3: #13A8A0; --crowd-chart-4: #2A78D6; --crowd-chart-5: #D9579C;
+  /* Angka: Warm plum with Lapis peach on a paper ground: friendly money */
+  --angka-50: #FAF5FA; --angka-100: #F4E9F4; --angka-200: #EAD2E9; --angka-300: #DAB7D9; --angka-400: #C396C2; --angka-500: #A979A8; --angka-600: #8D5F8D; --angka-700: #6B3F6B; --angka-800: #593759; --angka-900: #402540; --angka-950: #2B172B;
+  --angka-action: #6B3F6B; --angka-action-hover: #593759; --angka-accent: #6B3F6B; --angka-accent-text: #6B3F6B; --angka-tint: #FAF5FA; --angka-subtle: #F4E9F4; --angka-border: #EAD2E9; --angka-on-tint: #593759; --angka-secondary: #E9906B; --angka-dark-accent: #A979A8;
+  --angka-chart-1: #834B84; --angka-chart-2: #2A78D6; --angka-chart-3: #EB6834; --angka-chart-4: #13A8A0; --angka-chart-5: #6250D6;
+  /* Tinara: Garnet with gold: discreet, valuable, considered (proposed) */
+  --tinara-50: #FEF4F6; --tinara-100: #FFE6EA; --tinara-200: #FDCCD5; --tinara-300: #F7ACBB; --tinara-400: #E4889D; --tinara-500: #CB6881; --tinara-600: #AD4D67; --tinara-700: #8F3A51; --tinara-800: #7A1E3C; --tinara-900: #511A2A; --tinara-950: #380F1B;
+  --tinara-action: #7A1E3C; --tinara-action-hover: #511A2A; --tinara-accent: #7A1E3C; --tinara-accent-text: #7A1E3C; --tinara-tint: #FEF4F6; --tinara-subtle: #FFE6EA; --tinara-border: #FDCCD5; --tinara-on-tint: #7A1E3C; --tinara-secondary: #D6A84F; --tinara-dark-accent: #CB6881;
+  --tinara-chart-1: #9C3E58; --tinara-chart-2: #2A78D6; --tinara-chart-3: #EB6834; --tinara-chart-4: #13A8A0; --tinara-chart-5: #6250D6;
+  /* Loom: Loom violet */
+  --loom-50: #F6F6FF; --loom-100: #EBEBFF; --loom-200: #D8D6FE; --loom-300: #BFBBFF; --loom-400: #A297FF; --loom-500: #8870FF; --loom-600: #704DEA; --loom-700: #5A37C5; --loom-800: #4904B3; --loom-900: #311775; --loom-950: #200C52;
+  --loom-action: #0459F7; --loom-action-hover: #0347C8; --loom-accent: #4904B3; --loom-accent-text: #4904B3; --loom-tint: #F6F6FF; --loom-subtle: #EBEBFF; --loom-border: #D8D6FE; --loom-on-tint: #4904B3; --loom-secondary: #0B1B4F; --loom-dark-accent: #8870FF;
+  --loom-chart-1: #633BD8; --loom-chart-2: #EB6834; --loom-chart-3: #13A8A0; --loom-chart-4: #2A78D6; --loom-chart-5: #D9579C;
+  /* Motion: Motion orange */
+  --motion-50: #FFF4F0; --motion-100: #FEE7DF; --motion-200: #FFCEBD; --motion-300: #FEAD90; --motion-400: #FE7D4A; --motion-500: #FC5D04; --motion-600: #BE4402; --motion-700: #993602; --motion-800: #762802; --motion-900: #561A00; --motion-950: #3B0F00;
+  --motion-action: #0459F7; --motion-action-hover: #0347C8; --motion-accent: #FC5D04; --motion-accent-text: #BE4402; --motion-tint: #FFF4F0; --motion-subtle: #FEE7DF; --motion-border: #FFCEBD; --motion-on-tint: #762802; --motion-secondary: #0B1B4F; --motion-dark-accent: #FC5D04;
+  --motion-chart-1: #FC5D04; --motion-chart-2: #2A78D6; --motion-chart-3: #13A8A0; --motion-chart-4: #6250D6; --motion-chart-5: #D9579C;
+}

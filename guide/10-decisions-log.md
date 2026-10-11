@@ -2,6 +2,10 @@
 
 Owner decisions that shape the brand, newest first. Add to the top; never rewrite history. Earlier strategy changes are in `reference/strategy/` (playbook amendments v0.3–v0.5, RECONCILIATION).
 
+## 11 October 2026 (fifteenth review)
+
+- **Role addresses move to `go.antarax.ai`** (owner): `support@go.antarax.ai`, `sales@go.antarax.ai` and `privacy@go.antarax.ai`, as Google Groups. `go.antarax.ai` already receives mail into Google (it is where `insta@go.antarax.ai` lands, and AX Frame's renewal emails come from `no-reply@go.antarax.ai`); `antarax.ai` only sends, through Resend. Product senders stay `<Product> <product@antarax.ai>`, with Reply-To set to support. This replaces the `@antarax.ai` role addresses agreed earlier the same day.
+
 ## 11 October 2026 (fourteenth review)
 
 The owner accepted every recommendation in 11 except WhatsApp:

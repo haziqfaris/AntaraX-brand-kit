@@ -34,7 +34,7 @@ Use these names, one-liners and questions exactly.
 | **PLExyz Crowd** | Closed pilot | Know how your building is really used. No cameras. | "How many people are actually in this building right now, and do we need all this space?" | Edge | /pilots/plexyz-crowd |
 | **Angka** | Closed pilot | A finance workspace for business owners who are not accountants. | "Where does our money go, without needing an accountant to tell us?" | Tide | antarax.ai/angka |
 | **Tinara** | Closed pilot | Know which Malaysian companies to sell to, why, and how to open the conversation. | "Which companies should we call next, and what do we say when they pick up?" | Tide | /pilots/tinara |
-| **Loom** | Closed pilot | AI agents, knowledge and workflows, working as one. | "How much of our routine work still waits for someone to pass it along by hand?" | Loom | /pilots/loom |
+| **Loom** | Closed pilot | Your data, woven together. | "How much more could we do with our data, if it were all in one place?" | Loom | /pilots/loom |
 | **Motion** | Closed pilot | Every vehicle in view, and within reach. | "Where is every vehicle right now, how is it doing, and can we take control from here?" | Motion | /pilots/motion |
 
 ### Product facts worth knowing
@@ -90,8 +90,9 @@ Understand → Operate → Optimize → Perceive → Navigate → Act → Synthe
 
 ### Retired names (never use in new copy)
 
-- "AX Loom" meaning synthetic data; "AX Edge" meaning fleet updates; "AX Motion" meaning workflow automation (Motion now means telematics and fleet management).
+- "AX Edge" meaning fleet updates; "AX Motion" meaning workflow automation (Motion now means telematics and fleet management).
 - "AX Kinetics" (REKA's Kinetik owns robotics).
+- Loom as AI agents, workflows or automation (automation runs on Ripple; Loom is data synthesis, 10 October 2026). "AX Loom" meaning synthetic data is no longer retired: it is part of Loom again.
 - "Yara Ripple" as a product name (use "Yara", with "Powered by AntaraX Ripple").
 - "Waitlist" for any product (replaced by closed pilots, 10 October 2026).
 - Tinara as "scattered data into one clear next move" (replaced by the B2B intelligence line, 10 October 2026).

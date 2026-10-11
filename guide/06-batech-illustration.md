@@ -18,11 +18,15 @@
 - **Meaning motifs:** riak (one tap, spreading), petak (a grid of spaces), tenun (the weave), percik (sparks).
 - **Cosmos and quantum:** cakerawala, orbit, komet, atom, suria, gelombang, jaring. Kubit is reserved.
 
+## Inside products
+
+Product apps never use a cloth, medallion or full-colour corak area. They use BaTech in a few quiet places only: the product's signature motif in empty states (full colour, family pair), and a Quiet band of the family's corak on dividers, sign-in edges and email headers. Motifs are always drawn in the family pair, never in a product's own colours. The rules and the motif map are in [12 Brand architecture](12-brand-architecture.md#product-motifs).
+
 ## Families and their cloth
 
 | Family | Colour | Signature motifs | Product motif |
 |---|---|---|---|
-| Ripple | `#08B0B3` | riak, awan larat, sungai, gear | Yara: riak |
+| Ripple | `#08B0B3` | riak, awan larat, sungai, gear | Yara: awan larat; later sungai for automation (14) |
 | Edge | `#12B76A` | petak, orbit, telang, benih, wau | Grid: petak · Crowd: orbit |
 | Frame | `#074AF8` | intan, cakerawala, ketam guri, suria, atom | Frame: intan |
 | Loom | `#4904B3` | tenun, jaring, komet, awan larat (sources woven together, records moving between systems) | Loom: tenun |

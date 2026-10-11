@@ -28,7 +28,7 @@ Each family has its own icon (in its family colour) that sits in the A's open ce
 | Edge | `#12B76A` | 3 shapes: an organic curve, a rounded rect, a true circle (recoloured from teal to emerald to separate it from Ripple) |
 | Frame | `#074AF8` | 5 shapes: symmetric brackets, lines and arcs |
 | Loom | `#4904B3` | 10 rounded rects |
-| Tide | `#E9579D` | **no icon yet**; the bunga raya motif stands in (see 11 Open questions) |
+| Tide | `#E9579D` | **proposed:** a crescent with the family's dot (`assets/families/tide-icon.svg`, 11) |
 
 Name variants per family: Full "AntaraX Motion", Centered and Medium "AX Motion", Short "AXM".
 
@@ -48,4 +48,4 @@ All logo motion stops for reduced motion.
 - On AntaraX blue or dark grounds use the white mark; the sparkle may stay in colour.
 - Do not recolour the A, rotate or stretch it, outline it, add effects, or place the sparkle anywhere except the A's centre.
 - Do not set the wordmark in another typeface.
-- Product apps show the AntaraX A with their family icon (the family lockup), or the product name with "by AntaraX"; never a different A.
+- Product apps show either their **own mark** (own-mark products: PLExyz, Janka, Angka, Tinara) or the **AntaraX A with their family icon** (A-mark products: Yara, AX Frame, Loom, Motion), with "by AntaraX" as set text. Never a different A, and never the A beside a product's own mark. Rules for restyling own marks, lockups and the shared app tile: [12 Brand architecture](12-brand-architecture.md). Product mark files: `assets/products/`.

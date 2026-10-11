@@ -105,12 +105,12 @@ Each place uses one BaTech strength, keeps text on a solid surface, and appears 
 | Place | What | Strength and size |
 |---|---|---|
 | Empty states | The product's signature motif alone, as the picture | Full colour (family pair), 72px |
-| Dividers, email and report headers | A thin band of the family's corak | Quiet, texture scale (about 0.28), 40 to 64px tall |
-| Sign-in brand panel | A Quiet band along the bottom edge of the panel; the logo sits above it on the plain ground | Quiet, texture scale, no more than a quarter of the panel |
+| Dividers, email and report headers | A drift band of the family's corak: it thins out and fades with no edge | Quiet, 40 to 64px tall, shown whole, never cropped |
+| Sign-in brand panel | An edge band along the bottom of the panel: cropped by the panel's own edge, fading out upward into the ground; the logo sits above it | Quiet, no more than a quarter of the panel |
 | Avatar and image placeholders | The family's corak behind initials or an empty image | Quiet or family pair, texture scale |
 | Loading | A radial motif turns slowly, or the product's mark does its thinking motion (04) | Full colour, 48 to 72px |
 
-Files: `assets/products/<product>/<product>-motif.svg` (signature motif, family pair) and `assets/families/bands/<family>-quiet.svg` (Quiet band), built by `tools/build-product-motifs.mjs` with the BaTech guideline recipes.
+Files: `assets/products/<product>/<product>-motif.svg` (signature motif, family pair) and `assets/families/bands/<family>-quiet-drift.svg` and `-quiet-edge.svg` (Quiet bands), built by `tools/build-product-motifs.mjs` with the BaTech guideline recipes.
 
 Tinara's logo is its signature motif, so its empty states use **bunga raya**, the Tide family flower (`tinara-empty-motif.svg`), and the logo never appears twice in two colourways.
 
@@ -121,7 +121,8 @@ Tinara's logo is its signature motif, so its empty states use **bunga raya**, th
 - A motif under 24px on screen (6mm in print); below that, dots only.
 - One motif shown large on its own: above about 120px, show at least two motifs so it reads as corak, not a logo.
 - A motif recoloured in the product's own colours, stretched or squashed.
-- Cameos (Seth, the REKA mark) in product placements: BaTech keeps them out of product rows, and its empty-state and avatar examples carry none.
+- **A straight cut.** BaTech is mixed patterns, never straight lines (06): no hard-edged strip inside content, no ruled line, row of dots or row of identical motifs as decoration. Bands drift (fade out with no edge) or sit against a container's own edge, where BaTech allows a crop.
+- Cameos on single motifs (empty states, loaders). Bands carry BaTech's hidden cameos (Seth, the REKA mark, the AntaraX A) as the motif code places them, at most one each per area.
 - Motion that is not slow and rare: radial motifs turn once every 30 to 60 seconds; all motion stops for reduced motion.
 
 ## Signature moments (proposed)
@@ -149,29 +150,28 @@ One moment per product. Never on screens people work through quickly (tables, fo
 
 ## Elements, charts, loading and naming (proposed)
 
-BaTech's construction gives products a small kit of details that are recognisably AntaraX without putting corak near data. Each one borrows a named part of BaTech: the **trace and solder pad** (awan larat bands and bridges), the **isen-isen dots** that fill the gaps, the **intan**, the **thread** under the active link, and the **draw on** and **turn** motion.
-
 ### Elements
+
+**Functional controls stay plain geometry; BaTech is never drawn as a straight line or strip.** Where a control needs a line (a progress bar, a stepper, a gridline), it is a plain line in the product's colours, not corak. BaTech reaches controls only in shapes that are not straight:
 
 | Element | Detail | From BaTech |
 |---|---|---|
-| Progress bar | A trace that ends in a solder pad at the current value; the rest of the track is a row of dots | traces ending in pads; isen-isen |
-| Stepper and timeline | Steps are pads joined by a trace; done steps filled, the current one ringed (onboarding, a job's history, an audit trail) | bridges: short traces with solder pads |
-| Divider | A row of isen-isen dots in the Quiet ink, with an intan at the centre for major breaks | isen-isen; intan |
-| Active tab or nav item | The thread under the active item, the same as antarax.ai | hover and focus thread |
+| Progress bar | A plain bar in the product colour, ending in a round pad (a filled dot with a white ring) | the solder pad at the end of a trace |
+| Stepper and timeline | Plain dots and a plain connecting line; done steps filled, the current one ringed | the pad |
+| Section divider | A Quiet drift band (fades out with no edge), or simply white space; never a ruled line or row of dots as ornament | the drift band |
+| Active tab or nav item | A short awan larat curl under the active item: a curving trace ending in a pad | awan larat |
 | List markers and eyebrows | The intan, 9px | intan |
-| UI icons | A plain line icon set drawn like BaTech: one stroke weight (1.75px at 24px), round caps and joins. Icons are not motifs | one outline, round caps |
+| UI icons | A plain line icon set drawn with BaTech's line rules: one stroke weight (1.75px at 24px), round caps and joins. Icons are not motifs | one outline, round caps |
 
 ### Charts
 
-The product's own colours draw the data (05, and the dataviz rules in each product). BaTech never sits behind or inside a plot. Four details carry the family resemblance:
+The product's own colours draw the data. BaTech never sits behind or inside a plot. Three details carry the family resemblance:
 
-- **Dotted gridlines** (isen-isen), recessive, in the hairline colour.
 - **The latest value ends in a pad:** a filled dot with a white ring at the end of a line.
 - **Flagged points are an intan** (a diamond marker, at least 8px): an anomaly, a breach, a renewal.
 - **AI forecasts** continue the line dashed, with the sparkle beside their label.
 
-An empty chart shows the product's empty state (its signature motif). Series identity is never carried by motif shapes; colour plus a label does that.
+Gridlines are plain and recessive (dotted is fine; they are not corak). An empty chart shows the product's empty state. Series identity is never carried by motif shapes; colour plus a label does that.
 
 ### Loading
 
@@ -182,14 +182,35 @@ An empty chart shows the product's empty state (its signature motif). Series ide
 | A task the person started (a forecast, a ranking, an import) | The signature motif as the loader, with the action in words ("Forecasting 48 items") |
 | Long AI work | The product's own mark in its thinking motion (04) |
 
-How each motif loads, by BaTech's motion rules (slow, rare, stops for reduced motion): radial motifs **turn** (riak, intan, orbit; one turn every 6 seconds as a loader); the others **draw on** and fill (padi, petak); congkak passes a seed from hole to hole; Tinara's lattice lights its path one opening at a time.
+Radial motifs **turn** (riak, intan, orbit; one turn every 6 seconds as a loader); the others **draw on** and fill (padi, petak); congkak passes a seed from hole to hole; Tinara's lattice lights its path one opening at a time. All motion stops for reduced motion.
 
-### Naming
+### Naming lines and areas
 
-- **Product names stay as they are, with no invented meanings.** BaTech's rule: only Lapisan ("layer") has a documented meaning.
-- **BaTech's words are the shared vocabulary for design and code:** component and token names such as `intan` (markers, eyebrows), `isen` (dot dividers, gridlines), `trace` and `pad` (progress, steppers, line ends), `thread` (active state), `quiet` (the light ink), and each motif's name for its loader. Customers never see these names.
-- **Customer copy names things plainly** (03): "Forecasting", "Matching receipts", not the motif.
-- **A Malay word may name a customer-facing thing only when its literal meaning describes the job** and it is explained once on first use, as Lapisan is. New candidates go to the owner (11).
+Products are named on their own (02). Inside a product, its parts are named in one of two ways, and each product uses **one** of them:
+
+| Kind | What it is | How it is named | Examples |
+|---|---|---|---|
+| **Lines** | Distinct ways of using one product, each with its own screen and person | One evocative English word | AX Frame: Atlas, Layers, Orbit, Pulse, Ledger, Lens. Yara: Work, Desk, Crew, Flow, View, Assist |
+| **Areas** | Sections of the app | The job, in a plain word | Janka: Inventory, Forecast, Replenish, Risk, Insights. Angka: Capture, Match, Books, Forecast, Assist |
+| **Products in a line** | Separate products under one line name | Always the line name first | PLExyz Grid, PLExyz Trace, PLExyz Flow |
+
+How to write them:
+
+- **Inside the product**, the line or area alone: "Atlas", "Forecast".
+- **Outside the product** (antarax.ai, sales, docs), the product comes first: "Atlas in AX Frame" in running text; "AX Frame · Atlas" where space is short. Lines are ways of using one product, not products, so never "AX Atlas", "AntaraX Atlas" or "Frame Atlas" as a product name.
+- **One word, capitalised as a name.** No all caps, no prefixes, no version numbers in the name.
+- **Shared names mean the same thing everywhere.** **Assist** is the AI assistant in every product, always shown with the sparkle. **Forecast** is a product's forecasting. A product that adds an AI assistant calls it Assist.
+- **Never reuse** a family name (Ripple, Edge, Frame, Loom, Motion, Tide), a product or PLExyz product name, another product's line for a different thing, or an internal name (AXLE).
+- **Malay words** may name a line only when the meaning is the job and it is explained once, as Lapis and Lapisan ("layer") are. Motif names (riak, padi, intan) stay design vocabulary, not feature names.
+- **Working names** stay marked as working until the owner confirms them (Yara View and Assist today).
+
+Clashes in today's names (11):
+
+1. **Flow** is both a Yara line and a PLExyz product (concept). Rename Yara's line, since PLExyz Flow names a product.
+2. **Lens** is AX Frame's AI analysis line, while Assist is the AI assistant elsewhere. If Lens is the assistant, call it Assist; if it is a view of analysis, Lens can stay.
+3. **Orbit** is AX Frame's renewals line and the BaTech motif for PLExyz Crowd. Motif names never reach customers, so this is allowed.
+
+BaTech's words are the vocabulary for design and code (component and token names such as `intan`, `pad`, `drift`, `quiet`, `loader-padi`); customers never see them.
 
 ## Own marks
 

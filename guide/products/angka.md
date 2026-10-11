@@ -47,7 +47,7 @@ Today: Poppins, Caveat (handwritten asides) and Geist Mono. Target: Poppins and 
 
 ## The AntaraX layer in Angka
 
-Angka keeps its face, paper and plum. AntaraX adds: BaTech: **congkak** (`angka-motif.svg`, Tide pair) as the picture in empty states (never next to the face with bad news), and the Tide Quiet band under the digest email header and along the sign-in panel; the AI sparkle beside every AI match, categorisation and draft (Angka's evidence states stay as they are); intan eyebrows in plum; the legal footer.
+Angka keeps its face, paper and plum. AntaraX adds: BaTech: **congkak** (`angka-motif.svg`, Tide pair) as the picture in empty states (never next to the face with bad news), and the Tide Quiet drift band under the digest email header and along the sign-in panel; the AI sparkle beside every AI match, categorisation and draft (Angka's evidence states stay as they are); intan eyebrows in plum; the legal footer.
 
 ## Gaps in the app today
 

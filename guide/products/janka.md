@@ -64,7 +64,7 @@ Poppins and JetBrains Mono (`src/main.tsx:10-15`). Aligned. The AXLE console loa
 
 ## The AntaraX layer in Janka
 
-Janka keeps its J, ticks, splash and thinking animations. AntaraX adds (12): the credit line; BaTech: **padi** (`janka-motif.svg`, Tide pair) as the picture in empty states, and the Tide Quiet band along the bottom of the sign-in panel (in place of the dark gradient) and under email headers; **the AI sparkle** beside every forecast and drafted order; intan eyebrows in Janka cyan; the app tile; the legal footer.
+Janka keeps its J, ticks, splash and thinking animations. AntaraX adds (12): the credit line; BaTech: **padi** (`janka-motif.svg`, Tide pair) as the picture in empty states, and the Tide Quiet edge band along the bottom of the sign-in panel (in place of the dark gradient) and under email headers; **the AI sparkle** beside every forecast and drafted order; intan eyebrows in Janka cyan; the app tile; the legal footer.
 
 ## Steps to converge
 

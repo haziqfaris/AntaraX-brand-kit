@@ -2,6 +2,12 @@
 
 Owner decisions that shape the brand, newest first. Add to the top; never rewrite history. Earlier strategy changes are in `reference/strategy/` (playbook amendments v0.3–v0.5, RECONCILIATION).
 
+## 11 October 2026 (sixth review)
+
+- **BaTech is never straight-cut.** Bands are drift bands (fade out with no edge) or edge bands cropped only by a container's own edge; no ruled lines, rows of dots or hard strips as decoration. Functional lines (progress, steppers, gridlines) stay plain and are not corak. The straight Quiet bands, dot-row divider and hatched tab thread are withdrawn.
+- **Naming means lines and areas** (Atlas in AX Frame, Forecast in Janka). Rules in 12: one style per product, product first outside it, shared names (Assist, Forecast), no reused family or product names. Clashes found: Yara Flow vs PLExyz Flow; AX Frame Lens vs Assist.
+- **Cameos:** single motifs carry none; bands carry BaTech's hidden cameos as the motif code places them.
+
 ## 11 October 2026 (fifth review)
 
 - **Elements, charts, loading and naming proposed** from BaTech's construction (12): traces and pads, isen dots, intan markers, the thread, draw-on and turn loaders, and BaTech's words as the vocabulary for design and code.

@@ -34,12 +34,27 @@ for (const [dir, name, key, fam] of PRODUCTS) {
   console.log(`products/${dir}/${name}-motif.svg  ${key} in ${fam}`);
 }
 
-// family Quiet bands: the family's niche corak in the Quiet ink, for dividers, sign-in edges and email headers
+// family Quiet bands, never straight-cut (BaTech: mixed patterns, not straight lines). Same masks as the site's
+// drift band (illustrations.mjs mixBand): <family>-quiet-drift.svg fades out at top and bottom and softens at
+// both ends, for dividers and email headers; <family>-quiet-edge.svg fades only upward, to sit against the
+// bottom edge of a panel, where BaTech allows a crop.
 fs.mkdirSync(new URL('families/bands/', OUT), { recursive: true });
+const fade = (id, W, H, v, h) => {
+  const g = (k, x2, y2, stops) => `<linearGradient id="${id}${k}" x1="0" y1="0" x2="${x2}" y2="${y2}">${stops.map(([o, a]) => `<stop offset="${o}" stop-color="#fff" stop-opacity="${a}"/>`).join('')}</linearGradient><mask id="${id}${k}m" maskUnits="userSpaceOnUse" x="0" y="0" width="${W}" height="${H}"><rect width="${W}" height="${H}" fill="url(#${id}${k})"/></mask>`;
+  return [`${g('v', 0, 1, v)}${g('h', 1, 0, h)}`, `${id}hm`, `${id}vm`];
+};
 for (const fam of Object.keys(FAM)) {
-  const [W, H, body] = B.puzzle({ band: 'awan', keys: NICHE[fam], pal: QUIET, seed: fam.length * 53 + 11, W: 1000, H: 200, cables: 0, wrap: true });
-  fs.writeFileSync(new URL(`families/bands/${fam}-quiet.svg`, OUT), `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" aria-hidden="true">${body}</svg>\n`);
-  console.log(`families/bands/${fam}-quiet.svg`);
+  // drift is drawn at a divider's proportions (12:1) so it is always shown whole, fade and all; never crop it
+  const cloth = { drift: B.puzzle({ band: 'awan', keys: NICHE[fam], pal: QUIET, seed: fam.length * 53 + 11, W: 1200, H: 100, big: 44, mid: 32, small: 22, cables: 0, bridges: false, wrap: false }),
+    edge: B.puzzle({ band: 'awan', keys: NICHE[fam], pal: QUIET, seed: fam.length * 53 + 11, W: 1000, H: 200, cables: 0, bridges: false, wrap: false }) };
+  for (const v of ['drift', 'edge']) {
+    const [W, H, body] = cloth[v];
+    const [defs, hm, vm] = v === 'drift'
+      ? fade(`bd${fam}`, W, H, [[0, 0], [0.32, 1], [0.68, 1], [1, 0]], [[0, 0], [0.2, 1], [0.8, 1], [1, 0]])
+      : fade(`be${fam}`, W, H, [[0, 0], [0.55, 1], [1, 1]], [[0, 1], [1, 1]]);
+    fs.writeFileSync(new URL(`families/bands/${fam}-quiet-${v}.svg`, OUT), `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" aria-hidden="true"><defs>${defs}</defs><g mask="url(#${hm})"><g mask="url(#${vm})">${body}</g></g></svg>\n`);
+    console.log(`families/bands/${fam}-quiet-${v}.svg`);
+  }
 }
 
 // Tinara's mark is the kerawang motif itself: the official drawing in Tinara's plum and gold,

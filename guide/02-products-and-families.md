@@ -90,6 +90,7 @@ Understand → Operate → Optimize → Perceive → Navigate → Act → Synthe
 - Write **AntaraX**, never "AntaraX AI".
 - Family name variants (from the master logo file): Full "AntaraX Motion", Medium "AX Motion", Short "AXM" (AXR, AXE, AXF, AXL). Use Full in customer copy; Medium and Short are for space-constrained marks and internal use.
 - **PLExyz** is always written PLExyz. It is REKA's spatial intelligence platform, built on AntaraX: Grid (flagship), Trace (built inside Janka), and the concepts Flow, Transit, Crowd, Site, Ward and Yard (products/plexyz.md).
+- **Lines and areas inside a product** (Atlas in AX Frame, Forecast in Janka) follow the naming rules in 12: one word, the product first outside the product, shared names (Assist, Forecast) mean the same thing everywhere.
 - **Never show internal codenames** to customers: AXLE (REKA's admin console), puzzle-ceplok, puzzle-parang and similar.
 
 ### Retired names (never use in new copy)

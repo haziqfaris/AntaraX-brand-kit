@@ -25,7 +25,7 @@ A-mark product, and the one product that shares its family's name (Frame, Unders
   - Lookups, imports and AI suggestions wait for a person to approve them (product rule).
 - Never say: that it discovers or scans anything; customers, usage numbers or savings; the name of an AI model; enterprise IT asset management; payments, consolidated billing or e-signing; future stages as if they were live.
 
-**How it is sold.** Closed pilot, run as part of REKA's Managed AI service. Call to action: Request pilot access. Inside the app there is a capped free plan and one paid plan, priced by currency. **Today the app's own landing page signs people up directly and shows prices**, which does not match a closed pilot (11).
+**How it is sold.** Closed pilot, run as part of REKA's Managed AI service. Call to action: Request pilot access. People may sign up in the app itself: it stays a closed pilot because REKA watches every account (owner, 11 October 2026). Inside the app there is a capped free plan and one paid plan, priced by currency.
 
 **Lines and areas.** In the app: Insight, Health, Projects, Estate (Map, Ledger, Stacks & Systems), Money (Spend, Savings, Renewals, Vendors & Groups) and Connect your AI. On the website: Atlas, Layers, Orbit, Pulse, Ledger, Lens (working names; only Ledger is a real screen).
 

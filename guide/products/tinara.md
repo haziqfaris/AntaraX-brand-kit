@@ -25,6 +25,8 @@ Own-mark product in the Tide family. Closed pilot, invite-only. Malaysia-first B
   - A closed pilot for invited partners.
 - Never say: a company count or coverage figure; "SSM-verified" or "verified data"; named people, emails or phone numbers; real-time signals or monitoring; CRM integrations; pilot partners or results.
 
+**Before any partner uses real data** (owner, 11 October 2026): remove the key-people view and the contact export (names, emails, LinkedIn profiles) from the app, and review the licence of every data source. Until then Tinara runs on its synthetic release.
+
 **How it is sold.** Closed pilot, run as part of REKA's Managed AI service. Call to action: Request pilot access. Usage is counted in credits, and a brief costs more than a search. The app's Explorer, Scout and Operator become Seed, Nova and Galaxy (13). Prices are set after the pilot; billing is manual during it.
 
 **Lines and areas.** In the app: New campaign, Overview, Campaigns, Watchlist (its signal feed is switched off for partners), Profiles, Saved reports and Credits. No website lines.

@@ -22,7 +22,7 @@ A-mark product in the Ripple family. Main product and the portfolio lead. Live a
   - Worker screens are in English and Bahasa Malaysia; office screens are in English (built).
   - Working time counts shift hours only and leaves out holds (built).
   - Workers never see order values (a locked product rule).
-  - Built first for a Malaysian metal fabricator (owner decision).
+  - Built first for a Malaysian metal fabricator, and live with it since 30 September 2026 (owner).
 - Never say:
   - The customer's name, a quote or a figure, without written permission.
   - AI intake, Commission or Reverse engineer as available: they are planned.
@@ -30,7 +30,7 @@ A-mark product in the Ripple family. Main product and the portfolio lead. Live a
   - "Powered by AntaraX Ripple", "Yara Ripple" or "Yara AXLE".
   - The pandemic origin story, until the owner confirms it.
 
-**How it is sold.** Main product and the portfolio lead. Call to action: Book a demo. Quoted to the size of the floor and its shifts rather than per seat, and invoiced by REKA. The Rise plan names apply once its packages are named (13).
+**How it is sold.** Main product and the portfolio lead, sold as part of REKA's Managed AI service for now. Call to action: Book a demo. Quoted to the size of the floor and its shifts rather than per seat, and invoiced by REKA. The Rise plan names apply once its packages are named (13).
 
 **Lines and areas.** In the app: Dashboard, Work Orders, Projects, Job Cards, Customers, Team Tasks, Production setup and the worker app. Modules: Value split and Status API (built), Commission and Reverse engineer (planned). On the website: Work, Desk, Crew, Relay, View, Assist (working names).
 

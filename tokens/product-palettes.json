@@ -1003,7 +1003,7 @@
       }
     },
     "loom": {
-      "name": "Loom",
+      "name": "AX Loom",
       "kind": "A-mark",
       "character": "Loom violet",
       "anchor": "#4904B3",
@@ -1146,7 +1146,7 @@
       }
     },
     "motion": {
-      "name": "Motion",
+      "name": "AX Motion",
       "kind": "A-mark",
       "character": "Motion orange",
       "anchor": "#FC5D04",

@@ -1,16 +1,16 @@
-# Loom
+# AX Loom
 
 A-mark product in the Loom family (Synthesize). Closed pilot, no app yet. Data synthesis: data from many places woven into one picture, and synthetic data where real data is short or too sensitive to use.
 
 ## Brief
 
-*Who Loom serves, what it does and what it may claim. Names, the one-liner and the question are in 02. Loom has no repository yet, so this brief rests on the kit and the antarax.ai pilot page (`haziqfaris/antarax-ai`, `prototype/site/src/pages/loom.html`), checked 11 October 2026. Open questions are in 11.*
+*Who AX Loom serves, what it does and what it may claim. Names, the one-liner and the question are in 02. AX Loom has no repository yet, so this brief rests on the kit and the antarax.ai pilot page (`haziqfaris/antarax-ai`, `prototype/site/src/pages/loom.html`), checked 11 October 2026. Open questions are in 11.*
 
 **For whom.** Teams whose data is scattered across systems, and teams training or testing AI. The buyer and the day-to-day user are not named yet (11).
 
 **The problem.** "How much more could we do with our data, if it were all in one place?" Data sits in systems, spreadsheets and inboxes, each in its own shape, so no one sees it together.
 
-**What it does.** Loom brings data from systems, spreadsheets, sensors and documents into one picture. Where real data is short or too sensitive to use, it makes synthetic data that follows the patterns of the real thing. The result is one clean set that reports, dashboards and AI tools can all work from.
+**What it does.** AX Loom brings data from systems, spreadsheets, sensors and documents into one picture. Where real data is short or too sensitive to use, it makes synthetic data that follows the patterns of the real thing. The result is one clean set that reports, dashboards and AI tools can all work from.
 
 **What it is not.**
 - Automation, AI agents or workflows: automation runs on Ripple (10, 10 October 2026).
@@ -24,19 +24,19 @@ A-mark product in the Loom family (Synthesize). Closed pilot, no app yet. Data s
 
 **Lines and areas.** None yet.
 
-**Source of truth.** This sheet and 02 until Loom has a repository.
+**Source of truth.** This sheet and 02 until AX Loom has a repository.
 
 ## Name
 
-- Write **Loom**. Credit: "Loom · by AntaraX". The family is AntaraX Loom on the Families page.
+- Write **AX Loom** (owner, 11 October 2026), like AX Frame: the full name keeps it apart from other products called Loom. Credit: "AX Loom · by AntaraX". The family stays **Loom** (AntaraX Loom on the Families page).
 - Tagline: "Your data, woven together." Family motto: "Weave it together."
-- Stop using: Loom for agents, workflows or automation; the verb "Orchestrate"; "waitlist".
+- Stop using: "Loom" on its own for the product; Loom for agents, workflows or automation; the verb "Orchestrate"; "waitlist".
 
 ## Where it came from
 
-- REKA's older brand guidelines listed Loom as a data-ingest part of AntaraX, and early antarax.ai teasers used "AX Loom" for synthetic data.
+- REKA's older brand guidelines listed Loom as a data-ingest part of AntaraX, and early antarax.ai teasers used "AX Loom" for synthetic data. AX Loom became the product's name on 11 October 2026.
 - An earlier playbook made Loom the automation name. On 10 October 2026 automation moved to Ripple and Loom became data synthesis, with synthetic data back in it, as a closed pilot (10).
-- The Loom A-mark was drawn on 11 October 2026.
+- The AX Loom A-mark was drawn on 11 October 2026.
 - No customer-facing heritage line. Do not write one.
 
 ## Mark
@@ -48,7 +48,7 @@ A-mark product in the Loom family (Synthesize). Closed pilot, no app yet. Data s
 
 ## Colour
 
-Loom acts in its own colour (12, 14). Use the roles from `tokens/product-palettes.css` (`--loom-*`), never raw scale steps.
+AX Loom acts in its own colour (12, 14). Use the roles from `tokens/product-palettes.css` (`--loom-*`), never raw scale steps.
 
 | Role | Value |
 |---|---|
@@ -66,24 +66,24 @@ The shared core: Poppins, and JetBrains Mono with tabular figures for every numb
 
 ## The AntaraX layer
 
-- Credit line "Loom · by AntaraX"; the AI sparkle beside AI work; the sparkle morphing into the Loom logo while it thinks.
+- Credit line "AX Loom · by AntaraX"; the AI sparkle beside AI work; the sparkle morphing into the AX Loom logo while it thinks.
 - BaTech: the motif is **tenun**, the weave itself, in empty states. The family set is **Thread** (`assets/batech/loom/`) and the Quiet bands are `assets/families/bands/loom-quiet-*.svg`.
 
 ## Credit lines
 
 | Where | Line |
 |---|---|
-| Product chrome | "Loom · by AntaraX" |
-| Sign-in, splash, first email, reports | "Loom by AntaraX, from REKA." |
+| Product chrome | "AX Loom · by AntaraX" |
+| Sign-in, splash, first email, reports | "AX Loom by AntaraX, from REKA." |
 | Legal footer, terms, invoices | "AntaraX, a product line of REKA Inisiatif Sdn Bhd." |
 
 ## Before the app is built
 
-1. Draw the tenun motif file (`assets/products/loom/loom-motif.svg`); add Loom to `tools/build-product-motifs.mjs`.
+1. Draw the tenun motif file (`assets/products/loom/loom-motif.svg`); add AX Loom to `tools/build-product-motifs.mjs`.
 2. Draw the white and one-colour marks.
-3. Choose Loom's loaders and its one signature moment (14, 12).
-4. When the app exists: follow 13 (address, sender `Loom <loom@antarax.ai>`, Reply-To support, `/guide`, `/help`, the Rise ladder) and add Loom's row to the audit.
+3. Choose AX Loom's loaders and its one signature moment (14, 12).
+4. When the app exists: follow 13 (address, sender `AX Loom <loom@antarax.ai>`, Reply-To support, `/guide`, `/help`, the Rise ladder) and add AX Loom's row to the audit.
 
 ## Open
 
-In 11: whether the name is cleared, who buys and who uses it, whether a pilot is running, and how synthetic data may be described for privacy.
+In 11: who buys and who uses it, whether a pilot is running, and how synthetic data may be described for privacy.

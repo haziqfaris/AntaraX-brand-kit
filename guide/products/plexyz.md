@@ -47,13 +47,15 @@ Concepts are proposed directions, not launches. Never show them as available (03
   - Tenants see only their own bays and bookings (built, an add-on).
 - Never say: AI placement suggestions as live; "retrieval distance"; the flagship customer's name; prices; customer counts, uptime or quotes; analytics trends or simulation as real; live weighbridge or sensor feeds; exports; Malay.
 
-**How it is sold.** Main product. Call to action: Book a demo. The free plan has no AI. Paid plans are a subscription that REKA sets per organisation and invoices; prices are not published. REKA reviews each new workspace before it goes live. Plans move to Seed (free), Nova, Galaxy and Quantum (13).
+**How it is sold.** Main product, sold as part of REKA's Managed AI service for now. Call to action: Book a demo. The free plan has no AI. Paid plans are a subscription that REKA sets per organisation and invoices; prices are not published. REKA reviews each new workspace before it goes live. Plans move to Seed (free), Nova, Galaxy and Quantum (13).
 
 **Lines and areas.** In the app: Operations, Commercial, Monitoring and System. Add-ons: Tenant portal, AI pack, Port add-ons. No website lines.
 
 **Source of truth.** `haziqfaris/plexyz-grid`: `PRODUCT_BRIEF.md`, `PROGRESS.md`, `apps/grid/src/App.tsx`, `docs/ai/AI-usage-framework.md`. Plans: `packages/shared/src/entitlements.ts`.
 
 ### PLExyz Crowd
+
+**Not in active development** (owner, 11 October 2026). Its pilot page stays on antarax.ai; claim nothing new, and keep the heart-rate screens in its app out of every demo.
 
 **For whom.** Buyer: a facilities or workplace lead, an operations manager, or a finance lead weighing a lease renewal; offices first. User: the facilities team, reading live occupancy and the monthly report.
 

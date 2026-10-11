@@ -2,6 +2,18 @@
 
 Owner decisions that shape the brand, newest first. Add to the top; never rewrite history. Earlier strategy changes are in `reference/strategy/` (playbook amendments v0.3–v0.5, RECONCILIATION).
 
+## 11 October 2026 (sixteenth review)
+
+The owner answered the questions raised by the product briefs (11, questions 8 to 15):
+
+- **Every product is sold as part of REKA's Managed AI service, for now**, main products and closed pilots alike. Prices are quoted, not published: 02 now says "pricing on request" for the main products.
+- **AX Frame and Angka stay closed pilots** though people can sign up in the product: REKA watches every account. Angka says "pilot", not "trial".
+- **Yara is live with its first customer**, a Malaysian metal fabricator, since 30 September 2026, on a subscription. The customer is still named only with written permission.
+- **Tinara:** before any partner uses real data, the key-people view and the contact export come out of the app and every data source's licence is reviewed.
+- **PLExyz Crowd is not in active development.** Its pilot page stays; nothing new is claimed.
+- **Janka keeps "AI inventory forecasting"** as its description.
+- **Loom and Motion are AX Loom and AX Motion**, as products, like AX Frame: the full names keep them apart from other software called Loom and Motion. The families stay Loom and Motion. "AX Motion" no longer means workflow automation.
+
 ## 11 October 2026 (fifteenth review)
 
 - **Product briefs** (owner): every product sheet opens with a short brief (who it is for, the problem, what it does, what it is not, what it may and may never claim, how it is sold, its lines and where the facts live). Briefs change rarely; features and prices stay in each product's repository. Loom and Motion get full sheets. Briefs were checked against each repository; what could not be confirmed is in 11 (questions 8 to 17).

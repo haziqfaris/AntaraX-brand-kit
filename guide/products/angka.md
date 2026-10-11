@@ -25,7 +25,7 @@ Own-mark product in the Tide family. Closed pilot, free while the pilot runs. It
   - Data is kept in Singapore (product documents).
 - Never say: that it replaces an accountant, files tax or produces statutory filings; customer numbers, savings or accuracy figures; that tax invoices, MyInvois or online payment are available; "beta", "waitlist", "AntaraX AI" or "by REKA".
 
-**How it is sold.** Closed pilot, run as part of REKA's Managed AI service. Call to action: Request pilot access, at antarax.ai/angka. Free while the pilot runs; afterwards a monthly subscription per business, with a yearly option, priced by country. Angka keeps its own plan names: Solo, Business, Team, and Enterprise by conversation. Every paid plan includes Lapis Business. No prices are published. **Today the landing page says "Free during the trial" and leads straight to sign-up**, which does not match a closed pilot (11).
+**How it is sold.** Closed pilot, run as part of REKA's Managed AI service. Call to action: Request pilot access, at antarax.ai/angka. Free while the pilot runs; afterwards a monthly subscription per business, with a yearly option, priced by country. Angka keeps its own plan names: Solo, Business, Team, and Enterprise by conversation. Every paid plan includes Lapis Business. No prices are published. People may sign up from the landing page: it stays a closed pilot because REKA watches every account (owner, 11 October 2026). Say "pilot", not "trial".
 
 **Lines and areas.** In the app: Home, Inbox, To pay and Ledger; Your business (Activities, People, Documents); How it's going (Figures, Ahead, Reports). The question feature is **Ask Angka**. The website's Capture, Match, Books, Forecast and Assist are working names.
 

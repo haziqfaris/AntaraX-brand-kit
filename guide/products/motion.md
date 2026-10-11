@@ -1,21 +1,21 @@
-# Motion
+# AX Motion
 
 A-mark product in the Motion family (Navigate). Closed pilot, no app yet. Telematics and fleet management, built first for autonomous and remotely controlled vehicles.
 
 ## Brief
 
-*Who Motion serves, what it does and what it may claim. Names, the one-liner and the question are in 02. Motion has no repository yet, so this brief rests on the kit, the antarax.ai pilot page (`haziqfaris/antarax-ai`, `prototype/site/src/pages/motion.html`) and REKA's history (`haziqfaris/reka.re`, `docs/content/REKA_STORY.md`), checked 11 October 2026. Open questions are in 11.*
+*Who AX Motion serves, what it does and what it may claim. Names, the one-liner and the question are in 02. AX Motion has no repository yet, so this brief rests on the kit, the antarax.ai pilot page (`haziqfaris/antarax-ai`, `prototype/site/src/pages/motion.html`) and REKA's history (`haziqfaris/reka.re`, `docs/content/REKA_STORY.md`), checked 11 October 2026. Open questions are in 11.*
 
 **For whom.** Fleets, autonomous vehicles and remotely controlled machines. The buyer and the day-to-day user are not named yet (11).
 
 **The problem.** "Where is every vehicle right now, how is it doing, and can we take control from here?" Fleets moving towards autonomy need more than a dot on a map: they need a status they can trust and a way to step in from a distance.
 
-**What it does.** Motion is telematics and fleet management, built first for autonomous and remotely controlled vehicles. It shows where each vehicle is and how it is doing, with the fleet's status and history in one place. It is designed for stepping in by remote control.
+**What it does.** AX Motion is telematics and fleet management, built first for autonomous and remotely controlled vehicles. It shows where each vehicle is and how it is doing, with the fleet's status and history in one place. It is designed for stepping in by remote control.
 
 **What it is not.**
 - A self-driving car or an autonomy stack: AntaraX does not build self-driving cars.
 - REKA Kinetik's robotics or research. OVERride is Kinetik's research platform, used only as heritage, never as the product's name.
-- Workflow automation, the old meaning of "AX Motion".
+- Workflow automation, the old meaning of "AX Motion" (the name now belongs to this product).
 
 **Claims.**
 - May say: the one-liner, the question and the three sentences above; "It carries forward the work REKA began with its 2016 self-driving car."; that it is a closed pilot run as part of Managed AI.
@@ -25,13 +25,13 @@ A-mark product in the Motion family (Navigate). Closed pilot, no app yet. Telema
 
 **Lines and areas.** None yet.
 
-**Source of truth.** This sheet and 02 until Motion has a repository.
+**Source of truth.** This sheet and 02 until AX Motion has a repository.
 
 ## Name
 
-- Write **Motion**. Credit: "Motion · by AntaraX". The family is AntaraX Motion on the Families page.
+- Write **AX Motion** (owner, 11 October 2026), like AX Frame: the full name keeps it apart from other products called Motion. Credit: "AX Motion · by AntaraX". The family stays **Motion** (AntaraX Motion on the Families page).
 - Tagline: "Every vehicle in view, and within reach." Family motto: "Every vehicle, within reach."
-- Stop using: "AX Motion" for workflow automation; OVERride as the product; "AX Kinetics"; "waitlist".
+- Stop using: "Motion" on its own for the product; "AX Motion" for workflow automation; OVERride as the product; "AX Kinetics"; "waitlist".
 
 ## Where it came from
 
@@ -49,7 +49,7 @@ A-mark product in the Motion family (Navigate). Closed pilot, no app yet. Telema
 
 ## Colour
 
-Motion acts in its own colour (12, 14), at the first step of its scale that carries white text: `#BE4402`. Use the roles from `tokens/product-palettes.css` (`--motion-*`).
+AX Motion acts in its own colour (12, 14), at the first step of its scale that carries white text: `#BE4402`. Use the roles from `tokens/product-palettes.css` (`--motion-*`).
 
 | Role | Value |
 |---|---|
@@ -69,7 +69,7 @@ The shared core: Poppins, and JetBrains Mono with tabular figures for every numb
 
 ## The AntaraX layer
 
-- Credit line "Motion · by AntaraX"; the AI sparkle beside AI work; the sparkle morphing into the Motion logo while it thinks.
+- Credit line "AX Motion · by AntaraX"; the AI sparkle beside AI work; the sparkle morphing into the AX Motion logo while it thinks.
 - BaTech: the motif is **bunga cengkih**, a quadcopter seen from above, in empty states. The family set is **Trail** (`assets/batech/motion/`) and the Quiet bands are `assets/families/bands/motion-quiet-*.svg`.
 - Nothing spins: cengkih's rotors never turn in a loader.
 
@@ -77,17 +77,17 @@ The shared core: Poppins, and JetBrains Mono with tabular figures for every numb
 
 | Where | Line |
 |---|---|
-| Product chrome | "Motion · by AntaraX" |
-| Sign-in, splash, first email, reports | "Motion by AntaraX, from REKA." |
+| Product chrome | "AX Motion · by AntaraX" |
+| Sign-in, splash, first email, reports | "AX Motion by AntaraX, from REKA." |
 | Legal footer, terms, invoices | "AntaraX, a product line of REKA Inisiatif Sdn Bhd." |
 
 ## Before the app is built
 
-1. Draw the cengkih motif file (`assets/products/motion/motion-motif.svg`); add Motion to `tools/build-product-motifs.mjs`.
+1. Draw the cengkih motif file (`assets/products/motion/motion-motif.svg`); add AX Motion to `tools/build-product-motifs.mjs`.
 2. Draw the white and one-colour marks.
-3. Choose Motion's loaders, without spinning, and its one signature moment (14, 12).
-4. When the app exists: follow 13 (address, sender `Motion <motion@antarax.ai>`, Reply-To support, `/guide`, `/help`, the Rise ladder) and add Motion's row to the audit.
+3. Choose AX Motion's loaders, without spinning, and its one signature moment (14, 12).
+4. When the app exists: follow 13 (address, sender `AX Motion <motion@antarax.ai>`, Reply-To support, `/guide`, `/help`, the Rise ladder) and add AX Motion's row to the audit.
 
 ## Open
 
-In 11: whether the name is cleared, who buys and who uses it, whether a pilot is running, and how far remote control can be described today.
+In 11: who buys and who uses it, whether a pilot is running, and how far remote control can be described today.

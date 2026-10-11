@@ -65,8 +65,8 @@ const P = [
   { k: 'frame', name: 'AX Frame', logo: 'ax-frame', fam: 'Frame', motif: 'intan', mf: 'assets/products/frame/frame-motif.svg', status: 'Closed pilot', line: 'Know what your business depends on.' },
   { k: 'angka', name: 'Angka', logo: 'angka', fam: 'Tide', motif: 'congkak', mf: 'assets/products/angka/angka-motif.svg', status: 'Closed pilot', line: 'A finance workspace for business owners who are not accountants.' },
   { k: 'tinara', name: 'Tinara', logo: 'tinara', fam: 'Tide', motif: 'kerawang', mf: 'assets/products/tinara/tinara-motif.svg', status: 'Closed pilot', line: 'Know which Malaysian companies to sell to, and why.' },
-  { k: 'loom', name: 'Loom', logo: 'loom', fam: 'Loom', motif: 'tenun', mf: null, status: 'Closed pilot', line: 'Your data, woven together.' },
-  { k: 'motion', name: 'Motion', logo: 'motion', fam: 'Motion', motif: 'cengkih', mf: null, status: 'Closed pilot', line: 'Every vehicle in view, and within reach.' },
+  { k: 'loom', name: 'AX Loom', logo: 'loom', fam: 'Loom', motif: 'tenun', mf: null, status: 'Closed pilot', line: 'Your data, woven together.' },
+  { k: 'motion', name: 'AX Motion', logo: 'motion', fam: 'Motion', motif: 'cengkih', mf: null, status: 'Closed pilot', line: 'Every vehicle in view, and within reach.' },
 ];
 for (const p of P) Object.assign(p, PAL[p.k].roles, { scale: PAL[p.k].scale });
 
@@ -119,7 +119,7 @@ ${text('by REKA Inisiatif Sdn Bhd · Kuala Lumpur', 72, 418, 14, { fill: '#8F9AC
 // ================= families =================
 {
   const W = 1280, H = 330, gap = 16, tw = (W - 2 * 24 - 5 * gap) / 6;
-  const names = { Ripple: 'Yara', Edge: 'PLExyz Grid, Crowd', Frame: 'AX Frame', Loom: 'Loom', Motion: 'Motion', Tide: 'Janka, Angka, Tinara' };
+  const names = { Ripple: 'Yara', Edge: 'PLExyz Grid, Crowd', Frame: 'AX Frame', Loom: 'AX Loom', Motion: 'AX Motion', Tide: 'Janka, Angka, Tinara' };
   let style = `@keyframes br{0%,100%{transform:scale(1) translateY(0)}50%{transform:scale(1.08) translateY(-4px)}}.br{animation:br 3.2s ease-in-out infinite}`;
   const tiles = Object.entries(FAM).map(([n, f], i) => {
     const x = 24 + i * (tw + gap), mx = x + tw / 2;

@@ -30,12 +30,12 @@ One word for each shared idea, in every product. Product-specific things keep th
 | Admin console | `axle.antarax.ai`, one console for every product (antarax-api decision 0009). Until it exists, `axle.<product>.antarax.ai` |
 | Developers | `api.antarax.ai` and `lapisan.antarax.ai` |
 | Product's public page | antarax.ai under `/products/` or `/pilots/` (02) |
-| Product email sender | `<Product> <product@antarax.ai>`, for example `Janka <janka@antarax.ai>`. Mail sent on a customer's behalf: `<Organisation> via <Product> <product@antarax.ai>` (Angka's pattern). Replies go to support |
-| Support | **`support@antarax.ai` for every product**, answered by the team at REKA. Wording, everywhere: "Need help? Email support@antarax.ai and the team will reply." Do not promise a reply time until one is kept |
-| Sales and demos | The antarax.ai form (it emails holla@reka.re today). An Enterprise "Talk to us" link goes to **`sales@antarax.ai`** with the product and plan in the subject |
-| Privacy and legal requests | **`privacy@antarax.ai`** on every terms and privacy page, and as the legal contact |
+| Product email sender | `<Product> <product@antarax.ai>`, for example `Janka <janka@antarax.ai>`, sent through Resend. Mail sent on a customer's behalf: `<Organisation> via <Product> <product@antarax.ai>` (Angka's pattern). antarax.ai sends but does not receive, so every product email sets **Reply-To: `support@go.antarax.ai`** |
+| Support | **`support@go.antarax.ai` for every product**, answered by the team at REKA. Wording, everywhere: "Need help? Email support@go.antarax.ai and the team will reply." Do not promise a reply time until one is kept |
+| Sales and demos | The antarax.ai form (it emails holla@reka.re today). An Enterprise "Talk to us" link goes to **`sales@go.antarax.ai`** with the product and plan in the subject |
+| Privacy and legal requests | **`privacy@go.antarax.ai`** on every terms and privacy page, and as the legal contact |
 
-Role addresses only, decided by the owner on 11 October 2026: `support@`, `sales@`, `privacy@` and each product's sender. Create the three mailboxes before the apps point at them.
+Role addresses only, decided by the owner on 11 October 2026: `support@`, `sales@`, `privacy@` and each product's sender. **The three role addresses live on `go.antarax.ai`** (owner, 11 October 2026), which receives mail through Google Groups; `antarax.ai` itself only sends, through Resend. Create the three groups before the apps point at them. If `antarax.ai` is later given its own mail exchange, the role addresses can move to it; until then, never show an `@antarax.ai` address that a person is expected to write to.
 
 Never show a personal address, "contact your REKA account manager" unless one is really assigned, or a platform address. A personal address in a product sends customers' mail to one person's inbox: it is lost when that person is away or leaves, it ties the product to a person rather than the company, and it puts that address in front of anyone who scrapes the page. Internal settings, such as AXLE's list of super-admins and test data, are not customer-facing and may keep named people.
 
@@ -205,7 +205,7 @@ No product yet has an automated accessibility check, a shared plan name, or the 
 - Words: the account is called a workspace; on settings and billing, call it the organisation. AXLE: "REKA operator console" → "AXLE · AX Frame". Copy: an em dash in "Couldn't revoke that connection — it's still active." Help: add `/guide` and `/help` (an in-app FAQ exists). Access: add an axe check.
 
 **Angka**
-- Addresses: sender `hello@angka.antarax.ai` → `angka@antarax.ai` (keep "{Business} via Angka"); inquiries to `holla@reka.re`, and a personal address on the Enterprise link (`lib/billing/catalog.ts:115`) and on the terms and privacy pages (`app/(legal)/terms/page.tsx:75`, `privacy/page.tsx:138`) → `support@antarax.ai` and the privacy address.
+- Addresses: sender `hello@angka.antarax.ai` → `angka@antarax.ai` (keep "{Business} via Angka"); inquiries to `holla@reka.re`, and a personal address on the Enterprise link (`lib/billing/catalog.ts:115`) and on the terms and privacy pages (`app/(legal)/terms/page.tsx:75`, `privacy/page.tsx:138`) → `support@go.antarax.ai` and the privacy address.
 - Emails: the shared shell fits; change the footer credit "Angka, by REKA Inisiatif Sdn Bhd." (`lib/mail/invite-mail.ts:49`) to the credit and legal lines.
 - Plans: Angka keeps its own names (Solo, Business, Team, Enterprise); "Pilot" is a stage, not a plan. Money: `USD 1,200.00` → `US$1,200.00`.
 - Copy: "This page tripped over itself" (`app/error.tsx:41`) → say what failed and what to do.

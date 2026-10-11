@@ -203,7 +203,7 @@ ${rows}`;
     ['RM1,200', 'RM 1,200', 'money'],
     ['11 Oct 2026 · 14:30', '10/11/2026 · 2:30 PM', 'dates and times on screen'],
     ['Nova · for teams', 'Nova', 'plan names'],
-    ['support@antarax.ai', 'hello@reka.re', 'who customers write to'],
+    ['support@go.antarax.ai', 'hello@reka.re', 'who customers write to'],
     ['Organisation', 'Organization', 'spelling'],
     ['draws on, lights up, breathes', 'spins, flips', 'loaders'],
   ];

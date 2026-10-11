@@ -114,7 +114,7 @@ Open your product for its kit in one place:
 - **BaTech:** the Tide **Swell**, `assets/batech/tide/`.
 - **Your section in 14:** [Janka](guide/14-product-identity-system.md#janka). **Your to-do list:** [13, what each app needs](guide/13-shared-product-standards.md#what-each-app-needs).
 - **Lives at:** `janka.antarax.ai`, sends as `Janka <janka@antarax.ai>`.
-- **Biggest quick win:** `hello@reka.re` on sign-in becomes support@antarax.ai, and the focus ring turns from orange to AntaraX blue.
+- **Biggest quick win:** `hello@reka.re` on sign-in becomes support@go.antarax.ai, and the focus ring turns from orange to AntaraX blue.
 </details>
 
 <details>
@@ -258,7 +258,7 @@ Copy this list into an issue in your product repo and tick it off there:
 - [ ] Our logo comes from assets/logos/, at its square size
 - [ ] Every hex value in our CSS is a token from tokens/
 - [ ] Buttons act in our colour; focus rings are AntaraX blue
-- [ ] Customers see support@antarax.ai, never a personal or platform address
+- [ ] Customers see support@go.antarax.ai, never a personal or platform address
 - [ ] Plans read Seed, Terra, Nova, Galaxy, Quantum, each with who it is for (Angka keeps its own)
 - [ ] Money reads RM1,200; dates read 11 Oct 2026; times read 14:30 on screen
 - [ ] No loader spins or flips, and every loader stands still under reduced motion
@@ -269,7 +269,7 @@ Copy this list into an issue in your product repo and tick it off there:
 
 Warm up first: the seven slips products make most often.
 
-<p align="center"><img src="assets/readme/spot-the-difference.svg" width="100%" alt="Spot the difference: by AntaraX not Powered by AntaraX; RM1,200 not RM 1,200; 11 Oct 2026 14:30 not 10/11/2026 2:30 PM; Nova for teams not Nova; support@antarax.ai not hello@reka.re; Organisation not Organization; loaders draw on and breathe, never spin or flip"></p>
+<p align="center"><img src="assets/readme/spot-the-difference.svg" width="100%" alt="Spot the difference: by AntaraX not Powered by AntaraX; RM1,200 not RM 1,200; 11 Oct 2026 14:30 not 10/11/2026 2:30 PM; Nova for teams not Nova; support@go.antarax.ai not hello@reka.re; Organisation not Organization; loaders draw on and breathe, never spin or flip"></p>
 
 Now eight questions. Answer before you peek.
 
@@ -318,7 +318,7 @@ The AntaraX sparkle, alive, which every few seconds morphs into your product's l
 <details>
 <summary><b>8.</b> A customer needs help. Which address do they see?</summary>
 
-**support@antarax.ai**, for every product: "Need help? Email support@antarax.ai and the team will reply." Not a personal inbox, not `hello@reka.re`, and no promised reply time until one is kept.
+**support@go.antarax.ai**, for every product: "Need help? Email support@go.antarax.ai and the team will reply." Product emails are sent from `<product>@antarax.ai`, which receives nothing, so they set Reply-To to support. Not a personal inbox, not `hello@reka.re`, and no promised reply time until one is kept.
 </details>
 
 **Scoring:** eight right and you are ready to ship. Six or seven: re-read the two you missed. Fewer: back to Step 2, no shame.

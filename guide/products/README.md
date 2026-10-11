@@ -7,12 +7,13 @@ Sheets were written on 11 October 2026 from an audit of each product's repositor
 | Product | Kind | Mark | Accent | Status | Sheet |
 |---|---|---|---|---|---|
 | Yara | A-mark | A + Ripple icon | Ripple `#08B0B3` | Main (lead) | [yara.md](yara.md) |
-| Janka | Own-mark | The J that never closes | Janka cyan `#0CC4FB` (proposed) | Main | [janka.md](janka.md) |
-| PLExyz Grid | Own-mark | PLExyz shard over the zone grid | PLExyz violet `#2C09B2` | Main | [plexyz.md](plexyz.md) |
-| PLExyz Crowd | Own-mark | PLExyz shard (Crowd variant to be drawn) | PLExyz violet `#2C09B2` | Closed pilot | [plexyz.md](plexyz.md) |
-| Frame | A-mark | A + Frame icon | Frame `#074AF8` | Closed pilot | [frame.md](frame.md) |
-| Angka | Own-mark | The sheet stack | Angka plum `#6B3F6B` | Closed pilot | [angka.md](angka.md) |
-| Tinara | Own-mark | To be drawn (kerawang) | Tide pink `#E9579D` (proposed) | Closed pilot | [tinara.md](tinara.md) |
+| Janka | Own-mark | The J that never closes (restyled) | Janka cyan `#0CC4FB` | Main | [janka.md](janka.md) |
+| PLExyz Grid | Own-mark, REKA platform powered by AntaraX | Force field, shard and zone grid (kept) | Grid violet `#2C09B2` | Main | [plexyz.md](plexyz.md) |
+| PLExyz Trace | Own-mark, REKA platform | To be drawn in the PLExyz system | PLExyz | Module inside Janka | [plexyz.md](plexyz.md) |
+| PLExyz Crowd, Flow, Transit, Site, Ward, Yard | Own-mark, REKA platform | PLExyz system | PLExyz | Concepts (Crowd has a pilot app) | [plexyz.md](plexyz.md) |
+| AX Frame | A-mark | A + Frame icon | Frame `#074AF8` | Closed pilot | [frame.md](frame.md) |
+| Angka | Own-mark | The sheet stack (kept) | Angka plum `#6B3F6B` | Closed pilot | [angka.md](angka.md) |
+| Tinara | Own-mark | Kerawang (new) | Tinara plum `#5B2B4A`, gold | Closed pilot | [tinara.md](tinara.md) |
 | Loom | A-mark | A + Loom icon | Loom `#4904B3` | Closed pilot, no app yet | this page |
 | Motion | A-mark | A + Motion icon | Motion `#FC5D04` | Closed pilot, no app yet | this page |
 
@@ -30,9 +31,10 @@ One-line summary: kind, family, status.
 
 ## Name           how to write it, taglines in use, names to stop using
 ## Where it came from   dated facts with sources; the customer-facing heritage line, if any
-## Mark           files, what stays, what the restyle changes, variants, minimum size
+## Mark           files, what stays the product's own, any restyle, variants, minimum size
 ## Colour         accent, tint, dark, action colour; what changes from today
 ## Type           faces in use against the shared core
+## The AntaraX layer   the eight touchpoints from 12, for this product
 ## Credit lines   exactly what the product says about AntaraX and REKA
 ## Gaps in the app today   audit findings with file references
 ## Steps to converge       ordered, smallest first

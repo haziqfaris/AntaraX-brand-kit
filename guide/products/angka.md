@@ -42,9 +42,13 @@ Today: Poppins, Caveat (handwritten asides) and Geist Mono. Target: Poppins and 
 ## Credit lines
 
 - Chrome: "Angka · by AntaraX".
-- Sign-in, invite emails, the digest: "Angka by AntaraX, from REKA." (proposed, 12). Replaces "Angka, by REKA Inisiatif Sdn Bhd." (`lib/mail/invite-mail.ts:38`).
+- Sign-in, invite emails, the digest: "Angka by AntaraX, from REKA." (decided, 12). Replaces "Angka, by REKA Inisiatif Sdn Bhd." (`lib/mail/invite-mail.ts:38`).
 - Footers: the legal line, replacing "REKA Inisiatif Sdn Bhd" and "Run by REKA Inisiatif Sdn Bhd" as product credits.
 - reka.re pages that call it "Angka by REKA" move to "Angka by AntaraX" (with REKA's own page framing).
+
+## The AntaraX layer in Angka
+
+Angka keeps its face, paper and plum. AntaraX adds its cloth (`angka-cloth.svg`: congkak, bunga raya and padi in plum, lavender and peach) for sign-in, onboarding and the digest email band (never next to the face with bad news); the AI sparkle beside every AI match, categorisation and draft (Angka's evidence states stay as they are); intan eyebrows in plum; the legal footer.
 
 ## Gaps in the app today
 
@@ -61,4 +65,4 @@ Today: Poppins, Caveat (handwritten asides) and Geist Mono. Target: Poppins and 
 
 ## Open
 
-- None beyond the shared credit-line confirmation.
+- None.

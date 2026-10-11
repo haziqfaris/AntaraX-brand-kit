@@ -15,11 +15,11 @@ How each product carries its own mark, colour and credit line (own-mark and A-ma
 | Tier | Products | Where they appear | Primary CTA |
 |---|---|---|---|
 | **Main products** | Yara (lead), Janka, PLExyz Grid | Homepage, navigation, published pricing, own page under `/products/` | Book a demo |
-| **Closed pilots** | Frame, PLExyz Crowd, Angka, Tinara, Loom, Motion | Closed pilots page and their own landing page under `/pilots/` | Request pilot access |
+| **Closed pilots** | AX Frame, PLExyz Crowd, Angka, Tinara, Loom, Motion | Closed pilots page and their own landing page under `/pilots/` | Request pilot access |
 
 - **Every closed pilot runs as part of REKA's Managed AI service.** REKA sets it up on the customer's site and data, keeps it running, and improves it with them. Say so on every pilot page.
 - There is **no waitlist**. Pilots use "Request pilot access" (form at `/pilots/request`).
-- **Frame** is a closed pilot while the owner validates it.
+- **AX Frame** is a closed pilot while the owner validates it.
 - **Angka** keeps its own live landing page at `antarax.ai/angka` (a separate Worker). Link to it; do not replace it.
 - **Event organisers:** for PLExyz Crowd and event technology, AntaraX works with **Mole** ([mole.is](https://mole.is), [sense.mole.is](https://sense.mole.is)). Wherever events come up, say: "For event organisers we work with Mole (sense.mole.is) to provide event technology for your organisation."
 
@@ -32,7 +32,7 @@ Use these names, one-liners and questions exactly.
 | **Yara** | Main (lead) | See where every job stands, live. Run everyday work without the chaos. | "Where is every job right now, without phoning the floor?" | Ripple | /products/yara |
 | **Janka** | Main | Know what you'll need before you run out. | "What should we reorder, and how much, before we run out?" | Tide | /products/janka |
 | **PLExyz Grid** | Main (free for one facility) | Know what's in your warehouse, and where it goes. | "What is where, and where should the next load go?" | Edge | /products/plexyz |
-| **Frame** | Closed pilot | Know what your business depends on. | "What does our business pay for, and when does it renew?" | Frame | /pilots/frame |
+| **AX Frame** | Closed pilot | Know what your business depends on. | "What does our business pay for, and when does it renew?" | Frame | /pilots/frame |
 | **PLExyz Crowd** | Closed pilot | Know how your building is really used. No cameras. | "How many people are actually in this building right now, and do we need all this space?" | Edge | /pilots/plexyz-crowd |
 | **Angka** | Closed pilot | A finance workspace for business owners who are not accountants. | "Where does our money go, without needing an accountant to tell us?" | Tide | antarax.ai/angka |
 | **Tinara** | Closed pilot | Know which Malaysian companies to sell to, why, and how to open the conversation. | "Which companies should we call next, and what do we say when they pick up?" | Tide | /pilots/tinara |
@@ -44,7 +44,7 @@ Use these names, one-liners and questions exactly.
 - **Yara:** work orders and job cards. Workers tap Start, Hold or Complete on their phone; managers see live status, working time and full history. Installable on phones, tablets and desktops; English and Malay. Lead product and first subscription success. Endorsement: "Powered by AntaraX Ripple". Working lines: Work, Desk, Crew, Flow, View, Assist (View and Assist are working names).
 - **Janka:** AI inventory forecasting for manufacturers. Reads real consumption, recommends when and how much to reorder, drafts the order for a person to approve. It is not accounting software. Areas: Inventory, Forecast, Replenish, Risk, Insights.
 - **PLExyz Grid:** shows what is in a warehouse or yard on the site's own layout, tracks cargo, bookings and movements, and ranks where new stock should go by fit and retrieval distance. Free for one facility.
-- **Frame (AXF):** a manual-first digital-asset ledger: every subscription, API, domain and renewal in one list, warnings before a charge. Working lines: **Atlas** (inventory and location), **Layers** (stacks and dependencies), **Orbit** (renewals), **Pulse** (health), **Ledger** (costs), **Lens** (AI analysis). Rule: one world, six ways of seeing it, not six products. Frame never auto-discovers assets (see the axframe repo's guardrails).
+- **AX Frame (AXF):** a manual-first digital-asset ledger: every subscription, API, domain and renewal in one list, warnings before a charge. Working lines: **Atlas** (inventory and location), **Layers** (stacks and dependencies), **Orbit** (renewals), **Pulse** (health), **Ledger** (costs), **Lens** (AI analysis). Rule: one world, six ways of seeing it, not six products. Frame never auto-discovers assets (see the axframe repo's guardrails).
 - **PLExyz Crowd:** counts people per space from the Wi-Fi signals already in a building. No cameras, no faces, no identities. Claims rules in 03.
 - **Angka:** areas Capture, Match, Books, Forecast, Assist. Free while the pilot runs.
 - **Tinara:** Malaysia-first B2B intelligence. Ranks companies by fit, signals and match, and writes a brief: who to call, the opening angle, next steps on days 1, 3 and 7.
@@ -58,7 +58,7 @@ Use these names, one-liners and questions exactly.
 |---|---|---|---|---|---|
 | **Ripple** | Operate | "Work that moves." | Yara | `#08B0B3` | riak (one tap, spreading) |
 | **Edge** | Perceive | "Sense the real world." | PLExyz Grid, PLExyz Crowd | `#12B76A` | petak (Grid), orbit (Crowd) |
-| **Frame** | Understand | "Know what you depend on." | Frame | `#074AF8` | intan |
+| **Frame** | Understand | "Know what you depend on." | AX Frame | `#074AF8` | intan |
 | **Loom** | Synthesize | "Weave it together." | Loom | `#4904B3` | tenun |
 | **Motion** | Navigate | "Every vehicle, within reach." | Motion | `#FC5D04` | cengkih (a quadcopter from above) |
 | **Tide** | Optimize | "Read what's coming." | Janka, Angka, Tinara | `#E9579D` | bunga raya; padi (Janka), congkak (Angka), kerawang (Tinara) |
@@ -79,17 +79,17 @@ Tide has no icon in the master logo file yet; until it does, use the bunga raya 
 Understand → Operate → Optimize → Perceive → Navigate → Act → Synthesize. These organise the portfolio internally; the public grouping is simpler:
 
 - **Run your business:** Yara
-- **Understand your business:** Janka, Frame
+- **Understand your business:** Janka, AX Frame
 - **Automate your world:** PLExyz, Ripple automation, Loom, Motion
 
 ## Naming rules
 
 - Write **AntaraX** (capital A, capital X). The wordmark is set lower case ("antarax") in the logo only.
-- Products are named on their own: "Yara", not "AntaraX Yara". Families take the prefix: "AntaraX Ripple". Frame shares its family's name; its app calls it "AntaraX Frame" (see 12).
-- Every product is endorsed **"by AntaraX"** (12). Never credit a product "by REKA".
+- Products are named on their own: "Yara", not "AntaraX Yara". Families take the prefix: "AntaraX Ripple". Frame shares its family's name, so the product is **AX Frame** (owner, 11 October 2026; "Frame" alone is crowded in software). The family stays AntaraX Frame.
+- Every product is endorsed **"by AntaraX"** (12); PLExyz products, REKA's platform, say **"Powered by AntaraX"**. Never credit an AntaraX product "by REKA".
 - Write **AntaraX**, never "AntaraX AI".
 - Family name variants (from the master logo file): Full "AntaraX Motion", Medium "AX Motion", Short "AXM" (AXR, AXE, AXF, AXL). Use Full in customer copy; Medium and Short are for space-constrained marks and internal use.
-- **PLExyz** is always written PLExyz; the two products are "PLExyz Grid" and "PLExyz Crowd".
+- **PLExyz** is always written PLExyz. It is REKA's spatial intelligence platform, powered by AntaraX: Grid (flagship), Trace (built inside Janka), and the concepts Flow, Transit, Crowd, Site, Ward and Yard (products/plexyz.md).
 - **Never show internal codenames** to customers: AXLE (REKA's admin console), puzzle-ceplok, puzzle-parang and similar.
 
 ### Retired names (never use in new copy)

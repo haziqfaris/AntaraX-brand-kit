@@ -1,4 +1,4 @@
-/* AntaraX design tokens v1.1.0 (2026-10-11). Mirrors tokens.json. Import first, then build on the variables. */
+/* AntaraX design tokens v1.2.0 (2026-10-11). Mirrors tokens.json. Import first, then build on the variables. */
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap");
 
 :root {
@@ -26,13 +26,15 @@
   /* sparkle: inside the A mark, and the highlight palette for restyled product logos (guide/12) */
   --ax-sparkle-purple: #524FE9; --ax-sparkle-orange: #F47B3D; --ax-sparkle-cyan: #0CC4FB; --ax-sparkle-emerald: #12B76A; --ax-sparkle-indigo: #7171EA;
 
-  /* products: one accent per product app (guide/12); janka and tinara are proposed */
+  /* products: one accent per product app (guide/12) */
   --ax-yara:   #08B0B3; --ax-yara-tint:   #DCF4F4; --ax-yara-dark:   #046162; --ax-yara-action:   #0459F7;
   --ax-frame-app: #074AF8; --ax-frame-app-tint: #DCE6FE; --ax-frame-app-dark: #042988; --ax-frame-app-action: #0459F7;
   --ax-janka:  #0CC4FB; --ax-janka-tint:  #DDF7FE; --ax-janka-dark:  #076C8A; --ax-janka-action:  #076C8A;
-  --ax-plexyz: #2C09B2; --ax-plexyz-tint: #E1DDF4; --ax-plexyz-dark: #180562; --ax-plexyz-action: #2C09B2; --ax-plexyz-on-dark: #CBB6FA;
+  --ax-plexyz: #6040CC; /* line purple; Grid keeps its own violet below */
+  --ax-grid: #2C09B2; --ax-grid-tint: #E1DDF4; --ax-grid-dark: #180562; --ax-grid-action: #2C09B2; --ax-grid-hover: #3A14D6;
+  --ax-grid-north: #CBB6FA; --ax-grid-west: #4FD7D1; --ax-grid-east: #FD9001; --ax-grid-south: #FD4F85;
   --ax-angka:  #6B3F6B; --ax-angka-tint:  #EAE4EA; --ax-angka-dark:  #3B233B; --ax-angka-action:  #6B3F6B; --ax-angka-ground: #FAF7F2;
-  --ax-tinara: #E9579D; --ax-tinara-tint: #FCE7F1; --ax-tinara-dark: #803056; --ax-tinara-action: #803056;
+  --ax-tinara: #5B2B4A; --ax-tinara-tint: #E8E1E6; --ax-tinara-dark: #321829; --ax-tinara-action: #5B2B4A; --ax-tinara-gold: #D6A84F;
 
   /* status: only on real signal, never decoration */
   --ax-ok: #12B76A; --ax-warn: #F79009; --ax-fault: #F04438;

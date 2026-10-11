@@ -20,8 +20,8 @@ AntaraX is the AI product line of **REKA Inisiatif Sdn Bhd** (Kuala Lumpur, Mala
 - **Promise:** Put intelligence to work.
 - **What we are:** AI products for business. A product company, not a consultancy.
 - **Main products:** Yara (jobs and work orders), Janka (inventory forecasting), PLExyz Grid (warehouse and yard space).
-- **Architecture:** most products are older than AntaraX. They keep their own names and logos and are endorsed **"by AntaraX"**. Own-mark products (PLExyz, Janka, Angka, Tinara) keep a restyled logo; A-mark products (Yara, Frame, Loom, Motion) use the AntaraX A with their family icon. Every app shares the AntaraX core and keeps one accent of its own.
-- **Closed pilots,** each run as part of REKA's **Managed AI** service: Frame, PLExyz Crowd, Angka, Tinara, Loom, Motion.
+- **Architecture:** most products are older than AntaraX. They keep their own names, logos and style, and are endorsed **"by AntaraX"** (PLExyz, REKA's platform: **"Powered by AntaraX"**). AntaraX reaches into every product through one shared layer: the credit line, a cloth of AntaraX motifs in the product's own colours, the AI sparkle, the shared type and status colours, the intan eyebrow, the app tile and the footer (12).
+- **Closed pilots,** each run as part of REKA's **Managed AI** service: AX Frame, PLExyz Crowd, Angka, Tinara, Loom, Motion.
 - **Six families:** Ripple (Operate), Edge (Perceive), Frame (Understand), Loom (Synthesize), Motion (Navigate), Tide (Optimize).
 - **Look:** AntaraX blue `#0459F7`, navy text, white ground, Poppins and JetBrains Mono, and the BaTech corak (Malaysian batik rebuilt from technology).
 - **Voice:** plain language for non-technical buyers. Problem first, product second. Never invent customers, numbers or maturity.
@@ -33,7 +33,9 @@ guide/        the brand guide, numbered in reading order
 tokens/       tokens.json and tokens.css: colours, type, radius, spacing, motion
 assets/logo/  the A mark (blue and white) and the full lockup
 assets/families/  the five family icons and famicons.json (paths for the families animation)
-assets/products/  each product's mark as it is today, and proposed restyles (*-proposed.svg)
+assets/products/  each product's mark, lockups and cloth (AntaraX motifs in the product's colours)
+assets/ai/        the AI sparkle that marks AI work in every product
+tools/            build-product-cloths.mjs (needs the antarax-ai checkout for the motif code)
 guide/products/   one brand sheet per product
 guide/product-brands.html  the visual guide to product brands: every mark, restyle, lockup and accent
 photography/  PHOTO_BRIEF.md: shot list and image-AI prompts for every photo slot on antarax.ai
@@ -53,11 +55,11 @@ reference/    the master logo file, and the source documents the guide was built
 |---|---|
 | antarax.ai website (prototype and live build) | `haziqfaris/antarax-ai` (`prototype/site`, `site/`) |
 | Yara | `haziqfaris/yara` |
-| Janka | `haziqfaris/janka-inventory-intelligence` |
+| Janka (and PLExyz Trace, inside it) | `haziqfaris/janka-inventory-intelligence` |
 | PLExyz Grid, PLExyz Crowd | `haziqfaris/plexyz-grid`, `haziqfaris/plexyz-crowd` |
-| Frame (AXF) | `haziqfaris/axframe` |
+| AX Frame (AXF) | `haziqfaris/axframe` |
 | Angka | `haziqfaris/angka` (live at antarax.ai/angka) |
 | Tinara | `haziqfaris/tinara` |
 | REKA (parent brand) | `haziqfaris/reka.re`, `haziqfaris/reka-brand-kit` |
 
-Version 1.1, 11 October 2026: brand architecture and product sheets added.
+Version 1.2, 11 October 2026: brand architecture, product sheets and the AntaraX layer.

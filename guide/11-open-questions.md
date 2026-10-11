@@ -19,12 +19,20 @@ Decisions the owner has not made yet. Each needs an answer before the related wo
 
 ### Added 11 October 2026 (brand architecture, 12)
 
-15. **Credit lines.** Confirm the proposal in 12: products say "by AntaraX"; sign-in, splash, first emails, reports and product site footers add "from REKA" ("Janka by AntaraX, from REKA."); the legal line stays "AntaraX, a product line of REKA Inisiatif Sdn Bhd."; "by REKA" endorsements are retired. Review "from REKA" on 23 July 2027.
-16. **Janka restyle and accent.** Approve the recoloured mark (navy ink, sparkle orange and cyan; `assets/products/janka/*-proposed.svg`) and moving the app's primary from REKA orange to Janka dark `#076C8A` with cyan `#0CC4FB` as accent. Also approve the tagline "Track. Forecast. Reorder." (replaces "Unlock", a banned word).
-17. **PLExyz Grid restyle.** Approve the recoloured zones (sparkle cyan, orange, emerald) and shard (sparkle indigo and purple, violet) in `assets/products/plexyz/plexyz-grid-mark-proposed.svg`.
-18. **PLExyz Crowd mark.** Brief: the PLExyz hexagon and shard standing on orbit rings. Approve the brief so it can be drawn.
-19. **Tinara.** Approve Tide pink `#E9579D` as Tinara's accent (its plum is too close to Angka's) and a new mark drawn from the kerawang motif.
-20. **Frame's name.** Confirm "AntaraX Frame" as the product's full name inside its app and emails, and "Frame" beside other products.
-21. **PLExyz Trace inside Janka.** Rename it as a Janka area, or present it as PLExyz data used by Janka?
+15. ~~**Credit lines.**~~ Approved 11 October (10).
+16. **Janka accent and tagline.** The restyled mark is approved (10). Still to confirm: moving the app's primary from REKA orange to Janka dark `#076C8A` with cyan `#0CC4FB` as accent, and the tagline "Track. Forecast. Reorder." (replaces "Unlock", a banned word).
+17. ~~**PLExyz Grid restyle.**~~ Withdrawn: Grid keeps its mark (10).
+18. **PLExyz Crowd and Trace marks.** Draw both in the PLExyz system: the force field and shard, with scattered entities on the grid (Crowd) and tags with last-seen points (Trace).
+19. **Tinara mark option.** Choose A (pierced tile, recommended, with B for large moments), B or C (`assets/products/tinara/`, products/tinara.md).
+20. ~~**Frame's name.**~~ AX Frame (10).
+21. ~~**PLExyz Trace inside Janka.**~~ A PLExyz product built inside Janka (10).
 22. **"PLExyz Edge Gateway".** Rename to "PLExyz Gateway" so it does not collide with the AntaraX Edge family.
-23. **Product heritage in copy.** Which origin facts may customers see (for example, the year PLExyz started, Yara's first customer, the pandemic origin of Yara)? Until confirmed, product sheets keep them internal.
+23. **Product heritage in copy.** Which origin facts may customers see (for example, the year PLExyz started, Grid's flagship customer and pricing, Yara's first customer, the pandemic origin of Yara)? Until confirmed, product sheets keep them internal.
+
+### Added 11 October 2026 (second review)
+
+24. **PLExyz purple.** The line brief gives `#6040CC` (shard accents `#865ACE`, `#281B4F`); the Grid mark and app use violet `#2C09B2` and shard purples `#8542ED` / `#6A2EF0` / `#4407FB`. Grid keeps its own. Which do new PLExyz products take?
+25. **PLExyz master mark.** The purple circular PLExyz mark in the line overview has no file in any repository. Add the final SVG to `assets/products/plexyz/`.
+26. **PLExyz Crowd's focus.** The pilot app counts building occupancy from Wi-Fi; the line brief describes event safety and congestion in stadiums and venues. One product or two?
+27. **Grid's top-bordered stat cards.** 07 rules out coloured top borders in every product UI; Grid's dashboard uses them in zone colours. Replace them (recommended), or allow them inside PLExyz?
+28. **Where PLExyz is sold.** The line brief describes enterprise-led, consultative sales by REKA; antarax.ai lists Grid as a main product with "Book a demo", and the reka.re playbook says REKA does not sell PLExyz. Settle which site leads for PLExyz.

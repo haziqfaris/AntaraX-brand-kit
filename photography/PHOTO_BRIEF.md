@@ -83,7 +83,7 @@ All 43 slots, grouped by page. Generate each **Prompt** after the style block, a
 | `janka-2.jpg` | Portrait 4:5 | Green | A procurement lead reads a drafted purchase order on a laptop, printed supplier quotes beside it. Screen out of focus. | Janka drafts the order. A person approves it. |
 | `janka-3.jpg` | Wide 21:9 | Cool | A finance manager and an operations lead talk through stock levels at a whiteboard in a Penang plant office. | Finance and operations, working from one view of the stock. |
 
-### PLExyz Grid · antarax.ai/plexyz
+### PLExyz Grid · antarax.ai/plexyz-grid
 
 | File | Shape | Grade | Prompt | Caption on the site |
 | --- | --- | --- | --- | --- |

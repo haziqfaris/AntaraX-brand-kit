@@ -67,7 +67,7 @@ All 43 slots, grouped by page. Generate each **Prompt** after the style block, a
 | --- | --- | --- | --- | --- |
 | `products-1.jpg` | Landscape 16:9 | Warm | A storekeeper scans a bin label in a narrow aisle of a Klang Valley warehouse while a forklift passes behind. | Jobs, stock and space: the everyday work the products are built around. |
 
-### Yara · antarax.ai/products/yara
+### Yara · antarax.ai/yara
 
 | File | Shape | Grade | Prompt | Caption on the site |
 | --- | --- | --- | --- | --- |
@@ -75,7 +75,7 @@ All 43 slots, grouped by page. Generate each **Prompt** after the style block, a
 | `yara-2.jpg` | Portrait 4:5 | Cool | A worker taps a large button on a phone app at a laser-cutting station. Hands and screen in focus. | After: one tap updates the board. |
 | `yara-3.jpg` | Wide 21:9 | Green | A supervisor checks a live job board on a phone beside a fabrication bay. Screen out of focus. | Every order, without leaving the floor. |
 
-### Janka · antarax.ai/products/janka
+### Janka · antarax.ai/janka
 
 | File | Shape | Grade | Prompt | Caption on the site |
 | --- | --- | --- | --- | --- |
@@ -83,14 +83,14 @@ All 43 slots, grouped by page. Generate each **Prompt** after the style block, a
 | `janka-2.jpg` | Portrait 4:5 | Green | A procurement lead reads a drafted purchase order on a laptop, printed supplier quotes beside it. Screen out of focus. | Janka drafts the order. A person approves it. |
 | `janka-3.jpg` | Wide 21:9 | Cool | A finance manager and an operations lead talk through stock levels at a whiteboard in a Penang plant office. | Finance and operations, working from one view of the stock. |
 
-### PLExyz Grid · antarax.ai/products/plexyz
+### PLExyz Grid · antarax.ai/plexyz
 
 | File | Shape | Grade | Prompt | Caption on the site |
 | --- | --- | --- | --- | --- |
 | `plexyz-1.jpg` | Landscape 16:9 | Cool | A warehouse supervisor walks a racked aisle in a Port Klang bonded warehouse, checking bay labels against a printed list. | Finding a unit by walking the aisles. |
 | `plexyz-2.jpg` | Wide 21:9 | Cool | Stacked containers in a Port Klang yard at dusk, a reach stacker moving a box between rows. No shipping-line logos readable. | Yards, warehouses and bonded stores, each as one live layout. |
 
-### Frame (closed pilot) · antarax.ai/pilots/frame
+### Frame (closed pilot) · antarax.ai/frame
 
 | File | Shape | Grade | Prompt | Caption on the site |
 | --- | --- | --- | --- | --- |

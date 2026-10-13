@@ -23,7 +23,8 @@ Own-mark product in the Tide family. Main product. Live at janka.antarax.ai. AI 
   - Every forecast shows how far it can be trusted (built).
   - AI review is advisory; people decide (built).
   - Reorder figures are in ringgit (built).
-- Never say: customers or outcomes, prices, integrations, certifications, a native app, or "unlock".
+  - Shows which stock isn't moving (owner, 13 October 2026), so the outcome line "Free up cash stuck in stock that isn't moving" may be used (03, claims rule 3).
+- Never say: customers, measured outcomes (figures, percentages, guarantees), prices, integrations, certifications, a native app, or "unlock".
 
 **How it is sold.** Main product, sold as part of REKA's Managed AI service for now. Call to action: Book a demo. No prices are set and billing is not live. The app's plans (Free, Growth, Enterprise) move to the Rise names (13).
 

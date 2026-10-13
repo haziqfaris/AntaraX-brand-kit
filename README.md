@@ -91,6 +91,7 @@ marketing/             ready to hand over: printers, partners, events (start at 
   print/               print-ready PDFs, one folder per piece: the roll-up bunting, the A3 QR poster
   logo-pack/           the AntaraX logos as SVG, vector PDF and transparent PNG, for printers and partners
   qr/                  the QR codes the print uses, as vectors
+  video/               the 60 s intro video: animatic, stills and storyboard
   photography/         PHOTO_BRIEF.md: shot list and image-AI prompts for every photo slot on antarax.ai
 
 tools/                 the scripts that build all of the above (each says how to run it at the top)

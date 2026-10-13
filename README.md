@@ -75,13 +75,15 @@ guide/products/        one brand sheet per product
 guide/product-brands.html  the visual guide: every logo, motif, BaTech set, loader and palette, side by side
 tokens/tokens.css      AntaraX tokens: colours, family pairs, type, radius, spacing, motion (and tokens.json)
 tokens/product-palettes.css  each product's full palette: scales, roles, neutrals, surfaces, charts (and .json)
-assets/logo/           the AntaraX A (blue and white) and the full lockup
+assets/logo/           the AntaraX A (blue and white), the full lockup, the wordmark (navy and white), and the kain A (closed and open)
 assets/logos/          every product logo on the same square, ready to drop in
 assets/products/       each product's marks, lockups, motifs and loaders, at their source sizes
 assets/families/       the six family icons, famicons.json, and Quiet bands per family
 assets/batech/         seven BaTech sets (AntaraX and six families): panel, band, spot in colour, quiet, white
 assets/icons/features/ 60 line icons for features and sub-products
-assets/ai/             the AI sparkle, drawn from the master A
+assets/ai/             the AI sparkle, drawn from the master A, and a one-colour version for bullets
+assets/print/          event print: the roll-up bunting and the A3 QR poster, as print-ready PDFs
+assets/reka/           REKA's lockup, orange and white, for the "AI product line of REKA" line (REKA's own kit is the source)
 assets/readme/         the pictures on this page, built by tools/build-readme-art.mjs
 tools/                 the scripts that build all of the above (each says how to run it at the top)
 tools/fonts/           Poppins and JetBrains Mono, for drawing text into SVGs (SIL Open Font License)

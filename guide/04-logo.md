@@ -16,6 +16,8 @@ The device mark is an **A** in AntaraX blue `#0459F7` built from three solid pat
 - The centre of the A is a **real mask** (a circle cut from the three blue paths), not a painted shape. Final empty-space size: **95px** on the master artboard.
 - The **wordmark** is "antarax" in lower case, set with the mark. In running text always write "AntaraX".
 - Files: `antarax-mark.svg` (blue on light), `antarax-mark-white.svg` (white on blue or dark), `antarax-mark-full.svg` (full lockup).
+- **Wordmark files:** `antarax-wordmark.svg` (navy letters, blue A, on light) and `antarax-wordmark-white.svg` (white letters, white A, colour sparkle, on navy, blue and dark grounds). "ant" + the A + "rax", Poppins Bold, letters drawn as outlines so they never depend on a font; built from the master file by `tools/build-wordmark.mjs`. Use the wordmark where the brand is named once and large: print, covers, the top of a page.
+- **One-colour sparkle:** `assets/ai/sparkle-mono.svg` (currentColor) for bullets and eyebrows, in the eyebrow's colour. Never as the AI marker, which keeps its colours.
 
 ## The kain A
 

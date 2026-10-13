@@ -15,7 +15,11 @@ const IMG = {
   kainOpen: F('assets/logo/antarax-a-kain-open.svg'),
   qr: F('assets/print/qr-antarax-meet.svg'), // https://antarax.ai/meet, error correction Q
   reka: F('assets/reka/reka-lockup-white.svg'),
+  wordmark: F('assets/logo/antarax-wordmark-white.svg'),
 };
+// the one-colour sparkle, inline so it takes the eyebrow's colour
+const SPARK = fs.readFileSync(KIT + 'assets/ai/sparkle-mono.svg', 'utf8').trim();
+const spark = (size) => SPARK.replace('<svg ', `<svg style="width:${size}px;height:${size}px;flex:none" `);
 const mm = (v) => v / 25.4 * 96;
 const fonts = [400, 600, 700].map((w) => `@font-face{font-family:P;font-weight:${w};src:url(${F(`tools/fonts/poppins-${w}.woff`)})}`).join('');
 const NAVY = 'background-color:#071233;background-image:linear-gradient(rgba(255,255,255,0.045) 2px,transparent 2px),linear-gradient(90deg,rgba(255,255,255,0.045) 2px,transparent 2px);';
@@ -29,19 +33,20 @@ const sheet = (tw, th, bleed, inner) => {
 </style></head><body><div class="trim">${inner}</div></body></html>` };
 };
 
-// ---- roll-up bunting, 80 x 200 cm: the kain A large; the QR card low, just above the REKA line at the foot ----
+// ---- roll-up bunting, 80 x 200 cm: the wordmark, the headline, the kain A centred between the text and the QR
+// card, the card low, just above the REKA line at the foot ----
 // The bottom 8 cm goes into the stand's base: only the REKA lines sit near it.
 const BW = mm(800), BH = mm(2000);
 const A = 2544, AH = Math.round(A * 780 / 760), eye = { x: 0.494 * A, y: (706 - 240) / 780 * AH }, glow = 0.333 * A;
 const bunting = `<div style="width:100%;height:100%;box-sizing:border-box;padding:300px 240px 330px;display:flex;flex-direction:column">
-<span style="font-size:190px;font-weight:600;letter-spacing:-0.01em;line-height:1.2">AntaraX</span>
-<div style="margin-top:250px;display:flex;align-items:center;gap:44px;color:#7FD9FF;font-size:116px;font-weight:600"><span style="width:62px;height:62px;background:#7FD9FF;transform:rotate(45deg);border-radius:12px;flex:none"></span><span>AI products for business</span></div>
+<img src="${IMG.wordmark}" alt="AntaraX" style="height:230px;width:auto;align-self:flex-start">
+<div style="margin-top:250px;display:flex;align-items:center;gap:44px;color:#7FD9FF;font-size:116px;font-weight:600">${spark(110)}<span>AI products for business</span></div>
 <h1 style="margin:90px 0 0;font-size:300px;line-height:1.04;font-weight:700;letter-spacing:-0.025em"><span style="display:block;white-space:nowrap">Put intelligence</span><span style="display:block;white-space:nowrap">to work.</span></h1>
 <p style="margin:120px 0 0;font-size:124px;line-height:1.3;color:#C5CCF7">Software that runs your jobs, your stock and your space, with AI where it helps.</p>
-<div style="position:relative;margin-top:200px;width:${A}px;height:${AH}px;flex:none">
+<div style="position:relative;margin:auto 0;width:${A}px;height:${AH}px;flex:none">
 <div style="position:absolute;left:${(eye.x - glow / 2).toFixed(0)}px;top:${(eye.y - glow / 2).toFixed(0)}px;width:${glow.toFixed(0)}px;height:${glow.toFixed(0)}px;border-radius:50%;background:radial-gradient(circle,rgba(4,89,247,0.42) 0%,rgba(4,89,247,0.16) 45%,rgba(7,18,51,0) 72%)"></div>
 <img src="${IMG.kain}" alt="" style="position:absolute;left:0;top:0;width:${A}px;height:${AH}px"></div>
-<div style="margin-top:auto;background:#fff;border-radius:96px;padding:100px 110px;display:flex;align-items:center;gap:110px;color:#0B1B4F">
+<div style="background:#fff;border-radius:96px;padding:100px 110px;display:flex;align-items:center;gap:110px;color:#0B1B4F">
 <img src="${IMG.qr}" alt="" style="width:600px;height:600px;flex:none">
 <div style="display:flex;flex-direction:column;gap:28px"><span style="font-size:150px;font-weight:700;line-height:1.05">Scan to meet us</span><span style="font-size:170px;font-weight:600;color:#0459F7;line-height:1.05">antarax.ai/meet</span><span style="font-size:84px;color:#3B4469">Get more out of AI than answers.</span></div></div>
 <div style="margin-top:140px;display:flex;align-items:center;gap:56px"><span style="font-size:96px;color:#C5CCF7">AntaraX is the AI product line of</span><img src="${IMG.reka}" alt="REKA" style="height:170px;width:606px"></div>
@@ -51,7 +56,7 @@ const bunting = `<div style="width:100%;height:100%;box-sizing:border-box;paddin
 const AW = mm(297), AHt = mm(420);
 const aW = 820, aH = Math.round(aW * 780 / 760), hx = 0.494 * aW, hy = (706 - 240) / 780 * aH, q = 420;
 const a3 = `<div style="width:100%;height:100%;box-sizing:border-box;padding:84px 80px 70px;display:flex;flex-direction:column;align-items:center;text-align:center">
-<div style="display:flex;align-items:center;gap:16px;color:#7FD9FF;font-size:32px;font-weight:600"><span style="width:18px;height:18px;background:#7FD9FF;transform:rotate(45deg);border-radius:4px;flex:none"></span><span>AntaraX · AI products for business</span></div>
+<div style="display:flex;align-items:center;gap:16px;color:#7FD9FF;font-size:32px;font-weight:600">${spark(34)}<span>AntaraX · AI products for business</span></div>
 <h1 style="margin:26px 0 0;font-size:96px;line-height:1.05;font-weight:700;letter-spacing:-0.02em">Nice to meet you.</h1>
 <div style="position:relative;margin-top:36px;width:${aW}px;height:${aH}px;flex:none">
 <img src="${IMG.kainOpen}" alt="" style="position:absolute;left:0;top:0;width:${aW}px;height:${aH}px">

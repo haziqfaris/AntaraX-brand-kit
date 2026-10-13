@@ -2,6 +2,11 @@
 
 Owner decisions that shape the brand, newest first. Add to the top; never rewrite history. Earlier strategy changes are in `reference/strategy/` (playbook amendments v0.3–v0.5, RECONCILIATION).
 
+## 13 October 2026
+
+- **The kain A joins the kit** (owner): `assets/logo/antarax-a-kain.svg`, the antarax.ai hero, and `antarax-a-kain-open.svg`, the same A opened like the family A-marks with its eye left free (04). On dark grounds the eye shows the ground with a soft blue glow, never a white disc.
+- **Event print** (owner): a navy roll-up bunting at 80 x 200 cm (headline, the kain A large, a QR card, "AntaraX is the AI product line of REKA") and an A3 QR poster ("Nice to meet you.", the open kain A with the QR code in its eye). Both QR codes lead to antarax.ai/meet. Files in `assets/print/`, built by `tools/build-print.mjs`.
+
 ## 11 October 2026 (sixteenth review)
 
 The owner answered the questions raised by the product briefs (11, questions 8 to 15):

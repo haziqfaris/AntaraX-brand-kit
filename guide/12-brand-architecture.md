@@ -56,7 +56,7 @@ A product is own-mark when it arrived with an identity people already recognise.
 
 1. **Credit line:** "by AntaraX" (see below).
 2. **BaTech, quietly:** the product's signature motif in empty states, and a Quiet band of its family's corak on dividers, sign-in and email headers, following the BaTech guidelines (see below).
-3. **AI sparkle:** the AntaraX sparkle, the one inside the A (`assets/ai/sparkle.svg`, taken from the master mark) beside every piece of AI work: a forecast, a ranking, a drafted order or brief, a suggested match. The same sign in every product tells a customer that this is AntaraX intelligence. Never decoration, never a logo.
+3. **AI sparkle:** the AntaraX sparkle, the one inside the A (`assets/antarax/sparkle.svg`, taken from the master mark) beside every piece of AI work: a forecast, a ranking, a drafted order or brief, a suggested match. The same sign in every product tells a customer that this is AntaraX intelligence. Never decoration, never a logo.
 4. **Thinking motion:** while AI works for more than a moment, the product's own mark moves the AntaraX way, its separate pieces drifting in and out of step (04, animation 2). Respect reduced motion.
 5. **Shared core:** Poppins, JetBrains Mono for every number, the shared status colours, the AntaraX-blue focus ring (see "Colour").
 6. **Intan eyebrow:** section eyebrows start with the intan (a 9px diamond) in the product's accent.

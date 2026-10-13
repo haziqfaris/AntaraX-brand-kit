@@ -64,7 +64,7 @@ Radial motifs may turn slowly; others stay still. All motion stops for reduced m
 
 ## Photography
 
-Until real photos exist, photo slots show a kain panel instead of a stock image. The shot list and image-AI prompts for every slot are in [photography/PHOTO_BRIEF.md](../photography/PHOTO_BRIEF.md). When photos come: real sites, real people who agreed to be photographed, natural light, no "AI brain" or stock digital-transformation imagery.
+Until real photos exist, photo slots show a kain panel instead of a stock image. The shot list and image-AI prompts for every slot are in [marketing/photography/PHOTO_BRIEF.md](../marketing/photography/PHOTO_BRIEF.md). When photos come: real sites, real people who agreed to be photographed, natural light, no "AI brain" or stock digital-transformation imagery.
 
 ## Don't
 

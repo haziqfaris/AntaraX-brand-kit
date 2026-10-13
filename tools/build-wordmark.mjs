@@ -2,9 +2,9 @@
 // second "a". Rebuilt from the master file's live wordmark (reference/antarax-brand-guidelines.html, .wordmark:
 // letter-spacing -0.01em; the A in a 0.82em box, 0.005em either side, 0.035em below centre) with the letters as
 // outlines, so it never depends on a font. Two files:
-//   assets/logo/antarax-wordmark.svg        navy letters, blue A, colour sparkle (light grounds)
-//   assets/logo/antarax-wordmark-white.svg  white letters, white A, colour sparkle (navy, blue and dark grounds; 04)
-// Also writes assets/ai/sparkle-mono.svg, the sparkle in one colour (currentColor), for bullets and small marks.
+//   assets/antarax/antarax-wordmark.svg        navy letters, blue A, colour sparkle (light grounds)
+//   assets/antarax/antarax-wordmark-white.svg  white letters, white A, colour sparkle (navy, blue and dark grounds; 04)
+// Also writes assets/antarax/sparkle-mono.svg, the sparkle in one colour (currentColor), for bullets and small marks.
 //   NODE_PATH=$(npm root -g) node tools/build-wordmark.mjs
 import fs from 'node:fs';
 import { createRequire } from 'node:module';
@@ -47,10 +47,10 @@ const make = (text, a, mid) => `<svg xmlns="http://www.w3.org/2000/svg" viewBox=
 <g transform="translate(${r(ix)} ${r(iy)}) scale(${r(k * 1e5) / 1e5})"><g transform="translate(268 265)"><g mask="url(#${mid})">${aPaths.map((d) => `<path d="${d}" fill="${a}"/>`).join('')}</g><g>${sPaths.map(([d, c]) => `<path d="${d}" fill="${c}"/>`).join('')}</g></g></g>
 </svg>\n`;
 const write = (p, s) => { fs.writeFileSync(new URL(p, KIT), s); console.log(p, `${(s.length / 1024).toFixed(1)} KB`); };
-write('assets/logo/antarax-wordmark.svg', make('#0B1B4F', '#0459F7', 'axw-hole'));
-write('assets/logo/antarax-wordmark-white.svg', make('#FFFFFF', '#FFFFFF', 'axw-hole-w'));
+write('assets/antarax/antarax-wordmark.svg', make('#0B1B4F', '#0459F7', 'axw-hole'));
+write('assets/antarax/antarax-wordmark-white.svg', make('#FFFFFF', '#FFFFFF', 'axw-hole-w'));
 
-// the sparkle in one colour: every piece of assets/ai/sparkle.svg filled with currentColor, with a hairline in the
+// the sparkle in one colour: every piece of assets/antarax/sparkle.svg filled with currentColor, with a hairline in the
 // same colour so the seams between the pieces close
-const sp = read('assets/ai/sparkle.svg').replace(/style="fill:[^;"]+;?"/g, 'fill="currentColor" stroke="currentColor" stroke-width="0.8" stroke-linejoin="round"').replace(/fill="#[0-9A-Fa-f]{3,6}"/g, 'fill="currentColor"').replace('aria-label="AntaraX AI sparkle"', 'aria-label="AntaraX AI sparkle, one colour"');
-write('assets/ai/sparkle-mono.svg', sp);
+const sp = read('assets/antarax/sparkle.svg').replace(/style="fill:[^;"]+;?"/g, 'fill="currentColor" stroke="currentColor" stroke-width="0.8" stroke-linejoin="round"').replace(/fill="#[0-9A-Fa-f]{3,6}"/g, 'fill="currentColor"').replace('aria-label="AntaraX AI sparkle"', 'aria-label="AntaraX AI sparkle, one colour"');
+write('assets/antarax/sparkle-mono.svg', sp);

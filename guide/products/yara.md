@@ -77,7 +77,7 @@ Poppins and JetBrains Mono. Aligned. (The mono font's variable is still named `p
 
 ## The AntaraX layer in Yara
 
-Yara is A-mark and already carries most of the layer. BaTech: **awan larat** (`yara-motif.svg`, Ripple pair, approved by the owner) as the picture in empty states: the old scroll redrawn as a circuit trace, Yara's job today of carrying people's work into digital. When Yara automates, its automation screens take **sungai** (`yara-automation-motif.svg`). Riak was not used because it repeats the Ripple wave in Yara's logo (14); the Ripple **Rings** composition (`assets/families/compositions/ripple-rings.svg`) in a corner of the sign-in panel and splash; the Ripple drift band under email headers. The AI sparkle (Yara's own `design-system/brand/spark-x.svg` is the source of `assets/ai/spark-x.svg`) beside AI intake and suggestions.
+Yara is A-mark and already carries most of the layer. BaTech: **awan larat** (`yara-motif.svg`, Ripple pair, approved by the owner) as the picture in empty states: the old scroll redrawn as a circuit trace, Yara's job today of carrying people's work into digital. When Yara automates, its automation screens take **sungai** (`yara-automation-motif.svg`). Riak was not used because it repeats the Ripple wave in Yara's logo (14); the Ripple **Rings** composition (`assets/families/compositions/ripple-rings.svg`) in a corner of the sign-in panel and splash; the Ripple drift band under email headers. The AI sparkle (Yara's own `design-system/brand/spark-x.svg` is the source of `assets/antarax/spark-x.svg`) beside AI intake and suggestions.
 
 ## Gaps in the app today
 

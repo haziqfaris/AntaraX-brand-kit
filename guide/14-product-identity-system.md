@@ -88,7 +88,7 @@ Tinara's logo is **the signal**: one garnet company with a gold signal reaching 
 
 ### Every logo on the same square
 
-`assets/logos/` holds every logo on a square canvas, measured from its drawn shape with the same 8% margin on every side, so tiles, lockups and lists line up whatever the original file's proportions (`tools/build-square-logos.mjs`). Use these files in products and on antarax.ai; the files in `assets/products/` stay the sources.
+`assets/product-logos/` holds every logo on a square canvas, measured from its drawn shape with the same 8% margin on every side, so tiles, lockups and lists line up whatever the original file's proportions (`tools/build-square-logos.mjs`). Use these files in products and on antarax.ai; the files in `assets/products/` stay the sources.
 
 Logos are built by `tools/build-logos.mjs`.
 

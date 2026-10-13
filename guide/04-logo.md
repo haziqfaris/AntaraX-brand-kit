@@ -1,6 +1,6 @@
 # 04 Logo
 
-Master file: [`reference/antarax-brand-guidelines.html`](../reference/antarax-brand-guidelines.html) (open in a browser; it has light and dark previews, every lockup and the animations). Production files: `assets/logo/`, `assets/families/`.
+Master file: [`reference/antarax-brand-guidelines.html`](../reference/antarax-brand-guidelines.html) (open in a browser; it has light and dark previews, every lockup and the animations). Production files: `assets/antarax/`, `assets/families/`.
 
 ## The A mark
 
@@ -17,7 +17,7 @@ The device mark is an **A** in AntaraX blue `#0459F7` built from three solid pat
 - The **wordmark** is "antarax" in lower case, set with the mark. In running text always write "AntaraX".
 - Files: `antarax-mark.svg` (blue on light), `antarax-mark-white.svg` (white on blue or dark), `antarax-mark-full.svg` (full lockup).
 - **Wordmark files:** `antarax-wordmark.svg` (navy letters, blue A, on light) and `antarax-wordmark-white.svg` (white letters, white A, colour sparkle, on navy, blue and dark grounds). "ant" + the A + "rax", Poppins Bold, letters drawn as outlines so they never depend on a font; built from the master file by `tools/build-wordmark.mjs`. Use the wordmark where the brand is named once and large: print, covers, the top of a page.
-- **One-colour sparkle:** `assets/ai/sparkle-mono.svg` (currentColor) for bullets and eyebrows, in the eyebrow's colour. Never as the AI marker, which keeps its colours.
+- **One-colour sparkle:** `assets/antarax/sparkle-mono.svg` (currentColor) for bullets and eyebrows, in the eyebrow's colour. Never as the AI marker, which keeps its colours.
 
 ## The kain A
 
@@ -25,15 +25,15 @@ The A mark as a window onto the BaTech kain (06): the A filled with the corak on
 
 | File | What it is | Use |
 |---|---|---|
-| `assets/logo/antarax-a-kain.svg` | The kain A with the sparkle in its 95 eye | Heroes, banners, buntings, covers |
-| `assets/logo/antarax-a-kain-open.svg` | The same A opened the way the family A-marks open (the eye grows from 95 to 300), the sparkle removed, a blue line round the opening | A frame for something placed in the eye: a QR code, a photo, an event's own art |
+| `assets/antarax/antarax-a-kain.svg` | The kain A with the sparkle in its 95 eye | Heroes, banners, buntings, covers |
+| `assets/antarax/antarax-a-kain-open.svg` | The same A opened the way the family A-marks open (the eye grows from 95 to 300), the sparkle removed, a blue line round the opening | A frame for something placed in the eye: a QR code, a photo, an event's own art |
 
 - **Large only.** Under about 200px use the plain A (`antarax-mark.svg`): the corak turns to noise when small.
 - **On dark grounds** (navy `#071233`, REKA near-black) the eye shows the ground; a soft AntaraX blue glow behind the sparkle keeps it lit, as on reka.re. Never put a white disc behind the eye.
 - **In the open A's eye**, centre the object on the eye (49.4% across, 59.7% down the file's box) and keep it inside the opening: a square up to about 55% of the A's width fits. A QR code sits on a white tile.
 - Never crop, stretch or recolour the kain, add a second outline, or put the kain A beside the plain A.
 - Source: the antarax.ai hero (`haziqfaris/antarax-ai`, `prototype/site/src/illustrations.mjs`, `heroWindow`). When the hero changes, copy it over `antarax-a-kain.svg` and run `node tools/build-kain-a-open.mjs` for the open one.
-- Event print built with it: `assets/print/` (the roll-up bunting and the A3 QR poster, `tools/build-print.mjs`).
+- Event print built with it: `marketing/print/` (the roll-up bunting and the A3 QR poster, `tools/build-print.mjs`).
 
 ## Product family lockups
 

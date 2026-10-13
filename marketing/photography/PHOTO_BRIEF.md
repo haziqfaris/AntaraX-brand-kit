@@ -1,6 +1,6 @@
 # AntaraX photo brief
 
-Version 1.0, 10 October 2026. Prompts for an image AI (or a photographer's shot list) for every photo slot on antarax.ai. Brand rules behind it: [guide/06 BaTech illustration](../guide/06-batech-illustration.md) (Photography) and [guide/03 Voice and claims](../guide/03-voice-and-claims.md).
+Version 1.0, 10 October 2026. Prompts for an image AI (or a photographer's shot list) for every photo slot on antarax.ai. Brand rules behind it: [guide/06 BaTech illustration](../../guide/06-batech-illustration.md) (Photography) and [guide/03 Voice and claims](../../guide/03-voice-and-claims.md).
 
 ## How to use this brief
 

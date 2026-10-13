@@ -95,7 +95,7 @@ const pct = (n) => `${+n.toFixed(3)}%`;
   style += `@keyframes halo{0%,100%{transform:scale(1);opacity:.55}50%{transform:scale(1.08);opacity:.9}}.halo{animation:halo 4.8s ease-in-out infinite}`;
   style += `@keyframes drift{0%,100%{transform:translate(0,0)}50%{transform:translate(-14px,8px)}}.drift{animation:drift 18s ease-in-out infinite}`;
   style += `@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}.rise{animation:rise .9s ease-out both}`;
-  const logos = P.map((p, i) => { style += `@keyframes l${i}{${kfLogo(i)}}@keyframes c${i}{${kfCap(i)}}`; return `<g class="b" style="animation:l${i} ${T}s ease-in-out infinite;opacity:0">${inline(`assets/logos/${p.logo}.svg`, cx - L / 2, cy - L / 2, L, L)}</g>`; }).join('');
+  const logos = P.map((p, i) => { style += `@keyframes l${i}{${kfLogo(i)}}@keyframes c${i}{${kfCap(i)}}`; return `<g class="b" style="animation:l${i} ${T}s ease-in-out infinite;opacity:0">${inline(`assets/product-logos/${p.logo}.svg`, cx - L / 2, cy - L / 2, L, L)}</g>`; }).join('');
   const caps = P.map((p, i) => { const f = FAM[p.fam]; const label = `${p.name} · ${p.fam}`; const w = width(label, 20, F.semibold); return `<g style="animation:c${i} ${T}s linear infinite;opacity:0"><circle cx="${r1(cx - w / 2 - 14)}" cy="${cy + R + 47}" r="6" fill="${f.c}"/>${text(label, cx + 6, cy + R + 54, 20, { f: F.semibold, fill: '#FFFFFF', anchor: 'middle' })}</g>`; }).join('');
   const grid = Array.from({ length: 33 }, (_, i) => `<path d="M${i * 40},0V${H}" />`).join('') + Array.from({ length: 12 }, (_, i) => `<path d="M0,${i * 40}H${W}" />`).join('');
   const chips = [['9', 'products'], ['6', 'families'], ['1', 'kit']];
@@ -106,9 +106,9 @@ const pct = (n) => `${+n.toFixed(3)}%`;
 <g class="drift" opacity=".5">${inline('assets/batech/antarax/spot-white.svg', cx - 250, cy - 250, 500, 500)}</g>
 <circle class="b halo" cx="${cx}" cy="${cy}" r="${R + 70}" fill="url(#glow)"/>
 <circle cx="${cx}" cy="${cy}" r="${R}" fill="#FFFFFF"/><circle cx="${cx}" cy="${cy}" r="${R + 10}" fill="none" stroke="#FFFFFF" stroke-opacity=".25" stroke-width="2" stroke-dasharray="2 10"/>
-<g class="go"><g class="b sp">${inline('assets/ai/sparkle.svg', cx - 82, cy - 82, 164, 164)}</g>${logos}</g>
+<g class="go"><g class="b sp">${inline('assets/antarax/sparkle.svg', cx - 82, cy - 82, 164, 164)}</g>${logos}</g>
 ${caps}${text('AI thinking: the sparkle becomes each product', cx, cy + R + 84, 15, { fill: QUIET, anchor: 'middle' })}
-<g class="rise">${inline('assets/logo/antarax-mark-white.svg', 60, 52, 64, 64)}${text('AntaraX', 126, 95, 24, { f: F.semibold, fill: '#FFFFFF' })}</g>
+<g class="rise">${inline('assets/antarax/antarax-mark-white.svg', 60, 52, 64, 64)}${text('AntaraX', 126, 95, 24, { f: F.semibold, fill: '#FFFFFF' })}</g>
 <g class="rise" style="animation-delay:.15s">${text('Put intelligence to work.', 72, 170, 18, { f: F.semibold, fill: '#7FD9FF' })}${text('AntaraX brand kit', 70, 236, 64, { f: F.bold, fill: '#FFFFFF' })}</g>
 <g class="rise" style="animation-delay:.3s">${text('How AntaraX looks, sounds and is organised.', 72, 284, 22, { fill: QUIET })}</g>
 <g class="rise" style="animation-delay:.45s">${chipRow}</g>
@@ -166,7 +166,7 @@ P.forEach((p, i) => {
 <circle cx="${W / 2}" cy="128" r="90" fill="${p.accent}" opacity=".12"/>
 ${text(String(i + 1).padStart(2, '0'), 28, 46, 15, { f: F.mono, fill: s['800'] })}${text(`/ 0${P.length}`, 54, 46, 15, { f: F.mono, fill: s['800'], extra: 'opacity=".55"' })}
 <rect x="${r1(W - 24 - stW)}" y="26" width="${r1(stW)}" height="28" rx="14" fill="${st ? s['800'] : '#FFFFFF'}" ${st ? '' : `stroke="${s['300']}"`}/>${text(p.status, W - 24 - stW / 2, 45, 13, { f: F.semibold, fill: st ? '#FFFFFF' : s['800'], anchor: 'middle' })}
-<g class="b fl"><rect x="${W / 2 - 66}" y="62" width="132" height="132" rx="30" fill="#FFFFFF"/><rect x="${W / 2 - 66}" y="62" width="132" height="132" rx="30" fill="none" stroke="${s['200']}" stroke-width="1.5"/>${inline(`assets/logos/${p.logo}.svg`, W / 2 - 54, 74, 108, 108)}</g>
+<g class="b fl"><rect x="${W / 2 - 66}" y="62" width="132" height="132" rx="30" fill="#FFFFFF"/><rect x="${W / 2 - 66}" y="62" width="132" height="132" rx="30" fill="none" stroke="${s['200']}" stroke-width="1.5"/>${inline(`assets/product-logos/${p.logo}.svg`, W / 2 - 54, 74, 108, 108)}</g>
 ${text(p.name, 32, 280, 30, { f: F.semibold, fill: NAVY })}${text('by AntaraX', 34 + width(p.name, 30, F.semibold) + 10, 280, 15, { fill: MUTED })}
 ${lines.map((l, j) => text(l, 32, 312 + j * 22, 16, { fill: BODY })).join('')}
 ${rowSvg}
@@ -187,7 +187,7 @@ ${rowSvg}
       const c = p.scale[k], x = x0 + j * sw, act = c.toUpperCase() === p.action.toUpperCase();
       return `<g class="b pop" style="animation-delay:${(i * .06 + j * .035).toFixed(2)}s"><rect x="${r1(x + 2)}" y="${y}" width="${r1(sw - 4)}" height="44" rx="10" fill="${c}"/>${act ? `<rect x="${r1(x - 1)}" y="${y - 3}" width="${r1(sw + 2)}" height="50" rx="12" fill="none" stroke="${NAVY}" stroke-width="2.5"/>` : ''}${text(act ? 'action' : k, x + sw / 2, y + 27, 12, { f: F.mono, fill: lum(c) > .35 ? NAVY : '#FFFFFF', anchor: 'middle' })}</g>`;
     }).join('');
-    return `${inline(`assets/logos/${p.logo}.svg`, 32, y + 4, 36, 36)}${text(p.name, 80, y + 28, 17, { f: F.semibold, fill: NAVY })}${cells}`;
+    return `${inline(`assets/product-logos/${p.logo}.svg`, 32, y + 4, 36, 36)}${text(p.name, 80, y + 28, 17, { f: F.semibold, fill: NAVY })}${cells}`;
   }).join('');
   const head = steps.map((k, j) => text(k, x0 + j * sw + sw / 2, top - 14, 12, { f: F.mono, fill: MUTED, anchor: 'middle' })).join('');
   const body = `<rect width="${W}" height="${H}" rx="28" fill="#FFFFFF"/><rect x=".5" y=".5" width="${W - 1}" height="${H - 1}" rx="28" fill="none" stroke="${LINE}"/>

@@ -1,24 +1,24 @@
 // Event print (guide/04, "The kain A"; guide/10, 13 October 2026): the navy roll-up bunting, 80 x 200 cm, and the
 // A3 QR poster, each as a PDF with bleed and at trim size, plus a small preview. CSS px are real size
 // (96 px = 1 in), so each PDF page is the physical sheet. Both QR codes lead to antarax.ai/meet, the event page.
-// Writes assets/print/. Needs Playwright (with Chromium):
+// Writes marketing/print/<piece>/. Needs Playwright (with Chromium):
 //   NODE_PATH=$(npm root -g) node tools/build-print.mjs
 import fs from 'node:fs';
 import { createRequire } from 'node:module';
 const { chromium } = createRequire(import.meta.url)('playwright');
 
 const KIT = new URL('../', import.meta.url).pathname;
-const OUT = KIT + 'assets/print/';
+const OUT = KIT + 'marketing/print/';
 const F = (p) => 'file://' + KIT + p;
 const IMG = {
-  kain: F('assets/logo/antarax-a-kain.svg'),
-  kainOpen: F('assets/logo/antarax-a-kain-open.svg'),
-  qr: F('assets/print/qr-antarax-meet.svg'), // https://antarax.ai/meet, error correction Q
+  kain: F('assets/antarax/antarax-a-kain.svg'),
+  kainOpen: F('assets/antarax/antarax-a-kain-open.svg'),
+  qr: F('marketing/qr/qr-antarax-meet.svg'), // https://antarax.ai/meet, error correction Q
   reka: F('assets/reka/reka-lockup-white.svg'),
-  wordmark: F('assets/logo/antarax-wordmark-white.svg'),
+  wordmark: F('assets/antarax/antarax-wordmark-white.svg'),
 };
 // the one-colour sparkle, inline so it takes the eyebrow's colour
-const SPARK = fs.readFileSync(KIT + 'assets/ai/sparkle-mono.svg', 'utf8').trim();
+const SPARK = fs.readFileSync(KIT + 'assets/antarax/sparkle-mono.svg', 'utf8').trim();
 const spark = (size) => SPARK.replace('<svg ', `<svg style="width:${size}px;height:${size}px;flex:none" `);
 const mm = (v) => v / 25.4 * 96;
 const fonts = [400, 600, 700].map((w) => `@font-face{font-family:P;font-weight:${w};src:url(${F(`tools/fonts/poppins-${w}.woff`)})}`).join('');
@@ -67,21 +67,22 @@ const a3 = `<div style="width:100%;height:100%;box-sizing:border-box;padding:84p
 <p style="margin:14px 0 0;font-size:20px;color:#8F9AC9">REKA Inisiatif Sdn Bhd, Kuala Lumpur · reka.re</p></div>`;
 
 const jobs = [
-  ['antarax-bunting-80x200cm-5mm-bleed', BW, BH, 5, bunting, null],
-  ['antarax-bunting-80x200cm-trim', BW, BH, 0, bunting, 0.16],
-  ['antarax-a3-qr-meet-3mm-bleed', AW, AHt, 3, a3, null],
-  ['antarax-a3-qr-meet-trim', AW, AHt, 0, a3, 0.5],
+  ['bunting-80x200cm/antarax-bunting-80x200cm-5mm-bleed', BW, BH, 5, bunting, null],
+  ['bunting-80x200cm/antarax-bunting-80x200cm-trim', BW, BH, 0, bunting, 0.16],
+  ['poster-a3-qr-meet/antarax-a3-qr-meet-3mm-bleed', AW, AHt, 3, a3, null],
+  ['poster-a3-qr-meet/antarax-a3-qr-meet-trim', AW, AHt, 0, a3, 0.5],
 ];
 fs.mkdirSync(OUT, { recursive: true });
 const browser = await chromium.launch();
 for (const [name, tw, th, bleed, inner, preview] of jobs) {
-  const s = sheet(tw, th, bleed, inner), tmp = `${OUT}.${name}.html`;
+  const s = sheet(tw, th, bleed, inner), tmp = `${OUT}${name.replace(/[^/]+$/, (f) => '.' + f)}.html`;
+  fs.mkdirSync(OUT + name.replace(/[^/]+$/, ''), { recursive: true });
   fs.writeFileSync(tmp, s.html);
   const page = await browser.newPage({ viewport: { width: Math.ceil(s.W), height: Math.ceil(s.H) }, deviceScaleFactor: preview || 1 });
   await page.goto('file://' + tmp); await page.evaluate(() => document.fonts.ready); await page.waitForTimeout(400);
   await page.pdf({ path: `${OUT}${name}.pdf`, width: `${s.W}px`, height: `${s.H}px`, printBackground: true, pageRanges: '1' });
   if (preview) await page.screenshot({ path: `${OUT}${name.replace(/-trim$/, '')}-preview.png` });
   await page.close(); fs.unlinkSync(tmp);
-  console.log(`assets/print/${name}.pdf`, `${(s.W / 96 * 25.4).toFixed(0)} x ${(s.H / 96 * 25.4).toFixed(0)} mm`);
+  console.log(`marketing/print/${name}.pdf`, `${(s.W / 96 * 25.4).toFixed(0)} x ${(s.H / 96 * 25.4).toFixed(0)} mm`);
 }
 await browser.close();

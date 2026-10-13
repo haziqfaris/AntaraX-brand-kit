@@ -42,7 +42,7 @@ A-mark product in the Motion family (Navigate). Closed pilot, no app yet. Telema
 
 ## Mark
 
-- `assets/logos/motion.svg` (square, use this one); source `assets/products/motion/motion-mark.svg`; family icon `assets/families/motion-icon.svg`.
+- `assets/product-logos/motion.svg` (square, use this one); source `assets/products/motion/motion-mark.svg`; family icon `assets/families/motion-icon.svg`.
 - The AntaraX A in AntaraX blue with the Motion icon, a split bolt, in its centre in Motion orange. The logo is never the motif (cengkih).
 - Minimum height 24px. App tile, splash and thinking motion as for every A-mark (12, 14).
 - Not drawn yet: a white version and a one-colour version.

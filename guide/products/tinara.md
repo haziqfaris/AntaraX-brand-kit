@@ -55,7 +55,7 @@ A logo and a motif are always different (14), so Tinara's logo is not the kerawa
 | `assets/products/tinara/tinara-logo.svg` | The logo: a garnet company, a white core, two gold arcs and a gold dot. 32px and up |
 | `tinara-logo-small.svg` | 24px and below (favicon, small tiles): one heavier arc and the dot |
 | `tinara-logo-light.svg` | For navy and dark grounds: the company in light garnet |
-| `assets/logos/tinara.svg` | The same logo on the shared square, for tiles and lists |
+| `assets/product-logos/tinara.svg` | The same logo on the shared square, for tiles and lists |
 
 - Wordmark: "Tinara" in Poppins 600, navy or garnet, beside the logo.
 - Thinking: the AntaraX sparkle morphs into the signal and back (14).

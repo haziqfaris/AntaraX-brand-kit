@@ -75,19 +75,26 @@ guide/products/        one brand sheet per product
 guide/product-brands.html  the visual guide: every logo, motif, BaTech set, loader and palette, side by side
 tokens/tokens.css      AntaraX tokens: colours, family pairs, type, radius, spacing, motion (and tokens.json)
 tokens/product-palettes.css  each product's full palette: scales, roles, neutrals, surfaces, charts (and .json)
-assets/logo/           the AntaraX A (blue and white), the full lockup, the wordmark (navy and white), and the kain A (closed and open)
-assets/logos/          every product logo on the same square, ready to drop in
-assets/products/       each product's marks, lockups, motifs and loaders, at their source sizes
-assets/families/       the six family icons, famicons.json, and Quiet bands per family
-assets/batech/         seven BaTech sets (AntaraX and six families): panel, band, spot in colour, quiet, white
-assets/icons/features/ 60 line icons for features and sub-products
-assets/ai/             the AI sparkle, drawn from the master A, and a one-colour version for bullets
-assets/print/          event print: the roll-up bunting and the A3 QR poster, as print-ready PDFs
-assets/reka/           REKA's lockup, orange and white, for the "AI product line of REKA" line (REKA's own kit is the source)
-assets/readme/         the pictures on this page, built by tools/build-readme-art.mjs
+
+assets/                the masters, for screens and code
+  antarax/             the AntaraX A (blue and white), the full lockup, the wordmark (navy and white),
+                       the kain A (closed and open), the AI sparkle and its one-colour version
+  product-logos/       every product logo on the same square, ready to drop in
+  products/            each product's marks, lockups, motifs and loaders, at their source sizes
+  families/            the six family icons, famicons.json, and Quiet bands per family
+  batech/              seven BaTech sets (AntaraX and six families): panel, band, spot in colour, quiet, white
+  icons/features/      60 line icons for features and sub-products
+  reka/                REKA's lockup, orange and white, for the "AI product line of REKA" line (REKA's own kit is the source)
+  readme/              the pictures on this page, built by tools/build-readme-art.mjs
+
+marketing/             ready to hand over: printers, partners, events (start at marketing/README.md)
+  print/               print-ready PDFs, one folder per piece: the roll-up bunting, the A3 QR poster
+  logo-pack/           the AntaraX logos as SVG, vector PDF and transparent PNG, for printers and partners
+  qr/                  the QR codes the print uses, as vectors
+  photography/         PHOTO_BRIEF.md: shot list and image-AI prompts for every photo slot on antarax.ai
+
 tools/                 the scripts that build all of the above (each says how to run it at the top)
 tools/fonts/           Poppins and JetBrains Mono, for drawing text into SVGs (SIL Open Font License)
-photography/           PHOTO_BRIEF.md: shot list and image-AI prompts for every photo slot on antarax.ai
 reference/             the master logo file, and the source documents the guide was built from
 ```
 
@@ -102,9 +109,9 @@ Your card is in [Meet the products](#meet-the-products): family, motif, the colo
 Open your product for its kit in one place:
 
 <details>
-<summary><img src="assets/logos/yara.svg" width="20" align="absmiddle"> <b>Yara</b>: work orders and job cards</summary>
+<summary><img src="assets/product-logos/yara.svg" width="20" align="absmiddle"> <b>Yara</b>: work orders and job cards</summary>
 
-- **Logo:** `assets/logos/yara.svg`, the A with the Ripple icon. Motif and loaders: `assets/products/yara/`.
+- **Logo:** `assets/product-logos/yara.svg`, the A with the Ripple icon. Motif and loaders: `assets/products/yara/`.
 - **BaTech:** the Ripple **Rings**, `assets/batech/ripple/`.
 - **Your section in 14:** [Yara](guide/14-product-identity-system.md#yara). **Your to-do list:** [13, what each app needs](guide/13-shared-product-standards.md#what-each-app-needs).
 - **Lives at:** `yara.antarax.ai`, sends as `Yara <yara@antarax.ai>`.
@@ -112,9 +119,9 @@ Open your product for its kit in one place:
 </details>
 
 <details>
-<summary><img src="assets/logos/janka.svg" width="20" align="absmiddle"> <b>Janka</b>: inventory forecasting (with PLExyz Trace inside)</summary>
+<summary><img src="assets/product-logos/janka.svg" width="20" align="absmiddle"> <b>Janka</b>: inventory forecasting (with PLExyz Trace inside)</summary>
 
-- **Logo:** `assets/logos/janka.svg`, the J that never closes, kept. Motif and loaders: `assets/products/janka/`.
+- **Logo:** `assets/product-logos/janka.svg`, the J that never closes, kept. Motif and loaders: `assets/products/janka/`.
 - **BaTech:** the Tide **Swell**, `assets/batech/tide/`.
 - **Your section in 14:** [Janka](guide/14-product-identity-system.md#janka). **Your to-do list:** [13, what each app needs](guide/13-shared-product-standards.md#what-each-app-needs).
 - **Lives at:** `janka.antarax.ai`, sends as `Janka <janka@antarax.ai>`.
@@ -122,9 +129,9 @@ Open your product for its kit in one place:
 </details>
 
 <details>
-<summary><img src="assets/logos/plexyz-grid.svg" width="20" align="absmiddle"> <b>PLExyz Grid</b>: warehouse and yard space</summary>
+<summary><img src="assets/product-logos/plexyz-grid.svg" width="20" align="absmiddle"> <b>PLExyz Grid</b>: warehouse and yard space</summary>
 
-- **Logo:** `assets/logos/plexyz-grid.svg`, the force field, shard and zones, now in AntaraX colours. The owner's originals stay as `*-original.svg` in `assets/products/plexyz/`.
+- **Logo:** `assets/product-logos/plexyz-grid.svg`, the force field, shard and zones, now in AntaraX colours. The owner's originals stay as `*-original.svg` in `assets/products/plexyz/`.
 - **BaTech:** no full panel for now. One Edge **spot** in a corner of sign-in, `assets/batech/edge/spot-colour.svg`.
 - **Your section in 14:** [PLExyz Grid](guide/14-product-identity-system.md#plexyz-grid). **Your to-do list:** [13, what each app needs](guide/13-shared-product-standards.md#what-each-app-needs).
 - **Lives at:** `grid.antarax.ai`, not a `pages.dev` address.
@@ -132,9 +139,9 @@ Open your product for its kit in one place:
 </details>
 
 <details>
-<summary><img src="assets/logos/plexyz-crowd.svg" width="20" align="absmiddle"> <b>PLExyz Crowd</b>: how a building is really used</summary>
+<summary><img src="assets/product-logos/plexyz-crowd.svg" width="20" align="absmiddle"> <b>PLExyz Crowd</b>: how a building is really used</summary>
 
-- **Logo:** `assets/logos/plexyz-crowd.svg`, the PLExyz mark with people counted as dots, never faces.
+- **Logo:** `assets/product-logos/plexyz-crowd.svg`, the PLExyz mark with people counted as dots, never faces.
 - **BaTech:** the Edge **Field**, `assets/batech/edge/`.
 - **Your section in 14:** [PLExyz Crowd](guide/14-product-identity-system.md#plexyz-crowd). **Your to-do list:** [13, what each app needs](guide/13-shared-product-standards.md#what-each-app-needs).
 - **Lives at:** `crowd.antarax.ai`.
@@ -142,9 +149,9 @@ Open your product for its kit in one place:
 </details>
 
 <details>
-<summary><img src="assets/logos/ax-frame.svg" width="20" align="absmiddle"> <b>AX Frame</b>: know what your business depends on</summary>
+<summary><img src="assets/product-logos/ax-frame.svg" width="20" align="absmiddle"> <b>AX Frame</b>: know what your business depends on</summary>
 
-- **Logo:** `assets/logos/ax-frame.svg`, the A with the Frame icon. It keeps its breathing cube halo.
+- **Logo:** `assets/product-logos/ax-frame.svg`, the A with the Frame icon. It keeps its breathing cube halo.
 - **BaTech:** the Frame **Corners**, `assets/batech/frame/`, and intan in empty states.
 - **Your section in 14:** [AX Frame](guide/14-product-identity-system.md#ax-frame). **Your to-do list:** [13, what each app needs](guide/13-shared-product-standards.md#what-each-app-needs).
 - **Lives at:** `frame.antarax.ai`, sends as `AX Frame <frame@antarax.ai>`.
@@ -153,9 +160,9 @@ Open your product for its kit in one place:
 </details>
 
 <details>
-<summary><img src="assets/logos/angka.svg" width="20" align="absmiddle"> <b>Angka</b>: finance for owners who are not accountants</summary>
+<summary><img src="assets/product-logos/angka.svg" width="20" align="absmiddle"> <b>Angka</b>: finance for owners who are not accountants</summary>
 
-- **Logo:** `assets/logos/angka.svg`, the sheet stack, kept. Lapis has its own: `assets/logos/lapis.svg`.
+- **Logo:** `assets/product-logos/angka.svg`, the sheet stack, kept. Lapis has its own: `assets/product-logos/lapis.svg`.
 - **BaTech:** the Tide **Swell**, `assets/batech/tide/`.
 - **Your section in 14:** [Angka](guide/14-product-identity-system.md#angka). **Your to-do list:** [13, what each app needs](guide/13-shared-product-standards.md#what-each-app-needs).
 - **The exception:** Angka keeps its own plan names (Solo, Business, Team, Enterprise) and "Ask Angka".
@@ -163,9 +170,9 @@ Open your product for its kit in one place:
 </details>
 
 <details>
-<summary><img src="assets/logos/tinara.svg" width="20" align="absmiddle"> <b>Tinara</b>: which Malaysian companies to sell to</summary>
+<summary><img src="assets/product-logos/tinara.svg" width="20" align="absmiddle"> <b>Tinara</b>: which Malaysian companies to sell to</summary>
 
-- **Logo:** `assets/logos/tinara.svg`, the signal: a garnet company with a gold signal reaching out. Use `tinara-light.svg` on dark grounds and `tinara-small.svg` at 24px and below.
+- **Logo:** `assets/product-logos/tinara.svg`, the signal: a garnet company with a gold signal reaching out. Use `tinara-light.svg` on dark grounds and `tinara-small.svg` at 24px and below.
 - **Colour:** garnet leads, gold highlights, and gold is never text on white.
 - **BaTech:** the Tide **Swell**, `assets/batech/tide/`, with kerawang as its motif.
 - **Your section in 14:** [Tinara](guide/14-product-identity-system.md#tinara). **Your to-do list:** [13, what each app needs](guide/13-shared-product-standards.md#what-each-app-needs).
@@ -173,9 +180,9 @@ Open your product for its kit in one place:
 </details>
 
 <details>
-<summary><img src="assets/logos/loom.svg" width="20" align="absmiddle"> <b>AX Loom</b> and <img src="assets/logos/motion.svg" width="20" align="absmiddle"> <b>AX Motion</b>: closed pilots, no app yet</summary>
+<summary><img src="assets/product-logos/loom.svg" width="20" align="absmiddle"> <b>AX Loom</b> and <img src="assets/product-logos/motion.svg" width="20" align="absmiddle"> <b>AX Motion</b>: closed pilots, no app yet</summary>
 
-- **Logos:** `assets/logos/loom.svg` and `assets/logos/motion.svg`, A-marks drawn in the same way as Yara's and AX Frame's.
+- **Logos:** `assets/product-logos/loom.svg` and `assets/product-logos/motion.svg`, A-marks drawn in the same way as Yara's and AX Frame's.
 - **BaTech:** Loom's **Thread** and Motion's **Trail**, in `assets/batech/loom/` and `assets/batech/motion/`.
 - **Starting an app?** Begin from the A-mark rules in [12](guide/12-brand-architecture.md) and the palette in `tokens/product-palettes.css`, and write a sheet for it in `guide/products/` from the template there.
 - **Sheets:** [loom.md](guide/products/loom.md) and [motion.md](guide/products/motion.md).
@@ -260,7 +267,7 @@ Copy this list into an issue in your product repo and tick it off there:
 - [ ] I have read our product sheet and our section of 14
 - [ ] Our row of the 13 audit is copied into issues, one per ✗
 - [ ] The credit line reads "by AntaraX" in the footer, on sign-in and in every email
-- [ ] Our logo comes from assets/logos/, at its square size
+- [ ] Our logo comes from assets/product-logos/, at its square size
 - [ ] Every hex value in our CSS is a token from tokens/
 - [ ] Buttons act in our colour; focus rings are AntaraX blue
 - [ ] Customers see support@go.antarax.ai, never a personal or platform address

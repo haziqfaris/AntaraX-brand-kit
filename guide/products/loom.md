@@ -41,7 +41,7 @@ A-mark product in the Loom family (Synthesize). Closed pilot, no app yet. Data s
 
 ## Mark
 
-- `assets/logos/loom.svg` (square, use this one); source `assets/products/loom/loom-mark.svg`; family icon `assets/families/loom-icon.svg`.
+- `assets/product-logos/loom.svg` (square, use this one); source `assets/products/loom/loom-mark.svg`; family icon `assets/families/loom-icon.svg`.
 - The AntaraX A in AntaraX blue with the Loom icon, woven bars, in its centre in Loom violet. The logo is never the motif (tenun).
 - Minimum height 24px. App tile, splash and thinking motion as for every A-mark (12, 14).
 - Not drawn yet: a white version and a one-colour version.

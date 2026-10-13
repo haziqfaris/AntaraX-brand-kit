@@ -1,6 +1,6 @@
 // Every logo on the same square (guide/14, "Logos"): the drawn shape is measured in a browser, then the SVG's
 // viewBox is set to a square around it with the same margin on every logo, so tiles, lockups and lists line up.
-// Writes assets/logos/<name>.svg. Needs Playwright (with Chromium):
+// Writes assets/product-logos/<name>.svg. Needs Playwright (with Chromium):
 //   NODE_PATH=$(npm root -g) node tools/build-square-logos.mjs
 import fs from 'node:fs';
 import { createRequire } from 'node:module';
@@ -19,7 +19,7 @@ const MARGIN = 0.08; // of the square's side, on every edge
 
 const browser = await chromium.launch();
 const page = await browser.newPage();
-fs.mkdirSync(new URL('assets/logos/', KIT), { recursive: true });
+fs.mkdirSync(new URL('assets/product-logos/', KIT), { recursive: true });
 for (const [name, path] of Object.entries(SRC)) {
   const svg = fs.readFileSync(new URL(path, KIT), 'utf8');
   await page.setContent(`<html><body>${svg}</body></html>`);
@@ -27,7 +27,7 @@ for (const [name, path] of Object.entries(SRC)) {
   const side = Math.max(bb.w, bb.h) / (1 - 2 * MARGIN), cx = bb.x + bb.w / 2, cy = bb.y + bb.h / 2;
   const vb = [cx - side / 2, cy - side / 2, side, side].map((n) => +n.toFixed(2)).join(' ');
   const out = svg.replace(/<svg\b([^>]*)>/, (m, attrs) => `<svg${attrs.replace(/\s(viewBox|width|height|class)="[^"]*"/g, '')} viewBox="${vb}">`);
-  fs.writeFileSync(new URL(`assets/logos/${name}.svg`, KIT), out.endsWith('\n') ? out : out + '\n');
-  console.log(`assets/logos/${name}.svg`, vb);
+  fs.writeFileSync(new URL(`assets/product-logos/${name}.svg`, KIT), out.endsWith('\n') ? out : out + '\n');
+  console.log(`assets/product-logos/${name}.svg`, vb);
 }
 await browser.close();

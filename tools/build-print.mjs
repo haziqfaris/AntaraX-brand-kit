@@ -29,7 +29,7 @@ const sheet = (tw, th, bleed, inner) => {
 </style></head><body><div class="trim">${inner}</div></body></html>` };
 };
 
-// ---- roll-up bunting, 80 x 200 cm: the kain A large, the QR card below it, REKA at the foot ----
+// ---- roll-up bunting, 80 x 200 cm: the kain A large; the QR card low, just above the REKA line at the foot ----
 // The bottom 8 cm goes into the stand's base: only the REKA lines sit near it.
 const BW = mm(800), BH = mm(2000);
 const A = 2544, AH = Math.round(A * 780 / 760), eye = { x: 0.494 * A, y: (706 - 240) / 780 * AH }, glow = 0.333 * A;
@@ -41,10 +41,10 @@ const bunting = `<div style="width:100%;height:100%;box-sizing:border-box;paddin
 <div style="position:relative;margin-top:200px;width:${A}px;height:${AH}px;flex:none">
 <div style="position:absolute;left:${(eye.x - glow / 2).toFixed(0)}px;top:${(eye.y - glow / 2).toFixed(0)}px;width:${glow.toFixed(0)}px;height:${glow.toFixed(0)}px;border-radius:50%;background:radial-gradient(circle,rgba(4,89,247,0.42) 0%,rgba(4,89,247,0.16) 45%,rgba(7,18,51,0) 72%)"></div>
 <img src="${IMG.kain}" alt="" style="position:absolute;left:0;top:0;width:${A}px;height:${AH}px"></div>
-<div style="margin-top:380px;background:#fff;border-radius:96px;padding:100px 110px;display:flex;align-items:center;gap:110px;color:#0B1B4F">
+<div style="margin-top:auto;background:#fff;border-radius:96px;padding:100px 110px;display:flex;align-items:center;gap:110px;color:#0B1B4F">
 <img src="${IMG.qr}" alt="" style="width:600px;height:600px;flex:none">
 <div style="display:flex;flex-direction:column;gap:28px"><span style="font-size:150px;font-weight:700;line-height:1.05">Scan to meet us</span><span style="font-size:170px;font-weight:600;color:#0459F7;line-height:1.05">antarax.ai/meet</span><span style="font-size:84px;color:#3B4469">Get more out of AI than answers.</span></div></div>
-<div style="margin-top:auto;display:flex;align-items:center;gap:56px"><span style="font-size:96px;color:#C5CCF7">AntaraX is the AI product line of</span><img src="${IMG.reka}" alt="REKA" style="height:170px;width:606px"></div>
+<div style="margin-top:140px;display:flex;align-items:center;gap:56px"><span style="font-size:96px;color:#C5CCF7">AntaraX is the AI product line of</span><img src="${IMG.reka}" alt="REKA" style="height:170px;width:606px"></div>
 <p style="margin:70px 0 0;font-size:64px;color:#8F9AC9">REKA Inisiatif Sdn Bhd, Kuala Lumpur · reka.re</p></div>`;
 
 // ---- A3 poster, 297 x 420 mm: the open kain A with the QR code in its eye ----

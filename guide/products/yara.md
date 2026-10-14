@@ -27,6 +27,9 @@ A-mark product in the Ripple family. Main product and the portfolio lead. Live a
   - The customer's name, a quote or a figure, without written permission.
   - AI intake, Commission or Reverse engineer as available: they are planned.
   - Online payment: in-product payments are off.
+  - That it works offline or syncs later: it needs a connection to load and record jobs (`public/sw.js`: offline sync is out of scope).
+  - Any AI in Yara today: it has none; AI intake is planned.
+  - "Chasing jobs": it reads as job-hunting. Say "chasing job status".
   - "Powered by AntaraX Ripple", "Yara Ripple" or "Yara AXLE".
   - The pandemic origin story, until the owner confirms it.
 

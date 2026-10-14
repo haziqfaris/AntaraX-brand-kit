@@ -46,7 +46,7 @@ Demo, pilot and Managed AI requests go through **one evaluation form** (9 questi
 ## SEO, AEO and GEO
 
 - **Own problem + product-category intent**, Malaysia-qualified where it fits: "Job tracking software Malaysia | Yara by AntaraX". Keep four territories: OWN, STEAL, GAP, EMERGING.
-- **Share cards:** every page has a 1200×630 card (AntaraX mark, page name and line, the family's BaTech cloth) made by `tools/og.mjs` in antarax-ai and linked as `og:image` and `twitter:image`. Re-run it when a page name, one-liner or art changes.
+- **Share cards:** every page has a 1200×630 card made by `tools/og.mjs` in antarax-ai and linked as `og:image` and `twitter:image`: the AntaraX mark, the sparkle eyebrow, the page's headline and one line, its address, and on the right a real product screen (demo data) or the product's logo on a light tint of the family colour. **No BaTech in share cards** (06). Re-run it when a page name, headline or screen changes.
 - Main product titles carry the category and "Malaysia": "Yara: job tracking and work order software in Malaysia".
 - Every page: one H1, unique title and 120–160 character meta description answering the page's main question (`src/meta.json`), canonical URL, Open Graph and Twitter tags, breadcrumb.
 - JSON-LD: Organization (with parentOrganization REKA), WebSite, BreadcrumbList on every page; SoftwareApplication on product pages (only real, published facts); FAQPage wherever there is an FAQ.

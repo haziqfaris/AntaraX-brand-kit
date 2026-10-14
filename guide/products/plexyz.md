@@ -45,7 +45,7 @@ Concepts are proposed directions, not launches. Never show them as available (03
   - Cargo, incidents and floor checks tracked (built).
   - Every placement checked against the site's rules (built).
   - Tenants see only their own bays and bookings (built, an add-on).
-- Never say: AI placement suggestions as live; "retrieval distance"; the flagship customer's name; prices; customer counts, uptime or quotes; analytics trends or simulation as real; live weighbridge or sensor feeds; exports; Malay.
+- Never say: AI placement suggestions or ranking ("best fit", "top three spaces", "suggested spot") as live; AI risk summaries for incidents as live (no AI feature is switched on for customers, per `docs/ai/AI-usage-framework.md`, 11 October 2026); "retrieval distance"; the flagship customer's name; prices; customer counts, uptime or quotes; analytics trends or simulation as real; live weighbridge or sensor feeds; exports; Malay.
 
 **How it is sold.** Main product, sold as part of REKA's Managed AI service for now. Call to action: Book a demo. The free plan has no AI. Paid plans are a subscription that REKA sets per organisation and invoices; prices are not published. REKA reviews each new workspace before it goes live. Plans move to Seed (free), Nova, Galaxy and Quantum (13).
 
@@ -76,7 +76,7 @@ Concepts are proposed directions, not launches. Never show them as available (03
   - Space and energy cost, worked out from your own figures (built).
   - A monthly report and CSV export (built).
   - The demo is simulated (a required disclosure).
-- Never say: accuracy percentages; customers, logos or case studies; vital signs; existing Wi-Fi, through-wall sensing, falls or safety alerts as available; money figures from the simulated site; Malaysian data residency (it is hosted in Singapore); AXLE; awards.
+- Never say: that it reads the Wi-Fi or BLE "already in the building" or "in the air", or senses through walls or in the dark (the pilot runs on simulated signals; say so); accuracy percentages; customers, logos or case studies; vital signs; existing Wi-Fi, through-wall sensing, falls or safety alerts as available; money figures from the simulated site; Malaysian data residency (it is hosted in Singapore); AXLE; awards.
 
 **How it is sold.** Closed pilot, run as part of REKA's Managed AI service: REKA sets it up on site, keeps it running and improves it with the customer. Call to action: Request pilot access. No waitlist and no sign-up. Pricing is not published; the drafts pair a monthly software fee with hardware sold separately. A pilot is a stage, not a plan. For events, use the Mole line (02).
 

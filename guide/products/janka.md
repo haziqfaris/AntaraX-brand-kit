@@ -24,7 +24,7 @@ Own-mark product in the Tide family. Main product. Live at janka.antarax.ai. AI 
   - AI review is advisory; people decide (built).
   - Reorder figures are in ringgit (built).
   - Shows which stock isn't moving (owner, 13 October 2026), so the outcome line "Free up cash stuck in stock that isn't moving" may be used (03, claims rule 3).
-- Never say: customers, measured outcomes (figures, percentages, guarantees), prices, integrations, certifications, a native app, or "unlock".
+- Never say: customers, measured outcomes (figures, percentages, guarantees), prices, integrations (including "draws on PLExyz Grid sensing": Janka has no link to Grid), certifications, a native app, or "unlock"; that it plans for seasons or busy months (its methods follow level, trend and the weekly rhythm); that it needs "a few weeks to a couple of months" of history (a forecast reads the last 90 days, or all history if shorter).
 
 **How it is sold.** Main product, sold as part of REKA's Managed AI service for now. Call to action: Book a demo. No prices are set and billing is not live. The app's plans (Free, Growth, Enterprise) move to the Rise names (13).
 

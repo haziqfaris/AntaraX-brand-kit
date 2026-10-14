@@ -35,12 +35,21 @@ Product apps never use a cloth, medallion or full-colour corak area. They use Ba
 
 Each family cloth packs only its own motifs in its own colours, as a **mirrored medallion** layout (a family swatch). Each closed pilot landing page uses its family swatch as the hero picture, with a product mock (example data) laid over it.
 
+## On the website: restraint (owner, 14 October 2026)
+
+BaTech is the identity, and the website uses it lightly. A visitor should notice it as craft at the edges, not as a cloth in their face.
+
+- **Use it as** a border, a separator, a cameo, a faded strip or a quiet background: abstract, partial, sometimes unexpected.
+- **Never** a full kain closing every page, a kain as the hero picture of a product, industry, solutions or contact page, or a kain in a share card. Share cards (Open Graph) show the page's real product screen or its logo on a light tint of the family colour (`haziqfaris/antarax-ai`, `tools/og.mjs`).
+- **Story and Families are the exception.** They are the brand's own pages, and fuller BaTech (cloths, family swatches, the full band) belongs there, and only there.
+- Closed pilot pages keep their family swatch as the hero picture, as below.
+
 ## Looks and where they go
 
 | Look | Description | Use |
 |---|---|---|
-| **Site weave** | Dense mixed puzzle of the whole vocabulary, flat fills | Hero A window, menu and section bands, sign-off cloth |
-| **Drift band** | A strip of mixed interlocking motifs that fades out with no edge | Section heads, panel feet, product beds, the mega-menu |
+| **Site weave** | Dense mixed puzzle of the whole vocabulary, flat fills | The home hero A window; Story and Families |
+| **Drift band** | A strip of mixed interlocking motifs that fades out with no edge | A thin, faded separator between sections; the full band on Story and Families |
 | **Family swatch** | Open, brushed, mirrored medallions in one family's colours | Families page, pilot heroes and cards |
 | **Quiet** | One light ink, no fills | Behind content, only where text sits on a solid card |
 | **White on blue** | White at about 25–30% opacity | Blue panels and CTAs |

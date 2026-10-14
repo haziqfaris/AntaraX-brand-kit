@@ -2,6 +2,16 @@
 
 Owner decisions that shape the brand, newest first. Add to the top; never rewrite history. Earlier strategy changes are in `reference/strategy/` (playbook amendments v0.3–v0.5, RECONCILIATION).
 
+## 14 October 2026
+
+- **BaTech on the website is restraint** (owner): borders, cameos, separators, faded strips and quiet backgrounds; never a kain closing every page, as product or industry hero art, or in share cards. **Story and Families are the exception** and keep fuller BaTech (06).
+- **No section labels by default, and no diamond markers** (owner): a label stays only when it adds something the heading doesn't; the one eyebrow above an h1 uses the sparkle in the page's colour (07).
+- **One menu entry for the closed pilots** (owner): "Six more in closed pilot" leads to the pilots page; pilots are not listed one by one (07).
+- **Product pages lead with the money problem** (owner): the hero names what the problem costs, the calculator follows straight after, then one outcome line with no figure or timeframe; about eight blocks a page (07). Calculators work in ringgit with Malaysian defaults.
+- **The Technology page says only what the code shows** (owner: "too vague and too much fluff"): where AI is used and where it isn't, Janka's real forecasting methods, what connects today, security facts from the code, and Lapisan for developers.
+- **Claims corrected across the site** (site audit, passes 2 and 3): PLExyz Grid has no live AI placement and no live weighbridge, IoT or ERP feed; Janka has no link to PLExyz Grid; Yara does not work offline; PLExyz Crowd's pilot runs on simulated signals. Each is now a never-say line in its brief.
+- **Share cards carry no kain** (owner): each shows the page's real product screen or logo on a light tint of the family colour, with the sparkle marker and the page's current address.
+
 ## 13 October 2026
 
 - **Outcome lines are allowed, without figures** (owner): plain benefit statements tied to what a product does, such as "Free up cash stuck in stock that isn't moving" and "Take on more work with the space you have". Still never a figure, percentage, timeframe, guarantee or customer result (03, claims rule 3). Janka shows which stock isn't moving (owner), so its brief now carries the cash line. Paperwork is shown as REKA's Managed AI service, not as a product. First used in the intro video storyboard v3.

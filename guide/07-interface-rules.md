@@ -12,11 +12,14 @@ These apply to the website and to every product UI. Reference implementation: `h
 3. **No uppercase mono labels** for non-data text; no all-caps buttons.
 4. **No stock AI imagery,** mascots used as decoration, or giant technology-logo walls.
 5. **No typewriter headlines.** The first paint must read as a whole sentence.
+6. **No text too small to matter.** Facts a buyer needs (pricing basis, add-ons, where data runs) are never set at 11–12px in mono capitals while "Talk to us" sits at price size. If it is worth saying, it is readable; if not, cut it.
+7. **No block that repeats the one before it.** One closing call to action per page; one explanation of each product per page; a benchmark shown once.
 
 ## Components
 
 - **Buttons:** Poppins 600, 0.9375rem, sentence case, radius 12px, min-height 44px, 2px border. Primary: AntaraX blue. Ghost: transparent with blue text. Light: white on blue or navy panels. On a pilot or family page the primary may take the family colour.
-- **Eyebrow:** sentence case with the intan marker, in blue (or `#CFE0FF` on dark).
+- **Section labels (owner, 14 October 2026):** none by default. A small label above a heading usually repeats the heading and reads as generated. Keep one only when it says something the heading doesn't: "Closed pilot", "Sources", "Illustrative scenario", "Experimental".
+- **Eyebrow and markers:** the one eyebrow a page keeps sits above its h1, in sentence case, marked with the **sparkle in the page's colour** (Yara teal, Janka orange, PLExyz green, Frame blue; AntaraX blue elsewhere). Never a diamond (intan) bullet, a rotated square or a dot as a marker; the sparkle stays still and never spins.
 - **Badges:** pill with the family colour and white text, followed by plain text, e.g. **Closed pilot** · Run as part of Managed AI.
 - **Cards:** white, radius 20px, hairline border, padding 22–24px, content-sized height; hover lifts 2–3px with a soft navy shadow.
 - **Panels:** radius 24–28px. Dark navy panels for Managed AI and "How the pilot works", with a numbered (01, 02…) mono step list.
@@ -26,9 +29,15 @@ These apply to the website and to every product UI. Reference implementation: `h
 - **Choice buttons:** pill-ish 10–12px radius buttons in a wrapping row; selected = AntaraX blue fill, white text.
 - **Forms:** one question at a time for the evaluation, with a progress bar and "Question n of 9"; radio options as full-width rows with a styled radio.
 
+## Product pages (owner, 14 October 2026)
+
+- **Lead with the problem in money.** The hero names what the problem costs; the value calculator comes straight after it, so a visitor sees a figure from their own inputs in seconds; one outcome line follows, with no figure, percentage or timeframe (03, claims rule 3).
+- **Calculators work in ringgit,** with defaults set for Malaysian businesses, and convert to USD only when the visitor asks.
+- **About eight blocks:** hero, your figure, the problem, how it works, features, pricing basis and start, questions, keep reading. Each product is explained once.
+
 ## Navigation
 
-- **Mega-menu** opens per the established style: a large lead tile (Yara, with a BaTech bed), mid tiles (Janka, PLExyz Grid), and a list column (Closed pilots, each with its family icon and one-liner), with footer links "All closed pilots" and "Request pilot access". Solutions has problem cards and an industry list.
+- **Mega-menu** lists the products people can buy: a large lead tile (Yara), mid tiles (Janka, PLExyz Grid). Closed pilots get **one** entry, "Six more in closed pilot", leading to the pilots page; they are never listed one by one in the menu (owner, 14 October 2026).
 - One **Book a demo** button in the header. Mobile collapses to a toggle.
 
 ## Motion

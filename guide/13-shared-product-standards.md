@@ -108,7 +108,9 @@ AXLE is REKA's internal console for running every product. Customers never see i
 
 - **One name:** "AXLE", with the product as context ("AXLE · Janka"), never "REKA Admin" or a product-branded name.
 - **One address:** `axle.antarax.ai` (see 2).
-- **One look:** the dark product ground (`#071233`, raised `#0C1B47`), REKA orange `#FB9800` as its accent (it is REKA's tool), Poppins and JetBrains Mono, the AntaraX A in the corner.
+- **One look:** dark bars, light page (owner, 15 October 2026). The sidebar and the AntaraX top bar are dark (`#071233`, raised `#0C1B47`) with REKA orange `#FB9800` as the accent (it is REKA's tool) and an orange `AXLE` tag after the brand pill; the page is light (`#F5F7FC`, white cards, navy ink). Poppins and JetBrains Mono, the AntaraX A in the corner. The full standard and the template every AXLE is built from are in `haziqfaris/AntaraX-Dashboard-kit`: start with `axle/README.md` (spec v1.0, the final mock, the tokens).
+- **Two modes everywhere:** Dashboard for the business and R8 for the machinery, switched at the top of the sidebar. Every product has R8 Base; a product that runs machinery of its own has R8 Full (owner, 15 October 2026).
+- **The sidebar:** groups are folding cards with a tinted icon tile and a title in the group's colour; the current page is an orange tint with orange text and the intan, never a side stripe (owner, 15 October 2026).
 - **One sign-in** for REKA staff across products, when the single console exists.
 
 ## 7 Languages
@@ -133,7 +135,7 @@ AXLE is REKA's internal console for running every product. Customers never see i
 
 ## 10 Dark mode and accessibility
 
-- **Light first.** Every customer-facing product works in light. Dark mode is optional; where a product offers it, it follows the system setting with a light/dark/system choice (Angka's pattern) and uses the dark product ground (12, tokens). Only AXLE is dark-only.
+- **Light first.** Every customer-facing product works in light. Dark mode is optional; where a product offers it, it follows the system setting with a light/dark/system choice (Angka's pattern) and uses the dark product ground (12, tokens). AXLE has dark bars around a light page (6).
 - **Accessibility baseline in every product:** WCAG 2.2 AA contrast; a visible AntaraX-blue focus ring; targets at least 44px; everything reachable by keyboard; all motion stops for reduced motion; images and icons named or hidden from screen readers (07).
 - **One automated check** (axe or equivalent) runs on each product's main screens in its CI.
 

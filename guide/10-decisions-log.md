@@ -4,6 +4,8 @@ Owner decisions that shape the brand, newest first. Add to the top; never rewrit
 
 ## 15 October 2026
 
+- **AXLE's main action is REKA orange** (owner): `#FB9800` with navy text, in every product's AXLE; customer apps act in their own colour (09).
+- **ISO Generator is on hold** (owner): nothing in the AXLE or customer-app standards applies to it, and nobody changes it for this work, until the owner says so.
 - **Customer apps are each product's own; only the AntaraX shell is shared** (owner): AXLE stays the same in every product. A customer app has its own identity, shape, theme and UI. The exception is a small shell that stays the same everywhere: the names, the top bar, where Help and the account sit, the account menu, and the standard links and pages (settings, user guide, help). Draft in `haziqfaris/AntaraX-Dashboard-kit`, `app/SPEC.md` (0.1); the exact list is for the owner to confirm.
 - **In every customer app, the account is at the far right of the top bar and Help is its own button** (owner): never at the foot of a sidebar, because a product may have no sidebar. The shared shell also covers getting in (sign-in, invitations, reset, two-step), banners in a fixed order, the notifications panel, Assist, Send feedback and what dialogs, toasts, errors and empty states say; how each looks stays the product's own. Draft 0.2 in the Dashboard kit, `app/SPEC.md`.
 - **The AntaraX shell is the standard for every customer app** (owner; `haziqfaris/AntaraX-Dashboard-kit`, `app/`, v1.0):

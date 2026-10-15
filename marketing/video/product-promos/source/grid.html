@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>PLExyz Grid film: the floor, live</title>
+<link rel="stylesheet" href="engine.css">
+<style>
+/* PLExyz Grid: a technical blueprint. Dark navy, a glowing violet grid, an isometric floor, a mono HUD, hard cuts on the beat. */
+:root { --c: #7C6CFF; --cg: #A99CFF; --navy: #060A1C; --hud: #8E96C8; --red: #FF5A4E; --green: #2FD08A; --amber: #FFB020; }
+#stage { background: var(--navy); color: #fff; }
+#bp { position: absolute; inset: 0; background:
+  linear-gradient(rgba(124,108,255,.16) 1px, transparent 1px) 0 0/160px 160px,
+  linear-gradient(90deg, rgba(124,108,255,.16) 1px, transparent 1px) 0 0/160px 160px,
+  linear-gradient(rgba(124,108,255,.06) 1px, transparent 1px) 0 0/32px 32px,
+  linear-gradient(90deg, rgba(124,108,255,.06) 1px, transparent 1px) 0 0/32px 32px;
+  background-color: var(--navy); }
+#glow { position: absolute; inset: 0; background: radial-gradient(ellipse at 55% 60%, rgba(91,77,240,.30), transparent 60%); }
+#scan { position: absolute; inset: 0; background: repeating-linear-gradient(0deg, rgba(255,255,255,.025) 0 1px, transparent 1px 4px); z-index: 80; pointer-events: none; }
+#vig2 { position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 50%, transparent 55%, rgba(0,0,0,.55)); z-index: 79; pointer-events: none; }
+#world { position: absolute; inset: 0; transform-origin: 960px 540px; }
+#iso { position: absolute; left: 0; top: 0; overflow: visible; }
+.hud { position: absolute; font: 500 18px var(--mono); letter-spacing: .12em; color: var(--hud); z-index: 60; white-space: nowrap; }
+.hud b { color: #fff; font-weight: 500; }
+.hud .c { color: var(--cg); }
+.corner { position: absolute; width: 34px; height: 34px; border: 2px solid rgba(169,156,255,.6); z-index: 60; }
+.k { position: absolute; font: 500 22px var(--mono); letter-spacing: .2em; color: var(--cg); z-index: 50; }
+.big { position: absolute; font: 700 92px/1.04 var(--sans); letter-spacing: -.035em; color: #fff; z-index: 50; white-space: nowrap; }
+.big .v { color: var(--cg); } .big .r { color: var(--red); } .big .g { color: var(--green); }
+.wd { display: inline-block; position: relative; }
+.wd::after { content: ''; position: absolute; inset: 8% -3%; background: var(--c); opacity: var(--hi, 0); }
+.mid { position: absolute; font: 500 30px/1.4 var(--mono); color: var(--hud); z-index: 50; white-space: nowrap; letter-spacing: .04em; }
+.panel { position: absolute; background: rgba(12,19,48,.9); border: 1.5px solid rgba(124,108,255,.55); border-radius: 6px; padding: 22px 26px; font: 500 24px/1.55 var(--mono); color: #DDE0F5; z-index: 55; box-shadow: 0 0 40px rgba(91,77,240,.25); white-space: nowrap; }
+.panel .h { font-size: 17px; letter-spacing: .18em; color: var(--hud); margin-bottom: 8px; }
+.panel .ok { color: var(--green); } .panel .no { color: var(--red); }
+#title { position: absolute; inset: 0; display: grid; place-content: center; justify-items: center; z-index: 65; }
+#title .nm { font: 700 210px/1 var(--sans); letter-spacing: -.05em; color: #fff; text-shadow: 0 0 60px rgba(124,108,255,.8); }
+#title .nm span { color: var(--cg); }
+#title .sb { font: 500 26px var(--mono); letter-spacing: .3em; color: var(--hud); margin-top: 26px; }
+#bars { position: absolute; left: 1140px; top: 330px; width: 680px; z-index: 55; }
+.zb { display: grid; grid-template-columns: 130px 1fr 90px; gap: 20px; align-items: center; margin-bottom: 34px; font: 500 24px var(--mono); color: #DDE0F5; }
+.zb .bar { position: relative; height: 26px; background: rgba(124,108,255,.12); border: 1px solid rgba(124,108,255,.35); }
+.zb .fill { position: absolute; left: 0; top: 0; bottom: 0; }
+.zb .band { position: absolute; top: -8px; bottom: -8px; left: 80%; width: 5%; background: rgba(47,208,138,.25); border-left: 2px solid var(--green); border-right: 2px solid var(--green); z-index: 2; }
+#flash { position: absolute; inset: 0; background: #C9C2FF; opacity: 0; z-index: 90; pointer-events: none; }
+#endc { position: absolute; inset: 0; z-index: 70; display: grid; place-content: center; justify-items: center; text-align: center; gap: 22px; }
+#endc .tg { font: 700 104px/1.05 var(--sans); letter-spacing: -.035em; color: #fff; }
+#endc .cta { display: flex; gap: 28px; align-items: center; margin-top: 26px; }
+#endc .btn2 { font: 600 28px var(--sans); background: var(--c); color: #fff; padding: 18px 30px; border-radius: 10px; box-shadow: 0 0 40px rgba(124,108,255,.6); }
+#endc .url { font: 500 28px var(--mono); color: var(--cg); }
+#endc .ft { position: absolute; bottom: 52px; left: 0; right: 0; font: 500 17px var(--mono); letter-spacing: .12em; color: var(--hud); }
+</style></head>
+<body><div id="stage">
+<div id="bp"></div><div id="glow"></div>
+<div id="world"><svg id="iso" width="1920" height="1080"><defs><filter id="gl" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><g id="floor"></g><g id="route"></g><g id="boxes"></g><g id="cube"></g><g id="marks"></g></svg></div>
+
+<!-- HUD: instrument readouts in the corners -->
+<div class="corner" style="left:40px;top:40px;border-right:0;border-bottom:0"></div><div class="corner" style="right:40px;top:40px;border-left:0;border-bottom:0"></div>
+<div class="corner" style="left:40px;bottom:40px;border-right:0;border-top:0"></div><div class="corner" style="right:40px;bottom:40px;border-left:0;border-top:0"></div>
+<div class="hud" id="hudtl" style="left:92px;top:52px"></div>
+<div class="hud" id="hudtr" style="right:92px;top:52px;text-align:right"></div>
+<div class="hud" id="hudbl" style="left:92px;bottom:52px"></div>
+<div class="hud" id="hudbr" style="right:92px;bottom:52px;text-align:right"></div>
+
+<!-- 01 the floor -->
+<div class="k" id="k1" style="left:120px;top:150px">01 / THE FLOOR</div>
+<div class="big" id="h1" style="left:120px;top:190px"></div>
+<div class="mid" id="cnt" style="left:120px;top:400px"></div>
+
+<!-- title -->
+<div id="title"><div class="nm" id="tn">PLExyz <span>Grid</span></div><div class="sb" id="ts">WAREHOUSES · YARDS · BONDED STORES</div></div>
+
+<!-- 02 place -->
+<div class="k" id="k2" style="left:120px;top:150px">02 / PLACE</div>
+<div class="big" id="h2a" style="left:120px;top:190px"></div>
+<div class="big" id="h2b" style="left:120px;top:190px"></div>
+<div class="big" id="h2c" style="left:120px;top:190px"></div>
+<div class="panel" id="bk" style="left:120px;top:360px;width:520px"><div class="h">NEW BOOKING</div>2 pallets · solvent drums<br>Class 3 · flammable<br><span id="bkst" style="color:var(--cg)"></span></div>
+<div class="panel" id="chk" style="left:120px;top:610px;width:520px"><div class="h">CHECKED BEFORE IT’S SAVED</div><span class="ok">✓</span> cargo type<br><span class="ok">✓</span> zone<br><span class="ok">✓</span> access</div>
+
+<!-- 03 find, 04 move, 05 AI -->
+<div class="k" id="k3" style="left:120px;top:150px">03 / FIND</div>
+<div class="big" id="h3" style="left:120px;top:190px"></div>
+<div class="panel" id="srch" style="left:120px;top:360px;width:520px;font-size:32px"><div class="h">SEARCH</div><span id="srcht"></span><span id="caret" style="color:var(--cg)">▌</span></div>
+<div class="k" id="k4" style="left:120px;top:150px">04 / MOVE</div>
+<div class="big" id="h4" style="left:120px;top:190px"></div>
+<div class="panel" id="mv" style="left:120px;top:360px;width:560px"><div class="h">B-14 · MOVEMENTS</div>09:12  arrived  Dock 2<br>09:20  placed   B-14<br><span style="color:#fff">09:41  to Dock 2 · Hafiz</span></div>
+<div class="k" id="k5" style="left:120px;top:150px">05 / AI</div>
+<div class="big" id="h5" style="left:120px;top:190px"></div>
+<div class="mid" id="m5" style="left:120px;top:440px;font-size:22px">INTELLIGENT TIER · BEING PREPARED FOR LAUNCH<br><span style="color:#DDE0F5">Grid works fully without it.</span></div>
+
+<!-- 06 utilisation -->
+<div class="k" id="k6" style="left:120px;top:150px">06 / HOW FULL, REALLY</div>
+<div class="big" id="h6" style="left:120px;top:190px"></div>
+<div id="bars">
+  <div class="zb" id="z0"><span>ZONE A</span><div class="bar"><div class="band"></div><div class="fill"></div></div><span class="pc"></span></div>
+  <div class="zb" id="z1"><span>ZONE B</span><div class="bar"><div class="band"></div><div class="fill"></div></div><span class="pc"></span></div>
+  <div class="zb" id="z2"><span>ZONE C</span><div class="bar"><div class="band"></div><div class="fill"></div></div><span class="pc"></span></div>
+  <div class="zb" id="z3"><span>ZONE D</span><div class="bar"><div class="band"></div><div class="fill"></div></div><span class="pc"></span></div>
+  <div class="mid" id="bandn" style="position:static;font-size:19px;line-height:1.7"><span style="color:var(--green)">▮ 80–85%</span> HEALTHY BAND · WAREHOUSING PRACTICE<br><span style="color:var(--amber)">▮ ZONE B 93% · THE DOCK WILL BACK UP</span></div>
+</div>
+
+<div id="endc"><img id="elogo" src="logos/logo-plexyz-grid.svg" width="120" height="120" alt=""><div class="tg" id="et"></div><div class="cta" id="ecta"><span class="btn2">Start with one zone, for free</span><span class="url">antarax.ai/plexyz-grid</span></div><div class="ft" id="eft">PLEXYZ GRID BY ANTARAX · DEMO DATA, FICTIONAL SITE</div></div>
+<div id="flash"></div><div id="vig2"></div><div id="scan"></div>
+<svg id="rings"></svg>
+</div><div id="hud"></div>
+<script>
+/* ---- isometric floor: four zones of 10 x 6 bays, 240 in all; two docks along the front edge ---- */
+const S = 38, OX = 940, OY = 250;
+const iso = (x, y, z = 0) => [OX + (x - y) * S * .866, OY + (x + y) * S * .5 - z * S];
+const pts = a => a.map(p => p.map(v => v.toFixed(1)).join(',')).join(' ');
+const ZONES = [[0, 0], [11, 0], [0, 7], [11, 7]];   // A B / C D
+const FILL = [.82, .93, .61, .79];
+const BAYS = [];
+ZONES.forEach(([zx, zy], z) => { for (let r = 0; r < 6; r++) for (let c = 0; c < 10; c++) BAYS.push({ z, x: zx + c, y: zy + r, c, r, k: BAYS.length }); });
+// a fixed shuffle decides which bays hold cargo at each zone's real fill, their heights, and the order they rise in
+let sd = 7; const rnd = () => (sd = (sd * 16807) % 2147483647) / 2147483647;
+BAYS.forEach(b => { b.o = rnd(); b.h = .45 + rnd() * .75; });
+const B14 = BAYS.find(b => b.z === 1 && b.c === 3 && b.r === 2), C09 = BAYS.find(b => b.z === 2 && b.c === 4 && b.r === 2);
+ZONES.forEach((_, z) => { const zs = BAYS.filter(b => b.z === z && b !== B14 && b !== C09).sort((a, b) => a.o - b.o); zs.forEach((b, i) => b.full = i < Math.round(FILL[z] * 60)); });
+const DOCK = [[4, 14], [15, 14]];
+let floor = '';
+ZONES.forEach(([zx, zy], z) => {
+  floor += `<polygon class="zf" points="${pts([iso(zx - .3, zy - .3), iso(zx + 10.1, zy - .3), iso(zx + 10.1, zy + 6.1), iso(zx - .3, zy + 6.1)])}" fill="rgba(124,108,255,.07)" stroke="#7C6CFF" stroke-width="1.5" stroke-dasharray="6 6"/>`;
+  const [lx, ly] = iso(zx - .3, zy - .7);
+  floor += `<text class="zl" x="${lx}" y="${ly}" font-family="JetBrains Mono" font-size="20" letter-spacing="3" fill="#A99CFF">ZONE ${'ABCD'[z]}</text>`;
+});
+BAYS.forEach(b => floor += `<polygon id="fp${b.k}" points="${pts([iso(b.x, b.y), iso(b.x + .8, b.y), iso(b.x + .8, b.y + .8), iso(b.x, b.y + .8)])}" fill="none" stroke="rgba(169,156,255,.35)" stroke-width="1"/>`);
+DOCK.forEach(([x, y], i) => { floor += `<polygon class="zf" points="${pts([iso(x, y), iso(x + 2.4, y), iso(x + 2.4, y + 1.2), iso(x, y + 1.2)])}" fill="rgba(124,108,255,.15)" stroke="#A99CFF" stroke-width="2"/>`; const [tx, ty] = iso(x + .2, y + 2.2); floor += `<text class="zl" x="${tx}" y="${ty}" font-family="JetBrains Mono" font-size="18" letter-spacing="2" fill="#8E96C8">DOCK ${i + 1}</text>`; });
+document.getElementById('floor').innerHTML = floor;
+
+const COLS = { v: ['#2A2266', '#3B30A0', '#5B4DF0', '#A99CFF'], g: ['#0D3B2C', '#14614A', '#2FD08A', '#8FF0C4'], a: ['#4A3200', '#7A5200', '#FFB020', '#FFD780'], r: ['#4A1310', '#7A1F1A', '#FF5A4E', '#FFB0A8'], d: ['#15173A', '#1D2050', '#2C2F70', '#45498E'] };
+const box = (x, y, w, d, h, c, glow = 0) => {
+  if (h <= .01) return '';
+  const top = [iso(x, y, h), iso(x + w, y, h), iso(x + w, y + d, h), iso(x, y + d, h)];
+  const left = [iso(x, y + d, 0), iso(x + w, y + d, 0), iso(x + w, y + d, h), iso(x, y + d, h)];
+  const right = [iso(x + w, y, 0), iso(x + w, y + d, 0), iso(x + w, y + d, h), iso(x + w, y, h)];
+  return `<g${glow ? ' filter="url(#gl)"' : ''}><polygon points="${pts(left)}" fill="${c[0]}"/><polygon points="${pts(right)}" fill="${c[1]}"/><polygon points="${pts(top)}" fill="${c[2]}" stroke="${c[3]}" stroke-width="1.2"/></g>`;
+};
+const ORDER = [...BAYS].sort((a, b) => (a.x + a.y) - (b.x + b.y) || a.x - b.x);
+const RISE = BAYS.filter(b => b.full).sort((a, b) => (a.x + a.y + a.o * 3) - (b.x + b.y + b.o * 3));
+RISE.forEach((b, i) => b.t = 2.2 + i / RISE.length * 3.4);
+
+/* ---- words that cut in on the beat, each with a violet block that flashes as it lands; "/" breaks the line ---- */
+const BEAT = .5, W = {};
+function words(id, src) { const el = document.getElementById(id); el.innerHTML = src.split('|').map(w => w === '/' ? '<br>' : `<span class="wd">${w}</span>`).join(' '); W[id] = [...el.querySelectorAll('.wd')]; }
+words('h1', '240|bays.|/|<span class="v">One</span>|<span class="v">live</span>|<span class="v">map.</span>');
+words('h2a', 'Class|3.|Zone|C?');
+words('h2b', '<span class="r">Blocked.</span>');
+words('h2c', 'B-14.|<span class="g">Checked.</span>|Placed.');
+words('h3', 'Where’s|AX-2291?');
+words('h4', 'Every|move,|<span class="v">on</span>|<span class="v">record.</span>');
+words('h5', 'Its|AI|<span class="v">suggests.</span>|/|The|site’s|rules|<span class="v">decide.</span>');
+words('h6', 'How|full,|<span class="v">really?</span>');
+words('et', 'Every|space,|/|accounted|for.');
+function beatIn(key, t, t0, t1, step = BEAT / 2) {
+  const el = $(key), on = t >= t0 && t < t1;
+  el.style.visibility = on ? 'visible' : 'hidden'; if (!on) return;
+  W[key].forEach((w, i) => { const ti = t0 + i * step; w.style.opacity = t >= ti ? 1 : 0; w.style.setProperty('--hi', t >= ti && t < ti + .09 ? .9 : 0); });
+}
+const cut = (id, t, a, b) => { const el = $(id), on = t >= a && t < b; el.style.visibility = on ? 'visible' : 'hidden'; el.style.opacity = on ? 1 : 0; return on; };
+const CUTS = [6.0, 8.0, 14.0, 16.0, 18.0, 20.0, 25.5];
+const tc = t => { const s = Math.floor(t), f = Math.floor((t - s) * 25); return `00:${String(s).padStart(2, '0')}:${String(f).padStart(2, '0')}`; };
+const centreOn = (b, sc, sx, sy, z = .5) => { const [bx, by] = iso(b.x + .4, b.y + .4, z); return [sx - 960 - (bx - 960) * sc, sy - 540 - (by - 540) * sc]; };
+const along = (L, k) => { const seg = []; let tot = 0; for (let i = 1; i < L.length; i++) { const d = Math.hypot(L[i][0] - L[i - 1][0], L[i][1] - L[i - 1][1]); seg.push(d); tot += d; } let s = k * tot; for (let i = 1; i < L.length; i++) { if (s <= seg[i - 1]) { const f = s / seg[i - 1]; return [lerp(L[i - 1][0], L[i][0], f), lerp(L[i - 1][1], L[i][1], f)]; } s -= seg[i - 1]; } return L.at(-1); };
+
+window.FILM = { dur: 30, colours: ['#7C6CFF', '#A99CFF'], rings: [] };
+window.FILM.render = t => {
+  // camera: a slow push while the floor builds, then a hard reframe on every cut
+  let sc = 1, tx = 0, ty = 0;
+  if (t < 8) { sc = lerp(.8, .92, eio(clamp(t / 6))); tx = 260; ty = 20; }
+  else if (t < 14) { sc = 1.0 + (t - 8) * .012; tx = 300; ty = 10; }
+  else if (t < 16) { const z = PIO(t, 14.8, 15.4); sc = lerp(1.05, 1.9, z); const [cx, cy] = centreOn(B14, sc, 1260, 640); tx = lerp(300, cx, z); ty = lerp(10, cy, z); }
+  else if (t < 18) { sc = 1.3; [tx, ty] = centreOn({ x: 15, y: 9 }, sc, 1250, 560, 0); }
+  else if (t < 20) { sc = 1.5; [tx, ty] = centreOn(B14, sc, 1280, 600); }
+  else if (t < 25.5) { sc = .7; tx = -470; ty = 70; }
+  else { sc = .8; tx = 0; ty = 40; }
+  $('world').style.transform = `translate(${tx.toFixed(1)}px,${ty.toFixed(1)}px) scale(${sc.toFixed(4)})`;
+  $('world').style.opacity = t >= 25.5 ? .14 : 1;
+  const ti = t >= 6 && t < 8;
+  $('world').style.filter = ti ? 'blur(5px) brightness(.45)' : 'none';
+
+  // the boxes rise, 240 bays mapped; through scenes 02-05 the zones not in play dim; in 06 every zone takes its fill colour
+  const heat = t >= 20.4;
+  let svg = '';
+  ORDER.forEach(b => {
+    let h = 0, c = COLS.v;
+    if (b.full) { const a = clamp((t - b.t) / .25); h = b.h * (a < 1 ? eo(a) * 1.08 : 1); }
+    if (t >= 8 && t < 20 && b.z !== 1) c = COLS.d;
+    if (t >= 8 && t < 10.7 && b.z === 2) c = COLS.v;
+    if (heat) c = b.z === 1 ? COLS.a : b.z === 0 ? COLS.g : COLS.v;
+    svg += box(b.x, b.y, .8, .8, h, c);
+    if (b === B14 && t >= 11.6 && t < 16.4) svg += box(b.x, b.y, .8, .8, .9 * P(t, 11.6, 11.75), COLS.g, 1);
+    if (b === B14 && t >= 20) svg += box(b.x, b.y, .8, .8, .9, heat ? COLS.a : COLS.v);
+  });
+  $('boxes').innerHTML = svg;
+  BAYS.forEach(b => $('fp' + b.k).style.opacity = clamp((t - .9 - (b.x + b.y) * .03) / .3));
+  $('floor').querySelectorAll('.zf,.zl').forEach(e => e.style.opacity = P(t, .9, 1.6));
+
+  // 02: the booking leaves dock 2 for zone C, is blocked, then routes to B-14
+  let route = '', cube = '', marks = '';
+  if (t >= 8.6 && t < 14) {
+    const d2 = [16.2, 14.6], cpt = [C09.x + .4, C09.y + .4], bpt = [B14.x + .4, B14.y + .4];
+    const legA = [d2, [16.2, 6.5], [cpt[0], 6.5], cpt], legB = [cpt, [cpt[0], 6.5], [bpt[0], 6.5], bpt];
+    const blocked = t >= 10 && t < 10.7;
+    route += `<polyline points="${pts(legA.map(p => iso(...p)))}" fill="none" stroke="${t >= 10 ? '#FF5A4E' : '#A99CFF'}" stroke-width="3" stroke-dasharray="10 8" opacity="${t >= 10.7 ? .35 : .95}"/>`;
+    if (t >= 10.7) route += `<polyline points="${pts(legB.map(p => iso(...p)))}" fill="none" stroke="#2FD08A" stroke-width="4" stroke-dasharray="10 8"/>`;
+    let pos = t < 10.7 ? along(legA, PIO(t, 8.8, 9.95)) : along(legB, PIO(t, 10.7, 11.6));
+    if (blocked) pos = [pos[0] + Math.sin((t - 10) * 70) * .12 * (1 - P(t, 10, 10.5)), pos[1]];
+    if (t < 11.6) cube = box(pos[0] - .4, pos[1] - .4, .8, .8, .9, blocked ? COLS.r : COLS.v, 1);
+    if (blocked) { const [mx, my] = iso(cpt[0], cpt[1], 1.9); marks += `<g transform="translate(${mx} ${my})"><circle r="30" fill="#FF5A4E"/><path d="M-11 -11 L11 11 M11 -11 L-11 11" stroke="#fff" stroke-width="6" stroke-linecap="round"/></g>`; }
+  }
+  // 03: AX-2291 is in B-14
+  if (t >= 14.8 && t < 16) { const [mx, my] = iso(B14.x + .4, B14.y + .4, 1.0); const p = (t * 2) % 1; marks += `<circle cx="${mx}" cy="${my}" r="${(16 + p * 40).toFixed(1)}" fill="none" stroke="#2FD08A" stroke-width="2.5" opacity="${(1 - p).toFixed(2)}"/><g transform="translate(${mx + 24} ${my - 64})"><rect width="196" height="56" rx="4" fill="#0C1330" stroke="#2FD08A" stroke-width="1.5"/><text x="12" y="23" font-family="JetBrains Mono" font-size="14" fill="#8E96C8">AX-2291</text><text x="12" y="45" font-family="JetBrains Mono" font-size="16" fill="#fff">B-14 · ROW 3</text></g>`; }
+  // 04: B-14 out to dock 2
+  if (t >= 16 && t < 18) {
+    const a = [B14.x + .4, B14.y + .4], L = [a, [a[0], 6.5], [16.6, 6.5], [16.6, 14.6]];
+    route += `<polyline points="${pts(L.map(p => iso(...p)))}" fill="none" stroke="#A99CFF" stroke-width="3" stroke-dasharray="10 8" stroke-dashoffset="${(-t * 60).toFixed(1)}"/>`;
+    const p = along(L, PIO(t, 16.3, 17.4)); cube += box(p[0] - .4, p[1] - .4, .8, .8, .9, COLS.v, 1);
+  }
+  // 05: the AI suggests three bays; the rules pass two and stop one
+  if (t >= 18 && t < 20) {
+    const sug = [BAYS.find(b => b.z === 1 && b.c === 6 && b.r === 1), B14, BAYS.find(b => b.z === 1 && b.c === 1 && b.r === 4)];
+    sug.forEach((b, i) => {
+      if (t < 18.4 + i * .25) return;
+      const ok = i !== 2, chk = t >= 19.1 + i * .12, col = !chk ? '#A99CFF' : ok ? '#2FD08A' : '#FF5A4E', [mx, my] = iso(b.x + .4, b.y + .4, b.full ? b.h : 0);
+      marks += `<g transform="translate(${mx.toFixed(1)} ${my.toFixed(1)})"><ellipse rx="30" ry="17" fill="none" stroke="${col}" stroke-width="3" stroke-dasharray="${chk ? '0' : '6 5'}"/><rect x="-56" y="-58" width="112" height="28" rx="4" fill="#0C1330" stroke="${col}" stroke-width="1.5"/><text y="-38" text-anchor="middle" font-family="JetBrains Mono" font-size="15" fill="${col}">${!chk ? 'AI PICK' : ok ? 'PASS' : 'NO ACCESS'}</text></g>`;
+    });
+  }
+  $('route').innerHTML = route; $('cube').innerHTML = cube; $('marks').innerHTML = marks;
+
+  // HUD
+  const tl = 'PLEXYZ GRID // SITE 04 · WEST YARD', n = Math.round(L(t, .2, 1.4) * tl.length);
+  $('hudtl').innerHTML = n < tl.length ? tl.slice(0, n) : `PLEXYZ GRID <span class="c">//</span> SITE 04 · WEST YARD`;
+  $('hudtr').innerHTML = `<b>${tc(t)}</b> · LIVE <span style="color:${Math.floor(t * 2) % 2 ? 'var(--red)' : 'transparent'}">●</span>`;
+  const used = BAYS.filter(b => b.full && t >= b.t).length;
+  $('hudbl').innerHTML = `BAYS <b>${String(Math.round(240 * P(t, 1.0, 5.6))).padStart(3, '0')}</b> · IN USE <b>${String(used).padStart(3, '0')}</b>`;
+  $('hudbr').innerHTML = `X ${(14.2 + Math.sin(t) * 3).toFixed(2)} · Y ${(6.1 + Math.cos(t * .7) * 2).toFixed(2)} · Z 0.00`;
+  ['hudtl', 'hudtr', 'hudbl', 'hudbr'].forEach(id => $(id).style.opacity = t < 25.5 ? 1 : 0);
+
+  // 01
+  cut('k1', t, 2.0, 6.0); beatIn('h1', t, 3.0, 6.0); cut('cnt', t, 2.0, 6.0);
+  $('cnt').innerHTML = `<span style="color:#fff">${String(Math.round(240 * P(t, 2.2, 5.6))).padStart(3, '0')}</span> / 240 BAYS MAPPED`;
+  // title slam
+  $('title').style.visibility = ti ? 'visible' : 'hidden';
+  st('tn', ti ? 1 : 0, 0, 0, lerp(1.45, 1, P(t, 6, 6.14))); st('ts', ti && t >= 6.5 ? 1 : 0);
+  // 02
+  cut('k2', t, 8.0, 14.0); beatIn('h2a', t, 8.4, 10.0); beatIn('h2b', t, 10.0, 11.6); beatIn('h2c', t, 11.6, 14.0);
+  cut('bk', t, 8.4, 14.0); $('bkst').innerHTML = t < 10 ? '→ zone C …' : t < 11.6 ? '<span class="no">✕ zone C takes no class 3</span>' : '<span class="ok">✓ placed in B-14</span>';
+  cut('chk', t, 11.8, 14.0); $('chk').querySelectorAll('.ok').forEach((e, i) => e.style.opacity = t >= 11.9 + i * .25 ? 1 : .15);
+  // 03-05
+  cut('k3', t, 14.0, 16.0); beatIn('h3', t, 14.0, 16.0); cut('srch', t, 14.0, 16.0);
+  $('srcht').textContent = 'AX-2291'.slice(0, Math.floor(L(t, 14.2, 14.75) * 7)); $('caret').style.opacity = Math.floor(t * 4) % 2;
+  cut('k4', t, 16.0, 18.0); beatIn('h4', t, 16.0, 18.0); cut('mv', t, 16.25, 18.0);
+  cut('k5', t, 18.0, 20.0); beatIn('h5', t, 18.0, 20.0, .17); cut('m5', t, 19.0, 20.0);
+  // 06
+  cut('k6', t, 20.0, 25.5); beatIn('h6', t, 20.0, 25.5); cut('bars', t, 20.5, 25.5);
+  [['z0', 82, '#2FD08A'], ['z1', 93, '#FFB020'], ['z2', 61, '#7C6CFF'], ['z3', 79, '#7C6CFF']].forEach(([id, v, col], i) => {
+    const a = P(t, 20.7 + i * .25, 21.7 + i * .25), el = $(id);
+    el.querySelector('.fill').style.width = (v * a).toFixed(1) + '%'; el.querySelector('.fill').style.background = col;
+    el.querySelector('.pc').textContent = Math.round(v * a) + '%'; el.querySelector('.pc').style.color = i === 1 ? 'var(--amber)' : '#DDE0F5';
+  });
+  $('bandn').style.opacity = t >= 22.3 ? 1 : 0;
+  // end
+  const e = t >= 25.5; $('endc').style.visibility = e ? 'visible' : 'hidden';
+  st('elogo', e ? 1 : 0, 0, 0, lerp(1.4, 1, P(t, 25.5, 25.65))); beatIn('et', t, 26.0, 99); st('ecta', t >= 27.0 ? 1 : 0); st('eft', t >= 27.5 ? 1 : 0);
+  // a flash on every cut, and on the block
+  let fl = 0; CUTS.forEach(c => { if (t >= c && t < c + .12) fl = Math.max(fl, 1 - (t - c) / .12); });
+  if (t >= 10 && t < 10.12) fl = Math.max(fl, .7 * (1 - (t - 10) / .12));
+  $('flash').style.opacity = (fl * .35).toFixed(3);
+  $('flash').style.background = t >= 10 && t < 10.12 ? '#FF5A4E' : '#C9C2FF';
+};
+</script>
+<script src="engine.js"></script>
+</body></html>

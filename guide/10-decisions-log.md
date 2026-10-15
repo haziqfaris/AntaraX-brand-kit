@@ -2,6 +2,12 @@
 
 Owner decisions that shape the brand, newest first. Add to the top; never rewrite history. Earlier strategy changes are in `reference/strategy/` (playbook amendments v0.3–v0.5, RECONCILIATION).
 
+## 15 October 2026
+
+- **Video plan** (owner): a long AntaraX film with real-world use cases, shot with actors at hired locations (no real customer sites or staff), plus a short promo for Janka, PLExyz Grid and AX Frame. Yara appears only in the long film. For the website, social media and events. English voice-over, with Bahasa Malaysia and Japanese subtitles later. The long film's animatic is in `marketing/video/antarax-film/`.
+- **Each product promo has its own style, music, structure and mood** (owner: the first versions were "too similar to one another"): Janka warm and hand-made, PLExyz Grid a dark technical blueprint on the beat, AX Frame its own calm world of the breathing asset halo. In `marketing/video/product-promos/`.
+- **The AX Frame promo shows the product in use, with its AI** (owner): a cursor adds an asset, sees its stack, hears about a renewal, plans with Blueprint and approves an Optimize proposal, with Price check flagging a change. Every AI step is shown as a proposal a person approves.
+
 ## 14 October 2026
 
 - **BaTech on the website is restraint** (owner): borders, cameos, separators, faded strips and quiet backgrounds; never a kain closing every page, as product or industry hero art, or in share cards. **Story and Families are the exception** and keep fuller BaTech (06).

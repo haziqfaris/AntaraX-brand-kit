@@ -1,0 +1,375 @@
+<title>AntaraX Promo Storyboards</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: a production document. One band per film, each a grid of storyboard frames (sketch on paper, then the
+   shot's action, voiceover and on-screen text), followed by the production notes the crew works from. */
+:root {
+  --bg: #F4F6FC; --surface: #FFFFFF; --ink: #0B1B4F; --body: #3D4A73; --muted: #6B7699; --line: #DCE3F5;
+  --accent: #0459F7; --grid: #7C74F0; --janka: #E9579D; --frame: #074AF8; --yara: #08B0B3;
+  --chip: #EAF0FF; --paper: #FBFCFF;
+  --font: "Poppins", "Segoe UI", system-ui, sans-serif; --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0A1230; --surface: #111C44; --ink: #EEF2FF; --body: #C3CCEA; --muted: #8E9AC6; --line: #22315F;
+  --accent: #6E9BFF; --grid: #A39CFF; --janka: #FF8BC0; --frame: #6E9BFF; --yara: #3FD3D6; --chip: #1A2A5E; --paper: #FBFCFF; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #0A1230; --surface: #111C44; --ink: #EEF2FF; --body: #C3CCEA; --muted: #8E9AC6; --line: #22315F;
+  --accent: #6E9BFF; --grid: #A39CFF; --janka: #FF8BC0; --frame: #6E9BFF; --yara: #3FD3D6; --chip: #1A2A5E; --paper: #FBFCFF; color-scheme: dark }
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--body); font: 400 15px/1.55 var(--font); -webkit-font-smoothing: antialiased; }
+.wrap { max-width: 1240px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+h1, h2, h3 { color: var(--ink); margin: 0; text-wrap: balance; letter-spacing: -.01em; }
+h1 { font-size: clamp(1.9rem, 4vw, 2.8rem); line-height: 1.1; font-weight: 600; }
+h2 { font-size: clamp(1.5rem, 3vw, 2rem); line-height: 1.15; font-weight: 600; }
+h3 { font-size: 1rem; font-weight: 600; line-height: 1.3; }
+p { margin: 0; }
+.mark { display: inline-block; width: 12px; height: 12px; background: var(--c, var(--accent)); clip-path: polygon(50% 0, 62% 38%, 100% 50%, 62% 62%, 50% 100%, 38% 62%, 0 50%, 38% 38%); flex: none; }
+
+header.top { padding-block: 40px 28px; display: grid; gap: 16px; }
+.lede { max-width: 68ch; font-size: 1.0625rem; }
+.facts { display: flex; flex-wrap: wrap; gap: 8px; }
+.facts span { background: var(--chip); color: var(--ink); border-radius: 99px; padding: 5px 12px; font-size: .8125rem; font-weight: 500; }
+nav.films { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: color-mix(in srgb, var(--bg) 92%, transparent); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+nav.films .wrap { display: flex; gap: 6px; overflow-x: auto; padding-block: 10px; }
+nav.films a { flex: none; display: inline-flex; align-items: center; gap: 8px; color: var(--ink); text-decoration: none; font-weight: 500; font-size: .875rem; padding: 7px 14px; border-radius: 99px; border: 1px solid var(--line); background: var(--surface); }
+nav.films a:hover, nav.films a:focus-visible { border-color: var(--accent); outline: none; }
+
+section.film { padding-block: 48px 8px; scroll-margin-top: 64px; }
+.film-head { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 24px 48px; align-items: end; margin-bottom: 24px; }
+.film-head .kicker { display: flex; align-items: center; gap: 8px; font-weight: 600; color: var(--c); font-size: .875rem; margin-bottom: 8px; }
+.film-head .logline { font-size: 1rem; }
+.film-meta { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.film-meta div { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 12px 14px; min-width: 0; }
+.film-meta b { display: block; color: var(--ink); font-weight: 600; font-size: .9375rem; }
+.film-meta small { color: var(--muted); font-size: .8125rem; }
+.cast { margin: 0 0 20px; display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: .875rem; color: var(--muted); }
+.cast b { color: var(--ink); font-weight: 600; }
+
+.board { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.frame { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; display: flex; flex-direction: column; min-width: 0; }
+.frame .pic { position: relative; background: var(--paper); border-bottom: 1px solid var(--line); }
+.frame canvas { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; }
+.frame .no { position: absolute; left: 10px; top: 8px; font: 500 .75rem/1 var(--mono); color: #0B1B4F; background: rgba(255,255,255,.9); border-radius: 6px; padding: 4px 6px; }
+.frame .shot { position: absolute; right: 10px; top: 8px; font: 600 .75rem/1 var(--font); color: #fff; background: #0B1B4F; border-radius: 6px; padding: 4px 7px; }
+.frame .txt { padding: 14px 16px 16px; display: grid; gap: 8px; }
+.frame .tc { font: 500 .8125rem/1 var(--mono); color: var(--c); font-variant-numeric: tabular-nums; }
+.frame .act { font-size: .9375rem; color: var(--body); }
+.row { display: grid; grid-template-columns: 74px minmax(0, 1fr); gap: 8px; font-size: .875rem; }
+.row dt { color: var(--muted); font-weight: 500; }
+.row dd { margin: 0; color: var(--ink); }
+.row.vo dd { font-style: italic; }
+.row.os dd { font-weight: 600; }
+.row.sc dd { color: var(--body); font-size: .8125rem; }
+
+.cuts { margin-top: 22px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.cut { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; min-width: 0; }
+.cut h3 { margin-bottom: 6px; font-size: .9375rem; }
+.cut p { font-size: .875rem; }
+
+section.notes { padding-block: 56px 72px; }
+.notes-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 20px; }
+.note { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 18px 20px; min-width: 0; }
+.note h3 { margin-bottom: 10px; }
+.note ul { margin: 0; padding-left: 18px; display: grid; gap: 6px; font-size: .9rem; }
+.note.wide { grid-column: 1 / -1; }
+.tablewrap { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: .875rem; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { color: var(--muted); font-weight: 500; font-size: .8125rem; }
+td { color: var(--ink); }
+footer.end { padding-block: 0 48px; color: var(--muted); font-size: .8125rem; }
+
+@media (max-width: 1020px) { .board, .cuts { grid-template-columns: repeat(2, minmax(0, 1fr)); } .film-head { grid-template-columns: 1fr; } }
+@media (max-width: 640px) { .board, .cuts, .notes-grid, .film-meta { grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+</style>
+
+<header class="wrap top">
+  <p class="facts"><span>Storyboard, draft 1</span><span>No footage yet</span><span>Voiceover in English</span><span>Subtitles: Bahasa Malaysia, Japanese</span></p>
+  <h1>Four films: PLExyz Grid, Janka, AX Frame and AntaraX</h1>
+  <p class="lede">Three short product promos and one longer AntaraX film of the products at work, with real people. Every scene is cast with actors at hired locations, and every screen shown is recorded from the products' demo workspaces. Claims follow the website: no figures we can't stand behind, and AI shown only where the product has it.</p>
+</header>
+
+<nav class="films" aria-label="Films">
+  <div class="wrap">
+    <a href="#grid"><i class="mark" style="--c: var(--grid)"></i>PLExyz Grid, 60s</a>
+    <a href="#janka"><i class="mark" style="--c: var(--janka)"></i>Janka, 60s</a>
+    <a href="#frame"><i class="mark" style="--c: var(--frame)"></i>AX Frame, 50s</a>
+    <a href="#antarax"><i class="mark" style="--c: var(--accent)"></i>AntaraX film, 3 min</a>
+    <a href="#notes"><i class="mark"></i>Production notes</a>
+  </div>
+</nav>
+
+<main id="films"></main>
+
+<section class="wrap notes" id="notes">
+  <h2>Production notes</h2>
+  <div class="notes-grid">
+    <div class="note">
+      <h3>Locations to hire</h3>
+      <ul>
+        <li><b>Warehouse with a yard and loading dock</b>, Klang Valley. Racking, a dock door, room for a lorry to reverse. Grid, and the Grid chapter of the film.</li>
+        <li><b>Small distributor's store</b> with shelving, a packing bench and a desk. Janka.</li>
+        <li><b>Open-plan office</b> for a team of about 40. AX Frame.</li>
+        <li><b>Metal fabrication workshop</b> with a laser cutter or bending machine and a small office. Yara, in the AntaraX film only.</li>
+      </ul>
+    </div>
+    <div class="note">
+      <h3>Cast</h3>
+      <ul>
+        <li>All roles are actors. Every name in this storyboard is fictional.</li>
+        <li>Cast to look like the people who do these jobs in Malaysia: a mix of ages, Malay, Chinese and Indian Malaysians, men and women in working roles.</li>
+        <li>Work clothes, not costumes: hi-vis and safety boots in the warehouse, overalls in the workshop, smart-casual in the office.</li>
+        <li>Signed release forms for every person on camera, including background extras.</li>
+      </ul>
+    </div>
+    <div class="note">
+      <h3>Screens to record</h3>
+      <ul>
+        <li>Record every product screen from its demo workspace at 2x resolution, then composite onto the device in the edit. Never film a live screen.</li>
+        <li>Demo data only. No real customer names, no real order values.</li>
+        <li><b>Grid:</b> warehouse floor with zones, a booking with a placement warning then a fit, the unit search, zone utilisation.</li>
+        <li><b>Janka:</b> reorder list, one item's forecast chart, a drafted purchase order with its reasoning, reading a delivery-order photo.</li>
+        <li><b>AX Frame:</b> pasting a list, the subscription ledger with owners, a renewal warning, an Optimize proposal.</li>
+        <li><b>Yara:</b> the worker's phone with Start, Hold and Complete, the work-order board updating.</li>
+      </ul>
+    </div>
+    <div class="note">
+      <h3>Look and sound</h3>
+      <ul>
+        <li>Natural light, handheld but steady. The before scenes run slightly warmer and busier, the after scenes calmer and more open.</li>
+        <li>On-screen text in Poppins, white on a navy band, with the sparkle marker in the product's colour.</li>
+        <li>End cards carry the BaTech kain: a bed rising from the bottom edge, and the logo.</li>
+        <li>Music: light percussion with a Malaysian texture. The voiceover is calm and plain, never salesy.</li>
+      </ul>
+    </div>
+    <div class="note wide">
+      <h3>Formats and versions</h3>
+      <div class="tablewrap"><table>
+        <thead><tr><th>Version</th><th>Where it runs</th><th>Ratio</th><th>Length</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td>Master</td><td>Website</td><td>16:9</td><td>Full</td><td>English voiceover, burned-in English captions optional</td></tr>
+          <tr><td>Social short</td><td>Instagram, TikTok, LinkedIn</td><td>9:16 and 1:1</td><td>15s and 30s</td><td>Reframed from the master; scenes listed under each film</td></tr>
+          <tr><td>Event loop</td><td>Screens at stands and talks</td><td>16:9</td><td>Full, looping</td><td>Works with no sound: every voiceover line also appears as on-screen text</td></tr>
+          <tr><td>Subtitled</td><td>All of the above</td><td>All</td><td>All</td><td>Subtitle files in English, Bahasa Malaysia and Japanese (.srt and burned-in)</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+    <div class="note">
+      <h3>Subtitles in three languages</h3>
+      <ul>
+        <li>Keep each on-screen line to about 40 characters in English. Bahasa Malaysia runs about a fifth longer, so leave room.</li>
+        <li>Japanese: at most about 16 characters per line, two lines at most, set in Noto Sans JP.</li>
+        <li>Product names stay in Latin letters in every language: PLExyz Grid, Janka, AX Frame, Yara, AntaraX.</li>
+        <li>No text baked into the footage itself (signs, labels) that the story depends on, so nothing needs re-shooting per language.</li>
+      </ul>
+    </div>
+    <div class="note">
+      <h3>Before we film</h3>
+      <ul>
+        <li>AX Frame: how long before a renewal it warns, and by which channel. The film says "before the charge" until this is decided.</li>
+        <li>PLExyz Grid's AI is on the Intelligent tier and still being prepared for launch, so the Grid promo shows the rules check, not AI suggestions.</li>
+        <li>Yara's AI intake is planned, so the film shows Yara as it works today.</li>
+        <li>Calls to action: the page each film points to, and whether Frame says "Request pilot access".</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<footer class="wrap end">AntaraX promo storyboards, draft 1, 14 October 2026. Sketches are for framing and action only; they are not the final look.</footer>
+
+<script>
+(() => {
+/* ---------- the films ---------- */
+const FILMS = [
+ { id: 'grid', name: 'PLExyz Grid', c: 'grid', len: '60 seconds', kicker: 'Product promo', title: 'Every space, accounted for.',
+   logline: 'Aina runs a 3PL warehouse in the Klang Valley. An early lorry, a whiteboard that was right this morning, and a dock that backs up. Then the site drawn as it really is, every placement checked before it is saved.',
+   meta: [['Location', 'Warehouse, yard and dock'], ['Cast', '3 actors, 2 extras'], ['Ends on', 'Start with one zone, for free']],
+   cast: [['Aina', 'warehouse supervisor, 30s'], ['Hafiz', 'picker, 20s'], ['Driver', 'lorry driver, extra']],
+   scenes: [
+    ['0:00–0:05', 'Wide', 'Dawn at the yard. A lorry reverses towards the dock door. Aina checks her watch.', 'Every warehouse knows where things are. Mostly.', '6:58 am. A lorry is early.', '', s => { yard(s); lorry(s, 330, 250, .9); person(s, 140, 300, 120, { pose: 'stand' }); camArrow(s, 520, 60, 600, 60); }],
+    ['0:05–0:12', 'Medium', 'Aina walks the aisle on the phone. Behind her, a whiteboard of bays, half of them crossed out.', 'The answer lives in a supervisor’s head, on a whiteboard, or in a list that was right this morning.', '', '', s => { floor(s); whiteboard(s, 380, 70, 200, 130); rack(s, 40, 80, 120, 220); person(s, 270, 315, 190, { pose: 'phone' }); }],
+    ['0:12–0:18', 'Close', 'Hafiz runs a finger along shelf labels, checking box after box.', 'Pickers walk the aisles to check.', '', '', s => { rack(s, 150, 30, 400, 300, 3); hand(s, 330, 200); }],
+    ['0:18–0:22', 'Wide', 'The dock backs up. A second lorry waits outside with its engine running.', '', 'A zone looks full only when the dock backs up.', '', s => { yard(s); lorry(s, 160, 250, .75); lorry(s, 420, 250, .75); boxes(s, 60, 300, 6); }],
+    ['0:22–0:30', 'Over the shoulder', 'Aina opens PLExyz Grid on a tablet. The warehouse appears as zones, sections and bays, each showing what is in it.', 'PLExyz Grid draws your site as it really is, and every unit is in it.', 'Your site, drawn as it is.', 'Grid: warehouse floor, zones with occupancy (demo workspace)', s => { tabletOTS(s, (x, y, w, h) => uiZones(s, x, y, w, h, -1)); }],
+    ['0:30–0:38', 'Insert', 'She books two pallets of hazardous cargo into Zone C. Grid blocks it: Zone C does not take that class. She picks B-14 instead. It fits.', 'Every placement is checked against the site’s rules before it is saved. It warns, or it blocks.', 'It warns, or it blocks.', 'Grid: booking with a blocked placement, then a fit', s => { screenCU(s, (x, y, w, h) => { uiZones(s, x, y, w, h * .62, 5); uiAlert(s, x, y + h * .68, w, 'Zone C does not take this cargo class', '#F04438'); uiAlert(s, x, y + h * .84, w, 'B-14 fits: type, zone and access checked', '#12B76A'); }); }],
+    ['0:38–0:44', 'Medium', 'Hafiz types a unit number on his phone and walks straight to the bay. First time.', 'Find any unit without walking the aisles.', 'Find any unit.', 'Grid: unit search, result highlighted on the floor plan', s => { floor(s); rack(s, 380, 70, 200, 240); person(s, 230, 315, 190, { pose: 'phoneFront', walk: true }); camArrow(s, 200, 340, 330, 340); }],
+    ['0:44–0:50', 'Screen', 'Zone utilisation, measured from what is in each zone, with the healthy band marked.', 'See each zone filling before the dock backs up.', '', 'Grid: zone utilisation gauge and trend', s => { screenCU(s, (x, y, w, h) => uiGauge(s, x, y, w, h)); }],
+    ['0:50–0:55', 'Wide', 'The dock is clear. The lorry pulls away. Aina and Hafiz share a quick nod.', '', '', '', s => { yard(s); lorry(s, 470, 250, .7, true); person(s, 150, 310, 130, {}); person(s, 230, 310, 120, { pose: 'tablet' }); camArrow(s, 470, 120, 580, 120); }],
+    ['0:55–1:00', 'End card', 'PLExyz Grid logo over the kain bed.', 'PLExyz Grid. Every space, accounted for.', 'Start with one zone, for free. antarax.ai', '', s => endCard(s, 'PLExyz Grid', 'Every space, accounted for.', '#7C74F0')],
+   ],
+   cuts: [['15s', 'Scenes 4, 6 and 10: the backed-up dock, the blocked placement, the end card.'], ['30s', 'Scenes 2, 4, 5, 6, 7 and 10.'], ['Event loop', 'All scenes. Voiceover lines run as on-screen text in the navy band.']] },
+
+ { id: 'janka', name: 'Janka', c: 'janka', len: '60 seconds', kicker: 'Product promo', title: 'Stock you won’t run out of.',
+   logline: 'Ravi keeps the store at a small distributor. The item that moves runs out on a busy morning, while the back shelves hold stock nobody has touched in months. Then a reorder list worked out from what they actually use, and a draft order Mrs Tan approves on her phone.',
+   meta: [['Location', 'Distributor store and desk'], ['Cast', '2 actors, 1 extra'], ['Ends on', 'Know what to reorder']],
+   cast: [['Ravi', 'storekeeper, 30s'], ['Mrs Tan', 'owner, 50s'], ['Driver', 'delivery driver, extra']],
+   scenes: [
+    ['0:00–0:05', 'Medium', 'Ravi takes a call at the packing bench. “Stretch film? Let me check.”', '', 'Is it in stock?', '', s => { floor(s); bench(s, 60, 250, 260); person(s, 400, 315, 190, { pose: 'phone' }); rack(s, 470, 60, 140, 250); }],
+    ['0:05–0:10', 'Close', 'An empty slot on the shelf where the stretch film should be. A dispatch waits, half packed.', 'Most reorders are made on gut feel.', '', '', s => { rack(s, 120, 40, 440, 280, 2, true); }],
+    ['0:10–0:16', 'Pan', 'The camera drifts along the back shelves: full, dusty, untouched.', 'Then you run out of what moves, and hold too much of what doesn’t.', 'Cash on the shelf.', '', s => { rack(s, 30, 60, 190, 260); rack(s, 230, 60, 190, 260); rack(s, 430, 60, 190, 260); camArrow(s, 120, 30, 520, 30); }],
+    ['0:16–0:22', 'Medium', 'Mrs Tan at her desk with a spreadsheet called stock-final-v3.', '', '', '', s => { office(s); desk(s, 170, 250, 300); laptop(s, 280, 250, 120); person(s, 340, 300, 150, { pose: 'sit' }); }],
+    ['0:22–0:30', 'Over the shoulder', 'She opens Janka. Today’s list: the items to reorder, each with its reorder point.', 'Janka works out what you’ll need, item by item, from what you actually use.', 'Worked out from what you use.', 'Janka: reorder list (demo workspace)', s => { laptopOTS(s, (x, y, w, h) => uiList(s, x, y, w, h, ['Stretch film 500 mm', 'Carton tape', 'Pallet wrap', 'Label rolls'], '#E9579D')); }],
+    ['0:30–0:37', 'Screen', 'One item’s chart: what happened, what Janka expects with its band, and the reorder point.', 'Each item gets a forecasting method that suits how it moves.', 'A method for each item.', 'Janka: item forecast chart with band and reorder point', s => { screenCU(s, (x, y, w, h) => uiChart(s, x, y, w, h, '#E9579D')); }],
+    ['0:37–0:44', 'Close', 'Mrs Tan’s phone: a drafted purchase order with the reasoning written out. She taps Approve.', 'When stock heads for the reorder point, Janka drafts the order with its reasoning. A person approves it.', 'A person approves.', 'Janka: drafted purchase order and its reasoning', s => { phoneCU(s, (x, y, w, h) => { uiLines(s, x, y, w, h * .62); uiButton(s, x + w * .1, y + h * .74, w * .8, 'Approve', '#E9579D'); }); }],
+    ['0:44–0:51', 'Medium', 'The delivery arrives. Ravi photographs the delivery order and the lines appear on his phone to check.', 'Its AI reads the delivery order from a photo, for Ravi to check.', 'Read from a photo.', 'Janka: delivery-order photo read into lines', s => { floor(s); boxes(s, 60, 300, 5); person(s, 330, 315, 190, { pose: 'phoneFront' }); paper(s, 440, 150); }],
+    ['0:51–0:55', 'Medium', 'Stretch film back on the shelf. The phone rings. Ravi smiles: “Yes, in stock.”', '', 'Yes, in stock.', '', s => { floor(s); rack(s, 60, 60, 230, 260); person(s, 420, 315, 190, { pose: 'phone' }); }],
+    ['0:55–1:00', 'End card', 'Janka logo over the kain bed.', 'Janka. Stock you won’t run out of.', 'Know what to reorder, and when. antarax.ai', '', s => endCard(s, 'Janka', 'Stock you won’t run out of.', '#E9579D')],
+   ],
+   cuts: [['15s', 'Scenes 2, 7 and 10: the empty slot, the approved order, the end card.'], ['30s', 'Scenes 1, 2, 3, 5, 7 and 10.'], ['Event loop', 'All scenes, with each voiceover line as on-screen text.']] },
+
+ { id: 'frame', name: 'AX Frame', c: 'frame', len: '50 seconds', kicker: 'Closed pilot promo', title: 'Stop paying for software nobody remembers.',
+   logline: 'Mei Ling runs operations at a 40-person agency. A renewal nobody remembered, a trial nobody cancelled, an AI bill nobody owns. Then one list of everything they pay for, a warning before each charge, and an owner for every tool.',
+   meta: [['Location', 'Open-plan office'], ['Cast', '2 actors, 3 extras'], ['Ends on', 'Request pilot access']],
+   cast: [['Mei Ling', 'operations lead, 30s'], ['Daniel', 'developer, 20s'], ['Team', 'office extras']],
+   scenes: [
+    ['0:00–0:05', 'Close', 'A card notification: an annual renewal just charged. Mei Ling stares at it.', '', 'The surprise renewal.', '', s => { phoneCU(s, (x, y, w, h) => { uiNotice(s, x, y + h * .15, w, 'Card charged: annual plan renewed'); uiLines(s, x, y + h * .42, w, h * .5); }); }],
+    ['0:05–0:10', 'Medium', 'Daniel pastes an AI API key into a project on his laptop, on his own card.', '', 'The AI bill nobody owns.', '', s => { office(s); desk(s, 140, 250, 320); laptop(s, 250, 250, 130); person(s, 315, 300, 150, { pose: 'sit' }); }],
+    ['0:10–0:15', 'Insert', 'A bank statement with two unfamiliar vendor lines circled.', 'Software is easy to start paying for, and easy to forget.', 'The trial nobody cancelled.', '', s => { paperBig(s); }],
+    ['0:15–0:23', 'Over the shoulder', 'Mei Ling pastes the list she already has into AX Frame. It fills: subscriptions, APIs, domains, each with its cost and renewal date.', 'Add what you pay for once, including the AI APIs that automatic discovery tends to miss.', 'Everything you pay for, in one list.', 'AX Frame: paste a list, the ledger fills (demo workspace)', s => { laptopOTS(s, (x, y, w, h) => uiTable(s, x, y, w, h, '#074AF8')); }],
+    ['0:23–0:30', 'Screen', 'A renewal flagged ahead of its date, with time to decide.', 'AX Frame warns you before a charge, so there is time to decide.', 'A warning before the charge.', 'AX Frame: renewal warning on the ledger', s => { screenCU(s, (x, y, w, h) => { uiTable(s, x, y, w, h * .55, '#074AF8'); uiAlert(s, x, y + h * .66, w, 'Renews soon: decide before the charge', '#F79009'); }); }],
+    ['0:30–0:36', 'Two shot', 'Mei Ling turns her screen to Daniel: the AI API now has an owner, his name.', 'Every tool has an owner.', 'Every tool has an owner.', 'AX Frame: owner column', s => { office(s); desk(s, 120, 250, 380); laptop(s, 300, 250, 130); person(s, 210, 300, 150, { pose: 'sit' }); person(s, 450, 315, 190, { pose: 'point' }); }],
+    ['0:36–0:43', 'Screen', 'Optimize proposes where to save, with its reasoning. Mei Ling approves one.', 'Its AI reviews what you pay for and proposes where to save. You approve.', 'You approve.', 'AX Frame: Optimize proposal and approval', s => { screenCU(s, (x, y, w, h) => { uiLines(s, x, y, w, h * .55); uiButton(s, x + w * .55, y + h * .7, w * .4, 'Approve', '#074AF8'); }); }],
+    ['0:43–0:50', 'End card', 'AX Frame logo over the kain bed.', 'AX Frame. Stop paying for software nobody remembers.', 'Closed pilot. Request access at antarax.ai', '', s => endCard(s, 'AX Frame', 'Stop paying for software nobody remembers.', '#074AF8')],
+   ],
+   cuts: [['15s', 'Scenes 1, 5 and 8: the surprise charge, the warning, the end card.'], ['30s', 'Scenes 1, 2, 3, 4, 5 and 8.'], ['Event loop', 'All scenes, with each voiceover line as on-screen text.']] },
+
+ { id: 'antarax', name: 'AntaraX', c: 'accent', len: 'About 3 minutes', kicker: 'Brand film', title: 'Get more out of AI than answers.',
+   logline: 'Four businesses, four everyday questions: where is my order, is it in stock, where does this load go, what are we paying for. Each one answered by the product built for it, used by the people who do the work. Yara appears here only.',
+   meta: [['Locations', 'Workshop, store, warehouse, office'], ['Cast', 'The four casts above, plus Yara’s'], ['Ends on', 'Put it to work.']],
+   cast: [['Encik Rahman', 'workshop owner, 50s'], ['Siti', 'machine operator, 20s'], ['Farah', 'office admin, 30s'], ['and', 'Aina, Hafiz, Ravi, Mrs Tan, Mei Ling, Daniel']],
+   scenes: [
+    ['0:00–0:12', 'Montage', 'Quick cuts: a phone call to the floor, a whiteboard, a spreadsheet, a group chat buzzing.', 'You already use AI to write and to search.', '', '', s => { montage(s); }],
+    ['0:12–0:25', 'Montage', 'The same four places, busier. People walking, checking, asking.', 'But the work itself still runs on phone calls, whiteboards and memory.', 'Get more out of AI than answers.', '', s => { montage(s, true); }],
+    ['0:25–0:38', 'Medium', 'Workshop office. A customer calls Farah: where is their order? She radios the floor; Encik Rahman goes to look.', 'At three in the afternoon, someone calls the floor to ask where a job is.', 'Yara', '', s => { office(s); desk(s, 80, 250, 280); person(s, 200, 300, 150, { pose: 'phone' }); person(s, 500, 315, 190, { walk: true }); }],
+    ['0:38–0:50', 'Close', 'At the laser cutter, Siti taps Start on her phone. Later, Complete.', 'With Yara, workers tap Start, Hold or Complete on their phone.', 'Start. Hold. Complete.', 'Yara: worker phone with Start, Hold, Complete', s => { phoneCU(s, (x, y, w, h) => { uiLines(s, x, y, w, h * .45); uiButton(s, x + w * .1, y + h * .58, w * .8, 'Start', '#08B0B3'); uiButton(s, x + w * .1, y + h * .76, w * .8, 'Complete', '#0B6E72'); }); }],
+    ['0:50–1:05', 'Over the shoulder', 'The work-order board in the office moves the job on. Farah answers the next call straight away.', 'And everyone sees every job, live. Nobody phones the floor.', 'See where every job stands.', 'Yara: work-order board updating', s => { laptopOTS(s, (x, y, w, h) => uiBoard(s, x, y, w, h, '#08B0B3')); }],
+    ['1:05–1:20', 'Medium', 'Ravi at the empty slot; the dusty back shelves. Condensed from the Janka promo, scenes 1 to 3.', 'In the store, the item that moves runs out, and the rest sits on the shelf.', 'Janka', '', s => { rack(s, 120, 40, 440, 280, 2, true); }],
+    ['1:20–1:40', 'Screen and close', 'Janka’s reorder list, then Mrs Tan approving the drafted order on her phone.', 'Janka works out what to reorder, and drafts the order. A person approves it.', 'Stock you won’t run out of.', 'Janka: reorder list, then approval', s => { phoneCU(s, (x, y, w, h) => { uiLines(s, x, y, w, h * .62); uiButton(s, x + w * .1, y + h * .74, w * .8, 'Approve', '#E9579D'); }); }],
+    ['1:40–1:55', 'Wide', 'The backed-up dock at Aina’s warehouse. Condensed from the Grid promo.', 'In the warehouse, a zone looks full only when the dock backs up.', 'PLExyz Grid', '', s => { yard(s); lorry(s, 160, 250, .75); lorry(s, 420, 250, .75); }],
+    ['1:55–2:15', 'Insert', 'The blocked placement, then the fit. Hafiz walking straight to the bay.', 'PLExyz Grid checks every placement against the site’s rules before it is saved.', 'Every space, accounted for.', 'Grid: blocked placement, then a fit', s => { screenCU(s, (x, y, w, h) => { uiZones(s, x, y, w, h * .62, 5); uiAlert(s, x, y + h * .74, w, 'B-14 fits: type, zone and access checked', '#12B76A'); }); }],
+    ['2:15–2:35', 'Close and screen', 'The surprise charge on Mei Ling’s phone, then the ledger with its renewal warning.', 'And in the office, AX Frame remembers every renewal, so nobody has to.', 'AX Frame, in closed pilot', 'AX Frame: ledger with renewal warning', s => { screenCU(s, (x, y, w, h) => { uiTable(s, x, y, w, h * .55, '#074AF8'); uiAlert(s, x, y + h * .66, w, 'Renews soon: decide before the charge', '#F79009'); }); }],
+    ['2:35–2:50', 'Montage', 'The four places again, calmer now: Farah on the phone smiling, Ravi restocking, the dock clear, Mei Ling closing her laptop.', 'Start with the one that hurts most. Connect the others when you’re ready.', 'Start with the one that hurts most.', '', s => { montage(s, false, true); }],
+    ['2:50–3:00', 'End card', 'The giant kain-filled words, the sparkle as the full stop.', 'AntaraX. Born in Malaysia, built for businesses anywhere.', 'Put it to work. antarax.ai', '', s => endWords(s)],
+   ],
+   cuts: [['60s', 'Scenes 2, 3, 4, 5, 7, 9, 10 and 12: one beat per product.'], ['30s', 'Scenes 2, 5, 7, 9 and 12.'], ['Event loop', 'The full film, voiceover lines as on-screen text. Product chapters can also loop on their own at product stands.']] },
+];
+
+/* ---------- the sketch kit: pencil lines on paper, drawn at 640 x 360 ---------- */
+let rnd = Math.random;
+function seeded(n) { let a = n * 9301 + 49297; return () => ((a = (a * 9301 + 49297) % 233280) / 233280); }
+function paint(cv, draw, seed) {
+  const dpr = Math.min(2, window.devicePixelRatio || 1); cv.width = 640 * dpr; cv.height = 360 * dpr;
+  const ctx = cv.getContext('2d'); ctx.scale(dpr, dpr); rnd = seeded(seed);
+  ctx.fillStyle = '#FBFCFF'; ctx.fillRect(0, 0, 640, 360);
+  ctx.lineCap = 'round'; ctx.lineJoin = 'round';
+  draw(ctx);
+  ctx.strokeStyle = 'rgba(11,27,79,.25)'; ctx.lineWidth = 1; ctx.strokeRect(8.5, 8.5, 623, 343); // safe frame
+}
+const INK = '#1B2A5E', SOFT = '#9AA6CC', FILL = '#E8EDFA';
+const j = (v, a = 1.4) => v + (rnd() - .5) * a * 2;
+function stroke(s, pts, o = {}) {
+  s.strokeStyle = o.c || INK; s.lineWidth = o.w || 2;
+  for (let pass = 0; pass < (o.once ? 1 : 2); pass++) {
+    s.beginPath(); pts.forEach(([x, y], i) => i ? s.lineTo(j(x), j(y)) : s.moveTo(j(x), j(y))); if (o.close) s.closePath(); s.stroke();
+    s.globalAlpha = .55;
+  }
+  s.globalAlpha = 1;
+}
+function box(s, x, y, w, h, o = {}) { if (o.fill) { s.fillStyle = o.fill; s.fillRect(x, y, w, h); } stroke(s, [[x, y], [x + w, y], [x + w, y + h], [x, y + h]], { ...o, close: true }); }
+function line(s, x1, y1, x2, y2, o) { stroke(s, [[x1, y1], [x2, y2]], o); }
+function circ(s, cx, cy, r, o = {}) { const p = []; for (let a = 0; a <= 6.3; a += .35) p.push([cx + r * Math.cos(a), cy + r * Math.sin(a)]); if (o.fill) { s.fillStyle = o.fill; s.beginPath(); s.arc(cx, cy, r, 0, 7); s.fill(); } stroke(s, p, o); }
+function txt(s, x, y, t, o = {}) { s.fillStyle = o.c || INK; s.font = `${o.b ? 600 : 500} ${o.size || 13}px Poppins, system-ui, sans-serif`; s.textAlign = o.align || 'left'; s.fillText(t, x, y); }
+function hatch(s, x, y, w, h, gap = 9) { s.save(); s.beginPath(); s.rect(x, y, w, h); s.clip(); for (let k = -h; k < w; k += gap) line(s, x + k, y + h, x + k + h, y, { c: SOFT, w: 1, once: true }); s.restore(); }
+
+/* sets */
+function floor(s) { line(s, 10, 318, 630, 318, { c: SOFT }); hatch(s, 10, 318, 620, 32, 14); }
+function office(s) { floor(s); box(s, 470, 40, 130, 90, { c: SOFT, w: 1.5 }); line(s, 535, 40, 535, 130, { c: SOFT, w: 1 }); line(s, 470, 85, 600, 85, { c: SOFT, w: 1 }); }
+function yard(s) { line(s, 10, 300, 630, 300, { c: SOFT }); hatch(s, 10, 300, 620, 50, 16); box(s, 20, 60, 260, 240, { c: SOFT, w: 1.5 }); for (let k = 0; k < 9; k++) line(s, 40, 80 + k * 22, 260, 80 + k * 22, { c: SOFT, w: 1, once: true }); txt(s, 200, 76, 'DOCK 2', { c: SOFT, size: 11, b: true }); }
+function rack(s, x, y, w, h, levels = 4, gap = false) {
+  line(s, x, y, x, y + h); line(s, x + w, y, x + w, y + h);
+  for (let l = 0; l <= levels; l++) { const yy = y + (h / levels) * l; line(s, x, yy, x + w, yy, { w: 1.6 }); }
+  for (let l = 0; l < levels; l++) { const yy = y + (h / levels) * l, bh = h / levels; let xx = x + 8;
+    while (xx < x + w - 30) { const bw = 26 + rnd() * 34; if (gap && l === 1 && xx > x + w * .4 && xx < x + w * .62) { txt(s, xx + 8, yy + bh * .62, '?', { c: '#F04438', size: 22, b: true }); xx += 70; continue; } if (xx + bw > x + w - 6) break; box(s, xx, yy + bh * .3, bw, bh * .7 - 3, { fill: FILL, w: 1.3 }); xx += bw + 6; } }
+}
+function boxes(s, x, y, n) { for (let k = 0; k < n; k++) box(s, x + (k % 3) * 34, y - 30 - Math.floor(k / 3) * 28, 30, 26, { fill: FILL, w: 1.3 }); }
+function bench(s, x, y, w) { box(s, x, y, w, 14, { fill: FILL }); line(s, x + 10, y + 14, x + 10, 318); line(s, x + w - 10, y + 14, x + w - 10, 318); box(s, x + 30, y - 34, 70, 34, { fill: FILL, w: 1.3 }); }
+function desk(s, x, y, w) { box(s, x, y, w, 10, { fill: FILL }); line(s, x + 12, y + 10, x + 12, 318); line(s, x + w - 12, y + 10, x + w - 12, 318); }
+function laptop(s, x, y, w) { box(s, x, y - 6, w, 6, { fill: '#fff' }); stroke(s, [[x + 8, y - 6], [x + 14, y - w * .62], [x + w - 6, y - w * .62], [x + w - 12, y - 6]], { close: true }); }
+function whiteboard(s, x, y, w, h) { box(s, x, y, w, h, { fill: '#fff' }); for (let k = 0; k < 5; k++) { const yy = y + 20 + k * 22; txt(s, x + 12, yy, `B-${10 + k}`, { size: 11, c: SOFT }); line(s, x + 60, yy - 4, x + 60 + rnd() * 90 + 30, yy - 4, { c: SOFT, w: 1.2, once: true }); if (k % 2) line(s, x + 8, yy - 10, x + w - 10, yy + 2, { c: '#F04438', w: 1.6 }); } }
+function lorry(s, x, y, k = 1, away = false) {
+  const w = 230 * k, h = 110 * k, cab = 60 * k; const bx = away ? x : x;
+  box(s, bx, y - h, w, h, { fill: '#fff' }); box(s, away ? bx + w : bx - cab, y - h * .7, cab, h * .7, { fill: FILL });
+  circ(s, bx + w * .2, y + 8, 14 * k, { fill: '#fff' }); circ(s, bx + w * .8, y + 8, 14 * k, { fill: '#fff' }); circ(s, away ? bx + w + cab * .5 : bx - cab * .5, y + 8, 14 * k, { fill: '#fff' });
+}
+function paper(s, x, y) { box(s, x, y, 110, 140, { fill: '#fff' }); for (let k = 0; k < 7; k++) line(s, x + 12, y + 20 + k * 16, x + 60 + rnd() * 40, y + 20 + k * 16, { c: SOFT, w: 1.2, once: true }); }
+function paperBig(s) { box(s, 150, 30, 340, 300, { fill: '#fff' }); txt(s, 170, 62, 'Statement', { b: true, size: 14 }); for (let k = 0; k < 10; k++) { const yy = 92 + k * 22; line(s, 170, yy, 360, yy, { c: SOFT, w: 1.2, once: true }); line(s, 420, yy, 465, yy, { c: SOFT, w: 1.2, once: true }); if (k === 3 || k === 7) { s.save(); s.strokeStyle = '#F04438'; s.lineWidth = 2.2; s.beginPath(); s.ellipse(318, yy - 2, 168, 12, 0, 0, 7); s.stroke(); s.restore(); } } }
+function hand(s, x, y) { stroke(s, [[x, y], [x + 60, y - 6], [x + 120, y + 20], [x + 220, y + 60], [x + 260, y + 120]], { w: 2.4 }); stroke(s, [[x, y], [x - 10, y + 14], [x + 40, y + 30], [x + 130, y + 70]], { w: 2.4 }); }
+
+/* people: y is the feet line, h is the height */
+function person(s, x, y, h, o = {}) {
+  const hr = h * .085, neck = y - h * .8, hip = y - h * .46, sh = y - h * .74;
+  if (o.pose === 'sit') { circ(s, x, y - h * .78, hr, { fill: '#fff' }); line(s, x, y - h * .7, x + 4, y - h * .35); line(s, x + 4, y - h * .35, x - 30, y - h * .33); line(s, x - 30, y - h * .33, x - 34, y); line(s, x, y - h * .6, x - 40, y - h * .45); line(s, x, y - h * .62, x - 46, y - h * .5); return; }
+  circ(s, x, neck - hr, hr, { fill: '#fff' });
+  line(s, x, neck, x, hip, { w: 2.4 });
+  const st = o.walk ? h * .16 : h * .08; line(s, x, hip, x - st, y); line(s, x, hip, x + st, y);
+  const p = o.pose || '';
+  if (p === 'phone') { stroke(s, [[x, sh], [x + h * .12, sh + h * .12], [x + hr * .9, neck - hr * .6]]); line(s, x, sh, x - h * .14, hip); box(s, x + hr * .5, neck - hr * 1.3, 5, 12, { fill: INK, w: 1 }); }
+  else if (p === 'tablet' || p === 'phoneFront') { const tw = p === 'tablet' ? h * .2 : h * .09; stroke(s, [[x, sh], [x + h * .1, sh + h * .16]]); stroke(s, [[x, sh], [x - h * .02, sh + h * .18]]); box(s, x + h * .02, sh + h * .08, tw, tw * 1.3, { fill: '#DCE6FF', w: 1.6 }); }
+  else if (p === 'point') { stroke(s, [[x, sh], [x - h * .26, sh + h * .02]]); line(s, x, sh, x + h * .1, hip); }
+  else { line(s, x, sh, x - h * .12, hip + 4); line(s, x, sh, x + h * .12, hip + 4); }
+}
+function camArrow(s, x1, y1, x2, y2) { s.save(); s.setLineDash([7, 6]); line(s, x1, y1, x2, y2, { c: '#0459F7', w: 1.8, once: true }); s.restore(); const a = Math.atan2(y2 - y1, x2 - x1); stroke(s, [[x2 - 12 * Math.cos(a - .5), y2 - 12 * Math.sin(a - .5)], [x2, y2], [x2 - 12 * Math.cos(a + .5), y2 - 12 * Math.sin(a + .5)]], { c: '#0459F7', w: 1.8, once: true }); txt(s, x1, y1 - 8, 'camera', { c: '#0459F7', size: 11 }); }
+
+/* devices in close-up, with a ui drawn inside the screen */
+function screenCU(s, ui) { box(s, 90, 24, 460, 290, { fill: '#fff', w: 2.6 }); box(s, 106, 40, 428, 258, { w: 1.4 }); ui(118, 54, 404, 232); }
+function phoneCU(s, ui) { hand(s, 330, 300); box(s, 245, 18, 150, 300, { fill: '#fff', w: 2.6 }); box(s, 256, 40, 128, 256, { w: 1.3 }); ui(264, 50, 112, 236); }
+function tabletOTS(s, ui) { circ(s, 70, 70, 60, { fill: '#fff' }); stroke(s, [[20, 360], [40, 160], [150, 120], [190, 360]], { w: 3 }); box(s, 190, 60, 400, 270, { fill: '#fff', w: 2.6 }); ui(208, 78, 364, 234); }
+function laptopOTS(s, ui) { circ(s, 70, 80, 58, { fill: '#fff' }); stroke(s, [[18, 360], [36, 168], [150, 130], [180, 360]], { w: 3 }); box(s, 190, 40, 390, 240, { fill: '#fff', w: 2.6 }); stroke(s, [[160, 300], [610, 300], [580, 280], [190, 280]], { close: true }); ui(204, 54, 362, 212); }
+
+/* product screens, simplified */
+function uiZones(s, x, y, w, h, bad) { const cols = 6, rows = 3, gw = (w - 8) / cols, gh = (h - 8) / rows; for (let r = 0; r < rows; r++) for (let c = 0; c < cols; c++) { const k = r * cols + c, used = (k * 7 + 3) % 5 < 3; box(s, x + 4 + c * gw, y + 4 + r * gh, gw - 6, gh - 6, { fill: k === bad ? '#FFE1DE' : used ? '#DDD9FF' : '#fff', w: 1.2, c: k === bad ? '#F04438' : INK }); } }
+function uiAlert(s, x, y, w, t, c) { box(s, x, y, w, 26, { fill: '#fff', c, w: 1.8 }); circ(s, x + 14, y + 13, 5, { fill: c, c }); txt(s, x + 26, y + 18, t, { size: 12, b: true, c: INK }); }
+function uiGauge(s, x, y, w, h) { const cx = x + w * .3, cy = y + h * .7, r = h * .5; s.save(); s.lineWidth = 16; s.strokeStyle = '#E8EDFA'; s.beginPath(); s.arc(cx, cy, r, Math.PI, 0); s.stroke(); s.strokeStyle = '#12B76A'; s.beginPath(); s.arc(cx, cy, r, Math.PI * 1.55, Math.PI * 1.75); s.stroke(); s.restore(); line(s, cx, cy, cx + r * .6 * Math.cos(-.9), cy + r * .6 * Math.sin(-.9), { w: 2.4 }); txt(s, cx, cy + 24, 'healthy band', { align: 'center', size: 12, c: '#12B76A', b: true }); stroke(s, [[x + w * .58, y + h * .7], [x + w * .66, y + h * .55], [x + w * .74, y + h * .6], [x + w * .82, y + h * .42], [x + w * .95, y + h * .38]], { c: '#7C74F0', w: 2.4 }); line(s, x + w * .58, y + h * .78, x + w * .96, y + h * .78, { c: SOFT, w: 1 }); }
+function uiList(s, x, y, w, h, items, c) { items.forEach((t, k) => { const yy = y + 8 + k * (h / items.length); box(s, x, yy, w, h / items.length - 10, { fill: '#fff', w: 1.2 }); txt(s, x + 12, yy + 22, t, { size: 13, b: true }); box(s, x + w - 92, yy + 8, 80, 20, { fill: c, c, w: 1 }); txt(s, x + w - 52, yy + 22, 'Reorder', { size: 11, b: true, c: '#fff', align: 'center' }); }); }
+function uiChart(s, x, y, w, h, c) { line(s, x + 10, y + h - 14, x + w - 6, y + h - 14, { c: SOFT, w: 1 }); line(s, x + 10, y + 6, x + 10, y + h - 14, { c: SOFT, w: 1 }); stroke(s, [[x + 14, y + 30], [x + w * .2, y + 52], [x + w * .32, y + 70], [x + w * .45, y + 96]], { w: 2.4 }); s.fillStyle = 'rgba(233,87,157,.18)'; s.beginPath(); s.moveTo(x + w * .45, y + 96); s.lineTo(x + w * .75, y + h * .62); s.lineTo(x + w * .75, y + h * .86); s.closePath(); s.fill(); s.save(); s.setLineDash([6, 5]); line(s, x + w * .45, y + 96, x + w * .75, y + h * .74, { c, w: 2.2, once: true }); line(s, x + 10, y + h * .66, x + w - 6, y + h * .66, { c: '#F79009', w: 1.8, once: true }); s.restore(); circ(s, x + w * .58, y + h * .66, 7, { fill: '#12B76A', c: '#12B76A' }); txt(s, x + w - 8, y + h * .66 - 8, 'reorder point', { size: 11, c: '#F79009', align: 'right', b: true }); }
+function uiLines(s, x, y, w, h) { const n = Math.max(3, Math.floor(h / 22)); for (let k = 0; k < n; k++) line(s, x + 4, y + 14 + k * (h / n), x + 4 + (w - 8) * (.45 + rnd() * .5), y + 14 + k * (h / n), { c: SOFT, w: 2, once: true }); }
+function uiButton(s, x, y, w, t, c) { s.fillStyle = c; s.fillRect(x, y, w, 30); stroke(s, [[x, y], [x + w, y], [x + w, y + 30], [x, y + 30]], { c, close: true, w: 1.5, once: true }); txt(s, x + w / 2, y + 20, t, { size: 13, b: true, c: '#fff', align: 'center' }); }
+function uiNotice(s, x, y, w, t) { box(s, x, y, w, 46, { fill: '#FFF4E5', c: '#F79009', w: 1.6 }); txt(s, x + 8, y + 19, 'Card', { size: 11, b: true, c: '#F79009' }); s.font = '500 11px Poppins, system-ui'; const words = t.split(' '); let ln = '', yy = y + 34; for (const wd of words) { if (s.measureText(ln + wd).width > w - 16) { txt(s, x + 8, yy, ln, { size: 11 }); ln = ''; yy += 13; } ln += wd + ' '; } txt(s, x + 8, yy, ln, { size: 11 }); }
+function uiTable(s, x, y, w, h, c) { const rows = 5, rh = h / (rows + 1); txt(s, x + 6, y + 16, 'Tool', { size: 11, c: SOFT, b: true }); txt(s, x + w * .5, y + 16, 'Owner', { size: 11, c: SOFT, b: true }); txt(s, x + w * .78, y + 16, 'Renews', { size: 11, c: SOFT, b: true }); for (let k = 0; k < rows; k++) { const yy = y + rh * (k + 1); line(s, x, yy, x + w, yy, { c: SOFT, w: 1, once: true }); line(s, x + 6, yy + rh * .55, x + w * .38, yy + rh * .55, { c: INK, w: 2, once: true }); circ(s, x + w * .52, yy + rh * .5, 6, { fill: k === 2 ? c : '#E8EDFA', c: k === 2 ? c : SOFT }); line(s, x + w * .78, yy + rh * .55, x + w * .92, yy + rh * .55, { c: k === 1 ? '#F79009' : SOFT, w: 2, once: true }); } }
+function uiBoard(s, x, y, w, h, c) { const cols = ['Design', 'Production', 'Done'], cw = w / 3; cols.forEach((t, k) => { txt(s, x + k * cw + 8, y + 16, t, { size: 11, b: true, c: SOFT }); for (let r = 0; r < (k === 1 ? 3 : 2); r++) box(s, x + k * cw + 6, y + 26 + r * 50, cw - 12, 42, { fill: k === 2 && r === 0 ? '#D9F3F2' : '#fff', w: 1.2, c: k === 2 && r === 0 ? c : INK }); }); camArrow(s, x + cw * 1.5, y + h - 16, x + cw * 2.4, y + h - 16); }
+function montage(s, busy, calm) { const cells = [[16, 16], [328, 16], [16, 188], [328, 188]]; const fns = [
+  (x, y) => { person(s, x + 80, y + 150, 120, { pose: 'phone' }); txt(s, x + 160, y + 60, calm ? 'answered' : 'where is it?', { size: 14, b: true, c: calm ? '#12B76A' : '#F04438' }); },
+  (x, y) => { whiteboard(s, x + 40, y + 20, 200, 120); },
+  (x, y) => { box(s, x + 30, y + 20, 230, 120, { fill: '#fff' }); for (let r = 0; r < 5; r++) for (let c = 0; c < 4; c++) box(s, x + 36 + c * 56, y + 26 + r * 22, 52, 18, { w: 1, c: SOFT }); },
+  (x, y) => { box(s, x + 100, y + 10, 90, 140, { fill: '#fff' }); for (let k = 0; k < (busy ? 5 : 3); k++) box(s, x + 108 + (k % 2) * 14, y + 24 + k * 22, 60, 16, { fill: k % 2 ? '#D9F3F2' : '#E8EDFA', w: 1 }); }];
+  cells.forEach(([x, y], k) => { box(s, x, y, 296, 156, { c: SOFT, w: 1.2 }); fns[k](x, y); }); }
+function endCard(s, name, line1, c) { s.fillStyle = '#F3F7FF'; s.fillRect(9, 9, 622, 342); kainBed(s, c); s.fillStyle = c; s.beginPath(); s.roundRect(270, 70, 100, 100, 22); s.fill(); txt(s, 320, 132, name.split(' ').map(w => w[0]).join(''), { size: 30, b: true, c: '#fff', align: 'center' }); txt(s, 320, 205, name, { size: 22, b: true, align: 'center' }); txt(s, 320, 232, line1, { size: 14, align: 'center', c: '#3D4A73' }); }
+function kainBed(s, c) { const cols = [c, '#E9579D', '#08B0B3', '#12B76A', '#FC5D04', '#0459F7']; for (let k = 0; k < 16; k++) { const x = 30 + k * 38 + rnd() * 10, y = 320 - rnd() * 40, r = 8 + rnd() * 12; circ(s, x, y, r, { fill: cols[k % cols.length] + '55', c: INK, w: 1.4 }); if (k % 3 === 0) { s.save(); s.translate(x, y - r - 14); s.rotate(.785); box(s, -6, -6, 12, 12, { fill: '#fff', w: 1.2 }); s.restore(); } } }
+function endWords(s) { s.fillStyle = '#F3F7FF'; s.fillRect(9, 9, 622, 342); s.font = '800 64px Poppins, system-ui'; s.textAlign = 'center'; s.lineWidth = 6; s.strokeStyle = INK; s.strokeText('Put it to work.', 320, 190); s.fillStyle = '#fff'; s.fillText('Put it to work.', 320, 190); s.save(); s.beginPath(); s.rect(60, 130, 520, 70); s.clip(); for (let k = 0; k < 40; k++) circ(s, 70 + rnd() * 500, 135 + rnd() * 60, 5 + rnd() * 8, { fill: ['#E9579D55', '#08B0B355', '#7C74F055', '#FC5D0455'][k % 4], c: INK, w: 1 }); s.restore(); s.lineWidth = 3; s.strokeText('Put it to work.', 320, 190); txt(s, 320, 245, 'antarax.ai', { size: 16, b: true, align: 'center', c: '#0459F7' }); }
+/* ---------- page ---------- */
+const main = document.getElementById('films');
+const esc = t => t.replace(/&/g, '&amp;').replace(/</g, '&lt;');
+for (const f of FILMS) {
+  const sec = document.createElement('section'); sec.className = 'film wrap'; sec.id = f.id; sec.style.setProperty('--c', `var(--${f.c})`);
+  sec.innerHTML = `<div class="film-head"><div><p class="kicker"><i class="mark"></i>${f.kicker} · ${f.len}</p><h2>${f.name}: ${esc(f.title)}</h2></div><p class="logline">${esc(f.logline)}</p></div>
+    <div class="film-meta">${f.meta.map(([k, v]) => `<div><small>${k}</small><b>${esc(v)}</b></div>`).join('')}</div>
+    <p class="cast" style="margin-top:14px">${f.cast.map(([n, r]) => `<span><b>${n}</b> ${esc(r)}</span>`).join('')}</p>
+    <div class="board"></div><div class="cuts">${f.cuts.map(([k, v]) => `<div class="cut"><h3>${k}</h3><p>${esc(v)}</p></div>`).join('')}</div>`;
+  const board = sec.querySelector('.board');
+  f.scenes.forEach(([tc, shot, act, vo, os, sc, draw], i) => {
+    const el = document.createElement('article'); el.className = 'frame';
+    el.innerHTML = `<div class="pic"><canvas width="640" height="360" role="img" aria-label="Sketch: ${esc(act)}"></canvas><span class="no">${String(i + 1).padStart(2, '0')}</span><span class="shot">${shot}</span></div>
+      <div class="txt"><p class="tc">${tc}</p><p class="act">${esc(act)}</p><dl style="margin:0;display:grid;gap:6px">
+      ${vo ? `<div class="row vo"><dt>Voiceover</dt><dd>“${esc(vo)}”</dd></div>` : ''}
+      ${os ? `<div class="row os"><dt>On screen</dt><dd>${esc(os)}</dd></div>` : ''}
+      ${sc ? `<div class="row sc"><dt>Record</dt><dd>${esc(sc)}</dd></div>` : ''}</dl></div>`;
+    board.appendChild(el);
+    paint(el.querySelector('canvas'), draw, f.id.length * 31 + i * 7);
+  });
+  main.appendChild(sec);
+}
+
+})();
+</script>

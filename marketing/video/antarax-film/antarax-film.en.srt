@@ -1,0 +1,103 @@
+1
+00:00:00,250 --> 00:00:04,350
+You already use AI to write, and to search.
+
+2
+00:00:04,150 --> 00:00:08,050
+But the work itself still runs on phone calls,
+
+3
+00:00:07,850 --> 00:00:11,350
+whiteboards,
+
+4
+00:00:11,150 --> 00:00:14,650
+and memory.
+
+5
+00:00:20,250 --> 00:00:25,950
+At three in the afternoon, someone calls the floor to ask where a job is.
+
+6
+00:00:25,750 --> 00:00:31,250
+With Yara, the people doing the work tap Start, Hold or Complete on their phone.
+
+7
+00:00:31,050 --> 00:00:37,550
+Each tap updates the job, right from the floor.
+
+8
+00:00:37,350 --> 00:00:44,350
+So everyone sees where every job stands, live.
+
+9
+00:00:44,150 --> 00:00:49,250
+Nobody has to phone the floor to ask.
+
+10
+00:00:49,050 --> 00:00:54,150
+Yara. See where every job stands.
+
+11
+00:00:53,950 --> 00:00:59,450
+In the store, the item that moves runs out,
+
+12
+00:00:59,250 --> 00:01:04,350
+while stock that isn’t moving sits on the shelf.
+
+13
+00:01:04,150 --> 00:01:11,150
+Janka works out what you’ll need, item by item, from what you actually use.
+
+14
+00:01:10,950 --> 00:01:17,950
+When stock heads for the reorder point, it drafts the order with its reasoning.
+
+15
+00:01:17,750 --> 00:01:23,250
+A person approves it before anything goes to a supplier.
+
+16
+00:01:23,050 --> 00:01:28,150
+Janka. Know what to reorder, and when.
+
+17
+00:01:27,950 --> 00:01:33,450
+In the warehouse, a zone looks full only when the dock backs up.
+
+18
+00:01:33,250 --> 00:01:38,150
+So pickers walk the aisles to check.
+
+19
+00:01:37,950 --> 00:01:44,950
+PLExyz Grid draws your site as it really is, down to each bay.
+
+20
+00:01:44,750 --> 00:01:51,750
+Every placement is checked against the site’s rules before it is saved. It warns, or it blocks.
+
+21
+00:01:51,550 --> 00:01:56,650
+Find any unit, without walking the aisles.
+
+22
+00:01:56,450 --> 00:02:01,550
+PLExyz Grid. Every space, accounted for.
+
+23
+00:02:01,350 --> 00:02:06,850
+In the office, a renewal nobody remembered has just hit the card.
+
+24
+00:02:06,650 --> 00:02:14,650
+AX Frame keeps one list of everything you pay for, and warns you before each charge.
+
+25
+00:02:14,450 --> 00:02:20,350
+Every tool has an owner. Its AI proposes where to save, and a person approves.
+
+26
+00:02:20,150 --> 00:02:26,650
+Start with the one that hurts most. Connect the others when you’re ready.

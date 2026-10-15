@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>AX Frame film: the estate, in use</title>
+<link rel="stylesheet" href="engine.css">
+<style>
+/* AX Frame: its own world. The breathing halo of asset cubes opens and closes the film; in between, the app itself,
+   used by a cursor: add an asset, see the stacks, hear about a renewal, approve what the AI proposes. */
+:root { --blue: #0062FB; --bl: #EEF4FF; --orange: #FB9800; --ob: #FFF4E5; --od: #B86E00; --ink: #0E1420; --ink2: #5A6577; --ink3: #98A2B3; --line: #EEF1F5; --page: #FBFCFE; --ok: #12B76A; --okb: #E7F8EF; }
+#stage { background: var(--page); color: var(--ink); }
+#soft { position: absolute; inset: 0; background: radial-gradient(ellipse at 65% 50%, #fff 0%, rgba(255,255,255,0) 60%), radial-gradient(ellipse at 50% 50%, rgba(251,252,254,0) 60%, #EEF1F6 100%); }
+.glow { position: absolute; border-radius: 50%; filter: blur(6px); transform: translate(-50%, -50%); pointer-events: none;
+  background: radial-gradient(closest-side at 50% 46%, rgba(255,255,255,.96), rgba(255,255,255,0) 70%),
+    radial-gradient(closest-side at 38% 40%, rgba(0,98,251,.20), rgba(0,98,251,0) 70%),
+    radial-gradient(closest-side at 66% 60%, rgba(251,152,0,.16), rgba(251,152,0,0) 68%),
+    radial-gradient(closest-side at 58% 34%, rgba(18,183,106,.12), rgba(18,183,106,0) 70%); }
+#cubes { position: absolute; left: 0; top: 0; overflow: visible; z-index: 15; }
+.cap { position: absolute; left: 140px; z-index: 30; }
+.cap .e { font: 500 18px var(--mono); letter-spacing: .16em; color: var(--ink3); text-transform: uppercase; margin-bottom: 18px; }
+.cap .h { font: 600 70px/1.08 var(--sans); letter-spacing: -.03em; color: var(--ink); }
+.cap .h .b { color: var(--blue); }
+.cap .s { font: 400 28px/1.45 var(--sans); color: var(--ink2); margin-top: 18px; max-width: 640px; }
+.cap.n { left: 100px; width: 420px; }
+.cap.n .e { color: var(--blue); }
+.cap.n .h { font-size: 54px; }
+.cap.n .s { font-size: 24px; max-width: 410px; }
+.ctr { position: absolute; translate: -50% -50%; text-align: center; z-index: 20; white-space: nowrap; }
+.ctr .e { font: 500 15px var(--mono); letter-spacing: .18em; color: var(--ink3); text-transform: uppercase; }
+.ctr .n { font: 500 150px/1 var(--mono); letter-spacing: -.06em; color: var(--ink); font-variant-numeric: tabular-nums; }
+.ctr .c { font: 500 22px var(--sans); color: var(--ink2); }
+.tag { position: absolute; z-index: 25; background: #fff; border-radius: 30px; padding: 10px 18px 10px 14px; font: 500 21px var(--sans); color: var(--ink); box-shadow: 0 10px 28px -12px rgba(14,20,32,.35); display: flex; gap: 10px; align-items: center; white-space: nowrap; }
+.tag i { width: 10px; height: 10px; border-radius: 50%; background: var(--ink3); }
+.tag span { color: var(--ink3); font: 500 16px var(--mono); }
+.av { width: 34px; height: 34px; border-radius: 50%; background: linear-gradient(135deg, #0062FB, #3B82F6); color: #fff; font: 600 13px var(--sans); display: inline-grid; place-items: center; flex: none; }
+.who { display: inline-flex; align-items: center; gap: 10px; }
+
+/* ===== the app window: chrome, sidebar, five panes ===== */
+#win { position: absolute; left: 540px; top: 100px; width: 1320px; height: 880px; background: #fff; border-radius: 22px; box-shadow: 0 60px 120px -50px rgba(14,20,32,.40), 0 0 0 1px #E6EAF0; z-index: 10; overflow: hidden; transform-origin: 660px 440px; }
+#bar { position: absolute; left: 0; right: 0; top: 0; height: 54px; background: #F7F9FC; border-bottom: 1px solid var(--line); }
+#bar .dots { position: absolute; left: 22px; top: 21px; display: flex; gap: 8px; }
+#bar .dots i { width: 12px; height: 12px; border-radius: 50%; background: #DCE1E8; }
+#bar .srch { position: absolute; left: 430px; top: 10px; width: 480px; height: 34px; border-radius: 10px; background: #fff; border: 1px solid #E6EAF0; display: flex; align-items: center; gap: 10px; padding: 0 12px; font: 400 15px var(--sans); color: var(--ink3); }
+#bar .srch kbd { margin-left: auto; font: 500 12px var(--mono); border: 1px solid #E6EAF0; border-radius: 6px; padding: 2px 6px; color: var(--ink3); }
+#bar .rt { position: absolute; right: 22px; top: 11px; display: flex; gap: 16px; align-items: center; color: var(--ink2); }
+#side { position: absolute; left: 0; top: 54px; bottom: 0; width: 250px; background: #FBFCFE; border-right: 1px solid var(--line); }
+#side .wsw { position: absolute; left: 14px; right: 14px; top: 18px; height: 60px; border-radius: 12px; display: flex; align-items: center; gap: 12px; padding: 0 10px; }
+#side .wsw .tile { width: 40px; height: 40px; border-radius: 11px; background: var(--ink); color: #fff; font: 500 15px var(--mono); display: grid; place-items: center; }
+#side .wsw b { display: block; font: 600 18px var(--sans); }
+#side .wsw small { font: 400 14px var(--sans); color: var(--ink3); }
+#side .lbl { position: absolute; left: 28px; top: 100px; font: 500 12px var(--mono); letter-spacing: .16em; color: var(--ink3); }
+.nv { position: absolute; left: 14px; width: 222px; height: 44px; border-radius: 10px; display: flex; align-items: center; gap: 12px; padding-left: 14px; font: 500 18px var(--sans); color: var(--ink2); }
+.nv svg { width: 20px; height: 20px; flex: none; }
+.nv.on { background: var(--bl); color: var(--blue); font-weight: 600; }
+.nv .bdg { margin-left: auto; margin-right: 12px; min-width: 22px; height: 22px; border-radius: 11px; background: var(--orange); color: #fff; font: 600 12px var(--sans); display: grid; place-items: center; padding: 0 6px; }
+.nv .sp { margin-left: auto; margin-right: 12px; }
+#aic { position: absolute; left: 14px; right: 14px; bottom: 70px; border-radius: 14px; border: 1px solid #E3E9FF; background: linear-gradient(160deg, #F4F7FF, #FBFCFE); padding: 14px 16px; }
+#aic b { display: flex; align-items: center; gap: 8px; font: 600 15px var(--sans); }
+#aic p { margin: 6px 0 0; font: 400 13px/1.4 var(--sans); color: var(--ink2); }
+#aic .on { display: inline-flex; align-items: center; gap: 6px; margin-top: 8px; font: 500 12px var(--mono); color: #067647; }
+#aic .on i { width: 7px; height: 7px; border-radius: 50%; background: var(--ok); }
+#side .set { position: absolute; left: 28px; bottom: 26px; display: flex; gap: 12px; align-items: center; font: 500 16px var(--sans); color: var(--ink2); }
+.pane { position: absolute; left: 250px; top: 54px; right: 0; bottom: 0; }
+.pane .tt { position: absolute; left: 40px; top: 28px; font: 600 34px var(--sans); letter-spacing: -.02em; }
+.pane .st { position: absolute; left: 40px; top: 74px; font: 400 17px var(--sans); color: var(--ink3); }
+.card { position: absolute; left: 40px; right: 40px; background: #fff; border: 1px solid #E8ECF2; border-radius: 18px; box-shadow: 0 1px 2px rgba(14,20,32,.04); }
+.btn2 { position: absolute; border-radius: 12px; font: 600 18px var(--sans); display: flex; gap: 8px; align-items: center; justify-content: center; }
+.btn2.p { background: var(--blue); color: #fff; box-shadow: 0 6px 16px -8px rgba(0,98,251,.7); }
+.btn2.q { border: 1px solid #E3E7ED; color: var(--ink); background: #fff; }
+.vt { width: 40px; height: 40px; border-radius: 11px; background: var(--c); color: #fff; font: 600 14px var(--sans); display: inline-grid; place-items: center; flex: none; }
+.nm2 { display: flex; align-items: center; gap: 14px; }
+.nm2 b { display: block; font: 600 20px var(--sans); }
+.nm2 small { font: 400 14px var(--sans); color: var(--ink3); }
+.sc { display: inline-block; padding: 5px 12px; border-radius: 8px; background: #F2F4F7; font: 500 15px var(--sans); color: var(--ink2); }
+.pill { display: inline-flex; align-items: center; gap: 6px; padding: 5px 12px; border-radius: 20px; font: 500 15px var(--sans); background: #F2F4F7; color: var(--ink2); white-space: nowrap; }
+.pill.o { background: var(--ob); color: var(--od); }
+.pill.o::before { content: ''; width: 7px; height: 7px; border-radius: 50%; background: var(--orange); }
+.pill.g { background: var(--okb); color: #067647; }
+/* ledger */
+.stat { position: absolute; top: 112px; width: 233px; height: 108px; background: #fff; border: 1px solid #E8ECF2; border-radius: 16px; padding: 16px 18px; }
+.stat .l { font: 500 12px var(--mono); letter-spacing: .14em; color: var(--ink3); display: flex; align-items: center; gap: 6px; }
+.stat .v { font: 500 32px var(--mono); letter-spacing: -.02em; margin-top: 10px; }
+.stat .f { font: 400 13px var(--sans); color: var(--ink3); margin-top: 2px; }
+.tr { display: grid; grid-template-columns: 2.5fr 1.2fr 1fr 1.3fr 1.3fr; align-items: center; height: 74px; padding: 0 24px; border-top: 1px solid var(--line); font: 500 19px var(--sans); overflow: hidden; }
+.tr.h { height: 42px; font: 500 12px var(--mono); letter-spacing: .14em; color: var(--ink3); background: #FBFCFE; }
+.tr .m { font: 500 20px var(--mono); }
+.thd { display: flex; align-items: center; gap: 12px; height: 64px; padding: 0 24px; }
+.thd b { font: 600 19px var(--sans); }
+.thd .cnt { font: 500 14px var(--mono); color: var(--ink3); background: #F2F4F7; border-radius: 8px; padding: 3px 8px; }
+.fch { display: flex; gap: 8px; margin-left: auto; }
+.fch span { padding: 6px 12px; border-radius: 9px; font: 500 14px var(--sans); color: var(--ink2); border: 1px solid #EEF1F5; }
+.fch span.on { background: var(--ink); color: #fff; border-color: var(--ink); }
+#veil { position: absolute; inset: 0; background: rgba(14,20,32,.22); z-index: 4; }
+#modal { position: absolute; left: 225px; top: 110px; width: 620px; height: 600px; background: #fff; border-radius: 22px; box-shadow: 0 50px 100px -30px rgba(14,20,32,.5), 0 0 0 1px #E8ECF2; z-index: 5; }
+#modal .mh { position: absolute; left: 34px; top: 28px; display: flex; gap: 14px; align-items: center; }
+#modal .mh .ic { width: 46px; height: 46px; border-radius: 13px; background: var(--bl); color: var(--blue); display: grid; place-items: center; font: 600 26px var(--sans); }
+#modal .mh b { display: block; font: 600 24px var(--sans); }
+#modal .mh small { font: 400 15px var(--sans); color: var(--ink3); }
+.fl { position: absolute; }
+.fl .lb { font: 500 12px var(--mono); letter-spacing: .14em; color: var(--ink3); margin-bottom: 8px; }
+.fl .in { height: 54px; border: 1px solid #E3E7ED; border-radius: 12px; padding: 0 16px; display: flex; align-items: center; gap: 8px; font: 500 20px var(--sans); background: #fff; }
+.fl .in.f { border-color: var(--blue); box-shadow: 0 0 0 4px rgba(0,98,251,.12); }
+.fl .in .pre { color: var(--ink3); }
+.car { display: inline-block; width: 2px; height: 24px; background: var(--blue); margin-left: 1px; }
+.seg { display: flex; height: 54px; border: 1px solid #E3E7ED; border-radius: 12px; padding: 4px; gap: 4px; }
+.seg span { flex: 1; display: grid; place-items: center; border-radius: 9px; font: 500 17px var(--sans); color: var(--ink2); }
+.seg span.on { background: var(--bl); color: var(--blue); font-weight: 600; }
+.chips { display: flex; gap: 8px; }
+.chip { display: inline-flex; align-items: center; gap: 8px; padding: 5px 14px 5px 5px; border-radius: 30px; border: 1px solid #E3E7ED; font: 500 16px var(--sans); color: var(--ink2); }
+.chip .av { width: 30px; height: 30px; font-size: 12px; }
+.chip.on { border-color: var(--blue); background: var(--bl); color: var(--blue); box-shadow: 0 0 0 3px rgba(0,98,251,.1); }
+/* map */
+#mapc { top: 112px; bottom: 36px; background: radial-gradient(#E3E8EF 1.2px, transparent 1.5px) 0 0/26px 26px, #FBFCFE; overflow: hidden; }
+#mapc .tb { position: absolute; left: 18px; top: 16px; display: flex; gap: 8px; }
+.ra { position: absolute; width: 2px; height: 2px; }
+.stk2 { position: absolute; translate: -50% 0; background: #fff; border: 1px solid #E8ECF2; border-radius: 14px; padding: 10px 14px; box-shadow: 0 10px 24px -14px rgba(14,20,32,.3); white-space: nowrap; text-align: left; }
+.stk2 b { display: block; font: 600 17px var(--sans); }
+.stk2 .who { font: 400 14px var(--sans); color: var(--ink2); margin-top: 4px; gap: 8px; }
+.stk2 .av { width: 24px; height: 24px; font-size: 10px; }
+/* renewals */
+#tl { top: 112px; height: 176px; }
+#tl .ax { position: absolute; left: 40px; right: 40px; top: 112px; height: 2px; background: #E8ECF2; }
+#tl .tk { position: absolute; top: 124px; font: 500 13px var(--mono); color: var(--ink3); translate: -50% 0; }
+.mk { position: absolute; top: 104px; translate: -50% 0; display: flex; flex-direction: column; align-items: center; }
+.mk i { width: 18px; height: 18px; border-radius: 50%; background: #fff; border: 4px solid #B9C3D1; order: 2; }
+.mk span { order: 1; margin-bottom: 8px; font: 500 14px var(--sans); color: var(--ink2); white-space: nowrap; background: #fff; border: 1px solid #E8ECF2; border-radius: 8px; padding: 3px 8px; translate: 0 -48px; position: absolute; }
+.mk.o i { border-color: var(--orange); }
+.mk.o span { color: var(--od); border-color: #FFD9A3; background: var(--ob); }
+.rl { display: grid; grid-template-columns: 2.2fr 1.5fr 1fr 1.1fr 1.3fr; align-items: center; height: 78px; padding: 0 24px; border-top: 1px solid var(--line); font: 500 19px var(--sans); }
+.rl .m { font: 500 19px var(--mono); }
+#toast { position: absolute; left: 1350px; top: 36px; width: 520px; background: rgba(255,255,255,.98); border-radius: 22px; padding: 18px 22px; box-shadow: 0 30px 70px -24px rgba(14,20,32,.5), 0 0 0 1px #E8ECF2; z-index: 40; display: flex; gap: 16px; }
+#toast .ic { width: 48px; height: 48px; border-radius: 13px; background: #F4F7FF; display: grid; place-items: center; flex: none; }
+#toast .k { font: 500 13px var(--mono); letter-spacing: .1em; color: var(--ink3); }
+/* AI */
+.spk { position: relative; display: inline-block; flex: none; }
+.spk img { position: absolute; inset: 0; width: 100%; height: 100%; }
+.spk img + img { opacity: 0; }
+.shim { font: 500 22px var(--sans); background: linear-gradient(90deg, #98A2B3 0%, #98A2B3 38%, #0062FB 50%, #98A2B3 62%, #98A2B3 100%); background-size: 300% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; }
+.think { position: absolute; display: flex; align-items: center; gap: 14px; }
+.aik { font: 500 13px var(--mono); letter-spacing: .14em; color: var(--blue); display: flex; align-items: center; gap: 8px; }
+.aicard { background: linear-gradient(180deg, #F7F9FF 0%, #fff 90px); border-color: #DCE5FF; }
+#bpIn { top: 112px; height: 84px; display: flex; align-items: center; gap: 14px; padding: 0 20px; font: 500 22px var(--sans); }
+#bpIn.f { border-color: var(--blue); box-shadow: 0 0 0 4px rgba(0,98,251,.12); }
+.ph { color: var(--ink3); }
+#sugg { position: absolute; left: 40px; top: 214px; display: flex; gap: 10px; align-items: center; font: 400 15px var(--sans); color: var(--ink3); }
+#sugg span { border: 1px dashed #D3DCEA; border-radius: 20px; padding: 6px 14px; color: var(--ink2); }
+#bpPlan { top: 216px; bottom: 36px; padding: 24px 28px; }
+.ph2 { display: flex; gap: 8px; margin-top: 10px; }
+.br { display: grid; grid-template-columns: 2.4fr 1fr 1fr; align-items: center; height: 66px; border-top: 1px solid var(--line); font: 500 19px var(--sans); }
+.br.h { height: 40px; font: 500 12px var(--mono); letter-spacing: .14em; color: var(--ink3); }
+.br .m { font: 500 20px var(--mono); }
+#osum { top: 112px; height: 96px; display: flex; }
+#osum > div { flex: 1; padding: 16px 22px; border-right: 1px solid var(--line); }
+#osum > div:last-child { border: 0; }
+#osum .l { font: 500 12px var(--mono); letter-spacing: .14em; color: var(--ink3); display: flex; gap: 6px; align-items: center; }
+#osum .v { font: 500 28px var(--mono); margin-top: 8px; }
+#prop { top: 226px; height: 420px; padding: 26px 30px; }
+.ev { display: flex; gap: 12px; margin-top: 18px; }
+.ev span { display: inline-flex; align-items: center; gap: 10px; border: 1px solid #E8ECF2; background: #FBFCFE; border-radius: 12px; padding: 8px 14px 8px 8px; font: 500 15px var(--mono); color: var(--ink2); }
+.ev .vt { width: 30px; height: 30px; font-size: 11px; border-radius: 8px; }
+#pc { top: 664px; height: 132px; padding: 18px 24px; display: flex; gap: 18px; align-items: center; }
+#endt .ai { display: inline-flex; align-items: center; gap: 12px; font: 500 24px var(--sans); color: var(--ink); margin-top: 16px; }
+#cur { position: absolute; left: 0; top: 0; z-index: 50; width: 30px; height: 30px; }
+#clk { position: absolute; z-index: 49; border-radius: 50%; border: 2.5px solid var(--blue); transform: translate(-50%, -50%); }
+#endt { position: absolute; left: 0; right: 0; top: 712px; text-align: center; z-index: 30; }
+#endt .nm { font: 600 64px var(--sans); letter-spacing: -.03em; }
+#endt .tg { font: 400 30px var(--sans); color: var(--ink2); margin-top: 10px; }
+#endt .u { font: 500 22px var(--mono); letter-spacing: .06em; color: var(--ink3); margin-top: 22px; }
+#endt .u b { color: var(--blue); font-weight: 500; }
+#eft { position: absolute; left: 0; right: 0; bottom: 36px; text-align: center; font: 500 15px var(--mono); letter-spacing: .12em; color: var(--ink3); z-index: 30; }
+</style></head>
+<body><div id="stage"><div id="soft"></div>
+<div class="glow" id="g0"></div><div class="glow" id="g2"></div>
+
+<!-- ======== the app ======== -->
+<div id="win">
+  <div id="bar"><div class="dots"><i></i><i></i><i></i></div>
+    <div class="srch"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>Search assets, owners, vendors<kbd>⌘K</kbd></div>
+    <div class="rt"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 1112 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.9 1.9 0 003.4 0"/></svg><span class="av" style="width:32px;height:32px;font-size:12px">AH</span></div></div>
+  <div id="side">
+    <div class="wsw"><span class="tile">TS</span><div><b>Teras Studio</b><small>Pilot workspace</small></div><svg style="margin-left:auto" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#98A2B3" stroke-width="2.2" stroke-linecap="round"><path d="M8 10l4-4 4 4M8 14l4 4 4-4"/></svg></div>
+    <div class="lbl">WORKSPACE</div>
+    <div class="nv" id="nv0" style="top:124px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l9-9 9 9"/><path d="M5 10v10h14V10"/></svg>Insight</div>
+    <div class="nv" id="nv1" style="top:176px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M9 4v16"/></svg>Ledger</div>
+    <div class="nv" id="nv5" style="top:228px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16M6 16l10-10 3 3-10 10H6z"/></svg>Blueprint<span class="spk sp" style="width:18px;height:18px"><img src="../../../../assets/antarax/sparkle.svg" alt=""><img src="logos/logo-frame.svg" alt=""></span></div>
+    <div class="nv" id="nv2" style="top:280px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="18" cy="8" r="3"/><circle cx="11" cy="18" r="3"/><path d="M8.5 7.5l6.7.8M7.4 8.6l2.4 6.8"/></svg>Map</div>
+    <div class="nv" id="nv3" style="top:332px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Renewals<span class="bdg" id="rbdg">1</span></div>
+    <div class="nv" id="nv4" style="top:384px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg>Optimize<span class="spk sp" style="width:18px;height:18px"><img src="../../../../assets/antarax/sparkle.svg" alt=""><img src="logos/logo-frame.svg" alt=""></span></div>
+    <div id="aic"><b><span class="spk" style="width:18px;height:18px"><img src="../../../../assets/antarax/sparkle.svg" alt=""><img src="logos/logo-frame.svg" alt=""></span>Your AI, connected</b><p>A read-only link for your coding agent or MCP client.</p><span class="on"><i></i>READ-ONLY</span></div>
+    <div class="set"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 00.3 1.8l.1.1a2 2 0 11-2.8 2.8l-.1-.1a1.7 1.7 0 00-1.8-.3 1.7 1.7 0 00-1 1.5V21a2 2 0 11-4 0v-.1a1.7 1.7 0 00-1.1-1.5 1.7 1.7 0 00-1.8.3l-.1.1a2 2 0 11-2.8-2.8l.1-.1a1.7 1.7 0 00.3-1.8 1.7 1.7 0 00-1.5-1H3a2 2 0 110-4h.1a1.7 1.7 0 001.5-1.1 1.7 1.7 0 00-.3-1.8l-.1-.1a2 2 0 112.8-2.8l.1.1a1.7 1.7 0 001.8.3H9a1.7 1.7 0 001-1.5V3a2 2 0 114 0v.1a1.7 1.7 0 001 1.5 1.7 1.7 0 001.8-.3l.1-.1a2 2 0 112.8 2.8l-.1.1a1.7 1.7 0 00-.3 1.8V9a1.7 1.7 0 001.5 1H21a2 2 0 110 4h-.1a1.7 1.7 0 00-1.5 1z"/></svg>Settings</div>
+  </div>
+
+  <!-- Ledger -->
+  <div class="pane" id="pL">
+    <div class="tt">Ledger</div><div class="st">Everything Teras Studio pays for, with its owner</div>
+    <div class="btn2 q" style="right:226px;top:30px;width:118px;height:48px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3M7 8l5-5 5 5M4 15v4a2 2 0 002 2h12a2 2 0 002-2v-4"/></svg>Import</div>
+    <div class="btn2 p" id="bAdd" style="right:40px;top:30px;width:172px;height:48px">+ Add asset</div>
+    <div class="stat" style="left:40px"><div class="l">MONTHLY SPEND</div><div class="v" id="tot">$4,812</div><div class="f">grouped by currency</div></div>
+    <div class="stat" style="left:289px"><div class="l">ASSETS TRACKED</div><div class="v" id="cnt">37</div><div class="f">across 3 stacks</div></div>
+    <div class="stat" style="left:538px"><div class="l"><i style="width:8px;height:8px;border-radius:50%;background:var(--orange)"></i>RENEWING IN 30 DAYS</div><div class="v" id="r30">1</div><div class="f">each with an owner</div></div>
+    <div class="stat" style="left:787px"><div class="l"><span class="spk" style="width:14px;height:14px"><img src="../../../../assets/antarax/sparkle.svg" alt=""><img src="logos/logo-frame.svg" alt=""></span>AI &amp; API SPEND</div><div class="v">$420</div><div class="f">usage-billed, now visible</div></div>
+    <div class="card" style="top:240px;bottom:36px;overflow:hidden">
+      <div class="thd"><b>All assets</b><span class="cnt" id="cnt2">37</span><div class="fch"><span class="on">All</span><span>Subscriptions</span><span>APIs</span><span>Domains</span><span>AI</span></div></div>
+      <div class="tr h"><span>ASSET</span><span>STACK</span><span>MONTHLY</span><span>RENEWS</span><span>OWNER</span></div>
+      <div class="tr" id="rnew"><span class="nm2"><span class="vt" style="--c:#7C6CFF">DS</span><span><b>Design suite</b><small>Annual plan</small></span></span><span><span class="sc">Design</span></span><span class="m">$80</span><span><span class="pill o">in 9 days</span></span><span class="who"><span class="av">DA</span>Daniel</span></div>
+      <div class="tr"><span class="nm2"><span class="vt" style="--c:#0062FB">DT</span><span><b>Design tool</b><small>Per seat</small></span></span><span><span class="sc">Design</span></span><span class="m">$180</span><span class="m" style="font-size:18px">02 Dec</span><span class="who"><span class="av">DA</span>Daniel</span></div>
+      <div class="tr"><span class="nm2"><span class="vt" style="--c:#0E1420">AI</span><span><b>AI API</b><small>Usage-billed</small></span></span><span><span class="sc">Support bot</span></span><span class="m">$420</span><span class="m" style="font-size:18px;color:var(--ink3)">usage</span><span class="who"><span class="av">ML</span>Mei Ling</span></div>
+      <div class="tr"><span class="nm2"><span class="vt" style="--c:#3B82F6">CH</span><span><b>Cloud hosting</b><small>Monthly</small></span></span><span><span class="sc">Website</span></span><span class="m">$2,140</span><span class="m" style="font-size:18px;color:var(--ink3)">monthly</span><span class="who"><span class="av">RK</span>Raj</span></div>
+      <div class="tr"><span class="nm2"><span class="vt" style="--c:#12B76A">Do</span><span><b>Docs</b><small>Per seat</small></span></span><span><span class="sc">Operations</span></span><span class="m">$96</span><span class="m" style="font-size:18px">19 Jan</span><span class="who"><span class="av">AH</span>Aisha</span></div>
+      <div class="tr"><span class="nm2"><span class="vt" style="--c:#0A4FD0">Em</span><span><b>Email</b><small>Per seat</small></span></span><span><span class="sc">Operations</span></span><span class="m">$72</span><span class="m" style="font-size:18px">24 Jan</span><span class="who"><span class="av">RK</span>Raj</span></div>
+      <div class="tr"><span class="nm2"><span class="vt" style="--c:#5A6577">CD</span><span><b>Company domain</b><small>Annual</small></span></span><span><span class="sc">Website</span></span><span class="m">$4</span><span class="m" style="font-size:18px">08 Jan</span><span class="who"><span class="av">AH</span>Aisha</span></div>
+    </div>
+    <div id="veil"></div>
+    <div id="modal"><div class="mh"><span class="ic">+</span><div><b>Add asset</b><small>Add it once. It’s tracked for good.</small></div></div>
+      <div class="fl" style="left:34px;top:116px;width:552px"><div class="lb">NAME</div><div class="in" id="fN"><span id="tN"></span><i class="car" id="kN"></i></div></div>
+      <div class="fl" style="left:34px;top:208px;width:268px"><div class="lb">COST</div><div class="in" id="fC"><span class="pre">$</span><span id="tC"></span><i class="car" id="kC"></i></div></div>
+      <div class="fl" style="left:318px;top:208px;width:268px"><div class="lb">BILLED</div><div class="seg"><span id="segM" class="on">Monthly</span><span id="segY">Yearly</span></div></div>
+      <div class="fl" style="left:34px;top:300px;width:268px"><div class="lb">RENEWS</div><div class="in" id="fR"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#98A2B3" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg><span id="tR"></span><i class="car" id="kR"></i></div></div>
+      <div class="fl" style="left:318px;top:300px;width:268px"><div class="lb">STACK</div><div class="in"><span class="sc">Design</span><svg style="margin-left:auto" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#98A2B3" stroke-width="2.2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></div></div>
+      <div class="fl" style="left:34px;top:392px;width:552px"><div class="lb">OWNER</div><div class="chips"><span class="chip" id="chD"><span class="av">DA</span>Daniel</span><span class="chip"><span class="av">RK</span>Raj</span><span class="chip"><span class="av">ML</span>Mei Ling</span><span class="chip"><span class="av">AH</span>Aisha</span></div></div>
+      <div style="position:absolute;left:0;right:0;top:500px;border-top:1px solid var(--line)"></div>
+      <div class="btn2 q" style="right:200px;top:522px;width:130px;height:50px">Cancel</div>
+      <div class="btn2 p" id="saveb" style="right:34px;top:522px;width:150px;height:50px">Save</div>
+    </div>
+  </div>
+
+  <!-- Map -->
+  <div class="pane" id="pM"><div class="tt">Map</div><div class="st">What each thing is part of, and who looks after it</div>
+    <div class="card" id="mapc"><div class="tb"><span class="pill" style="background:var(--ink);color:#fff">Stacks</span><span class="pill">Owners</span><span class="pill">Environment</span></div>
+      <div class="ra" id="ra0" style="left:230px;top:250px"></div><div class="ra" id="ra1" style="left:760px;top:250px"></div><div class="ra" id="ra2" style="left:495px;top:470px"></div>
+      <div class="stk2" id="mk0" style="left:230px;top:372px"><b>Design</b><span class="who"><span class="av">DA</span>Daniel · 7 assets</span></div>
+      <div class="stk2" id="mk1" style="left:760px;top:385px"><b>Website</b><span class="who"><span class="av">RK</span>Raj · 17 assets</span></div>
+      <div class="stk2" id="mk2" style="left:495px;top:585px"><b>Support bot</b><span class="who"><span class="av">ML</span>Mei Ling · 14 assets</span></div>
+    </div>
+  </div>
+
+  <!-- Renewals -->
+  <div class="pane" id="pR"><div class="tt">Renewals</div><div class="st">Flagged ahead of the date, to the person who decides</div>
+    <div class="card" id="tl"><div style="position:absolute;left:24px;top:18px;font:600 18px var(--sans)">Next 90 days</div>
+      <div class="ax"></div>
+      <div class="tk" style="left:40px">Today</div><div class="tk" style="left:343px">30 days</div><div class="tk" style="left:647px">60 days</div><div class="tk" style="left:950px">90 days</div>
+      <div class="mk o" id="mkS" style="left:131px"><i></i><span>Design suite · 9 days</span></div>
+      <div class="mk" style="left:313px"><i></i><span>Design tool</span></div>
+      <div class="mk" style="left:687px"><i></i><span>Company domain</span></div>
+      <div class="mk" style="left:849px"><i></i><span>Email</span></div>
+    </div>
+    <div class="card" style="top:306px;bottom:36px;overflow:hidden">
+      <div class="rl" style="height:44px;border:0;font:500 12px var(--mono);letter-spacing:.14em;color:var(--ink3);background:#FBFCFE"><span>ASSET</span><span>RENEWS</span><span>DATE</span><span>AMOUNT</span><span>OWNER</span></div>
+      <div class="rl" id="rr0"><span class="nm2"><span class="vt" style="--c:#7C6CFF">DS</span><b>Design suite</b></span><span><span class="pill o">in 9 days</span></span><span class="m">14 Nov</span><span class="m">$960/yr</span><span class="who"><span class="av">DA</span>Daniel</span></div>
+      <div class="rl"><span class="nm2"><span class="vt" style="--c:#0062FB">DT</span><b>Design tool</b></span><span><span class="pill">in 27 days</span></span><span class="m">02 Dec</span><span class="m">$180/mo</span><span class="who"><span class="av">DA</span>Daniel</span></div>
+      <div class="rl"><span class="nm2"><span class="vt" style="--c:#5A6577">CD</span><b>Company domain</b></span><span><span class="pill">in 64 days</span></span><span class="m">08 Jan</span><span class="m">$45/yr</span><span class="who"><span class="av">AH</span>Aisha</span></div>
+      <div class="rl"><span class="nm2"><span class="vt" style="--c:#0A4FD0">Em</span><b>Email</b></span><span><span class="pill">in 80 days</span></span><span class="m">24 Jan</span><span class="m">$72/mo</span><span class="who"><span class="av">RK</span>Raj</span></div>
+    </div>
+  </div>
+
+  <!-- Blueprint -->
+  <div class="pane" id="pB"><div class="tt">Blueprint</div><div class="st">Describe a project. Its AI proposes the stack.</div>
+    <div class="card" id="bpIn"><span class="spk" style="width:30px;height:30px"><img src="../../../../assets/antarax/sparkle.svg" alt=""><img src="logos/logo-frame.svg" alt=""></span><span id="bpT"></span><i class="car" id="bpK"></i><div class="btn2 p" id="bpGo" style="right:14px;top:15px;width:132px;height:52px">Propose</div></div>
+    <div id="sugg">Try<span>Launch a customer support bot</span><span>Move the website to a new host</span><span>Add a booking page</span></div>
+    <div class="think" id="bpTh" style="left:44px;top:236px"><span class="spk th" style="width:34px;height:34px"><img src="../../../../assets/antarax/sparkle.svg" alt=""><img src="logos/logo-frame.svg" alt=""></span><span class="shim">Proposing a stack from the price catalogue…</span></div>
+    <div class="card aicard" id="bpPlan">
+      <div style="display:flex;justify-content:space-between;align-items:center"><span class="aik"><span class="spk" style="width:20px;height:20px"><img src="../../../../assets/antarax/sparkle.svg" alt=""><img src="logos/logo-frame.svg" alt=""></span>AI · PROPOSAL</span><span class="pill" id="bpSt">Draft</span></div>
+      <div style="font:600 27px var(--sans);margin-top:12px">Launch a customer support bot</div>
+      <div class="ph2"><span class="pill">2 phases · Build, Launch</span><span class="pill">3 services</span></div>
+      <div style="margin-top:16px">
+        <div class="br h"><span>SERVICE</span><span>PHASE</span><span>EST. MONTHLY</span></div>
+        <div class="br" id="bp0"><span class="nm2"><span class="vt" style="--c:#0E1420;width:36px;height:36px">LL</span>LLM API (chat)</span><span><span class="sc">Build</span></span><span class="m">$180–420</span></div>
+        <div class="br" id="bp1"><span class="nm2"><span class="vt" style="--c:#3B82F6;width:36px;height:36px">VD</span>Vector database</span><span><span class="sc">Build</span></span><span class="m">$0–90</span></div>
+        <div class="br" id="bp2"><span class="nm2"><span class="vt" style="--c:#12B76A;width:36px;height:36px">An</span>Analytics dashboard</span><span><span class="sc">Launch</span></span><span class="m">$29–99</span></div>
+        <div class="br" id="bpTot" style="font-weight:600"><span>Estimated monthly</span><span></span><span class="m" style="color:var(--blue)">$209–609</span></div>
+      </div>
+      <div id="bpCat" style="position:absolute;left:28px;bottom:40px;font:500 15px var(--mono);color:var(--ink2);display:flex;gap:8px;align-items:center"><i style="width:8px;height:8px;border-radius:50%;background:var(--ok)"></i>PRICES FROM A REAL CATALOGUE</div>
+      <div class="btn2 p" id="bpCv" style="right:28px;bottom:24px;width:300px;height:54px">Convert to live tracking</div>
+    </div>
+  </div>
+
+  <!-- Optimize -->
+  <div class="pane" id="pO"><div class="tt">Optimize</div><div class="st">Where you could save, with the reasoning shown</div>
+    <div class="card" id="osum"><div><div class="l">REVIEWED</div><div class="v">41 <span style="font-size:18px;color:var(--ink3)">assets</span></div></div><div><div class="l"><span class="spk" style="width:14px;height:14px"><img src="../../../../assets/antarax/sparkle.svg" alt=""><img src="logos/logo-frame.svg" alt=""></span>PROPOSALS</div><div class="v">2</div></div><div><div class="l">POSSIBLE SAVINGS</div><div class="v" style="color:var(--blue)">$960<span style="font-size:18px;color:var(--ink3)"> /yr</span></div></div></div>
+    <div class="card aicard" id="prop"><div class="aik"><span class="spk" style="width:20px;height:20px"><img src="../../../../assets/antarax/sparkle.svg" alt=""><img src="logos/logo-frame.svg" alt=""></span>AI · PROPOSAL</div>
+      <div class="think" id="oTh" style="left:30px;top:76px"><span class="spk th" style="width:34px;height:34px"><img src="../../../../assets/antarax/sparkle.svg" alt=""><img src="logos/logo-frame.svg" alt=""></span><span class="shim">Reviewing what Teras Studio pays for…</span></div>
+      <div id="oT" style="font:600 30px/1.25 var(--sans);margin-top:14px">Keep one design tool, not two.</div>
+      <div style="font:400 21px/1.5 var(--sans);color:var(--ink2);margin-top:8px;max-width:860px;height:64px"><span id="oR"></span><i class="car" id="oK" style="height:20px"></i></div>
+      <div class="ev" id="oEv"><span><span class="vt" style="--c:#7C6CFF">DS</span>Design suite · Design · $960/yr</span><span><span class="vt" style="--c:#0062FB">DT</span>Design tool · Design · $180/mo</span></div>
+      <div class="btn2 p" id="bap" style="left:30px;top:290px;width:240px;height:52px">Approve</div>
+      <div class="btn2 q" id="bnn" style="left:284px;top:290px;width:130px;height:52px">Not now</div>
+      <div id="rec" style="position:absolute;left:30px;top:358px;display:flex;gap:28px;align-items:center;font:500 17px var(--sans);color:var(--ink2)"><span>Marked cancelled in AX Frame. Cancel it with the vendor as usual.</span><span style="font:500 19px var(--mono);color:var(--ink)">Monthly <span id="tot2">$4,892</span></span></div>
+    </div>
+    <div class="card aicard" id="pc"><span class="spk" style="width:36px;height:36px"><img src="../../../../assets/antarax/sparkle.svg" alt=""><img src="logos/logo-frame.svg" alt=""></span><div style="flex:1"><div class="aik" style="margin-bottom:6px">PRICE CHECK</div><div style="font:500 20px var(--sans)">Design tool’s pricing page changed: <b style="font:500 20px var(--mono)">$180 → $195</b> a month.</div><div style="font:400 15px var(--sans);color:var(--ink3);margin-top:4px">Flagged for you to confirm. Never applied on its own.</div></div><span class="pill" style="background:var(--blue);color:#fff;padding:8px 16px">Confirm</span><span class="pill" style="padding:8px 16px">Ignore</span></div>
+  </div>
+</div>
+
+<svg id="cubes" width="1920" height="1080"><g id="cb"></g></svg>
+
+<!-- opening readouts and tags -->
+<div class="ctr" id="ctr1"><div class="e">Digital assets</div><div class="n" id="n1">37</div><div class="c">tracked in one ledger</div></div>
+<div class="ctr" id="ctrE"><img src="logos/logo-frame.svg" width="200" height="200" alt=""></div>
+<div class="tag" id="tg0"><i></i>AI API<span>usage-billed</span></div>
+<div class="tag" id="tg1"><i></i>Company domain<span>annual</span></div>
+<div class="tag" id="tg2"><i></i>Analytics<span>free trial</span></div>
+<div class="tag" id="tg3"><i></i>Cloud hosting<span>monthly</span></div>
+<div class="tag" id="tg4"><i></i>Email<span>per seat</span></div>
+<div class="tag" id="tgD" style="font-size:24px"><i style="background:var(--blue)"></i>Design suite<span>$960 / yr</span></div>
+
+<!-- captions: the story, then four uses -->
+<div class="cap" id="c1" style="top:400px"><div class="e">AX Frame</div><div class="h">It starts with<br>one tool.</div></div>
+<div class="cap" id="c2" style="top:400px"><div class="h">Then an API.<br>A domain. A trial.</div></div>
+<div class="cap" id="c3" style="top:400px"><div class="h">Then thirty-seven.</div><div class="s">Who’s watching them?</div></div>
+<div class="cap" id="c4" style="top:380px"><div class="e">Meet</div><div class="h"><span class="b">AX Frame.</span></div><div class="s">One ledger for everything you pay for. Subscriptions, APIs, domains and AI.</div></div>
+<div class="cap n" id="a1" style="top:330px"><div class="e">1 · Add</div><div class="h">Add it once.</div><div class="s">Cost, renewal date and an owner. Type it in, or import the spreadsheet you already keep.</div></div>
+<div class="cap n" id="a2" style="top:330px"><div class="e">2 · See</div><div class="h">See how it fits together.</div><div class="s">Grouped into stacks, each with an owner.</div></div>
+<div class="cap n" id="a3" style="top:330px"><div class="e">3 · Hear</div><div class="h">Hear before the charge.</div><div class="s">Each renewal is flagged ahead of its date, to the person who decides.</div></div>
+<div class="cap n" id="a4" style="top:330px"><div class="e">4 · Plan</div><div class="h">Describe it. <span class="b">Its AI proposes the stack.</span></div><div class="s">Services, phases and costs from a real price catalogue. A draft until you convert it.</div></div>
+<div class="cap n" id="a5" style="top:330px"><div class="e">5 · Decide</div><div class="h">Its AI reviews. <span class="b">You approve.</span></div><div class="s">Every AI answer is a proposal. Nothing changes until a person approves.</div></div>
+
+<!-- the alert that reaches Daniel -->
+<div id="toast"><span class="ic"><img src="logos/logo-frame.svg" width="30" height="30" alt=""></span><div style="flex:1"><div class="k">AX FRAME · NOW</div>
+  <div style="font:600 23px var(--sans);margin-top:6px">Design suite renews in 9 days</div>
+  <div style="font:400 19px/1.45 var(--sans);color:var(--ink2);margin-top:2px">$960 on 14 Nov. Daniel, keep it?</div>
+  <div style="display:flex;gap:10px;margin-top:12px"><span class="pill" style="background:var(--blue);color:#fff;padding:7px 16px">Review</span><span class="pill" style="padding:7px 16px">Keep</span></div></div></div>
+
+<div id="clk"></div>
+<svg id="cur" viewBox="0 0 24 24"><path d="M4 2l15 10-6.5 1.4 3.6 7.1-2.8 1.4-3.6-7.2L4 19z" fill="#0E1420" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg>
+
+<div id="endt"><div class="nm">AX Frame</div><div class="tg">Know what you pay for, before it renews.</div><div class="ai"><span class="spk " style="width:26px;height:26px"><img src="../../../../assets/antarax/sparkle.svg" alt=""><img src="logos/logo-frame.svg" alt=""></span>Its AI plans and reviews. You approve.</div><div class="u">IN CLOSED PILOT · REQUEST ACCESS · <b>antarax.ai/frame</b></div></div>
+<div id="eft">AX FRAME BY ANTARAX · DEMO DATA, FICTIONAL BUSINESS</div>
+<svg id="rings"></svg>
+</div><div id="hud"></div>
+<script>
+/* ---- the estate: 210 cubes; cube 0 is the design suite, the first thing you see ---- */
+let sd = 11; const rnd = () => (sd = (sd * 16807) % 2147483647) / 2147483647;
+const N = 210, TAU = Math.PI * 2;
+const FACES = { b0: ['#5B95FF', '#0062FB', '#0A4FD0'], b1: ['#8FB6FF', '#3B82F6', '#2563EB'], b2: ['#B9CFF7', '#7FA9FF', '#5B8AE8'], g: ['#C9D1DC', '#A3AEBE', '#8792A4'] };
+const BLUES = ['b0', 'b0', 'b1', 'b1', 'b2', 'b2', 'b0'];
+const C = [];
+for (let i = 0; i < N; i++) {
+  const g = i === 0 ? 0 : (i % 7 < 2 ? 0 : i % 7 < 5 ? 1 : 2);
+  C.push({ i, g, col: BLUES[(rnd() * BLUES.length) | 0], s: 10 + rnd() * 8, rot: rnd() * 24 - 12, ph: rnd() * TAU, per: 5 + rnd() * 4, amp: 2 + rnd() * 4,
+    cx: 860 + rnd() * 900, cy: 150 + rnd() * 760, th: rnd() * TAU, rr: rnd(), d: rnd() });
+}
+C[0].cx = 1260; C[0].cy = 520;
+C.forEach((c, k) => { c.a = k === 0 ? 0.6 : 3.8 + Math.pow(k / N, .55) * 4.6; });
+const G = [0, 1, 2].map(g => C.filter(c => c.g === g));
+G.forEach(list => list.forEach((c, k) => { c.k = k; c.kn = list.length; }));
+const ring = (cx, cy, ri, ro) => c => { const r = ri + c.rr * (ro - ri); return [cx + Math.cos(c.th) * r, cy + Math.sin(c.th) * r]; };
+const sring = (cx, cy, ri, ro) => c => { const th = c.k / c.kn * TAU - Math.PI / 2 + (c.d - .5) * .12, r = ri + c.rr * (ro - ri); return [cx + Math.cos(th) * r, cy + Math.sin(th) * r]; };
+// the map pane's three stacks, in screen space (window at 560,140; pane at +270)
+// the map pane's three stacks: centres read from anchors in the map canvas, so they follow the layout
+const RADII = [[62, 98], [74, 114], [58, 92]];
+const stagePt = (el, fx = .5, fy = .5) => { const sr = $('stage').getBoundingClientRect(), k = sr.width / 1920, r = el.getBoundingClientRect(); return [(r.left + r.width * fx - sr.left) / k, (r.top + r.height * fy - sr.top) / k]; };
+const LAY = { cloud: c => [c.cx, c.cy], halo: ring(1260, 540, 245, 320), win: c => [1200 + Math.cos(c.th) * 30, 540 + Math.sin(c.th) * 30], end: ring(960, 390, 205, 268) };
+function posAt(c, t) {
+  if (t < 9.0 + c.d * .9) return LAY.cloud(c);
+  const k1 = PIO(t, 9.0 + c.d * .9, 10.3 + c.d * .9);
+  let p = [lerp(LAY.cloud(c)[0], LAY.halo(c)[0], k1), lerp(LAY.cloud(c)[1], LAY.halo(c)[1], k1) - Math.sin(k1 * Math.PI) * 30];
+  const k2 = PIO(t, 12.2 + c.d * .5, 12.9 + c.d * .5);
+  if (k2 > 0) p = [lerp(p[0], LAY.win(c)[0], k2), lerp(p[1], LAY.win(c)[1], k2)];
+  return p;
+}
+const cube = (x, y, s, f, rot, op) => {
+  const h = s * .5, q = s * .25, X = x - s / 2, Y = y - s * .55;
+  return `<g transform="translate(${X.toFixed(1)} ${Y.toFixed(1)}) rotate(${rot.toFixed(1)} ${s / 2} ${s / 2})" opacity="${op.toFixed(3)}"><polygon points="${s / 2},0 ${s},${q} ${s / 2},${h} 0,${q}" fill="${f[0]}"/><polygon points="0,${q} ${s / 2},${h} ${s / 2},${s * 1.1} 0,${s * .85}" fill="${f[1]}"/><polygon points="${s},${q} ${s / 2},${h} ${s / 2},${s * 1.1} ${s},${s * .85}" fill="${f[2]}"/></g>`;
+};
+const mixc = (a, b, k) => a.map((ca, i) => { const pa = parseInt(ca.slice(1), 16), pb = parseInt(b[i].slice(1), 16); const r = Math.round(lerp(pa >> 16, pb >> 16, k)), g = Math.round(lerp((pa >> 8) & 255, (pb >> 8) & 255, k)), bl = Math.round(lerp(pa & 255, pb & 255, k)); return `rgb(${r},${g},${bl})`; });
+const TAGS = [['tg0', 6], ['tg1', 18], ['tg2', 40], ['tg3', 70], ['tg4', 110]];
+const glow = (id, x, y, d, o) => { const g = document.getElementById(id); g.style.left = x + 'px'; g.style.top = y + 'px'; g.style.width = g.style.height = d + 'px'; g.style.opacity = o; };
+const money = n => '$' + Math.round(n).toLocaleString('en-US');
+const fade = (id, t, a, b, f = .25) => { const el = $(id), o = P(t, a, a + f) * (b == null ? 1 : 1 - P(t, b, b + f)); el.style.opacity = o.toFixed(3); el.style.visibility = o > .002 ? 'visible' : 'hidden'; return o; };
+const typeIn = (id, s, t, a, b) => { $(id).textContent = s.slice(0, Math.round(clamp((t - a) / (b - a)) * s.length)); };
+
+/* ---- the cursor: waypoints [time, x, y]; clicks at times ---- */
+const PATH = [[13.3, [1500, 800]], [13.6, [1500, 800]], [14.2, 'bAdd'], [14.4, 'bAdd'], [14.6, ['fN', .3, .55]], [15.25, ['fN', .3, .55]], [15.45, ['fC', .4, .55]], [15.8, ['fC', .4, .55]], [15.95, 'segY'], [16.05, 'segY'], [16.15, ['fR', .4, .55]], [16.45, ['fR', .4, .55]], [16.65, 'chD'], [16.8, 'chD'], [17.0, 'saveb'], [17.2, 'saveb'], [18.4, [1500, 660]], [18.7, [1500, 660]], [19.0, 'nv2'], [19.3, 'nv2'], [21.6, [820, 600]], [22.0, [820, 600]], [22.3, 'nv3'], [22.5, 'nv3'], [23.0, ['rr0', .3, .55]], [27.4, ['rr0', .33, .65]], [27.85, 'nv5'], [28.1, 'nv5'], [28.55, ['bpIn', .3, .55]], [28.7, ['bpIn', .3, .55]], [29.9, ['bpIn', .45, .8]], [30.2, 'bpGo'], [30.45, 'bpGo'], [32.4, [1560, 740]], [33.05, 'bpCv'], [33.5, 'bpCv'], [34.4, 'nv4'], [34.75, 'nv4'], [36.9, [1000, 800]], [37.75, 'bap'], [38.4, 'bap'], [40.2, [1250, 920]]];
+const CLICKS = [14.3, 14.62, 15.95, 16.15, 16.7, 17.05, 19.05, 22.35, 27.95, 28.65, 30.3, 33.3, 34.6, 38.0];
+const where = g => Array.isArray(g) && typeof g[0] === 'number' ? g : typeof g === 'string' ? stagePt($(g)) : stagePt($(g[0]), g[1], g[2]);
+const curAt = t => { for (let i = 1; i < PATH.length; i++) if (t <= PATH[i][0]) { const [a, g0] = PATH[i - 1], [b, g1] = PATH[i]; const p0 = where(g0), p1 = where(g1), k = eio(clamp((t - a) / (b - a))); return [lerp(p0[0], p1[0], k), lerp(p0[1], p1[1], k)]; } return where(PATH.at(-1)[1]); };
+const TABS = [['pL', 1, 13.0, 19.05], ['pM', 2, 19.05, 22.35], ['pR', 3, 22.35, 27.95], ['pB', 5, 27.95, 34.6], ['pO', 4, 34.6, 99]];
+
+window.FILM = { dur: 46, colours: ['#0062FB', '#FB9800'], rings: [] };
+window.FILM.render = t => {
+  const breath = 1 + Math.sin(t * TAU / 6.5) * .045;
+  const inMap = t >= 19.05 && t < 22.6, atEnd = t >= 40.8;
+  // ---- cubes ----
+  let svg = '';
+  const MAPS = inMap ? [0, 1, 2].map(g => stagePt($('ra' + g))) : [];
+  for (const c of C) {
+    if (t < c.a) continue;
+    const ar = P(t, c.a, c.a + .7);
+    let x, y, s = c.s, op = ar * (0.72 + c.rr * .28), f;
+    const bob = Math.sin(t * TAU / c.per + c.ph) * c.amp;
+    if (atEnd) {
+      const k = PIO(t, 40.8 + c.d * .6, 42.0 + c.d * .6), [ex, ey] = LAY.end(c);
+      x = 960 + (ex - 960) * k * breath; y = 390 + (ey - 390) * k * breath + bob * k; op = k * (0.72 + c.rr * .28); f = FACES[c.col];
+      if (c.i === 0) continue;   // the design suite was dropped
+    } else if (inMap) {
+      const m = [...MAPS[c.g], ...RADII[c.g]], k = PIO(t, 19.15 + c.d * .4, 19.75 + c.d * .4), [mx, my] = sring(...m)(c);
+      x = m[0] + (mx - m[0]) * k; y = m[1] + (my - m[1]) * k + bob * .5; s = c.s * .62; op = k * (0.75 + c.rr * .25) * (1 - P(t, 22.35, 22.6)); f = FACES[c.col];
+    } else if (t < 13.2) {
+      [x, y] = posAt(c, t); y += bob - (1 - ar) * 70;
+      if (t > 10) { x = 1260 + (x - 1260) * (t < 12.2 ? breath : 1); y = 540 + (y - 540) * (t < 12.2 ? breath : 1); }
+      const tracked = PIO(t, 9.0 + c.d * .9 + .3, 9.0 + c.d * .9 + .9);
+      f = mixc(FACES.g, FACES[c.col], tracked);
+      if (c.i === 0 && t < 9) f = mixc(FACES.b0, FACES.g, P(t, 3.8, 5.0));
+      s = c.s * (1 + .3 * (1 - tracked));
+      if (c.i === 0) { s = lerp(64, c.s + 4, PIO(t, 3.2, 4.6)); op = ar; }
+      op *= 1 - PIO(t, 12.5 + c.d * .5, 13.1 + c.d * .5);
+    } else continue;
+    if (op < .01) continue;
+    svg += cube(x, y, s, f, c.rot, op);
+  }
+  $('cb').innerHTML = svg;
+  glow('g0', 1260, 540, 560 * breath, P(t, 9.6, 11.0) * (1 - P(t, 12.2, 12.9)));
+  glow('g2', 960, 390, 500 * breath, P(t, 41.1, 42.3));
+
+  // ---- opening ----
+  show($('ctr1'), t, 10.0, 12.2, { dy: 14 }); $('ctr1').style.left = '1260px'; $('ctr1').style.top = '540px';
+  $('n1').textContent = Math.round(lerp(0, 37, P(t, 10.0, 11.2)));
+  TAGS.forEach(([id, ci]) => { const c = C[ci], el = $(id), [x, y] = LAY.cloud(c); el.style.left = Math.min(x + 18, 1580) + 'px'; el.style.top = Math.max(y - 54, 120) + 'px'; show(el, t, c.a + .25, Math.min(c.a + 2.0, 8.8), { dy: 10 }); });
+  { const el = $('tgD'); el.style.left = '1316px'; el.style.top = '470px'; show(el, t, 1.4, 3.6, { dy: 10 }); }
+  show($('c1'), t, 0.9, 3.5); show($('c2'), t, 3.8, 6.0); show($('c3'), t, 6.3, 8.8); show($('c4'), t, 9.4, 12.2);
+
+  // ---- the app window ----
+  const wi = PIO(t, 12.6, 13.3), wo = PIO(t, 40.4, 41.0);
+  $('win').style.opacity = (wi * (1 - wo)).toFixed(3); $('win').style.visibility = wi * (1 - wo) > .002 ? 'visible' : 'hidden';
+  $('win').style.transform = `scale(${(lerp(.9, 1, wi) * lerp(1, .94, wo)).toFixed(4)})`;
+  TABS.forEach(([id, nv, a, b]) => { fade(id, t, a, b, .2); $('nv' + nv).classList.toggle('on', t >= a && t < b); });
+  $('nv0').classList.remove('on');
+  // 1 · add: the button, the form, typing, the owner, save, the row lands, the total ticks up
+  const mo = P(t, 14.35, 14.6) * (1 - P(t, 17.05, 17.3));
+  $('modal').style.opacity = mo; $('modal').style.visibility = mo > .002 ? 'visible' : 'hidden'; $('modal').style.transform = `translateY(${((1 - mo) * 24).toFixed(1)}px)`;
+  $('veil').style.opacity = mo; $('veil').style.visibility = mo > .002 ? 'visible' : 'hidden';
+  typeIn('tN', 'Design suite', t, 14.7, 15.2); typeIn('tC', '960', t, 15.5, 15.72); typeIn('tR', '14 Nov', t, 16.2, 16.4);
+  $('segY').classList.toggle('on', t >= 15.95); $('segM').classList.toggle('on', t < 15.95);
+  [['fN', 'kN', 14.62, 15.4], ['fC', 'kC', 15.4, 15.95], ['fR', 'kR', 16.15, 16.65]].forEach(([fi, ki, a, b]) => { const on = t >= a && t < b; $(fi).classList.toggle('f', on); $(ki).style.opacity = on && Math.floor(t * 3) % 2 === 0 ? 1 : 0; });
+  $('chD').classList.toggle('on', t >= 16.7);
+  const rn = PIO(t, 17.15, 17.55); $('rnew').style.height = (74 * rn).toFixed(1) + 'px'; $('rnew').style.borderTopWidth = rn > .02 ? '1px' : '0';
+  $('rnew').style.background = `rgba(238,244,255,${(1 - P(t, 18.2, 18.9)).toFixed(3)})`;
+  $('tot').textContent = money(lerp(4812, 4892, P(t, 17.3, 17.9)));
+  const added = t >= 17.3; $('cnt').textContent = $('cnt2').textContent = added ? 38 : 37; $('r30').textContent = $('rbdg').textContent = added ? 2 : 1;
+  $('tot').style.color = t >= 17.3 && t < 18.6 ? 'var(--blue)' : 'var(--ink)';
+  // 2 · see: the stack labels
+  [0, 1, 2].forEach(g => show($('mk' + g), t, 19.6 + g * .15, 22.3, { dy: 8 }));
+  // 3 · hear: the row glows, the alert lands
+  $('rr0').style.background = t >= 22.9 && t < 27.95 ? `rgba(255,244,229,${(.5 + .5 * Math.sin((t - 22.9) * 5)) .toFixed(3)})` : 'transparent';
+  const to = P(t, 23.4, 23.8) * (1 - P(t, 27.3, 27.6)); st('toast', to, 0, (1 - P(t, 23.4, 23.8)) * -40);
+  // 4 · decide: approve, recorded, the total drops
+  // 4 · plan: describe the project, the AI thinks, the stack arrives with catalogue prices, convert it
+  const bf = t >= 28.65 && t < 30.3; $('bpIn').classList.toggle('f', bf);
+  if (t < 28.7) { $('bpT').textContent = 'Describe a new project…'; $('bpT').className = 'ph'; } else { typeIn('bpT', 'Launch a customer support bot', t, 28.7, 29.9); $('bpT').className = ''; }
+  $('bpK').style.opacity = bf && Math.floor(t * 3) % 2 === 0 ? 1 : 0;
+  $('bpGo').style.transform = `scale(${t >= 30.25 && t < 30.4 ? .95 : 1})`;
+  fade('bpTh', t, 30.35, 31.45, .2); fade('sugg', t, 27.95, 28.65, .25); fade('bpPlan', t, 31.45, null, .3);
+  ['bp0', 'bp1', 'bp2'].forEach((id, i) => show($(id), t, 31.65 + i * .3, null, { dy: 10 }));
+  show($('bpTot'), t, 32.5, null, { dy: 6 }); show($('bpCat'), t, 32.6, null, { dy: 0 }); show($('bpCv'), t, 32.55, null, { dy: 0 });
+  const cv = t >= 33.3; $('bpCv').textContent = cv ? '✓ 3 assets now tracked' : 'Convert to live tracking'; $('bpCv').style.background = cv ? 'var(--ok)' : 'var(--blue)';
+  $('bpSt').textContent = cv ? 'Tracking' : 'Draft'; $('bpSt').style.background = cv ? 'var(--okb)' : '#F2F4F7'; $('bpSt').style.color = cv ? '#067647' : 'var(--ink2)';
+  // 5 · decide: the AI reviews, its reasoning streams in, a person approves; price check flags a change
+  fade('oTh', t, 34.75, 35.6, .2); show($('oT'), t, 35.6, null, { dy: 10 });
+  typeIn('oR', 'Design suite and Design tool are both in your Design stack and do the same job. Dropping the suite saves $960 a year.', t, 35.75, 36.8);
+  $('oK').style.opacity = t >= 35.75 && t < 36.9 ? 1 : 0;
+  show($('oEv'), t, 36.85, null, { dy: 8 }); show($('bap'), t, 37.0, null, { dy: 0 }); show($('bnn'), t, 37.0, null, { dy: 0 });
+  const ap = t >= 38.0; $('bap').textContent = ap ? '✓ Approved · Aisha' : 'Approve'; $('bap').style.background = ap ? 'var(--ok)' : 'var(--blue)';
+  if (t >= 37.85 && t < 38.0) $('bap').style.transform = 'scale(.95)';
+  fade('rec', t, 38.25, null, .4); $('tot2').textContent = money(lerp(4892, 4812, P(t, 38.5, 39.1))); $('tot2').style.color = t >= 38.5 ? 'var(--ok)' : 'var(--ink)';
+  show($('pc'), t, 38.9, null, { dy: 16 });
+  // AI cards glow softly as they arrive, then settle
+  [['bpPlan', 31.45], ['prop', 35.6], ['pc', 38.9]].forEach(([id, a]) => { const g = P(t, a, a + .4) * (1 - P(t, a + 1.2, a + 2.2)); $(id).style.boxShadow = g > .01 ? `0 0 0 ${(2 * g).toFixed(2)}px rgba(0,98,251,${(.35 * g).toFixed(3)}), 0 0 ${(50 * g).toFixed(1)}px rgba(91,77,240,${(.28 * g).toFixed(3)})` : 'none'; });
+  // AI marks: the sparkle; while thinking it becomes the Frame logo and back
+  document.querySelectorAll('.spk').forEach(sp => { const [a, b] = sp.children; if (sp.classList.contains('th')) { const k = (1 - Math.cos(t * TAU / 1.6)) / 2; a.style.opacity = 1 - k; b.style.opacity = k; sp.style.transform = `scale(${(1 + .08 * Math.sin(t * TAU / .8)).toFixed(3)})`; } });
+  document.querySelectorAll('.shim').forEach(e => e.style.backgroundPosition = `${(100 - ((t * .7) % 1) * 100).toFixed(1)}% 0`);
+  // captions for the four uses
+  show($('a1'), t, 13.1, 18.7); show($('a2'), t, 19.1, 22.2); show($('a3'), t, 22.4, 27.7); show($('a4'), t, 28.0, 34.4); show($('a5'), t, 34.7, 40.3);
+  // the cursor and its clicks
+  const [cx, cy] = curAt(t), con = t >= 13.3 && t < 40.3;
+  $('cur').style.visibility = con ? 'visible' : 'hidden'; $('cur').style.transform = `translate(${cx.toFixed(1)}px,${cy.toFixed(1)}px)`;
+  $('cur').style.opacity = P(t, 13.3, 13.6) * (1 - P(t, 39.9, 40.3));
+  let ck = 0, cp = 0; CLICKS.forEach(c => { if (t >= c && t < c + .45) { ck = 1; cp = (t - c) / .45; } });
+  const cl = $('clk'); cl.style.visibility = ck ? 'visible' : 'hidden'; cl.style.left = (cx + 4) + 'px'; cl.style.top = (cy + 3) + 'px';
+  cl.style.width = cl.style.height = (10 + cp * 46).toFixed(1) + 'px'; cl.style.opacity = (1 - cp).toFixed(3);
+  // ---- end ----
+  show($('ctrE'), t, 41.9, null, { dy: 0, s0: .9 }); $('ctrE').style.left = '960px'; $('ctrE').style.top = '390px';
+  show($('endt'), t, 42.3, null, { dy: 18 }); show($('eft'), t, 43.1, null, { dy: 0 });
+};
+</script>
+<script src="engine.js"></script>
+</body></html>

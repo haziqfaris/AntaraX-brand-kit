@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Janka film: a week in the store</title>
+<link rel="stylesheet" href="engine.css">
+<style>
+/* Janka: warm and tactile. Cream and kraft, plum ink, Janka pink. One continuous camera move along a week. */
+:root { --c: #E9579D; --cd: #B4306F; --t: #FDE8F1; --plum: #3B1F2B; --cream: #FBF4E8; --kraft: #E9D6B8; --wood: #C99B6B; }
+#stage { background: var(--cream); color: var(--plum); }
+#grain { position: absolute; inset: 0; background: radial-gradient(rgba(120,80,40,.07) 1px, transparent 1.4px) 0 0/7px 7px, radial-gradient(rgba(120,80,40,.05) 1px, transparent 1.4px) 3px 4px/11px 11px; }
+#world { position: absolute; left: 0; top: 0; width: 8800px; height: 1080px; transform-origin: 0 0; }
+.day { position: absolute; top: 70px; font: 700 76px/1 var(--sans); letter-spacing: -.03em; }
+.day small { display: block; font: 500 22px var(--mono); letter-spacing: .06em; color: var(--cd); margin-top: 12px; }
+.note { position: absolute; font: 500 26px/1.3 var(--sans); color: var(--cd); transform: rotate(-3deg); }
+.bub { position: absolute; background: #fff; border-radius: 26px 26px 26px 8px; padding: 18px 24px; font-size: 28px; box-shadow: 0 10px 24px -14px rgba(59,31,43,.4); color: var(--plum); }
+.bub small { display: block; font-size: 17px; color: #9A7F86; margin-top: 4px; }
+.bub.me { border-radius: 26px 26px 8px 26px; background: var(--c); color: #fff; }
+.bub.me small { color: #FFE0EE; }
+.cap { position: absolute; left: 140px; top: 700px; font: 700 64px/1.1 var(--sans); letter-spacing: -.03em; color: var(--plum); z-index: 50; }
+.cap .p { color: var(--c); }
+.cap.s { font: 500 34px/1.3 var(--sans); letter-spacing: 0; color: #7A5C66; }
+.rcpt { position: absolute; width: 420px; background: #fff; box-shadow: 0 18px 40px -20px rgba(59,31,43,.45); font: 500 20px/1.6 var(--mono); color: var(--plum); overflow: hidden; }
+.rcpt .in { padding: 24px 26px 30px; }
+.rcpt hr { border: 0; border-top: 2px dashed #E6D8DC; margin: 10px 0; }
+.stampt { position: absolute; border: 5px solid var(--c); color: var(--c); font: 700 30px var(--sans); padding: 8px 18px; border-radius: 12px; letter-spacing: .02em; background: rgba(255,255,255,.7); }
+.chk { display: flex; align-items: center; gap: 14px; background: #fff; border-radius: 14px; padding: 14px 20px; font-size: 26px; box-shadow: 0 8px 20px -14px rgba(59,31,43,.4); margin-bottom: 12px; }
+.chk i { width: 30px; height: 30px; border-radius: 50%; background: var(--ok); color: #fff; font-style: normal; display: grid; place-items: center; font-size: 18px; }
+.tag { position: absolute; background: #FFE9C7; color: #8A4B00; font: 600 22px var(--sans); padding: 6px 14px; border-radius: 8px; box-shadow: 0 4px 10px -6px rgba(0,0,0,.3); }
+.notif { position: absolute; width: 600px; background: #fff; border-radius: 26px; padding: 22px 26px; box-shadow: 0 24px 50px -24px rgba(59,31,43,.55); display: flex; gap: 18px; }
+.notif img { width: 64px; height: 64px; flex: none; }
+.notif b { display: block; font: 600 28px var(--sans); }
+.notif span { font-size: 22px; color: #7A5C66; }
+#legend { position: absolute; left: 60px; top: 872px; font: 500 18px var(--mono); letter-spacing: .08em; color: #9A7F86; z-index: 40; display: flex; gap: 28px; }
+#legend i { display: inline-block; width: 34px; height: 0; vertical-align: middle; margin-right: 10px; border-top: 5px solid var(--plum); }
+#legend i.r { border-top: 3px dashed #F79009; }
+#flash { position: absolute; inset: 0; background: #fff; opacity: 0; z-index: 60; pointer-events: none; }
+#endc { position: absolute; inset: 0; background: var(--cream); z-index: 70; display: grid; place-content: center; justify-items: center; text-align: center; gap: 18px; }
+#endc .nm { font: 700 150px/1 var(--sans); letter-spacing: -.04em; color: var(--plum); }
+#endc .tg { font: 600 48px var(--sans); color: var(--c); }
+#endc .sb { font: 400 28px var(--sans); color: #7A5C66; }
+#endc .url { font: 500 28px var(--mono); color: var(--plum); margin-top: 18px; }
+#endc .ft { position: absolute; bottom: 40px; left: 0; right: 0; font-size: 18px; color: #9A7F86; }
+</style></head>
+<body><div id="stage"><div id="grain"></div>
+<div id="world">
+  <svg id="art" width="8800" height="1080" style="position:absolute;left:0;top:0;overflow:visible"></svg>
+  <div class="day" style="left:600px">Monday<small>08:00 · PACKING STORE</small></div>
+  <div class="day" style="left:1940px">Tuesday<small>14:20</small></div>
+  <div class="day" style="left:3140px">Wednesday<small>09:05</small></div>
+  <div class="day" style="left:4740px">Thursday<small>10:30</small></div>
+  <div class="day" style="left:5940px">The back shelves<small>ANY DAY</small></div>
+  <div class="day" style="left:7140px">Friday<small>16:45</small></div>
+  <div class="note" id="n1" style="left:2380px;top:828px">↘ faster than last month</div>
+  <div class="bub" id="b1" style="left:2690px;top:180px">Customer needs 20 rolls on Friday<small>Sales · Tuesday</small></div>
+  <div class="notif" id="notif" style="left:3900px;top:165px"><img src="logos/logo-janka.svg" alt=""><div><b>Order stretch film today.</b><span>Used faster than usual. The supplier takes 2 days.</span></div></div>
+  <div class="rcpt" id="rcpt" style="left:3990px;top:320px"><div class="in">
+    <div style="font:600 22px var(--sans)">DRAFT ORDER</div><hr>
+    <div>Stretch film 500 mm</div><div>24 rolls · Pak Lim Packaging</div><hr>
+    <div style="font-family:var(--sans);font-size:19px;color:#7A5C66">Why: you’re using it faster this month, and it arrives in 2 days.</div></div></div>
+  <div class="stampt" id="stp" style="left:4150px;top:590px">Approved · Mrs Tan</div>
+  <div id="chks" style="position:absolute;left:5540px;top:250px;width:440px">
+    <div class="chk"><i>✓</i><span style="flex:1">Stretch film 500 mm</span><b class="mono">24</b></div>
+    <div class="chk"><i>✓</i><span style="flex:1">Carton tape</span><b class="mono">48</b></div>
+    <div class="chk"><i>✓</i><span style="flex:1">Label rolls</span><b class="mono">20</b></div>
+  </div>
+  <div class="tag" id="t1" style="left:6280px;top:210px">120 days</div>
+  <div class="tag" id="t2" style="left:6560px;top:350px">96 days</div>
+  <div class="tag" id="t3" style="left:6360px;top:490px">91 days</div>
+  <div class="bub" id="b2" style="left:7900px;top:210px">20 rolls for Friday?<small>Customer</small></div>
+  <div class="bub me" id="b3" style="left:8020px;top:350px">Yes, in stock.<small>Ravi</small></div>
+</div>
+<div class="cap" id="c1">Twelve rolls of stretch film.</div>
+<div class="cap s" id="c1b" style="top:784px">Enough for the week?</div>
+<div class="cap" id="c2">It’s going faster than you think.</div>
+<div class="cap" id="c3">Meet <span class="p">Janka.</span></div>
+<div class="cap s" id="c3b" style="top:784px">It sees the shortfall coming, and drafts the order.</div>
+<div class="cap" id="c3c">A person approves. <span class="p">Always.</span></div>
+<div class="cap" id="c4">Delivery, read from a photo.</div>
+<div class="cap s" id="c4b" style="top:784px">Janka’s AI fills in the lines. Ravi checks them.</div>
+<div class="cap" id="c5">And the stock that isn’t moving?</div>
+<div class="cap s" id="c5b" style="top:784px">Janka points it out, before it ties up more cash.</div>
+<div class="cap" id="c6">Friday. Twenty rolls out.</div>
+<div class="cap s" id="c6b" style="top:784px">Still in stock.</div>
+<div class="cap" id="c7" style="top:120px;left:0;right:0;text-align:center">One week. No guessing.</div>
+<div id="legend"><span><i></i>STRETCH FILM IN STOCK</span><span><i class="r"></i>REORDER POINT</span></div>
+<div id="flash"></div>
+<div id="endc"><img id="elogo" src="logos/logo-janka.svg" width="140" height="140" alt=""><div class="nm" id="en">Janka</div><div class="tg" id="et">Stock you won’t run out of.</div><div class="sb" id="es">Know what to reorder, and when. From what you actually use.</div><div class="url" id="eu">antarax.ai/janka</div><div class="ft">Janka by AntaraX · demo data, fictional business</div></div>
+<svg id="rings"></svg>
+</div><div id="hud"></div>
+<script>
+/* ---- the world: a shelf per day, the back shelves, a delivery van, and the stock line along the bottom ---- */
+const SHELVES = [[960, 12], [2300, 8], [3500, 5], [5100, 5], [7500, 9]];
+const roll = (x, y, id) => `<g class="roll" id="${id}" transform="translate(${x} ${y})"><rect x="-26" y="-92" width="52" height="92" rx="10" fill="#F6C7DC" stroke="#3B1F2B" stroke-width="3"/><ellipse cx="0" cy="-92" rx="26" ry="9" fill="#FDE8F1" stroke="#3B1F2B" stroke-width="3"/><circle cx="0" cy="-92" r="6" fill="#C99B6B"/><path d="M-14 -78 v62" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".8"/></g>`;
+const shelf = (cx, sid) => {
+  let s = `<g id="${sid}"><rect x="${cx - 360}" y="510" width="720" height="18" rx="6" fill="#C99B6B" stroke="#3B1F2B" stroke-width="3"/><rect x="${cx - 360}" y="340" width="720" height="18" rx="6" fill="#C99B6B" stroke="#3B1F2B" stroke-width="3"/><path d="M${cx - 340} 340 V640 M${cx + 340} 340 V640" stroke="#3B1F2B" stroke-width="5" stroke-linecap="round"/>`;
+  for (let i = 0; i < 12; i++) { const row = i < 6 ? 0 : 1, col = i % 6; s += roll(cx - 280 + col * 112, row ? 510 : 340, `${sid}r${i}`); }
+  return s + '</g>';
+};
+let art = '';
+SHELVES.forEach(([cx], k) => art += shelf(cx, 'sh' + k));
+art += `<g id="back">`;
+[300, 440, 580].forEach(y => art += `<rect x="5960" y="${y}" width="720" height="16" rx="5" fill="#C99B6B" stroke="#3B1F2B" stroke-width="3"/>`);
+[[6000, 300], [6150, 300], [6320, 300], [6480, 300], [6020, 440], [6200, 440], [6380, 440], [6540, 440], [6000, 580], [6180, 580], [6360, 580], [6520, 580]].forEach(([x, y], i) => {
+  const old = [1, 6, 9].includes(i);
+  art += `<rect x="${x}" y="${y - 100}" width="130" height="100" rx="6" fill="${old ? '#E9D6B8' : '#F1E3CC'}" stroke="#3B1F2B" stroke-width="3"/><path d="M${x + 20} ${y - 70} h90" stroke="#C9B08C" stroke-width="3"/>`;
+  if (old) art += `<path d="M${x + 130} ${y - 100} q-28 6 -34 34 M${x + 130} ${y - 100} q-14 18 -10 40 M${x + 104} ${y - 92} q12 8 20 -2" stroke="#B9A88F" stroke-width="2" fill="none"/>`;
+});
+art += '</g>';
+art += `<g id="van"><rect x="0" y="-150" width="300" height="150" rx="14" fill="#fff" stroke="#3B1F2B" stroke-width="4"/><path d="M300 -110 h70 l50 50 v60 h-120 z" fill="#FDE8F1" stroke="#3B1F2B" stroke-width="4" stroke-linejoin="round"/><circle cx="70" cy="4" r="30" fill="#3B1F2B"/><circle cx="350" cy="4" r="30" fill="#3B1F2B"/><text x="150" y="-62" text-anchor="middle" font-family="Poppins" font-weight="700" font-size="30" fill="#E9579D">PAK LIM</text></g>`;
+art += `<g id="dopaper"><g transform="translate(4420 250) rotate(-4)"><rect width="300" height="380" rx="10" fill="#fff" stroke="#3B1F2B" stroke-width="4"/><rect x="110" y="-16" width="80" height="30" rx="6" fill="#C99B6B" stroke="#3B1F2B" stroke-width="3"/><text x="24" y="54" font-family="JetBrains Mono" font-size="18" fill="#9A7F86">DELIVERY ORDER</text>${[90, 140, 190, 240, 290].map((y, k) => `<path d="M24 ${y} h${150 + k * 22}" stroke="#E6D8DC" stroke-width="10" stroke-linecap="round"/>`).join('')}</g></g>`;
+const SY = n => 1042 - n * 5;
+const STOCK = [[200, 12], [960, 12], [2300, 8], [3700, 5], [5100, 5], [5101, 29], [7500, 9], [8600, 9]];
+const stockY = x => { for (let i = 1; i < STOCK.length; i++) if (x <= STOCK[i][0]) { const [a, n0] = STOCK[i - 1], [b, n1] = STOCK[i]; return SY(lerp(n0, n1, (x - a) / (b - a))); } return SY(STOCK.at(-1)[1]); };
+art += `<rect x="0" y="862" width="8800" height="218" fill="#F1E3CC" opacity=".55"/><path d="M0 862 H8800" stroke="#E2CDA8" stroke-width="2"/>`;
+art += `<line x1="200" y1="${SY(6)}" x2="8600" y2="${SY(6)}" stroke="#F79009" stroke-width="3" stroke-dasharray="12 10"/>`;
+art += `<clipPath id="stkclip"><rect id="stkr" x="0" y="0" width="0" height="1080"/></clipPath>`;
+art += `<path id="stock" clip-path="url(#stkclip)" d="M${STOCK.map(([x, n]) => `${x} ${SY(n)}`).join(' L')}" fill="none" stroke="#3B1F2B" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>`;
+art += `<circle id="stkhead" r="11" fill="#E9579D" stroke="#3B1F2B" stroke-width="3"/>`;
+art += `<path id="fcast" d="M3700 ${SY(5)} L4500 ${SY(0)}" fill="none" stroke="#E9579D" stroke-width="6" stroke-dasharray="16 12" stroke-linecap="round"/>`;
+document.getElementById('art').innerHTML = art;
+
+/* ---- the camera: hold at a station, glide to the next ---- */
+const CAM = [[0, 960], [3.9, 960], [6.3, 2300], [8.6, 2300], [10.0, 3700], [15.4, 3700], [16.9, 5100], [21.0, 5100], [22.4, 6320], [26.8, 6320], [28.2, 7500], [32.4, 7500]];
+function camAt(t) {
+  for (let i = 1; i < CAM.length; i++) if (t <= CAM[i][0]) { const [a, x0] = CAM[i - 1], [b, x1] = CAM[i]; return lerp(x0, x1, eio(clamp((t - a) / (b - a)))); }
+  return CAM.at(-1)[1];
+}
+window.FILM = { dur: 40, colours: ['#E9579D', '#F6C7DC'], rings: [[13.4, 1560, 625, 640]] };
+const stay = (el, t, a, b, o) => { el = typeof el === 'string' ? $(el) : el; const v = show(el, t, a, b, o), back = P(t, 32.8, 33.6); if (t > 32.8 && t > a) st(el, Math.max(v, back)); };
+const cap = (id, t, a, b) => { const i = P(t, a, a + .55), o = b == null ? 0 : P(t, b, b + .4); st($(id), i * (1 - o), 0, (1 - i) * 24 - o * 12); };
+window.FILM.render = t => {
+  const pull = PIO(t, 32.6, 34.6);
+  const cx = camAt(t), sc = lerp(1, .205, pull), wx = lerp(960 - cx, 960 - 4400 * .205, pull), wy = lerp(0, 600 - 540 * .205, pull);
+  $('world').style.transform = `translate(${wx.toFixed(1)}px,${wy.toFixed(1)}px) scale(${sc.toFixed(4)})`;
+  SHELVES.forEach((_, k) => {
+    for (let i = 0; i < 12; i++) {
+      let n = 12;
+      if (k === 1) n = Math.round(lerp(12, 8, P(t, 4.6, 6.4)));
+      if (k === 2) n = Math.round(lerp(8, 5, P(t, 8.6, 10.0)));
+      if (k === 3) n = t > 18.2 ? 12 : 5;
+      if (k === 4) n = Math.round(lerp(4, 12, P(t, 27.0, 28.6))) - Math.round(lerp(0, 3, P(t, 30.4, 31.2)));
+      $(`sh${k}r${i}`).style.opacity = i < n ? 1 : 0;
+    }
+  });
+  stay('b1', t, 6.0, 8.8, { dy: 24 }); stay('n1', t, 7.0, 8.8, { dy: 10 });
+  const fc = $('fcast'); fc.style.opacity = P(t, 10.4, 10.8); fc.style.strokeDashoffset = (-60 * t).toFixed(1);
+  const hx = lerp(Math.min(cx + 160, 8600), 8600, pull); $('stkr').setAttribute('width', hx.toFixed(1)); const hd = $('stkhead'); hd.setAttribute('cx', hx.toFixed(1)); hd.setAttribute('cy', stockY(hx).toFixed(1)); hd.style.opacity = 1 - pull;
+  $('legend').style.opacity = 1 - pull;
+  stay('notif', t, 10.9, 15.4, { dy: -30 });
+  const rp = P(t, 11.8, 13.0); $('rcpt').style.height = lerp(0, 330, rp).toFixed(1) + 'px'; $('rcpt').style.opacity = rp > 0 ? Math.max(1 - P(t, 15.4, 15.85), P(t, 32.8, 33.6)) : 0;
+  const sp = P(t, 13.4, 13.65); st($('stp'), sp * Math.max(1 - P(t, 15.4, 15.85), P(t, 32.8, 33.6)), 0, 0, lerp(1.8, 1, sp), -8);
+  const vx = lerp(6200, 5540, P(t, 15.6, 17.0)); $('van').setAttribute('transform', `translate(${vx.toFixed(1)} 640)`); $('van').style.opacity = Math.max(1 - P(t, 21.0, 21.5), P(t, 32.8, 33.6));
+  stay('dopaper', t, 16.9, 21.0, { dy: 20 });
+  $('flash').style.opacity = t >= 17.9 ? ((1 - L(t, 17.9, 18.25)) * .9).toFixed(3) : 0;
+  $('chks').querySelectorAll('.chk').forEach((e, k) => stay(e, t, 18.4 + k * .3, 21.0, { dy: 18 }));
+  $('back').style.opacity = Math.max(P(t, 20.6, 21.6), P(t, 32.8, 33.6));
+  ['t1', 't2', 't3'].forEach((id, k) => { const a = P(t, 22.8 + k * .3, 23.3 + k * .3); st($(id), a * Math.max(1 - P(t, 26.8, 27.2), P(t, 32.8, 33.6)), 0, (1 - a) * -30, 1, 4 + (1 - a) * 20); });
+  show($('b2'), t, 28.8, null, { dy: 24 }); show($('b3'), t, 29.8, null, { dy: 24 });
+  cap('c1', t, .6, 3.6); cap('c1b', t, 1.6, 3.6);
+  cap('c2', t, 6.6, 9.4);
+  cap('c3', t, 10.9, 12.9); cap('c3b', t, 11.4, 12.9); cap('c3c', t, 13.2, 15.2);
+  cap('c4', t, 17.2, 20.8); cap('c4b', t, 18.6, 20.8);
+  cap('c5', t, 22.6, 26.6); cap('c5b', t, 23.6, 26.6);
+  cap('c6', t, 28.6, 32.2); cap('c6b', t, 30.2, 32.2);
+  cap('c7', t, 33.4, 35.6);
+  const e = P(t, 35.6, 36.4); $('endc').style.opacity = e; $('endc').style.visibility = e > 0 ? 'visible' : 'hidden';
+  [['elogo', 35.9], ['en', 36.15], ['et', 36.5], ['es', 36.8], ['eu', 37.1]].forEach(([id, t0]) => show($(id), t, t0, null, { dy: 20 }));
+};
+</script>
+<script src="engine.js"></script>
+</body></html>

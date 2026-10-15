@@ -16,6 +16,19 @@ Owner decisions that shape the brand, newest first. Add to the top; never rewrit
   - **API keys:** at `/settings/api`, named Lapisan by AntaraX.
   - **Public share pages:** carry "Made with ‹Product› by AntaraX".
   - **Later:** the AntaraX A in the brand pill is reserved for switching between AntaraX products, and Help gains System status.
+- **AntaraX shell 1.1** (owner):
+  - **Every wait is the product's own animation,** never "Loading…" alone, a static placeholder or a spinner. With reduced motion, a loader holds its stylised still frame, and screen readers hear the wait in words.
+  - **Admin area:** an organisation's Owners and Admins get their own, under `/settings`: Roles, Security, Activity log, Usage, Support access.
+  - **The standards beneath the look,** the same in every product:
+    - sign-in and passwords: Show password, password managers, 12 or more characters, no composition rules (NIST SP 800-63B);
+    - forms;
+    - PDPA data handling;
+    - speed and caching (Core Web Vitals);
+    - reliability;
+    - security (OWASP ASVS level 2);
+    - time and language;
+    - devices.
+  - **A Never list.**
 - **AXLE: dark bars, light page** (owner): AXLE's sidebar and top bar are dark (ground `#071233`, raised `#0C1B47`, REKA orange as the accent); the page they frame is light (`#F5F7FC`, white cards, navy ink, AntaraX-blue links and focus). AXLE keeps the AntaraX top bar every product ships, in its dark variant, with an orange `AXLE` tag after the brand pill. Replaces "dark-only" in 13 §6 and §10. Standard and mock: `haziqfaris/AntaraX-Dashboard-kit`, `axle/`.
 - **Every product's AXLE has R8** (owner): AXLE has two modes in every product, Dashboard (the business) and R8 (the machinery). **R8 Base** is in every product: Overview, Troubleshoot, Jobs, Providers, Services, Configuration and the operations audit. **R8 Full** adds Incidents and the machinery pages (probes, agents, screenshots) where a product runs machinery of its own. Health, Jobs and Configuration always live in R8. This departs from the REKA AXLE standard v0.2, which gave R8 only to products with machinery. Spec: `haziqfaris/AntaraX-Dashboard-kit`, `axle/SPEC.md` §2 and §7.
 - **R8 levels per product** (owner): AX Frame, Janka, Angka and Tinara are R8 Full; Yara and PLExyz Grid are R8 Base. **Errors** stays in the Dashboard, linking to Troubleshoot. **R8 actions** follow the staff ladder: Support acknowledges, Operator runs Level 1, Admin runs Level 2, Level 3 never. **AI configuration**, including Live trace, stays in the Dashboard; provider health is R8.

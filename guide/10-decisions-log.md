@@ -2,6 +2,10 @@
 
 Owner decisions that shape the brand, newest first. Add to the top; never rewrite history. Earlier strategy changes are in `reference/strategy/` (playbook amendments v0.3–v0.5, RECONCILIATION).
 
+## 15 October 2026
+
+- **Ripple's workflow tool lives at ripple.antarax.ai/workflow** (owner). It runs as a Cloudflare Worker from `haziqfaris/ripple-workflow` on the route `ripple.antarax.ai/workflow*`, and stays private behind Cloudflare Access until it launches. Its AI calls go through the server, so no key is in the page. What the tool is called, and what `ripple.antarax.ai/` shows on its own, are open (11, question 25).
+
 ## 14 October 2026
 
 - **BaTech on the website is restraint** (owner): borders, cameos, separators, faded strips and quiet backgrounds; never a kain closing every page, as product or industry hero art, or in share cards. **Story and Families are the exception** and keep fuller BaTech (06).

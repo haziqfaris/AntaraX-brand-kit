@@ -23,3 +23,7 @@ Facts only the owner can give. Until each is answered, the site says only what t
 22. **How far ahead AX Frame warns, and how.** The site says a renewal is "flagged ahead of its date". *Recommendation:* state the number of days and the channel (email, in-app) once confirmed from `haziqfaris/axframe`.
 23. **Are pilots paid?** Pilot pages say "Terms set per pilot". *Recommendation:* say whether a pilot is free, paid or credited against a later subscription, in one line on the pilots page.
 24. **A reply time for demo and pilot requests.** Contact promises only that "a real person reads every message". *Recommendation:* commit to a reply time the team can keep (for example one working day) and say it on Contact and the forms.
+
+## From hosting Ripple's workflow tool (15 October 2026)
+
+25. **The workflow tool's name, and the bare ripple.antarax.ai.** The app calls itself "AntaraX Ripple (Lite)", but "AntaraX Ripple" names the family (02), and only `/workflow` is served on `ripple.antarax.ai`. *Recommendation:* give the tool a product name under the naming rules in 02 before it is shown to customers; until a Ripple page exists, redirect `ripple.antarax.ai/` to `/workflow/`.

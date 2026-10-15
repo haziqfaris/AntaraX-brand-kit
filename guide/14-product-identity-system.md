@@ -192,7 +192,8 @@ Every product has the same seven loading states, so people always know what kind
 Timing and care:
 
 - Inline loops take 1.2 to 1.6 seconds. Section loaders run 2.4 to 3.6 seconds a cycle, each part a little out of step with the next. Thinking runs a 6-second cycle: sparkle, morph (0.6 seconds), logo, morph back.
-- **Reduced motion:** every loader becomes still. Inline shows its first frame, section shows the motif whole, thinking shows the sparkle, and the words carry the state.
+- **Never a plain wait** (owner, 15 October 2026): no "Loading…" on its own, no static placeholder, no generic spinner or browser default. Every wait is one of the seven states, in the product's own motion.
+- **Reduced motion:** every loader becomes a stylised still frame, never plain text. Inline holds its fullest frame, section shows the motif whole, thinking shows the sparkle. Screen readers hear the wait in words.
 - A loader never sits on top of data. If something takes longer than 10 seconds, say what is happening and offer a way out.
 - The working animations are in the visual guide (Loading).
 

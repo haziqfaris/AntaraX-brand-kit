@@ -349,7 +349,7 @@ The AntaraX sparkle, alive, which every few seconds morphs into your product's l
 
 1. **This kit wins.** If a product repo, the website or a deck disagrees with this kit, the kit is right, unless the owner has since decided otherwise. Then update the kit first, in the same piece of work.
 2. **Record decisions.** Every owner decision goes in [10 Decisions log](guide/10-decisions-log.md) with its date. Unresolved questions go in [11 Open questions](guide/11-open-questions.md).
-3. **Copy tokens; don't retype them.** Products and sites import or copy `tokens/tokens.css` (or read `tokens.json`). If a value changes, change it here and then in each consumer.
+3. **Copy tokens; don't retype them.** Products and sites import or copy `tokens/tokens.css` (or read `tokens.json`). If a value changes, change it here and then in each consumer. AXLE's values are the `axle` section; the [Dashboard kit](https://github.com/haziqfaris/AntaraX-Dashboard-kit) generates its AXLE tokens from it with `tools/sync-brand-kit.py` and checks the result on every push.
 4. **Reference documents are history, not instructions.** `reference/` keeps the documents this kit was built from. Where they disagree with `guide/`, the guide is current.
 
 ## Where it is used

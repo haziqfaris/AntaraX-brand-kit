@@ -5,6 +5,7 @@ Owner decisions that shape the brand, newest first. Add to the top; never rewrit
 ## 15 October 2026
 
 - **AXLE: dark bars, light page** (owner): AXLE's sidebar and top bar are dark (ground `#071233`, raised `#0C1B47`, REKA orange as the accent); the page they frame is light (`#F5F7FC`, white cards, navy ink, AntaraX-blue links and focus). AXLE keeps the AntaraX top bar every product ships, in its dark variant, with an orange `AXLE` tag after the brand pill. Replaces "dark-only" in 13 §6 and §10. Standard and mock: `haziqfaris/AntaraX-Dashboard-kit`, `axle/`.
+- **Every product's AXLE has R8** (owner): AXLE has two modes in every product, Dashboard (the business) and R8 (the machinery). **R8 Base** is in every product: Overview, Troubleshoot, Jobs, Providers, Services, Configuration and the operations audit. **R8 Full** adds Incidents and the machinery pages (probes, agents, screenshots) where a product runs machinery of its own. Health, Jobs and Configuration always live in R8. This departs from the REKA AXLE standard v0.2, which gave R8 only to products with machinery. Spec: `haziqfaris/AntaraX-Dashboard-kit`, `axle/SPEC.md` §2 and §7.
 
 ## 14 October 2026
 

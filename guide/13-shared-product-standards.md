@@ -113,6 +113,18 @@ AXLE is REKA's internal console for running every product. Customers never see i
 - **The sidebar:** groups are folding cards with a tinted icon tile and a title in the group's colour; the current page is an orange tint with orange text and the intan, never a side stripe (owner, 15 October 2026).
 - **One sign-in** for REKA staff across products, when the single console exists.
 
+## 6a The AntaraX shell in customer apps
+
+Each product's customer app is its own: identity, colours, shape, navigation and UI. A small shell stays the same everywhere (owner, 15 October 2026):
+
+- the top bar's order, with Help and the account at the far right;
+- the account and Help menus;
+- the standard pages under `/settings`, `/account`, `/guide` and `/help`;
+- the shared roles;
+- getting in, banners, notifications, Assist, Send feedback, and what dialogs, toasts, errors and empty states say.
+
+The full standard is in `haziqfaris/AntaraX-Dashboard-kit`: start with `app/README.md`.
+
 ## 7 Languages
 
 - **British English** in every product (03): organisation, colour, cancelled.

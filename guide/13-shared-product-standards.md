@@ -108,7 +108,7 @@ AXLE is REKA's internal console for running every product. Customers never see i
 
 - **One name:** "AXLE", with the product as context ("AXLE · Janka"), never "REKA Admin" or a product-branded name.
 - **One address:** `axle.antarax.ai` (see 2).
-- **One look:** dark bars, light page (owner, 15 October 2026). The sidebar and the AntaraX top bar are dark (`#071233`, raised `#0C1B47`) with REKA orange `#FB9800` as the accent (it is REKA's tool) and an orange `AXLE` tag after the brand pill; the page is light (`#F5F7FC`, white cards, navy ink). Poppins and JetBrains Mono, the AntaraX A in the corner. The full standard is in `haziqfaris/AntaraX-Dashboard-kit` (`axle/SPEC.md`).
+- **One look:** dark bars, light page (owner, 15 October 2026). The sidebar and the AntaraX top bar are dark (`#071233`, raised `#0C1B47`) with REKA orange `#FB9800` as the accent (it is REKA's tool) and an orange `AXLE` tag after the brand pill; the page is light (`#F5F7FC`, white cards, navy ink). Poppins and JetBrains Mono, the AntaraX A in the corner. The full standard and the template every AXLE is built from are in `haziqfaris/AntaraX-Dashboard-kit`: start with `axle/README.md` (spec v1.0, the final mock, the tokens).
 - **Two modes everywhere:** Dashboard for the business and R8 for the machinery, switched at the top of the sidebar. Every product has R8 Base; a product that runs machinery of its own has R8 Full (owner, 15 October 2026).
 - **The sidebar:** groups are folding cards with a tinted icon tile and a title in the group's colour; the current page is an orange tint with orange text and the intan, never a side stripe (owner, 15 October 2026).
 - **One sign-in** for REKA staff across products, when the single console exists.

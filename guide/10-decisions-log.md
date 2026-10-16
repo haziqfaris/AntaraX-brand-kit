@@ -4,6 +4,16 @@ Owner decisions that shape the brand, newest first. Add to the top; never rewrit
 
 ## 16 October 2026
 
+- **AI in the interface is shared** (owner; 13 section 6b). Wherever a product shows AI work, it uses the same pieces:
+  - the sparkle with "AI" in words;
+  - a suggestion with Accept, Change and Dismiss, which report the outcome;
+  - why (sources and confidence in words);
+  - "Applied by AI · Undo";
+  - thinking with a way out after 10 seconds;
+  - the gateway's own notes when AI is off or busy;
+  - polite streaming.
+
+  The product draws them in its own style. This is the interface layer (B1) of the AntaraX AI framework (`haziqfaris/ai-framework-heuristiks`, 0.5.0), whose own decisions are kept in its `docs/decisions/`. AXLE's R8 → AI flow shows what the framework counts (Dashboard kit `axle/SPEC.md` section 10.6.1).
 - **Saved views on every long list** (owner): a person can save a list as it is (search, filters, sort, group and view) under a name and pick it again from a Views menu beside search; "All ‹records›" comes first and cannot be deleted. Per person, renamed or deleted from the same menu, never in Settings. This completes the list baseline (search, filters, sort and saved views on every list page), which the customer list baseline below had covered only as remembered state. Dashboard kit 1.3.0, `app/SPEC.md` section 11a.
 - **Customer apps are checked against the kit, not read from it** (owner; Dashboard kit 1.2.0). A product built to `app/SPEC.md` v1.1 still did not look like the family, so the kit now carries what a builder measures against:
   - **The bar's sizes are fixed; float is the default** (confirming the entries below): a product that differs records the value in `shell.bar.byProduct` and **its reason in its own `antarax-kit.lock`**. The radius stays per product (default 24, 20 on phones). **Tinara's flat bar is confirmed**; **PLExyz Grid floats** with the default radius, as its app does (Dashboard kit inventory), so its flat entry is removed (answers 11, question 25). Tokens 1.11.0.

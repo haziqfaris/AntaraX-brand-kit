@@ -1,0 +1,45 @@
+AntaraX brand film: voiceover script (animatic v1, 15 Oct 2026)
+
+Read calmly and plainly, never salesy. British English. One line per shot; pause at each break.
+
+
+[Opening]
+0:00–0:04  You already use AI to write, and to search.
+0:03–0:08  But the work itself still runs on phone calls,
+0:07–0:11  whiteboards,
+0:10–0:14  and memory.
+0:14–0:20  (title card, no voice) Get more out of AI than answers.
+
+[Yara]
+0:20–0:26  At three in the afternoon, someone calls the floor to ask where a job is.
+0:25–0:31  With Yara, the people doing the work tap Start, Hold or Complete on their phone.
+0:30–0:37  Each tap updates the job, right from the floor.
+0:37–0:44  So everyone sees where every job stands, live.
+0:43–0:49  Nobody has to phone the floor to ask.
+0:48–0:54  Yara. See where every job stands.
+
+[Janka]
+0:53–0:59  In the store, the item that moves runs out,
+0:59–1:04  while stock that isn’t moving sits on the shelf.
+1:03–1:11  Janka works out what you’ll need, item by item, from what you actually use.
+1:10–1:18  When stock heads for the reorder point, it drafts the order with its reasoning.
+1:17–1:23  A person approves it before anything goes to a supplier.
+1:22–1:28  Janka. Know what to reorder, and when.
+
+[PLExyz Grid]
+1:27–1:33  In the warehouse, a zone looks full only when the dock backs up.
+1:33–1:38  So pickers walk the aisles to check.
+1:37–1:45  PLExyz Grid draws your site as it really is, down to each bay.
+1:44–1:52  Every placement is checked against the site’s rules before it is saved. It warns, or it blocks.
+1:51–1:56  Find any unit, without walking the aisles.
+1:56–2:01  PLExyz Grid. Every space, accounted for.
+
+[AX Frame]
+2:01–2:07  In the office, a renewal nobody remembered has just hit the card.
+2:06–2:14  AX Frame keeps one list of everything you pay for, and warns you before each charge.
+2:14–2:20  Every tool has an owner. Its AI proposes where to save, and a person approves.
+
+[Close]
+2:19–2:26  Start with the one that hurts most. Connect the others when you’re ready.
+2:26–2:32  Born in Malaysia, built for businesses anywhere.
+2:31–2:39  AntaraX. Put it to work.

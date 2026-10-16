@@ -26,4 +26,4 @@ Facts only the owner can give. Until each is answered, the site says only what t
 
 ## From hosting Ripple's workflow tool (15 October 2026)
 
-25. **The workflow tool's name, and the bare ripple.antarax.ai.** The app calls itself "AntaraX Ripple (Lite)", but "AntaraX Ripple" names the family (02), and only `/workflow` is served on `ripple.antarax.ai`. *Recommendation:* give the tool a product name under the naming rules in 02 before it is shown to customers; until a Ripple page exists, redirect `ripple.antarax.ai/` to `/workflow/`.
+26. **The workflow tool's name, and the bare ripple.antarax.ai.** The app calls itself "AntaraX Ripple (Lite)", but "AntaraX Ripple" names the family (02), and only `/workflow` is served on `ripple.antarax.ai`. *Recommendation:* give the tool a product name under the naming rules in 02 before it is shown to customers; until a Ripple page exists, redirect `ripple.antarax.ai/` to `/workflow/`.

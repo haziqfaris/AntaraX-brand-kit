@@ -108,8 +108,41 @@ AXLE is REKA's internal console for running every product. Customers never see i
 
 - **One name:** "AXLE", with the product as context ("AXLE · Janka"), never "REKA Admin" or a product-branded name.
 - **One address:** `axle.antarax.ai` (see 2).
-- **One look:** the dark product ground (`#071233`, raised `#0C1B47`), REKA orange `#FB9800` as its accent (it is REKA's tool), Poppins and JetBrains Mono, the AntaraX A in the corner.
+- **One look:** dark bars, light page (owner, 15 October 2026). The sidebar and the AntaraX top bar are dark (`#071233`, raised `#0C1B47`) with REKA orange `#FB9800` as the accent (it is REKA's tool) and an orange `AXLE` tag after the brand pill; the page is light (`#F5F7FC`, white cards, navy ink). Poppins and JetBrains Mono, the AntaraX A in the corner. The full standard and the template every AXLE is built from are in `haziqfaris/AntaraX-Dashboard-kit`: start with `axle/README.md` (spec v1.0, the final mock, the tokens).
+- **Two modes everywhere:** Dashboard for the business and R8 for the machinery, switched at the top of the sidebar. Every product has R8 Base; a product that runs machinery of its own has R8 Full (owner, 15 October 2026).
+- **The sidebar:** groups are folding cards with a tinted icon tile and a title in the group's colour; the current page is an orange tint with orange text and the intan, never a side stripe (owner, 15 October 2026).
 - **One sign-in** for REKA staff across products, when the single console exists.
+
+## 6a The AntaraX shell in customer apps
+
+Each product's customer app is its own: identity, colours, shape, navigation and UI. A small shell stays the same everywhere (owner, 15 October 2026):
+
+- the top bar's order, with Help and the account at the far right;
+- the account and Help menus;
+- the standard pages under `/settings`, `/account`, `/guide` and `/help`;
+- the shared roles;
+- getting in, banners, notifications, Assist, and what dialogs, toasts, errors and empty states say;
+- feedback and support requests, which are YaraOne's front office, embedded (owner, 16 October 2026): no product builds its own.
+
+The top bar's sizes are tokens: the `shell` section of `tokens/tokens.json` and `.shell-root` in `tokens.css` (owner, 16 October 2026). The bar floats by default and a product records any exception there; its colours come from the product's own palette. The current navigation item is the product's subtle tint with its on-tint text, never the same as hover; navigation's shape stays the product's own (owner, 16 October 2026).
+
+The full standard is in `haziqfaris/AntaraX-Dashboard-kit`: start with `app/README.md`.
+
+## 6b AI in the interface
+
+The same pieces wherever a product shows AI work, so a customer reads AI the same way in every product. They are the interface layer (B1) of the AntaraX AI framework (`haziqfaris/ai-framework-heuristiks`, its layer page B1 and docs 03, 21 and 25); its gateway supplies the words and the outcomes, the product draws them in its own style (owner, 16 October 2026).
+
+| Piece | What it is | Rules |
+|---|---|---|
+| **The mark** | The AntaraX sparkle beside every AI result, with "AI" in words: "Suggested by AI", "Read by AI" | Never a vendor's name on a screen; never decoration (12) |
+| **The suggestion** | The answer, then **Accept**, **Change** and **Dismiss** | Each button reports the outcome to the gateway (used, corrected, not used), so AXLE's R8 → AI flow counts it. Nothing is applied until a person accepts, unless the card's guardrail applies it |
+| **Why** | The sources it answered from, as chips that open them; a confidence in words ("likely", "unsure") as well as any colour | A retrieval answer always shows its sources; confidence is never shown by colour alone |
+| **Applied by AI** | "Applied by AI · Undo" on what a guardrail applied without a person | The undo is always there for the card's undo window |
+| **Thinking** | The thinking motion (12, 14) and the action in words ("Reading the invoice") | After 10 seconds, offer the way without AI ("Type it yourself"); never a spinner |
+| **AI is off, or stopped** | The gateway's note, in a neutral panel, then the way without AI: "AI is off for this. Type the delivery note number." "AI is busy just now." "This month's AI allowance is used up." | Never an error style, never an error code; the person can always finish without AI |
+| **Streaming text** | Text that arrives as it is written | Announced politely to screen readers, once complete, not word by word |
+
+The full words are the gateway's (`noteFor` in the framework's gateway); a product translates them, never rewrites what they mean.
 
 ## 7 Languages
 
@@ -133,7 +166,7 @@ AXLE is REKA's internal console for running every product. Customers never see i
 
 ## 10 Dark mode and accessibility
 
-- **Light first.** Every customer-facing product works in light. Dark mode is optional; where a product offers it, it follows the system setting with a light/dark/system choice (Angka's pattern) and uses the dark product ground (12, tokens). Only AXLE is dark-only.
+- **Light first.** Every customer-facing product works in light. Dark mode is optional; where a product offers it, it follows the system setting with a light/dark/system choice (Angka's pattern) and uses the dark product ground (12, tokens). AXLE has dark bars around a light page (6).
 - **Accessibility baseline in every product:** WCAG 2.2 AA contrast; a visible AntaraX-blue focus ring; targets at least 44px; everything reachable by keyboard; all motion stops for reduced motion; images and icons named or hidden from screen readers (07).
 - **One automated check** (axe or equivalent) runs on each product's main screens in its CI.
 

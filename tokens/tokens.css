@@ -1,4 +1,4 @@
-/* AntaraX design tokens v1.8.0 (2026-10-11). Mirrors tokens.json; full product palettes in product-palettes.css. Import first, then build on the variables. */
+/* AntaraX design tokens v1.11.0 (2026-10-16). Mirrors tokens.json; full product palettes in product-palettes.css. Import first, then build on the variables. */
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap");
 
 :root {
@@ -66,6 +66,134 @@
   --ax-ease: cubic-bezier(.2, .7, .2, 1);
   --ax-spring: cubic-bezier(.34, 1.56, .64, 1);
 }
+
+/* AXLE: REKA's staff console (guide/13 section 6). Mirrors tokens.json "axle". The Dashboard kit generates its axle/tokens.css from it. */
+.axle-root {
+  /* bars: The dark sidebar, top bar and phone drawer */
+  --axle-bar: #071233; /* Deepest bar ground; text on orange */
+  --axle-bar-raised: #0C1B47; /* Sidebar ground and the top bar card */
+  --axle-bar-ink: #EAF0FF; /* Page names, the AXLE word */
+  --axle-bar-body: #B6C3EA; /* Secondary text on the bars */
+  --axle-bar-muted: #8E9CC9; /* Previews, captions, chevrons */
+  --axle-bar-line: rgba(157, 184, 255, .16); /* Dividers on the bars */
+  --axle-bar-card: rgba(255, 255, 255, .035); /* A sidebar group card */
+  --axle-bar-card-line: rgba(157, 184, 255, .10); /* A sidebar group card's border */
+  --axle-bar-chip: #13255C; /* A quiet counter (a count only) */
+  --axle-bar-fault: #F7877F; /* A failing icon on the bars, beside the red count */
+  --axle-bar-focus: #4D84FE; /* Focus ring on the bars */
+
+  /* signal: REKA orange: needs a person, and where you are. Nothing else */
+  --axle-orange: #FB9800; /* Needs a person; the current page; the AXLE tag; the main action */
+  --axle-on-orange: #071233; /* Text on orange */
+  --axle-current: rgba(251, 152, 0, .16); /* The current page's tint: with orange text and the intan, never a side stripe */
+  --axle-orange-tint: #FFF1DA; /* A staff rung chip on the page */
+  --axle-orange-text: #8A4B00; /* Text on the orange tint */
+
+  /* group: Sidebar group colours: an icon tile (the colour at 16%) and the title. They mark an area, never a status */
+  --axle-group-watch: #7FA4FF; /* Watch */
+  --axle-group-organisations: #5ED3C9; /* Organisations */
+  --axle-group-ai: #B7A8FF; /* AI */
+  --axle-group-money: #E3C25E; /* Money */
+  --axle-group-platform: #F2A0CB; /* Platform */
+  --axle-group-operations: #8FD3FF; /* Operations */
+  --axle-group-trail: #C4CDE8; /* Trail */
+  --axle-group-command: #7FA4FF; /* R8 Command */
+  --axle-group-observe: #5ED3C9; /* R8 Observe */
+  --axle-group-system: #B7A8FF; /* R8 System */
+  --axle-group-control: #C4CDE8; /* R8 Control and diagnostics */
+
+  /* page: The light page */
+  --axle-page: #F5F7FC; /* Page ground */
+  --axle-card: #FFFFFF; /* Cards */
+  --axle-card-line: #E5E8EE; /* Card borders */
+  --axle-row-line: #EEF1F6; /* Row dividers, quiet tracks, quiet chips */
+  --axle-control-line: #D5DBE7; /* Buttons and fields */
+  --axle-text-strong: #0B1B4F; /* Headings and figures */
+  --axle-text: #3B4469; /* Body */
+  --axle-text-muted: #5B6488; /* Captions */
+  --axle-text-disabled: #8A93AE; /* Disabled controls */
+  --axle-switch-off: #B9C1D4; /* A switch that is off */
+  --axle-link: #0459F7; /* Links and the focus ring on the page */
+  --axle-link-hover: #002EB2; /* Link hover */
+  --axle-selected-row: #FFF6E8; /* A selected row: the tint and an orange border, no side stripe */
+  --axle-info-tint: #F3F7FE; /* AXLE's derived reading; a selected choice */
+  --axle-info-line: #C9DBFE; /* Its border */
+  --axle-info-chip: #E7EEFE; /* Running, queued, and neutral badges */
+
+  /* status: Status on the page: only on a real signal, always with a word */
+  --axle-ok: #12B76A; /* Working */
+  --axle-ok-tint: #E7F8EF;
+  --axle-ok-text: #067647;
+  --axle-ok-line: #A6E4C6;
+  --axle-warn: #F79009; /* Slow, due, missing */
+  --axle-warn-tint: #FEF4E6;
+  --axle-warn-text: #B54708;
+  --axle-warn-line: #F8CD92;
+  --axle-warn-card: #FFFBF4; /* A card in a warn state */
+  --axle-fault: #F04438; /* Failing */
+  --axle-fault-tint: #FEECEB;
+  --axle-fault-text: #B42318;
+  --axle-fault-line: #F6B5AF;
+  --axle-fault-card: #FFF8F7; /* A card in a fault state */
+
+  /* chart: Charts on the light page (validated for contrast and colour-blind separation) */
+  --axle-chart-1: #2A78D6;
+  --axle-chart-2: #1BAF7A;
+  --axle-chart-3: #EB6834;
+  --axle-chart-4: #6250D6;
+
+  /* size */
+  --axle-sidebar-width: 240px;
+  --axle-topbar-height: 64px;
+  --axle-topbar-height-phone: 58px;
+  --axle-topbar-radius: 24px;
+  --axle-card-radius: 20px;
+  --axle-nav-card-radius: 12px;
+  --axle-control-radius: 12px;
+  --axle-target: 44px;
+}
+
+/* The AntaraX shell: the top bar every customer app shares (guide/13 section 6a). Mirrors tokens.json "shell".
+   Put .shell-root and data-product="<product>" on the bar's container; the slots read that product's palette (product-palettes.css).
+   The Dashboard kit generates its app/tokens.css from tokens.json "shell". */
+.shell-root {
+  /* the bar: floating by default (owner, 16 October 2026) */
+  --shell-bar-height: 64px; --shell-bar-height-phone: 58px;
+  --shell-bar-outer-padding: 14px 20px 0; --shell-bar-outer-padding-phone: 8px 12px 0;
+  --shell-bar-inner-padding: 0 10px 0 7px; --shell-bar-gap: 8px;
+  --shell-bar-radius: 24px; --shell-bar-radius-phone: 20px;
+  --shell-bar-border-width: 1px; --shell-bar-border: var(--shell-line);
+  --shell-bar-shadow: 0 10px 28px -20px rgba(11, 27, 79, .35);
+  /* the brand pill */
+  --shell-pill-well-padding: 4px; --shell-pill-well-radius: 16px; --shell-pill-well-gap: 2px;
+  --shell-pill-a-width: 32px; --shell-pill-a-height: 38px; --shell-pill-a-radius: 12px; --shell-pill-a-mark: 21px;
+  --shell-pill-chip-height: 38px; --shell-pill-chip-radius: 12px; --shell-pill-chip-padding: 0 12px 0 7px; --shell-pill-chip-padding-phone: 0 7px; --shell-pill-chip-gap: 8px;
+  --shell-pill-chip-size: 16px; --shell-pill-chip-weight: 600; --shell-pill-chip-tracking: -0.01em;
+  --shell-pill-mark-tile: 24px; --shell-pill-mark-tile-radius: 7px; --shell-pill-mark-tile-bg: #FFFFFF; --shell-pill-mark: 18px;
+  /* controls: round ones are 44px; product-slot buttons are drawn 40px with a 44px hit area (owner, 16 October 2026) */
+  --shell-control-round: 44px;
+  --shell-control-slot: 40px; --shell-control-slot-target: 44px; --shell-control-slot-radius: 12px; --shell-control-slot-padding: 0 12px; --shell-control-slot-gap: 6px; --shell-control-slot-size: 13px; --shell-control-slot-weight: 600;
+  --shell-search-width: 210px; --shell-search-height: 44px; --shell-search-radius: 14px; --shell-badge: 18px;
+  --shell-title-size: 18px; --shell-title-weight: 600; --shell-title-divider-gap: 12px;
+  /* the Help and account menus */
+  --shell-menu-width-help: 280px; --shell-menu-width-account: 300px; --shell-menu-radius: 16px; --shell-menu-padding: 6px; --shell-menu-item-height: 44px; --shell-menu-item-radius: 10px;
+  --shell-menu-shadow: 0 18px 40px -18px rgba(11, 27, 79, .35);
+  /* navigation: its shape is the product's own; the current item and hover are shell (owner, 16 October 2026) */
+  --shell-nav-current-bg: var(--shell-subtle-tint); --shell-nav-current-ink: var(--shell-on-tint); --shell-nav-current-weight: 600;
+  --shell-nav-hover-bg: var(--shell-hover);
+}
+/* product slots: each product fills them from its own palette. subtleTint is the product chip and the current navigation item */
+.shell-root[data-product="yara"] { --shell-subtle-tint: var(--yara-subtle); --shell-on-tint: var(--yara-on-tint); --shell-action: var(--yara-action); --shell-on-action: var(--yara-text-on-action); --shell-dark-accent: var(--yara-dark-accent); --shell-well: var(--yara-neutral-100); --shell-line: var(--yara-border-default); --shell-surface: var(--yara-surface-raised); --shell-hover: var(--yara-surface-hover); --shell-ink: var(--yara-text-strong); }
+.shell-root[data-product="frame"] { --shell-subtle-tint: var(--frame-subtle); --shell-on-tint: var(--frame-on-tint); --shell-action: var(--frame-action); --shell-on-action: var(--frame-text-on-action); --shell-dark-accent: var(--frame-dark-accent); --shell-well: var(--frame-neutral-100); --shell-line: var(--frame-border-default); --shell-surface: var(--frame-surface-raised); --shell-hover: var(--frame-surface-hover); --shell-ink: var(--frame-text-strong); --shell-bar-radius: 16px; }
+.shell-root[data-product="janka"] { --shell-subtle-tint: var(--janka-subtle); --shell-on-tint: var(--janka-on-tint); --shell-action: var(--janka-action); --shell-on-action: var(--janka-text-on-action); --shell-dark-accent: var(--janka-dark-accent); --shell-well: var(--janka-neutral-100); --shell-line: var(--janka-border-default); --shell-surface: var(--janka-surface-raised); --shell-hover: var(--janka-surface-hover); --shell-ink: var(--janka-text-strong); --shell-bar-radius: 20px; }
+.shell-root[data-product="grid"] { --shell-subtle-tint: var(--grid-subtle); --shell-on-tint: var(--grid-on-tint); --shell-action: var(--grid-action); --shell-on-action: var(--grid-text-on-action); --shell-dark-accent: var(--grid-dark-accent); --shell-well: var(--grid-neutral-100); --shell-line: var(--grid-border-default); --shell-surface: var(--grid-surface-raised); --shell-hover: var(--grid-surface-hover); --shell-ink: var(--grid-text-strong); }
+.shell-root[data-product="crowd"] { --shell-subtle-tint: var(--crowd-subtle); --shell-on-tint: var(--crowd-on-tint); --shell-action: var(--crowd-action); --shell-on-action: var(--crowd-text-on-action); --shell-dark-accent: var(--crowd-dark-accent); --shell-well: var(--crowd-neutral-100); --shell-line: var(--crowd-border-default); --shell-surface: var(--crowd-surface-raised); --shell-hover: var(--crowd-surface-hover); --shell-ink: var(--crowd-text-strong); }
+.shell-root[data-product="angka"] { --shell-subtle-tint: var(--angka-subtle); --shell-on-tint: var(--angka-on-tint); --shell-action: var(--angka-action); --shell-on-action: var(--angka-text-on-action); --shell-dark-accent: var(--angka-dark-accent); --shell-well: var(--angka-neutral-100); --shell-line: var(--angka-border-default); --shell-surface: var(--angka-surface-raised); --shell-hover: var(--angka-surface-hover); --shell-ink: var(--angka-text-strong); --shell-bar-radius: 28px; }
+.shell-root[data-product="tinara"] { --shell-subtle-tint: var(--tinara-subtle); --shell-on-tint: var(--tinara-on-tint); --shell-action: var(--tinara-action); --shell-on-action: var(--tinara-text-on-action); --shell-dark-accent: var(--tinara-dark-accent); --shell-well: var(--tinara-neutral-100); --shell-line: var(--tinara-border-default); --shell-surface: var(--tinara-surface-raised); --shell-hover: var(--tinara-surface-hover); --shell-ink: var(--tinara-text-strong); --shell-bar-outer-padding: 0; --shell-bar-outer-padding-phone: 0; --shell-bar-inner-padding: 0 16px 0 12px; --shell-bar-radius: 0; --shell-bar-radius-phone: 0; --shell-bar-border-width: 0 0 1px; --shell-bar-shadow: none; }
+.shell-root[data-product="loom"] { --shell-subtle-tint: var(--loom-subtle); --shell-on-tint: var(--loom-on-tint); --shell-action: var(--loom-action); --shell-on-action: var(--loom-text-on-action); --shell-dark-accent: var(--loom-dark-accent); --shell-well: var(--loom-neutral-100); --shell-line: var(--loom-border-default); --shell-surface: var(--loom-surface-raised); --shell-hover: var(--loom-surface-hover); --shell-ink: var(--loom-text-strong); }
+.shell-root[data-product="motion"] { --shell-subtle-tint: var(--motion-subtle); --shell-on-tint: var(--motion-on-tint); --shell-action: var(--motion-action); --shell-on-action: var(--motion-text-on-action); --shell-dark-accent: var(--motion-dark-accent); --shell-well: var(--motion-neutral-100); --shell-line: var(--motion-border-default); --shell-surface: var(--motion-surface-raised); --shell-hover: var(--motion-surface-hover); --shell-ink: var(--motion-text-strong); }
+/* dark mode, for a product that offers it: the shared dark palette, the product's dark accent (guide/14) */
+.shell-root[data-theme="dark"] { --shell-surface: #0C1B47; --shell-well: #050D26; --shell-line: rgba(157,184,255,.16); --shell-ink: #EAF0FF; --shell-on-tint: #EAF0FF; --shell-action: var(--shell-dark-accent); --shell-on-action: #071233; --shell-subtle-tint: color-mix(in srgb, var(--shell-dark-accent) 22%, #0C1B47); --shell-hover: color-mix(in srgb, #EAF0FF 6%, #0C1B47); }
 
 /* the dotted blueprint ground: dots, never ruled lines */
 .ax-blueprint {

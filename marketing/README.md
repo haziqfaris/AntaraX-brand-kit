@@ -7,7 +7,7 @@ Everything here is ready to hand over: to a printer, a partner, an event organis
 | [`print/`](print/) | Print-ready PDFs, one folder per piece | Printers |
 | [`logo-pack/`](logo-pack/) | The AntaraX logos as SVG, vector PDF and transparent PNG | Printers, partners, slides, press |
 | [`qr/`](qr/) | The QR codes the print uses, as vectors | Anyone making a new piece |
-| [`video/`](video/) | Video, one folder per piece: the 60 s intro animatic and its storyboard | Video producers, sales calls, event screens |
+| [`video/`](video/) | Video, one folder per piece: the 60 s intro animatic, the AntaraX film animatic, the Janka, PLExyz Grid and AX Frame promos, and their storyboards | Video producers, website, social, sales calls, event screens |
 | [`photography/`](photography/) | The photo brief: shot list and image-AI prompts | Photographers, whoever makes images for antarax.ai |
 
 ## Print pieces
@@ -65,5 +65,7 @@ Every file here comes from a tool in `tools/`, which says at the top how to run 
 | `print/` | `NODE_PATH=$(npm root -g) node tools/build-print.mjs` | `assets/antarax/`, `assets/reka/`, `qr/`, `tools/fonts/` |
 | `logo-pack/` | `NODE_PATH=$(npm root -g) node tools/build-logo-pack.mjs` | `assets/antarax/` |
 | `video/intro-60s/` | `NODE_PATH=$(npm root -g) node tools/build-intro-animatic.mjs` | `assets/antarax/`, `assets/product-logos/`, `assets/reka/`, `qr/` (needs ffmpeg) |
+| `video/product-promos/` | `NODE_PATH=$(npm root -g) node render.mjs <janka\|grid\|frame>` in its `source/` | its own `source/`, `tools/fonts/`, the sparkle (needs ffmpeg) |
+| `video/antarax-film/` | `NODE_PATH=$(npm root -g) node film.mjs` in its `source/` | the antarax-ai site's photos and logos, `tools/fonts/` (needs ffmpeg) |
 
 To make a new piece, add a job to `tools/build-print.mjs`, write it to its own folder in `print/` (named for the piece and its size), add it to the table above, and record it in [guide/10](../guide/10-decisions-log.md).

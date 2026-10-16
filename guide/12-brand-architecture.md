@@ -287,8 +287,10 @@ Full palettes (11-step scales, roles, chart sets, dark mode) are in 14 and `toke
 | Legal footer, terms, invoices | "AntaraX, a product line of REKA Inisiatif Sdn Bhd." |
 | Pilot and Managed AI screens | "Run by REKA as part of Managed AI." (only where REKA really runs it) |
 | Support contacts | Name REKA people where REKA people answer |
+| **REKA client projects** (bespoke work for a client, not an AntaraX product) | "Built by REKA", in the footer only: the sign-in foot, the account menu foot and the app footer. Plain text, muted, never a logo or REKA orange (owner, 16 October 2026). The legal lines are the client's |
 
 - The same lines for every product, PLExyz included.
+- The Never list below is for AntaraX products. A REKA client project carries "Built by REKA" and nothing of AntaraX (Dashboard kit `project/SPEC.md`).
 - Never: "Powered by", "by REKA", "Tinara by REKA", "A product of REKA Inisiatif", "REKA Intelligence", "REKA" in REKA orange inside a product, "AntaraX AI".
 - "from REKA" is reviewed on 23 July 2027.
 

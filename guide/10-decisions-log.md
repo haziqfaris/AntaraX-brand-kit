@@ -4,6 +4,8 @@ Owner decisions that shape the brand, newest first. Add to the top; never rewrit
 
 ## 16 October 2026
 
+- **Three dashboards** (owner): AntaraX products (each product's own look inside the AntaraX shell), **REKA client projects** (new), and AXLE, which is the same for products and projects. A client project carries the client's brand and must never look like an AntaraX product: no AntaraX font, colour (product palettes included), mark or word, checked by a script and by the logo-swap test. It follows the shell's places (Help and the account at the top right, the account menu, the standard pages, the shared words) and every standard beneath the look. **Credit: "Built by REKA" in the footer** (12). **One stack:** Next.js, TypeScript, Tailwind, shadcn/ui, TanStack Query and Table, React Hook Form with Zod, Supabase, Refine where create-and-edit screens are most of the work. Standard: `haziqfaris/AntaraX-Dashboard-kit`, `project/`.
+
 - **Tickets and feedback live in YaraOne** (owner): YaraOne is where REKA tracks every support request and piece of feedback from every AntaraX product and REKA client project, and it manages nothing else. No product builds its own ticketing or feedback. YaraOne offers two embedded modules: a **front office** in each customer app (Help → Contact support, Send feedback, Your requests; Report this on an error screen), wearing the host's own look, and a **back office** in each product's AXLE (Watch → Tickets), so neither customers nor staff sign in to another dashboard. Each product's AXLE keeps running the product itself. Later, an API and a shared AntaraX sign-in. How the modules embed and sign in waits on YaraOne's build. Standard: `haziqfaris/AntaraX-Dashboard-kit`, `yaraone/EMBEDS.md`.
 
 ## 15 October 2026

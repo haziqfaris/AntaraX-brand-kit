@@ -2,6 +2,10 @@
 
 Owner decisions that shape the brand, newest first. Add to the top; never rewrite history. Earlier strategy changes are in `reference/strategy/` (playbook amendments v0.3–v0.5, RECONCILIATION).
 
+## 16 October 2026
+
+- **Tickets and feedback live in YaraOne** (owner): YaraOne is where REKA tracks every support request and piece of feedback from every AntaraX product and REKA client project, and it manages nothing else. No product builds its own ticketing or feedback. YaraOne offers two embedded modules: a **front office** in each customer app (Help → Contact support, Send feedback, Your requests; Report this on an error screen), wearing the host's own look, and a **back office** in each product's AXLE (Watch → Tickets), so neither customers nor staff sign in to another dashboard. Each product's AXLE keeps running the product itself. Later, an API and a shared AntaraX sign-in. How the modules embed and sign in waits on YaraOne's build. Standard: `haziqfaris/AntaraX-Dashboard-kit`, `yaraone/EMBEDS.md`.
+
 ## 15 October 2026
 
 - **REKA support sessions are in every product, read only, with the organisation's consent** (owner; std H7 had them as Later). REKA support sees the organisation's product as an Owner does, minus passwords, two-step and payment details. The server refuses every change. Each organisation chooses **Always allowed**, **Ask each time** (the default: an Owner approves each request, which lapses after 24 hours) or **Never** under Support access. Staff see an AXLE banner, and the organisation sees "REKA support is here". Every session is recorded in AXLE's Audit, the organisation's Activity log and its Support access history. Acting as a member is not built. Spec and mock: `haziqfaris/AntaraX-Dashboard-kit`, `axle/SPEC.md` §11, `app/SPEC.md` §7 and §13, `axle/mock/SupportSession.dc.html`.

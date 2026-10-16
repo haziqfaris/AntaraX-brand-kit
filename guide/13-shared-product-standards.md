@@ -124,6 +124,8 @@ Each product's customer app is its own: identity, colours, shape, navigation and
 - getting in, banners, notifications, Assist, and what dialogs, toasts, errors and empty states say;
 - feedback and support requests, which are YaraOne's front office, embedded (owner, 16 October 2026): no product builds its own.
 
+The top bar's sizes are tokens: the `shell` section of `tokens/tokens.json` and `.shell-root` in `tokens.css` (owner, 16 October 2026). The bar floats by default and a product records any exception there; its colours come from the product's own palette.
+
 The full standard is in `haziqfaris/AntaraX-Dashboard-kit`: start with `app/README.md`.
 
 ## 7 Languages

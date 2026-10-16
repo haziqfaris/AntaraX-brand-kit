@@ -23,3 +23,7 @@ Facts only the owner can give. Until each is answered, the site says only what t
 22. **How far ahead AX Frame warns, and how.** The site says a renewal is "flagged ahead of its date". *Recommendation:* state the number of days and the channel (email, in-app) once confirmed from `haziqfaris/axframe`.
 23. **Are pilots paid?** Pilot pages say "Terms set per pilot". *Recommendation:* say whether a pilot is free, paid or credited against a later subscription, in one line on the pilots page.
 24. **A reply time for demo and pilot requests.** Contact promises only that "a real person reads every message". *Recommendation:* commit to a reply time the team can keep (for example one working day) and say it on Contact and the forms.
+
+## From the shell tokens (16 October 2026)
+
+25. **Are Tinara's and PLExyz Grid's flat top bars intended?** The floating bar is now the default and a product records any exception (10, 16 October). The Dashboard kit's AppBar mock draws both flat, so `shell.bar.byProduct` records them flat; but its `app/SPEC.md` section 2.2 says PLExyz Grid floats today. *Recommendation:* confirm each from the product's own app. Remove a product's entry if it should take the default.

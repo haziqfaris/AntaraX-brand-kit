@@ -1,4 +1,4 @@
-/* AntaraX design tokens v1.9.0 (2026-10-15). Mirrors tokens.json; full product palettes in product-palettes.css. Import first, then build on the variables. */
+/* AntaraX design tokens v1.10.0 (2026-10-16). Mirrors tokens.json; full product palettes in product-palettes.css. Import first, then build on the variables. */
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap");
 
 :root {
@@ -152,6 +152,43 @@
   --axle-control-radius: 12px;
   --axle-target: 44px;
 }
+
+/* The AntaraX shell: the top bar every customer app shares (guide/13 section 6a). Mirrors tokens.json "shell".
+   Put .shell-root and data-product="<product>" on the bar's container; the slots read that product's palette (product-palettes.css).
+   The Dashboard kit generates its app/tokens.css from tokens.json "shell". */
+.shell-root {
+  /* the bar: floating by default (owner, 16 October 2026) */
+  --shell-bar-height: 64px; --shell-bar-height-phone: 58px;
+  --shell-bar-outer-padding: 14px 20px 0; --shell-bar-outer-padding-phone: 8px 12px 0;
+  --shell-bar-inner-padding: 0 10px 0 7px; --shell-bar-gap: 8px;
+  --shell-bar-radius: 24px; --shell-bar-radius-phone: 20px;
+  --shell-bar-border-width: 1px; --shell-bar-border: var(--shell-line);
+  --shell-bar-shadow: 0 10px 28px -20px rgba(11, 27, 79, .35);
+  /* the brand pill */
+  --shell-pill-well-padding: 4px; --shell-pill-well-radius: 16px; --shell-pill-well-gap: 2px;
+  --shell-pill-a-width: 32px; --shell-pill-a-height: 38px; --shell-pill-a-radius: 12px; --shell-pill-a-mark: 21px;
+  --shell-pill-chip-height: 38px; --shell-pill-chip-radius: 12px; --shell-pill-chip-padding: 0 12px 0 7px; --shell-pill-chip-padding-phone: 0 7px; --shell-pill-chip-gap: 8px;
+  --shell-pill-chip-size: 16px; --shell-pill-chip-weight: 600; --shell-pill-chip-tracking: -0.01em;
+  --shell-pill-mark-tile: 24px; --shell-pill-mark-tile-radius: 7px; --shell-pill-mark-tile-bg: #FFFFFF; --shell-pill-mark: 18px;
+  /* controls: round ones are 44px; product-slot buttons are drawn 40px with a 44px hit area (owner, 16 October 2026) */
+  --shell-control-round: 44px;
+  --shell-control-slot: 40px; --shell-control-slot-target: 44px; --shell-control-slot-radius: 12px; --shell-control-slot-padding: 0 12px; --shell-control-slot-gap: 6px; --shell-control-slot-size: 13px; --shell-control-slot-weight: 600;
+  --shell-search-width: 210px; --shell-search-height: 44px; --shell-search-radius: 14px; --shell-badge: 18px;
+  --shell-title-size: 18px; --shell-title-weight: 600; --shell-title-divider-gap: 12px;
+  /* the Help and account menus */
+  --shell-menu-width-help: 280px; --shell-menu-width-account: 300px; --shell-menu-radius: 16px; --shell-menu-padding: 6px; --shell-menu-item-height: 44px; --shell-menu-item-radius: 10px;
+  --shell-menu-shadow: 0 18px 40px -18px rgba(11, 27, 79, .35);
+}
+/* product slots: each product fills them from its own palette. subtleTint is the product chip, never the current navigation item */
+.shell-root[data-product="yara"] { --shell-subtle-tint: var(--yara-subtle); --shell-action: var(--yara-action); --shell-well: var(--yara-neutral-100); --shell-line: var(--yara-border-default); --shell-surface: var(--yara-surface-raised); --shell-ink: var(--yara-text-strong); }
+.shell-root[data-product="frame"] { --shell-subtle-tint: var(--frame-subtle); --shell-action: var(--frame-action); --shell-well: var(--frame-neutral-100); --shell-line: var(--frame-border-default); --shell-surface: var(--frame-surface-raised); --shell-ink: var(--frame-text-strong); --shell-bar-radius: 16px; }
+.shell-root[data-product="janka"] { --shell-subtle-tint: var(--janka-subtle); --shell-action: var(--janka-action); --shell-well: var(--janka-neutral-100); --shell-line: var(--janka-border-default); --shell-surface: var(--janka-surface-raised); --shell-ink: var(--janka-text-strong); --shell-bar-radius: 20px; }
+.shell-root[data-product="grid"] { --shell-subtle-tint: var(--grid-subtle); --shell-action: var(--grid-action); --shell-well: var(--grid-neutral-100); --shell-line: var(--grid-border-default); --shell-surface: var(--grid-surface-raised); --shell-ink: var(--grid-text-strong); --shell-bar-outer-padding: 0; --shell-bar-outer-padding-phone: 0; --shell-bar-inner-padding: 0 16px 0 12px; --shell-bar-radius: 0; --shell-bar-radius-phone: 0; --shell-bar-border-width: 0 0 1px; --shell-bar-shadow: none; }
+.shell-root[data-product="crowd"] { --shell-subtle-tint: var(--crowd-subtle); --shell-action: var(--crowd-action); --shell-well: var(--crowd-neutral-100); --shell-line: var(--crowd-border-default); --shell-surface: var(--crowd-surface-raised); --shell-ink: var(--crowd-text-strong); }
+.shell-root[data-product="angka"] { --shell-subtle-tint: var(--angka-subtle); --shell-action: var(--angka-action); --shell-well: var(--angka-neutral-100); --shell-line: var(--angka-border-default); --shell-surface: var(--angka-surface-raised); --shell-ink: var(--angka-text-strong); --shell-bar-radius: 28px; }
+.shell-root[data-product="tinara"] { --shell-subtle-tint: var(--tinara-subtle); --shell-action: var(--tinara-action); --shell-well: var(--tinara-neutral-100); --shell-line: var(--tinara-border-default); --shell-surface: var(--tinara-surface-raised); --shell-ink: var(--tinara-text-strong); --shell-bar-outer-padding: 0; --shell-bar-outer-padding-phone: 0; --shell-bar-inner-padding: 0 16px 0 12px; --shell-bar-radius: 0; --shell-bar-radius-phone: 0; --shell-bar-border-width: 0 0 1px; --shell-bar-shadow: none; }
+.shell-root[data-product="loom"] { --shell-subtle-tint: var(--loom-subtle); --shell-action: var(--loom-action); --shell-well: var(--loom-neutral-100); --shell-line: var(--loom-border-default); --shell-surface: var(--loom-surface-raised); --shell-ink: var(--loom-text-strong); }
+.shell-root[data-product="motion"] { --shell-subtle-tint: var(--motion-subtle); --shell-action: var(--motion-action); --shell-well: var(--motion-neutral-100); --shell-line: var(--motion-border-default); --shell-surface: var(--motion-surface-raised); --shell-ink: var(--motion-text-strong); }
 
 /* the dotted blueprint ground: dots, never ruled lines */
 .ax-blueprint {

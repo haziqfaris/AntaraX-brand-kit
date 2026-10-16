@@ -7,7 +7,7 @@ This repository is the **source of truth for the AntaraX brand**: positioning, p
 - Change the guide only for a decision the owner has made, or to correct a fact. Add the decision to `guide/10-decisions-log.md` with its date, in the same change.
 - Put anything unresolved in `guide/11-open-questions.md`; do not resolve it silently.
 - Keep `tokens/tokens.json` and `tokens/tokens.css` in step. A token change is a change to every consumer; list the consumers affected in the commit message.
-- **The `axle` tokens feed the Dashboard kit.** `haziqfaris/AntaraX-Dashboard-kit` generates its `axle/tokens.css` from the `axle` section of `tokens/tokens.json` and pins the version it used. After changing any token, run `python3 tools/sync-brand-kit.py` in the Dashboard kit and commit there too; its check fails until you do.
+- **The `axle` and `shell` tokens feed the Dashboard kit.** `haziqfaris/AntaraX-Dashboard-kit` generates its `axle/tokens.css` from the `axle` section of `tokens/tokens.json`, and its `app/tokens.css` from the `shell` section, and pins the version it used. After changing any token, run `python3 tools/sync-brand-kit.py` in the Dashboard kit and commit there too; its check fails until you do.
 - `reference/` holds the documents the guide was built from. Do not edit them to match the guide; the guide supersedes them.
 - Write in plain British English, sentence case, no em dashes in customer-facing copy.
 

@@ -121,7 +121,8 @@ Each product's customer app is its own: identity, colours, shape, navigation and
 - the account and Help menus;
 - the standard pages under `/settings`, `/account`, `/guide` and `/help`;
 - the shared roles;
-- getting in, banners, notifications, Assist, Send feedback, and what dialogs, toasts, errors and empty states say.
+- getting in, banners, notifications, Assist, and what dialogs, toasts, errors and empty states say;
+- feedback and support requests, which are YaraOne's front office, embedded (owner, 16 October 2026): no product builds its own.
 
 The full standard is in `haziqfaris/AntaraX-Dashboard-kit`: start with `app/README.md`.
 

@@ -87,7 +87,7 @@ Understand → Operate → Optimize → Perceive → Navigate → Act → Synthe
 
 - Write **AntaraX** (capital A, capital X). The wordmark is set lower case ("antarax") in the logo only.
 - Products are named on their own: "Yara", not "AntaraX Yara". Families take the prefix: "AntaraX Ripple". Frame shares its family's name, so the product is **AX Frame** ("Frame" alone is crowded in software). The family stays AntaraX Frame.
-- Every product is credited **"by AntaraX"** (12), PLExyz included. Never "Powered by", never "by REKA".
+- Every product is credited **"by AntaraX"** (12), PLExyz included. Never "Powered by AntaraX", never "by REKA".
 - Write **AntaraX**, never "AntaraX AI".
 - Family name variants (from the master logo file): Full "AntaraX Motion", Medium "AX Motion", Short "AXM" (AXR, AXE, AXF, AXL). Use Full in customer copy; Medium and Short are for space-constrained marks and internal use.
 - **PLExyz** is always written PLExyz. It is REKA's spatial intelligence platform, built on AntaraX: Grid (flagship), Trace (built inside Janka), and the concepts Flow, Transit, Crowd, Site, Ward and Yard (products/plexyz.md).

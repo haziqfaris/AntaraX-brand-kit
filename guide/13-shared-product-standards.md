@@ -128,6 +128,22 @@ The top bar's sizes are tokens: the `shell` section of `tokens/tokens.json` and 
 
 The full standard is in `haziqfaris/AntaraX-Dashboard-kit`: start with `app/README.md`.
 
+## 6b AI in the interface
+
+The same pieces wherever a product shows AI work, so a customer reads AI the same way in every product. They are the interface layer (B1) of the AntaraX AI framework (`haziqfaris/ai-framework-heuristiks`, its layer page B1 and docs 03, 21 and 25); its gateway supplies the words and the outcomes, the product draws them in its own style (owner, 16 October 2026).
+
+| Piece | What it is | Rules |
+|---|---|---|
+| **The mark** | The AntaraX sparkle beside every AI result, with "AI" in words: "Suggested by AI", "Read by AI" | Never a vendor's name on a screen; never decoration (12) |
+| **The suggestion** | The answer, then **Accept**, **Change** and **Dismiss** | Each button reports the outcome to the gateway (used, corrected, not used), so AXLE's R8 → AI flow counts it. Nothing is applied until a person accepts, unless the card's guardrail applies it |
+| **Why** | The sources it answered from, as chips that open them; a confidence in words ("likely", "unsure") as well as any colour | A retrieval answer always shows its sources; confidence is never shown by colour alone |
+| **Applied by AI** | "Applied by AI · Undo" on what a guardrail applied without a person | The undo is always there for the card's undo window |
+| **Thinking** | The thinking motion (12, 14) and the action in words ("Reading the invoice") | After 10 seconds, offer the way without AI ("Type it yourself"); never a spinner |
+| **AI is off, or stopped** | The gateway's note, in a neutral panel, then the way without AI: "AI is off for this. Type the delivery note number." "AI is busy just now." "This month's AI allowance is used up." | Never an error style, never an error code; the person can always finish without AI |
+| **Streaming text** | Text that arrives as it is written | Announced politely to screen readers, once complete, not word by word |
+
+The full words are the gateway's (`noteFor` in the framework's gateway); a product translates them, never rewrites what they mean.
+
 ## 7 Languages
 
 - **British English** in every product (03): organisation, colour, cancelled.

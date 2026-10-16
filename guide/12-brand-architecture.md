@@ -287,11 +287,13 @@ Full palettes (11-step scales, roles, chart sets, dark mode) are in 14 and `toke
 | Legal footer, terms, invoices | "AntaraX, a product line of REKA Inisiatif Sdn Bhd." |
 | Pilot and Managed AI screens | "Run by REKA as part of Managed AI." (only where REKA really runs it) |
 | Support contacts | Name REKA people where REKA people answer |
+| YaraOne's front office, embedded in any product or client project (Help → Contact support, Send feedback, Your requests) | "Managed by REKA · Powered by YaraOne", one line at its foot, plain and muted (owner, 16 October 2026). A client project may hide it |
 | **REKA client projects** (bespoke work for a client, not an AntaraX product) | "Built by REKA", in the footer only: the sign-in foot, the account menu foot and the app footer. Plain text, muted, never a logo or REKA orange (owner, 16 October 2026). The legal lines are the client's |
 
 - The same lines for every product, PLExyz included.
 - The Never list below is for AntaraX products. A REKA client project carries "Built by REKA" and nothing of AntaraX (Dashboard kit `project/SPEC.md`).
-- Never: "Powered by", "by REKA", "Tinara by REKA", "A product of REKA Inisiatif", "REKA Intelligence", "REKA" in REKA orange inside a product, "AntaraX AI".
+- "Powered by ‹tool›" is fine where a separate tool really powers part of a product, as YaraOne powers the front office. What is never written is "Powered by AntaraX": inside an AntaraX product it is redundant (owner, 16 October 2026).
+- Never: "Powered by AntaraX", "by REKA", "Tinara by REKA", "A product of REKA Inisiatif", "REKA Intelligence", "REKA" in REKA orange inside a product, "AntaraX AI".
 - "from REKA" is reviewed on 23 July 2027.
 
 ## Sub-brands and shared names
@@ -316,4 +318,4 @@ Full palettes (11-step scales, roles, chart sets, dark mode) are in 14 and `toke
 - **Do** follow the BaTech guidelines for every motif: family pairs, three strengths, 24px minimum.
 - **Don't** put a batik pattern or cloth inside a product.
 - **Don't** put two marks side by side (the product's and the A).
-- **Don't** credit a product "by REKA" or "Powered by".
+- **Don't** credit a product "by REKA" or "Powered by AntaraX". "Powered by" names a separate tool that really powers part of a product, such as YaraOne.

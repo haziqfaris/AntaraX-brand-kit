@@ -2,6 +2,17 @@
 
 Owner decisions that shape the brand, newest first. Add to the top; never rewrite history. Earlier strategy changes are in `reference/strategy/` (playbook amendments v0.3–v0.5, RECONCILIATION).
 
+## 17 October 2026
+
+- **Every product sends email through AntaraX email, from `mail.antarax.ai`** (owner). One service, `email.antarax.ai`, in `haziqfaris/antarax-api` (`apps/email`, `packages/lapisan-email`; `docs/15-email.md`, decision 0014), built from the AntaraX Shared Email & Communications Service brief with its corrections:
+  - **Addresses:** each product sends as itself, `<Product> <product@mail.antarax.ai>`. Replies go to `support@go.antarax.ai` as before (2), never to an `@antarax.ai` address. The root domain sends nothing new.
+  - **Names:** AX Frame, not Frame; YaraOne for tickets and Yara for work orders; no product is called Ripple.
+  - **Templates, not HTML:** a product names an approved template and sends its words. The service draws the one layout (4), checks every link is on the product's own site, and keeps a ledger with no bodies or plain addresses.
+  - **Shared rules:** a hard bounce stops every product mailing the address; a complaint stops only the product it was made to. Sign-in emails sent by Supabase Auth come through the service too.
+  - **Each product moves behind a switch**, so nothing changes until its two settings are set.
+  - **Angka is deferred:** its forwarding, "via Angka" sending and its own suppression need their own discussion.
+  - **Not REKA's mailbox:** ceREKA (`haziqfaris/reka-mail`) is REKA's own mail and calendar app, a different thing.
+
 ## 16 October 2026
 
 - **AI in the interface is shared** (owner; 13 section 6b). Wherever a product shows AI work, it uses the same pieces:

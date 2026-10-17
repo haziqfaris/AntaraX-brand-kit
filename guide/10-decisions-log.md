@@ -12,6 +12,7 @@ Owner decisions that shape the brand, newest first. Add to the top; never rewrit
   - **Each product moves behind a switch**, so nothing changes until its two settings are set.
   - **Angka is deferred:** its forwarding, "via Angka" sending and its own suppression need their own discussion.
   - **Not REKA's mailbox:** ceREKA (`haziqfaris/reka-mail`) is REKA's own mail and calendar app, a different thing.
+  - **What follows in the Dashboard kit (1.5.0):** AXLE gains Watch → Email, read from the service, with Organisation 360 → Email; a product's Settings no longer holds templates or a sender, and Branding no longer offers a sender name. In a customer app, `/account` → Emails you get lists only activity emails, which people can turn off; security and service emails cannot be. A spam mark stops a product's service and activity emails, never a sign-in or a reset the person asks for (antarax-api 0.7.3).
 
 ## 16 October 2026
 

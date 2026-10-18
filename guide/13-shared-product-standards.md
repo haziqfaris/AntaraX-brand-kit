@@ -80,16 +80,18 @@ Never show a personal address, "contact your REKA account manager" unless one is
 
 ## 4 Emails
 
-Every product email uses one layout, drawn by AntaraX email (antarax-api `packages/lapisan-email`): a product names an approved template and sends its words as variables, never HTML (owner, 17 October 2026). The layout:
+Every product email uses one layout, drawn by AntaraX email (antarax-api `packages/lapisan-email`): a product names an approved template and sends its words as variables, never HTML (owner, 17 October 2026). Every template, rendered, with how a new product joins: [`assets/email/`](../assets/email/README.md). The layout (owner, 18 October 2026):
 
-1. **Header:** the product's mark as a PNG (mail clients do not draw SVG), its name and "by AntaraX"; optionally the family's Quiet drift band under it, as an image. The structure is shared; the colours are the product's own (its action colour for the button, its ground), so Angka's warm paper and plum stay.
-2. **Heading:** one plain sentence.
-3. **Body:** the words, short. Where there are steps, a numbered "What happens next".
-4. **One button** (bulletproof, works in every mail client), saying what it does.
-5. **The link written out** in mono, with how long it works.
-6. **Footer:** why the email came, the credit line ("Janka by AntaraX, from REKA."), the legal line, the support line.
+1. **Header:** the product's mark as a PNG (mail clients do not draw SVG), its name and "by AntaraX", on the product's ground.
+2. **Band:** the family's Quiet BaTech drift band across the top of the card, on every email (06, 12). Never the colour band, never behind words.
+3. **Motif:** the product's signature motif, 72 px in its family pair, above the heading on the first emails someone gets from a product (the welcome and the invitations), as a milestone (12). None on any other email, and none for a product without a motif of its own.
+4. **Heading:** one plain sentence.
+5. **Body:** the words, short. Where there are steps, a numbered "What happens next" (up to four); where there are figures, tables with a status that says itself in words on its tint, never colour alone.
+6. **One button** (bulletproof, works in every mail client), in the product's action colour, saying what it does. A code sits large in mono on a tint of the action colour.
+7. **The link written out** in mono, in one framed box with how long it works.
+8. **Footer:** why the email came, the credit line ("Janka by AntaraX, from REKA."), the legal line, the support line.
 
-Tables and inline styles only, light only, and a plain-text part that says the same with the link first. Emails people can opt out of (digests, reminders, alerts) carry a one-click `List-Unsubscribe` header and a line in the footer saying how to stop them (AX Frame's pattern); sign-in, invite and security emails do not. Subject lines are a plain sentence in sentence case, no emoji, no exclamation mark; the sender name already says which product it is. A mail provider that refuses is logged and the person sees what went wrong in words.
+Tables and inline styles only, light only, 600 px wide, and a plain-text part that says the same with the link first. Emails people can opt out of (digests, reminders, alerts) carry a one-click `List-Unsubscribe` header and a line in the footer saying how to stop them (AX Frame's pattern); sign-in, invite and security emails do not. Subject lines are a plain sentence in sentence case, no emoji, no exclamation mark; the sender name already says which product it is. Sign-in emails Supabase sends itself use the same layout, pasted into Supabase, and go out through `mail.antarax.ai` as the product. A mail provider that refuses is logged and the person sees what went wrong in words.
 
 ## 5 Copy patterns
 

@@ -2,6 +2,10 @@
 
 Owner decisions that shape the brand, newest first. Add to the top; never rewrite history. Earlier strategy changes are in `reference/strategy/` (playbook amendments v0.3–v0.5, RECONCILIATION).
 
+## 18 October 2026
+
+- **The email layout takes the brand's own art** (owner; 13 section 4). Every email carries its family's Quiet BaTech band across the top of the card; the first emails someone gets (the welcome and the invitations) carry the product's signature motif as a milestone; steps are a numbered "What happens next"; a digest's figures are tables whose statuses say themselves in words. Three templates join the eleven: `digest.v1`, `system.announcement.v1` and `auth.confirm_email_change.v1`. Sign-in emails that Supabase sends itself use the same layout and go out through `mail.antarax.ai` as the product, with Supabase still making and checking every link. Every template, rendered, is in `assets/email/`, the reference for every product and every new one. YaraOne and Lapisan have no signature motif yet, so their first emails show none (11).
+
 ## 17 October 2026
 
 - **Every product sends email through AntaraX email, from `mail.antarax.ai`** (owner). One service, `email.antarax.ai`, in `haziqfaris/antarax-api` (`apps/email`, `packages/lapisan-email`; `docs/15-email.md`, decision 0014), built from the AntaraX Shared Email & Communications Service brief with its corrections:

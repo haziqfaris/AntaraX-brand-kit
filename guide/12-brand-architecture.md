@@ -269,6 +269,7 @@ Own accent, for the primary action, selection, charts and identity moments, with
 | Product | Accent | Tint | Dark | Primary action |
 |---|---|---|---|---|
 | Yara | Ripple `#08B0B3` | `#D9F3F2` | `#0B6E72` | teal `#098284` |
+| YaraOne | jade `#087F5B` | `#DFF2E9` | `#01523A` | `#087F5B` |
 | AX Frame | Frame `#074AF8` | `#E2EAFE` | `#0533A8` | `#074AF8` |
 | Janka | cyan `#0CC4FB` | `#DDF7FE` | `#077DA1` | `#077DA1` |
 | PLExyz Grid | violet `#2C09B2`; zones `#4FD7D1` `#FD9001` `#FD4F85` `#CBB6FA` for data | `#E1DDF4` | `#180562` | `#2C09B2` |

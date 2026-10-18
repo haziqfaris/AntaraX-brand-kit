@@ -4,6 +4,8 @@ Owner decisions that shape the brand, newest first. Add to the top; never rewrit
 
 ## 18 October 2026
 
+- **YaraOne's palette is in the brand kit** (owner). Jade `#087F5B` with navy, built by `tools/build-product-palettes.mjs` like every product (14); it reproduces the values YaraOne already uses (action `#087F5B`, hover `#016C4C`, subtle `#DFF2E9`). Chart set jade, blue, orange, magenta, violet, which passes the palette validator light on white and dark on `#071233`. YaraOne stays out of the nine public products on antarax.ai until the owner says otherwise; this is its palette, not a launch.
+- **New passwords keep one field with Show** (owner, confirming getting-in/SPEC.md §4): no "Confirm password" field.
 - **One AXLE sign-in page, from AX Frame's** (owner; 13 section 6; Dashboard kit 1.6.0, `axle/SPEC.md` 5.1.1). The navy ground with the dotted blueprint (05), one card, the AntaraX A and `AXLE`, "‹Product› · REKA staff console". Chosen over Yara's near-black page with a ruled grid.
   - **Two ways in, in every product:** Continue with Google with REKA's company accounts (Google's 2-Step Verification required in the Workspace), or email and password followed by a six-digit code.
   - **Its Sign in is AntaraX blue `#0459F7`,** the one place in AXLE whose main action is not REKA orange (an exception to 15 October); inside the console, orange stays.

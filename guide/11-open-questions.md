@@ -23,3 +23,7 @@ Facts only the owner can give. Until each is answered, the site says only what t
 22. **How far ahead AX Frame warns, and how.** The site says a renewal is "flagged ahead of its date". *Recommendation:* state the number of days and the channel (email, in-app) once confirmed from `haziqfaris/axframe`.
 23. **Are pilots paid?** Pilot pages say "Terms set per pilot". *Recommendation:* say whether a pilot is free, paid or credited against a later subscription, in one line on the pilots page.
 24. **A reply time for demo and pilot requests.** Contact promises only that "a real person reads every message". *Recommendation:* commit to a reply time the team can keep (for example one working day) and say it on Contact and the forms.
+
+## From the email layout (18 October 2026)
+
+25. **A signature motif for YaraOne and for Lapisan.** The first emails a person gets show the product's motif (13 section 4), and neither has one in 12's motif map, so theirs show none. *Recommendation:* draw YaraOne's from the Ripple niche, as Yara's sibling but not its awan larat, and give Lapisan one from the AntaraX cloth; add each to `assets/products/` and to the email service's art.

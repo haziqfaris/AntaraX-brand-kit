@@ -37,6 +37,7 @@ const BLUE = '#0459F7', DARK = '#071233';
 // (the first step that passes 4.5:1 with white text); AntaraX blue stays the focus ring.
 const PRODUCTS = {
   yara: { name: 'Yara', anchor: '#08B0B3', secondary: '#0B1B4F', amark: true, character: 'Ripple teal and navy: calm, clear, made for the shop floor' },
+  yaraone: { name: 'YaraOne', anchor: '#087F5B', secondary: '#0B1B4F', amark: true, character: 'Jade and navy: the Ripple family\'s colour for delivery, client service and tickets (owner, 16 Oct 2026)' },
   frame: { name: 'AX Frame', anchor: '#074AF8', secondary: '#524FE9', amark: true, character: 'Frame blue with halo indigo: precise, technical, one world in view' },
   janka: { name: 'Janka', anchor: '#0CC4FB', secondary: '#F47B3D', character: 'Signal cyan with the spark orange from its mark: alert, forward-looking' },
   grid: { name: 'PLExyz Grid', anchor: '#2C09B2', secondary: '#0CC4FB', character: 'Shard violet with the four zones in AntaraX colours: spatial, vivid, exact', ground: '#F7F7FA' },

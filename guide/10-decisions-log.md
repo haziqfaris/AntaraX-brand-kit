@@ -4,6 +4,18 @@ Owner decisions that shape the brand, newest first. Add to the top; never rewrit
 
 ## 18 October 2026
 
+- **One standard for acting: confirming, waiting and results** (owner; Dashboard kit 1.8.0, `actions/SPEC.md`). A check of every product that day found 50 browser pop-ups across the products, actions that destroy something with one click in every product, no warning about unsaved changes anywhere, and long work that nothing can cancel.
+  - **Three levels of confirmation**, decided by what can be undone:
+    - undoable actions happen at once with Undo, and deleted records keep 30 days in Trash;
+    - consequential ones ask in a dialog whose button names the action and the thing;
+    - irreversible ones need the thing's name typed and the password or a code again, and in AXLE a second person too.
+  - **What a person sees depends on how long it takes:**
+    - the button shows it is busy for under 2 seconds;
+    - a progress dialog with a count or steps, Cancel and Run in background for longer or many-record actions;
+    - a background job for anything over 30 seconds.
+
+    A busy button alone is never enough for a long action.
+  - **No browser pop-ups**, never "OK" or "Are you sure?", and never a raw server message.
 - **YaraOne's palette is in the brand kit** (owner). Jade `#087F5B` with navy, built by `tools/build-product-palettes.mjs` like every product (14); it reproduces the values YaraOne already uses (action `#087F5B`, hover `#016C4C`, subtle `#DFF2E9`). Chart set jade, blue, orange, magenta, violet, which passes the palette validator light on white and dark on `#071233`. YaraOne stays out of the nine public products on antarax.ai until the owner says otherwise; this is its palette, not a launch.
 - **New passwords keep one field with Show** (owner, confirming getting-in/SPEC.md §4): no "Confirm password" field.
 - **One standard for getting in** (owner; Dashboard kit 1.7.0, `getting-in/SPEC.md`). Every customer app and AXLE meets its bare minimum (GI-01 to GI-20) before release. A check of every product that day found most had no strength meter, Caps Lock warning, breach check or two-step sign-in, several had no Forgot your password, and two had security problems now being fixed in their own pull requests.

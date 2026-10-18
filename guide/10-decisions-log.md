@@ -4,6 +4,11 @@ Owner decisions that shape the brand, newest first. Add to the top; never rewrit
 
 ## 18 October 2026
 
+- **One AXLE sign-in page, from AX Frame's** (owner; 13 section 6; Dashboard kit 1.6.0, `axle/SPEC.md` 5.1.1). The navy ground with the dotted blueprint (05), one card, the AntaraX A and `AXLE`, "‹Product› · REKA staff console". Chosen over Yara's near-black page with a ruled grid.
+  - **Two ways in, in every product:** Continue with Google with REKA's company accounts (Google's 2-Step Verification required in the Workspace), or email and password followed by a six-digit code.
+  - **Its Sign in is AntaraX blue `#0459F7`,** the one place in AXLE whose main action is not REKA orange (an exception to 15 October); inside the console, orange stays.
+  - **Kept from Yara's page:** someone who isn't staff is signed out at once and pointed to the product's own sign-in; Help, Privacy and Terms under the card.
+  - **Words:** Sign in, never Log in or Enter AXLE; "Authorised REKA staff · every action is recorded".
 - **The email layout takes the brand's own art** (owner; 13 section 4). Every email carries its family's Quiet BaTech band across the top of the card; the first emails someone gets (the welcome and the invitations) carry the product's signature motif as a milestone; steps are a numbered "What happens next"; a digest's figures are tables whose statuses say themselves in words. Three templates join the eleven: `digest.v1`, `system.announcement.v1` and `auth.confirm_email_change.v1`. Sign-in emails that Supabase sends itself use the same layout and go out through `mail.antarax.ai` as the product, with Supabase still making and checking every link. Every template, rendered, is in `assets/email/`, the reference for every product and every new one. YaraOne and Lapisan have no signature motif yet, so their first emails show none (11).
 
 ## 17 October 2026

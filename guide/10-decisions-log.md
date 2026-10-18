@@ -4,6 +4,17 @@ Owner decisions that shape the brand, newest first. Add to the top; never rewrit
 
 ## 18 October 2026
 
+- **Gauge and REKA Discovery send as themselves** (owner). Two internal tools in the Ripple family join AntaraX email; neither is called Ripple, which keeps the 17 October rule:
+  - **Gauge**, said "Ripple Gauge" in full: the monitoring and performance tool (`haziqfaris/antarax-ripple-monitoring`). Internal for now and named so it can become a product later. Sends as `Gauge <gauge@mail.antarax.ai>`. It is expected to move to `gauge.antarax.ai`.
+  - **REKA Discovery**: the workflow and forms tool (`haziqfaris/ripple-workflow`, at `ripple.antarax.ai/workflow`). It is REKA's own, so the sender carries REKA's name: `REKA Discovery <discovery@mail.antarax.ai>`, credited "REKA Discovery, on AntaraX Ripple."
+  - Both use Ripple's Quiet BaTech band and have no signature motif yet, so their first emails show none.
+- **AXLE Central → Email watches every product's mail in one place** (owner; Dashboard kit 1.6.0, `axle/SPEC.md` section 10.14). It reads from AntaraX email's operator-only routes and shows:
+  - what needs a person: the service's alerts, emailed to the operators every hour until they clear;
+  - every product's sent, delivered, bounced, spam and failed counts against its day limit;
+  - every email, newest first, with masked addresses;
+  - a check for whether an address is blocked.
+
+  Only an Admin may lift a bounce. A product's own AXLE keeps its Watch → Email.
 - **The email layout takes the brand's own art** (owner; 13 section 4). Every email carries its family's Quiet BaTech band across the top of the card; the first emails someone gets (the welcome and the invitations) carry the product's signature motif as a milestone; steps are a numbered "What happens next"; a digest's figures are tables whose statuses say themselves in words. Three templates join the eleven: `digest.v1`, `system.announcement.v1` and `auth.confirm_email_change.v1`. Sign-in emails that Supabase sends itself use the same layout and go out through `mail.antarax.ai` as the product, with Supabase still making and checking every link. Every template, rendered, is in `assets/email/`, the reference for every product and every new one. YaraOne and Lapisan have no signature motif yet, so their first emails show none (11).
 
 ## 17 October 2026

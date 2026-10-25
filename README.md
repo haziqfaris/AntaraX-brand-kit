@@ -369,3 +369,7 @@ The AntaraX sparkle, alive, which every few seconds morphs into your product's l
 | REKA (parent brand) | `haziqfaris/reka.re`, `haziqfaris/reka-brand-kit` |
 
 Version 1.4, 11 October 2026: the product identity system (logos, motifs, BaTech sets, loaders, palettes) and this guide for product repos. Version 1.3 added brand architecture, product sheets, the AntaraX layer and shared product standards.
+
+## Other REKA frameworks
+
+How AntaraX Brand Kit fits with the other REKA frameworks, and who governs what: [FRAMEWORKS.md](FRAMEWORKS.md).

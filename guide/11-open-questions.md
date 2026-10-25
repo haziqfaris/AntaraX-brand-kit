@@ -27,3 +27,7 @@ Facts only the owner can give. Until each is answered, the site says only what t
 ## From the email layout (18 October 2026)
 
 25. **A signature motif for YaraOne and for Lapisan.** The first emails a person gets show the product's motif (13 section 4), and neither has one in 12's motif map, so theirs show none. *Recommendation:* draw YaraOne's from the Ripple niche, as Yara's sibling but not its awan larat, and give Lapisan one from the AntaraX cloth; add each to `assets/products/` and to the email service's art.
+
+## From AwanGan's decision 0021 (25 October 2026)
+
+26. **AwanGan and Cebis Loom in the brand.** Both are now named in 13 section 2 and the Dashboard kit, but neither has an entry in 02, a palette or a logo, and Cebis Loom's name is close to AX Loom, the closed pilot for data synthesis. *Recommendation:* decide whether each is a product, a platform piece like Lapisan, or internal only, and whether Cebis Loom belongs to AX Loom, before either is named in front of a customer.

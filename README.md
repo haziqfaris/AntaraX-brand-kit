@@ -227,6 +227,8 @@ guide/12-brand-architecture.md, guide/13-shared-product-standards.md (our row in
 and guide/14-product-identity-system.md (our section).
 Copy tokens and assets from the kit; never retype a hex value. Where the kit and this repo
 disagree, the kit wins. If the kit doesn't answer a question, ask the owner; don't invent a rule.
+AI keys, models and routing are AwanGan's (haziqfaris/AntaraX-AwanGan); API keys, tenants, scopes
+and usage rows are Lapisan's (haziqfaris/antarax-api). Their addresses are in guide/13 section 2.
 ```
 
 **Bring in the tokens.** Copy the two token files (and your logo) from a checkout of this kit, then use the variables. The example is Yara; swap the prefix for yours:
@@ -272,6 +274,7 @@ Copy this list into an issue in your product repo and tick it off there:
 - [ ] Every hex value in our CSS is a token from tokens/
 - [ ] Buttons act in our colour; focus rings are AntaraX blue
 - [ ] Customers see support@go.antarax.ai, never a personal or platform address
+- [ ] Our AI keys are recorded in AwanGan (watch only until we come through it); our API keys come from Lapisan
 - [ ] Plans read Seed, Terra, Nova, Galaxy, Quantum, each with who it is for (Angka keeps its own)
 - [ ] Money reads RM1,200; dates read 11 Oct 2026; times read 14:30 on screen
 - [ ] No loader spins or flips, and every loader stands still under reduced motion

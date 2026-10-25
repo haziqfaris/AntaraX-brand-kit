@@ -29,7 +29,7 @@ Family        what kind of work          Tide: Optimize, "Read what's coming."
 | Edge · Perceive | open hexagon with a node | PLExyz Grid | force field, shard, four zones | **petak** | Spaces in a real layout |
 | Edge · Perceive | | PLExyz Crowd | force field, shard, scattered entities | **orbit** | Signals counted, never faces |
 | Frame · Understand | four corners | AX Frame | the A with the Frame icon | **intan** | One world, seen many ways |
-| Loom · Synthesize | woven bars | AX Loom | the A with the Loom icon (drawn) | **tenun** | The weave itself |
+| Loom · Synthesize | woven bars | Cebis Loom | the A with the Loom icon (drawn) | **tenun** | The weave itself |
 | Motion · Navigate | split bolt | AX Motion | the A with the Motion icon (drawn) | **bunga cengkih** | Every vehicle, seen from above |
 | Tide · Optimize | crescent with a dot | Janka | the J that never closes | **padi** | Reading the harvest before it comes |
 | Tide · Optimize | | Angka | the sheet-stack face | **congkak** | Counting where it all goes |
@@ -61,7 +61,7 @@ What each link gives:
 | Tinara | the signal: a company reaching out | kerawang: one path found in the noise |
 | PLExyz Grid | force field, shard, zones | petak: spaces in a layout |
 | PLExyz Crowd | force field, shard, entities | orbit: signals counted |
-| AX Loom | the A and woven bars | tenun: the weave |
+| Cebis Loom | the A and woven bars | tenun: the weave |
 | AX Motion | the A and a split bolt | bunga cengkih: seen from above |
 
 ## Logos
@@ -222,7 +222,7 @@ Each product has a full palette, built from its own colour by `tools/build-produ
 | PLExyz Crowd | PLExyz purple until Crowd has its own theme | `#6040CC` | `#6040CC` | zone teal | orange, aqua, blue, magenta |
 | Angka | warm plum with Lapis peach, on paper | `#6B3F6B` | `#6B3F6B` | peach `#E9906B` | blue, orange, aqua, violet |
 | Tinara | **garnet** with gold: discreet, valuable | `#7A1E3C` | `#7A1E3C` | gold `#D6A84F` | blue, orange, aqua, violet |
-| AX Loom, AX Motion | the family colour | `#4904B3`, `#FC5D04` | `#4904B3`, `#BE4402` | navy | see tokens |
+| Cebis Loom, AX Motion | the family colour | `#4904B3`, `#FC5D04` | `#4904B3`, `#BE4402` | navy | see tokens |
 
 What changed and why:
 

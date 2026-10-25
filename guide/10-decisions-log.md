@@ -4,6 +4,15 @@ Owner decisions that shape the brand, newest first. Add to the top; never rewrit
 
 ## 25 October 2026
 
+- **PLExyz Crowd's record, from the owner's slides** (owner, second round).
+  - **Named with logos:** the site may show these organisations, each with what PLExyz Crowd analytics was used for: AeroDarat (airport and lounge operation), MedAds Media (advertising), Gardens by the Bay (tourism), Nasi Kandaq Fest 2023 at Sunway Putra Mall (event), Think City (live performance), UEM Sunrise (new property development), Coffee Cartel (food and beverages), Cyberview (event). Name and use only: no outcomes, figures, quotes or case studies unless each is supplied. The logos on the site are cut from the owner's slide until proper files arrive.
+  - **Deployed since 2021.** Crowd has run on real sites; the new Crowd app is the closed pilot. "The pilot runs on simulated signals" is retired.
+  - **Sensing layers**, from the widest to the closest: Telco + Geo data, Wi-Fi, RFID + BLE, LiDAR, camera. Telco + Geo is deployed project by project, like the others.
+  - **Analytics it may name:** footfall; customer journey and movement patterns; repeat visits, duration of stay and conversion rates. Not device brand.
+  - The PLExyz page gains "the problem we solve" and "who we solved it for"; the Crowd page moves into the same dark hexagon world, laid out like a SaaS product page, with the layers revealed as you scroll and a PLExyz shard for a pointer that lights the hexagons it passes.
+- **Cebis Loom's page uses Loom violet** (`#4904B3`), not AntaraX blue (owner). Focus rings stay AntaraX blue.
+- **AwanGan and BumiNyata pages say the problem and the value** before the packages (owner): what goes wrong today, what changes, and who benefits. BumiNyata's scene has three levels: up the mountain, on the ground and underground.
+
 - **AwanGan and BumiNyata are products: AntaraX's own AI models** (owner; answers 11 question 26 for them). AwanGan is the cloud, BumiNyata the customer's own servers, "for further sovereignty".
   - **Say "our own models".** Do not say they were trained from scratch, do not name the open models underneath, and give no sizes or benchmarks. Privacy is described by what the design does (personal data masked before anything goes to an outside model; BumiNyata's outbound calls locked), never as a guarantee or compliance claim.
   - **Status "By arrangement"**, with "Talk to us" to the contact form. Packages are shown as tiers without prices.

@@ -28,7 +28,9 @@ One word for each shared idea, in every product. Product-specific things keep th
 |---|---|
 | Product app | `<product>.antarax.ai` (yara, janka, grid, frame, angka, tinara, crowd). Never a `vercel.app`, `netlify.app` or other platform address in front of a customer |
 | Admin console | `axle.antarax.ai`, one console for every product (antarax-api decision 0009). Until it exists, `axle.<product>.antarax.ai` |
-| Developers | `api.antarax.ai` and `lapisan.antarax.ai` |
+| Developers | `api.antarax.ai` and `lapisan.antarax.ai`: **Lapisan** (`haziqfaris/antarax-api`) issues the API keys and keeps tenants, scopes, limits and usage rows |
+| AI | **AwanGan** (`haziqfaris/AntaraX-AwanGan`), AntaraX's AI control plane: `awangan.antarax.ai` for people, `api.antarax.ai/ai/v1` for machines (AwanGan decisions 0015 and 0021; both are set up with its first cell). It holds the provider keys, models and routing. A product that comes through it calls `api.antarax.ai/ai/v1` with an AntaraX key for product `ai` from Lapisan, never a provider's own address or key (owner, 25 October 2026) |
+| Data | **Cebis** (Cebis Loom in full, `haziqfaris/antarax-cebis-loom`), the Loom family's data product: `cebis.antarax.ai` for people (its free browser version at `/try`, when started), `api.antarax.ai/cebis/v1` for machines, sender `Cebis <cebis@mail.antarax.ai>`; each set up when its cell or feature arrives (Cebis decision 0012). Not `loom.antarax.ai` while open question 26 is open |
 | Product's public page | antarax.ai under `/products/` or `/pilots/` (02) |
 | Product email sender | `<Product> <product@mail.antarax.ai>`, for example `Janka <janka@mail.antarax.ai>`, sent through **AntaraX email** (`email.antarax.ai`; antarax-api `docs/15-email.md`), never a product's own provider or domain (owner, 17 October 2026). The service sets the From and **Reply-To: `support@go.antarax.ai`**; a product names a template and never chooses either. Mail sent on a customer's behalf (`<Organisation> via Angka`) is Angka's, which keeps its own sending until its move is discussed |
 | Support | **`support@go.antarax.ai` for every product**, answered by the team at REKA. Wording, everywhere: "Need help? Email support@go.antarax.ai and the team will reply." Do not promise a reply time until one is kept |
@@ -110,11 +112,12 @@ AXLE is REKA's internal console for running every product. Customers never see i
 
 - **One name:** "AXLE", with the product as context ("AXLE · Janka"), never "REKA Admin" or a product-branded name.
 - **One address:** `axle.antarax.ai` (see 2).
-- **One look:** dark bars, light page (owner, 15 October 2026). The sidebar and the AntaraX top bar are dark (`#071233`, raised `#0C1B47`) with REKA orange `#FB9800` as the accent (it is REKA's tool) and an orange `AXLE` tag after the brand pill; the page is light (`#F5F7FC`, white cards, navy ink). Poppins and JetBrains Mono, the AntaraX A in the corner. The full standard and the template every AXLE is built from are in `haziqfaris/AntaraX-Dashboard-kit`: start with `axle/README.md` (spec v1.0, the final mock, the tokens).
+- **One look:** dark bars, light page (owner, 15 October 2026). The sidebar and the AntaraX top bar are dark (`#071233`, raised `#0C1B47`) with REKA orange `#FB9800` as the accent (it is REKA's tool) and an orange `AXLE` tag after the brand pill; the page is light (`#F5F7FC`, white cards, navy ink). Poppins and JetBrains Mono, the AntaraX A in the corner. The full standard and the template every AXLE is built from are in `haziqfaris/AntaraX-Dashboard-kit`: start with `axle/README.md` (spec v1.4, the final mock, the tokens).
 - **Two modes everywhere:** Dashboard for the business and R8 for the machinery, switched at the top of the sidebar. Every product has R8 Base; a product that runs machinery of its own has R8 Full (owner, 15 October 2026).
 - **The sidebar:** groups are folding cards with a tinted icon tile and a title in the group's colour; the current page is an orange tint with orange text and the intan, never a side stripe (owner, 15 October 2026).
 - **One sign-in page** in every product (owner, 18 October 2026): navy with the dotted blueprint, the AntaraX A and `AXLE`, Continue with Google or email, password and a code, and one AntaraX-blue Sign in. The page is in the Dashboard kit, `axle/SPEC.md` 5.1.1.
 - **One sign-in** for REKA staff across products, when the single console exists.
+- **AI pages show the product's own share of AwanGan** (owner, 25 October 2026): Models & keys is a read-only view of AwanGan's keys and routes, and AI usage reads Lapisan's usage rows for product `ai` (Dashboard kit `axle/SPEC.md` 10.6).
 
 ## 6a The AntaraX shell in customer apps
 

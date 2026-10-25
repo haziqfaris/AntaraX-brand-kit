@@ -2,6 +2,16 @@
 
 Owner decisions that shape the brand, newest first. Add to the top; never rewrite history. Earlier strategy changes are in `reference/strategy/` (playbook amendments v0.3–v0.5, RECONCILIATION).
 
+## 25 October 2026
+
+- **AwanGan manages AntaraX's AI; each product's AXLE shows its own usage** (owner; AwanGan decision 0021; Dashboard kit 1.9.0, `axle/SPEC.md` 1.4 section 10.6). One owner for each:
+  - **AI:** provider keys, models, routing, call records, outcomes and AI cost are AwanGan's (`haziqfaris/AntaraX-AwanGan`), under the Heuristiks standard. People reach it at `awangan.antarax.ai`, machines at `api.antarax.ai/ai/v1` (13 section 2).
+  - **APIs:** keys for callers, tenants, scopes, limits and usage rows are Lapisan's (`haziqfaris/antarax-api`, `api.antarax.ai`).
+  - **A product's own AI usage** is on its AXLE's AI usage page, read from Lapisan's usage rows for product `ai`. Models & keys becomes a read-only view of AwanGan's keys and routes; Live trace shows the verdict first, then the five steps.
+  - **Data a business hands over** goes to Cebis Loom (`haziqfaris/antarax-cebis-loom`). **RESAM** (`haziqfaris/RESAM`) says which framework governs what.
+  - **Nothing is forced on a live product:** its keys are recorded watch only first, and move into AwanGan when it is ready. A client's own system comes through only with the client's written agreement; otherwise it keeps its own keys under Heuristiks, or runs BumiNyata on its own servers.
+  - **Not a brand entry yet:** AwanGan and Cebis Loom have no entry in 02, no palette and no logo (11, question 26).
+
 ## 18 October 2026
 
 - **One standard for acting: confirming, waiting and results** (owner; Dashboard kit 1.8.0, `actions/SPEC.md`). A check of every product that day found 50 browser pop-ups across the products, actions that destroy something with one click in every product, no warning about unsaved changes anywhere, and long work that nothing can cancel.

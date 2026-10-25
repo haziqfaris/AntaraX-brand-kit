@@ -64,19 +64,20 @@ Concepts are proposed directions, not launches. Never show them as available (03
 **What it does.** PLExyz Crowd shows how many people are in each space of a building, live, and how that changes through the day and the week. It works out what unused space and empty, powered rooms cost, and puts it in a monthly report you can forward. Every number says whether it is estimated or measured, and a space with no data says so instead of showing zero.
 
 **What it is not.**
-- A camera system: no video, no faces, no identities.
+- Camera-first: it senses with Wi-Fi first, and adds cameras only where a project needs them (owner's answers, 23 October 2026, on antarax.ai). Wi-Fi sensing records no video and identifies no one.
 - A health or vital-signs product.
 - Reading a building's own Wi-Fi yet: the pilot runs on simulated signals.
 
 **Claims.**
 - May say:
-  - No cameras; no video ever exists (how it senses).
+  - Wi-Fi first, cameras only where a project needs them; Wi-Fi sensing records no video (owner, 23 October 2026).
+  - Its sensor units detect Wi-Fi devices within about 50 metres, through walls (owner, 23 October 2026); Vision, RIG, LiDAR and RFID are deployed project by project, as the PLExyz page says.
   - It counts people per space and never identifies anyone (product rule).
   - Every number is marked estimated or measured (built).
   - Space and energy cost, worked out from your own figures (built).
   - A monthly report and CSV export (built).
   - The demo is simulated (a required disclosure).
-- Never say: that it reads the Wi-Fi or BLE "already in the building" or "in the air", or senses through walls or in the dark (the pilot runs on simulated signals; say so); accuracy percentages; customers, logos or case studies; vital signs; existing Wi-Fi, through-wall sensing, falls or safety alerts as available; money figures from the simulated site; Malaysian data residency (it is hosted in Singapore); AXLE; awards.
+- Never say: that it reads the Wi-Fi or BLE "already in the building" or "in the air", or senses in the dark (the pilot runs on simulated signals; say so); "no cameras" as an absolute (cameras are added where a project needs them); accuracy percentages; customers, logos or case studies; vital signs; existing Wi-Fi, falls or safety alerts as available; money figures from the simulated site; Malaysian data residency (it is hosted in Singapore); AXLE; awards.
 
 **How it is sold.** Closed pilot, run as part of REKA's Managed AI service: REKA sets it up on site, keeps it running and improves it with the customer. Call to action: Request pilot access. No waitlist and no sign-up. Pricing is not published; the drafts pair a monthly software fee with hardware sold separately. A pilot is a stage, not a plan. For events, use the Mole line (02).
 

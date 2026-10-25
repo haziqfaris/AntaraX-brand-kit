@@ -35,7 +35,7 @@ REKA Inisiatif Sdn Bhd            the company: R&D, Managed AI, legal entity
 | Kind | Products | Mark | Primary action | Accent |
 |---|---|---|---|---|
 | **Own-mark** | PLExyz products, Janka, Angka, Tinara | The product's own logo | The product's own colour (its dark shade if it fails 4.5:1 with white) | The product's own colours |
-| **A-mark** | Yara, AX Frame, AX Loom, AX Motion, and every new product | The AntaraX A with the family icon in its centre (04) | The product's own colour (14) | The family colour |
+| **A-mark** | Yara, AX Frame, Cebis Loom, AX Motion, and every new product | The AntaraX A with the family icon in its centre (04) | The product's own colour (14) | The family colour |
 
 A product is own-mark when it arrived with an identity people already recognise. Everything else starts as A-mark.
 
@@ -80,7 +80,7 @@ Each product has one signature motif, from its family's niche. The wording is Ba
 | Edge | PLExyz Grid | **petak** (grid of spaces) | spaces in a layout | Spaces in a real layout |
 | Edge | PLExyz Crowd | **orbit** | wireless | Signals counted, never faces |
 | Frame | AX Frame | **intan** (diamond) | one world, seen many ways | One world, seen many ways |
-| Loom | AX Loom | **tenun** (weave) | cables over and under | The weave itself |
+| Loom | Cebis Loom | **tenun** (weave) | cables over and under | The weave itself |
 | Motion | AX Motion | **bunga cengkih** | a quadcopter seen from above | Every vehicle, seen from above |
 
 ### Colour: the family pair, never the product's colours
@@ -110,7 +110,7 @@ Each place uses one BaTech strength, keeps text on a solid surface, and appears 
 | Avatar and image placeholders | The family's corak behind initials or an empty image | Quiet or family pair, texture scale |
 | Loading | The motif draws on, lights in sequence or carries a travelling pad; or the mark does its thinking motion. Never spinning or flipping (14) | Full colour, 48 to 72px |
 
-Files: `assets/products/<product>/<product>-motif.svg` (signature motif, family pair; AX Loom's and AX Motion's are still to be drawn) and `assets/families/bands/<family>-quiet-drift.svg` and `-quiet-edge.svg` (Quiet bands), built by `tools/build-product-motifs.mjs` with the BaTech guideline recipes.
+Files: `assets/products/<product>/<product>-motif.svg` (signature motif, family pair; Cebis Loom's and AX Motion's are still to be drawn) and `assets/families/bands/<family>-quiet-drift.svg` and `-quiet-edge.svg` (Quiet bands), built by `tools/build-product-motifs.mjs` with the BaTech guideline recipes.
 
 A logo and a motif are always different (14). Tinara's logo was its motif; it now gets a logo of its own, and kerawang stays its motif.
 
@@ -275,7 +275,7 @@ Own accent, for the primary action, selection, charts and identity moments, with
 | PLExyz Grid | violet `#2C09B2`; zones `#4FD7D1` `#FD9001` `#FD4F85` `#CBB6FA` for data | `#E1DDF4` | `#180562` | `#2C09B2` |
 | Angka | plum `#6B3F6B` | `#EAE4EA` | `#3B233B` | `#6B3F6B` |
 | Tinara | garnet `#7A1E3C`; gold `#D6A84F` for highlights | `#FEF4F6` | `#511A2A` | `#7A1E3C` |
-| AX Loom, AX Motion | family colour | see tokens | see tokens | the family colour's action step |
+| Cebis Loom, AX Motion | family colour | see tokens | see tokens | the family colour's action step |
 
 Full palettes (11-step scales, roles, chart sets, dark mode) are in 14 and `tokens/product-palettes.json`. On antarax.ai the family colour leads (05). Inside a product's own app, the product's colours lead; BaTech motifs inside it keep their family pair.
 

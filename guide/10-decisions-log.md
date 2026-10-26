@@ -2,6 +2,10 @@
 
 Owner decisions that shape the brand, newest first. Add to the top; never rewrite history. Earlier strategy changes are in `reference/strategy/` (playbook amendments v0.3–v0.5, RECONCILIATION).
 
+## 26 October 2026
+
+- **One README standard for every repository under AntaraX** (owner): visually beautiful, readable by a non-engineer, with detailed links and explanations of what is inside and how to use it, and the AntaraX banner, logo and REKA on every one. The layout and rules are [15](15-readme-standard.md); the banners and the shared footer are drawn by `tools/build-readme-kit.mjs` from `readme-kit/repos.json`. It covers 20 repositories: the products, the AI models and data services, the kits and the website, Lapisan, Gauge, Ripple, the PLExyz Crowd prototype, and REKA's Heuristiks and RESAM, which credit "by REKA".
+
 ## 25 October 2026
 
 - **PLExyz Crowd's record, from the owner's slides** (owner, second round).

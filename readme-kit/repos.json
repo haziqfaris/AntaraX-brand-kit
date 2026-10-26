@@ -230,10 +230,10 @@
         "Framework",
         "Capability runtime"
       ],
-      "colour": "#C2410C",
-      "logo": "assets/reka/reka-lockup.svg",
+      "colour": "#FB9800",
       "credit": "by REKA",
-      "note": "A REKA framework, used across AntaraX · REKA Inisiatif Sdn Bhd"
+      "note": "REKA Inisiatif Sdn Bhd · AI for the physical world · reka.re",
+      "style": "reka"
     },
     {
       "slug": "resam",
@@ -245,10 +245,10 @@
         "Framework",
         "Offline tools"
       ],
-      "colour": "#C2410C",
-      "logo": "assets/reka/reka-lockup.svg",
+      "colour": "#FB9800",
       "credit": "by REKA",
-      "note": "A REKA framework, used across AntaraX · REKA Inisiatif Sdn Bhd"
+      "note": "REKA Inisiatif Sdn Bhd · AI for the physical world · reka.re",
+      "style": "reka"
     },
     {
       "slug": "yaraone",

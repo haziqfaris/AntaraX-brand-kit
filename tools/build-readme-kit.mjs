@@ -7,7 +7,7 @@
 //   NODE_PATH=$(npm root -g) node tools/build-readme-kit.mjs readme-kit/repos.json           every repo in the list
 //   NODE_PATH=$(npm root -g) node tools/build-readme-kit.mjs readme-kit/repos.json yara tinara   just these
 //
-// Writes readme-kit/<repo>/banner.svg and readme-kit/footer.svg. Copy both into the repo as .github/readme/banner.svg and
+// Writes readme-kit/<repo>/banner.svg, readme-kit/footer.svg and, for REKA's own repositories (style "reka"), readme-kit/footer-reka.svg. Copy both into the repo as .github/readme/banner.svg and
 // .github/readme/footer.svg; the README layout itself is guide/15-readme-standard.md.
 import fs from 'node:fs';
 import { createRequire } from 'node:module';
@@ -105,8 +105,62 @@ ${text('AntaraX is the product line of REKA Inisiatif Sdn Bhd,', 700, 150, 16, {
   return svg(W, H, 'AntaraX, put intelligence to work. AntaraX is the product line of REKA Inisiatif Sdn Bhd, Kuala Lumpur, Malaysia.', body);
 }
 
+// ================= REKA's own repositories =================
+// REKA's frameworks (Heuristiks, RESAM) look like REKA, not AntaraX (owner, 26 October 2026), from haziqfaris/reka-brand-kit:
+// near-black #0B0B0C with orange #FB9800 as the accent, warm light #F7F6F3, chamfer cuts and never rounded corners, HUD
+// corner brackets, mono labels, the public stripe, and the REKA mark (whose HUD may turn slowly: REKA's own motion rule).
+const RK = { dark: '#0B0B0C', dark1: '#161618', dark3: '#26262C', ink: '#F1F1F0', ink2: '#B9B9BD', mute: '#76767C', orange: '#FB9800', light: '#F7F6F3', lightInk: '#1D1D1D', lightInk2: '#565656', border: '#E5E4E1' };
+const chamfer = (x, y, w, h, c) => `M${x + c},${y}H${x + w - c}L${x + w},${y + c}V${y + h - c}L${x + w - c},${y + h}H${x + c}L${x},${y + h - c}V${y + c}Z`;
+const brackets = (x, y, w, h, l, col, op = .55) => `<g fill="none" stroke="${col}" stroke-width="2" opacity="${op}"><path d="M${x},${y + l}V${y}H${x + l}"/><path d="M${x + w - l},${y}H${x + w}V${y + l}"/><path d="M${x},${y + h - l}V${y + h}H${x + l}"/><path d="M${x + w - l},${y + h}H${x + w}V${y + h - l}"/></g>`;
+const stripe = (y, h, W, op = 1) => { const tw = 3071.5 * (h / 119); let s = ''; for (let x = -tw * .2; x < W; x += tw) s += inline('assets/reka/reka-pubstripe-tile.svg', x, y, tw, h, `opacity="${op}"`); return s; };
+function rekaBanner(r) {
+  const W = 1280, H = 400;
+  const dots = Array.from({ length: 32 }, (_, i) => Array.from({ length: 10 }, (_, j) => `<circle cx="${20 + i * 40}" cy="${20 + j * 40}" r="1.2"/>`).join('')).join('');
+  const nameSize = fit(r.name, 66, 700, F.bold, 40);
+  const lines = wrap(r.line, 24, 720).slice(0, 2);
+  let cx = 72;
+  const chips = (r.chips || []).map((t, i) => {
+    const w = width(t.toUpperCase(), 14, F.mono) + 32;
+    const g = `<g><path d="${chamfer(cx, 300, w, 36, 7)}" fill="${i ? 'none' : RK.orange}" stroke="${i ? RK.dark3 : 'none'}" stroke-width="1.5"/>${text(t.toUpperCase(), cx + 16, 323, 14, { f: F.mono, fill: i ? RK.ink2 : RK.dark })}</g>`;
+    cx += w + 10; return g;
+  }).join('');
+  const X = 1040, Y = 190;
+  const style = `@keyframes spin{to{transform:rotate(360deg)}}.spin{transform-origin:${X}px ${Y}px;animation:spin 12s linear infinite}`
+    + `@keyframes scan{0%,100%{transform:translateY(-118px);opacity:0}10%,90%{opacity:.5}50%{transform:translateY(118px)}}.scan{animation:scan 6s ease-in-out infinite}`
+    + `@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}.rise{animation:rise .8s cubic-bezier(.2,.85,.2,1) both}`;
+  const body = `<defs><clipPath id="card"><path d="${chamfer(0, 0, W, H, 28)}"/></clipPath><clipPath id="win"><path d="${chamfer(X - 130, Y - 130, 260, 260, 18)}"/></clipPath>
+<radialGradient id="gl"><stop offset="0" stop-color="${RK.orange}" stop-opacity=".28"/><stop offset="1" stop-color="${RK.orange}" stop-opacity="0"/></radialGradient></defs>
+<g clip-path="url(#card)"><rect width="${W}" height="${H}" fill="${RK.dark}"/><g fill="#FFFFFF" opacity=".07">${dots}</g>
+<circle cx="${X}" cy="${Y}" r="250" fill="url(#gl)"/>
+<path d="${chamfer(X - 130, Y - 130, 260, 260, 18)}" fill="${RK.dark1}" stroke="${RK.dark3}" stroke-width="2"/>
+<g clip-path="url(#win)"><g class="spin" opacity=".35">${inline('assets/reka/reka-hud.svg', X - 118, Y - 118, 236, 236)}</g><rect class="scan" x="${X - 130}" y="${Y - 1}" width="260" height="2" fill="${RK.orange}"/></g>
+${inline('assets/reka/reka-mark.svg', X - 70, Y - 70, 140, 140)}${brackets(X - 146, Y - 146, 292, 292, 22, RK.orange, .7)}
+${text(`${r.name.toUpperCase()} // ${(r.credit || 'by REKA').toUpperCase()}`, X, Y + 182, 13, { f: F.mono, fill: RK.ink2, anchor: 'middle' })}
+<g class="rise">${inline('assets/reka/reka-lockup.svg', 72, 44, 132, 37)}${text(`// ${r.eyebrow.toUpperCase()}`, 72, 128, 15, { f: F.mono, fill: RK.orange })}</g>
+<g class="rise" style="animation-delay:.12s">${text(r.name, 70, 194, nameSize, { f: F.bold, fill: RK.ink })}</g>
+<g class="rise" style="animation-delay:.24s">${lines.map((l, i) => text(l, 72, 240 + i * 31, 24, { fill: RK.ink2 })).join('')}</g>
+<g class="rise" style="animation-delay:.36s">${chips}</g>
+${text(r.note || 'REKA Inisiatif Sdn Bhd · AI for the physical world · reka.re', 72, 376, 13, { f: F.mono, fill: RK.mute })}
+${brackets(14, 14, W - 28, H - 28, 30, RK.orange, .45)}${stripe(H - 12, 12, W, .9)}</g>`;
+  return svg(W, H, `${r.name}: ${r.line}`, body, style);
+}
+function rekaFooter() {
+  const W = 1280, H = 220;
+  const body = `<defs><clipPath id="card"><path d="${chamfer(0, 0, W, H, 22)}"/></clipPath></defs>
+<g clip-path="url(#card)"><rect width="${W}" height="${H}" fill="${RK.light}"/>${stripe(0, 14, W)}
+${inline('assets/reka/reka-lockup.svg', 72, 54, 214, 60)}
+${text('AI for the physical world.', 72, 150, 20, { f: F.semibold, fill: RK.lightInk })}${text('Born on Southeast Asian roads. Built for global operations.', 72, 180, 15, { fill: RK.lightInk2 })}
+<path d="M660 48V178" stroke="${RK.border}" stroke-width="2"/>
+${text('// REKA INISIATIF SDN BHD', 720, 82, 14, { f: F.mono, fill: '#E65D01' })}
+${text('Kuala Lumpur, Malaysia', 720, 118, 18, { f: F.semibold, fill: RK.lightInk })}${text('reka.re · holla@reka.re', 720, 148, 16, { fill: RK.lightInk2 })}
+${text('Used across REKA’s projects and AntaraX, its AI product line.', 720, 178, 15, { fill: RK.lightInk2 })}
+${brackets(10, 24, W - 20, H - 34, 24, RK.orange, .5)}</g>`;
+  return svg(W, H, 'REKA Inisiatif Sdn Bhd. AI for the physical world. Kuala Lumpur, Malaysia, reka.re.', body);
+}
+
 const [cfg, ...only] = process.argv.slice(2);
 if (!cfg) { console.error('usage: node tools/build-readme-kit.mjs readme-kit/repos.json [slug ...]'); process.exit(1); }
 const repos = JSON.parse(fs.readFileSync(cfg, 'utf8')).repos.filter((r) => !only.length || only.includes(r.slug));
-for (const r of repos) write(`readme-kit/${r.slug}/banner.svg`, banner(r));
+for (const r of repos) write(`readme-kit/${r.slug}/banner.svg`, r.style === 'reka' ? rekaBanner(r) : banner(r));
 write('readme-kit/footer.svg', footer());
+write('readme-kit/footer-reka.svg', rekaFooter());

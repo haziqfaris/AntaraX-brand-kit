@@ -4,7 +4,7 @@ Owner decisions that shape the brand, newest first. Add to the top; never rewrit
 
 ## 26 October 2026
 
-- **One README standard for every repository under AntaraX** (owner): visually beautiful, readable by a non-engineer, with detailed links and explanations of what is inside and how to use it, and the AntaraX banner, logo and REKA on every one. The layout and rules are [15](15-readme-standard.md); the banners and the shared footer are drawn by `tools/build-readme-kit.mjs` from `readme-kit/repos.json`. It covers 20 repositories: the products, the AI models and data services, the kits and the website, Lapisan, Gauge, Ripple, the PLExyz Crowd prototype, and REKA's Heuristiks and RESAM, which credit "by REKA".
+- **One README standard for every repository under AntaraX** (owner): visually beautiful, readable by a non-engineer, with detailed links and explanations of what is inside and how to use it, and the AntaraX banner, logo and REKA on every one. The layout and rules are [15](15-readme-standard.md); the banners and the shared footer are drawn by `tools/build-readme-kit.mjs` from `readme-kit/repos.json`. It covers 20 repositories: the products, the AI models and data services, the kits and the website, Lapisan, Gauge, Ripple, the PLExyz Crowd prototype, and REKA's Heuristiks and RESAM, which credit "by REKA" and **have REKA's own style, not AntaraX's** (owner): REKA's near-black, orange, chamfer cuts, HUD brackets and stripe, from REKA's brand kit.
 
 ## 25 October 2026
 

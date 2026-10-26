@@ -32,6 +32,7 @@ Part 1 and part 15 always appear. A part with nothing true to say is left out ra
 - **Pictures** live in `.github/readme/`: the banner, the footer and any screenshots. SVGs are self-contained (GitHub shows them as images). Real screens are labelled as demo data where they are.
 - **No emoji as decoration.** Structure comes from headings, tables, alerts and the banner.
 - **Names:** the product names as in [02](02-products-and-families.md), "by AntaraX" as the credit, "a product line of REKA Inisiatif Sdn Bhd" where REKA is named. REKA's own frameworks (Heuristiks, RESAM) credit "by REKA" and say they are used across AntaraX.
+- **REKA's own repositories look like REKA, not AntaraX** (owner, 26 October 2026). Heuristiks and RESAM take `"style": "reka"` in `readme-kit/repos.json`: the banner follows [haziqfaris/reka-brand-kit](https://github.com/haziqfaris/reka-brand-kit) (near-black `#0B0B0C`, orange `#FB9800` as the accent, chamfer cuts and never rounded corners, HUD corner brackets, mono labels, the public stripe, the REKA mark), the footer is `readme-kit/footer-reka.svg` (copied as `.github/readme/footer.svg`), the badges use `0B0B0C` and `FB9800`, the voice is REKA's (`ai-docs/reka-brand-voice.md` in that kit), and the footer line is "REKA Inisiatif Sdn Bhd · AI for the physical world · reka.re". The layout is the same.
 
 ## The skeleton
 

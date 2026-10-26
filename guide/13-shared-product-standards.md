@@ -103,7 +103,8 @@ Tables and inline styles only, light only, 600 px wide, and a plain-text part th
 | Error | What failed · what to do · a reference in mono for support when there is one. No "Oops", no blame, no exclamation mark | Couldn't save the job. Check your connection and try again. `ERR-1042` |
 | Success | Past tense, what happened, six words or fewer; Undo where it can be undone | Order drafted. *Undo* |
 | Destructive confirmation | Name the thing and the consequence; the button names the action | Delete 3 jobs? Their history goes too. *Delete 3 jobs* |
-| Loading a task | The action, ending in -ing | Forecasting 48 items |
+| Loading a task | The action, ending in -ing, no dots, beside the product's loader | Forecasting 48 items |
+| Busy button | The action in progress, no dots, with the inline loop before it (14) | Saving · Deleting · Signing in |
 | Buttons | Verb first, sentence case, no full stop | Book a demo · Run forecast |
 
 ## 6 The admin console (AXLE)

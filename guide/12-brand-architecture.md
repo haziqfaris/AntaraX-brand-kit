@@ -182,10 +182,11 @@ The full loading system (seven states, and each product's own loaders) is in 14.
 |---|---|
 | Under a second | Nothing |
 | A screen loading | A skeleton in the product's neutrals; no motif over data |
+| A button, line or field working | The product's inline loop (AntaraX's **Assemble** where there is no product) with the action in words and **no dots**: "Saving", "Signed in. Opening AXLE" |
 | A task the person started (a forecast, a ranking, an import) | The signature motif as the loader, with the action in words ("Forecasting 48 items") |
 | Long AI work | The product's own mark in its thinking motion (04) |
 
-Motifs **draw on**, **light in sequence** or carry a **travelling pad**; marks **breathe** and their pieces drift out of step. Nothing spins or flips. Each product's loaders are in 14.
+Motifs **draw on**, **light in sequence** or carry a **travelling pad**; marks **breathe** and their pieces drift out of step. Nothing spins or flips. Each product's loaders are in 14. A busy button never ends in "…": the loop carries the motion, and the sparkle never stands in for it, because the sparkle means AI (14).
 
 ### Naming lines and areas
 

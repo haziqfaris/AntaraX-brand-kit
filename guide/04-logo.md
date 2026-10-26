@@ -18,6 +18,7 @@ The device mark is an **A** in AntaraX blue `#0459F7` built from three solid pat
 - Files: `antarax-mark.svg` (blue on light), `antarax-mark-white.svg` (white on blue or dark), `antarax-mark-full.svg` (full lockup).
 - **Wordmark files:** `antarax-wordmark.svg` (navy letters, blue A, on light) and `antarax-wordmark-white.svg` (white letters, white A, colour sparkle, on navy, blue and dark grounds). "ant" + the A + "rax", Poppins Bold, letters drawn as outlines so they never depend on a font; built from the master file by `tools/build-wordmark.mjs`. Use the wordmark where the brand is named once and large: print, covers, the top of a page.
 - **One-colour sparkle:** `assets/antarax/sparkle-mono.svg` (currentColor) for bullets and eyebrows, in the eyebrow's colour. Never as the AI marker, which keeps its colours.
+- **Busy loop:** `assets/antarax/antarax-busy.svg` (currentColor, 16 to 20px), **Assemble**: the A's three pieces light in turn. The inline loop for a busy button or wait line where there is no product (14, Loading). It is a loader drawn from the A, not the mark: never use it as the logo, and never put the sparkle in it.
 
 ## The kain A
 

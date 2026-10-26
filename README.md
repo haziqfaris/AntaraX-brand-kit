@@ -162,7 +162,7 @@ Owner decisions land in the guide first ([10 Decisions log](guide/10-decisions-l
 | [`tokens/tokens.css`](tokens/tokens.css) | AntaraX tokens: colours, family pairs, type, radius, spacing, motion (and [`tokens.json`](tokens/tokens.json)) | You are styling anything |
 | [`tokens/product-palettes.css`](tokens/product-palettes.css) | Each product's full palette: scales, roles, neutrals, surfaces, charts (and [`.json`](tokens/product-palettes.json)) | You are styling a product |
 | [`assets/`](assets/) | The masters, for screens and code | You need a master file |
-| [`assets/antarax/`](assets/antarax/) | The AntaraX A (blue and white), the full lockup, the wordmark (navy and white), the kain A (closed and open), the AI sparkle and its one-colour version | You need the AntaraX mark |
+| [`assets/antarax/`](assets/antarax/) | The AntaraX A (blue and white), the full lockup, the wordmark (navy and white), the kain A (closed and open), the AI sparkle and its one-colour version, and the busy loop (`antarax-busy.svg`, Assemble) | You need the AntaraX mark, or a busy loop where there is no product |
 | [`assets/product-logos/`](assets/product-logos/) | Every product logo on the same square, ready to drop in | You need a product's logo |
 | [`assets/products/`](assets/products/) | Each product's marks, lockups, motifs and loaders, at their source sizes | You need a motif or a loader |
 | [`assets/families/`](assets/families/) | The six family icons, `famicons.json`, and Quiet bands per family | You need a family icon or band |

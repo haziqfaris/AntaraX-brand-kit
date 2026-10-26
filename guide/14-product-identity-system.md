@@ -168,7 +168,7 @@ Every product has the same seven loading states, so people always know what kind
 | State | When | Shared or the product's own | Size |
 |---|---|---|---|
 | **None** | under about 400ms | | |
-| **Inline** | inside a button, a row or a field | the product's own small loop, drawn from its mark (not its motif: motifs are never under 24px) | 16 to 20px |
+| **Inline** | inside a button, a row or a field | the product's own small loop, drawn from its mark (not its motif: motifs are never under 24px); AntaraX's loop where there is no product. In a busy button: the loop replaces the dots; the words lose their dots ("Saving", never "Saving…") | 16 to 20px |
 | **Skeleton** | a screen or table loading | shared shapes, shimmering in the product's `subtle` colour | the content's own size |
 | **Section** | a panel or chart waiting on data | the product's motif, moving | 48 to 64px |
 | **Thinking** | AI working for more than a moment | the AntaraX sparkle, alive, which every few seconds morphs into the product's logo and back; the action in words ("Forecasting 48 items") | 48 to 72px |
@@ -188,6 +188,7 @@ Every product has the same seven loading states, so people always know what kind
 | Tinara | the small lattice lights along its path | kerawang's openings shimmer as the path lights | steps along the path |
 | PLExyz Grid | the four zones fill in turn | petak's cells fill one by one, then clear | zones placed |
 | PLExyz Crowd | dots gather, then spread | orbit's dots light around the ring | nodes reporting |
+| **AntaraX** (no product: antarax.ai, AXLE, the kits' neutral reference) | **Assemble:** the A's three pieces (left foot, apex, right foot) light in turn, hold whole, then rest. `assets/antarax/antarax-busy.svg` | | |
 
 Timing and care:
 
@@ -195,6 +196,15 @@ Timing and care:
 - **Never a plain wait** (owner, 15 October 2026): no "Loading…" on its own, no static placeholder, no generic spinner or browser default. Every wait is one of the seven states, in the product's own motion.
 - **Reduced motion:** every loader becomes a stylised still frame, never plain text. Inline holds its fullest frame, section shows the motif whole, thinking shows the sparkle. Screen readers hear the wait in words.
 - A loader never sits on top of data. If something takes longer than 10 seconds, say what is happening and offer a way out.
+
+**Busy, without dots** (owner, 26 October 2026: "I want those dots gone"). A button, line or field that is working never ends in "…":
+
+- **A busy button** shows its inline loop, 16 to 20px, in place of its leading icon, or before its words. The words become the action in progress, without dots: "Saving", "Deleting", "Signing in". The button keeps its width, so nothing jumps, and carries `aria-busy="true"`; a screen reader hears "Saving". With reduced motion, the loop's still frame and the words.
+- **A status or wait line** works the same way: "Signed in. Opening AXLE · Yara", "Syncing 12 items", with the loop before the words and no dots.
+- **Which loop.** In a product, its own inline loop (the table above). Where there is no product (antarax.ai, AXLE in every product, the Dashboard kit's neutral reference), AntaraX's: **Assemble**, `assets/antarax/antarax-busy.svg`. A product with no inline loop drawn yet (YaraOne, Cebis Loom, AX Motion) uses AntaraX's until its own is drawn (11).
+- **In a button the loop takes the button's text colour** (`currentColor`), so one loop works on primary, secondary and destructive buttons; outside a button it may use the product's colours.
+- **Never the sparkle.** The sparkle means AI. An AI action shows the thinking state instead, with its words ("Forecasting 48 items"). Assemble is drawn from the A's own pieces so it can never be mistaken for it: one colour, straight cuts, lit in sequence, no star and no morph.
+- Assemble is a loader, not the logo: never shown alone as the mark, and never under 16px or over 20px.
 - The working animations are in the visual guide (Loading).
 
 ## Colour palettes

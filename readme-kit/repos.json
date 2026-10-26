@@ -199,7 +199,7 @@
       "repo": "haziqfaris/ripple-workflow",
       "name": "AntaraX Ripple",
       "eyebrow": "Internal · Ripple family",
-      "line": "Turns a client meeting into an accurate requirements document for an automation project.",
+      "line": "Turns a client meeting into an accurate requirements document for an automation or AI project.",
       "chips": [
         "Internal",
         "Workflow discovery"
@@ -255,7 +255,7 @@
       "repo": "haziqfaris/yara-one",
       "name": "YaraOne",
       "eyebrow": "Product · Ripple family",
-      "line": "One source of truth for delivery, client service, sales and reporting, and every AntaraX ticket.",
+      "line": "One source of truth for delivery, client service, sales and reporting. AntaraX tickets next.",
       "chips": [
         "Live",
         "yo.antarax.ai"

@@ -2,6 +2,8 @@
 
 ## Hierarchy
 
+**27 October 2026 owner decision:** the six families are Ripple, Tide, Loom, Edge, Motion and Nalar. See [16 Product family architecture](16-product-family-architecture.md). AX Frame joins Loom as an independently branded product; the previous standalone Frame family is retired.
+
 **AntaraX → family (capability) → product → product line → feature.**
 
 > Product clarity first. Ecosystem power second.
@@ -15,7 +17,7 @@ How each product carries its own mark, colour and credit line (own-mark and A-ma
 | Tier | Products | Where they appear | Primary CTA |
 |---|---|---|---|
 | **Main products** | Yara (lead), Janka, PLExyz Grid, PLExyz Crowd (owner, 25 October 2026; Crowd is still a closed pilot and says so) | Homepage, navigation, pricing on request, own page | Book a demo (Crowd: Request pilot access) |
-| **AI models** (owner, 25 October 2026) | AwanGan (cloud), BumiNyata (on premises) | The "AI models" section of the Products menu, the Products page, own pages `/awangan` and `/buminyata` | Talk to us: by arrangement |
+| **AI models · Nalar family** (reclassified 27 October 2026) | AwanGan (cloud), BumiNyata (on premises) | The "AI models" section of the Products menu, the Products page, own pages `/awangan` and `/buminyata` | Talk to us: by arrangement |
 | **Managed service** (owner, 25 October 2026) | Cebis Loom | Products menu and page, own page `/loom` | Talk to us: by arrangement |
 | **Closed pilots** | AX Frame, PLExyz Crowd, Angka, Tinara, AX Motion | Closed pilots page and their own landing page | Request pilot access |
 
@@ -35,13 +37,13 @@ Use these names, one-liners and questions exactly.
 | **Yara** | Main (lead) | See where every job stands, live. Run everyday work without the chaos. | "Where is every job right now, without phoning the floor?" | Ripple | /products/yara |
 | **Janka** | Main | Know what you'll need before you run out. | "What should we reorder, and how much, before we run out?" | Tide | /products/janka |
 | **PLExyz Grid** | Main (free for one facility) | Know what's in your warehouse, and where it goes. | "What is where, and where should the next load go?" | Edge | /products/plexyz |
-| **AX Frame** | Closed pilot | Know what your business depends on. | "What does our business pay for, and when does it renew?" | Frame | /pilots/frame |
+| **AX Frame** | Closed pilot | Know what your business depends on. | "What does our business pay for, and when does it renew?" | Loom | /pilots/frame |
 | **PLExyz Crowd** | Main, closed pilot | Know how your building is really used. | "How many people are actually in this building right now, and do we need all this space?" | Edge | /pilots/plexyz-crowd |
 | **Angka** | Closed pilot | A finance workspace for business owners who are not accountants. | "Where does our money go, without needing an accountant to tell us?" | Tide | antarax.ai/angka |
 | **Tinara** | Closed pilot | Know which Malaysian companies to sell to, why, and how to open the conversation. | "Which companies should we call next, and what do we say when they pick up?" | Tide | /pilots/tinara |
 | **Cebis Loom** | Managed service | Your business data, cleaned and ready. | "How much more could we get from the data we already have?" | Loom | /loom |
-| **AwanGan** | AI models, by arrangement | Our own AI models, in the cloud. | "How do we use AI without sending our data everywhere?" | (none yet) | /awangan |
-| **BumiNyata** | AI models, by arrangement | Our own AI models, on your own servers. | "How do we use AI and keep every byte on our own ground?" | (none yet) | /buminyata |
+| **AwanGan** | AI models, by arrangement | Our own AI models, in the cloud. | "How do we use AI without sending our data everywhere?" | Nalar | /awangan |
+| **BumiNyata** | AI models, by arrangement | Our own AI models, on your own servers. | "How do we use AI and keep every byte on our own ground?" | Nalar | /buminyata |
 | **AX Motion** | Closed pilot | Every vehicle in view, and within reach. | "Where is every vehicle right now, how is it doing, and can we take control from here?" | Motion | /pilots/motion |
 
 ### Product facts worth knowing
@@ -58,43 +60,46 @@ Use these names, one-liners and questions exactly.
 - **AX Motion:** telematics and fleet management, built first for autonomous and remotely controlled vehicles. Carries forward REKA's 2016 self-driving car work. No claims of deployments, customers, pricing or certification until they exist.
 - **Lapisan:** the platform under the products, for developers, at lapisan.antarax.ai.
 
-## The six families
+## The six families (owner, 27 October 2026)
 
-| Family | Verb | Motto | Products | Colour | Signature motif |
-|---|---|---|---|---|---|
-| **Ripple** | Operate | "Work that moves." | Yara | `#08B0B3` | riak (one tap, spreading); Yara's own motif is awan larat, later sungai (14) |
-| **Edge** | Perceive | "Sense the real world." | PLExyz Grid, PLExyz Crowd | `#12B76A` | petak (Grid), orbit (Crowd) |
-| **Frame** | Understand | "Know what you depend on." | AX Frame | `#074AF8` | intan |
-| **Loom** | Synthesize | "Weave it together." | Cebis Loom | `#4904B3` | tenun |
-| **Motion** | Navigate | "Every vehicle, within reach." | AX Motion | `#FC5D04` | cengkih (a quadcopter from above) |
-| **Tide** | Optimize | "Read what's coming." | Janka, Angka, Tinara | `#E9579D` | bunga raya; padi (Janka), congkak (Angka), kerawang (Tinara) |
+| Family | Verb | Responsibility | Confirmed products | Identity status |
+|---|---|---|---|---|
+| **Ripple** | **Operate** | Work, coordination and business automation | Yara | Existing teal; awan larat / riak |
+| **Tide** | **Decide** | Domain-specific business analysis and choices | Janka, Angka, Tinara | Existing Tide pink |
+| **Loom** | **Structure** | Organise fragmented information and digital relationships | Cebis Loom, **AX Frame** | Loom violet; AX Frame keeps its existing product-blue mark and intan motif |
+| **Edge** | **Perceive** | Physical spaces and sensing | PLExyz Grid, PLExyz Crowd | Existing Edge green |
+| **Motion** | **Navigate** | Vehicle and fleet coordination, remote operation | AX Motion | Existing Motion orange |
+| **Nalar** | **Reason** | AI model capabilities, runtime and deployment | **AwanGan, BumiNyata** | New family icon, palette and BaTech motif **not yet approved** |
 
-Family descriptions for the Families page:
+**Family roles and boundaries:**
+- **Ripple:** tasks, work orders, service requests and workflow automation. YaraOne is an *internal* Ripple-aligned support system; Jentera is a candidate, not a listed product.
+- **Tide:** Janka (inventory), Angka (finance), Tinara (B2B sales). Lapis by Angka is an independently usable companion within Tide, not a renamed Lapisan module.
+- **Loom:** Cebis Loom prepares/structures business data; AX Frame organises a digital estate, dependencies, expenses and renewals. They remain separate products and repositories. Loom does not own general-purpose inference or business workflow execution.
+- **Edge:** real-world sensing, spatial models, occupancy and site intelligence; PLExyz is the master product line, with Grid and Crowd. Edge does not own autonomous navigation or general-purpose AI chips.
+- **Motion:** telematics, fleet/vehicle operations and remote control within verified maturity. Robots, drones and full autonomous navigation are possible future expansion, not claimed current capabilities. REKA Kinetik keeps frontier R&D.
+- **Nalar:** AwanGan delivers cloud AI and BumiNyata delivers private/on-premises AI. HelAI is an exploratory potential embedded/silicon offering, not launched. Heuristiks is REKA-owned engineering framework; Lapisan is AntaraX shared API platform, neither is a Nalar product.
 
-- **Ripple:** keeping everyday work moving, then automating it: jobs, work orders, teams and requests, from the first tap on the floor to the finished job. Yara takes the work from manual to digital; Ripple's automation takes it from digital to automatic. REKA's Intelligent Automation service is built on Ripple. For operations floors, supervisors and the people doing the work.
-- **Edge:** understanding physical spaces: what is in them, where it should go, and how busy they are. For warehouses, yards, ports, offices and venues. Edge is the oldest bloodline: its roots are the sensors and edge computing REKA built for the 2016 car.
-- **Frame:** seeing the digital estate behind a business: the systems, subscriptions, costs and renewals it runs on, and how they fit together. For SMEs, startups and agencies who have outgrown a spreadsheet of subscriptions.
-- **Loom:** data synthesis. It weaves data from many sources (systems, spreadsheets, sensors, documents) into one usable picture, and generates synthetic data where real data is short or too sensitive to use. For teams whose data is scattered, and teams training or testing AI.
-- **Motion:** keeping vehicles in view and in hand: telematics and fleet management, built first for autonomous vehicles and remote control. For fleets, autonomous vehicles and remotely controlled machines.
-- **Tide:** turning numbers into the next step: forecasting the stock you'll need, understanding where money goes, and knowing which companies to sell to next. For procurement, finance, operations and sales leads.
+**One primary family per product.** Cross-family technology or optional integrations do not change family ownership. Commercial type and maturity are separate fields (main product, managed service, closed pilot, by arrangement, internal, candidate, future); this change does not alter pricing, CTAs, claims or product availability.
 
-Tide has no icon in the master logo file yet; a crescent with the family's dot is proposed (`assets/families/tide-icon.svg`, 14, 11).
+See [16 Product family architecture](16-product-family-architecture.md) for the complete product registry, rationale, collision-free brand migration and downstream Claude Code brief.
 
 ## Customer-facing categories
 
-Understand → Operate → Optimize → Perceive → Navigate → Act → Synthesize. These organise the portfolio internally; the public grouping is simpler:
-
-- **Run your business:** Yara
-- **Understand your business:** Janka, AX Frame
-- **Automate your world:** PLExyz, Ripple automation, AX Loom, AX Motion
+Visitors choose by business problem and product; the families provide secondary discovery:
+- **Run work:** Yara (Ripple)
+- **Make business decisions:** Janka, Angka, Tinara (Tide)
+- **Structure information and systems:** Cebis Loom, AX Frame (Loom)
+- **Understand physical spaces:** PLExyz Grid, Crowd (Edge)
+- **Monitor moving systems:** AX Motion (Motion, closed pilot)
+- **Deploy AI:** AwanGan and BumiNyata (Nalar, by arrangement)
 
 ## Naming rules
 
 - Write **AntaraX** (capital A, capital X). The wordmark is set lower case ("antarax") in the logo only.
-- Products are named on their own: "Yara", not "AntaraX Yara". Families take the prefix: "AntaraX Ripple". Frame shares its family's name, so the product is **AX Frame** ("Frame" alone is crowded in software). The family stays AntaraX Frame.
+- Products are named on their own: "Yara", not "AntaraX Yara". Families take the prefix (for example AntaraX Ripple or AntaraX Nalar). **AX Frame** retains its established name but belongs to **AntaraX Loom**, not a standalone Frame family.
 - Every product is credited **"by AntaraX"** (12), PLExyz included. Never "Powered by AntaraX", never "by REKA".
 - Write **AntaraX**, never "AntaraX AI".
-- Family name variants (from the master logo file): Full "AntaraX Motion", Medium "AX Motion", Short "AXM" (AXR, AXE, AXF, AXL). Use Full in customer copy; Medium and Short are for space-constrained marks and internal use.
+- Historical mark variants (including AXF) remain asset names during migration, not names of current families. The six family names are AntaraX Ripple, Tide, Loom, Edge, Motion and Nalar.
 - **PLExyz** is always written PLExyz. It is REKA's spatial intelligence platform, built on AntaraX: Grid (flagship), Trace (built inside Janka), and the concepts Flow, Transit, Crowd, Site, Ward and Yard (products/plexyz.md).
 - **Lines and areas inside a product** (Atlas in AX Frame, Forecast in Janka) follow the naming rules in 12: one word, the product first outside the product, shared names (Assist, Forecast) mean the same thing everywhere.
 - **Never show internal codenames** to customers: AXLE (REKA's admin console), puzzle-ceplok, puzzle-parang and similar.
@@ -103,7 +108,7 @@ Understand → Operate → Optimize → Perceive → Navigate → Act → Synthe
 
 - "AX Edge" meaning fleet updates; "AX Motion" meaning workflow automation (AX Motion is now the telematics and fleet product).
 - "AX Kinetics" (REKA's Kinetik owns robotics).
-- Loom as AI agents, workflows or automation (automation runs on Ripple; Loom is data synthesis, 10 October 2026). "AX Loom" meaning synthetic data is no longer retired: AX Loom is the product name (owner, 11 October 2026), and synthetic data is part of it again.
+- Loom as AI agents, workflows or automation (automation runs on Ripple). The public product name AX Loom was replaced by Cebis Loom (25 October 2026); the Loom family now means structured understanding and includes Cebis Loom and AX Frame.
 - "Yara Ripple" as a product name (use "Yara · by AntaraX").
 - "Powered by AntaraX" and "Powered by AntaraX [Family]" as product credits (use "by AntaraX", 11 October 2026).
 - "Waitlist" for any product (replaced by closed pilots, 10 October 2026).

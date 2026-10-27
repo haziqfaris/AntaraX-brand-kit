@@ -474,6 +474,7 @@ You need **Node.js**. Each script in [`tools/`](tools/) says how to run it at th
 |---|---|---|
 | Start here | [01 Positioning](guide/01-positioning.md) | What AntaraX is, and where REKA's kit takes over. |
 | Start here | [02 Products and families](guide/02-products-and-families.md) | Every product's name, one-liner, status and family. |
+| Start here | [16 Six-family product architecture](guide/16-product-family-architecture.md) | The 27 October 2026 Nalar classification, scope boundaries, Loom/AX Frame move and Claude Code handover. |
 | Start here | [03 Voice and claims](guide/03-voice-and-claims.md) | How AntaraX sounds, and what it may never claim. |
 | Design | [04 Logo](guide/04-logo.md) | The AntaraX mark and how to use it. |
 | Design | [05 Colour and type](guide/05-colour-and-type.md) | AntaraX blue, navy, the family colours, Poppins and JetBrains Mono. |
@@ -509,4 +510,4 @@ You need **Node.js**. Each script in [`tools/`](tools/) says how to run it at th
 - **Product support** is support@go.antarax.ai for every product (quiz question 8 above).
 
 <p align="center"><img src="readme-kit/footer.svg" width="100%" alt="AntaraX, put intelligence to work. AntaraX is the product line of REKA Inisiatif Sdn Bhd."></p>
-<p align="center"><sub>AntaraX is the product line of REKA Inisiatif Sdn Bhd · <a href="https://antarax.ai">antarax.ai</a> · <a href="https://reka.re">reka.re</a><br>Private and proprietary. © 2026 REKA Inisiatif Sdn Bhd. All rights reserved. · Last updated 26 October 2026<br>Tokens 1.11.0. Version 1.4, 11 October 2026: the product identity system (logos, motifs, BaTech sets, loaders, palettes) and this guide for product repos. Version 1.3 added brand architecture, product sheets, the AntaraX layer and shared product standards.</sub></p>
+<p align="center"><sub>AntaraX is the product line of REKA Inisiatif Sdn Bhd · <a href="https://antarax.ai">antarax.ai</a> · <a href="https://reka.re">reka.re</a><br>Private and proprietary. © 2026 REKA Inisiatif Sdn Bhd. All rights reserved. · Last updated 27 October 2026<br>Tokens 1.11.0. Version 1.4, 11 October 2026: the product identity system (logos, motifs, BaTech sets, loaders, palettes) and this guide for product repos. Version 1.3 added brand architecture, product sheets, the AntaraX layer and shared product standards.</sub></p>

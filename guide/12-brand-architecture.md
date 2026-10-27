@@ -17,7 +17,7 @@ Customers and partners know REKA, and some know these products. So AntaraX does 
 ```
 REKA Inisiatif Sdn Bhd            the company: R&D, Managed AI, legal entity
  └─ AntaraX                       the product line: every product is "by AntaraX"
-     ├─ Families                  capability groups on antarax.ai (Ripple, Edge, Frame, Loom, Motion, Tide)
+     ├─ Families                  capability groups on antarax.ai (Ripple, Tide, Loom, Edge, Motion, Nalar)
      └─ Products                  the brands customers buy
          ├─ own-mark products     keep their own logo
          └─ A-mark products       use the AntaraX A with their family icon
@@ -26,7 +26,7 @@ REKA Inisiatif Sdn Bhd            the company: R&D, Managed AI, legal entity
 - **The product is the brand the customer buys.** Lead with the product name and its plain outcome (03 Voice).
 - **Every product is "by AntaraX".** One credit line, the same everywhere.
 - **AntaraX owns the shared layer:** type, text and status colours, interface rules, the BaTech motif language, the AI sparkle, antarax.ai, Lapisan and the API.
-- **Families group products** on antarax.ai (the Families and Technology pages, family badges and colours). They are not part of a product's credit line.
+- **Families group products** on antarax.ai (the Families and Technology pages, family badges and colours). They are not part of a product's credit line. The current six families are defined in [16 Product family architecture](16-product-family-architecture.md), and **AX Frame is now a Loom product; AwanGan and BumiNyata are Nalar products.**
 - **REKA is the company behind AntaraX:** the legal line, the Managed AI operator, and the "from REKA" trust line.
 - **PLExyz** is REKA's spatial intelligence platform (Harmonik division), built on AntaraX. Its products are credited "by AntaraX" like every other product.
 
@@ -35,9 +35,9 @@ REKA Inisiatif Sdn Bhd            the company: R&D, Managed AI, legal entity
 | Kind | Products | Mark | Primary action | Accent |
 |---|---|---|---|---|
 | **Own-mark** | PLExyz products, Janka, Angka, Tinara | The product's own logo | The product's own colour (its dark shade if it fails 4.5:1 with white) | The product's own colours |
-| **A-mark** | Yara, AX Frame, Cebis Loom, AX Motion, and every new product | The AntaraX A with the family icon in its centre (04) | The product's own colour (14) | The family colour |
+| **A-mark** | Yara, AX Frame, Cebis Loom, AX Motion, and eligible new products | Existing AntaraX A treatments, each requiring a **distinct product mark**; preserve existing identities | Product colour | Family identity where approved |
 
-A product is own-mark when it arrived with an identity people already recognise. Everything else starts as A-mark.
+An own-mark product retains its recognised identity. An A-mark can use the family icon only if it remains distinctive. **AX Frame and Cebis Loom both belong to Loom and keep separate current logos and product palettes.** AwanGan and BumiNyata belong to Nalar; their new family icon, colour and individual mark design remain pending.
 
 ## Two layers in every product
 
@@ -79,8 +79,10 @@ Each product has one signature motif, from its family's niche. The wording is Ba
 | Tide | Tinara | **kerawang** (carved lattice) | one path found in the noise | One path found in the noise |
 | Edge | PLExyz Grid | **petak** (grid of spaces) | spaces in a layout | Spaces in a real layout |
 | Edge | PLExyz Crowd | **orbit** | wireless | Signals counted, never faces |
-| Frame | AX Frame | **intan** (diamond) | one world, seen many ways | One world, seen many ways |
+| Loom | AX Frame | **intan** (diamond, retained as product motif) | one world, seen many ways | One world, seen many ways |
 | Loom | Cebis Loom | **tenun** (weave) | cables over and under | The weave itself |
+| Nalar | AwanGan | **pending** | Cloud AI execution | To be designed |
+| Nalar | BumiNyata | **pending** | Private AI execution | To be designed |
 | Motion | AX Motion | **bunga cengkih** | a quadcopter seen from above | Every vehicle, seen from above |
 
 ### Colour: the family pair, never the product's colours
@@ -91,12 +93,14 @@ BaTech's rule is "use the palette and the family pairs; never recolour with off-
 |---|---|---|---|
 | Ripple | `#08B0B3` | `#0B6E72` | `#D9F3F2` |
 | Edge | `#12B76A` | `#0B7A47` | `#DCF5E8` |
-| Frame | `#074AF8` | `#0533A8` | `#E2EAFE` |
 | Loom | `#4904B3` | `#33027D` | `#EEE6FA` |
+| Nalar | **Pending owner choice** | **Pending** | **Pending** |
 | Motion | `#FC5D04` | `#A83A00` | `#FFE9DC` |
 | Tide | `#E9579D` | `#9C2B63` | `#FDE8F1` |
 
 The Quiet strength uses BaTech's one light ink, `#C5CCF7`, for every family.
+
+**Legacy visual exception (27 October 2026):** Former Frame family blue `#074AF8` is retained as **AX Frame's product colour**, along with existing assets and its `intan` motif. Do not remove or recolour product assets, tokens, generated imagery or email/AXLE compositions automatically. Nalar has no approved icon or palette yet. [16](16-product-family-architecture.md) governs the staged migration.
 
 ### Where it goes in a product
 
@@ -301,7 +305,7 @@ Full palettes (11-step scales, roles, chart sets, dark mode) are in 14 and `toke
 
 - **PLExyz** is a product line with one visual system: "Same space. Same entity. Different behaviour." Every product shares the force field and the core entity shard; only the spatial context inside changes. Grid (flagship), Trace (built inside Janka), and the concepts Flow, Transit, Crowd, Site, Ward and Yard. See the PLExyz sheet.
 - **Lapis** belongs to Angka ("Lapis by Angka"); **Lapisan** is the AntaraX platform ("Lapisan by AntaraX").
-- **AX Frame** is the product; **AntaraX Frame** is its family on the Families page.
+- **AX Frame** stays the product name and retains its existing blue/cube identity; its family is now **AntaraX Loom**. **AntaraX Frame** is a retired family designation, not a renamed product.
 - No product reuses a family name for a part of itself ("PLExyz Edge Gateway" collides with Edge).
 - Internal names stay internal: AXLE, JWI, SPECTRA OS, "Remix" prototype names, CIRO.
 

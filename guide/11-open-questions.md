@@ -30,4 +30,14 @@ Facts only the owner can give. Until each is answered, the site says only what t
 
 ## From AwanGan's decision 0021 (25 October 2026)
 
-26. **Answered 25 October 2026 (10): AwanGan and BumiNyata are products, our own AI models; Cebis Loom replaces AX Loom. Still open: a mark and palette for each.** *AwanGan and Cebis Loom in the brand.* Both are now named in 13 section 2 and the Dashboard kit, but neither has an entry in 02, a palette or a logo, and Cebis Loom's name is close to AX Loom, the closed pilot for data synthesis. *Recommendation:* decide whether each is a product, a platform piece like Lapisan, or internal only, and whether Cebis Loom belongs to AX Loom, before either is named in front of a customer.
+26. **Classification answered 25–27 October 2026:** AwanGan and BumiNyata are Nalar products; Cebis Loom and AX Frame are in Loom; AX Loom is retired as the current product name. The **remaining** question concerns the icon, palettes, motifs and distinct product marks, tracked in 27–28 below. See [16](16-product-family-architecture.md).
+
+
+## Six-family brand migration (27 October 2026)
+
+These are open design/rollout questions; the six-family taxonomy itself is approved.
+
+27. **Nalar family visual system:** choose its family symbol, accessible colour pair and dark/ground tones, BaTech composition and motifs. The light blue in earlier discussion was illustrative, not an approved token. Distinct AwanGan/BumiNyata product marks also remain to be designed.
+28. **Loom identity with two existing A-marks:** retain AX Frame's current blue colour, four-corner mark and intan motif. Decide how its Loom family badge, BaTech treatment and email/sign-in layouts coexist with Cebis Loom's woven A-mark without a logo collision. Audit Frame legacy assets before removing any.
+29. **Brand/website rollout:** update the Families, Products, Technology and other website references, search content, generated motifs, social/export assets, kit tokens and product README references only after design approval, source reconciliation, relevant checks and separate deployment approval. Review historical references, not rewrite historical decision logs.
+30. **Future classifications:** Jentera's possible Ripple association, HelAI's possible Nalar hardware role, and future robots/drones under Motion are not approved product launches or confirmed shipping capabilities. Revisit their real customer promises before adopting official marks/statuses.

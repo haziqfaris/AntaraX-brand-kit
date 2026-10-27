@@ -28,16 +28,18 @@ Family        what kind of work          Tide: Optimize, "Read what's coming."
 | Ripple · Operate | wave with two dots | Yara | the A with the Ripple icon | **awan larat** | Human work, carried into digital (later, **sungai** for digital to automation) |
 | Edge · Perceive | open hexagon with a node | PLExyz Grid | force field, shard, four zones | **petak** | Spaces in a real layout |
 | Edge · Perceive | | PLExyz Crowd | force field, shard, scattered entities | **orbit** | Signals counted, never faces |
-| Frame · Understand | four corners | AX Frame | the A with the Frame icon | **intan** | One world, seen many ways |
-| Loom · Synthesize | woven bars | Cebis Loom | the A with the Loom icon (drawn) | **tenun** | The weave itself |
+| Loom · Structure | Legacy four corners for AX Frame | AX Frame | **Existing A + four-corner product mark retained** | **intan** | One world, seen many ways |
+| Loom · Structure | woven bars | Cebis Loom | The A with the Loom icon (drawn) | **tenun** | The weave itself |
 | Motion · Navigate | split bolt | AX Motion | the A with the Motion icon (drawn) | **bunga cengkih** | Every vehicle, seen from above |
 | Tide · Optimize | crescent with a dot | Janka | the J that never closes | **padi** | Reading the harvest before it comes |
 | Tide · Optimize | | Angka | the sheet-stack face | **congkak** | Counting where it all goes |
 | Tide · Optimize | | Tinara | the signal | **kerawang** | One path found in the noise |
+| Nalar · Reason | Icon pending | AwanGan | Product mark pending | **pending** | Managed cloud AI |
+| Nalar · Reason | Icon pending | BumiNyata | Product mark pending | **pending** | Private/on-premises AI |
 
 What each link gives:
 
-- **The family gives the look.** It sets the family icon, the BaTech colour pair the motif is drawn in, and the shape its BaTech takes inside the product (see "BaTech by family").
+- **The family gives the look.** It sets the family icon, the BaTech colour pair the motif is drawn in, and the shape its BaTech takes inside the product (see "BaTech by family"). **Exception during migration:** AX Frame retains its existing mark, product blue and `intan` motif after joining Loom. Nalar's colour, icon and BaTech composition are not yet approved.
 - **The logo says who.** It is fixed and shown small on every screen, in the product's own colours.
 - **The motif says what the product does.** It appears rarely: in empty states, at signature moments and in the loader. It is drawn in the family pair and comes from the family's niche.
 - **The product is what people buy.** It has its own name, logo and palette, and is credited "by AntaraX".
@@ -98,13 +100,13 @@ Three kinds of icon, with three different rules:
 
 | Kind | Different per | Where | Rule |
 |---|---|---|---|
-| **Family icon** | family | inside an A-mark; family badges on antarax.ai; the Families page | Six icons, one per family, each a single shape and a dot in the family colour. Tide's crescent (`assets/families/tide-icon.svg`), approved by the owner: the moon turns the tide, as Tide reads what is coming |
+| **Family icon** | family | inside an A-mark when distinctive, family badges on antarax.ai, Families page | Six current families: Ripple, Tide, Loom, Edge, Motion, Nalar. The Nalar icon and colour are pending. The former Frame symbol remains legacy AX Frame product identity rather than a seventh family. |
 | **Product icon** (app tile, favicon) | product | home screens, browser tabs, app stores | The product's logo on the shared tile (12). Two products never share a tile |
 | **Interface icons** | nothing: the same everywhere | buttons, menus, tables, feature introductions | One line set for every product (12, Elements; 60 drawn in `assets/icons/features/`, built by `tools/build-feature-icons.mjs`). Someone moving from Janka to Angka finds Settings, Export and Search drawn the same way. The product's colour reaches an icon only through state (selected, active) |
 
 Two consequences:
 
-- **One A-mark product per family.** An A-mark is the A plus the family icon, so a second A-mark product in the same family would share the first one's logo. Instead, the second product in a family gets its own mark, as Tide's three already have. A new product in a family that has no A-mark product yet may take the A-mark.
+- **Distinct product marks:** no two products may share an indistinguishable A + family icon. **AX Frame and Cebis Loom now share the Loom family**, but must retain different existing product marks while a future family treatment is designed. Nalar products need distinct marks and an approved family icon before asset generation. Do not automatically change product logos when changing family membership.
 - **Interface icons never carry motifs or family shapes.** A family is shown by its icon, its colour pair and its BaTech composition, never by restyling the controls people use.
 
 ## BaTech by family
@@ -123,10 +125,12 @@ Each family's BaTech takes **its own shape**, so a glance at a sign-in screen or
 | **AntaraX** | **Constellation** | the whole vocabulary scattered loosely, clearing toward the middle where a logo sits; the band is the site's drift band |
 | Ripple | **Rings** | motifs on arcs spreading out, smaller as they travel |
 | Edge | **Field** | a loose grid of motifs seen through one soft spot, like a sensor's view |
-| Frame | **Corners** | small fans in the corners, framing what sits between them |
 | Loom | **Thread** | one awan larat thread wandering across, motifs strung on it |
+| Nalar | **Pending** | No approved BaTech composition, icon, palette or motif; visual design needed |
 | Motion | **Trail** | motifs rising along a path, growing toward the leading end; under 24px they become dots |
 | Tide | **Swell** | the family's corak rising in a wave, fading upward |
+
+**Legacy exception:** Frame's former **Corners** family composition is retained as a product-specific AX Frame treatment during the Loom migration. It is not a current seventh family; keep AX Frame's current logo, `intan` motif and product palette until an approved replacement covers every application, email and generated asset. See [16](16-product-family-architecture.md).
 
 ### Three variations, for three situations
 
@@ -216,7 +220,7 @@ Each product has a full palette, built from its own colour by `tools/build-produ
 |---|---|---|---|---|---|
 | Yara | Ripple teal and navy: calm, clear, made for the shop floor | `#08B0B3` | teal `#098284` | navy `#0B1B4F` | blue, orange, magenta, violet |
 | YaraOne | **jade** and navy: the Ripple family's colour for delivery, client service and tickets | `#087F5B` | `#087F5B` | navy `#0B1B4F` | blue, orange, magenta, violet |
-| AX Frame | Frame blue with halo indigo: precise, technical | `#074AF8` | `#074AF8` | indigo `#524FE9` | aqua, orange, magenta, gold |
+| AX Frame | Product blue with halo indigo, retained under Loom: precise, technical | `#074AF8` | `#074AF8` | indigo `#524FE9` | aqua, orange, magenta, gold |
 | Janka | signal cyan with the spark orange from its mark | `#0CC4FB` | `#077DA1` | orange `#F47B3D` | orange, aqua, violet, magenta |
 | PLExyz Grid | shard violet with the four zone colours | `#2C09B2` | `#2C09B2` | zone teal `#4FD7D1` | aqua, orange, magenta, gold (or the four zones) |
 | PLExyz Crowd | PLExyz purple until Crowd has its own theme | `#6040CC` | `#6040CC` | zone teal | orange, aqua, blue, magenta |
@@ -242,7 +246,7 @@ Rules:
 
 ## Sub-products
 
-Inside a product, parts are named in one of the kinds below (naming rules in 12). Each part is a part, not a product: it never has its own logo, motif, colour or credit line.
+Inside a product, most parts are features, lines, modules, areas or add-ons, without separate visual identities. **Independently usable companion products** may be embedded in another product but retain separate names, entitlements, APIs and visual marks, such as **Lapis by Angka** (usable without Angka). See [16](16-product-family-architecture.md).
 
 | Kind | What it is | Example |
 |---|---|---|
@@ -250,7 +254,7 @@ Inside a product, parts are named in one of the kinds below (naming rules in 12)
 | **Line** | a way of using the product described on antarax.ai, with its own audience | AX Frame's Atlas |
 | **Module** | an optional part a customer turns on, priced or entitled separately | Yara's Status API |
 | **Add-on** | something sold on top of a plan | Angka's Lapisan Automations |
-| **Product inside a product** | a separate product that lives in another's app | PLExyz Trace in Janka; Lapis in Angka |
+| **Companion or embedded product** | separately identifiable product available within another app, sometimes also independently | PLExyz Trace in Janka; Lapis by Angka (independently usable) |
 | **Hardware** | a device sold with the product | PLExyz Crowd Node |
 | **Internal** | REKA's own tools; customers never see them | AXLE |
 

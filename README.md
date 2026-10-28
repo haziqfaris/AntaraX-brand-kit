@@ -492,6 +492,7 @@ You need **Node.js**. Each script in [`tools/`](tools/) says how to run it at th
 | Hand-over | [Marketing assets](marketing/README.md) | Print, logo pack, QR, video and photography. |
 | Hand-over | [Email templates](assets/email/README.md) | Every product email, rendered. |
 | History | [Reference documents](reference/README.md) | The documents the guide was built from. Where they disagree with `guide/`, the guide is current. |
+| Frameworks | [FRAMEWORKS.md](FRAMEWORKS.md) | How the AntaraX Brand Kit fits with the other REKA frameworks, and who governs what |
 
 ## For developers and agents
 

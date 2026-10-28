@@ -1,0 +1,267 @@
+{
+  "_note": "One entry per repository under AntaraX (owner, 26 October 2026). tools/build-readme-kit.mjs draws each banner; guide/15-readme-standard.md is the README layout. eyebrow: what kind of thing it is. line: the one-liner, plain words. chips: status first. logo: a file in this kit (omit for the AntaraX mark). colour: the product's anchor from tokens/product-palettes.json where it has one. credit and note: for REKA's own frameworks, \"by REKA\" instead of \"by AntaraX\".",
+  "repos": [
+    {
+      "slug": "yara",
+      "repo": "haziqfaris/yara",
+      "name": "Yara",
+      "eyebrow": "Product · Ripple family",
+      "line": "See where every job stands, live. Work orders and job cards, updated from the floor.",
+      "chips": [
+        "Live",
+        "Work orders",
+        "Job cards"
+      ],
+      "colour": "#08B0B3",
+      "logo": "assets/product-logos/yara.svg"
+    },
+    {
+      "slug": "janka",
+      "repo": "haziqfaris/janka-inventory-intelligence",
+      "name": "Janka",
+      "eyebrow": "Product · Tide family",
+      "line": "Know what you'll need before you run out. Forecasts, reorder points and draft orders.",
+      "chips": [
+        "Live",
+        "Inventory",
+        "Forecasting"
+      ],
+      "colour": "#0CC4FB",
+      "logo": "assets/product-logos/janka.svg"
+    },
+    {
+      "slug": "plexyz-grid",
+      "repo": "haziqfaris/plexyz-grid",
+      "name": "PLExyz Grid",
+      "eyebrow": "Product · PLExyz",
+      "line": "Know what's in your warehouse or yard, and where the next load should go.",
+      "chips": [
+        "Live",
+        "Free for one facility"
+      ],
+      "colour": "#2C09B2",
+      "logo": "assets/product-logos/plexyz-grid.svg"
+    },
+    {
+      "slug": "plexyz-crowd",
+      "repo": "haziqfaris/plexyz-crowd",
+      "name": "PLExyz Crowd",
+      "eyebrow": "Product · PLExyz",
+      "line": "Know how your spaces are really used: people in each space, live, with Wi-Fi first.",
+      "chips": [
+        "Closed pilot",
+        "Deployed since 2021"
+      ],
+      "colour": "#6040CC",
+      "logo": "assets/product-logos/plexyz-crowd.svg"
+    },
+    {
+      "slug": "axframe",
+      "repo": "haziqfaris/axframe",
+      "name": "AX Frame",
+      "eyebrow": "Product · Frame family",
+      "line": "Know what your business depends on: every subscription, API, domain and renewal.",
+      "chips": [
+        "Closed pilot",
+        "frame.antarax.ai"
+      ],
+      "colour": "#074AF8",
+      "logo": "assets/product-logos/ax-frame.svg"
+    },
+    {
+      "slug": "angka",
+      "repo": "haziqfaris/angka",
+      "name": "Angka",
+      "eyebrow": "Product · Tide family",
+      "line": "A finance workspace for business owners who are not accountants.",
+      "chips": [
+        "Closed pilot",
+        "Lapis API"
+      ],
+      "colour": "#6B3F6B",
+      "logo": "assets/product-logos/angka.svg"
+    },
+    {
+      "slug": "tinara",
+      "repo": "haziqfaris/tinara",
+      "name": "Tinara",
+      "eyebrow": "Product · Tide family",
+      "line": "Know which Malaysian companies to call, why, and how to open the conversation.",
+      "chips": [
+        "Closed pilot",
+        "B2B intelligence"
+      ],
+      "colour": "#7A1E3C",
+      "logo": "assets/product-logos/tinara.svg"
+    },
+    {
+      "slug": "awangan",
+      "repo": "haziqfaris/AntaraX-AwanGan",
+      "name": "AwanGan",
+      "eyebrow": "AI models · Cloud",
+      "line": "Our own AI models, in the cloud: documents read, personal data masked, every call recorded.",
+      "chips": [
+        "By arrangement",
+        "Cloud AI service"
+      ],
+      "colour": "#0062FB"
+    },
+    {
+      "slug": "buminyata",
+      "repo": "haziqfaris/AntaraX-BumiNyata",
+      "name": "BumiNyata",
+      "eyebrow": "AI models · On your premises",
+      "line": "Our own AI models on your own servers. Works with no internet; nothing calls out.",
+      "chips": [
+        "By arrangement",
+        "On premises"
+      ],
+      "colour": "#2E5E3E"
+    },
+    {
+      "slug": "cebis-loom",
+      "repo": "haziqfaris/antarax-cebis-loom",
+      "name": "Cebis Loom",
+      "eyebrow": "Managed service · Loom family",
+      "line": "Your business data, cleaned and ready: messy files in, clean tables and files for AI out.",
+      "chips": [
+        "Managed service",
+        "ETL"
+      ],
+      "colour": "#4904B3",
+      "logo": "assets/product-logos/loom.svg"
+    },
+    {
+      "slug": "lapisan",
+      "repo": "haziqfaris/antarax-api",
+      "name": "Lapisan",
+      "eyebrow": "Platform · the API layer",
+      "line": "The one contract every AntaraX API follows, and the gateway at api.antarax.ai.",
+      "chips": [
+        "Live",
+        "api.antarax.ai",
+        "Developers"
+      ],
+      "colour": "#0459F7"
+    },
+    {
+      "slug": "brand-kit",
+      "repo": "haziqfaris/AntaraX-brand-kit",
+      "name": "AntaraX brand kit",
+      "eyebrow": "Standards · brand",
+      "line": "How AntaraX looks, sounds and is organised: names, colours, type, logos and BaTech.",
+      "chips": [
+        "Reference",
+        "Every product follows it"
+      ],
+      "colour": "#0459F7"
+    },
+    {
+      "slug": "dashboard-kit",
+      "repo": "haziqfaris/AntaraX-Dashboard-kit",
+      "name": "AntaraX Dashboard kit",
+      "eyebrow": "Standards · dashboards and apps",
+      "line": "The standard for every customer app and every AXLE console AntaraX builds.",
+      "chips": [
+        "Reference",
+        "AXLE",
+        "Customer apps"
+      ],
+      "colour": "#4F46E5"
+    },
+    {
+      "slug": "website",
+      "repo": "haziqfaris/antarax-ai",
+      "name": "antarax.ai",
+      "eyebrow": "Website",
+      "line": "The AntaraX website: every product, page and story, built from one source.",
+      "chips": [
+        "Live",
+        "antarax.ai"
+      ],
+      "colour": "#0459F7"
+    },
+    {
+      "slug": "gauge",
+      "repo": "haziqfaris/antarax-ripple-monitoring",
+      "name": "Gauge",
+      "eyebrow": "Internal · Ripple family",
+      "line": "Measures what client AI solutions really deliver: health, use, performance and outcomes.",
+      "chips": [
+        "Internal",
+        "Managed AI"
+      ],
+      "colour": "#0B8A8D",
+      "logo": "assets/families/ripple-icon.svg"
+    },
+    {
+      "slug": "ripple",
+      "repo": "haziqfaris/ripple-workflow",
+      "name": "AntaraX Ripple",
+      "eyebrow": "Internal · Ripple family",
+      "line": "Turns a client meeting into an accurate requirements document for an automation or AI project.",
+      "chips": [
+        "Internal",
+        "Workflow discovery"
+      ],
+      "colour": "#08B0B3",
+      "logo": "assets/families/ripple-icon.svg"
+    },
+    {
+      "slug": "spectraos",
+      "repo": "haziqfaris/plexyz-crowd-spectraos",
+      "name": "PLExyz Crowd prototype",
+      "eyebrow": "Prototype · PLExyz",
+      "line": "A front-end prototype of spatial intelligence: simulated or uploaded data, no backend.",
+      "chips": [
+        "Prototype",
+        "Simulated data"
+      ],
+      "colour": "#6040CC",
+      "logo": "assets/product-logos/plexyz-crowd.svg"
+    },
+    {
+      "slug": "heuristiks",
+      "repo": "haziqfaris/ai-framework-heuristiks",
+      "name": "Heuristiks",
+      "eyebrow": "Framework · AI",
+      "line": "The AI framework under AntaraX's products and REKA's client projects, held in code.",
+      "chips": [
+        "Framework",
+        "Capability runtime"
+      ],
+      "colour": "#FB9800",
+      "credit": "by REKA",
+      "note": "REKA Inisiatif Sdn Bhd · AI for the physical world · reka.re",
+      "style": "reka"
+    },
+    {
+      "slug": "resam",
+      "repo": "haziqfaris/RESAM",
+      "name": "RESAM",
+      "eyebrow": "Framework · engineering",
+      "line": "REKA's engineering system: simple by default, rigorous when necessary.",
+      "chips": [
+        "Framework",
+        "Offline tools"
+      ],
+      "colour": "#FB9800",
+      "credit": "by REKA",
+      "note": "REKA Inisiatif Sdn Bhd · AI for the physical world · reka.re",
+      "style": "reka"
+    },
+    {
+      "slug": "yaraone",
+      "repo": "haziqfaris/yara-one",
+      "name": "YaraOne",
+      "eyebrow": "Product · Ripple family",
+      "line": "One source of truth for delivery, client service, sales and reporting. AntaraX tickets next.",
+      "chips": [
+        "Live",
+        "yo.antarax.ai"
+      ],
+      "colour": "#087F5B",
+      "logo": "assets/families/ripple-icon.svg"
+    }
+  ]
+}

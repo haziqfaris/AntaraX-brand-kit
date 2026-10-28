@@ -61,11 +61,11 @@ const P = [
   { k: 'yara', name: 'Yara', logo: 'yara', fam: 'Ripple', motif: 'awan larat', mf: 'assets/products/yara/yara-motif.svg', status: 'Main', line: 'See where every job stands, live.' },
   { k: 'janka', name: 'Janka', logo: 'janka', fam: 'Tide', motif: 'padi', mf: 'assets/products/janka/janka-motif.svg', status: 'Main', line: "Know what you'll need before you run out." },
   { k: 'grid', name: 'PLExyz Grid', logo: 'plexyz-grid', fam: 'Edge', motif: 'petak', mf: 'assets/products/plexyz/grid-motif.svg', status: 'Main', line: "Know what's in your warehouse, and where it goes." },
-  { k: 'crowd', name: 'PLExyz Crowd', logo: 'plexyz-crowd', fam: 'Edge', motif: 'orbit', mf: 'assets/products/plexyz/crowd-motif.svg', status: 'Closed pilot', line: 'Know how your building is really used. No cameras.' },
+  { k: 'crowd', name: 'PLExyz Crowd', logo: 'plexyz-crowd', fam: 'Edge', motif: 'orbit', mf: 'assets/products/plexyz/crowd-motif.svg', status: 'Closed pilot', line: 'Know how your spaces are really used. Wi-Fi first.' },
   { k: 'frame', name: 'AX Frame', logo: 'ax-frame', fam: 'Frame', motif: 'intan', mf: 'assets/products/frame/frame-motif.svg', status: 'Closed pilot', line: 'Know what your business depends on.' },
   { k: 'angka', name: 'Angka', logo: 'angka', fam: 'Tide', motif: 'congkak', mf: 'assets/products/angka/angka-motif.svg', status: 'Closed pilot', line: 'A finance workspace for business owners who are not accountants.' },
   { k: 'tinara', name: 'Tinara', logo: 'tinara', fam: 'Tide', motif: 'kerawang', mf: 'assets/products/tinara/tinara-motif.svg', status: 'Closed pilot', line: 'Know which Malaysian companies to sell to, and why.' },
-  { k: 'loom', name: 'AX Loom', logo: 'loom', fam: 'Loom', motif: 'tenun', mf: null, status: 'Closed pilot', line: 'Your data, woven together.' },
+  { k: 'loom', name: 'Cebis Loom', logo: 'loom', fam: 'Loom', motif: 'tenun', mf: null, status: 'Managed service', line: 'Your business data, cleaned and ready.' },
   { k: 'motion', name: 'AX Motion', logo: 'motion', fam: 'Motion', motif: 'cengkih', mf: null, status: 'Closed pilot', line: 'Every vehicle in view, and within reach.' },
 ];
 for (const p of P) Object.assign(p, PAL[p.k].roles, { scale: PAL[p.k].scale });
@@ -98,7 +98,7 @@ const pct = (n) => `${+n.toFixed(3)}%`;
   const logos = P.map((p, i) => { style += `@keyframes l${i}{${kfLogo(i)}}@keyframes c${i}{${kfCap(i)}}`; return `<g class="b" style="animation:l${i} ${T}s ease-in-out infinite;opacity:0">${inline(`assets/product-logos/${p.logo}.svg`, cx - L / 2, cy - L / 2, L, L)}</g>`; }).join('');
   const caps = P.map((p, i) => { const f = FAM[p.fam]; const label = `${p.name} · ${p.fam}`; const w = width(label, 20, F.semibold); return `<g style="animation:c${i} ${T}s linear infinite;opacity:0"><circle cx="${r1(cx - w / 2 - 14)}" cy="${cy + R + 47}" r="6" fill="${f.c}"/>${text(label, cx + 6, cy + R + 54, 20, { f: F.semibold, fill: '#FFFFFF', anchor: 'middle' })}</g>`; }).join('');
   const grid = Array.from({ length: 33 }, (_, i) => `<path d="M${i * 40},0V${H}" />`).join('') + Array.from({ length: 12 }, (_, i) => `<path d="M0,${i * 40}H${W}" />`).join('');
-  const chips = [['9', 'products'], ['6', 'families'], ['1', 'kit']];
+  const chips = [['11', 'products'], ['6', 'families'], ['1', 'kit']];
   let chx = 72;
   const chipRow = chips.map(([n, l]) => { const w = width(n, 18, F.mono) + width(l, 16) + 40; const g = `<g><rect x="${chx}" y="330" width="${r1(w)}" height="40" rx="20" fill="#FFFFFF" fill-opacity=".08" stroke="#FFFFFF" stroke-opacity=".18"/>${text(n, chx + 16, 356, 18, { f: F.mono, fill: '#7FD9FF' })}${text(l, chx + 24 + width(n, 18, F.mono), 356, 16, { fill: QUIET })}</g>`; chx += w + 12; return g; }).join('');
   const body = `<defs>${goo('hg', 5)}<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${DEEP}"/><stop offset="1" stop-color="#0D2266"/></linearGradient><radialGradient id="glow"><stop offset="0" stop-color="${BLUE}" stop-opacity=".55"/><stop offset="1" stop-color="${BLUE}" stop-opacity="0"/></radialGradient><clipPath id="card"><rect width="${W}" height="${H}" rx="28"/></clipPath></defs>
@@ -119,7 +119,7 @@ ${text('by REKA Inisiatif Sdn Bhd · Kuala Lumpur', 72, 418, 14, { fill: '#8F9AC
 // ================= families =================
 {
   const W = 1280, H = 330, gap = 16, tw = (W - 2 * 24 - 5 * gap) / 6;
-  const names = { Ripple: 'Yara', Edge: 'PLExyz Grid, Crowd', Frame: 'AX Frame', Loom: 'AX Loom', Motion: 'AX Motion', Tide: 'Janka, Angka, Tinara' };
+  const names = { Ripple: 'Yara', Edge: 'PLExyz Grid, Crowd', Frame: 'AX Frame', Loom: 'Cebis Loom', Motion: 'AX Motion', Tide: 'Janka, Angka, Tinara' };
   let style = `@keyframes br{0%,100%{transform:scale(1) translateY(0)}50%{transform:scale(1.08) translateY(-4px)}}.br{animation:br 3.2s ease-in-out infinite}`;
   const tiles = Object.entries(FAM).map(([n, f], i) => {
     const x = 24 + i * (tw + gap), mx = x + tw / 2;
@@ -164,7 +164,7 @@ P.forEach((p, i) => {
 <g clip-path="url(#cc)"><rect width="${W}" height="${H}" fill="#FFFFFF"/><rect width="${W}" height="236" fill="url(#hd)"/>
 <clipPath id="hc"><rect width="${W}" height="236"/></clipPath><g clip-path="url(#hc)"><g class="tw">${inline(`assets/families/${f.icon}-icon.svg`, 214, 96, 240, 180)}</g></g>
 <circle cx="${W / 2}" cy="128" r="90" fill="${p.accent}" opacity=".12"/>
-${text(String(i + 1).padStart(2, '0'), 28, 46, 15, { f: F.mono, fill: s['800'] })}${text(`/ 0${P.length}`, 54, 46, 15, { f: F.mono, fill: s['800'], extra: 'opacity=".55"' })}
+${text(String(i + 1).padStart(2, '0'), 28, 46, 15, { f: F.mono, fill: s['800'] })}
 <rect x="${r1(W - 24 - stW)}" y="26" width="${r1(stW)}" height="28" rx="14" fill="${st ? s['800'] : '#FFFFFF'}" ${st ? '' : `stroke="${s['300']}"`}/>${text(p.status, W - 24 - stW / 2, 45, 13, { f: F.semibold, fill: st ? '#FFFFFF' : s['800'], anchor: 'middle' })}
 <g class="b fl"><rect x="${W / 2 - 66}" y="62" width="132" height="132" rx="30" fill="#FFFFFF"/><rect x="${W / 2 - 66}" y="62" width="132" height="132" rx="30" fill="none" stroke="${s['200']}" stroke-width="1.5"/>${inline(`assets/product-logos/${p.logo}.svg`, W / 2 - 54, 74, 108, 108)}</g>
 ${text(p.name, 32, 280, 30, { f: F.semibold, fill: NAVY })}${text('by AntaraX', 34 + width(p.name, 30, F.semibold) + 10, 280, 15, { fill: MUTED })}

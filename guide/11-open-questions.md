@@ -31,3 +31,8 @@ Facts only the owner can give. Until each is answered, the site says only what t
 ## From AwanGan's decision 0021 (25 October 2026)
 
 26. **Answered 25 October 2026 (10): AwanGan and BumiNyata are products, our own AI models; Cebis Loom replaces AX Loom. Still open: a mark and palette for each.** *AwanGan and Cebis Loom in the brand.* Both are now named in 13 section 2 and the Dashboard kit, but neither has an entry in 02, a palette or a logo, and Cebis Loom's name is close to AX Loom, the closed pilot for data synthesis. *Recommendation:* decide whether each is a product, a platform piece like Lapisan, or internal only, and whether Cebis Loom belongs to AX Loom, before either is named in front of a customer.
+
+## From the busy rule (26 October 2026)
+
+27. **Inline loops for YaraOne, Cebis Loom and AX Motion.** A busy button now shows the product's own inline loop in place of "…" (14), and these three have none drawn, so they use AntaraX's Assemble for now. *Recommendation:* draw YaraOne's from the Ripple family, beside Yara's dots on a wave but not the same (for example rings that spread from a point), and Cebis Loom's from its mark once it has one; add each to 14's table and to the visual guide.
+28. **AXLE's busy loop.** AXLE takes AntaraX's Assemble in every product, because AXLE is the same in every product and is REKA's, not the product's. *Recommendation:* keep it; the alternative is each product's loop inside its AXLE, which would make AXLE differ from product to product.

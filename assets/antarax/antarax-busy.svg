@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+  <!-- The AntaraX busy loop, "Assemble" (26 Oct 2026; guide 14 Loading). The inline loop for a surface
+       with no product of its own: antarax.ai, AXLE, the kits' neutral reference. The three pieces of the A
+       (antarax-mark.svg: left foot, apex, right foot) light in turn, hold whole, then rest: 1.4s, nothing spins
+       or flips. Drawn for 16 to 20px: the eye is widened from 95 to 112 and the two cuts to 64 units of the
+       master artboard, so the pieces stay apart at that size. It is a loader, not the logo: never use it as the
+       mark, and never with the sparkle, which means AI.
+       Inline it so it draws in the text colour (currentColor): white on a primary button, ink on a secondary
+       one. As an <img> it draws black. With reduced motion it holds the whole A, its still frame; the words
+       beside it ("Saving", never "Saving…") tell a screen reader what is happening. -->
+  <style>
+    .antarax-busy path { animation: 1.4s ease-in-out infinite; }
+    .antarax-busy .antarax-busy-foot { animation-name: antarax-busy-1; }
+    .antarax-busy .antarax-busy-apex { animation-name: antarax-busy-2; }
+    .antarax-busy .antarax-busy-right { animation-name: antarax-busy-3; }
+    @keyframes antarax-busy-1 { 0% { opacity: .32; } 14%, 72% { opacity: 1; } 90%, 100% { opacity: .32; } }
+    @keyframes antarax-busy-2 { 0%, 14% { opacity: .32; } 28%, 72% { opacity: 1; } 90%, 100% { opacity: .32; } }
+    @keyframes antarax-busy-3 { 0%, 28% { opacity: .32; } 42%, 72% { opacity: 1; } 90%, 100% { opacity: .32; } }
+    @media (prefers-reduced-motion: reduce) { .antarax-busy path[class] { animation: none; opacity: 1; } }
+  </style>
+  <g class="antarax-busy">
+    <path class="antarax-busy-foot" d="M9.9 19.1 9.9 18.5 9.8 18.3 8.7 17.3 2.8 21.3 3.7 21.9 5 22.4 6.1 22.5 7.3 22.2 8.1 21.8 8.9 21 9.8 19.6Z"/>
+    <path class="antarax-busy-apex" d="M11.7 1.5 10.7 1.7 9.8 2.2 9.1 2.9 8.6 3.7 1.9 16.5 1.7 17.1 1.6 18 1.6 18.8 1.8 19.7 7.7 15.6 7.6 14.9 7.5 14.3 7.6 13.4 7.8 12.7 8.1 12 8.6 11.4 9 10.9 9.6 10.5 10.2 10.2 10.9 10 11.6 9.8 12.3 9.8 13.1 9.9 13.8 10.1 14.5 10.5 15 10.9 18.2 8.8 15.4 3.4 14.9 2.7 14.1 2.1 13.4 1.7 12.6 1.5Z"/>
+    <path class="antarax-busy-right" d="M22.4 17.9 22.3 17.1 22 16.2 19.1 10.4 16.1 12.4 16.4 13.2 16.6 14.1 16.5 15 16.3 15.7 16.1 16.4 15.8 16.9 15.2 17.5 14.4 18.3 14.1 18.8 14.2 19.4 15 20.8 15.6 21.5 15.9 21.7 16.6 22.2 17.8 22.5 19 22.4 20.2 22 21.2 21.2 21.8 20.5 22.2 19.7 22.3 19.2Z"/>
+  </g>
+</svg>

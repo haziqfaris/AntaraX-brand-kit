@@ -38,6 +38,17 @@ Owner decisions that shape the brand, newest first. Add to the top; never rewrit
 
 ## 18 October 2026
 
+- **Gauge and REKA Discovery send as themselves** (owner). Two internal tools in the Ripple family join AntaraX email; neither is called Ripple, which keeps the 17 October rule:
+  - **Gauge**, said "Ripple Gauge" in full: the monitoring and performance tool (`haziqfaris/antarax-ripple-monitoring`). Internal for now and named so it can become a product later. Sends as `Gauge <gauge@mail.antarax.ai>`. It is expected to move to `gauge.antarax.ai`.
+  - **REKA Discovery**: the workflow and forms tool (`haziqfaris/ripple-workflow`, at `ripple.antarax.ai/workflow`). It is REKA's own, so the sender carries REKA's name: `REKA Discovery <discovery@mail.antarax.ai>`, credited "REKA Discovery, on AntaraX Ripple."
+  - Both use Ripple's Quiet BaTech band and have no signature motif yet, so their first emails show none.
+- **AXLE Central → Email watches every product's mail in one place** (owner; Dashboard kit 1.6.0, `axle/SPEC.md` section 10.14). It reads from AntaraX email's operator-only routes and shows:
+  - what needs a person: the service's alerts, emailed to the operators every hour until they clear;
+  - every product's sent, delivered, bounced, spam and failed counts against its day limit;
+  - every email, newest first, with masked addresses;
+  - a check for whether an address is blocked.
+
+  Only an Admin may lift a bounce. A product's own AXLE keeps its Watch → Email.
 - **One standard for acting: confirming, waiting and results** (owner; Dashboard kit 1.8.0, `actions/SPEC.md`). A check of every product that day found 50 browser pop-ups across the products, actions that destroy something with one click in every product, no warning about unsaved changes anywhere, and long work that nothing can cancel.
   - **Three levels of confirmation**, decided by what can be undone:
     - undoable actions happen at once with Undo, and deleted records keep 30 days in Trash;

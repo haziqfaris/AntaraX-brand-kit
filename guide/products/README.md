@@ -14,10 +14,10 @@ Sheets were written on 11 October 2026 from an audit of each product's repositor
 | AX Frame | A-mark | A + Frame icon | Frame `#074AF8` | Closed pilot | [frame.md](frame.md) |
 | Angka | Own-mark | The sheet stack (kept) | Angka plum `#6B3F6B` | Closed pilot | [angka.md](angka.md) |
 | Tinara | Own-mark | The signal (new); kerawang is its motif | Tinara garnet `#7A1E3C`, gold | Closed pilot | [tinara.md](tinara.md) |
-| AX Loom | A-mark | A + Loom icon | Loom `#4904B3` | Closed pilot, no app yet | [loom.md](loom.md) |
+| Cebis Loom | A-mark | A + Loom icon | Loom `#4904B3` | Managed service, by arrangement (replaces AX Loom, 25 October 2026) | [loom.md](loom.md) |
 | AX Motion | A-mark | A + Motion icon | Motion `#FC5D04` | Closed pilot, no app yet | [motion.md](motion.md) |
 
-**AX Loom and AX Motion** have no app yet. Their sheets set out what is decided and what has to happen before an app is built. Like every product, they act in their own colour, with AntaraX blue as the focus ring.
+**AX Motion** has no app yet, and Cebis Loom's app is early. Their sheets set out what is decided and what has to happen before an app is built. Like every product, they act in their own colour, with AntaraX blue as the focus ring.
 
 **Every sheet opens with a brief:** who the product is for, the problem, what it does in three sentences, what it is not, what it may and may never claim, how it is sold, its lines and areas, and where the facts live. The brief is the part to read before writing about a product. It changes rarely; features and prices change in the product's own repository, which the brief names.
 

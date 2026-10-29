@@ -2,6 +2,40 @@
 
 Owner decisions that shape the brand, newest first. Add to the top; never rewrite history. Earlier strategy changes are in `reference/strategy/` (playbook amendments v0.3–v0.5, RECONCILIATION).
 
+## 26 October 2026
+
+- **One README standard for every repository under AntaraX** (owner): visually beautiful, readable by a non-engineer, with detailed links and explanations of what is inside and how to use it, and the AntaraX banner, logo and REKA on every one. The layout and rules are [15](15-readme-standard.md); the banners and the shared footer are drawn by `tools/build-readme-kit.mjs` from `readme-kit/repos.json`. It covers 20 repositories: the products, the AI models and data services, the kits and the website, Lapisan, Gauge, Ripple, the PLExyz Crowd prototype, and REKA's Heuristiks and RESAM, which credit "by REKA" and **have REKA's own style, not AntaraX's** (owner): REKA's near-black, orange, chamfer cuts, HUD brackets and stripe, from REKA's brand kit.
+- **An action is a button, and no label ends in "…"** (owner, on seeing a blue "Remove…" link in a product). Anything that does something (remove, delete, save, start, revoke, invite, export) is a button in the Dashboard kit's styles; a text link only takes you somewhere. No button, menu item, link or placeholder ends in "…" or "...": the dots are an old desktop convention for "a dialog will ask for more first", which our readers don't know, so they read as clutter. Truncating long text with an ellipsis and the "⋯" more-actions button are unaffected. The rule lives in the AntaraX Dashboard kit (`app/SPEC.md`, `axle/SPEC.md`, `project/SPEC.md`); each product is brought into line in its own work.
+
+## 25 October 2026
+
+- **PLExyz Crowd's record, from the owner's slides** (owner, second round).
+  - **Named with logos:** the site may show these organisations, each with what PLExyz Crowd analytics was used for: AeroDarat (airport and lounge operation), MedAds Media (advertising), Gardens by the Bay (tourism), Nasi Kandaq Fest 2023 at Sunway Putra Mall (event), Think City (live performance), UEM Sunrise (new property development), Coffee Cartel (food and beverages), Cyberview (event). Name and use only: no outcomes, figures, quotes or case studies unless each is supplied. The logos on the site are cut from the owner's slide until proper files arrive.
+  - **Deployed since 2021.** Crowd has run on real sites; the new Crowd app is the closed pilot. "The pilot runs on simulated signals" is retired.
+  - **Sensing layers**, from the widest to the closest: Telco + Geo data, Wi-Fi, RFID + BLE, LiDAR, camera. Telco + Geo is deployed project by project, like the others.
+  - **Analytics it may name:** footfall; customer journey and movement patterns; repeat visits, duration of stay and conversion rates. Not device brand.
+  - The PLExyz page gains "the problem we solve" and "who we solved it for"; the Crowd page moves into the same dark hexagon world, laid out like a SaaS product page, with the layers revealed as you scroll and a PLExyz shard for a pointer that lights the hexagons it passes.
+- **Cebis Loom's page uses Loom violet** (`#4904B3`), not AntaraX blue (owner). Focus rings stay AntaraX blue.
+- **AwanGan and BumiNyata pages say the problem and the value** before the packages (owner): what goes wrong today, what changes, and who benefits. BumiNyata's scene has three levels: up the mountain, on the ground and underground.
+
+- **AwanGan and BumiNyata are products: AntaraX's own AI models** (owner; answers 11 question 26 for them). AwanGan is the cloud, BumiNyata the customer's own servers, "for further sovereignty".
+  - **Say "our own models".** Do not say they were trained from scratch, do not name the open models underneath, and give no sizes or benchmarks. Privacy is described by what the design does (personal data masked before anything goes to an outside model; BumiNyata's outbound calls locked), never as a guarantee or compliance claim.
+  - **Status "By arrangement"**, with "Talk to us" to the contact form. Packages are shown as tiers without prices.
+  - **Pages `/awangan` and `/buminyata` are special pages in pixel art** (after cofounder.co, composed like fillout.com's hero): AwanGan infrastructure in the clouds, BumiNyata on solid ground and mountains, with how AntaraX helps a team start with AI or scale it, even one that already has its own AI people.
+  - AwanGan also stays AntaraX's internal AI control plane (the entry below); that role is not what customers buy. Not a brand entry yet in 12 or 14: no mark or palette until one is drawn.
+- **Cebis Loom replaces AX Loom** (owner; answers question 26 for Cebis). Loom is AntaraX's ETL family: Cebis Loom turns the data a business already has into clean tables and files for reports and AI, for a quick return on data that is otherwise sitting unused. **Sold only as a managed service, by arrangement.** Synthetic data comes later. `/loom` is its page, built on Inertia's structure (inertiajs.com) with a live output card that assembles the clean table (after zite.com). "AX Loom" is retired.
+- **PLExyz Crowd joins the main products**: Yara, Janka, PLExyz Grid and PLExyz Crowd (owner). Crowd is still a closed pilot and says so. **PLExyz is "our next generation of data sensing and visuals"**, and `/plexyz` is a dark page on a hexagon grid (deep indigo `#120634`, faint flat-topped hexagons, a field of white tiles ringed by glowing purple ones that spreads from a corner), drawn from the owner's two reference images. Crowd's sensing wording is the owner's 23 October answers on antarax.ai: Wi-Fi first, cameras only where a project needs them ([products/plexyz.md](products/plexyz.md) is updated to match).
+- **The antarax.ai Products menu has an "AI models" section** (AwanGan, BumiNyata), then Cebis Loom as a managed service, then the closed pilots (owner).
+- **BaTech beside text is retired on the website** (owner): no kain window, swatch or batik panel next to a heading and paragraph. The special pages that keep it are **Story and Families**; the owner will name others later. Instead the text is centred, and the kain stays in bands, beds, margin clusters beside centred headings, card-foot devices and the sign-off words. The site's build stops if a kain window is placed on any other page.
+
+- **AwanGan manages AntaraX's AI; each product's AXLE shows its own usage** (owner; AwanGan decision 0021; Dashboard kit 1.9.0, `axle/SPEC.md` 1.4 section 10.6). One owner for each:
+  - **AI:** provider keys, models, routing, call records, outcomes and AI cost are AwanGan's (`haziqfaris/AntaraX-AwanGan`), under the Heuristiks standard. People reach it at `awangan.antarax.ai`, machines at `api.antarax.ai/ai/v1` (13 section 2).
+  - **APIs:** keys for callers, tenants, scopes, limits and usage rows are Lapisan's (`haziqfaris/antarax-api`, `api.antarax.ai`).
+  - **A product's own AI usage** is on its AXLE's AI usage page, read from Lapisan's usage rows for product `ai`. Models & keys becomes a read-only view of AwanGan's keys and routes; Live trace shows the verdict first, then the five steps.
+  - **Data a business hands over** goes to Cebis Loom (`haziqfaris/antarax-cebis-loom`). **RESAM** (`haziqfaris/RESAM`) says which framework governs what.
+  - **Nothing is forced on a live product:** its keys are recorded watch only first, and move into AwanGan when it is ready. A client's own system comes through only with the client's written agreement; otherwise it keeps its own keys under Heuristiks, or runs BumiNyata on its own servers.
+  - **Not a brand entry yet:** AwanGan and Cebis Loom have no entry in 02, no palette and no logo (11, question 26).
+
 ## 18 October 2026
 
 - **Gauge and REKA Discovery send as themselves** (owner). Two internal tools in the Ripple family join AntaraX email; neither is called Ripple, which keeps the 17 October rule:
@@ -15,6 +49,30 @@ Owner decisions that shape the brand, newest first. Add to the top; never rewrit
   - a check for whether an address is blocked.
 
   Only an Admin may lift a bounce. A product's own AXLE keeps its Watch → Email.
+- **One standard for acting: confirming, waiting and results** (owner; Dashboard kit 1.8.0, `actions/SPEC.md`). A check of every product that day found 50 browser pop-ups across the products, actions that destroy something with one click in every product, no warning about unsaved changes anywhere, and long work that nothing can cancel.
+  - **Three levels of confirmation**, decided by what can be undone:
+    - undoable actions happen at once with Undo, and deleted records keep 30 days in Trash;
+    - consequential ones ask in a dialog whose button names the action and the thing;
+    - irreversible ones need the thing's name typed and the password or a code again, and in AXLE a second person too.
+  - **What a person sees depends on how long it takes:**
+    - the button shows it is busy for under 2 seconds;
+    - a progress dialog with a count or steps, Cancel and Run in background for longer or many-record actions;
+    - a background job for anything over 30 seconds.
+
+    A busy button alone is never enough for a long action.
+  - **No browser pop-ups**, never "OK" or "Are you sure?", and never a raw server message.
+- **YaraOne's palette is in the brand kit** (owner). Jade `#087F5B` with navy, built by `tools/build-product-palettes.mjs` like every product (14); it reproduces the values YaraOne already uses (action `#087F5B`, hover `#016C4C`, subtle `#DFF2E9`). Chart set jade, blue, orange, magenta, violet, which passes the palette validator light on white and dark on `#071233`. YaraOne stays out of the nine public products on antarax.ai until the owner says otherwise; this is its palette, not a launch.
+- **New passwords keep one field with Show** (owner, confirming getting-in/SPEC.md §4): no "Confirm password" field.
+- **One standard for getting in** (owner; Dashboard kit 1.7.0, `getting-in/SPEC.md`). Every customer app and AXLE meets its bare minimum (GI-01 to GI-20) before release. A check of every product that day found most had no strength meter, Caps Lock warning, breach check or two-step sign-in, several had no Forgot your password, and two had security problems now being fixed in their own pull requests.
+  - **Passwords:** 12 to 64 characters of any kind, checked against breached passwords, with a strength meter in words; no rules about letters, numbers or symbols (current guidance advises against them).
+  - **Sign-in links:** Email me a sign-in link in every customer product, working once for 15 minutes; never in AXLE.
+  - **Two-step sign-in:** required for every Owner and Admin of an organisation, and for staff; anyone else may turn it on. An authenticator app with 10 backup codes; not SMS.
+  - **Words:** Sign in, Forgot your password?, Email me a sign-in link, Two-step sign-in, Backup codes; never Log in, Magic link, 2FA or MFA on screen.
+- **One AXLE sign-in page, from AX Frame's** (owner; 13 section 6; Dashboard kit 1.6.0, `axle/SPEC.md` 5.1.1). The navy ground with the dotted blueprint (05), one card, the AntaraX A and `AXLE`, "‹Product› · REKA staff console". Chosen over Yara's near-black page with a ruled grid.
+  - **Two ways in, in every product:** Continue with Google with REKA's company accounts (Google's 2-Step Verification required in the Workspace), or email and password followed by a six-digit code.
+  - **Its Sign in is AntaraX blue `#0459F7`,** the one place in AXLE whose main action is not REKA orange (an exception to 15 October); inside the console, orange stays.
+  - **Kept from Yara's page:** someone who isn't staff is signed out at once and pointed to the product's own sign-in; Help, Privacy and Terms under the card.
+  - **Words:** Sign in, never Log in or Enter AXLE; "Authorised REKA staff · every action is recorded".
 - **The email layout takes the brand's own art** (owner; 13 section 4). Every email carries its family's Quiet BaTech band across the top of the card; the first emails someone gets (the welcome and the invitations) carry the product's signature motif as a milestone; steps are a numbered "What happens next"; a digest's figures are tables whose statuses say themselves in words. Three templates join the eleven: `digest.v1`, `system.announcement.v1` and `auth.confirm_email_change.v1`. Sign-in emails that Supabase sends itself use the same layout and go out through `mail.antarax.ai` as the product, with Supabase still making and checking every link. Every template, rendered, is in `assets/email/`, the reference for every product and every new one. YaraOne and Lapisan have no signature motif yet, so their first emails show none (11).
 
 ## 17 October 2026

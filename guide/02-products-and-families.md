@@ -14,8 +14,10 @@ How each product carries its own mark, colour and credit line (own-mark and A-ma
 
 | Tier | Products | Where they appear | Primary CTA |
 |---|---|---|---|
-| **Main products** | Yara (lead), Janka, PLExyz Grid | Homepage, navigation, pricing on request, own page under `/products/` | Book a demo |
-| **Closed pilots** | AX Frame, PLExyz Crowd, Angka, Tinara, AX Loom, AX Motion | Closed pilots page and their own landing page under `/pilots/` | Request pilot access |
+| **Main products** | Yara (lead), Janka, PLExyz Grid, PLExyz Crowd (owner, 25 October 2026; Crowd is still a closed pilot and says so) | Homepage, navigation, pricing on request, own page | Book a demo (Crowd: Request pilot access) |
+| **AI models** (owner, 25 October 2026) | AwanGan (cloud), BumiNyata (on premises) | The "AI models" section of the Products menu, the Products page, own pages `/awangan` and `/buminyata` | Talk to us: by arrangement |
+| **Managed service** (owner, 25 October 2026) | Cebis Loom | Products menu and page, own page `/loom` | Talk to us: by arrangement |
+| **Closed pilots** | AX Frame, PLExyz Crowd, Angka, Tinara, AX Motion | Closed pilots page and their own landing page | Request pilot access |
 
 - **For now every product, main products and closed pilots alike, is sold as part of REKA's Managed AI service** (owner, 11 October 2026). Prices are quoted, not published.
 - **Every closed pilot runs as part of REKA's Managed AI service.** REKA sets it up on the customer's site and data, keeps it running, and improves it with them. Say so on every pilot page.
@@ -34,10 +36,12 @@ Use these names, one-liners and questions exactly.
 | **Janka** | Main | Know what you'll need before you run out. | "What should we reorder, and how much, before we run out?" | Tide | /products/janka |
 | **PLExyz Grid** | Main (free for one facility) | Know what's in your warehouse, and where it goes. | "What is where, and where should the next load go?" | Edge | /products/plexyz |
 | **AX Frame** | Closed pilot | Know what your business depends on. | "What does our business pay for, and when does it renew?" | Frame | /pilots/frame |
-| **PLExyz Crowd** | Closed pilot | Know how your building is really used. No cameras. | "How many people are actually in this building right now, and do we need all this space?" | Edge | /pilots/plexyz-crowd |
+| **PLExyz Crowd** | Main, closed pilot | Know how your building is really used. | "How many people are actually in this building right now, and do we need all this space?" | Edge | /pilots/plexyz-crowd |
 | **Angka** | Closed pilot | A finance workspace for business owners who are not accountants. | "Where does our money go, without needing an accountant to tell us?" | Tide | antarax.ai/angka |
 | **Tinara** | Closed pilot | Know which Malaysian companies to sell to, why, and how to open the conversation. | "Which companies should we call next, and what do we say when they pick up?" | Tide | /pilots/tinara |
-| **AX Loom** | Closed pilot | Your data, woven together. | "How much more could we do with our data, if it were all in one place?" | Loom | /pilots/loom |
+| **Cebis Loom** | Managed service | Your business data, cleaned and ready. | "How much more could we get from the data we already have?" | Loom | /loom |
+| **AwanGan** | AI models, by arrangement | Our own AI models, in the cloud. | "How do we use AI without sending our data everywhere?" | (none yet) | /awangan |
+| **BumiNyata** | AI models, by arrangement | Our own AI models, on your own servers. | "How do we use AI and keep every byte on our own ground?" | (none yet) | /buminyata |
 | **AX Motion** | Closed pilot | Every vehicle in view, and within reach. | "Where is every vehicle right now, how is it doing, and can we take control from here?" | Motion | /pilots/motion |
 
 ### Product facts worth knowing
@@ -46,10 +50,11 @@ Use these names, one-liners and questions exactly.
 - **Janka:** AI inventory forecasting for manufacturers. Reads real consumption, recommends when and how much to reorder, drafts the order for a person to approve. It is not accounting software. Website working names: Inventory, Forecast, Replenish, Risk, Insights (the app's areas are in 14).
 - **PLExyz Grid:** shows what is in a warehouse or yard on the site's own layout, tracks cargo from arrival to dispatch, and checks every placement against the site's rules. Free for one facility; bookings, movements and analytics come with paid plans.
 - **AX Frame (AXF):** a manual-first digital-asset ledger: every subscription, API, domain and renewal in one list, warnings before a charge. Working lines: **Atlas** (inventory and location), **Layers** (stacks and dependencies), **Orbit** (renewals), **Pulse** (health), **Ledger** (every asset in one grid), **Lens** (AI analysis). Rule: one world, six ways of seeing it, not six products. Frame never auto-discovers assets (see the axframe repo's guardrails).
-- **PLExyz Crowd:** not in active development (owner, 11 October 2026). It is designed to count people per space from the Wi-Fi signals already in a building; the pilot runs on simulated signals today. No cameras, no faces, no identities. Claims rules in 03.
+- **PLExyz Crowd:** a main product from 25 October 2026, still a closed pilot. It counts people per space with Wi-Fi first, cameras only where a project needs them (owner's answers, 23 October 2026, on antarax.ai). Deployed on real sites since 2021, with the organisations named in 10; the new Crowd app is a closed pilot. Claims rules in [products/plexyz.md](products/plexyz.md).
 - **Angka:** website working names Capture, Match, Books, Forecast, Assist (the app's areas are in 14). Free while the pilot runs.
 - **Tinara:** Malaysia-first B2B intelligence. Ranks companies by fit, signals and match, and writes a brief: the buyer roles to approach, the opening angle, next steps on days 1, 3 and 7.
-- **AX Loom:** data synthesis. Weaves data from systems, spreadsheets, sensors and documents into one picture, and generates synthetic data where real data is short or too sensitive to use. Automation is not Loom: it runs on Ripple (see 10, 10 October 2026).
+- **Cebis Loom:** the Loom family's data product, replacing AX Loom (owner, 25 October 2026). It turns the spreadsheets, exports and scans a business already has into clean typed tables, a data dictionary, tokenised personal data, a report and files ready for AI: ETL for corporates who want value from data they already hold. Sold only as a managed service, by arrangement. Synthetic data comes later. Repository `haziqfaris/antarax-cebis-loom`. Automation is not Loom: it runs on Ripple (see 10, 10 October 2026).
+- **AwanGan and BumiNyata:** AntaraX's own AI models (owner, 25 October 2026): AwanGan in the cloud, BumiNyata on the customer's own servers with outbound calls locked. Say "our own models"; do not say they were trained from scratch, name the open models underneath, or give sizes or benchmarks. Neither is live with a customer yet: "By arrangement". AwanGan is also AntaraX's internal AI control plane (10, 25 October 2026); that role is not something customers buy. Repositories `haziqfaris/AntaraX-AwanGan` and `haziqfaris/AntaraX-BumiNyata`.
 - **AX Motion:** telematics and fleet management, built first for autonomous and remotely controlled vehicles. Carries forward REKA's 2016 self-driving car work. No claims of deployments, customers, pricing or certification until they exist.
 - **Lapisan:** the platform under the products, for developers, at lapisan.antarax.ai.
 
@@ -60,7 +65,7 @@ Use these names, one-liners and questions exactly.
 | **Ripple** | Operate | "Work that moves." | Yara | `#08B0B3` | riak (one tap, spreading); Yara's own motif is awan larat, later sungai (14) |
 | **Edge** | Perceive | "Sense the real world." | PLExyz Grid, PLExyz Crowd | `#12B76A` | petak (Grid), orbit (Crowd) |
 | **Frame** | Understand | "Know what you depend on." | AX Frame | `#074AF8` | intan |
-| **Loom** | Synthesize | "Weave it together." | AX Loom | `#4904B3` | tenun |
+| **Loom** | Synthesize | "Weave it together." | Cebis Loom | `#4904B3` | tenun |
 | **Motion** | Navigate | "Every vehicle, within reach." | AX Motion | `#FC5D04` | cengkih (a quadcopter from above) |
 | **Tide** | Optimize | "Read what's coming." | Janka, Angka, Tinara | `#E9579D` | bunga raya; padi (Janka), congkak (Angka), kerawang (Tinara) |
 

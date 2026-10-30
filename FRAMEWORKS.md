@@ -1,6 +1,6 @@
 # How AntaraX Brand Kit fits with the other REKA frameworks
 
-AntaraX Brand Kit owns how AntaraX looks and talks: names, statuses, tokens, voice. This page is generated the same way in every REKA framework: it says who governs what, what each framework owns, and how AntaraX Brand Kit relates to each one. Checked on 25 October 2026.
+AntaraX Brand Kit owns how AntaraX looks and talks: names, statuses, tokens, voice. This page is generated the same way in every REKA framework: it says who governs what, what each framework owns, and how AntaraX Brand Kit relates to each one. Checked on 30 October 2026.
 
 ## Who governs what
 
@@ -37,9 +37,9 @@ From RESAM's [repository map](https://github.com/haziqfaris/RESAM/blob/main/docs
 
 ## Kept in step
 
-Gaps found when the frameworks were compared on 25 October 2026:
+Gaps still open when the frameworks were rechecked on 30 October 2026:
 
 - The guide says version 1.4; the tokens say 1.11.0.
-- The README calls Cebis Loom a closed pilot with no app; Cebis 0.4.1 is built and has an app.
+- The README still calls Cebis Loom a closed pilot; Cebis 0.5.0 is built and has an app.
 
-RESAM records every framework's version, stage and links in its [framework status](https://github.com/haziqfaris/RESAM/blob/main/docs/reference/framework-status.md), [connections](https://github.com/haziqfaris/RESAM/blob/main/docs/reference/connections.md) and [modules](https://github.com/haziqfaris/RESAM/blob/main/docs/reference/modules.md) pages (RESAM pull request 2). When this page and RESAM disagree, RESAM is updated first and this page follows.
+RESAM records every framework's version, stage and links in its [framework status](https://github.com/haziqfaris/RESAM/blob/main/docs/reference/framework-status.md), [connections](https://github.com/haziqfaris/RESAM/blob/main/docs/reference/connections.md) and [modules](https://github.com/haziqfaris/RESAM/blob/main/docs/reference/modules.md) pages. When this page and RESAM disagree, RESAM is updated first and this page follows.

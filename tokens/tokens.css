@@ -1,4 +1,4 @@
-/* AntaraX design tokens v1.11.0 (2026-10-16). Mirrors tokens.json; full product palettes in product-palettes.css. Import first, then build on the variables. */
+/* AntaraX design tokens v1.12.0 (2026-11-03). Mirrors tokens.json; full product palettes in product-palettes.css. Import first, then build on the variables. */
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap");
 
 :root {
@@ -22,10 +22,11 @@
   --ax-loom:   #4904B3; --ax-loom-tint:   #EEE6FA; --ax-loom-dark:   #33027D;
   --ax-motion: #FC5D04; --ax-motion-tint: #FFE9DC; --ax-motion-dark: #A83A00;
   --ax-tide:   #E9579D; --ax-tide-tint:   #FDE8F1; --ax-tide-dark:   #9C2B63;
+  --ax-nalar:  #B48B02; --ax-nalar-tint:  #F9EED4; --ax-nalar-dark:  #7E6105; /* deep gold (3 November 2026); tint and dark set by contrast, not the 86%/55% rule */
 
   /* BaTech family pairs (dark, ground), the same values as --ax-<family>-dark and -tint above, and the Quiet ink (guide/12) */
   --bt-ripple-dark: #0B6E72; --bt-ripple-ground: #D9F3F2; --bt-edge-dark: #0B7A47; --bt-edge-ground: #DCF5E8; --bt-frame-dark: #0533A8; --bt-frame-ground: #E2EAFE;
-  --bt-loom-dark: #33027D; --bt-loom-ground: #EEE6FA; --bt-motion-dark: #A83A00; --bt-motion-ground: #FFE9DC; --bt-tide-dark: #9C2B63; --bt-tide-ground: #FDE8F1;
+  --bt-loom-dark: #33027D; --bt-loom-ground: #EEE6FA; --bt-motion-dark: #A83A00; --bt-motion-ground: #FFE9DC; --bt-tide-dark: #9C2B63; --bt-tide-ground: #FDE8F1; --bt-nalar-dark: #7E6105; --bt-nalar-ground: #F9EED4;
   --bt-quiet: #C5CCF7;
 
   /* sparkle: inside the A mark, and the highlight palette for restyled product logos (guide/12) */

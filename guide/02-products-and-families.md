@@ -69,7 +69,7 @@ Use these names, one-liners and questions exactly.
 | **Loom** | **Structure** | Organise fragmented information and digital relationships | Cebis Loom, **AX Frame** | Loom violet; AX Frame keeps its existing product-blue mark and intan motif |
 | **Edge** | **Perceive** | Physical spaces and sensing | PLExyz Grid, PLExyz Crowd | Existing Edge green |
 | **Motion** | **Navigate** | Vehicle and fleet coordination, remote operation | AX Motion | Existing Motion orange |
-| **Nalar** | **Reason** | AI model capabilities, runtime and deployment | **AwanGan, BumiNyata** | New family icon, palette and BaTech motif **not yet approved** |
+| **Nalar** | **Reason** | AI model capabilities, runtime and deployment | **AwanGan, BumiNyata** | Icon: Cabang, a swaying fork with a dot, in deep gold `#B48B02` (3 November 2026). BaTech motif **not yet approved** |
 
 **Family roles and boundaries:**
 - **Ripple:** tasks, work orders, service requests and workflow automation. YaraOne is an *internal* Ripple-aligned support system; Jentera is a candidate, not a listed product.

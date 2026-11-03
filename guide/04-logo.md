@@ -47,6 +47,7 @@ Each family has its own icon (in its family colour) that sits in the A's open ce
 | Frame | `#074AF8` | 5 shapes: symmetric brackets, lines and arcs |
 | Loom | `#4904B3` | 10 rounded rects |
 | Tide | `#E9579D` | **proposed:** a crescent with the family's dot (`assets/families/tide-icon.svg`, 11) |
+| Nalar | `#B48B02` | **Cabang, melenggok** (3 November 2026): a fork run backwards. Two tapering branches, one swaying and a little taller, join one stem; the conclusion is the dot below. `assets/families/nalar-icon.svg`, with `nalar-icon-small.svg` (heavier, longer stem) at 24 px and below; drawn by `tools/build-nalar-icon.py` |
 
 Name variants per family: Full "AntaraX Motion", Centered and Medium "AX Motion", Short "AXM".
 

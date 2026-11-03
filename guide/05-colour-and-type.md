@@ -21,7 +21,7 @@ Values live in [`tokens/tokens.json`](../tokens/tokens.json) and [`tokens/tokens
 
 ### Family colours
 
-Ripple `#08B0B3` · Edge `#12B76A` · Frame `#074AF8` · Loom `#4904B3` · Motion `#FC5D04` · Tide `#E9579D`.
+Ripple `#08B0B3` · Edge `#12B76A` · Frame `#074AF8` · Loom `#4904B3` · Motion `#FC5D04` · Tide `#E9579D` · Nalar `#B48B02` (deep gold, 3 November 2026; its tint `#F9EED4` and dark `#7E6105` were set by contrast rather than the 86%/55% rule below).
 
 Each has a **tint** (86% toward white) for grounds and a **dark** (55%) for outlines and text on the tint (values in the tokens). Use a family colour:
 

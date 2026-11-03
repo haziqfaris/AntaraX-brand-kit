@@ -123,7 +123,7 @@ Keep:
 6. Cebis Loom retains the Loom-specific violet family identity and `tenun` product motif.
 
 Design follow-ups, **not decisions in this update**:
-- Choose the Nalar family mark/icon, palette and BaTech motif/composition, test against existing six-family system and all consumers. The blue used during conversation was an illustration, not an approved palette.
+- ~~Choose the Nalar family icon and palette~~: **done 3 November 2026**: deep gold `#B48B02` (tint `#F9EED4`, dark `#7E6105`) and the Cabang icon, a swaying fork with a dot ([10](10-decisions-log.md)). Still to do: the Nalar BaTech motif and composition, tested against the six-family system and its consumers.
 - Define the Loom-family treatment for AX Frame's family badge/brand band while preserving AX Frame's distinct logo and product accent. Existing Frame colour/assets remain available as legacy values pending audited migration.
 - Clarify the "one A-mark per family" rule where AX Frame and Cebis Loom were both A-mark products before the merger. **Do not apply one shared family icon in a way that produces identical logos.**
 - Confirm whether new applications need new family tokens in `tokens/tokens.json`, Dashboard Kit, BaTech generators, email layouts, mockups and marketing exports. Any token change must follow `AGENTS.md` and synchronise its consumers.
@@ -151,7 +151,7 @@ If no existing family fits the customer promise, raise a new family proposal for
 - Do not change a logo, colour token, product URL, repository, code or user-facing claims solely because membership changed.
 
 ### Next: proposals and visual sign-off
-- Design three Nalar identity directions using the real AntaraX system; show the full six-family comparison.
+- ~~Design three Nalar identity directions using the real AntaraX system; show the full six-family comparison.~~ Done: the directions and their rounds were reviewed with the owner on 3 November 2026.
 - Show AX Frame and Cebis Loom together as separate products under Loom, with actual logos and sample app/email/header compositions. Provide a specific collision-free A-mark approach.
 - Verify every existing brand-kit visual guideline and output touched by the retired Frame family, including generated artwork and exports.
 - Validate the family naming/verbs/UK-English style and the website IA for the new six-family map.

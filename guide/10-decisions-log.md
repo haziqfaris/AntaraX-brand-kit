@@ -4,6 +4,11 @@ Owner decisions that shape the brand, newest first. Add to the top; never rewrit
 
 ## 3 November 2026
 
+- **Nalar's colour and icon** (owner, open question 27, after six rounds of directions shown beside the six families):
+  - **Colour: deep gold** `#B48B02`, with tint `#F9EED4` and dark `#7E6105` (`color.family.nalar`, tokens 1.12.0). It is the one hue no other family uses. The icon is 3.17:1 on white, the dark shade 5.06:1 on the tint, and the colour reads on the dark ground (5.8:1). Its tint and dark were set by contrast rather than the 86%/55% rule.
+  - **Icon: Cabang, melenggok.** A fork run backwards: two premises join into one conclusion. Two tapering branches, one swaying in a gentle S and a little taller, meet one stem, and the conclusion is the dot below. The asymmetry keeps it from reading as a face inside the A; the curve keeps it from reading as a tick. `assets/families/nalar-icon.svg` and `nalar-icon-small.svg` (24 px and below), in `famicons.json`, drawn by `tools/build-nalar-icon.py`.
+  - Readings to accept: a fork can also mean "choose", Tide's verb, so the badge (Nalar · Reason) carries the meaning; and a V over a dot can read as a medal, which the small drawing's longer stem counters.
+  - Still open (11, 27): Nalar's BaTech composition and motifs, and distinct AwanGan and BumiNyata product marks.
 - **Six product layers** (owner): everything AntaraX runs sits in one of six layers, from what customers see down to what REKA runs it with: **L1 Front door** (antarax.ai), **L2 Products** (the business apps, by family), **L3 Intelligence** (the Nalar family: AwanGan, BumiNyata), **L4 Platform** (Lapisan, the API gateway, AntaraX email), **L5 Operations** (AXLE R8 Shen, each product's AXLE, YaraOne, Gauge) and **L6 REKA's own** (REKA Discovery, peREKA, Heuristiks, RESAM). Layers are for REKA's planning, the Product Register and AXLE R8 Shen; customers still meet families and problems, never layers. One layer per item, and a layer is not a dependency. Full rules and the placing test: [17 Product layers](17-product-layers.md).
 - **The six-family classification of 27 October is now the current text of this kit** (owner): it had been recorded on a branch only. Nothing else in that decision changes; its open questions (27 to 30 in 11) stand.
 

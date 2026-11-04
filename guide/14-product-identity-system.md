@@ -34,12 +34,12 @@ Family        what kind of work          Tide: Optimize, "Read what's coming."
 | Tide · Optimize | crescent with a dot | Janka | the J that never closes | **padi** | Reading the harvest before it comes |
 | Tide · Optimize | | Angka | the sheet-stack face | **congkak** | Counting where it all goes |
 | Tide · Optimize | | Tinara | the signal | **kerawang** | One path found in the noise |
-| Nalar · Reason | Icon pending | AwanGan | Product mark pending | **pending** | Managed cloud AI |
-| Nalar · Reason | Icon pending | BumiNyata | Product mark pending | **pending** | Private/on-premises AI |
+| Nalar · Reason | swaying fork with a dot (Cabang) | AwanGan | Product mark pending | **pending** | Managed cloud AI |
+| Nalar · Reason | | BumiNyata | Product mark pending | **pending** | Private/on-premises AI |
 
 What each link gives:
 
-- **The family gives the look.** It sets the family icon, the BaTech colour pair the motif is drawn in, and the shape its BaTech takes inside the product (see "BaTech by family"). **Exception during migration:** AX Frame retains its existing mark, product blue and `intan` motif after joining Loom. Nalar's colour, icon and BaTech composition are not yet approved.
+- **The family gives the look.** It sets the family icon, the BaTech colour pair the motif is drawn in, and the shape its BaTech takes inside the product (see "BaTech by family"). **Exception during migration:** AX Frame retains its existing mark, product blue and `intan` motif after joining Loom. Nalar's colour (deep gold `#B48B02`) and icon (Cabang, a swaying fork with a dot) were chosen on 3 November 2026; its BaTech composition and motifs are not yet approved.
 - **The logo says who.** It is fixed and shown small on every screen, in the product's own colours.
 - **The motif says what the product does.** It appears rarely: in empty states, at signature moments and in the loader. It is drawn in the family pair and comes from the family's niche.
 - **The product is what people buy.** It has its own name, logo and palette, and is credited "by AntaraX".
@@ -100,13 +100,13 @@ Three kinds of icon, with three different rules:
 
 | Kind | Different per | Where | Rule |
 |---|---|---|---|
-| **Family icon** | family | inside an A-mark when distinctive, family badges on antarax.ai, Families page | Six current families: Ripple, Tide, Loom, Edge, Motion, Nalar. The Nalar icon and colour are pending. The former Frame symbol remains legacy AX Frame product identity rather than a seventh family. |
+| **Family icon** | family | inside an A-mark when distinctive, family badges on antarax.ai, Families page | Six current families: Ripple, Tide, Loom, Edge, Motion, Nalar. Nalar's icon is Cabang, in deep gold (3 November 2026). The former Frame symbol remains legacy AX Frame product identity rather than a seventh family. |
 | **Product icon** (app tile, favicon) | product | home screens, browser tabs, app stores | The product's logo on the shared tile (12). Two products never share a tile |
 | **Interface icons** | nothing: the same everywhere | buttons, menus, tables, feature introductions | One line set for every product (12, Elements; 60 drawn in `assets/icons/features/`, built by `tools/build-feature-icons.mjs`). Someone moving from Janka to Angka finds Settings, Export and Search drawn the same way. The product's colour reaches an icon only through state (selected, active) |
 
 Two consequences:
 
-- **Distinct product marks:** no two products may share an indistinguishable A + family icon. **AX Frame and Cebis Loom now share the Loom family**, but must retain different existing product marks while a future family treatment is designed. Nalar products need distinct marks and an approved family icon before asset generation. Do not automatically change product logos when changing family membership.
+- **Distinct product marks:** no two products may share an indistinguishable A + family icon. **AX Frame and Cebis Loom now share the Loom family**, but must retain different existing product marks while a future family treatment is designed. Nalar's family icon is approved (3 November 2026); AwanGan and BumiNyata still need distinct product marks before asset generation, since two products cannot share the same A with the same icon. Do not automatically change product logos when changing family membership.
 - **Interface icons never carry motifs or family shapes.** A family is shown by its icon, its colour pair and its BaTech composition, never by restyling the controls people use.
 
 ## BaTech by family
@@ -126,7 +126,7 @@ Each family's BaTech takes **its own shape**, so a glance at a sign-in screen or
 | Ripple | **Rings** | motifs on arcs spreading out, smaller as they travel |
 | Edge | **Field** | a loose grid of motifs seen through one soft spot, like a sensor's view |
 | Loom | **Thread** | one awan larat thread wandering across, motifs strung on it |
-| Nalar | **Pending** | No approved BaTech composition, icon, palette or motif; visual design needed |
+| Nalar | **Pending** | Colour and icon chosen (3 November 2026); BaTech composition and motifs still to be designed |
 | Motion | **Trail** | motifs rising along a path, growing toward the leading end; under 24px they become dots |
 | Tide | **Swell** | the family's corak rising in a wave, fading upward |
 

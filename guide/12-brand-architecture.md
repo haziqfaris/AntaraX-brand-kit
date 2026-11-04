@@ -94,7 +94,7 @@ BaTech's rule is "use the palette and the family pairs; never recolour with off-
 | Ripple | `#08B0B3` | `#0B6E72` | `#D9F3F2` |
 | Edge | `#12B76A` | `#0B7A47` | `#DCF5E8` |
 | Loom | `#4904B3` | `#33027D` | `#EEE6FA` |
-| Nalar | **Pending owner choice** | **Pending** | **Pending** |
+| Nalar | `#B48B02` | `#7E6105` | `#F9EED4` |
 | Motion | `#FC5D04` | `#A83A00` | `#FFE9DC` |
 | Tide | `#E9579D` | `#9C2B63` | `#FDE8F1` |
 

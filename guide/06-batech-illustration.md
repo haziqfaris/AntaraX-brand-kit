@@ -32,6 +32,7 @@ Product apps never use a cloth, medallion or full-colour corak area. They use Ba
 | Loom | `#4904B3` | tenun, jaring, komet, awan larat (sources woven together, records moving between systems) | Loom: tenun |
 | Motion | `#FC5D04` | cengkih, tanjung, percik, gasing | Motion: cengkih |
 | Tide | `#E9579D` | bunga raya, padi, congkak, kerawang, gelombang | Janka: padi · Angka: congkak · Tinara: kerawang |
+| Nalar | `#B48B02` | **to be drawn** (colour and icon chosen 3 November 2026; motifs and composition still open, 11) | AwanGan, BumiNyata: pending |
 
 Each family cloth packs only its own motifs in its own colours, as a **mirrored medallion** layout (a family swatch). Each closed pilot landing page uses its family swatch as the hero picture, with a product mock (example data) laid over it.
 

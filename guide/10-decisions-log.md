@@ -2,6 +2,13 @@
 
 Owner decisions that shape the brand, newest first. Add to the top; never rewrite history. Earlier strategy changes are in `reference/strategy/` (playbook amendments v0.3–v0.5, RECONCILIATION).
 
+## 4 November 2026
+
+- **Tiko's signature motif is gelombang, used subtly** (owner, from the Tiko pilot build). Tiko (working name, private pilot, Tide · Decide; its registration as a product is still open) takes **gelombang**, the Tide wave no other product uses, for its tagline "Make every move count".
+  - **Subtle by the owner's choice:** inside Tiko the motif appears in the **Quiet** strength (one light ink, `#C5CCF7`, no fills), small, and only where guide 12 allows a motif: empty states and its signature moment. The family pair version exists for covers and the website.
+  - **Signature moment:** when a deal is won, the wave draws on once beside the win, then rests. Nothing moves for people who turn motion off.
+  - **Files:** `assets/products/tiko/tiko-motif.svg` (family pair) and `tiko-motif-quiet.svg` (Quiet), built by `tools/build-product-motifs.mjs` from the official BaTech drawing (`antarax-ai` `prototype/site/src/batech.mjs`, `fcf47af`).
+
 ## 3 November 2026
 
 - **Nalar's colour and icon** (owner, open question 27, after six rounds of directions shown beside the six families):

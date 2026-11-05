@@ -99,6 +99,7 @@ Edge senses and represents the physical world; Motion governs moving systems; Na
 | Angka | Customer product | Tide | Existing closed pilot, standalone app |
 | Lapis by Angka | Companion product embedded in Angka | Tide via Angka | Independently usable, including without Angka; separate entitlement and API as recorded in Angka sheet |
 | Tinara | Customer product | Tide | Existing closed pilot |
+| Tiko | Customer product (working name) | Tide | Private pilot, registered 5 November 2026; no public launch claim |
 | Cebis Loom | Customer-facing managed data product | Loom | By arrangement; not automation |
 | AX Frame | Customer product | Loom | Existing closed pilot; own app and roadmap unchanged |
 | PLExyz | Spatial product line/master brand | Edge | Umbrella identity, not a sixth replacement product |

@@ -2,6 +2,13 @@
 
 Owner decisions that shape the brand, newest first. Add to the top; never rewrite history. Earlier strategy changes are in `reference/strategy/` (playbook amendments v0.3–v0.5, RECONCILIATION).
 
+## 5 November 2026
+
+- **Tiko is registered as a product, id `tiko`** (owner, Tiko decision Q-01, before its pilot). It answers what 4 November left open. Tiko (working name, private pilot) is a CRM for Malaysian SMEs in Tide · Decide, an own-mark product, with the same id in Lapisan's registry and in Heuristiks' REKA profile.
+  - **Its palette is the one its app was built with** (`antarax-tiko` `src/app/globals.css` and `src/styles/tiko-shell.css`), added to `tools/build-product-palettes.mjs` with those colours pinned to their steps: purple `#7A5FFF`, action `#6A4DF5` (5.26:1 with white), hover `#5B3FE0`, lavender `#EDEBFF` with `#4B2FC9` on it, orange `#FB9800`, ground `#FAF9FC`, neutrals `#FAF9FC`, `#F4F2FA`, `#E7E4F0`, `#D6D2E4`. Chart set: its action, then orange, aqua, blue, magenta (passes the palette validator light and dark). Tokens 1.13.0: `color.product.tiko`, `--ax-tiko*` and Tiko's shell slots; no existing token changed.
+  - **Its bar takes every shell default** (floating, 24px and 20px), so `shell.bar.byProduct` records it in its note and lists no exception.
+  - **Guide 02** lists it as a **private pilot**: nowhere on antarax.ai, no launch claim. Still open (11, question 31): its one-line question and public status, its legal name, and whether its text and status colours follow its own spec or the shared core.
+
 ## 4 November 2026
 
 - **Tiko's signature motif is gelombang, used subtly** (owner, from the Tiko pilot build). Tiko (working name, private pilot, Tide · Decide; its registration as a product is still open) takes **gelombang**, the Tide wave no other product uses, for its tagline "Make every move count".

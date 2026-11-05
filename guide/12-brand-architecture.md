@@ -34,7 +34,7 @@ REKA Inisiatif Sdn Bhd            the company: R&D, Managed AI, legal entity
 
 | Kind | Products | Mark | Primary action | Accent |
 |---|---|---|---|---|
-| **Own-mark** | PLExyz products, Janka, Angka, Tinara | The product's own logo | The product's own colour (its dark shade if it fails 4.5:1 with white) | The product's own colours |
+| **Own-mark** | PLExyz products, Janka, Angka, Tinara, Tiko | The product's own logo | The product's own colour (its dark shade if it fails 4.5:1 with white) | The product's own colours |
 | **A-mark** | Yara, AX Frame, Cebis Loom, AX Motion, and eligible new products | Existing AntaraX A treatments, each requiring a **distinct product mark**; preserve existing identities | Product colour | Family identity where approved |
 
 An own-mark product retains its recognised identity. An A-mark can use the family icon only if it remains distinctive. **AX Frame and Cebis Loom both belong to Loom and keep separate current logos and product palettes.** AwanGan and BumiNyata belong to Nalar; their new family icon, colour and individual mark design remain pending.

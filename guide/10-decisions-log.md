@@ -2,6 +2,11 @@
 
 Owner decisions that shape the brand, newest first. Add to the top; never rewrite history. Earlier strategy changes are in `reference/strategy/` (playbook amendments v0.3–v0.5, RECONCILIATION).
 
+## 7 November 2026
+
+- **Jentera is a third-party partner, not an AntaraX product** (owner). Jentera.ai is a different company; AntaraX may use its AI agent APIs, through AwanGan's provider pass-through. The 27 October text that placed "Jentera" as a possible Ripple product is corrected in 02, 11, 16 and 17. **AntaraX's own AI agents** stay a Ripple candidate, with no name, built inside Tiko first.
+- **Nia is withdrawn as a product name** (owner, Tiko decision D-102). Its enquiry-to-quote workflow stays in Tiko as **Enquiries**, on every plan. Knowledge used by AI is kept by the product that owns it (Tiko); AwanGan processes it and keeps nothing.
+
 ## 5 November 2026
 
 - **Tiko is registered as a product, id `tiko`** (owner, Tiko decision Q-01, before its pilot). It answers what 4 November left open. Tiko (working name, private pilot) is a CRM for Malaysian SMEs in Tide · Decide, an own-mark product, with the same id in Lapisan's registry and in Heuristiks' REKA profile.

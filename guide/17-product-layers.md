@@ -28,7 +28,7 @@ Notes on placement:
 - **Nalar is the one family in L3.** Its products are sold by arrangement like any product, but their job is to supply AI to other products and to clients, so they sit under the business apps. AwanGan's second role, AntaraX's internal AI control plane, is recorded in antarax-api `docs/08-infrastructure.md` section 8.8; it does not move AwanGan to another layer.
 - **YaraOne is in L5**, not L2: it is an internal, Ripple-aligned support system, not a public product (16).
 - **Gauge and REKA Discovery** stay Ripple-aligned in colour and email (18 October 2026) and sit in L5 and L6 by what they are for.
-- **Candidates** (Jentera, HelAI, future robots and drones) are placed only when the owner approves them as products.
+- **Candidates** (AntaraX's own AI agents, HelAI, future robots and drones) are placed only when the owner approves them as products.
 
 ## Placing something new
 

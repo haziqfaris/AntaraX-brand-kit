@@ -75,7 +75,7 @@ Use these names, one-liners and questions exactly.
 | **Nalar** | **Reason** | AI model capabilities, runtime and deployment | **AwanGan, BumiNyata** | Icon: Cabang, a swaying fork with a dot, in deep gold `#B48B02` (3 November 2026). BaTech motif **not yet approved** |
 
 **Family roles and boundaries:**
-- **Ripple:** tasks, work orders, service requests and workflow automation. YaraOne is an *internal* Ripple-aligned support system; Jentera is a candidate, not a listed product.
+- **Ripple:** tasks, work orders, service requests and workflow automation. YaraOne is an *internal* Ripple-aligned support system; AntaraX's own AI agents are a candidate, not a listed product. Jentera is a third-party partner, not an AntaraX product.
 - **Tide:** Janka (inventory), Angka (finance), Tinara (B2B sales), Tiko (customer relationships and deals, private pilot). Lapis by Angka is an independently usable companion within Tide, not a renamed Lapisan module.
 - **Loom:** Cebis Loom prepares/structures business data; AX Frame organises a digital estate, dependencies, expenses and renewals. They remain separate products and repositories. Loom does not own general-purpose inference or business workflow execution.
 - **Edge:** real-world sensing, spatial models, occupancy and site intelligence; PLExyz is the master product line, with Grid and Crowd. Edge does not own autonomous navigation or general-purpose AI chips.

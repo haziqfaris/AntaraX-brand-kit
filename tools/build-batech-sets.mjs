@@ -5,7 +5,7 @@
 //   Strengths: quiet (BaTech's light ink, on white or near-white), white (white at 32%, on a panel in the product's
 //   own colour), colour (the family pair; AntaraX mixes every family's pair).
 // Each family keeps its own shape in every variation: Ripple rings, Edge field, Frame corners, Loom thread, Motion
-// trail, Tide swell; AntaraX scatters the whole vocabulary like a constellation. Every rule holds: official drawings
+// trail, Tide swell, Nalar sky and ground; AntaraX scatters the whole vocabulary like a constellation. Every rule holds: official drawings
 // ('orn' set, 'tech' flowers), mixed motifs from the niche, no straight cut, and the three cameos (Seth, the REKA mark,
 // the AntaraX A) once each, drawn large enough to find. Their places go to assets/batech/cameos.json.
 //   node tools/build-batech-sets.mjs ../antarax-ai/prototype/site/src/batech.mjs
@@ -22,12 +22,18 @@ const OUT = new URL('../assets/batech/', import.meta.url);
 const FAM = {
   ripple: ['#08B0B3', '#0B6E72'], edge: ['#12B76A', '#0B7A47'], frame: ['#074AF8', '#0533A8'],
   loom: ['#4904B3', '#33027D'], motion: ['#FC5D04', '#A83A00'], tide: ['#E9579D', '#9C2B63'],
+  nalar: ['#B48B02', '#7E6105'], 'nalar-sky': ['#B48B02', '#7E6105'], 'nalar-ground': ['#B48B02', '#7E6105'],
 };
-const NICHE = { ...B.MY_NICHE, tide: B.MY_NICHE.unnamed, antarax: B.MY_WEAVE };
+// Nalar's niche (owner, 11 November 2026): five official drawings no other family uses. batech.mjs has no Nalar niche yet,
+// so it is named here; AwanGan's set leans to the sky (nalar-sky), BumiNyata's to the ground (nalar-ground).
+const NALAR = ['kubit', 'ketupat', 'pelita', 'dacing', 'rebung'];
+const NICHE = { ...B.MY_NICHE, tide: B.MY_NICHE.unnamed, antarax: B.MY_WEAVE, nalar: NALAR, 'nalar-sky': NALAR, 'nalar-ground': NALAR };
 const famPal = (f) => B.palette(FAM[f][1], FAM[f][0], '#FFFFFF', FAM[f][1], FAM[f][0], '#FFFFFF', 2);
 const FAMKEYS = Object.keys(FAM);
+// AntaraX's colour set keeps the colours it was drawn with: a motif outside the first six niches is drawn in Frame's pair
+const MIXKEYS = ['ripple', 'edge', 'frame', 'loom', 'motion', 'tide'];
 // which family a motif belongs to, so AntaraX's colour version draws each motif in its own family's pair
-const famOfMotif = (k) => FAMKEYS.find((f) => NICHE[f].includes(k)) || 'frame';
+const famOfMotif = (k) => MIXKEYS.find((f) => NICHE[f].includes(k)) || 'frame';
 const STRENGTH = {
   quiet: () => B.mono('#C5CCF7', 'none', 1.8),
   white: () => B.mono('#FFFFFF', 'none', 1.8),
@@ -60,6 +66,8 @@ function layout(brand, variant) {
     for (let i = 1; i < P.length; i++) { acc += Math.hypot(P[i][0] - P[i - 1][0], P[i][1] - P[i - 1][1]); if (acc > every) { acc = 0; side = -side; const r = 15 + R() * 7; dots.push([P[i][0], P[i][1]]); add(P[i][0], P[i][1] + side * (r + 4), r); } }
     extra = (ink) => `<path d="${d}" fill="none" stroke="${ink}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>` + dots.map(([x, y]) => `<circle cx="${f(x)}" cy="${f(y)}" r="3" fill="${ink}"/>`).join('');
   };
+  // sky and ground: rows of small motifs along the top, larger ones along the bottom, the middle left clear
+  const sky = (x0, y0, x1, y1, step, rmin, rmax, keep = 0.75) => { for (let y = y0; y < y1; y += step) for (let x = x0 + ((Math.round((y - y0) / step)) % 2) * step / 2; x < x1; x += step) if (R() < keep) add(x + R() * 14 - 7, y + R() * 10 - 5, rmin + R() * (rmax - rmin)); };
   const trail = (pt) => { for (let t = 0.02; t < 0.97;) { const [x, y] = pt(t), r = 4 + 26 * t, [x2, y2] = pt(t + 0.01); if (r < 12) dots.push([x, y, r / 3]); else items.push({ k: k(), x, y, r, a: (Math.atan2(y2 - y, x2 - x) * 180) / Math.PI + 90 }); t += (2.3 * Math.max(r, 8)) / Math.hypot(W, H); } extra = (ink) => dots.map(([x, y, r]) => `<circle cx="${f(x)}" cy="${f(y)}" r="${f(r)}" fill="${ink}"/>`).join(''); };
   const S = {
     ripple: {
@@ -91,6 +99,21 @@ function layout(brand, variant) {
       panel: () => { puzzle = { W: 1280, H: 340, oy: H - 170 }; masks = 'wave-bottom'; cam = [[W * 0.2, H - 50], [W * 0.5, H - 40], [W * 0.8, H - 55]]; },
       band: () => { puzzle = { W: 2400, H: 300, oy: H - 150 }; masks = 'wave-band'; cam = [[W * 0.25, H * 0.62], [W * 0.5, H * 0.7], [W * 0.75, H * 0.6]]; },
       spot: () => { puzzle = { W: 800, H: 460, oy: H - 230 }; masks = 'wave-circle'; cam = [[W * 0.32, H * 0.7], [W * 0.52, H * 0.78], [W * 0.7, H * 0.66]]; },
+    },
+    nalar: { // sky and ground (owner, 11 November 2026): a light sky above, solid ground below, the middle clear
+      panel: () => { sky(34, 30, W, 100, 64, 12, 16, 0.75); sky(30, 290, W, H + 20, 58, 20, 28, 0.95); masks = [[linear(0, 0, 0, H, [[0, 1], [0.34, 0]])], [linear(0, 0, 0, H, [[0.6, 0], [0.85, 1]])]]; cam = [[W * 0.3, 40], [W * 0.62, H - 40], [W * 0.84, H - 70]]; },
+      band: () => { sky(24, 18, W, 52, 46, 8, 11, 0.7); sky(20, 150, W, H + 20, 46, 14, 20, 0.9); masks = [[linear(0, 0, 0, H, [[0, 1], [0.3, 0]]), linear(0, 0, W, 0, [[0, 0], [0.1, 1], [0.9, 1], [1, 0]])], [linear(0, 0, 0, H, [[0.6, 0], [1, 1]]), linear(0, 0, W, 0, [[0, 0], [0.1, 1], [0.9, 1], [1, 0]])]]; cam = [[W * 0.3, 30], [W * 0.55, H - 30], [W * 0.75, H - 34]]; },
+      spot: () => { ring(W / 2, H / 2, [[150, 12]], 0.35, Math.PI - 0.35); ring(W / 2, H / 2, [[120, 22], [160, 18]], Math.PI + 0.25, 2 * Math.PI - 0.25); masks = [[radial(W / 2, H / 2, 210, [[0, 1], [0.8, 0.9], [1, 0]])]]; cam = [[W / 2, H / 2 - 150], [W / 2 - 60, H / 2 + 140], [W / 2 + 70, H / 2 + 140]]; },
+    },
+    'nalar-sky': { // AwanGan's weight: more sky
+      panel: () => { sky(34, 28, W, 160, 60, 13, 19, 0.85); sky(30, 350, W, H + 20, 56, 16, 20, 0.6); masks = [[linear(0, 0, 0, H, [[0, 1], [0.48, 0]])], [linear(0, 0, 0, H, [[0.8, 0], [1, 0.8]])]]; cam = [[W * 0.3, 40], [W * 0.62, 90], [W * 0.84, H - 30]]; },
+      band: () => { sky(24, 18, W, 90, 46, 9, 13, 0.8); sky(20, 176, W, H + 20, 46, 12, 15, 0.6); masks = [[linear(0, 0, 0, H, [[0, 1], [0.5, 0]]), linear(0, 0, W, 0, [[0, 0], [0.1, 1], [0.9, 1], [1, 0]])], [linear(0, 0, 0, H, [[0.78, 0], [1, 0.8]]), linear(0, 0, W, 0, [[0, 0], [0.1, 1], [0.9, 1], [1, 0]])]]; cam = [[W * 0.3, 30], [W * 0.55, 60], [W * 0.75, H - 20]]; },
+      spot: () => { ring(W / 2, H / 2, [[110, 15], [160, 12]], 0.25, Math.PI - 0.25); ring(W / 2, H / 2, [[150, 16]], Math.PI + 0.6, 2 * Math.PI - 0.6); masks = [[radial(W / 2, H / 2, 210, [[0, 1], [0.8, 0.9], [1, 0]])]]; cam = [[W / 2, H / 2 - 110], [W / 2 - 80, H / 2 - 120], [W / 2, H / 2 + 150]]; },
+    },
+    'nalar-ground': { // BumiNyata's weight: more ground
+      panel: () => { sky(34, 26, W, 70, 66, 10, 13, 0.55); sky(30, 240, W, H + 20, 56, 20, 30, 0.97); masks = [[linear(0, 0, 0, H, [[0, 0.8], [0.2, 0]])], [linear(0, 0, 0, H, [[0.52, 0], [0.8, 1]])]]; cam = [[W * 0.3, 34], [W * 0.62, H - 40], [W * 0.84, H - 90]]; },
+      band: () => { sky(24, 14, W, 40, 50, 7, 9, 0.5); sky(20, 110, W, H + 20, 44, 15, 22, 0.95); masks = [[linear(0, 0, 0, H, [[0, 0.8], [0.22, 0]]), linear(0, 0, W, 0, [[0, 0], [0.1, 1], [0.9, 1], [1, 0]])], [linear(0, 0, 0, H, [[0.45, 0], [1, 1]]), linear(0, 0, W, 0, [[0, 0], [0.1, 1], [0.9, 1], [1, 0]])]]; cam = [[W * 0.3, 22], [W * 0.55, H - 40], [W * 0.75, H - 50]]; },
+      spot: () => { ring(W / 2, H / 2, [[160, 10]], 0.6, Math.PI - 0.6); ring(W / 2, H / 2, [[80, 24], [130, 21], [175, 17]], Math.PI + 0.2, 2 * Math.PI - 0.2); masks = [[radial(W / 2, H / 2, 210, [[0, 1], [0.8, 0.9], [1, 0]])]]; cam = [[W / 2, H / 2 - 160], [W / 2 - 60, H / 2 + 100], [W / 2 + 70, H / 2 + 150]]; },
     },
     antarax: {
       // a constellation: the whole vocabulary scattered loosely, fading toward the middle where the logo sits

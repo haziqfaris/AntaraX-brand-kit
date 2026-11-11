@@ -57,6 +57,7 @@ Never show a personal address, "contact your REKA account manager" unless one is
 - On invoices and receipts: the product then the plan, "Janka Galaxy".
 - A trial is a period on a plan, and a closed pilot is a stage, not a plan. Neither is a plan name.
 - **Angka keeps its own names** (Solo, Business, Team, Enterprise, and Lapis Business): its plans are live with customers and written for owner-run businesses.
+- **Tiko takes Terra · Nova · Galaxy** for its Starter, Team and Business plans (owner, 11 November 2026). Only the names people see change; the plan ids stay. Tiko's first plan seats two Owners or Members while Terra is "for one person": either its descriptor or its seats change before the plans are sold (11, question 35).
 - Names never reuse a line, area, motif or family name. That is why there is no "Orbit" or "Pulse" plan.
 - Prices stay the product's own; names are shared. Mappings are in the audit below.
 

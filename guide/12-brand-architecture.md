@@ -34,10 +34,10 @@ REKA Inisiatif Sdn Bhd            the company: R&D, Managed AI, legal entity
 
 | Kind | Products | Mark | Primary action | Accent |
 |---|---|---|---|---|
-| **Own-mark** | PLExyz products, Janka, Angka, Tinara, Tiko | The product's own logo | The product's own colour (its dark shade if it fails 4.5:1 with white) | The product's own colours |
+| **Own-mark** | PLExyz products, Janka, Angka, Tinara, Tiko, AwanGan, BumiNyata | The product's own logo | The product's own colour (its dark shade if it fails 4.5:1 with white) | The product's own colours |
 | **A-mark** | Yara, AX Frame, Cebis Loom, AX Motion, and eligible new products | Existing AntaraX A treatments, each requiring a **distinct product mark**; preserve existing identities | Product colour | Family identity where approved |
 
-An own-mark product retains its recognised identity. An A-mark can use the family icon only if it remains distinctive. **AX Frame and Cebis Loom both belong to Loom and keep separate current logos and product palettes.** AwanGan and BumiNyata belong to Nalar. Nalar's colour (deep gold) and icon (Cabang) were chosen on 3 November 2026; each product's own mark, palette and motif are still to be designed (11, question 27).
+An own-mark product retains its recognised identity. An A-mark can use the family icon only if it remains distinctive. **AX Frame and Cebis Loom both belong to Loom and keep separate current logos and product palettes.** AwanGan and BumiNyata belong to Nalar. Nalar's colour (deep gold) and icon (Cabang) were chosen on 3 November 2026. On 11 November both took their own marks (AwanGan the cloud in orbit, BumiNyata two peaks over the ground), their palettes (AwanGan in Nalar gold, BumiNyata in clay) and their motifs (ketupat, pucuk rebung). The A with Cabang stays the Nalar family's mark and no product's.
 
 ## Product look and AntaraX look
 
@@ -51,6 +51,9 @@ An own-mark product retains its recognised identity. An A-mark can use the famil
 | Tinara | Garnet and gold; the signal logo (14) |
 | AX Frame | The breathing cube halo |
 | Yara | The A with the Ripple wave; teal |
+| AwanGan | The cloud in orbit; Nalar gold, navy ring, cyan moon |
+| BumiNyata | Two peaks over the ground and what lies beneath; clay and navy |
+| Tiko | Tiko Classic's head; purple with a Tide pink crest |
 
 **The AntaraX layer is the same in every product**, and small enough that it never changes how the product looks:
 
@@ -82,8 +85,8 @@ Each product has one signature motif, from its family's niche. The wording is Ba
 | Edge | PLExyz Crowd | **orbit** | wireless | Signals counted, never faces |
 | Loom | AX Frame | **intan** (diamond, retained as product motif) | one world, seen many ways | One world, seen many ways |
 | Loom | Cebis Loom | **tenun** (weave) | cables over and under | The weave itself |
-| Nalar | AwanGan | **pending** | Cloud AI execution | To be designed |
-| Nalar | BumiNyata | **pending** | Private AI execution | To be designed |
+| Nalar | AwanGan | **ketupat** (woven parcel), owner, 11 November 2026 | a parcel woven shut, one square lit | Only what is needed shows |
+| Nalar | BumiNyata | **pucuk rebung** (bamboo shoot), owner, 11 November 2026 | a shoot rising from its own ground | It grows where it is planted |
 | Motion | AX Motion | **bunga cengkih** | a quadcopter seen from above | Every vehicle, seen from above |
 
 ### Colour: the family pair, never the product's colours
@@ -235,6 +238,14 @@ Own marks stay as they are. A mark may be refreshed when it has a problem (trace
 
 Janka's mark follows these rules (navy ink, sparkle orange and cyan).
 
+### A character as a mark
+
+Tiko Classic's head is Tiko's mark (owner, 11 November 2026). A mark is a logo, so 07's ban on mascots as decoration does not touch it; the full character is held to that ban:
+
+- **The head** is the logo: lockups, the app tile, the favicon, the chip in the shell (`assets/products/tiko/`).
+- **The full character** appears only where it does a job, always with words: onboarding steps, capture review, empty states, the won moment.
+- **Never** on boards, tables, figures, critical alerts or reports, and never in place of the AI sparkle on AI work.
+
 ## Lockups
 
 ```
@@ -281,6 +292,9 @@ Own accent, for the primary action, selection, charts and identity moments, with
 | PLExyz Grid | violet `#2C09B2`; zones `#4FD7D1` `#FD9001` `#FD4F85` `#CBB6FA` for data | `#E1DDF4` | `#180562` | `#2C09B2` |
 | Angka | plum `#6B3F6B` | `#EAE4EA` | `#3B233B` | `#6B3F6B` |
 | Tinara | garnet `#7A1E3C`; gold `#D6A84F` for highlights | `#FEF4F6` | `#511A2A` | `#7A1E3C` |
+| Tiko | purple `#7A5FFF`; Tide pink `#E9579D` for highlights | `#EDEBFF` | `#4B2FC9` | `#6A4DF5` |
+| AwanGan | Nalar gold `#B48B02` | `#F5ECD7` | `#574201` | `#8D6C01` |
+| BumiNyata | clay `#8A5A2E`; Nalar gold second | `#F7EAE0` | `#603C1A` | `#8A5A2E` |
 | Cebis Loom, AX Motion | family colour | see tokens | see tokens | the family colour's action step |
 
 Full palettes (11-step scales, roles, chart sets, dark mode) are in 14 and `tokens/product-palettes.json`. On antarax.ai the family colour leads (05). Inside a product's own app, the product's colours lead; BaTech motifs inside it keep their family pair.
@@ -302,6 +316,7 @@ Full palettes (11-step scales, roles, chart sets, dark mode) are in 14 and `toke
 - "Powered by ‹tool›" is fine where a separate tool really powers part of a product, as YaraOne powers the front office. What is never written is "Powered by AntaraX": inside an AntaraX product it is redundant (owner, 16 October 2026).
 - Never: "Powered by AntaraX", "by REKA", "Tinara by REKA", "A product of REKA Inisiatif", "REKA Intelligence", "REKA" in REKA orange inside a product, "AntaraX AI".
 - "from REKA" is reviewed on 23 July 2027.
+- **AwanGan and BumiNyata use the standard lines** (owner, 11 November 2026). Where AwanGan runs AI inside another product, that work carries the sparkle and no "Powered by AwanGan": AwanGan's role inside AntaraX products is its control-plane job, which customers do not buy (16).
 
 ## Sub-brands and shared names
 

@@ -16,8 +16,10 @@ const OUT = new URL('../assets/', import.meta.url);
 const FAM = {
   ripple: ['#08B0B3', '#0B6E72', '#D9F3F2'], edge: ['#12B76A', '#0B7A47', '#DCF5E8'], frame: ['#074AF8', '#0533A8', '#E2EAFE'],
   loom: ['#4904B3', '#33027D', '#EEE6FA'], motion: ['#FC5D04', '#A83A00', '#FFE9DC'], tide: ['#E9579D', '#9C2B63', '#FDE8F1'],
+  nalar: ['#B48B02', '#7E6105', '#F9EED4'],
 };
-const NICHE = { ...B.MY_NICHE, tide: B.MY_NICHE.unnamed };
+// Nalar's niche (owner, 11 November 2026) is named here until batech.mjs has one (see build-batech-sets.mjs)
+const NICHE = { ...B.MY_NICHE, tide: B.MY_NICHE.unnamed, nalar: ['kubit', 'ketupat', 'pelita', 'dacing', 'rebung'] };
 const famPal = (f) => B.palette(FAM[f][1], FAM[f][0], '#FFFFFF', FAM[f][1], FAM[f][0], '#FFFFFF', 2);
 const QUIET = B.mono('#C5CCF7', 'none', 1.8);
 
@@ -27,6 +29,8 @@ const PRODUCTS = [
   ['yara', 'yara', 'awanlarat', 'ripple'], ['yara', 'yara-automation', 'sungai', 'ripple'], ['janka', 'janka', 'padi', 'tide'], ['angka', 'angka', 'congkak', 'tide'],
   ['tinara', 'tinara', 'kerawang', 'tide'], ['plexyz', 'grid', 'petak', 'edge'], ['plexyz', 'crowd', 'orbit', 'edge'],
   ['frame', 'frame', 'intan', 'frame'], ['tiko', 'tiko', 'gelombang', 'tide'],
+  // Nalar (owner, 11 November 2026): AwanGan's ketupat, only what is needed shows; BumiNyata's pucuk rebung, it grows where it is planted
+  ['awangan', 'awangan', 'ketupat', 'nalar'], ['buminyata', 'buminyata', 'rebung', 'nalar'],
 ];
 for (const [dir, name, key, fam] of PRODUCTS) {
   fs.mkdirSync(new URL(`products/${dir}/`, OUT), { recursive: true });

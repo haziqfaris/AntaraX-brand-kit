@@ -27,7 +27,13 @@ Nalar family (Reason). **By arrangement**; not installed at any customer yet (ve
 
 ## Mark, colour and motif
 
-**Still to design** (owner, 11 November 2026; 11, question 27). Until then the README and console use the Nalar icon and Nalar gold `#B48B02` as a stand-in, not a mark. No product palette and no BaTech motif yet.
+**Mark: two peaks over the ground** (owner, 11 November 2026), its own mark: clay peaks over a navy ground line, dark clay beneath and one sparkle orange highlight, the three levels of its antarax.ai page (up the mountain, on the ground, underground). Files: `assets/products/buminyata/buminyata-mark.svg`, `-small` (24px and below), `-white` (navy and dark grounds), `-mono`, and `assets/product-logos/buminyata*.svg`. The Nalar icon is no longer its stand-in.
+
+**Colour: clay** `#8A5A2E` (tanah liat, the ground it keeps everything on), with Nalar gold `#B48B02` second (owner, 11 November 2026). It passes 4.5:1 with white as it is (5.86:1), so it acts in its own colour, hovers in `#7B5028`, and writes on its tint `#F7EAE0` in `#603C1A`. On the dark ground it acts in `#B38054` (5.36:1). Clay is below the chart chroma floor, so its chart series is the richer clay `#94591E` (`#B47132` on dark), then blue, orange, magenta, violet. Palette: `tokens/product-palettes.json` (`buminyata`); tokens `color.product.buminyata`, `--ax-buminyata*`, and its shell slots.
+
+**Motif: pucuk rebung** (owner, 11 November 2026): a shoot rising from its own ground. It grows where it is planted, and nothing leaves. Nalar pair, `assets/products/buminyata/buminyata-motif.svg`; 72px in empty states. Its BaTech set is Nalar's sky and ground, leaning to the ground (`assets/batech/nalar-ground/`).
+
+**Credit:** the standard lines (12): "BumiNyata · by AntaraX" in the console, "BumiNyata by AntaraX, from REKA." on sign-in and reports.
 
 ## Type
 
@@ -35,4 +41,4 @@ The shared core: Poppins, and JetBrains Mono with tabular figures for every numb
 
 ## Open
 
-In 11: BumiNyata's own mark, palette and motif (question 27), and Nalar's BaTech composition.
+Nothing: its mark, palette, motif and credit were decided on 11 November 2026 (10).

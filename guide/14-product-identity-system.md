@@ -15,7 +15,7 @@ The visual guide (`guide/product-brands.html`) shows every part of it.
 Every product sits in one chain. Each link has one job, and no link does another's job.
 
 ```
-Family        what kind of work          Tide: Optimize, "Read what's coming."
+Family        what kind of work          Tide: Decide
  ├─ gives     the family icon, the BaTech colour pair and the composition shape
  └─ Product   the brand customers buy    Janka
      ├─ Logo  who it is                  the J that never closes
@@ -31,9 +31,9 @@ Family        what kind of work          Tide: Optimize, "Read what's coming."
 | Loom · Structure | Legacy four corners for AX Frame | AX Frame | **Existing A + four-corner product mark retained** | **intan** | One world, seen many ways |
 | Loom · Structure | woven bars | Cebis Loom | The A with the Loom icon (drawn) | **tenun** | The weave itself |
 | Motion · Navigate | split bolt | AX Motion | the A with the Motion icon (drawn) | **bunga cengkih** | Every vehicle, seen from above |
-| Tide · Optimize | crescent with a dot | Janka | the J that never closes | **padi** | Reading the harvest before it comes |
-| Tide · Optimize | | Angka | the sheet-stack face | **congkak** | Counting where it all goes |
-| Tide · Optimize | | Tinara | the signal | **kerawang** | One path found in the noise |
+| Tide · Decide | crescent with a dot | Janka | the J that never closes | **padi** | Reading the harvest before it comes |
+| Tide · Decide | | Angka | the sheet-stack face | **congkak** | Counting where it all goes |
+| Tide · Decide | | Tinara | the signal | **kerawang** | One path found in the noise |
 | Nalar · Reason | swaying fork with a dot (Cabang) | AwanGan | Product mark pending | **pending** | Managed cloud AI |
 | Nalar · Reason | | BumiNyata | Product mark pending | **pending** | Private/on-premises AI |
 
@@ -358,7 +358,7 @@ Most of it, yes. Some of it is product design, kept here because there is no pro
 
 | Part | Brand or product design | Why it is here |
 |---|---|---|
-| The chain, logo vs motif, family icons, sub-product naming | Brand | Without them, nine products look like nine companies, or like one product repeated |
+| The chain, logo vs motif, family icons, sub-product naming | Brand | Without them, eleven products look like eleven companies, or like one product repeated |
 | BaTech by family | Brand | It is what makes a family recognisable at a glance |
 | Palettes | Both | The product colour is brand; scales, roles and chart sets are product design |
 | Loading states | Mostly product design | The signature loader is brand; the seven states keep products consistent to use |

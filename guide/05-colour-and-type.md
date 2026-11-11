@@ -21,7 +21,9 @@ Values live in [`tokens/tokens.json`](../tokens/tokens.json) and [`tokens/tokens
 
 ### Family colours
 
-Ripple `#08B0B3` · Edge `#12B76A` · Frame `#074AF8` · Loom `#4904B3` · Motion `#FC5D04` · Tide `#E9579D` · Nalar `#B48B02` (deep gold, 3 November 2026; its tint `#F9EED4` and dark `#7E6105` were set by contrast rather than the 86%/55% rule below).
+Ripple `#08B0B3` · Tide `#E9579D` · Loom `#4904B3` · Edge `#12B76A` · Motion `#FC5D04` · Nalar `#B48B02` (deep gold, 3 November 2026; its tint `#F9EED4` and dark `#7E6105` were set by contrast rather than the 86%/55% rule below).
+
+**AX Frame blue** `#074AF8` (tint `#E2EAFE`, dark `#0533A8`) was the Frame family's colour. Frame is not a family since 27 October 2026; the colour is AX Frame's own, kept with its intan motif (`color.product.frame` in the tokens; the CSS names `--ax-frame` stay).
 
 Each has a **tint** (86% toward white) for grounds and a **dark** (55%) for outlines and text on the tint (values in the tokens). Use a family colour:
 

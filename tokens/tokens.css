@@ -1,4 +1,4 @@
-/* AntaraX design tokens v1.13.0 (2026-11-05). Mirrors tokens.json; full product palettes in product-palettes.css. Import first, then build on the variables. */
+/* AntaraX design tokens v1.14.0 (2026-11-11). Mirrors tokens.json; full product palettes in product-palettes.css. Import first, then build on the variables. */
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap");
 
 :root {
@@ -18,7 +18,7 @@
   /* families: colour, tint (86% to white), dark (55%) */
   --ax-ripple: #08B0B3; --ax-ripple-tint: #D9F3F2; --ax-ripple-dark: #0B6E72;
   --ax-edge:   #12B76A; --ax-edge-tint:   #DCF5E8; --ax-edge-dark:   #0B7A47;
-  --ax-frame:  #074AF8; --ax-frame-tint:  #E2EAFE; --ax-frame-dark:  #0533A8;
+  --ax-frame:  #074AF8; --ax-frame-tint:  #E2EAFE; --ax-frame-dark:  #0533A8; /* not a family since 27 October 2026: AX Frame's own pair (intan), kept under its old name */
   --ax-loom:   #4904B3; --ax-loom-tint:   #EEE6FA; --ax-loom-dark:   #33027D;
   --ax-motion: #FC5D04; --ax-motion-tint: #FFE9DC; --ax-motion-dark: #A83A00;
   --ax-tide:   #E9579D; --ax-tide-tint:   #FDE8F1; --ax-tide-dark:   #9C2B63;

@@ -23,7 +23,7 @@ Reference lines:
 ## Style
 
 - **Sentence case** everywhere: headings, buttons, labels, navigation. No all-caps labels (mono labels for data only).
-- **British English** (organise, colour, optimise), except product family verb "Optimize" as set in the master logo file.
+- **British English** (organise, colour, optimise). The six family verbs (Operate, Decide, Structure, Perceive, Navigate, Reason) need no exception.
 - **No em dashes** in customer copy. Use a colon, a full stop or "and".
 - **Numbers** in JetBrains Mono when they are data (scores, counts, IDs); spelt naturally in prose.
 - **Headlines end with a full stop** when they are statements ("Request pilot access."), not when they are questions.

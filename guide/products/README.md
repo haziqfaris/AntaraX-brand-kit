@@ -11,11 +11,15 @@ Sheets were written on 11 October 2026 from an audit of each product's repositor
 | PLExyz Grid | Own-mark, REKA platform | Force field, shard and zone grid (kept) | Grid violet `#2C09B2` | Main | [plexyz.md](plexyz.md) |
 | PLExyz Trace | Own-mark, REKA platform | To be drawn in the PLExyz system | PLExyz | Module inside Janka | [plexyz.md](plexyz.md) |
 | PLExyz Crowd, Flow, Transit, Site, Ward, Yard | Own-mark, REKA platform | PLExyz system | PLExyz | Concepts (Crowd has a pilot app) | [plexyz.md](plexyz.md) |
-| AX Frame | A-mark | A + Frame icon | Frame `#074AF8` | Closed pilot | [frame.md](frame.md) |
+| AX Frame | A-mark, Loom family | A + its legacy Frame icon (kept) | AX Frame blue `#074AF8` | Closed pilot | [frame.md](frame.md) |
 | Angka | Own-mark | The sheet stack (kept) | Angka plum `#6B3F6B` | Closed pilot | [angka.md](angka.md) |
 | Tinara | Own-mark | The signal (new); kerawang is its motif | Tinara garnet `#7A1E3C`, gold | Closed pilot | [tinara.md](tinara.md) |
 | Cebis Loom | A-mark | A + Loom icon | Loom `#4904B3` | Managed service, by arrangement (replaces AX Loom, 25 October 2026) | [loom.md](loom.md) |
 | AX Motion | A-mark | A + Motion icon | Motion `#FC5D04` | Closed pilot, no app yet | [motion.md](motion.md) |
+| AwanGan | Nalar; mark to design | Nalar icon as a stand-in | Nalar gold `#B48B02` as a stand-in | By arrangement | [awangan.md](awangan.md) |
+| BumiNyata | Nalar; mark to design | Nalar icon as a stand-in | Nalar gold `#B48B02` as a stand-in | By arrangement | [buminyata.md](buminyata.md) |
+| YaraOne | Internal, Ripple-aligned | Its own | Jade `#087F5B` | Internal (L5) | [yaraone.md](yaraone.md) |
+| Tiko | Own-mark, Tide family | Tiko Classic (working) | Tiko purple `#6A4DF5` | Private pilot, working name; branding to finish | none yet (10, 4–5 November 2026) |
 
 **AX Motion** has no app yet, and Cebis Loom's app is early. Their sheets set out what is decided and what has to happen before an app is built. Like every product, they act in their own colour, with AntaraX blue as the focus ring.
 

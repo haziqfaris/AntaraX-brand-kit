@@ -17,9 +17,11 @@ These apply to the website and to every product UI. Reference implementation: `h
 
 ## Components
 
+- **Built with Astryx** (owner, 11 November 2026): every customer app and AXLE builds new products and new or reworked screens from Astryx, themed from this kit's palettes (Poppins and JetBrains Mono, the product's radii, the AntaraX blue focus ring, 44px touch controls). Astryx's own themes and spinners are never used. The rules are the Dashboard kit's `astryx/SPEC.md`.
+
 - **Buttons:** Poppins 600, 0.9375rem, sentence case, radius 12px, min-height 44px, 2px border. Primary: AntaraX blue. Ghost: transparent with blue text. Light: white on blue or navy panels. On a pilot or family page the primary may take the family colour.
 - **Section labels (owner, 14 October 2026):** none by default. A small label above a heading usually repeats the heading and reads as generated. Keep one only when it says something the heading doesn't: "Closed pilot", "Sources", "Illustrative scenario", "Experimental".
-- **Eyebrow and markers:** the one eyebrow a page keeps sits above its h1, in sentence case, marked with the **sparkle in the page's colour** (Yara teal, Janka orange, PLExyz green, Frame blue; AntaraX blue elsewhere). Never a diamond (intan) bullet, a rotated square or a dot as a marker; the sparkle stays still and never spins.
+- **Eyebrow and markers:** the one eyebrow a page keeps sits above its h1, in sentence case, marked with the **sparkle in the page's colour** (Yara teal, Janka orange, PLExyz green, AX Frame blue; AntaraX blue elsewhere). Never a diamond (intan) bullet, a rotated square or a dot as a marker; the sparkle stays still and never spins.
 - **Badges:** pill with the family colour and white text, followed by plain text, e.g. **Closed pilot** · Run as part of Managed AI.
 - **Cards:** white, radius 20px, hairline border, padding 22–24px, content-sized height; hover lifts 2–3px with a soft navy shadow.
 - **Panels:** radius 24–28px. Dark navy panels for Managed AI and "How the pilot works", with a numbered (01, 02…) mono step list.

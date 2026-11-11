@@ -1,6 +1,6 @@
 # Cebis Loom
 
-A-mark product in the Loom family (Synthesize). **Managed service, by arrangement** (owner, 25 October 2026). Cebis Loom replaces AX Loom: AntaraX's ETL platform for corporates, turning the data a business already has into clean tables and files for reports and AI. *Cebis* is Malay for a scrap or fragment: the pieces a business's data is in.
+A-mark product in the Loom family (Structure). **Managed service, by arrangement** (owner, 25 October 2026). Cebis Loom replaces AX Loom: AntaraX's ETL platform for corporates, turning the data a business already has into clean tables and files for reports and AI. *Cebis* is Malay for a scrap or fragment: the pieces a business's data is in.
 
 ## Brief
 
@@ -29,7 +29,7 @@ A-mark product in the Loom family (Synthesize). **Managed service, by arrangemen
 ## Name
 
 - Write **Cebis Loom** on the website and in sales material (owner, 25 October 2026); the app credits "Cebis · by AntaraX" (Cebis decision 0001). The family stays **Loom**.
-- Tagline: "Your business data, cleaned and ready." Family motto: "Weave it together."
+- Tagline: "Your business data, cleaned and ready." Family job: make data understandable (16).
 - Stop using: "AX Loom" (retired 25 October 2026); "Loom" on its own for the product; Loom for agents, workflows or automation; the verb "Orchestrate"; "waitlist".
 
 ## Where it came from

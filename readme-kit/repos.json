@@ -33,7 +33,7 @@
       "slug": "plexyz-grid",
       "repo": "haziqfaris/plexyz-grid",
       "name": "PLExyz Grid",
-      "eyebrow": "Product · PLExyz",
+      "eyebrow": "Product · Edge family",
       "line": "Know what's in your warehouse or yard, and where the next load should go.",
       "chips": [
         "Live",
@@ -46,7 +46,7 @@
       "slug": "plexyz-crowd",
       "repo": "haziqfaris/plexyz-crowd",
       "name": "PLExyz Crowd",
-      "eyebrow": "Product · PLExyz",
+      "eyebrow": "Product · Edge family",
       "line": "Know how your spaces are really used: people in each space, live, with Wi-Fi first.",
       "chips": [
         "Closed pilot",
@@ -59,7 +59,7 @@
       "slug": "axframe",
       "repo": "haziqfaris/axframe",
       "name": "AX Frame",
-      "eyebrow": "Product · Frame family",
+      "eyebrow": "Product · Loom family",
       "line": "Know what your business depends on: every subscription, API, domain and renewal.",
       "chips": [
         "Closed pilot",
@@ -98,25 +98,27 @@
       "slug": "awangan",
       "repo": "haziqfaris/AntaraX-AwanGan",
       "name": "AwanGan",
-      "eyebrow": "AI models · Cloud",
+      "eyebrow": "AI models · Nalar family · Cloud",
       "line": "Our own AI models, in the cloud: documents read, personal data masked, every call recorded.",
       "chips": [
         "By arrangement",
         "Cloud AI service"
       ],
-      "colour": "#0062FB"
+      "colour": "#B48B02",
+      "logo": "assets/families/nalar-icon.svg"
     },
     {
       "slug": "buminyata",
       "repo": "haziqfaris/AntaraX-BumiNyata",
       "name": "BumiNyata",
-      "eyebrow": "AI models · On your premises",
+      "eyebrow": "AI models · Nalar family · On your premises",
       "line": "Our own AI models on your own servers. Works with no internet; nothing calls out.",
       "chips": [
         "By arrangement",
         "On premises"
       ],
-      "colour": "#2E5E3E"
+      "colour": "#B48B02",
+      "logo": "assets/families/nalar-icon.svg"
     },
     {
       "slug": "cebis-loom",
@@ -185,7 +187,7 @@
       "slug": "gauge",
       "repo": "haziqfaris/antarax-ripple-monitoring",
       "name": "Gauge",
-      "eyebrow": "Internal · Ripple family",
+      "eyebrow": "Internal · Ripple-aligned",
       "line": "Measures what client AI solutions really deliver: health, use, performance and outcomes.",
       "chips": [
         "Internal",
@@ -197,8 +199,8 @@
     {
       "slug": "ripple",
       "repo": "haziqfaris/ripple-workflow",
-      "name": "AntaraX Ripple",
-      "eyebrow": "Internal · Ripple family",
+      "name": "REKA Discovery",
+      "eyebrow": "REKA's own · workflow discovery",
       "line": "Turns a client meeting into an accurate requirements document for an automation or AI project.",
       "chips": [
         "Internal",
@@ -254,14 +256,87 @@
       "slug": "yaraone",
       "repo": "haziqfaris/yara-one",
       "name": "YaraOne",
-      "eyebrow": "Product · Ripple family",
+      "eyebrow": "Internal · Ripple-aligned",
       "line": "One source of truth for delivery, client service, sales and reporting. AntaraX tickets next.",
       "chips": [
-        "Live",
+        "Internal",
+        "Support and tickets",
         "yo.antarax.ai"
       ],
       "colour": "#087F5B",
       "logo": "assets/families/ripple-icon.svg"
+    },
+    {
+      "slug": "tiko",
+      "repo": "haziqfaris/antarax-tiko",
+      "name": "Tiko",
+      "eyebrow": "Product · Tide family",
+      "line": "A friendly CRM for Malaysian SMEs: capture a lead in under a minute and keep every follow-up visible.",
+      "chips": [
+        "Private pilot",
+        "Working name"
+      ],
+      "colour": "#6A4DF5"
+    },
+    {
+      "slug": "triagent",
+      "repo": "haziqfaris/TriageNT-Esoteriks-Framework",
+      "name": "TriageNT",
+      "eyebrow": "Framework · Esoteriks",
+      "line": "REKA's framework for support and change: a client describes a problem, AI agents look into it and hand to a person.",
+      "chips": [
+        "Framework",
+        "Inside YaraOne"
+      ],
+      "colour": "#FB9800",
+      "style": "reka",
+      "credit": "by REKA",
+      "note": "REKA Inisiatif Sdn Bhd · AI for the physical world · reka.re"
+    },
+    {
+      "slug": "tempa",
+      "repo": "haziqfaris/tempa-harmoniks-framework",
+      "name": "Tempa",
+      "eyebrow": "Framework · Harmoniks",
+      "line": "How REKA tests software: shared words, where a test may run and how deep to test by risk.",
+      "chips": [
+        "Framework",
+        "Being set up"
+      ],
+      "colour": "#FB9800",
+      "style": "reka",
+      "credit": "by REKA",
+      "note": "REKA Inisiatif Sdn Bhd · AI for the physical world · reka.re"
+    },
+    {
+      "slug": "data-harmoniks",
+      "repo": "haziqfaris/data-harmoniks-framework",
+      "name": "Data Harmoniks",
+      "eyebrow": "Framework · Harmoniks",
+      "line": "How REKA governs project data: one global core, with a pack for each jurisdiction.",
+      "chips": [
+        "Framework",
+        "Draft 0.2"
+      ],
+      "colour": "#FB9800",
+      "style": "reka",
+      "credit": "by REKA",
+      "note": "REKA Inisiatif Sdn Bhd · AI for the physical world · reka.re"
+    },
+    {
+      "slug": "observability",
+      "repo": "haziqfaris/reka-observability-kit",
+      "name": "REKA observability kit",
+      "eyebrow": "Kit · monitoring",
+      "line": "Every project's monitoring and alerts as code, on one Grafana Cloud account.",
+      "chips": [
+        "Kit",
+        "Grafana Cloud"
+      ],
+      "colour": "#FB9800",
+      "style": "reka",
+      "credit": "by REKA",
+      "note": "REKA Inisiatif Sdn Bhd · AI for the physical world · reka.re"
     }
   ]
 }

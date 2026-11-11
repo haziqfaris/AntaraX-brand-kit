@@ -101,7 +101,7 @@ Concepts are proposed directions, not launches. Never show them as available (03
 - Published REKA posts (October and November 2023) describe PLExyz as audience analytics in venues, counting people and measuring dwell time without identifying anyone. It sat in REKA's Harmonik division, in purple.
 - Frost & Sullivan **recognised** REKA's crowd analytics work (never "award").
 - PLExyz Grid started in July 2026 as a single-site warehouse prototype for its flagship customer, and was named and given its mark on 13 July 2026.
-- Customer-facing heritage line: "PLExyz began at REKA, measuring how people use real spaces. Grid brings the same idea to warehouses and yards." The flagship customer and pricing appear only once the owner clears them for public copy (11, question 23).
+- Customer-facing heritage line: "PLExyz began at REKA, measuring how people use real spaces. Grid brings the same idea to warehouses and yards." The flagship customer and pricing appear only once the owner clears them for public copy (the earlier open question has since been renumbered; ask the owner).
 
 ## The visual system (kept as it is)
 

@@ -30,7 +30,7 @@ A-mark product in the Motion family (Navigate). Closed pilot, no app yet. Telema
 ## Name
 
 - Write **AX Motion** (owner, 11 October 2026), like AX Frame: the full name keeps it apart from other products called Motion. Credit: "AX Motion · by AntaraX". The family stays **Motion** (AntaraX Motion on the Families page).
-- Tagline: "Every vehicle in view, and within reach." Family motto: "Every vehicle, within reach."
+- Tagline: "Every vehicle in view, and within reach." Family job: coordinate what moves (16).
 - Stop using: "Motion" on its own for the product; "AX Motion" for workflow automation; OVERride as the product; "AX Kinetics"; "waitlist".
 
 ## Where it came from

@@ -44,7 +44,7 @@ const PRODUCTS = {
   crowd: { name: 'PLExyz Crowd', anchor: '#6040CC', secondary: '#0CC4FB', character: 'PLExyz purple with a zone teal, until Crowd has its own theme' },
   angka: { name: 'Angka', anchor: '#6B3F6B', secondary: '#E9906B', character: 'Warm plum with Lapis peach on a paper ground: friendly money', ground: '#FAF7F2' },
   tinara: { name: 'Tinara', anchor: '#7A1E3C', secondary: '#D6A84F', character: 'Garnet with gold: discreet, valuable, considered' },
-  loom: { name: 'AX Loom', anchor: '#4904B3', secondary: '#0B1B4F', amark: true, character: 'Loom violet' },
+  loom: { name: 'Cebis Loom', anchor: '#4904B3', secondary: '#0B1B4F', amark: true, character: 'Loom violet' },
   motion: { name: 'AX Motion', anchor: '#FC5D04', secondary: '#0B1B4F', amark: true, character: 'Motion orange' },
   // Tiko came with a working palette (antarax-tiko src/app/globals.css and src/styles/tiko-shell.css), registered
   // as it is (owner, 5 November 2026): its own colours are pinned to their steps, so the roles below fall on them.

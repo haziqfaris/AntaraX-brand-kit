@@ -4,6 +4,33 @@ Owner decisions that shape the brand, newest first. Add to the top; never rewrit
 
 ## 11 November 2026
 
+- **The kit catch-up** (owner: "go do all. Later for Tiko and Nalar products need to have proper branding", on the audit of every repository and session since 25 October). The owner took the audit's recommendations, except that Tiko's and the Nalar products' branding become their own piece of work (11, questions 27 and 32). What changes:
+  - **The six families reach the tokens** (1.14.0): Tide's verb is **Decide** and Loom's **Structure**, as decided on 27 October. **Frame leaves the family list**; its colour and BaTech pair stay as **AX Frame's own** (`color.product.frame.family-pair`; the CSS names `--ax-frame*` and `--bt-frame*` stay so nothing breaks). Tide's crescent joins `famicons.json`. The README art shows Nalar, and each family's old motto gives way to its job from 16 ("Run and automate work", "Turn data into decisions", "Make data understandable", "Sense real-world spaces", "Coordinate what moves", "Run AI where it fits").
+  - **AXLE's address is `axle-<product>.antarax.ai`**, because Cloudflare's free certificate covers one level under antarax.ai (AwanGan decision 0024). Addresses in use stay until reworked.
+  - **Staff sign in to AXLE with Google, or an email and a one-time code** (Cloudflare Access codes count). Never a link: AwanGan and Cebis Loom move off links when next touched.
+  - **REKA's frameworks are one family by name:** Heuristiks, Esoteriks (TriageNT), Data Harmoniks and Tempa Harmoniks, all L6, in REKA's own style, credited "by REKA". TriageNT the framework is L6; the copy running inside YaraOne is part of YaraOne (L5). The REKA observability kit is L6. "Harmoniks" is cleared against Harmonik before public use (11, question 34).
+  - **TriageNT's persona names are an exception to Assist**, only in client support conversations, from the approved list, always saying they are an AI. Team tools keep Assist (13, 6b).
+  - **"‹Tool› by REKA, powered by AntaraX"** is the credit for REKA-owned tools that send through AntaraX email (13, section 4). The 16 October ban on "Powered by AntaraX" still holds inside AntaraX products.
+  - **Figures stay in JetBrains Mono inside products.** Printed documents may use Poppins with tabular figures.
+  - **Frameworks are global; product positioning stays Southeast Asia first** until the owner says otherwise (01).
+  - **"R8" keeps two meanings**, as recorded above: the central console at `r8.antarax.ai`, and each product's machinery mode. Renaming the mode was weighed and not done, because it would rename routes in every product's AXLE; guides say which they mean.
+  - **Smaller ones:** a family badge on every product README, from 16; local checks (no GitHub Actions) belong in RESAM, and the kits link to it; AwanGan's tiers may be shown without prices; R8's "developer" role joins the AXLE staff ladder (Dashboard kit); Lapisan keeps no sheet but has its row in 17; Janka's primary colour moves from REKA orange to its palette's `#077DA1` when Janka is next touched; Tinara's 0/0/4 radii are recorded as its own.
+  - **Hygiene:** both kits work from `main`, every release is tagged, and a product may pin only a kit version that is on `main`.
+- **Recorded today from other repositories**, where the owner decided them first (each source quotes the owner):
+  - *26 October:* AwanGan's AXLE at `axle-awangan.antarax.ai`; every new user approved in AXLE (AwanGan decision 0024).
+  - *28 October to 1 November:* email stays on Resend's free plan until the first paying customer, with three Resend teams: AntaraX (`mail.antarax.ai`), REKA (`mail.reka.re`) and REKA Tech (`mail.reka.tech`, for client apps, which never send through AntaraX's team); Brevo on `mailer.antarax.ai` is the standby (antarax-api docs/15).
+  - *30 October:* senders are data, each in its own house with its own byline, legal line, mark and band (antarax-api; Dashboard kit 1.12.0).
+  - *30 October:* personal-data rules live in REKA's legal repository (`procedures/personal-data-rules.md`, with shared cases), and every product and framework reads them from there.
+  - *30 October:* AwanGan stays an open platform; each client is a tenant (AwanGan decision 0025).
+  - *1 November:* peREKA sends as REKA's own, `peREKA <pereka@mail.reka.re>`, credited "peREKA by REKA, powered by AntaraX." (antarax-api #32).
+  - *2 November:* every project's monitoring and alerts are code in `reka-observability-kit`, on one Grafana Cloud account; alerts use Grafana's own email (RESAM D-45).
+  - *3 November:* a client project costs at most US$100 a month by default, infrastructure and AI together, with tiers (AwanGan decision 0030, `docs/PRICING.md`).
+  - *5 November:* Heuristiks owns the standard for how a project's AI works; RESAM's kickoff gathers the parts and checks them (Heuristiks decision 0014).
+  - *7 November:* Data Harmoniks is REKA's data framework: a global core with a pack per jurisdiction; Cebis Loom becomes a tool under it (Data Harmoniks decisions 0001 and 0008).
+  - *8 to 11 November:* TriageNT is a REKA framework in the Esoteriks family; it says it is an AI when asked; on-duty people are reached through AXLE's Needs-a-person count and AntaraX email; YaraOne is the front door that uses it and it has no client screens of its own; it runs on its own Dokploy server per country; twenty persona names approved (TriageNT T-014, T-019, T-023, T-032, T-053, T-054, `docs/PERSONA-NAMES.md`).
+  - *11 November:* Tempa Harmoniks is REKA's testing standard and its home for quality; both QA kits move into it (Tempa TH-001 to TH-005).
+  - *11 November:* R8 staff sign in through Cloudflare Access with an emailed code; its roles are super admin, admin and developer (antarax-api decision 0018).
+
 - **AntaraX products build their interface from Astryx** (owner; Dashboard kit 1.11.0, `astryx/SPEC.md`). Astryx is Meta's open-source design system (MIT, React 19). Until now nothing named what our own products are built with; client projects already use shadcn/ui.
   - **Scope:** every customer app and every AXLE uses it for new products and for new or reworked screens. Existing screens move when touched; nothing is rewritten only to adopt it. YaraOne goes first.
   - **The brand stays this kit's:** each product's Astryx theme is generated from its palette here, with Poppins and JetBrains Mono, the product's radii, the AntaraX blue focus ring and 44px touch controls; Astryx's own themes are never used. Products keep their own loaders, never Astryx's spinners.

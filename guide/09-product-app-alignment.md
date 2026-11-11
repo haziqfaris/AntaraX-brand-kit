@@ -20,7 +20,7 @@ Audited from each repository on 11 October 2026. Details and file references are
 | Product | Kind | Accent (target) | What the app uses today | Biggest gaps |
 |---|---|---|---|---|
 | **Yara** | A-mark | Ripple `#08B0B3` | A + Ripple mark, blue actions, teal accent, Poppins + mono, "powered by AntaraX Ripple" | Aligned; byline becomes "Yara · by AntaraX". Em dash in the byline; local product registry out of date. Reference implementation. |
-| **AX Frame** | A-mark | Frame `#074AF8` | A + Frame mark; primary `#0062FB`, REKA orange accent; Poppins + mono; named "AntaraX Frame" | Converge primary to `#0459F7`, drop the orange; rename to AX Frame. |
+| **AX Frame** | A-mark | AX Frame blue `#074AF8` | A + Frame mark; primary `#0062FB`, REKA orange accent; Poppins + mono; named "AntaraX Frame" | Converge primary to `#0459F7`, drop the orange; rename to AX Frame. |
 | **Janka** | Own-mark | Janka cyan `#0CC4FB` | Own J mark (restyle approved); primary REKA orange `#FB9800`; Poppins + mono; credited only to REKA | No AntaraX credit; orange primary; tagline uses "unlock" in uppercase mono. |
 | **PLExyz Grid** | Own-mark (REKA platform) | Grid violet `#2C09B2` | Own mark, kept as it is; violet primary; zone colours for data; Poppins + mono; credited to REKA | No AntaraX credit; uppercase eyebrow; top-bordered stat cards. |
 | **PLExyz Crowd** | Own-mark | PLExyz violet `#2C09B2` | Branded "AXLE · REKA Operations Console", AXLE icon, orange on green-black | Shows the internal codename AXLE to customers. Most urgent fix in the portfolio. |

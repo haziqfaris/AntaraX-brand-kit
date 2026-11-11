@@ -2,6 +2,13 @@
 
 Owner decisions that shape the brand, newest first. Add to the top; never rewrite history. Earlier strategy changes are in `reference/strategy/` (playbook amendments v0.3–v0.5, RECONCILIATION).
 
+## 11 November 2026
+
+- **AntaraX products build their interface from Astryx** (owner; Dashboard kit 1.11.0, `astryx/SPEC.md`). Astryx is Meta's open-source design system (MIT, React 19). Until now nothing named what our own products are built with; client projects already use shadcn/ui.
+  - **Scope:** every customer app and every AXLE uses it for new products and for new or reworked screens. Existing screens move when touched; nothing is rewritten only to adopt it. YaraOne goes first.
+  - **The brand stays this kit's:** each product's Astryx theme is generated from its palette here, with Poppins and JetBrains Mono, the product's radii, the AntaraX blue focus ring and 44px touch controls; Astryx's own themes are never used. Products keep their own loaders, never Astryx's spinners.
+  - **Risk accepted:** Astryx is still beta, so every product pins the tested version (0.7.13) and updates on purpose.
+
 ## 3 November 2026
 
 - **Nalar's colour and icon** (owner, open question 27, after six rounds of directions shown beside the six families):

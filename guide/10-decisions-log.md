@@ -4,10 +4,62 @@ Owner decisions that shape the brand, newest first. Add to the top; never rewrit
 
 ## 11 November 2026
 
+- **The kit catch-up** (owner: "go do all. Later for Tiko and Nalar products need to have proper branding", on the audit of every repository and session since 25 October). The owner took the audit's recommendations, except that Tiko's and the Nalar products' branding become their own piece of work (11, questions 27 and 32). What changes:
+  - **The six families reach the tokens** (1.14.0): Tide's verb is **Decide** and Loom's **Structure**, as decided on 27 October. **Frame leaves the family list**; its colour and BaTech pair stay as **AX Frame's own** (`color.product.frame.family-pair`; the CSS names `--ax-frame*` and `--bt-frame*` stay so nothing breaks). Tide's crescent joins `famicons.json`. The README art shows Nalar, and each family's old motto gives way to its job from 16 ("Run and automate work", "Turn data into decisions", "Make data understandable", "Sense real-world spaces", "Coordinate what moves", "Run AI where it fits").
+  - **AXLE's address is `axle-<product>.antarax.ai`**, because Cloudflare's free certificate covers one level under antarax.ai (AwanGan decision 0024). Addresses in use stay until reworked.
+  - **Staff sign in to AXLE with Google, or an email and a one-time code** (Cloudflare Access codes count). Never a link: AwanGan and Cebis Loom move off links when next touched.
+  - **REKA's frameworks are one family by name:** Heuristiks, Esoteriks (TriageNT), Data Harmoniks and Tempa Harmoniks, all L6, in REKA's own style, credited "by REKA". TriageNT the framework is L6; the copy running inside YaraOne is part of YaraOne (L5). The REKA observability kit is L6. "Harmoniks" is cleared against Harmonik before public use (11, question 34).
+  - **TriageNT's persona names are an exception to Assist**, only in client support conversations, from the approved list, always saying they are an AI. Team tools keep Assist (13, 6b).
+  - **"‹Tool› by REKA, powered by AntaraX"** is the credit for REKA-owned tools that send through AntaraX email (13, section 4). The 16 October ban on "Powered by AntaraX" still holds inside AntaraX products.
+  - **Figures stay in JetBrains Mono inside products.** Printed documents may use Poppins with tabular figures.
+  - **Frameworks are global; product positioning stays Southeast Asia first** until the owner says otherwise (01).
+  - **"R8" keeps two meanings**, as recorded above: the central console at `r8.antarax.ai`, and each product's machinery mode. Renaming the mode was weighed and not done, because it would rename routes in every product's AXLE; guides say which they mean.
+  - **Smaller ones:** a family badge on every product README, from 16; local checks (no GitHub Actions) belong in RESAM, and the kits link to it; AwanGan's tiers may be shown without prices; R8's "developer" role joins the AXLE staff ladder (Dashboard kit); Lapisan keeps no sheet but has its row in 17; Janka's primary colour moves from REKA orange to its palette's `#077DA1` when Janka is next touched; Tinara's 0/0/4 radii are recorded as its own.
+  - **Hygiene:** both kits work from `main`, every release is tagged, and a product may pin only a kit version that is on `main`.
+- **Recorded today from other repositories**, where the owner decided them first (each source quotes the owner):
+  - *26 October:* AwanGan's AXLE at `axle-awangan.antarax.ai`; every new user approved in AXLE (AwanGan decision 0024).
+  - *28 October to 1 November:* email stays on Resend's free plan until the first paying customer, with three Resend teams: AntaraX (`mail.antarax.ai`), REKA (`mail.reka.re`) and REKA Tech (`mail.reka.tech`, for client apps, which never send through AntaraX's team); Brevo on `mailer.antarax.ai` is the standby (antarax-api docs/15).
+  - *30 October:* senders are data, each in its own house with its own byline, legal line, mark and band (antarax-api; Dashboard kit 1.12.0).
+  - *30 October:* personal-data rules live in REKA's legal repository (`procedures/personal-data-rules.md`, with shared cases), and every product and framework reads them from there.
+  - *30 October:* AwanGan stays an open platform; each client is a tenant (AwanGan decision 0025).
+  - *1 November:* peREKA sends as REKA's own, `peREKA <pereka@mail.reka.re>`, credited "peREKA by REKA, powered by AntaraX." (antarax-api #32).
+  - *2 November:* every project's monitoring and alerts are code in `reka-observability-kit`, on one Grafana Cloud account; alerts use Grafana's own email (RESAM D-45).
+  - *3 November:* a client project costs at most US$100 a month by default, infrastructure and AI together, with tiers (AwanGan decision 0030, `docs/PRICING.md`).
+  - *5 November:* Heuristiks owns the standard for how a project's AI works; RESAM's kickoff gathers the parts and checks them (Heuristiks decision 0014).
+  - *7 November:* Data Harmoniks is REKA's data framework: a global core with a pack per jurisdiction; Cebis Loom becomes a tool under it (Data Harmoniks decisions 0001 and 0008).
+  - *8 to 11 November:* TriageNT is a REKA framework in the Esoteriks family; it says it is an AI when asked; on-duty people are reached through AXLE's Needs-a-person count and AntaraX email; YaraOne is the front door that uses it and it has no client screens of its own; it runs on its own Dokploy server per country; twenty persona names approved (TriageNT T-014, T-019, T-023, T-032, T-053, T-054, `docs/PERSONA-NAMES.md`).
+  - *11 November:* Tempa Harmoniks is REKA's testing standard and its home for quality; both QA kits move into it (Tempa TH-001 to TH-005).
+  - *11 November:* R8 staff sign in through Cloudflare Access with an emailed code; its roles are super admin, admin and developer (antarax-api decision 0018).
+
 - **AntaraX products build their interface from Astryx** (owner; Dashboard kit 1.11.0, `astryx/SPEC.md`). Astryx is Meta's open-source design system (MIT, React 19). Until now nothing named what our own products are built with; client projects already use shadcn/ui.
   - **Scope:** every customer app and every AXLE uses it for new products and for new or reworked screens. Existing screens move when touched; nothing is rewritten only to adopt it. YaraOne goes first.
   - **The brand stays this kit's:** each product's Astryx theme is generated from its palette here, with Poppins and JetBrains Mono, the product's radii, the AntaraX blue focus ring and 44px touch controls; Astryx's own themes are never used. Products keep their own loaders, never Astryx's spinners.
   - **Risk accepted:** Astryx is still beta, so every product pins the tested version (0.7.13) and updates on purpose.
+- **R8 is AntaraX's central staff console, at `r8.antarax.ai`** (owner: "I want to use r8 only instead axle since we might use it for something else. Shen might be for something else as well which is the main dashboard command center for all").
+  - **What it is:** the one console where AntaraX and REKA staff run what is shared across products. It was planned as "AXLE Central" at `axle.antarax.ai`, and the owner called it "AXLE R8 Shen" on 1 November. Its first page is Email: apps, keys, client domains, requests and the audit, so REKA's team registers client apps themselves (antarax-api docs/16 and decision 0018).
+  - **On screen it says "R8"**, with "REKA STAFF CONSOLE" under it and the kit's orange AXLE tag. It is built from the AXLE template (Dashboard kit `axle/`).
+  - **R8 has two meanings now.** Inside each product's AXLE, R8 stays the machinery mode. On its own, at `r8.antarax.ai`, R8 is the central console. Guides say which they mean.
+  - **`axle.antarax.ai` is kept free** for something else.
+  - **"Shen" is kept for the main command centre over everything**, which is still to be designed. How "Shen" is written and said, and what it means, are still open.
+
+## 7 November 2026
+
+- **Jentera is a third-party partner, not an AntaraX product** (owner). Jentera.ai is a different company; AntaraX may use its AI agent APIs, through AwanGan's provider pass-through. The 27 October text that placed "Jentera" as a possible Ripple product is corrected in 02, 11, 16 and 17. **AntaraX's own AI agents** stay a Ripple candidate, with no name, built inside Tiko first.
+- **Nia is withdrawn as a product name** (owner, Tiko decision D-102). Its enquiry-to-quote workflow stays in Tiko as **Enquiries**, on every plan. Knowledge used by AI is kept by the product that owns it (Tiko); AwanGan processes it and keeps nothing.
+
+## 5 November 2026
+
+- **Tiko is registered as a product, id `tiko`** (owner, Tiko decision Q-01, before its pilot). It answers what 4 November left open. Tiko (working name, private pilot) is a CRM for Malaysian SMEs in Tide · Decide, an own-mark product, with the same id in Lapisan's registry and in Heuristiks' REKA profile.
+  - **Its palette is the one its app was built with** (`antarax-tiko` `src/app/globals.css` and `src/styles/tiko-shell.css`), added to `tools/build-product-palettes.mjs` with those colours pinned to their steps: purple `#7A5FFF`, action `#6A4DF5` (5.26:1 with white), hover `#5B3FE0`, lavender `#EDEBFF` with `#4B2FC9` on it, orange `#FB9800`, ground `#FAF9FC`, neutrals `#FAF9FC`, `#F4F2FA`, `#E7E4F0`, `#D6D2E4`. Chart set: its action, then orange, aqua, blue, magenta (passes the palette validator light and dark). Tokens 1.13.0: `color.product.tiko`, `--ax-tiko*` and Tiko's shell slots; no existing token changed.
+  - **Its bar takes every shell default** (floating, 24px and 20px), so `shell.bar.byProduct` records it in its note and lists no exception.
+  - **Guide 02** lists it as a **private pilot**: nowhere on antarax.ai, no launch claim. Still open (11, question 31): its one-line question and public status, its legal name, and whether its text and status colours follow its own spec or the shared core.
+
+## 4 November 2026
+
+- **Tiko's signature motif is gelombang, used subtly** (owner, from the Tiko pilot build). Tiko (working name, private pilot, Tide · Decide; its registration as a product is still open) takes **gelombang**, the Tide wave no other product uses, for its tagline "Make every move count".
+  - **Subtle by the owner's choice:** inside Tiko the motif appears in the **Quiet** strength (one light ink, `#C5CCF7`, no fills), small, and only where guide 12 allows a motif: empty states and its signature moment. The family pair version exists for covers and the website.
+  - **Signature moment:** when a deal is won, the wave draws on once beside the win, then rests. Nothing moves for people who turn motion off.
+  - **Files:** `assets/products/tiko/tiko-motif.svg` (family pair) and `tiko-motif-quiet.svg` (Quiet), built by `tools/build-product-motifs.mjs` from the official BaTech drawing (`antarax-ai` `prototype/site/src/batech.mjs`, `fcf47af`).
 
 ## 3 November 2026
 

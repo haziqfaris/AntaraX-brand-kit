@@ -1,4 +1,4 @@
-/* AntaraX design tokens v1.12.0 (2026-11-03). Mirrors tokens.json; full product palettes in product-palettes.css. Import first, then build on the variables. */
+/* AntaraX design tokens v1.14.0 (2026-11-11). Mirrors tokens.json; full product palettes in product-palettes.css. Import first, then build on the variables. */
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap");
 
 :root {
@@ -18,7 +18,7 @@
   /* families: colour, tint (86% to white), dark (55%) */
   --ax-ripple: #08B0B3; --ax-ripple-tint: #D9F3F2; --ax-ripple-dark: #0B6E72;
   --ax-edge:   #12B76A; --ax-edge-tint:   #DCF5E8; --ax-edge-dark:   #0B7A47;
-  --ax-frame:  #074AF8; --ax-frame-tint:  #E2EAFE; --ax-frame-dark:  #0533A8;
+  --ax-frame:  #074AF8; --ax-frame-tint:  #E2EAFE; --ax-frame-dark:  #0533A8; /* not a family since 27 October 2026: AX Frame's own pair (intan), kept under its old name */
   --ax-loom:   #4904B3; --ax-loom-tint:   #EEE6FA; --ax-loom-dark:   #33027D;
   --ax-motion: #FC5D04; --ax-motion-tint: #FFE9DC; --ax-motion-dark: #A83A00;
   --ax-tide:   #E9579D; --ax-tide-tint:   #FDE8F1; --ax-tide-dark:   #9C2B63;
@@ -41,6 +41,7 @@
   --ax-grid-north: #B9B8F5; --ax-grid-west: #0CC4FB; --ax-grid-east: #F47B3D; --ax-grid-south: #E9579D;
   --ax-angka:  #6B3F6B; --ax-angka-tint:  #EAE4EA; --ax-angka-dark:  #3B233B; --ax-angka-action:  #6B3F6B; --ax-angka-ground: #FAF7F2;
   --ax-tinara: #7A1E3C; --ax-tinara-tint: #FEF4F6; --ax-tinara-dark: #511A2A; --ax-tinara-action: #7A1E3C; --ax-tinara-gold: #D6A84F; /* garnet, proposed */
+  --ax-tiko:   #7A5FFF; --ax-tiko-tint:   #EDEBFF; --ax-tiko-dark:   #4B2FC9; --ax-tiko-action:   #6A4DF5; --ax-tiko-orange: #FB9800; --ax-tiko-ground: #FAF9FC; /* working name, private pilot (5 November 2026) */
 
   /* status: only on real signal, never decoration */
   --ax-ok: #12B76A; --ax-warn: #F79009; --ax-fault: #F04438;
@@ -193,6 +194,7 @@
 .shell-root[data-product="tinara"] { --shell-subtle-tint: var(--tinara-subtle); --shell-on-tint: var(--tinara-on-tint); --shell-action: var(--tinara-action); --shell-on-action: var(--tinara-text-on-action); --shell-dark-accent: var(--tinara-dark-accent); --shell-well: var(--tinara-neutral-100); --shell-line: var(--tinara-border-default); --shell-surface: var(--tinara-surface-raised); --shell-hover: var(--tinara-surface-hover); --shell-ink: var(--tinara-text-strong); --shell-bar-outer-padding: 0; --shell-bar-outer-padding-phone: 0; --shell-bar-inner-padding: 0 16px 0 12px; --shell-bar-radius: 0; --shell-bar-radius-phone: 0; --shell-bar-border-width: 0 0 1px; --shell-bar-shadow: none; }
 .shell-root[data-product="loom"] { --shell-subtle-tint: var(--loom-subtle); --shell-on-tint: var(--loom-on-tint); --shell-action: var(--loom-action); --shell-on-action: var(--loom-text-on-action); --shell-dark-accent: var(--loom-dark-accent); --shell-well: var(--loom-neutral-100); --shell-line: var(--loom-border-default); --shell-surface: var(--loom-surface-raised); --shell-hover: var(--loom-surface-hover); --shell-ink: var(--loom-text-strong); }
 .shell-root[data-product="motion"] { --shell-subtle-tint: var(--motion-subtle); --shell-on-tint: var(--motion-on-tint); --shell-action: var(--motion-action); --shell-on-action: var(--motion-text-on-action); --shell-dark-accent: var(--motion-dark-accent); --shell-well: var(--motion-neutral-100); --shell-line: var(--motion-border-default); --shell-surface: var(--motion-surface-raised); --shell-hover: var(--motion-surface-hover); --shell-ink: var(--motion-text-strong); }
+.shell-root[data-product="tiko"] { --shell-subtle-tint: var(--tiko-subtle); --shell-on-tint: var(--tiko-on-tint); --shell-action: var(--tiko-action); --shell-on-action: var(--tiko-text-on-action); --shell-dark-accent: var(--tiko-dark-accent); --shell-well: var(--tiko-neutral-100); --shell-line: var(--tiko-border-default); --shell-surface: var(--tiko-surface-raised); --shell-hover: var(--tiko-surface-hover); --shell-ink: var(--tiko-text-strong); }
 /* dark mode, for a product that offers it: the shared dark palette, the product's dark accent (guide/14) */
 .shell-root[data-theme="dark"] { --shell-surface: #0C1B47; --shell-well: #050D26; --shell-line: rgba(157,184,255,.16); --shell-ink: #EAF0FF; --shell-on-tint: #EAF0FF; --shell-action: var(--shell-dark-accent); --shell-on-action: #071233; --shell-subtle-tint: color-mix(in srgb, var(--shell-dark-accent) 22%, #0C1B47); --shell-hover: color-mix(in srgb, #EAF0FF 6%, #0C1B47); }
 

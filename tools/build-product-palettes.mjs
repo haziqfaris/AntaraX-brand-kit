@@ -44,8 +44,12 @@ const PRODUCTS = {
   crowd: { name: 'PLExyz Crowd', anchor: '#6040CC', secondary: '#0CC4FB', character: 'PLExyz purple with a zone teal, until Crowd has its own theme' },
   angka: { name: 'Angka', anchor: '#6B3F6B', secondary: '#E9906B', character: 'Warm plum with Lapis peach on a paper ground: friendly money', ground: '#FAF7F2' },
   tinara: { name: 'Tinara', anchor: '#7A1E3C', secondary: '#D6A84F', character: 'Garnet with gold: discreet, valuable, considered' },
-  loom: { name: 'AX Loom', anchor: '#4904B3', secondary: '#0B1B4F', amark: true, character: 'Loom violet' },
+  loom: { name: 'Cebis Loom', anchor: '#4904B3', secondary: '#0B1B4F', amark: true, character: 'Loom violet' },
   motion: { name: 'AX Motion', anchor: '#FC5D04', secondary: '#0B1B4F', amark: true, character: 'Motion orange' },
+  // Tiko came with a working palette (antarax-tiko src/app/globals.css and src/styles/tiko-shell.css), registered
+  // as it is (owner, 5 November 2026): its own colours are pinned to their steps, so the roles below fall on them.
+  tiko: { name: 'Tiko', anchor: '#7A5FFF', secondary: '#FB9800', ground: '#FAF9FC', character: 'Friendly purple with an orange dot on a soft lavender ground: quiet surfaces, one purposeful accent',
+    steps: { 100: '#EDEBFF', 600: '#6A4DF5', 700: '#5B3FE0', 800: '#4B2FC9' }, neutralSteps: { 50: '#FAF9FC', 100: '#F4F2FA', 200: '#E7E4F0', 300: '#D6D2E4' } },
 };
 const CHARTS = JSON.parse(fs.readFileSync(new URL('./product-charts.json', import.meta.url), 'utf8'));
 
@@ -54,6 +58,8 @@ for (const [k, p] of Object.entries(PRODUCTS)) {
   const build = (hex, exact = true) => { const [L, C, H] = hex2oklch(hex); const out = LT.map((l, i) => oklch2hex([l, Math.max(C, 0.06) * CF[i], H]));
     let at = 0; LT.forEach((l, i) => { if (Math.abs(l - L) < Math.abs(LT[at] - L)) at = i; }); if (exact) out[at] = hex; return [out, at, H]; };
   const [s, at, H] = build(p.anchor);
+  // pins: a product's own colours placed exactly on the steps it already uses them for (steps, neutralSteps)
+  for (const [n, hex] of Object.entries(p.steps || {})) s[STEPS.indexOf(+n)] = hex;
   const scale = Object.fromEntries(STEPS.map((n, i) => [n, s[i]]));
   const [s2] = build(p.secondary);
   const secondaryScale = Object.fromEntries(STEPS.map((n, i) => [n, s2[i]]));
@@ -61,6 +67,7 @@ for (const [k, p] of Object.entries(PRODUCTS)) {
   // Text stays the shared navy and body colours (05), so every product reads the same.
   const NL = [0.985, 0.965, 0.93, 0.88, 0.78, 0.66, 0.55, 0.45, 0.36, 0.27, 0.2];
   const n = NL.map((l, i) => oklch2hex([l, [0.004, 0.006, 0.009, 0.012, 0.016, 0.018, 0.02, 0.022, 0.024, 0.026, 0.028][i], H]));
+  for (const [k, hex] of Object.entries(p.neutralSteps || {})) n[STEPS.indexOf(+k)] = hex;
   const neutral = Object.fromEntries(STEPS.map((k, i) => [k, n[i]]));
   const own = contrast(p.anchor, '#FFFFFF') >= 4.5 ? at : s.findIndex((h, i) => i >= at && contrast(h, '#FFFFFF') >= 4.5);
   const onDark = [...s.keys()].filter((i) => i <= 5 && contrast(s[i], DARK) >= 4.5).pop();

@@ -2,7 +2,7 @@
 
 <p align="center">
 <img alt="status: reference" src="https://img.shields.io/badge/status-reference-0459F7?style=flat-square">
-<img alt="version 1.11.0" src="https://img.shields.io/badge/version-1.11.0-0459F7?style=flat-square">
+<img alt="version 1.14.0" src="https://img.shields.io/badge/version-1.14.0-0459F7?style=flat-square">
 <img alt="six families" src="https://img.shields.io/badge/families-6-0B1B4F?style=flat-square">
 <img alt="eleven products" src="https://img.shields.io/badge/products-11-0B1B4F?style=flat-square">
 <img alt="spinning loaders: never" src="https://img.shields.io/badge/spinning%20loaders-never-F04438?style=flat-square">
@@ -15,7 +15,7 @@ Every AntaraX product, the antarax.ai website, decks, campaigns and anything wri
 <p align="center"><a href="guide/">The guide</a> · <a href="guide/products/README.md">Product sheets</a> · <a href="guide/product-brands.html">Visual guide</a> · <a href="tokens/">Tokens</a> · <a href="guide/10-decisions-log.md">Decisions</a> · <a href="guide/15-readme-standard.md">README standard</a> · <a href="https://github.com/haziqfaris/reka-brand-kit">REKA's kit</a></p>
 
 > [!NOTE]
-> **A reference, and every product follows it.** This kit is the source of truth for the AntaraX brand: names, statuses, voice, claims, logos, colour, type, BaTech, interface rules and the README standard. It ships no product of its own. Tokens are at **1.11.0** (`tokens/tokens.json`). The default branch is `claude/inspiring-davinci-6ehjo4`; there is no `main` yet.
+> **A reference, and every product follows it.** This kit is the source of truth for the AntaraX brand: names, statuses, voice, claims, logos, colour, type, BaTech, interface rules and the README standard. It ships no product of its own. Tokens are at **1.14.0** (`tokens/tokens.json`). The main branch is `main`.
 
 AntaraX is the AI product line of **REKA Inisiatif Sdn Bhd** (Kuala Lumpur, Malaysia). REKA has its own kit: [haziqfaris/reka-brand-kit](https://github.com/haziqfaris/reka-brand-kit). Where the two meet, [guide/01-positioning.md](guide/01-positioning.md) sets the boundary.
 
@@ -40,7 +40,7 @@ The rule is simple: **the kit wins.** Where a product repo, the website or a dec
 - **Architecture:** most products are older than AntaraX. They keep their own names, logos and style, and every one is credited **"by AntaraX"**. AntaraX reaches into each product through one small shared layer: the credit line, BaTech used quietly and by its own guidelines (a signature motif in empty states, Quiet bands), the AI sparkle, shared type and status colours, the intan eyebrow, the app tile and the footer (12).
 - **Managed AI:** for now every product is sold as part of REKA's **Managed AI** service.
 - **Closed pilots:** AX Frame, PLExyz Crowd, Angka, Tinara, AX Motion. **AI models, by arrangement:** AwanGan (cloud), BumiNyata (on premises). **Managed service:** Cebis Loom.
-- **Six families:** Ripple (Operate), Edge (Perceive), Frame (Understand), Loom (Synthesize), Motion (Navigate), Tide (Optimize).
+- **Six families:** Ripple (Operate), Tide (Decide), Loom (Structure), Edge (Perceive), Motion (Navigate), Nalar (Reason). AX Frame is in Loom and keeps its own blue.
 - **Look:** AntaraX blue `#0459F7`, navy text, white ground, Poppins and JetBrains Mono, and the BaTech corak (Malaysian batik rebuilt from technology).
 - **Voice:** plain language for non-technical buyers. Problem first, product second. Never invent customers, numbers or maturity.
 
@@ -69,7 +69,7 @@ Writers, designers, developers and coding agents, in this repository or any repo
 
 ### Meet the families
 
-<p align="center"><img src="assets/readme/families.svg" width="100%" alt="The six families: Ripple (Operate), Edge (Perceive), Frame (Understand), Loom (Synthesize), Motion (Navigate) and Tide (Optimize), with their products"></p>
+<p align="center"><img src="assets/readme/families.svg" width="100%" alt="The six families: Ripple (Operate), Tide (Decide), Loom (Structure), Edge (Perceive), Motion (Navigate) and Nalar (Reason), with their products"></p>
 
 Every product belongs to one family, and the family decides its BaTech shape. Full story in [02 Products and families](guide/02-products-and-families.md).
 
@@ -166,7 +166,7 @@ Owner decisions land in the guide first ([10 Decisions log](guide/10-decisions-l
 | [`assets/antarax/`](assets/antarax/) | The AntaraX A (blue and white), the full lockup, the wordmark (navy and white), the kain A (closed and open), the AI sparkle and its one-colour version | You need the AntaraX mark |
 | [`assets/product-logos/`](assets/product-logos/) | Every product logo on the same square, ready to drop in | You need a product's logo |
 | [`assets/products/`](assets/products/) | Each product's marks, lockups, motifs and loaders, at their source sizes | You need a motif or a loader |
-| [`assets/families/`](assets/families/) | The six family icons, `famicons.json`, and Quiet bands per family | You need a family icon or band |
+| [`assets/families/`](assets/families/) | The six family icons (plus AX Frame's legacy Frame icon), `famicons.json`, and Quiet bands per family | You need a family icon or band |
 | [`assets/batech/`](assets/batech/) | Seven BaTech sets (AntaraX and six families): panel, band, spot in colour, quiet, white | You need BaTech ([Step 4](#step-4--choose-your-batech)) |
 | [`assets/icons/features/`](assets/icons/features/) | 60 line icons for features and sub-products | You need a feature icon |
 | [`assets/reka/`](assets/reka/) | REKA's lockup, orange and white, for the "AI product line of REKA" line (REKA's own kit is the source) | You need the REKA line |
@@ -328,7 +328,7 @@ and usage rows are Lapisan's (haziqfaris/antarax-api). Their addresses are in gu
 **Bring in the tokens.** Copy the two token files (and your logo) from a checkout of this kit, then use the variables. The example is Yara; swap the prefix for yours:
 
 ```css
-/* Copied from AntaraX brand kit 1.11.0. Don't edit; copy again when the kit changes. */
+/* Copied from AntaraX brand kit 1.14.0. Don't edit; copy again when the kit changes. */
 @import "./brand/tokens.css";
 @import "./brand/product-palettes.css";
 
@@ -513,4 +513,4 @@ You need **Node.js**. Each script in [`tools/`](tools/) says how to run it at th
 - **Product support** is support@go.antarax.ai for every product (quiz question 8 above).
 
 <p align="center"><img src="readme-kit/footer.svg" width="100%" alt="AntaraX, put intelligence to work. AntaraX is the product line of REKA Inisiatif Sdn Bhd."></p>
-<p align="center"><sub>AntaraX is the product line of REKA Inisiatif Sdn Bhd · <a href="https://antarax.ai">antarax.ai</a> · <a href="https://reka.re">reka.re</a><br>Private and proprietary. © 2026 REKA Inisiatif Sdn Bhd. All rights reserved. · Last updated 27 October 2026<br>Tokens 1.11.0. Version 1.4, 11 October 2026: the product identity system (logos, motifs, BaTech sets, loaders, palettes) and this guide for product repos. Version 1.3 added brand architecture, product sheets, the AntaraX layer and shared product standards.</sub></p>
+<p align="center"><sub>AntaraX is the product line of REKA Inisiatif Sdn Bhd · <a href="https://antarax.ai">antarax.ai</a> · <a href="https://reka.re">reka.re</a><br>Private and proprietary. © 2026 REKA Inisiatif Sdn Bhd. All rights reserved. · Last updated 11 November 2026<br>Tokens 1.14.0. Version 1.4, 11 October 2026: the product identity system (logos, motifs, BaTech sets, loaders, palettes) and this guide for product repos. Version 1.3 added brand architecture, product sheets, the AntaraX layer and shared product standards.</sub></p>

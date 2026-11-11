@@ -49,12 +49,13 @@ ${body}</svg>\n`; };
 // ---- the brand ----
 const NAVY = '#0B1B4F', DEEP = '#071233', BLUE = '#0459F7', BODY = '#3B4469', MUTED = '#5B6488', QUIET = '#C5CCF7', LINE = '#E3E7F2', CANVAS = '#FBFCFE';
 const FAM = {
-  Ripple: { verb: 'Operate', line: 'Work that moves.', c: '#08B0B3', dark: '#0B6E72', tint: '#D9F3F2', icon: 'ripple' },
-  Edge: { verb: 'Perceive', line: 'Sense the real world.', c: '#12B76A', dark: '#0B7A47', tint: '#DCF5E8', icon: 'edge' },
-  Frame: { verb: 'Understand', line: 'Know what you depend on.', c: '#074AF8', dark: '#0533A8', tint: '#E2EAFE', icon: 'frame' },
-  Loom: { verb: 'Synthesize', line: 'Weave it together.', c: '#4904B3', dark: '#33027D', tint: '#EEE6FA', icon: 'loom' },
-  Motion: { verb: 'Navigate', line: 'Every vehicle, within reach.', c: '#FC5D04', dark: '#A83A00', tint: '#FFE9DC', icon: 'motion' },
-  Tide: { verb: 'Optimize', line: "Read what's coming.", c: '#E9579D', dark: '#9C2B63', tint: '#FDE8F1', icon: 'tide' },
+  // the six families and their verbs (owner, 27 October 2026); the line under each is its job from guide 16
+  Ripple: { verb: 'Operate', line: 'Run and automate work.', c: '#08B0B3', dark: '#0B6E72', tint: '#D9F3F2', icon: 'ripple' },
+  Tide: { verb: 'Decide', line: 'Turn data into decisions.', c: '#E9579D', dark: '#9C2B63', tint: '#FDE8F1', icon: 'tide' },
+  Loom: { verb: 'Structure', line: 'Make data understandable.', c: '#4904B3', dark: '#33027D', tint: '#EEE6FA', icon: 'loom' },
+  Edge: { verb: 'Perceive', line: 'Sense real-world spaces.', c: '#12B76A', dark: '#0B7A47', tint: '#DCF5E8', icon: 'edge' },
+  Motion: { verb: 'Navigate', line: 'Coordinate what moves.', c: '#FC5D04', dark: '#A83A00', tint: '#FFE9DC', icon: 'motion' },
+  Nalar: { verb: 'Reason', line: 'Run AI where it fits.', c: '#B48B02', dark: '#7E6105', tint: '#F9EED4', icon: 'nalar' },
 };
 const PAL = JSON.parse(read('tokens/product-palettes.json')).products;
 const P = [
@@ -62,7 +63,7 @@ const P = [
   { k: 'janka', name: 'Janka', logo: 'janka', fam: 'Tide', motif: 'padi', mf: 'assets/products/janka/janka-motif.svg', status: 'Main', line: "Know what you'll need before you run out." },
   { k: 'grid', name: 'PLExyz Grid', logo: 'plexyz-grid', fam: 'Edge', motif: 'petak', mf: 'assets/products/plexyz/grid-motif.svg', status: 'Main', line: "Know what's in your warehouse, and where it goes." },
   { k: 'crowd', name: 'PLExyz Crowd', logo: 'plexyz-crowd', fam: 'Edge', motif: 'orbit', mf: 'assets/products/plexyz/crowd-motif.svg', status: 'Closed pilot', line: 'Know how your spaces are really used. Wi-Fi first.' },
-  { k: 'frame', name: 'AX Frame', logo: 'ax-frame', fam: 'Frame', motif: 'intan', mf: 'assets/products/frame/frame-motif.svg', status: 'Closed pilot', line: 'Know what your business depends on.' },
+  { k: 'frame', name: 'AX Frame', logo: 'ax-frame', fam: 'Loom', motif: 'intan', mf: 'assets/products/frame/frame-motif.svg', status: 'Closed pilot', line: 'Know what your business depends on.' },
   { k: 'angka', name: 'Angka', logo: 'angka', fam: 'Tide', motif: 'congkak', mf: 'assets/products/angka/angka-motif.svg', status: 'Closed pilot', line: 'A finance workspace for business owners who are not accountants.' },
   { k: 'tinara', name: 'Tinara', logo: 'tinara', fam: 'Tide', motif: 'kerawang', mf: 'assets/products/tinara/tinara-motif.svg', status: 'Closed pilot', line: 'Know which Malaysian companies to sell to, and why.' },
   { k: 'loom', name: 'Cebis Loom', logo: 'loom', fam: 'Loom', motif: 'tenun', mf: null, status: 'Managed service', line: 'Your business data, cleaned and ready.' },
@@ -119,7 +120,7 @@ ${text('by REKA Inisiatif Sdn Bhd · Kuala Lumpur', 72, 418, 14, { fill: '#8F9AC
 // ================= families =================
 {
   const W = 1280, H = 330, gap = 16, tw = (W - 2 * 24 - 5 * gap) / 6;
-  const names = { Ripple: 'Yara', Edge: 'PLExyz Grid, Crowd', Frame: 'AX Frame', Loom: 'Cebis Loom', Motion: 'AX Motion', Tide: 'Janka, Angka, Tinara' };
+  const names = { Ripple: 'Yara', Tide: 'Janka, Angka, Tinara', Loom: 'Cebis Loom, AX Frame', Edge: 'PLExyz Grid, Crowd', Motion: 'AX Motion', Nalar: 'AwanGan, BumiNyata' };
   let style = `@keyframes br{0%,100%{transform:scale(1) translateY(0)}50%{transform:scale(1.08) translateY(-4px)}}.br{animation:br 3.2s ease-in-out infinite}`;
   const tiles = Object.entries(FAM).map(([n, f], i) => {
     const x = 24 + i * (tw + gap), mx = x + tw / 2;
@@ -133,7 +134,7 @@ ${text(f.line, mx, 230, width(f.line, 14) > tw - 20 ? 12.5 : 14, { fill: NAVY, a
 <path d="M${r1(x + 20)},250H${r1(x + tw - 20)}" stroke="${f.c}" stroke-opacity=".35" stroke-dasharray="3 5"/>
 ${lines.map((l, j) => text(l, mx, 274 + j * 18, 13, { f: F.semibold, fill: BODY, anchor: 'middle' })).join('')}</g>`;
   }).join('');
-  write('assets/readme/families.svg', svg(W, H, 'The six families: Ripple, Edge, Frame, Loom, Motion and Tide, with their products', `<rect width="${W}" height="${H}" rx="28" fill="#FFFFFF"/><rect x=".5" y=".5" width="${W - 1}" height="${H - 1}" rx="28" fill="none" stroke="${LINE}"/>${tiles}`, style));
+  write('assets/readme/families.svg', svg(W, H, 'The six families: Ripple, Tide, Loom, Edge, Motion and Nalar, with their products', `<rect width="${W}" height="${H}" rx="28" fill="#FFFFFF"/><rect x=".5" y=".5" width="${W - 1}" height="${H - 1}" rx="28" fill="none" stroke="${LINE}"/>${tiles}`, style));
 }
 
 // ================= product cards =================

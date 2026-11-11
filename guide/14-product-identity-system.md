@@ -15,7 +15,7 @@ The visual guide (`guide/product-brands.html`) shows every part of it.
 Every product sits in one chain. Each link has one job, and no link does another's job.
 
 ```
-Family        what kind of work          Tide: Optimize, "Read what's coming."
+Family        what kind of work          Tide: Decide
  ├─ gives     the family icon, the BaTech colour pair and the composition shape
  └─ Product   the brand customers buy    Janka
      ├─ Logo  who it is                  the J that never closes
@@ -31,9 +31,9 @@ Family        what kind of work          Tide: Optimize, "Read what's coming."
 | Loom · Structure | Legacy four corners for AX Frame | AX Frame | **Existing A + four-corner product mark retained** | **intan** | One world, seen many ways |
 | Loom · Structure | woven bars | Cebis Loom | The A with the Loom icon (drawn) | **tenun** | The weave itself |
 | Motion · Navigate | split bolt | AX Motion | the A with the Motion icon (drawn) | **bunga cengkih** | Every vehicle, seen from above |
-| Tide · Optimize | crescent with a dot | Janka | the J that never closes | **padi** | Reading the harvest before it comes |
-| Tide · Optimize | | Angka | the sheet-stack face | **congkak** | Counting where it all goes |
-| Tide · Optimize | | Tinara | the signal | **kerawang** | One path found in the noise |
+| Tide · Decide | crescent with a dot | Janka | the J that never closes | **padi** | Reading the harvest before it comes |
+| Tide · Decide | | Angka | the sheet-stack face | **congkak** | Counting where it all goes |
+| Tide · Decide | | Tinara | the signal | **kerawang** | One path found in the noise |
 | Nalar · Reason | swaying fork with a dot (Cabang) | AwanGan | Product mark pending | **pending** | Managed cloud AI |
 | Nalar · Reason | | BumiNyata | Product mark pending | **pending** | Private/on-premises AI |
 
@@ -205,7 +205,7 @@ Timing and care:
 
 Each product has a full palette, built from its own colour by `tools/build-product-palettes.mjs`. It writes `tokens/product-palettes.json` and `.css`, and contains:
 
-- **Scale:** 11 steps, 50 to 950, in OKLCH, with the product's own colour sitting exactly on its nearest step.
+- **Scale:** 11 steps, 50 to 950, in OKLCH, with the product's own colour sitting exactly on its nearest step. A product that arrives with colours already in use may pin them to their steps (`steps`, `neutralSteps` in the tool), so its roles fall on them: Tiko's.
 - **Roles:**
   - `action`, `action-hover`, `action-pressed`: the product's own colour, at the first step that passes 4.5:1 with white text. Every product acts in its own colour; AntaraX blue is the focus ring everywhere.
   - `accent`, plus `accent-text`: the first step that reads as text on white (4.5:1).
@@ -226,6 +226,7 @@ Each product has a full palette, built from its own colour by `tools/build-produ
 | PLExyz Crowd | PLExyz purple until Crowd has its own theme | `#6040CC` | `#6040CC` | zone teal | orange, aqua, blue, magenta |
 | Angka | warm plum with Lapis peach, on paper | `#6B3F6B` | `#6B3F6B` | peach `#E9906B` | blue, orange, aqua, violet |
 | Tinara | **garnet** with gold: discreet, valuable | `#7A1E3C` | `#7A1E3C` | gold `#D6A84F` | blue, orange, aqua, violet |
+| Tiko | friendly purple with an orange dot on a soft lavender ground | `#7A5FFF` | `#6A4DF5` | orange `#FB9800` | orange, aqua, blue, magenta |
 | Cebis Loom, AX Motion | the family colour | `#4904B3`, `#FC5D04` | `#4904B3`, `#BE4402` | navy | see tokens |
 
 What changed and why:
@@ -236,6 +237,7 @@ What changed and why:
 - **AX Frame's secondary is halo indigo, not orange.** The app's orange `#FB9800` is REKA's colour and almost the warn colour, so a highlight read as a warning.
 - **Janka's action is `#077DA1`**, the first step of its cyan that passes 4.5:1 with white text.
 - **PLExyz Crowd gets PLExyz purple** until its theme is drawn.
+- **Tiko keeps the colours its app was built with** (owner, 5 November 2026). Its purple `#7A5FFF` is 4.28:1 on white, so it acts in `#6A4DF5` (5.26:1), hovers in `#5B3FE0`, and writes on its lavender `#EDEBFF` in `#4B2FC9` (7.0:1); its ground is `#FAF9FC` and its neutrals 50 to 300 are the app's own. These are pinned to their steps; the rest of its scale is built as for every product. Its text and status colours follow the shared core here; the app still uses its own (open, 11 question 31).
 
 Rules:
 
@@ -356,7 +358,7 @@ Most of it, yes. Some of it is product design, kept here because there is no pro
 
 | Part | Brand or product design | Why it is here |
 |---|---|---|
-| The chain, logo vs motif, family icons, sub-product naming | Brand | Without them, nine products look like nine companies, or like one product repeated |
+| The chain, logo vs motif, family icons, sub-product naming | Brand | Without them, eleven products look like eleven companies, or like one product repeated |
 | BaTech by family | Brand | It is what makes a family recognisable at a glance |
 | Palettes | Both | The product colour is brand; scales, roles and chart sets are product design |
 | Loading states | Mostly product design | The signature loader is brand; the seven states keep products consistent to use |

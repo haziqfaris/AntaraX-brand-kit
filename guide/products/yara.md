@@ -49,7 +49,7 @@ A-mark product in the Ripple family. Main product and the portfolio lead. Live a
 ## Where it came from
 
 - The idea traces to REKA's pandemic automation work (2020 to 2021): most operational work still needs people, and the value is in seeing every task live (REKA story). The reka.re playbook asks for this origin to be confirmed before it is used as a Yara example, so **do not publish it yet**.
-- The current app was first built for a Malaysian metal fabricator (app brief dated 10 July 2026; requirements signed 19 August 2026; go-live 30 September 2026). Do not name the customer until the owner confirms permission (11, question 9).
+- The current app was first built for a Malaysian metal fabricator (app brief dated 10 July 2026; requirements signed 19 August 2026; go-live 30 September 2026). Do not name the customer without written permission (10, 11 October 2026).
 - Yara was already under AntaraX at launch (23 July 2026). It is the first subscription success.
 
 ## Mark

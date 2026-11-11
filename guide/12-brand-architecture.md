@@ -34,12 +34,12 @@ REKA Inisiatif Sdn Bhd            the company: R&D, Managed AI, legal entity
 
 | Kind | Products | Mark | Primary action | Accent |
 |---|---|---|---|---|
-| **Own-mark** | PLExyz products, Janka, Angka, Tinara | The product's own logo | The product's own colour (its dark shade if it fails 4.5:1 with white) | The product's own colours |
+| **Own-mark** | PLExyz products, Janka, Angka, Tinara, Tiko | The product's own logo | The product's own colour (its dark shade if it fails 4.5:1 with white) | The product's own colours |
 | **A-mark** | Yara, AX Frame, Cebis Loom, AX Motion, and eligible new products | Existing AntaraX A treatments, each requiring a **distinct product mark**; preserve existing identities | Product colour | Family identity where approved |
 
-An own-mark product retains its recognised identity. An A-mark can use the family icon only if it remains distinctive. **AX Frame and Cebis Loom both belong to Loom and keep separate current logos and product palettes.** AwanGan and BumiNyata belong to Nalar; their new family icon, colour and individual mark design remain pending.
+An own-mark product retains its recognised identity. An A-mark can use the family icon only if it remains distinctive. **AX Frame and Cebis Loom both belong to Loom and keep separate current logos and product palettes.** AwanGan and BumiNyata belong to Nalar. Nalar's colour (deep gold) and icon (Cabang) were chosen on 3 November 2026; each product's own mark, palette and motif are still to be designed (11, question 27).
 
-## Two layers in every product
+## Product look and AntaraX look
 
 **The product layer is the product's own** and stays as it is: logo, palette, signature details, layouts.
 
@@ -77,6 +77,7 @@ Each product has one signature motif, from its family's niche. The wording is Ba
 | Tide | Janka | **padi** (paddy) | signal bars | Reading the harvest before it comes |
 | Tide | Angka | **congkak** (counting board) | a ledger, seeds moving like money | Counting where it all goes |
 | Tide | Tinara | **kerawang** (carved lattice) | one path found in the noise | One path found in the noise |
+| Tide | Tiko (working name, private pilot) | **gelombang** (wave), used Quiet (owner, 4 November 2026) | a clock signal | Every move keeps the rhythm going |
 | Edge | PLExyz Grid | **petak** (grid of spaces) | spaces in a layout | Spaces in a real layout |
 | Edge | PLExyz Crowd | **orbit** | wireless | Signals counted, never faces |
 | Loom | AX Frame | **intan** (diamond, retained as product motif) | one world, seen many ways | One world, seen many ways |
@@ -100,7 +101,7 @@ BaTech's rule is "use the palette and the family pairs; never recolour with off-
 
 The Quiet strength uses BaTech's one light ink, `#C5CCF7`, for every family.
 
-**Legacy visual exception (27 October 2026):** Former Frame family blue `#074AF8` is retained as **AX Frame's product colour**, along with existing assets and its `intan` motif. Do not remove or recolour product assets, tokens, generated imagery or email/AXLE compositions automatically. Nalar has no approved icon or palette yet. [16](16-product-family-architecture.md) governs the staged migration.
+**Legacy visual exception (27 October 2026):** Former Frame family blue `#074AF8` is retained as **AX Frame's product colour**, along with existing assets and its `intan` motif. Do not remove or recolour product assets, tokens, generated imagery or email/AXLE compositions automatically. Nalar's colour and icon were approved on 3 November 2026; its BaTech motifs are still open. [16](16-product-family-architecture.md) governs the staged migration.
 
 ### Where it goes in a product
 
@@ -114,7 +115,7 @@ Each place uses one BaTech strength, keeps text on a solid surface, and appears 
 | Avatar and image placeholders | The family's corak behind initials or an empty image | Quiet or family pair, texture scale |
 | Loading | The motif draws on, lights in sequence or carries a travelling pad; or the mark does its thinking motion. Never spinning or flipping (14) | Full colour, 48 to 72px |
 
-Files: `assets/products/<product>/<product>-motif.svg` (signature motif, family pair; Cebis Loom's and AX Motion's are still to be drawn) and `assets/families/bands/<family>-quiet-drift.svg` and `-quiet-edge.svg` (Quiet bands), built by `tools/build-product-motifs.mjs` with the BaTech guideline recipes.
+Files: `assets/products/<product>/<product>-motif.svg` (signature motif, family pair; Tiko also has `tiko-motif-quiet.svg`, the owner's subtle version, one light ink; Cebis Loom's and AX Motion's are still to be drawn) and `assets/families/bands/<family>-quiet-drift.svg` and `-quiet-edge.svg` (Quiet bands), built by `tools/build-product-motifs.mjs` with the BaTech guideline recipes.
 
 A logo and a motif are always different (14). Tinara's logo was its motif; it now gets a logo of its own, and kerawang stays its motif.
 
@@ -139,6 +140,7 @@ Approved by the owner (11 October 2026). Build Yara's first, then Janka's. Beyon
 | Janka · padi | A forecast runs | The padi stalk draws on while the forecast runs; its grains fill when it is ready |
 | Angka · congkak | Month-end matching | Progress is the congkak board: each matched receipt drops a seed into a hole |
 | Tinara · kerawang | Ranking companies | The lattice lights opening by opening until one path settles |
+| Tiko · gelombang | A deal is won | The wave draws on once beside the win, small and Quiet, then rests (owner, 4 November 2026: keep it subtle) |
 | PLExyz Grid · petak | An empty layout | Before a facility is drawn, the canvas shows petak as the picture and asks for the first zone |
 | PLExyz Crowd · orbit | Live sensing | The live indicator is the orbit, its dot travelling slowly, in place of a pulsing dot |
 | AX Frame · intan | A record fills in | The intan's facets fill as each part of an asset's record is completed |
@@ -207,7 +209,7 @@ How to write them:
 - **Outside the product** (antarax.ai, sales, docs), the product comes first: "Atlas in AX Frame" in running text; "AX Frame · Atlas" where space is short. Lines are ways of using one product, not products, so never "AX Atlas", "AntaraX Atlas" or "Frame Atlas" as a product name.
 - **One word, capitalised as a name.** No all caps, no prefixes, no version numbers in the name.
 - **Shared names mean the same thing everywhere.** **Assist** is the AI assistant in every product, always shown with the sparkle. One exception: Angka keeps **Ask Angka**, because a business owner understands "ask" at once (owner, 11 October 2026). **Forecast** is a product's forecasting. A product that adds an AI assistant calls it Assist.
-- **Never reuse** a family name (Ripple, Edge, Frame, Loom, Motion, Tide), a product or PLExyz product name, another product's line for a different thing, or an internal name (AXLE).
+- **Never reuse** a family name (Ripple, Tide, Loom, Edge, Motion, Nalar) or the retired Frame, a product or PLExyz product name, another product's line for a different thing, or an internal name (AXLE).
 - **Malay words** may name a line only when the meaning is the job and it is explained once, as Lapis and Lapisan ("layer") are. Motif names (awan larat, padi, intan) stay design vocabulary, not feature names.
 - **Working names** stay marked as working until the owner confirms them (Yara View and Assist today).
 

@@ -27,7 +27,7 @@ One word for each shared idea, in every product. Product-specific things keep th
 | What | Standard |
 |---|---|
 | Product app | `<product>.antarax.ai` (yara, janka, grid, frame, angka, tinara, crowd). Never a `vercel.app`, `netlify.app` or other platform address in front of a customer |
-| Admin console | `axle.antarax.ai`, one console for every product (antarax-api decision 0009). Until it exists, `axle.<product>.antarax.ai` |
+| Admin console | Each product's AXLE at `axle-<product>.antarax.ai` (owner, 11 November 2026); the central staff console, R8, at `r8.antarax.ai` (antarax-api decision 0018). `axle.antarax.ai` is kept free |
 | Developers | `api.antarax.ai` and `lapisan.antarax.ai`: **Lapisan** (`haziqfaris/antarax-api`) issues the API keys and keeps tenants, scopes, limits and usage rows |
 | AI | **AwanGan** (`haziqfaris/AntaraX-AwanGan`), AntaraX's AI control plane: `awangan.antarax.ai` for people, `api.antarax.ai/ai/v1` for machines (AwanGan decisions 0015 and 0021; both are set up with its first cell). It holds the provider keys, models and routing. A product that comes through it calls `api.antarax.ai/ai/v1` with an AntaraX key for product `ai` from Lapisan, never a provider's own address or key (owner, 25 October 2026) |
 | Data | **Cebis** (Cebis Loom in full, `haziqfaris/antarax-cebis-loom`), the Loom family's data product: `cebis.antarax.ai` for people (its free browser version at `/try`, when started), `api.antarax.ai/cebis/v1` for machines, sender `Cebis <cebis@mail.antarax.ai>`; each set up when its cell or feature arrives (Cebis decision 0012). Not `loom.antarax.ai` while open question 26 is open |
@@ -65,7 +65,8 @@ Never show a personal address, "contact your REKA account manager" unless one is
 - The symbol directly before the amount, commas for thousands: `RM1,200.00`, `US$45.00`. Write `US$`, never a bare `$`.
 - Two decimals in tables and invoices; whole numbers allowed in summaries (`RM1,200`).
 - Never convert silently. Totals in more than one currency stay grouped: `RM1,200 + US$45` (AX Frame's rule, now everyone's).
-- Every amount in JetBrains Mono with tabular figures (05).
+- Every amount in JetBrains Mono with tabular figures (05). Inside products this has no exception; printed documents (reports, proposals) may set figures in Poppins with tabular figures (owner, 11 November 2026).
+- **Who sees money** is set by role, server-side, never by hiding a column: the roles that may see prices and order values are listed in one place in each product (Yara's `MONEY_VISIBLE_ROLES`; AX Frame owners only). The Dashboard kit has the rule (`app/SPEC.md`).
 - antarax.ai shows USD first with an MYR toggle (03); inside a product, the organisation's own currency.
 
 **Dates and times**
@@ -93,6 +94,10 @@ Every product email uses one layout, drawn by AntaraX email (antarax-api `packag
 7. **The link written out** in mono, in one framed box with how long it works.
 8. **Footer:** why the email came, the credit line ("Janka by AntaraX, from REKA."), the legal line, the support line.
 
+**Sender houses** (30 October 2026). Every sender belongs to a house: an AntaraX product credits "‹Product› by AntaraX, from REKA."; a **REKA-owned tool** that sends through AntaraX email credits "‹Tool› by REKA, powered by AntaraX." with REKA's legal line and its own address on `mail.reka.re` (owner, 1 and 11 November 2026; peREKA first). A client app sends from REKA Tech's team (`mail.reka.tech`), never AntaraX's. The ban on "Powered by AntaraX" (16 October 2026) still holds inside AntaraX products.
+
+**One exception to "everything through AntaraX email":** monitoring alerts go out through Grafana Cloud's own email (RESAM D-45, `reka-observability-kit`), so an alert still arrives when AntaraX email is the thing that is down.
+
 Tables and inline styles only, light only, 600 px wide, and a plain-text part that says the same with the link first. Emails people can opt out of (digests, reminders, alerts) carry a one-click `List-Unsubscribe` header and a line in the footer saying how to stop them (AX Frame's pattern); sign-in, invite and security emails do not. Subject lines are a plain sentence in sentence case, no emoji, no exclamation mark; the sender name already says which product it is. Sign-in emails Supabase sends itself use the same layout, pasted into Supabase, and go out through `mail.antarax.ai` as the product. A mail provider that refuses is logged and the person sees what went wrong in words.
 
 ## 5 Copy patterns
@@ -111,12 +116,13 @@ Tables and inline styles only, light only, 600 px wide, and a plain-text part th
 AXLE is REKA's internal console for running every product. Customers never see its name or reach it (03).
 
 - **One name:** "AXLE", with the product as context ("AXLE · Janka"), never "REKA Admin" or a product-branded name.
-- **One address:** `axle.antarax.ai` (see 2).
-- **One look:** dark bars, light page (owner, 15 October 2026). The sidebar and the AntaraX top bar are dark (`#071233`, raised `#0C1B47`) with REKA orange `#FB9800` as the accent (it is REKA's tool) and an orange `AXLE` tag after the brand pill; the page is light (`#F5F7FC`, white cards, navy ink). Poppins and JetBrains Mono, the AntaraX A in the corner. The full standard and the template every AXLE is built from are in `haziqfaris/AntaraX-Dashboard-kit`: start with `axle/README.md` (spec v1.4, the final mock, the tokens).
+- **One address pattern:** `axle-<product>.antarax.ai` (owner, 11 November 2026), because Cloudflare's free certificate covers one level under antarax.ai (AwanGan decision 0024). Addresses already in use (`axle.yo.antarax.ai`, `axle.tiko.antarax.ai`) stay until their AXLE is reworked. `axle.antarax.ai` is kept free.
+- **One look:** dark bars, light page (owner, 15 October 2026). The sidebar and the AntaraX top bar are dark (`#071233`, raised `#0C1B47`) with REKA orange `#FB9800` as the accent (it is REKA's tool) and an orange `AXLE` tag after the brand pill; the page is light (`#F5F7FC`, white cards, navy ink). Poppins and JetBrains Mono, the AntaraX A in the corner. The full standard and the template every AXLE is built from are in `haziqfaris/AntaraX-Dashboard-kit`: start with `axle/README.md` (the AXLE spec, the final mock, the tokens).
 - **Two modes everywhere:** Dashboard for the business and R8 for the machinery, switched at the top of the sidebar. Every product has R8 Base; a product that runs machinery of its own has R8 Full (owner, 15 October 2026).
 - **The sidebar:** groups are folding cards with a tinted icon tile and a title in the group's colour; the current page is an orange tint with orange text and the intan, never a side stripe (owner, 15 October 2026).
 - **One sign-in page** in every product (owner, 18 October 2026): navy with the dotted blueprint, the AntaraX A and `AXLE`, Continue with Google or email, password and a code, and one AntaraX-blue Sign in. The page is in the Dashboard kit, `axle/SPEC.md` 5.1.1.
-- **One sign-in** for REKA staff across products, when the single console exists.
+- **How staff sign in** (owner, 11 November 2026): Google, or an email address and a one-time code (a Cloudflare Access emailed code counts). **Never a sign-in link** in AXLE. AwanGan's and Cebis Loom's AXLEs sign in by link today and move to codes the next time they are touched.
+- **R8, the central staff console,** is at `r8.antarax.ai` (owner, 11 November 2026): one console for what is shared across products, Email first. It is built from the AXLE template. Inside each product's AXLE, "the R8 mode" still means the machinery mode; write which you mean.
 - **AI pages show the product's own share of AwanGan** (owner, 25 October 2026): Models & keys is a read-only view of AwanGan's keys and routes, and AI usage reads Lapisan's usage rows for product `ai` (Dashboard kit `axle/SPEC.md` 10.6).
 
 ## 6a The AntaraX shell in customer apps
@@ -135,6 +141,8 @@ The top bar's sizes are tokens: the `shell` section of `tokens/tokens.json` and 
 The full standard is in `haziqfaris/AntaraX-Dashboard-kit`: start with `app/README.md`.
 
 ## 6b AI in the interface
+
+**Names.** Our AI is **Assist** in every product (12). One exception (owner, 11 November 2026): in a **client support conversation** run by TriageNT, the assistant takes one name from the approved persona list (TriageNT `docs/PERSONA-NAMES.md`), is shown as "‹Name›, REKA's support assistant", and says it is an AI whenever asked. Team tools keep Assist.
 
 The same pieces wherever a product shows AI work, so a customer reads AI the same way in every product. They are the interface layer (B1) of the AntaraX AI framework (`haziqfaris/ai-framework-heuristiks`, its layer page B1 and docs 03, 21 and 25); its gateway supplies the words and the outcomes, the product draws them in its own style (owner, 16 October 2026).
 

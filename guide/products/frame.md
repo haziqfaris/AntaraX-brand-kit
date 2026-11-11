@@ -1,6 +1,6 @@
 # AX Frame
 
-A-mark product, and the one product that shares its family's name (Frame, Understand). Closed pilot while the owner validates it. Live at frame.antarax.ai. A manual-first ledger of every subscription, domain, login and renewal a business runs on.
+A-mark product in the **Loom family (Structure)** since 27 October 2026; it was the one product that shared its family's name (Frame, Understand), a family now retired. Closed pilot while the owner validates it. Live at frame.antarax.ai. A manual-first ledger of every subscription, domain, login and renewal a business runs on.
 
 ## Brief
 
@@ -35,7 +35,7 @@ A-mark product, and the one product that shares its family's name (Frame, Unders
 
 - The product is **AX Frame**, everywhere: in the app, in emails, on its own site and beside other products. "Frame" alone is too common: Nutanix sells a cloud desktop product listed simply as "Frame", and Frame.io and Framer are other well-known software names, so "Frame" alone is hard to find in search and weak as a mark.
 - Credit: "AX Frame · by AntaraX", the same line as every product.
-- The family stays **AntaraX Frame** (Understand) on the Families page. The short code AXF stays internal and in key prefixes.
+- AX Frame's family is **Loom** (Structure) on the Families page; "AntaraX Frame" is a retired family name, never the product's (27 October 2026). The short code AXF stays internal and in key prefixes.
 - Replace "AntaraX Frame" as the product name in the app title, manifest, emails ("AntaraX Frame <notifications@...>") and landing page. The domain antaraxframe.com can stay.
 - Working lines (Atlas, Layers, Orbit, Pulse, Ledger, Lens) are ways of seeing one world, not products (02).
 

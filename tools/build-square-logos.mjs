@@ -13,6 +13,7 @@ const SRC = {
   janka: 'assets/products/janka/janka-mark.svg', angka: 'assets/products/angka/angka-mark.svg', lapis: 'assets/products/angka/lapis-mark.svg',
   ...Object.fromEntries(['grid', 'crowd', 'trace', 'flow', 'transit', 'site', 'ward', 'yard'].map((k) => [`plexyz-${k}`, `assets/products/plexyz/plexyz-${k}-mark.svg`])),
   'plexyz-master': 'assets/products/plexyz/plexyz-master-mark.svg', 'plexyz-master-disc': 'assets/products/plexyz/plexyz-master-disc.svg',
+  awangan: 'assets/products/awangan/awangan-mark.svg', 'awangan-small': 'assets/products/awangan/awangan-mark-small.svg', 'awangan-white': 'assets/products/awangan/awangan-mark-white.svg',
   tinara: 'assets/products/tinara/tinara-logo.svg', 'tinara-light': 'assets/products/tinara/tinara-logo-light.svg', 'tinara-small': 'assets/products/tinara/tinara-logo-small.svg',
 };
 const MARGIN = 0.08; // of the square's side, on every edge

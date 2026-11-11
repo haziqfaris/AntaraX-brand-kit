@@ -124,7 +124,7 @@ Keep:
 6. Cebis Loom retains the Loom-specific violet family identity and `tenun` product motif.
 
 Design follow-ups, **not decisions in this update**:
-- ~~Choose the Nalar family icon and palette~~: **done 3 November 2026**: deep gold `#B48B02` (tint `#F9EED4`, dark `#7E6105`) and the Cabang icon, a swaying fork with a dot ([10](10-decisions-log.md)). Still to do: the Nalar BaTech motif and composition, tested against the six-family system and its consumers.
+- ~~Choose the Nalar family icon and palette~~: **done 3 November 2026**: deep gold `#B48B02` (tint `#F9EED4`, dark `#7E6105`) and the Cabang icon, a swaying fork with a dot ([10](10-decisions-log.md)). Still to do: the Nalar BaTech motif and composition, tested against the six-family system and its consumers. AwanGan's own mark (the cloud in orbit) and both products' palettes were chosen on 11 November 2026; BumiNyata's mark and both motifs are still open (11, question 27).
 - Define the Loom-family treatment for AX Frame's family badge/brand band while preserving AX Frame's distinct logo and product accent. Existing Frame colour/assets remain available as legacy values pending audited migration.
 - Clarify the "one A-mark per family" rule where AX Frame and Cebis Loom were both A-mark products before the merger. **Do not apply one shared family icon in a way that produces identical logos.**
 - Confirm whether new applications need new family tokens in `tokens/tokens.json`, Dashboard Kit, BaTech generators, email layouts, mockups and marketing exports. Any token change must follow `AGENTS.md` and synchronise its consumers.

@@ -34,10 +34,10 @@ REKA Inisiatif Sdn Bhd            the company: R&D, Managed AI, legal entity
 
 | Kind | Products | Mark | Primary action | Accent |
 |---|---|---|---|---|
-| **Own-mark** | PLExyz products, Janka, Angka, Tinara, Tiko | The product's own logo | The product's own colour (its dark shade if it fails 4.5:1 with white) | The product's own colours |
+| **Own-mark** | PLExyz products, Janka, Angka, Tinara, Tiko, AwanGan | The product's own logo | The product's own colour (its dark shade if it fails 4.5:1 with white) | The product's own colours |
 | **A-mark** | Yara, AX Frame, Cebis Loom, AX Motion, and eligible new products | Existing AntaraX A treatments, each requiring a **distinct product mark**; preserve existing identities | Product colour | Family identity where approved |
 
-An own-mark product retains its recognised identity. An A-mark can use the family icon only if it remains distinctive. **AX Frame and Cebis Loom both belong to Loom and keep separate current logos and product palettes.** AwanGan and BumiNyata belong to Nalar. Nalar's colour (deep gold) and icon (Cabang) were chosen on 3 November 2026; each product's own mark, palette and motif are still to be designed (11, question 27).
+An own-mark product retains its recognised identity. An A-mark can use the family icon only if it remains distinctive. **AX Frame and Cebis Loom both belong to Loom and keep separate current logos and product palettes.** AwanGan and BumiNyata belong to Nalar. Nalar's colour (deep gold) and icon (Cabang) were chosen on 3 November 2026. On 11 November AwanGan took its own mark, the cloud in orbit, and both products their palettes (AwanGan in Nalar gold, BumiNyata in clay); BumiNyata's mark and both motifs are still to be designed (11, question 27).
 
 ## Product look and AntaraX look
 
@@ -51,6 +51,7 @@ An own-mark product retains its recognised identity. An A-mark can use the famil
 | Tinara | Garnet and gold; the signal logo (14) |
 | AX Frame | The breathing cube halo |
 | Yara | The A with the Ripple wave; teal |
+| AwanGan | The cloud in orbit; Nalar gold, navy ring, cyan moon |
 
 **The AntaraX layer is the same in every product**, and small enough that it never changes how the product looks:
 
@@ -281,6 +282,9 @@ Own accent, for the primary action, selection, charts and identity moments, with
 | PLExyz Grid | violet `#2C09B2`; zones `#4FD7D1` `#FD9001` `#FD4F85` `#CBB6FA` for data | `#E1DDF4` | `#180562` | `#2C09B2` |
 | Angka | plum `#6B3F6B` | `#EAE4EA` | `#3B233B` | `#6B3F6B` |
 | Tinara | garnet `#7A1E3C`; gold `#D6A84F` for highlights | `#FEF4F6` | `#511A2A` | `#7A1E3C` |
+| Tiko | purple `#7A5FFF`; Tide pink `#E9579D` for highlights | `#EDEBFF` | `#4B2FC9` | `#6A4DF5` |
+| AwanGan | Nalar gold `#B48B02` | `#F5ECD7` | `#574201` | `#8D6C01` |
+| BumiNyata | clay `#8A5A2E`; Nalar gold second | `#F7EAE0` | `#603C1A` | `#8A5A2E` |
 | Cebis Loom, AX Motion | family colour | see tokens | see tokens | the family colour's action step |
 
 Full palettes (11-step scales, roles, chart sets, dark mode) are in 14 and `tokens/product-palettes.json`. On antarax.ai the family colour leads (05). Inside a product's own app, the product's colours lead; BaTech motifs inside it keep their family pair.

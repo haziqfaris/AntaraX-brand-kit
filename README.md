@@ -2,7 +2,7 @@
 
 <p align="center">
 <img alt="status: reference" src="https://img.shields.io/badge/status-reference-0459F7?style=flat-square">
-<img alt="version 1.14.0" src="https://img.shields.io/badge/version-1.14.0-0459F7?style=flat-square">
+<img alt="version 1.15.0" src="https://img.shields.io/badge/version-1.15.0-0459F7?style=flat-square">
 <img alt="six families" src="https://img.shields.io/badge/families-6-0B1B4F?style=flat-square">
 <img alt="eleven products" src="https://img.shields.io/badge/products-11-0B1B4F?style=flat-square">
 <img alt="spinning loaders: never" src="https://img.shields.io/badge/spinning%20loaders-never-F04438?style=flat-square">
@@ -15,7 +15,7 @@ Every AntaraX product, the antarax.ai website, decks, campaigns and anything wri
 <p align="center"><a href="guide/">The guide</a> · <a href="guide/products/README.md">Product sheets</a> · <a href="guide/product-brands.html">Visual guide</a> · <a href="tokens/">Tokens</a> · <a href="guide/10-decisions-log.md">Decisions</a> · <a href="guide/15-readme-standard.md">README standard</a> · <a href="https://github.com/haziqfaris/reka-brand-kit">REKA's kit</a></p>
 
 > [!NOTE]
-> **A reference, and every product follows it.** This kit is the source of truth for the AntaraX brand: names, statuses, voice, claims, logos, colour, type, BaTech, interface rules and the README standard. It ships no product of its own. Tokens are at **1.14.0** (`tokens/tokens.json`). The main branch is `main`.
+> **A reference, and every product follows it.** This kit is the source of truth for the AntaraX brand: names, statuses, voice, claims, logos, colour, type, BaTech, interface rules and the README standard. It ships no product of its own. Tokens are at **1.15.0** (`tokens/tokens.json`). The main branch is `main`.
 
 AntaraX is the AI product line of **REKA Inisiatif Sdn Bhd** (Kuala Lumpur, Malaysia). REKA has its own kit: [haziqfaris/reka-brand-kit](https://github.com/haziqfaris/reka-brand-kit). Where the two meet, [guide/01-positioning.md](guide/01-positioning.md) sets the boundary.
 
@@ -91,7 +91,7 @@ Eleven products, every one "by AntaraX". Tap a card for its brand sheet.
 <a href="guide/products/motion.md"><img src="assets/readme/card-motion.svg" width="32%" alt="AX Motion by AntaraX"></a>
 </p>
 
-Two more have no card yet: **AwanGan**, our own AI models in the cloud, and **BumiNyata**, our own AI models on your own servers. Both are AI models, by arrangement; their names, lines and status are in [02 Products and families](guide/02-products-and-families.md).
+Two more have no card yet: **AwanGan**, our own AI models in the cloud (its mark, the cloud in orbit, is `assets/product-logos/awangan.svg`), and **BumiNyata**, our own AI models on your own servers. Both are AI models, by arrangement; their names, lines and status are in [02 Products and families](guide/02-products-and-families.md).
 
 | Tier | Products |
 |---|---|
@@ -328,7 +328,7 @@ and usage rows are Lapisan's (haziqfaris/antarax-api). Their addresses are in gu
 **Bring in the tokens.** Copy the two token files (and your logo) from a checkout of this kit, then use the variables. The example is Yara; swap the prefix for yours:
 
 ```css
-/* Copied from AntaraX brand kit 1.14.0. Don't edit; copy again when the kit changes. */
+/* Copied from AntaraX brand kit 1.15.0. Don't edit; copy again when the kit changes. */
 @import "./brand/tokens.css";
 @import "./brand/product-palettes.css";
 
@@ -513,4 +513,4 @@ You need **Node.js**. Each script in [`tools/`](tools/) says how to run it at th
 - **Product support** is support@go.antarax.ai for every product (quiz question 8 above).
 
 <p align="center"><img src="readme-kit/footer.svg" width="100%" alt="AntaraX, put intelligence to work. AntaraX is the product line of REKA Inisiatif Sdn Bhd."></p>
-<p align="center"><sub>AntaraX is the product line of REKA Inisiatif Sdn Bhd · <a href="https://antarax.ai">antarax.ai</a> · <a href="https://reka.re">reka.re</a><br>Private and proprietary. © 2026 REKA Inisiatif Sdn Bhd. All rights reserved. · Last updated 11 November 2026<br>Tokens 1.14.0. Version 1.4, 11 October 2026: the product identity system (logos, motifs, BaTech sets, loaders, palettes) and this guide for product repos. Version 1.3 added brand architecture, product sheets, the AntaraX layer and shared product standards.</sub></p>
+<p align="center"><sub>AntaraX is the product line of REKA Inisiatif Sdn Bhd · <a href="https://antarax.ai">antarax.ai</a> · <a href="https://reka.re">reka.re</a><br>Private and proprietary. © 2026 REKA Inisiatif Sdn Bhd. All rights reserved. · Last updated 11 November 2026<br>Tokens 1.15.0. Version 1.4, 11 October 2026: the product identity system (logos, motifs, BaTech sets, loaders, palettes) and this guide for product repos. Version 1.3 added brand architecture, product sheets, the AntaraX layer and shared product standards.</sub></p>

@@ -86,3 +86,33 @@ for (const [k, ctx] of Object.entries(CONTEXT)) write(`assets/products/plexyz/pl
   write('assets/products/tinara/tinara-logo-small.svg', svg(`<circle cx="38" cy="62" r="28" fill="${G}"/><circle cx="38" cy="62" r="10" fill="#FFFFFF"/><path d="M64,30 A40,40 0 0 1 72,52" stroke="${AU}" stroke-width="12" stroke-linecap="round" fill="none"/><circle cx="84" cy="16" r="9" fill="${AU}"/>`, 'Tinara'));
 }
 
+
+// ---- AwanGan's logo: the cloud in orbit (owner, 11 November 2026: "AwanGan should be cloud and orbit") ----
+// Its own mark (AwanGan is no longer an A-mark stand-in): a cloud (awan) in Nalar gold, a navy ring round it and a
+// sparkle cyan moon on the ring. Where the ring's front passes over the cloud, and round the moon, a gap is cut
+// (a mask, so it shows the ground on any colour): cloud and orbit stay two shapes down to 24px. Solid ring round a
+// solid body, unlike PLExyz Crowd's orbit motif (a thin dashed ellipse with signal arcs). Variants: full colour,
+// -small (24px and below: a heavier ring, a larger moon, a wider gap), -white (navy and dark grounds), -mono (currentColor).
+{
+  const svg = (b, label) => `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="${label}">${b}</svg>\n`;
+  const RING = { cx: 50, cy: 55, rx: 46, ry: 12.5, rot: -13 };
+  const rad = (d) => (d * Math.PI) / 180;
+  const onRing = (t) => { const { cx, cy, rx, ry, rot } = RING, x = rx * Math.cos(rad(t)), y = ry * Math.sin(rad(t)); return [f(cx + x * Math.cos(rad(rot)) - y * Math.sin(rad(rot))), f(cy + x * Math.sin(rad(rot)) + y * Math.cos(rad(rot)))]; };
+  const halfRing = (front) => { const { cx, cy, rx, ry, rot } = RING; return `M${cx - rx},${cy} A${rx},${ry} 0 0 ${front ? 0 : 1} ${cx + rx},${cy}`; };
+  const tr = `transform="rotate(${RING.rot} ${RING.cx} ${RING.cy})"`;
+  const cloud = '<circle cx="28.5" cy="51" r="14.5"/><circle cx="50" cy="38.5" r="20.5"/><circle cx="71.5" cy="48" r="15"/><rect x="14" y="50" width="72" height="23" rx="11.5"/>';
+  const mark = ({ id, body, ring, moon, w = 7, gap = 10.5, mr = 6.5, t = 28 }) => {
+    const [mx, my] = onRing(t);
+    return `<defs><mask id="${id}" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="100"><rect width="100" height="100" fill="#fff"/><path d="${halfRing(true)}" ${tr} fill="none" stroke="#000" stroke-width="${gap}" stroke-linecap="round"/><circle cx="${mx}" cy="${my}" r="${f(mr + gap / 2.6)}" fill="#000"/></mask><mask id="${id}r" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="100"><rect width="100" height="100" fill="#fff"/><circle cx="${mx}" cy="${my}" r="${f(mr + gap / 2.6)}" fill="#000"/></mask></defs>`
+      + `<g mask="url(#${id}r)"><path d="${halfRing(false)}" ${tr} fill="none" stroke="${ring}" stroke-width="${w}" stroke-linecap="round"/></g>`
+      + `<g fill="${body}" mask="url(#${id})">${cloud}</g>`
+      + `<g mask="url(#${id}r)"><path d="${halfRing(true)}" ${tr} fill="none" stroke="${ring}" stroke-width="${w}" stroke-linecap="round"/></g>`
+      + `<circle cx="${mx}" cy="${my}" r="${mr}" fill="${moon}"/>`;
+  };
+  const GOLD = '#B48B02', NAVY = '#0B1B4F', CYAN = '#0CC4FB';
+  write('assets/products/awangan/awangan-mark.svg', svg(mark({ id: 'awg', body: GOLD, ring: NAVY, moon: CYAN }), 'AwanGan'));
+  write('assets/products/awangan/awangan-mark-small.svg', svg(mark({ id: 'awgs', body: GOLD, ring: NAVY, moon: CYAN, w: 9.5, gap: 12.5, mr: 8.5 }), 'AwanGan'));
+  // on navy and dark grounds: a white cloud, a gold ring, the cyan moon
+  write('assets/products/awangan/awangan-mark-white.svg', svg(mark({ id: 'awgw', body: '#FFFFFF', ring: GOLD, moon: CYAN }), 'AwanGan'));
+  write('assets/products/awangan/awangan-mark-mono.svg', svg(mark({ id: 'awgm', body: 'currentColor', ring: 'currentColor', moon: 'currentColor' }), 'AwanGan'));
+}

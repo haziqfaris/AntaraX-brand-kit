@@ -16,10 +16,10 @@ Sheets were written on 11 October 2026 from an audit of each product's repositor
 | Tinara | Own-mark | The signal (new); kerawang is its motif | Tinara garnet `#7A1E3C`, gold | Closed pilot | [tinara.md](tinara.md) |
 | Cebis Loom | A-mark | A + Loom icon | Loom `#4904B3` | Managed service, by arrangement (replaces AX Loom, 25 October 2026) | [loom.md](loom.md) |
 | AX Motion | A-mark | A + Motion icon | Motion `#FC5D04` | Closed pilot, no app yet | [motion.md](motion.md) |
-| AwanGan | Nalar; mark to design | Nalar icon as a stand-in | Nalar gold `#B48B02` as a stand-in | By arrangement | [awangan.md](awangan.md) |
-| BumiNyata | Nalar; mark to design | Nalar icon as a stand-in | Nalar gold `#B48B02` as a stand-in | By arrangement | [buminyata.md](buminyata.md) |
+| AwanGan | Own-mark, Nalar family | The cloud in orbit (11 November 2026) | Nalar gold `#B48B02`, acts in `#8D6C01` | By arrangement | [awangan.md](awangan.md) |
+| BumiNyata | Nalar; mark to design | Nalar icon as a stand-in | Clay `#8A5A2E`, gold second (11 November 2026) | By arrangement | [buminyata.md](buminyata.md) |
 | YaraOne | Internal, Ripple-aligned | Its own | Jade `#087F5B` | Internal (L5) | [yaraone.md](yaraone.md) |
-| Tiko | Own-mark, Tide family | Tiko Classic (working) | Tiko purple `#6A4DF5` | Private pilot, working name; branding to finish | none yet (10, 4–5 November 2026) |
+| Tiko | Own-mark, Tide family | Tiko Classic (working) | Tiko purple `#6A4DF5`, Tide pink `#E9579D` highlight (11 November 2026) | Private pilot, working name; branding to finish | none yet (10, 4–5 November 2026) |
 
 **AX Motion** has no app yet, and Cebis Loom's app is early. Their sheets set out what is decided and what has to happen before an app is built. Like every product, they act in their own colour, with AntaraX blue as the focus ring.
 

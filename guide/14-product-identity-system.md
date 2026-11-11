@@ -34,7 +34,7 @@ Family        what kind of work          Tide: Decide
 | Tide · Decide | crescent with a dot | Janka | the J that never closes | **padi** | Reading the harvest before it comes |
 | Tide · Decide | | Angka | the sheet-stack face | **congkak** | Counting where it all goes |
 | Tide · Decide | | Tinara | the signal | **kerawang** | One path found in the noise |
-| Nalar · Reason | swaying fork with a dot (Cabang) | AwanGan | Product mark pending | **pending** | Managed cloud AI |
+| Nalar · Reason | swaying fork with a dot (Cabang) | AwanGan | **the cloud in orbit** (own mark, 11 November 2026) | **pending** | Managed cloud AI |
 | Nalar · Reason | | BumiNyata | Product mark pending | **pending** | Private/on-premises AI |
 
 What each link gives:
@@ -65,6 +65,7 @@ What each link gives:
 | PLExyz Crowd | force field, shard, entities | orbit: signals counted |
 | Cebis Loom | the A and woven bars | tenun: the weave |
 | AX Motion | the A and a split bolt | bunga cengkih: seen from above |
+| AwanGan | a cloud with its moon in orbit: our own AI, in the cloud and always circling the work | to choose (11, question 27); the board recommends ketupat |
 
 ## Logos
 
@@ -84,6 +85,8 @@ Every product has a logo, and every logo follows one colour rule so they sit tog
 | PLExyz Grid | force field, shard, zones | **zones in their AntaraX equivalents** (owner): teal to sparkle cyan, orange to sparkle orange, pink to Tide pink, lavender to an indigo tint. Mark, wordmark and lockups; the owner's files stay as `*-original.svg` |
 | PLExyz Crowd, Trace, Flow, Transit, Site, Ward, Yard | the PLExyz system: Grid's force field and shard, each with its own spatial context on the floor, in the same AntaraX colours | approved by the owner: `plexyz/plexyz-<product>-mark.svg` |
 | Tinara | **the signal** (C1, chosen by the owner): a garnet company, two gold arcs and a dot | `tinara/tinara-logo.svg`, with `-small` (24px and below) and `-light` (dark grounds) |
+| AwanGan | **the cloud in orbit** (owner, 11 November 2026): a Nalar gold cloud, a navy ring round it and a sparkle cyan moon; a gap is cut where the ring crosses the cloud, so both read at 24px | `awangan/awangan-mark.svg`, with `-small` (24px and below), `-white` (navy and dark grounds) and `-mono` |
+| BumiNyata | to choose (11, question 27); the Nalar icon stands in | |
 | PLExyz master mark | the force field and shard on an empty floor (the space and the entity, no behaviour), on a violet disc and bare | approved: `plexyz/plexyz-master-disc.svg`, `-master-mark.svg` |
 
 Tinara's logo is **the signal**: one garnet company with a gold signal reaching out from it, the company that is ready to buy. Chosen by the owner from six variations on 11 October 2026.
@@ -106,7 +109,7 @@ Three kinds of icon, with three different rules:
 
 Two consequences:
 
-- **Distinct product marks:** no two products may share an indistinguishable A + family icon. **AX Frame and Cebis Loom now share the Loom family**, but must retain different existing product marks while a future family treatment is designed. Nalar's family icon is approved (3 November 2026); AwanGan and BumiNyata still need distinct product marks before asset generation, since two products cannot share the same A with the same icon. Do not automatically change product logos when changing family membership.
+- **Distinct product marks:** no two products may share an indistinguishable A + family icon. **AX Frame and Cebis Loom now share the Loom family**, but must retain different existing product marks while a future family treatment is designed. Nalar's family icon is approved (3 November 2026). AwanGan has its own mark, the cloud in orbit (11 November 2026), so the A with Cabang stays the family's; BumiNyata still needs a distinct mark, since two products cannot share the same A with the same icon. Do not automatically change product logos when changing family membership.
 - **Interface icons never carry motifs or family shapes.** A family is shown by its icon, its colour pair and its BaTech composition, never by restyling the controls people use.
 
 ## BaTech by family
@@ -226,8 +229,10 @@ Each product has a full palette, built from its own colour by `tools/build-produ
 | PLExyz Crowd | PLExyz purple until Crowd has its own theme | `#6040CC` | `#6040CC` | zone teal | orange, aqua, blue, magenta |
 | Angka | warm plum with Lapis peach, on paper | `#6B3F6B` | `#6B3F6B` | peach `#E9906B` | blue, orange, aqua, violet |
 | Tinara | **garnet** with gold: discreet, valuable | `#7A1E3C` | `#7A1E3C` | gold `#D6A84F` | blue, orange, aqua, violet |
-| Tiko | friendly purple with an orange dot on a soft lavender ground | `#7A5FFF` | `#6A4DF5` | orange `#FB9800` | orange, aqua, blue, magenta |
+| Tiko | friendly purple with a Tide pink highlight on a soft lavender ground | `#7A5FFF` | `#6A4DF5` | Tide pink `#E9579D` | orange, aqua, blue, magenta |
 | Cebis Loom, AX Motion | the family colour | `#4904B3`, `#FC5D04` | `#4904B3`, `#BE4402` | navy | see tokens |
+| AwanGan | Nalar gold with navy: the cloud in orbit | `#B48B02` | `#8D6C01` | navy `#0B1B4F` | blue, orange, magenta, violet |
+| BumiNyata | clay (tanah liat) with Nalar gold: kept on your own ground | `#8A5A2E` | `#8A5A2E` | gold `#B48B02` | blue, orange, magenta, violet (its own series is the richer clay `#94591E`, dark `#B47132`) |
 
 What changed and why:
 
@@ -237,7 +242,8 @@ What changed and why:
 - **AX Frame's secondary is halo indigo, not orange.** The app's orange `#FB9800` is REKA's colour and almost the warn colour, so a highlight read as a warning.
 - **Janka's action is `#077DA1`**, the first step of its cyan that passes 4.5:1 with white text.
 - **PLExyz Crowd gets PLExyz purple** until its theme is drawn.
-- **Tiko keeps the colours its app was built with** (owner, 5 November 2026). Its purple `#7A5FFF` is 4.28:1 on white, so it acts in `#6A4DF5` (5.26:1), hovers in `#5B3FE0`, and writes on its lavender `#EDEBFF` in `#4B2FC9` (7.0:1); its ground is `#FAF9FC` and its neutrals 50 to 300 are the app's own. These are pinned to their steps; the rest of its scale is built as for every product. Its text and status colours follow the shared core here; the app still uses its own (open, 11 question 31).
+- **Tiko keeps the colours its app was built with** (owner, 5 November 2026). Its purple `#7A5FFF` is 4.28:1 on white, so it acts in `#6A4DF5` (5.26:1), hovers in `#5B3FE0`, and writes on its lavender `#EDEBFF` in `#4B2FC9` (7.0:1); its ground is `#FAF9FC` and its neutrals 50 to 300 are the app's own. These are pinned to their steps; the rest of its scale is built as for every product. Its text and status colours follow the shared core here; the app still uses its own (open, 11 question 31). **Its highlight is Tide pink `#E9579D`** (owner, 11 November 2026), not REKA orange: never text on white, words on its tint in `#7D094B`, a filled highlight in `#BF2E79`.
+- **AwanGan acts in Nalar gold** (owner, 11 November 2026), as Cebis Loom and AX Motion act in their family colours: gold is 3.17:1 on white, so it acts and writes in `#8D6C01` (4.91:1). **BumiNyata acts in clay `#8A5A2E`** (5.86:1), with Nalar gold second. Clay is below the chart chroma floor, so BumiNyata's chart series is the richer clay `#94591E` (`#B47132` on dark).
 
 Rules:
 

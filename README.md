@@ -457,6 +457,7 @@ You need **Node.js**. Each script in [`tools/`](tools/) says how to run it at th
 | `NODE_PATH=$(npm root -g) node tools/build-readme-kit.mjs readme-kit/repos.json` | Draws the banner for every repository in the list, and the footers. |
 | `NODE_PATH=$(npm root -g) node tools/build-readme-kit.mjs readme-kit/repos.json yara tinara` | Draws just these repositories' banners. |
 | `NODE_PATH=$(npm root -g) node tools/build-readme-art.mjs` | Draws the pictures on this page (`assets/readme/`). |
+| `node tools/build-juru-batech.mjs ../antarax-ai/prototype/site/src/batech.mjs` | Draws the Juru BaTech characters into `assets/juru/` (06). |
 | `node tools/build-product-palettes.mjs` | Builds each product's palette, roles and chart set into `tokens/product-palettes.css` and `.json`. |
 | `node tools/build-logos.mjs` | Builds the logos that were missing: the Loom and Motion A-marks, the PLExyz line marks, Tinara's options and PLExyz Grid in AntaraX colours. |
 | `NODE_PATH=$(npm root -g) node tools/build-square-logos.mjs` | Puts every logo on the same square in `assets/product-logos/`. Needs Playwright with Chromium. |

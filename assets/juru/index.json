@@ -1,0 +1,135 @@
+[
+ {
+  "name": "helm",
+  "role": "Orchestrator",
+  "group": "platform",
+  "motif": "suria",
+  "proposed": true
+ },
+ {
+  "name": "plot",
+  "role": "Planner",
+  "group": "test",
+  "motif": "wau",
+  "proposed": false
+ },
+ {
+  "name": "click",
+  "role": "Tester, one per user role",
+  "group": "test",
+  "motif": "telang",
+  "proposed": false
+ },
+ {
+  "name": "fox",
+  "role": "Attacker",
+  "group": "test",
+  "motif": "ketamguri",
+  "proposed": false
+ },
+ {
+  "name": "gauge",
+  "role": "AI evaluator",
+  "group": "test",
+  "motif": "atom",
+  "proposed": true
+ },
+ {
+  "name": "sift",
+  "role": "Triager",
+  "group": "test",
+  "motif": "rebung",
+  "proposed": false
+ },
+ {
+  "name": "proof",
+  "role": "Verifier",
+  "group": "test",
+  "motif": "cakerawala",
+  "proposed": false
+ },
+ {
+  "name": "scribe",
+  "role": "Reporter",
+  "group": "test",
+  "motif": "komet",
+  "proposed": false
+ },
+ {
+  "name": "desk",
+  "role": "Concierge",
+  "group": "change",
+  "motif": "satelit",
+  "proposed": false
+ },
+ {
+  "name": "trace",
+  "role": "Investigator",
+  "group": "change",
+  "motif": "jaring",
+  "proposed": false
+ },
+ {
+  "name": "brick",
+  "role": "Builder",
+  "group": "change",
+  "motif": "gear",
+  "proposed": false
+ },
+ {
+  "name": "spar",
+  "role": "Challenger, six angles",
+  "group": "change",
+  "motif": "tanjung",
+  "proposed": false
+ },
+ {
+  "name": "spare",
+  "role": "Standby",
+  "group": "change",
+  "motif": "lengan",
+  "proposed": false
+ },
+ {
+  "name": "tick",
+  "role": "Scheduler",
+  "group": "ops",
+  "motif": "bintang",
+  "proposed": false
+ },
+ {
+  "name": "flare",
+  "role": "Incident helper",
+  "group": "ops",
+  "motif": "percik",
+  "proposed": true
+ },
+ {
+  "name": "sprout",
+  "role": "Kickoff agent",
+  "group": "build",
+  "motif": "benih",
+  "proposed": false
+ },
+ {
+  "name": "keeper",
+  "role": "Records keeper",
+  "group": "build",
+  "motif": "daun",
+  "proposed": true
+ },
+ {
+  "name": "scales",
+  "role": "Readiness reviewer",
+  "group": "assure",
+  "motif": "gasing",
+  "proposed": false
+ },
+ {
+  "name": "loop",
+  "role": "Playbook runner",
+  "group": "assure",
+  "motif": "robot",
+  "proposed": true
+ }
+]

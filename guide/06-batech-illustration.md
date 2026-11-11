@@ -68,6 +68,48 @@ Medallions carry the three as small beads under the motif; diagrams and anything
 
 Note: the REKA character guide says Seth appears only on dark grounds. The batik cameo is a stylised motif, not the character render; see 11 Open questions.
 
+## Juru BaTech: the agents' characters (owner, 11 November 2026)
+
+Juru (`juru.antarax.ai`) is where REKA's agents work: the services that test, triage and change software on request. Each agent is a character, and the characters are **Juru BaTech**: a simple shape with an outline, dot eyes and one prop that says what the agent does, wearing its BaTech motif as batik inside the body.
+
+**How a character is made** (`tools/build-juru-batech.mjs`, assets in `assets/juru/`):
+
+- **The body** is one of six shapes (circle, rounded square, pill, triangle, hexagon, soft blob), filled with its group's light colour and outlined in its group's colour. Proposed agents have a dashed outline.
+- **The batik** is the agent's motif, the official drawing from `batech.mjs` ('orn' set, 'tech' flowers), in the Quiet strength (one light ink, no fills), clipped inside the body. It is never redrawn.
+- **The face** is two dot eyes with a small clear halo behind each, so the batik never runs through them.
+- **The prop** sits outside or on the body: a hard hat, a magnifier, a clock, a bell.
+
+**Rules:**
+
+1. Juru BaTech is only for Juru's agents: in Juru's console, its documents and REKA's internal pages about the agents. Never in a product's interface icons, a logo, a lockup or the corak itself.
+2. A character's motif never repeats a product's or a family's signature motif (awan larat, sungai, padi, congkak, kerawang, petak, orbit, intan, gelombang; riak, tenun, cengkih, bunga raya), and never uses kubit (reserved) or kawung and parang as a signature.
+3. The batik stays Quiet. Full-colour corak never fills a character.
+4. A client never sees these characters. In client conversations the concierge speaks as an approved TriageNT persona (13, 6b).
+
+| Agent | Role | Group | Shape | Motif |
+|---|---|---|---|---|
+| Helm | Orchestrator (proposed) | Juru platform | hexagon | suria |
+| Plot | Planner | Testing | rounded square | wau bulan |
+| Click | Tester, one per user role | Testing | circle | bunga telang |
+| Fox | Attacker | Testing | blob | ketam guri |
+| Gauge | AI evaluator (proposed) | Testing | pill | atom |
+| Sift | Triager | Testing | triangle | pucuk rebung |
+| Proof | Verifier | Testing | circle | cakerawala |
+| Scribe | Reporter | Testing | rounded square | komet |
+| Desk | Concierge | Support and change | pill | satelit |
+| Trace | Investigator | Support and change | blob | jaring |
+| Brick | Builder | Support and change | rounded square | gear |
+| Spar | Challenger, six angles | Support and change | hexagon | bunga tanjung |
+| Spare | Standby | Support and change | circle | lengan |
+| Tick | Scheduler | Operations | hexagon | bintang |
+| Flare | Incident helper (proposed) | Operations | triangle | percik |
+| Sprout | Kickoff agent | Kickoff and build | pill | benih |
+| Keeper | Records keeper (proposed) | Kickoff and build | rounded square | daun |
+| Scales | Readiness reviewer | Assurance | circle | gasing |
+| Loop | Playbook runner (proposed) | Assurance | pill | robot |
+
+Their colours, their faces and Juru's family are open questions (11, questions 35 to 37).
+
 ## Motion
 
 Radial motifs may turn slowly; others stay still. All motion stops for reduced motion and the site's "Pause motion" toggle.

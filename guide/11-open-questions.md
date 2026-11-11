@@ -48,3 +48,8 @@ These are open design/rollout questions; the six-family taxonomy itself is appro
 33. **Shen.** Kept for a future command centre over everything (10, 11 November 2026). How it is written and said, what it means, and its layer, when it is designed.
 34. **"Harmoniks" against Harmonik.** Two REKA frameworks are called Harmoniks; Harmonik is PLExyz's owner. *Recommendation:* confirm there is no confusion or legal conflict before either name appears anywhere public.
 
+## From Juru BaTech (11 November 2026)
+
+35. **Faces on BaTech characters.** The corak has no faces apart from Seth's cameo (06). Juru BaTech characters have eyes and wear a motif as batik inside the body; they are characters, not corak. *Recommendation:* allow faces for Juru BaTech only, never in a corak, a cloth or a band.
+36. **Juru BaTech's colours.** The characters use their own six group colours (testing green, support and change blue, operations violet, kickoff and build clay, assurance teal, platform ink), while 06 draws every motif in a family pair. *Recommendation:* keep the group colours, so a glance tells testing from support; make them tokens if Juru BaTech reaches a product screen.
+37. **Juru's family and layer.** Juru runs AI agents for REKA's own work, under `antarax.ai`. *Recommendation:* the Nalar family (Reason, "Run AI where it fits"), as a platform beside Lapisan rather than a product customers buy; its own BaTech waits for Nalar's motifs (16).

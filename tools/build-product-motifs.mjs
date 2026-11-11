@@ -26,12 +26,19 @@ const QUIET = B.mono('#C5CCF7', 'none', 1.8);
 const PRODUCTS = [
   ['yara', 'yara', 'awanlarat', 'ripple'], ['yara', 'yara-automation', 'sungai', 'ripple'], ['janka', 'janka', 'padi', 'tide'], ['angka', 'angka', 'congkak', 'tide'],
   ['tinara', 'tinara', 'kerawang', 'tide'], ['plexyz', 'grid', 'petak', 'edge'], ['plexyz', 'crowd', 'orbit', 'edge'],
-  ['frame', 'frame', 'intan', 'frame'],
+  ['frame', 'frame', 'intan', 'frame'], ['tiko', 'tiko', 'gelombang', 'tide'],
 ];
 for (const [dir, name, key, fam] of PRODUCTS) {
   fs.mkdirSync(new URL(`products/${dir}/`, OUT), { recursive: true });
   fs.writeFileSync(new URL(`products/${dir}/${name}-motif.svg`, OUT), `<svg xmlns="http://www.w3.org/2000/svg" viewBox="-6 -6 112 112" role="img" aria-label="${key}">${B.BATECH[key].m(famPal(fam))}</svg>\n`);
   console.log(`products/${dir}/${name}-motif.svg  ${key} in ${fam}`);
+}
+
+// Quiet versions of a product's motif (one light ink, no fills), for products the owner asked to keep the
+// motif subtle: Tiko's gelombang (owner, 4 November 2026).
+for (const [dir, name, key] of [['tiko', 'tiko', 'gelombang']]) {
+  fs.writeFileSync(new URL(`products/${dir}/${name}-motif-quiet.svg`, OUT), `<svg xmlns="http://www.w3.org/2000/svg" viewBox="-6 -6 112 112" aria-hidden="true">${B.BATECH[key].m(QUIET)}</svg>\n`);
+  console.log(`products/${dir}/${name}-motif-quiet.svg  ${key}, Quiet`);
 }
 
 // family Quiet bands, never straight-cut (BaTech: mixed patterns, not straight lines). Same masks as the site's

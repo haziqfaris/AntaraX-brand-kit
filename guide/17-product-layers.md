@@ -17,7 +17,7 @@ Every product, service or tool sits in **one layer**. A layer is not a technical
 | Layer | Holds | What sits there today |
 |---|---|---|
 | **L1 Front door** | Where people first meet AntaraX | antarax.ai |
-| **L2 Products** | The apps customers use for their business, grouped by family | Ripple: Yara · Tide: Janka, Angka (with Lapis by Angka), Tinara · Loom: Cebis Loom, AX Frame · Edge: PLExyz Grid, PLExyz Crowd · Motion: AX Motion |
+| **L2 Products** | The apps customers use for their business, grouped by family | Ripple: Yara · Tide: Janka, Angka (with Lapis by Angka), Tinara, Tiko (private pilot) · Loom: Cebis Loom, AX Frame · Edge: PLExyz Grid, PLExyz Crowd · Motion: AX Motion |
 | **L3 Intelligence** | AI capability that products and clients run on: the Nalar family | Nalar: AwanGan, BumiNyata |
 | **L4 Platform** | Shared services every product uses | Lapisan (developer platform), the API gateway (`api.antarax.ai`), AntaraX email (`email.antarax.ai`); the AntaraX Hub when it is built |
 | **L5 Operations** | How REKA runs, supports, watches and measures it all | AXLE R8 Shen, each product's AXLE, YaraOne (internal support and tickets), Gauge |
@@ -28,7 +28,7 @@ Notes on placement:
 - **Nalar is the one family in L3.** Its products are sold by arrangement like any product, but their job is to supply AI to other products and to clients, so they sit under the business apps. AwanGan's second role, AntaraX's internal AI control plane, is recorded in antarax-api `docs/08-infrastructure.md` section 8.8; it does not move AwanGan to another layer.
 - **YaraOne is in L5**, not L2: it is an internal, Ripple-aligned support system, not a public product (16).
 - **Gauge and REKA Discovery** stay Ripple-aligned in colour and email (18 October 2026) and sit in L5 and L6 by what they are for.
-- **Candidates** (Jentera, HelAI, future robots and drones) are placed only when the owner approves them as products.
+- **Candidates** (AntaraX's own AI agents, HelAI, future robots and drones) are placed only when the owner approves them as products.
 
 ## Placing something new
 

@@ -205,7 +205,7 @@ Timing and care:
 
 Each product has a full palette, built from its own colour by `tools/build-product-palettes.mjs`. It writes `tokens/product-palettes.json` and `.css`, and contains:
 
-- **Scale:** 11 steps, 50 to 950, in OKLCH, with the product's own colour sitting exactly on its nearest step.
+- **Scale:** 11 steps, 50 to 950, in OKLCH, with the product's own colour sitting exactly on its nearest step. A product that arrives with colours already in use may pin them to their steps (`steps`, `neutralSteps` in the tool), so its roles fall on them: Tiko's.
 - **Roles:**
   - `action`, `action-hover`, `action-pressed`: the product's own colour, at the first step that passes 4.5:1 with white text. Every product acts in its own colour; AntaraX blue is the focus ring everywhere.
   - `accent`, plus `accent-text`: the first step that reads as text on white (4.5:1).
@@ -226,6 +226,7 @@ Each product has a full palette, built from its own colour by `tools/build-produ
 | PLExyz Crowd | PLExyz purple until Crowd has its own theme | `#6040CC` | `#6040CC` | zone teal | orange, aqua, blue, magenta |
 | Angka | warm plum with Lapis peach, on paper | `#6B3F6B` | `#6B3F6B` | peach `#E9906B` | blue, orange, aqua, violet |
 | Tinara | **garnet** with gold: discreet, valuable | `#7A1E3C` | `#7A1E3C` | gold `#D6A84F` | blue, orange, aqua, violet |
+| Tiko | friendly purple with an orange dot on a soft lavender ground | `#7A5FFF` | `#6A4DF5` | orange `#FB9800` | orange, aqua, blue, magenta |
 | Cebis Loom, AX Motion | the family colour | `#4904B3`, `#FC5D04` | `#4904B3`, `#BE4402` | navy | see tokens |
 
 What changed and why:
@@ -236,6 +237,7 @@ What changed and why:
 - **AX Frame's secondary is halo indigo, not orange.** The app's orange `#FB9800` is REKA's colour and almost the warn colour, so a highlight read as a warning.
 - **Janka's action is `#077DA1`**, the first step of its cyan that passes 4.5:1 with white text.
 - **PLExyz Crowd gets PLExyz purple** until its theme is drawn.
+- **Tiko keeps the colours its app was built with** (owner, 5 November 2026). Its purple `#7A5FFF` is 4.28:1 on white, so it acts in `#6A4DF5` (5.26:1), hovers in `#5B3FE0`, and writes on its lavender `#EDEBFF` in `#4B2FC9` (7.0:1); its ground is `#FAF9FC` and its neutrals 50 to 300 are the app's own. These are pinned to their steps; the rest of its scale is built as for every product. Its text and status colours follow the shared core here; the app still uses its own (open, 11 question 31).
 
 Rules:
 

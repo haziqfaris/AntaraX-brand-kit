@@ -59,7 +59,7 @@ REKA Inisiatif Sdn Bhd                         company, R&D, Managed AI
 
 Related, but not promoted to independent public family products:
 - YaraOne: internal support/ticketing tool, aligned with Ripple; not currently a public product.
-- Jentera: potential AI-staff/product concept, Ripple candidate only; needs product decision.
+- Jentera: **a third-party partner, a different company, not an AntaraX product** (owner, 7 November 2026). AntaraX may use its AI agent APIs, through AwanGan. AntaraX's own AI agents are a Ripple candidate, built inside Tiko first.
 - HelAI: exploratory embedded AI/silicon/computing concept, Nalar candidate only; no approved public product or chip claim.
 - Future robots/drones: Motion scope exploration, not announced AX Motion shipping features.
 - PLExyz Trace: a product embedded in Janka, retaining PLExyz spatial identity and integration context.
@@ -99,6 +99,7 @@ Edge senses and represents the physical world; Motion governs moving systems; Na
 | Angka | Customer product | Tide | Existing closed pilot, standalone app |
 | Lapis by Angka | Companion product embedded in Angka | Tide via Angka | Independently usable, including without Angka; separate entitlement and API as recorded in Angka sheet |
 | Tinara | Customer product | Tide | Existing closed pilot |
+| Tiko | Customer product (working name) | Tide | Private pilot, registered 5 November 2026; no public launch claim |
 | Cebis Loom | Customer-facing managed data product | Loom | By arrangement; not automation |
 | AX Frame | Customer product | Loom | Existing closed pilot; own app and roadmap unchanged |
 | PLExyz | Spatial product line/master brand | Edge | Umbrella identity, not a sixth replacement product |
@@ -107,7 +108,7 @@ Edge senses and represents the physical world; Motion governs moving systems; Na
 | AX Motion | Customer product | Motion | Closed pilot; do not conflate with future full autonomy |
 | AwanGan | Cloud AI product + internal platform responsibility | Nalar | By arrangement; no invented customer deployment |
 | BumiNyata | On-premises/private AI product | Nalar | By arrangement; no invented customer deployment |
-| Jentera | Candidate | Ripple, tentative | No automatic launch or inclusion in public catalog |
+| AntaraX AI agents (no name yet) | Candidate | Ripple, tentative; built inside Tiko first | No automatic launch or inclusion in public catalog. Jentera is a third-party partner, not listed |
 | HelAI | Exploratory technology / product candidate | Nalar, tentative | Not a shipping chip/platform; ownership/maturity to be decided |
 
 The original product statuses, approved sales wording and claims in [02](02-products-and-families.md) and individual [product briefs](products/README.md) still apply unless an explicit owner decision changes them. **Family reclassification is not a release-status update.**
@@ -147,7 +148,7 @@ If no existing family fits the customer promise, raise a new family proposal for
 ### Now: apply this classification in the brand kit
 - Update `guide/02-products-and-families.md`, `guide/12-brand-architecture.md`, `guide/14-product-identity-system.md`, `guide/10-decisions-log.md` and `guide/11-open-questions.md` together.
 - Ensure all current product-to-family references agree: **AX Frame = Loom; AwanGan/BumiNyata = Nalar; no current standalone Frame family**.
-- Ensure no accidentally promoted YaraOne, Jentera, HelAI or autonomy promises.
+- Ensure no accidentally promoted YaraOne, AI-agent, HelAI or autonomy promises, and that Jentera appears only as a partner.
 - Do not change a logo, colour token, product URL, repository, code or user-facing claims solely because membership changed.
 
 ### Next: proposals and visual sign-off

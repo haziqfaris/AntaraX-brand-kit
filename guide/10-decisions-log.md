@@ -8,6 +8,31 @@ Owner decisions that shape the brand, newest first. Add to the top; never rewrit
   - **Scope:** every customer app and every AXLE uses it for new products and for new or reworked screens. Existing screens move when touched; nothing is rewritten only to adopt it. YaraOne goes first.
   - **The brand stays this kit's:** each product's Astryx theme is generated from its palette here, with Poppins and JetBrains Mono, the product's radii, the AntaraX blue focus ring and 44px touch controls; Astryx's own themes are never used. Products keep their own loaders, never Astryx's spinners.
   - **Risk accepted:** Astryx is still beta, so every product pins the tested version (0.7.13) and updates on purpose.
+- **R8 is AntaraX's central staff console, at `r8.antarax.ai`** (owner: "I want to use r8 only instead axle since we might use it for something else. Shen might be for something else as well which is the main dashboard command center for all").
+  - **What it is:** the one console where AntaraX and REKA staff run what is shared across products. It was planned as "AXLE Central" at `axle.antarax.ai`, and the owner called it "AXLE R8 Shen" on 1 November. Its first page is Email: apps, keys, client domains, requests and the audit, so REKA's team registers client apps themselves (antarax-api docs/16 and decision 0018).
+  - **On screen it says "R8"**, with "REKA STAFF CONSOLE" under it and the kit's orange AXLE tag. It is built from the AXLE template (Dashboard kit `axle/`).
+  - **R8 has two meanings now.** Inside each product's AXLE, R8 stays the machinery mode. On its own, at `r8.antarax.ai`, R8 is the central console. Guides say which they mean.
+  - **`axle.antarax.ai` is kept free** for something else.
+  - **"Shen" is kept for the main command centre over everything**, which is still to be designed. How "Shen" is written and said, and what it means, are still open.
+
+## 7 November 2026
+
+- **Jentera is a third-party partner, not an AntaraX product** (owner). Jentera.ai is a different company; AntaraX may use its AI agent APIs, through AwanGan's provider pass-through. The 27 October text that placed "Jentera" as a possible Ripple product is corrected in 02, 11, 16 and 17. **AntaraX's own AI agents** stay a Ripple candidate, with no name, built inside Tiko first.
+- **Nia is withdrawn as a product name** (owner, Tiko decision D-102). Its enquiry-to-quote workflow stays in Tiko as **Enquiries**, on every plan. Knowledge used by AI is kept by the product that owns it (Tiko); AwanGan processes it and keeps nothing.
+
+## 5 November 2026
+
+- **Tiko is registered as a product, id `tiko`** (owner, Tiko decision Q-01, before its pilot). It answers what 4 November left open. Tiko (working name, private pilot) is a CRM for Malaysian SMEs in Tide · Decide, an own-mark product, with the same id in Lapisan's registry and in Heuristiks' REKA profile.
+  - **Its palette is the one its app was built with** (`antarax-tiko` `src/app/globals.css` and `src/styles/tiko-shell.css`), added to `tools/build-product-palettes.mjs` with those colours pinned to their steps: purple `#7A5FFF`, action `#6A4DF5` (5.26:1 with white), hover `#5B3FE0`, lavender `#EDEBFF` with `#4B2FC9` on it, orange `#FB9800`, ground `#FAF9FC`, neutrals `#FAF9FC`, `#F4F2FA`, `#E7E4F0`, `#D6D2E4`. Chart set: its action, then orange, aqua, blue, magenta (passes the palette validator light and dark). Tokens 1.13.0: `color.product.tiko`, `--ax-tiko*` and Tiko's shell slots; no existing token changed.
+  - **Its bar takes every shell default** (floating, 24px and 20px), so `shell.bar.byProduct` records it in its note and lists no exception.
+  - **Guide 02** lists it as a **private pilot**: nowhere on antarax.ai, no launch claim. Still open (11, question 31): its one-line question and public status, its legal name, and whether its text and status colours follow its own spec or the shared core.
+
+## 4 November 2026
+
+- **Tiko's signature motif is gelombang, used subtly** (owner, from the Tiko pilot build). Tiko (working name, private pilot, Tide · Decide; its registration as a product is still open) takes **gelombang**, the Tide wave no other product uses, for its tagline "Make every move count".
+  - **Subtle by the owner's choice:** inside Tiko the motif appears in the **Quiet** strength (one light ink, `#C5CCF7`, no fills), small, and only where guide 12 allows a motif: empty states and its signature moment. The family pair version exists for covers and the website.
+  - **Signature moment:** when a deal is won, the wave draws on once beside the win, then rests. Nothing moves for people who turn motion off.
+  - **Files:** `assets/products/tiko/tiko-motif.svg` (family pair) and `tiko-motif-quiet.svg` (Quiet), built by `tools/build-product-motifs.mjs` from the official BaTech drawing (`antarax-ai` `prototype/site/src/batech.mjs`, `fcf47af`).
 
 ## 3 November 2026
 
@@ -24,15 +49,6 @@ Owner decisions that shape the brand, newest first. Add to the top; never rewrit
 - **Six-family product classification approved** (owner): the current AntaraX families are **Ripple (Operate), Tide (Decide), Loom (Structure), Edge (Perceive), Motion (Navigate), Nalar (Reason)**. Nalar is the chosen AI family name. **AwanGan and BumiNyata are Nalar products.** **AX Frame is reclassified from the retired standalone AntaraX Frame family into Loom**, beside Cebis Loom. All remain separate products with their previous codebase, brand and maturity. **Motion remains independent of Edge**, for fleet operations, remote control and potential future autonomous vehicles, robots and drones. The latter are not newly claimed as live features.
 - **Reclassification does not imply a visual or infrastructure migration:** AX Frame keeps its existing product-blue palette, cube/four-corner mark and intan motif while its new Loom family treatment is designed. The new **Nalar icon, colour, BaTech family motif and distinct AwanGan/BumiNyata product marks still need approval**. No token changes, generated assets, customer claims, pricing, application code or live site deployment are authorised by the family decision alone.
 - **Classification boundaries and related systems:** Yara stays Ripple; Janka/Angka/Tinara stay Tide; PLExyz Grid/Crowd stay Edge; AX Motion stays Motion; Cebis Loom and AX Frame are Loom; AwanGan and BumiNyata are Nalar. Lapis by Angka remains independently usable; YaraOne remains internal, Ripple-aligned but not a publicly launched product. Jentera and HelAI are only possible future placements (Ripple and Nalar respectively). **Heuristiks remains a REKA-owned framework, Lapisan an AntaraX shared platform, RESAM a REKA delivery framework**. A family is not a required technical dependency. Approved migration brief: [16 Product family architecture](16-product-family-architecture.md).
-
-## 11 November 2026
-
-- **R8 is AntaraX's central staff console, at `r8.antarax.ai`** (owner: "I want to use r8 only instead axle since we might use it for something else. Shen might be for something else as well which is the main dashboard command center for all").
-  - **What it is:** the one console where AntaraX and REKA staff run what is shared across products. It was planned as "AXLE Central" at `axle.antarax.ai`, and the owner called it "AXLE R8 Shen" on 1 November. Its first page is Email: apps, keys, client domains, requests and the audit, so REKA's team registers client apps themselves (antarax-api docs/16 and decision 0018).
-  - **On screen it says "R8"**, with "REKA STAFF CONSOLE" under it and the kit's orange AXLE tag. It is built from the AXLE template (Dashboard kit `axle/`).
-  - **R8 has two meanings now.** Inside each product's AXLE, R8 stays the machinery mode. On its own, at `r8.antarax.ai`, R8 is the central console. Guides say which they mean.
-  - **`axle.antarax.ai` is kept free** for something else.
-  - **"Shen" is kept for the main command centre over everything**, which is still to be designed. How "Shen" is written and said, and what it means, are still open.
 
 ## 26 October 2026
 

@@ -44,7 +44,9 @@ Nalar family (Reason). **By arrangement**; not live with any customer yet (versi
 
 **Colour: Nalar gold**, as Cebis Loom and AX Motion act in their family colours, with navy second (owner, 11 November 2026). Gold is 3.17:1 on white, so it acts and writes in `#8D6C01` (4.91:1), hovers in `#715702`, and writes on its tint `#F5ECD7` in `#574201`. On the dark ground the gold itself reads (5.8:1). Chart set: gold, then blue, orange, magenta, violet. Palette: `tokens/product-palettes.json` (`awangan`); tokens `color.product.awangan`, `--ax-awangan*`, and its shell slots.
 
-**Motif: still to choose** (11, question 27); the options board recommends ketupat, a woven parcel with one square lit (only what is needed shows). Until then empty states use words only.
+**Motif: ketupat** (owner, 11 November 2026): a woven parcel with one square lit. The document stays woven shut and only the field that is needed shows. Nalar pair, `assets/products/awangan/awangan-motif.svg`; 72px in empty states. Its BaTech set is Nalar's sky and ground, leaning to the sky (`assets/batech/nalar-sky/`).
+
+**Credit:** the standard lines (12): "AwanGan · by AntaraX" in chrome, "AwanGan by AntaraX, from REKA." on sign-in, first email and reports. Where AwanGan runs AI inside another product, that work carries the sparkle and no "Powered by AwanGan".
 
 ## Type
 
@@ -52,4 +54,4 @@ The shared core: Poppins, and JetBrains Mono with tabular figures for every numb
 
 ## Open
 
-In 11, question 27: AwanGan's signature motif, and Nalar's BaTech composition. Its mark and palette were decided on 11 November 2026.
+Nothing: its mark, palette, motif and credit were decided on 11 November 2026 (10).

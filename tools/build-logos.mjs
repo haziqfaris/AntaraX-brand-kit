@@ -116,3 +116,35 @@ for (const [k, ctx] of Object.entries(CONTEXT)) write(`assets/products/plexyz/pl
   write('assets/products/awangan/awangan-mark-white.svg', svg(mark({ id: 'awgw', body: '#FFFFFF', ring: GOLD, moon: CYAN }), 'AwanGan'));
   write('assets/products/awangan/awangan-mark-mono.svg', svg(mark({ id: 'awgm', body: 'currentColor', ring: 'currentColor', moon: 'currentColor' }), 'AwanGan'));
 }
+
+// ---- BumiNyata's logo: two peaks over the ground (owner, 11 November 2026: the recommended M2) ----
+// Its own mark: two peaks in clay over the ground and what lies beneath, the three levels of its antarax.ai page (up the
+// mountain, on the ground, underground). Navy ground line, dark clay underground, one sparkle orange highlight: every byte
+// kept on its own ground. Variants: full colour, -small (24px and below), -white (navy and dark grounds), -mono.
+{
+  const svg = (b, label) => `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="${label}">${b}</svg>\n`;
+  const mark = ({ peaks, ground, under, dot, small = false }) => small
+    ? `<path d="M8,66 L34,25 Q40,16 46,25 L55,39 L62,30 Q67,23 72,30 L92,66 Z" fill="${peaks}"/><rect x="7" y="72" width="86" height="11" rx="5.5" fill="${ground}"/><rect x="19" y="87" width="44" height="10" rx="5" fill="${under}"/><circle cx="76" cy="92" r="6.5" fill="${dot}"/>`
+    : `<path d="M10,69 L35,29 Q40,21 45,29 L55,45 L62,35 Q67,28 72,35 L90,69 Z" fill="${peaks}"/><rect x="9" y="74" width="82" height="9" rx="4.5" fill="${ground}"/><rect x="21" y="87" width="44" height="8" rx="4" fill="${under}"/><circle cx="74" cy="91" r="5" fill="${dot}"/>`;
+  const CLAY = '#8A5A2E', NAVY = '#0B1B4F', UNDER = '#603C1A', ORANGE = '#F47B3D';
+  write('assets/products/buminyata/buminyata-mark.svg', svg(mark({ peaks: CLAY, ground: NAVY, under: UNDER, dot: ORANGE }), 'BumiNyata'));
+  write('assets/products/buminyata/buminyata-mark-small.svg', svg(mark({ peaks: CLAY, ground: NAVY, under: UNDER, dot: ORANGE, small: true }), 'BumiNyata'));
+  // on navy and dark grounds: white peaks, a gold ground line, light clay beneath
+  write('assets/products/buminyata/buminyata-mark-white.svg', svg(mark({ peaks: '#FFFFFF', ground: '#B48B02', under: '#E2BC9D', dot: ORANGE }), 'BumiNyata'));
+  write('assets/products/buminyata/buminyata-mark-mono.svg', svg(mark({ peaks: 'currentColor', ground: 'currentColor', under: 'currentColor', dot: 'currentColor' }), 'BumiNyata'));
+}
+
+// ---- Tiko's logo: Tiko Classic's head (owner, 11 November 2026: the recommended K1) ----
+// The head is the mark, redrawn to the own-mark rules (12): white helmet, navy ink, a deep-ink faceplate with a purple cast,
+// the crest in Tiko's highlight, Tide pink. A logo is not decoration (07); the full character appears only where it does a
+// job, with words. Until the production pack (Tiko Q-06) is drawn, this is the kit's mark; the pack keeps its construction.
+// Variants: full colour, -small (24px and below: heavier ink, larger eyes), -mono.
+{
+  const svg = (b, label) => `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="${label}">${b}</svg>\n`;
+  const head = ({ crest, ink, plate, face, helmet, w = 5, eye = 5.2, small = false }) => `<path d="M44,17 Q50,4 58,9 L56,20 H45 Z" fill="${crest}"/><rect x="12" y="18" width="76" height="72" rx="32" fill="${helmet}" stroke="${ink}" stroke-width="${w}"/><rect x="${small ? 21 : 23}" y="${small ? 33 : 35}" width="${small ? 58 : 54}" height="${small ? 42 : 38}" rx="18" fill="${plate}"/><circle cx="40" cy="52" r="${eye}" fill="${face}"/><circle cx="60" cy="52" r="${eye}" fill="${face}"/>${small ? '' : `<path d="M43,62 Q50,67.5 57,62" fill="none" stroke="${face}" stroke-width="3.4" stroke-linecap="round"/>`}`;
+  const PINK = '#E9579D', NAVY = '#0B1B4F', PLATE = '#2A1D6E';
+  write('assets/products/tiko/tiko-mark.svg', svg(head({ crest: PINK, ink: NAVY, plate: PLATE, face: '#FFFFFF', helmet: '#FFFFFF' }), 'Tiko'));
+  write('assets/products/tiko/tiko-mark-small.svg', svg(head({ crest: PINK, ink: NAVY, plate: PLATE, face: '#FFFFFF', helmet: '#FFFFFF', w: 7, eye: 7, small: true }), 'Tiko'));
+  // one colour: the helmet is the ground, the ink and faceplate take the colour, the face is cut out
+  write('assets/products/tiko/tiko-mark-mono.svg', svg(`<defs><mask id="tkm" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="100"><rect width="100" height="100" fill="#fff"/><circle cx="40" cy="52" r="5.2" fill="#000"/><circle cx="60" cy="52" r="5.2" fill="#000"/><path d="M43,62 Q50,67.5 57,62" fill="none" stroke="#000" stroke-width="3.4" stroke-linecap="round"/></mask></defs><g fill="currentColor"><path d="M44,17 Q50,4 58,9 L56,20 H45 Z"/><rect x="12" y="18" width="76" height="72" rx="32" fill="none" stroke="currentColor" stroke-width="5"/><rect x="23" y="35" width="54" height="38" rx="17" mask="url(#tkm)"/></g>`, 'Tiko'));
+}

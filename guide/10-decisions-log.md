@@ -2,6 +2,10 @@
 
 Owner decisions that shape the brand, newest first. Add to the top; never rewrite history. Earlier strategy changes are in `reference/strategy/` (playbook amendments v0.3–v0.5, RECONCILIATION).
 
+## 19 November 2026
+
+- **No action label ends in an ellipsis, restated** (owner). Buttons, menu items, links and other action labels never end with "…" or "...". A label names the action; the dialog it opens says what comes next. Found in Tinara, where about 176 labels such as "Switch Briefs off…", "Change…" and "Remove…" had it. This is the 26 October decision (above), not a new one, and it adds no exceptions: busy words while an action runs ("Saving…"), CSS truncation, the "⋯" button and ellipses in example text stay as the Dashboard kit has them. What changes is that the kit's source check (`tools/check-actions.mjs`, AC-13) now finds these labels, Dashboard kit 1.14.1.
+
 ## 11 November 2026
 
 - **Nalar and Tiko branding, the rest as recommended** (owner, later the same day: "rec for the rest, then merge"). Every item still open on the options board takes its recommended option:

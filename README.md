@@ -2,7 +2,7 @@
 
 <p align="center">
 <img alt="status: reference" src="https://img.shields.io/badge/status-reference-0459F7?style=flat-square">
-<img alt="version 1.15.0" src="https://img.shields.io/badge/version-1.15.0-0459F7?style=flat-square">
+<img alt="version 1.16.0" src="https://img.shields.io/badge/version-1.16.0-0459F7?style=flat-square">
 <img alt="six families" src="https://img.shields.io/badge/families-6-0B1B4F?style=flat-square">
 <img alt="eleven products" src="https://img.shields.io/badge/products-11-0B1B4F?style=flat-square">
 <img alt="spinning loaders: never" src="https://img.shields.io/badge/spinning%20loaders-never-F04438?style=flat-square">
@@ -328,7 +328,7 @@ and usage rows are Lapisan's (haziqfaris/antarax-api). Their addresses are in gu
 **Bring in the tokens.** Copy the two token files (and your logo) from a checkout of this kit, then use the variables. The example is Yara; swap the prefix for yours:
 
 ```css
-/* Copied from AntaraX brand kit 1.15.0. Don't edit; copy again when the kit changes. */
+/* Copied from AntaraX brand kit 1.16.0. Don't edit; copy again when the kit changes. */
 @import "./brand/tokens.css";
 @import "./brand/product-palettes.css";
 

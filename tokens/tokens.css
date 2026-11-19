@@ -1,4 +1,4 @@
-/* AntaraX design tokens v1.15.0 (2026-11-11). Mirrors tokens.json; full product palettes in product-palettes.css. Import first, then build on the variables. */
+/* AntaraX design tokens v1.16.0 (2026-11-19). Mirrors tokens.json; full product palettes in product-palettes.css. Import first, then build on the variables. */
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap");
 
 :root {
@@ -141,6 +141,12 @@
   --axle-fault-line: #F6B5AF;
   --axle-fault-card: #FFF8F7; /* A card in a fault state */
 
+  /* scroll: Scrollbars: thin, hidden at rest, shown while hovered, focused or scrolling (owner, 19 November 2026). Track is transparent */
+  --axle-scroll-thumb-dark: rgba(234, 240, 255, .28); /* Thumb on a dark surface (sidebar, AXLE bar, dark menus, dark code panes) */
+  --axle-scroll-thumb-dark-hover: rgba(234, 240, 255, .46); /* That thumb while the pointer is over it or it is dragged */
+  --axle-scroll-thumb-light: rgba(11, 27, 79, .30); /* Thumb on a light surface (the page, cards, tables, dialogs) */
+  --axle-scroll-thumb-light-hover: rgba(11, 27, 79, .50); /* That thumb while the pointer is over it or it is dragged */
+
   /* chart: Charts on the light page (validated for contrast and colour-blind separation) */
   --axle-chart-1: #2A78D6;
   --axle-chart-2: #1BAF7A;
@@ -156,6 +162,8 @@
   --axle-nav-card-radius: 12px;
   --axle-control-radius: 12px;
   --axle-target: 44px;
+  --axle-scroll-width: 8px;
+  --axle-scroll-radius: 999px;
 }
 
 /* The AntaraX shell: the top bar every customer app shares (guide/13 section 6a). Mirrors tokens.json "shell".
@@ -183,6 +191,10 @@
   /* the Help and account menus */
   --shell-menu-width-help: 280px; --shell-menu-width-account: 300px; --shell-menu-radius: 16px; --shell-menu-padding: 6px; --shell-menu-item-height: 44px; --shell-menu-item-radius: 10px;
   --shell-menu-shadow: 0 18px 40px -18px rgba(11, 27, 79, .35);
+  /* scrollbars: every scrollable area; thin, hidden at rest, shown while hovered, focused or scrolling (owner, 19 November 2026) */
+  --shell-scroll-width: 8px; --shell-scroll-radius: 999px;
+  --shell-scroll-thumb-light: rgba(11, 27, 79, .30); --shell-scroll-thumb-light-hover: rgba(11, 27, 79, .50);
+  --shell-scroll-thumb-dark: rgba(234, 240, 255, .28); --shell-scroll-thumb-dark-hover: rgba(234, 240, 255, .46);
   /* navigation: its shape is the product's own; the current item and hover are shell (owner, 16 October 2026) */
   --shell-nav-current-bg: var(--shell-subtle-tint); --shell-nav-current-ink: var(--shell-on-tint); --shell-nav-current-weight: 600;
   --shell-nav-hover-bg: var(--shell-hover);

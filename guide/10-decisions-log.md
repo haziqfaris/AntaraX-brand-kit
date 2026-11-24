@@ -2,6 +2,11 @@
 
 Owner decisions that shape the brand, newest first. Add to the top; never rewrite history. Earlier strategy changes are in `reference/strategy/` (playbook amendments v0.3–v0.5, RECONCILIATION).
 
+## 24 November 2026
+
+- **Juru in client-facing documents: roles only** (owner, from the first REKA Platform Audit; RESAM D-91). Agent types appear by a generic role (planner, investigator, security tester, triage, verifier, readiness assessor, second reviewer, challenger, reporter), never by character name; the BaTech names stay internal. The characters' art may appear, labelled with the role. Agent types a piece of work did not use are shown as plain placeholders ("This audit does not involve a … agent type"). Juru is described only as **"REKA's own proprietary Agentic Squad, part of the AntaraX.ai platform"**, with no disclaimer. Juru's character guide is on branch `claude/juru-batech`; this rule applies when it merges.
+- **AntaraX inside REKA reports:** a banner on navy `#0B1B4F` with the white wordmark (`antarax-wordmark-white.svg`) and the colour sparkle, the line "Put intelligence to work.", an "antarax.ai" button in AntaraX blue and the legal line "AntaraX, a product line of REKA Inisiatif Sdn Bhd." On a light strip, the navy wordmark (`antarax-wordmark.svg`). Claims follow 03: nothing invented. "Powered by AntaraX.ai" may label the Juru banner because the document is REKA's, not an AntaraX product (11 November rule).
+
 ## 11 November 2026
 
 - **The kit catch-up** (owner: "go do all. Later for Tiko and Nalar products need to have proper branding", on the audit of every repository and session since 25 October). The owner took the audit's recommendations, except that Tiko's and the Nalar products' branding become their own piece of work (11, questions 27 and 32). What changes:

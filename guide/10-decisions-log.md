@@ -2,6 +2,32 @@
 
 Owner decisions that shape the brand, newest first. Add to the top; never rewrite history. Earlier strategy changes are in `reference/strategy/` (playbook amendments v0.3–v0.5, RECONCILIATION).
 
+## 27 November 2026
+
+- **A chat app template for a full-page AI chat** (owner, haziqfaris, for AwanGan: "/try becomes AwanGan's own AI chat app, the same kind of app as Claude, ChatGPT or Grok", "drawn in AntaraX's own look from the kit, with the AI sparkle and the thinking motion", "every answer carries a receipt"; AwanGan decision 0068; Dashboard kit 1.21.0, `astryx/templates/ChatApp.tsx`). A product that offers a full-page chat builds it from the template, on Astryx's own chat parts: the conversation list (new chat, search, rename, export, delete), the empty state with suggestions, the AI sparkle and its thinking motion, a chip that says what was masked, and a receipt under every answer. The list folds into a drawer below 768px. Motion is CSS only, and none under `prefers-reduced-motion`. First built in AwanGan's Assist at `/try`.
+  - **The receipt (model, on our server or paid, time, cost) is for staff and developer chats only.** A customer's Assist panel still shows no model, provider or cost (Dashboard kit `app/SPEC.md` §9).
+- **A guided flow template for making something in several decisions** (owner, haziqfaris, for AwanGan's AXLE: developers should "create a new key" through "a guide wizard that shows me what I want to do, what I want to create, then I can choose which model or what kind of AI capabilities… Then I can generate my keys and I can start using it. It should be that simple", "interactive, animated"; AwanGan decision 0067; Dashboard kit 1.20.0, `astryx/templates/`). One decision a screen under Astryx's `Stepper`, choice cards, a review in plain lines, and a secret shown once with a copy button. The step is in the address and each step's heading takes the focus; a choice that cannot be had is a plain card that says why. Motion is CSS only, from the theme's durations, and none under `prefers-reduced-motion`. The step form stays for a form a person fills once and sends. First built in AwanGan's AXLE (Projects → New project).
+- **One standard for AI keys in every product** (owner, haziqfaris: "for all projects or products, can we standardise how the AI keys are managed?… Where to note this? AI Heuristiks? AntaraX kit?"; Heuristiks' REKA profile decision 0015, AwanGan decision 0059, RESAM D-91; Dashboard kit 1.19.0, `axle/SPEC.md` §10.6). The rule is Heuristiks'; the screens are the Dashboard kit's. Every project is in one of four modes:
+  1. platform keys;
+  2. its own keys, kept in AwanGan;
+  3. a backup to the product's own key, used only when AwanGan gives no answer;
+  4. its own keys, switched on in AwanGan's AXLE for at most 7 days.
+
+  A product's Models & keys stays a view of AwanGan's keys (13, section 6) and now shows the mode in one line, a warning banner while the product is on its own keys, and the calls it made with its own key in the last 30 days, never their content. AwanGan's own AXLE shows the same on each project's Keys tab, with the switch.
+
+## 26 November 2026
+
+- **An AXLE Operator may be limited to some organisations** (owner, haziqfaris, for AwanGan's AXLE: "a developer who manages only their projects is the kit's Operator rung scoped to those projects"; AwanGan decision 0056; Dashboard kit 1.18.0, released 27 November, `axle/SPEC.md` §5.2). A limited Operator reads every page and acts (keys, switches, routes, test calls) only on the organisations named on their staff record; none named means every one. No other rung is limited, and a limit never widens a rung. The Staff page shows each Operator's organisations, a change to them is a staff change with a reason, and a control they cannot use says "Needs Operator on this organisation". In AwanGan's AXLE the organisations are its projects.
+
+## 25 November 2026
+
+- **Every page proves it follows the Dashboard kit** (owner, haziqfaris: "how to make sure the issue with the UI does not repeat and how this could be enforced to all in the framework so that other projects can also properly follow?", after AwanGan's AXLE was found off the kit: no kit scrollbars, its own top bar, hand-made forms and one-page dumps; AwanGan decision 0054; Dashboard kit 1.17.0, its `AGENTS.md` "Proving a page"). Every customer app and every AXLE:
+  - **lists every page it serves**, each view included, in `kit-pages.json`, with a test that fails on a page left out;
+  - **runs `tools/check-product.mjs`** on every listed page at 1280 and 390px, in its own check and before every push: the shell check, axe at WCAG 2.2 AA, the actions scan and the new parts scan (`tools/check-parts.mjs`, one part per job: no hand-made field, dialog, menu, tabs or browser pop-up). A difference stays only as an exception in `antarax-kit.lock`, with its reason and the owner's decision;
+  - **builds pages from the kit's templates** (`astryx/templates/`: the page header, tabs that are links, the list, the step form and the ordered editor) and never invents a page pattern: a new one goes into the templates first;
+  - **shows before-and-after pictures** of every changed page at both widths in the pull request. UI work is done only when the checks pass and the owner has approved the pictures.
+  - The same release lets AXLE's bar float beside its 240px sidebar in the checker, checks AXLE's staff menu against AXLE's own items, and draws a link blue in AXLE, where Astryx would draw it in the orange accent.
+
 ## 19 November 2026
 
 - **Scrollbars are thin, hidden at rest and in the product's colours, everywhere** (owner, haziqfaris: "make the scrollbar hidden and make it look and fit the color scheme of the dashboard and make sure this applies to all scrollbars"; seen on AXLE's dark sidebar, where the browser's default grey scrollbar showed). In every scrollable area of every AntaraX product (app shell, AXLE, sidebars, menus, dialogs, tables, code panes): about 8px wide; no visible thumb at rest, shown while the area is hovered, has keyboard focus or is scrolling; a transparent track; a light thumb at low opacity on dark surfaces (sidebar, AXLE bar, dark menus) and a neutral navy thumb on light ones. Never removed: the area stays scrollable and discoverable, and system scrollbars stay in forced-colours mode. Tokens 1.16.0 add the colours, width and radius (`axle.scroll-*`, `shell.scrollbar`); the Dashboard kit 1.16.0 holds the rule (app SPEC §11c, AXLE SPEC §6.3), the reference CSS and a checker.

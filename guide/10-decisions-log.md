@@ -2,6 +2,10 @@
 
 Owner decisions that shape the brand, newest first. Add to the top; never rewrite history. Earlier strategy changes are in `reference/strategy/` (playbook amendments v0.3–v0.5, RECONCILIATION).
 
+## 28 November 2026
+
+- **Every page fills its area** (owner: "why does the UI skewed to the left instead of using all the spaces properly? make sure all the other pages are standardized and update the antaraX kit to make sure there are no unnecessary spaces", on Juru's Post a job, which sat in the left 980px of a wide screen). In every customer app, AXLE and client project the content spans the page from gutter to gutter: no cap on the page or a wrapper; more room means more columns; prose keeps a reading measure and a single field the width of what it holds, inside a layout that spans the page. Dashboard kit 1.24.0 (app/SPEC.md §11d, axle/SPEC.md §6.4, project/SPEC.md §8c), checked by its `check-shell.mjs` from 1280px.
+
 ## 11 November 2026
 
 - **The kit catch-up** (owner: "go do all. Later for Tiko and Nalar products need to have proper branding", on the audit of every repository and session since 25 October). The owner took the audit's recommendations, except that Tiko's and the Nalar products' branding become their own piece of work (11, questions 27 and 32). What changes:

@@ -1,4 +1,4 @@
-/* AntaraX design tokens v1.14.0 (2026-11-11). Mirrors tokens.json; full product palettes in product-palettes.css. Import first, then build on the variables. */
+/* AntaraX design tokens v1.16.0 (2026-11-19). Mirrors tokens.json; full product palettes in product-palettes.css. Import first, then build on the variables. */
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap");
 
 :root {
@@ -41,7 +41,10 @@
   --ax-grid-north: #B9B8F5; --ax-grid-west: #0CC4FB; --ax-grid-east: #F47B3D; --ax-grid-south: #E9579D;
   --ax-angka:  #6B3F6B; --ax-angka-tint:  #EAE4EA; --ax-angka-dark:  #3B233B; --ax-angka-action:  #6B3F6B; --ax-angka-ground: #FAF7F2;
   --ax-tinara: #7A1E3C; --ax-tinara-tint: #FEF4F6; --ax-tinara-dark: #511A2A; --ax-tinara-action: #7A1E3C; --ax-tinara-gold: #D6A84F; /* garnet, proposed */
-  --ax-tiko:   #7A5FFF; --ax-tiko-tint:   #EDEBFF; --ax-tiko-dark:   #4B2FC9; --ax-tiko-action:   #6A4DF5; --ax-tiko-orange: #FB9800; --ax-tiko-ground: #FAF9FC; /* working name, private pilot (5 November 2026) */
+  --ax-tiko:   #7A5FFF; --ax-tiko-tint:   #EDEBFF; --ax-tiko-dark:   #4B2FC9; --ax-tiko-action:   #6A4DF5; --ax-tiko-highlight: #E9579D; --ax-tiko-ground: #FAF9FC; /* working name, private pilot (5 November 2026); highlight Tide pink (11 November 2026) */
+  --ax-tiko-orange: #FB9800; /* retired 11 November 2026: REKA orange stays out of customer apps; use --ax-tiko-highlight. Kept so nothing breaks */
+  --ax-awangan: #B48B02; --ax-awangan-tint: #F5ECD7; --ax-awangan-dark: #574201; --ax-awangan-action: #8D6C01; /* Nalar gold; the cloud in orbit (11 November 2026) */
+  --ax-buminyata: #8A5A2E; --ax-buminyata-tint: #F7EAE0; --ax-buminyata-dark: #603C1A; --ax-buminyata-action: #8A5A2E; --ax-buminyata-gold: #B48B02; /* clay, with Nalar gold (11 November 2026) */
 
   /* status: only on real signal, never decoration */
   --ax-ok: #12B76A; --ax-warn: #F79009; --ax-fault: #F04438;
@@ -138,6 +141,12 @@
   --axle-fault-line: #F6B5AF;
   --axle-fault-card: #FFF8F7; /* A card in a fault state */
 
+  /* scroll: Scrollbars: thin, hidden at rest, shown while hovered, focused or scrolling (owner, 19 November 2026). Track is transparent */
+  --axle-scroll-thumb-dark: rgba(234, 240, 255, .28); /* Thumb on a dark surface (sidebar, AXLE bar, dark menus, dark code panes) */
+  --axle-scroll-thumb-dark-hover: rgba(234, 240, 255, .46); /* That thumb while the pointer is over it or it is dragged */
+  --axle-scroll-thumb-light: rgba(11, 27, 79, .30); /* Thumb on a light surface (the page, cards, tables, dialogs) */
+  --axle-scroll-thumb-light-hover: rgba(11, 27, 79, .50); /* That thumb while the pointer is over it or it is dragged */
+
   /* chart: Charts on the light page (validated for contrast and colour-blind separation) */
   --axle-chart-1: #2A78D6;
   --axle-chart-2: #1BAF7A;
@@ -153,6 +162,8 @@
   --axle-nav-card-radius: 12px;
   --axle-control-radius: 12px;
   --axle-target: 44px;
+  --axle-scroll-width: 8px;
+  --axle-scroll-radius: 999px;
 }
 
 /* The AntaraX shell: the top bar every customer app shares (guide/13 section 6a). Mirrors tokens.json "shell".
@@ -180,6 +191,10 @@
   /* the Help and account menus */
   --shell-menu-width-help: 280px; --shell-menu-width-account: 300px; --shell-menu-radius: 16px; --shell-menu-padding: 6px; --shell-menu-item-height: 44px; --shell-menu-item-radius: 10px;
   --shell-menu-shadow: 0 18px 40px -18px rgba(11, 27, 79, .35);
+  /* scrollbars: every scrollable area; thin, hidden at rest, shown while hovered, focused or scrolling (owner, 19 November 2026) */
+  --shell-scroll-width: 8px; --shell-scroll-radius: 999px;
+  --shell-scroll-thumb-light: rgba(11, 27, 79, .30); --shell-scroll-thumb-light-hover: rgba(11, 27, 79, .50);
+  --shell-scroll-thumb-dark: rgba(234, 240, 255, .28); --shell-scroll-thumb-dark-hover: rgba(234, 240, 255, .46);
   /* navigation: its shape is the product's own; the current item and hover are shell (owner, 16 October 2026) */
   --shell-nav-current-bg: var(--shell-subtle-tint); --shell-nav-current-ink: var(--shell-on-tint); --shell-nav-current-weight: 600;
   --shell-nav-hover-bg: var(--shell-hover);
@@ -195,6 +210,8 @@
 .shell-root[data-product="loom"] { --shell-subtle-tint: var(--loom-subtle); --shell-on-tint: var(--loom-on-tint); --shell-action: var(--loom-action); --shell-on-action: var(--loom-text-on-action); --shell-dark-accent: var(--loom-dark-accent); --shell-well: var(--loom-neutral-100); --shell-line: var(--loom-border-default); --shell-surface: var(--loom-surface-raised); --shell-hover: var(--loom-surface-hover); --shell-ink: var(--loom-text-strong); }
 .shell-root[data-product="motion"] { --shell-subtle-tint: var(--motion-subtle); --shell-on-tint: var(--motion-on-tint); --shell-action: var(--motion-action); --shell-on-action: var(--motion-text-on-action); --shell-dark-accent: var(--motion-dark-accent); --shell-well: var(--motion-neutral-100); --shell-line: var(--motion-border-default); --shell-surface: var(--motion-surface-raised); --shell-hover: var(--motion-surface-hover); --shell-ink: var(--motion-text-strong); }
 .shell-root[data-product="tiko"] { --shell-subtle-tint: var(--tiko-subtle); --shell-on-tint: var(--tiko-on-tint); --shell-action: var(--tiko-action); --shell-on-action: var(--tiko-text-on-action); --shell-dark-accent: var(--tiko-dark-accent); --shell-well: var(--tiko-neutral-100); --shell-line: var(--tiko-border-default); --shell-surface: var(--tiko-surface-raised); --shell-hover: var(--tiko-surface-hover); --shell-ink: var(--tiko-text-strong); }
+.shell-root[data-product="awangan"] { --shell-subtle-tint: var(--awangan-subtle); --shell-on-tint: var(--awangan-on-tint); --shell-action: var(--awangan-action); --shell-on-action: var(--awangan-text-on-action); --shell-dark-accent: var(--awangan-dark-accent); --shell-well: var(--awangan-neutral-100); --shell-line: var(--awangan-border-default); --shell-surface: var(--awangan-surface-raised); --shell-hover: var(--awangan-surface-hover); --shell-ink: var(--awangan-text-strong); }
+.shell-root[data-product="buminyata"] { --shell-subtle-tint: var(--buminyata-subtle); --shell-on-tint: var(--buminyata-on-tint); --shell-action: var(--buminyata-action); --shell-on-action: var(--buminyata-text-on-action); --shell-dark-accent: var(--buminyata-dark-accent); --shell-well: var(--buminyata-neutral-100); --shell-line: var(--buminyata-border-default); --shell-surface: var(--buminyata-surface-raised); --shell-hover: var(--buminyata-surface-hover); --shell-ink: var(--buminyata-text-strong); }
 /* dark mode, for a product that offers it: the shared dark palette, the product's dark accent (guide/14) */
 .shell-root[data-theme="dark"] { --shell-surface: #0C1B47; --shell-well: #050D26; --shell-line: rgba(157,184,255,.16); --shell-ink: #EAF0FF; --shell-on-tint: #EAF0FF; --shell-action: var(--shell-dark-accent); --shell-on-action: #071233; --shell-subtle-tint: color-mix(in srgb, var(--shell-dark-accent) 22%, #0C1B47); --shell-hover: color-mix(in srgb, #EAF0FF 6%, #0C1B47); }
 

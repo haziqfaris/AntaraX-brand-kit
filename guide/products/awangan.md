@@ -29,11 +29,24 @@ Nalar family (Reason). **By arrangement**; not live with any customer yet (versi
 
 ## Mark, colour and motif
 
-**Still to design** (owner, 11 November 2026: "Nalar products need to have proper branding"; 11, question 27). Until then:
+**Mark: the cloud in orbit** (owner, 11 November 2026: "AwanGan should be cloud and orbit"). AwanGan is an **own-mark** product: a cloud (awan) in Nalar gold `#B48B02`, a navy ring round it and a sparkle cyan `#0CC4FB` moon on the ring. A gap is cut where the ring's front crosses the cloud and round the moon, so cloud and orbit stay two shapes down to 24px. The A with Cabang stays the Nalar family's mark and is no longer AwanGan's.
 
-- README and AXLE use the Nalar icon (`assets/families/nalar-icon.svg`) and Nalar gold `#B48B02` (dark `#7E6105`, tint `#F9EED4`). Two products may not share one A with one icon for good, so this is a stand-in, not a mark.
-- No product palette in `tokens/product-palettes.json` yet; its AXLE uses the AXLE standard's own colours.
-- No BaTech motif yet; empty states use words only.
+| File | Use |
+|---|---|
+| `assets/products/awangan/awangan-mark.svg` | Full colour, on white and near-white |
+| `assets/products/awangan/awangan-mark-small.svg` | 24px and below: a heavier ring, a larger moon, a wider gap |
+| `assets/products/awangan/awangan-mark-white.svg` | Navy and dark grounds: a white cloud, a gold ring, the cyan moon |
+| `assets/products/awangan/awangan-mark-mono.svg` | One colour (`currentColor`) |
+| `assets/product-logos/awangan.svg`, `-small.svg`, `-white.svg` | The same on the shared square, for tiles, lockups and lists |
+
+- Lockup: the mark, then "AwanGan" and "by AntaraX" as set text (12). Never beside the AntaraX A.
+- Not PLExyz Crowd's orbit: Crowd's orbit motif is a thin dashed ellipse with signal arcs. AwanGan's ring is solid and crosses a solid body.
+
+**Colour: Nalar gold**, as Cebis Loom and AX Motion act in their family colours, with navy second (owner, 11 November 2026). Gold is 3.17:1 on white, so it acts and writes in `#8D6C01` (4.91:1), hovers in `#715702`, and writes on its tint `#F5ECD7` in `#574201`. On the dark ground the gold itself reads (5.8:1). Chart set: gold, then blue, orange, magenta, violet. Palette: `tokens/product-palettes.json` (`awangan`); tokens `color.product.awangan`, `--ax-awangan*`, and its shell slots.
+
+**Motif: ketupat** (owner, 11 November 2026): a woven parcel with one square lit. The document stays woven shut and only the field that is needed shows. Nalar pair, `assets/products/awangan/awangan-motif.svg`; 72px in empty states. Its BaTech set is Nalar's sky and ground, leaning to the sky (`assets/batech/nalar-sky/`).
+
+**Credit:** the standard lines (12): "AwanGan · by AntaraX" in chrome, "AwanGan by AntaraX, from REKA." on sign-in, first email and reports. Where AwanGan runs AI inside another product, that work carries the sparkle and no "Powered by AwanGan".
 
 ## Type
 
@@ -41,4 +54,4 @@ The shared core: Poppins, and JetBrains Mono with tabular figures for every numb
 
 ## Open
 
-In 11: AwanGan's own mark, palette and motif (question 27), and Nalar's BaTech composition.
+Nothing: its mark, palette, motif and credit were decided on 11 November 2026 (10).

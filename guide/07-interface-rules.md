@@ -10,7 +10,7 @@ These apply to the website and to every product UI. Reference implementation: `h
    - radios, checkboxes and range sliders use the brand styles;
    - details/summary (FAQ) use the styled accordion.
 3. **No uppercase mono labels** for non-data text; no all-caps buttons.
-4. **No stock AI imagery,** mascots used as decoration, or giant technology-logo walls.
+4. **No stock AI imagery,** mascots used as decoration, or giant technology-logo walls. A character may be a product's mark, as Tiko Classic's head is Tiko's (owner, 11 November 2026): the mark is a logo, not decoration, and the full character appears only where it does a job, with words (12).
 5. **No typewriter headlines.** The first paint must read as a whole sentence.
 6. **No text too small to matter.** Facts a buyer needs (pricing basis, add-ons, where data runs) are never set at 11–12px in mono capitals while "Talk to us" sits at price size. If it is worth saying, it is readable; if not, cut it.
 7. **No block that repeats the one before it.** One closing call to action per page; one explanation of each product per page; a benchmark shown once.

@@ -105,7 +105,7 @@
         "Cloud AI service"
       ],
       "colour": "#B48B02",
-      "logo": "assets/families/nalar-icon.svg"
+      "logo": "assets/product-logos/awangan.svg"
     },
     {
       "slug": "buminyata",
@@ -117,8 +117,8 @@
         "By arrangement",
         "On premises"
       ],
-      "colour": "#B48B02",
-      "logo": "assets/families/nalar-icon.svg"
+      "colour": "#8A5A2E",
+      "logo": "assets/product-logos/buminyata.svg"
     },
     {
       "slug": "cebis-loom",
@@ -276,7 +276,8 @@
         "Private pilot",
         "Working name"
       ],
-      "colour": "#6A4DF5"
+      "colour": "#6A4DF5",
+      "logo": "assets/product-logos/tiko.svg"
     },
     {
       "slug": "triagent",

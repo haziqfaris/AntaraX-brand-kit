@@ -48,7 +48,12 @@ const PRODUCTS = {
   motion: { name: 'AX Motion', anchor: '#FC5D04', secondary: '#0B1B4F', amark: true, character: 'Motion orange' },
   // Tiko came with a working palette (antarax-tiko src/app/globals.css and src/styles/tiko-shell.css), registered
   // as it is (owner, 5 November 2026): its own colours are pinned to their steps, so the roles below fall on them.
-  tiko: { name: 'Tiko', anchor: '#7A5FFF', secondary: '#FB9800', ground: '#FAF9FC', character: 'Friendly purple with an orange dot on a soft lavender ground: quiet surfaces, one purposeful accent',
+  // AwanGan acts in the Nalar family colour, as Cebis Loom and AX Motion act in theirs; BumiNyata in clay, with Nalar
+  // gold second (owner, 11 November 2026, the recommended palettes A1 + B1).
+  awangan: { name: 'AwanGan', anchor: '#B48B02', secondary: '#0B1B4F', character: 'Nalar gold with navy: the cloud in orbit, our own AI in the cloud' },
+  buminyata: { name: 'BumiNyata', anchor: '#8A5A2E', secondary: '#B48B02', character: 'Clay (tanah liat) with Nalar gold: our own AI, kept on your own ground' },
+  // Tiko's highlight is Tide pink, not REKA orange (owner, 11 November 2026: "tiko use H2").
+  tiko: { name: 'Tiko', anchor: '#7A5FFF', secondary: '#E9579D', ground: '#FAF9FC', character: 'Friendly purple with a Tide pink highlight on a soft lavender ground: quiet surfaces, one purposeful accent',
     steps: { 100: '#EDEBFF', 600: '#6A4DF5', 700: '#5B3FE0', 800: '#4B2FC9' }, neutralSteps: { 50: '#FAF9FC', 100: '#F4F2FA', 200: '#E7E4F0', 300: '#D6D2E4' } },
 };
 const CHARTS = JSON.parse(fs.readFileSync(new URL('./product-charts.json', import.meta.url), 'utf8'));

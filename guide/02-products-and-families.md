@@ -20,7 +20,7 @@ How each product carries its own mark, colour and credit line (own-mark and A-ma
 | **AI models · Nalar family** (reclassified 27 October 2026) | AwanGan (cloud), BumiNyata (on premises) | The "AI models" section of the Products menu, the Products page, own pages `/awangan` and `/buminyata` | Talk to us: by arrangement |
 | **Managed service** (owner, 25 October 2026) | Cebis Loom | Products menu and page, own page `/loom` | Talk to us: by arrangement |
 | **Closed pilots** | AX Frame, PLExyz Crowd, Angka, Tinara, AX Motion | Closed pilots page and their own landing page | Request pilot access |
-| **Private pilot** (registered 5 November 2026) | Tiko (working name) | Nowhere on antarax.ai yet: no page, no menu entry, no launch claim. It runs with 3 to 5 invited businesses | None until the owner sets its public status |
+| **Private pilot** (registered 5 November 2026) | Tiko (working name) | Nowhere on antarax.ai yet: no page, no menu entry, no launch claim. It runs with 3 to 5 invited businesses | None. It stays private (owner, 11 November 2026) until its name clears legal review and 2 of 3 unrelated pilots pay to continue |
 
 - **For now every product, main products and closed pilots alike, is sold as part of REKA's Managed AI service** (owner, 11 October 2026). Prices are quoted, not published.
 - **Every closed pilot runs as part of REKA's Managed AI service.** REKA sets it up on the customer's site and data, keeps it running, and improves it with them. Say so on every pilot page.
@@ -42,7 +42,7 @@ Use these names, one-liners and questions exactly.
 | **PLExyz Crowd** | Main, closed pilot | Know how your building is really used. | "How many people are actually in this building right now, and do we need all this space?" | Edge | /pilots/plexyz-crowd |
 | **Angka** | Closed pilot | A finance workspace for business owners who are not accountants. | "Where does our money go, without needing an accountant to tell us?" | Tide | antarax.ai/angka |
 | **Tinara** | Closed pilot | Know which Malaysian companies to sell to, why, and how to open the conversation. | "Which companies should we call next, and what do we say when they pick up?" | Tide | /pilots/tinara |
-| **Tiko** (working name) | Private pilot | Make every move count. | *TODO: not yet set by the owner (11, question 31)* | Tide | None yet |
+| **Tiko** (working name) | Private pilot | Make every move count. | "Which leads need us today, and what is the next step on each?" | Tide | None yet |
 | **Cebis Loom** | Managed service | Your business data, cleaned and ready. | "How much more could we get from the data we already have?" | Loom | /loom |
 | **AwanGan** | AI models, by arrangement | Our own AI models, in the cloud. | "How do we use AI without sending our data everywhere?" | Nalar | /awangan |
 | **BumiNyata** | AI models, by arrangement | Our own AI models, on your own servers. | "How do we use AI and keep every byte on our own ground?" | Nalar | /buminyata |
@@ -72,7 +72,7 @@ Use these names, one-liners and questions exactly.
 | **Loom** | **Structure** | Organise fragmented information and digital relationships | Cebis Loom, **AX Frame** | Loom violet; AX Frame keeps its existing product-blue mark and intan motif |
 | **Edge** | **Perceive** | Physical spaces and sensing | PLExyz Grid, PLExyz Crowd | Existing Edge green |
 | **Motion** | **Navigate** | Vehicle and fleet coordination, remote operation | AX Motion | Existing Motion orange |
-| **Nalar** | **Reason** | AI model capabilities, runtime and deployment | **AwanGan, BumiNyata** | Icon: Cabang, a swaying fork with a dot, in deep gold `#B48B02` (3 November 2026). BaTech motif **not yet approved** |
+| **Nalar** | **Reason** | AI model capabilities, runtime and deployment | **AwanGan, BumiNyata** | Icon: Cabang, a swaying fork with a dot, in deep gold `#B48B02` (3 November 2026). BaTech: **sky and ground**, with kubit, ketupat, pelita, dacing and pucuk rebung (11 November 2026) |
 
 **Family roles and boundaries:**
 - **Ripple:** tasks, work orders, service requests and workflow automation. YaraOne is an *internal* Ripple-aligned support system; AntaraX's own AI agents are a candidate, not a listed product. Jentera is a third-party partner, not an AntaraX product.

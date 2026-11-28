@@ -2,6 +2,9 @@
 
 Owner decisions that shape the brand, newest first. Add to the top; never rewrite history. Earlier strategy changes are in `reference/strategy/` (playbook amendments v0.3–v0.5, RECONCILIATION).
 
+## 28 November 2026
+
+- **Every page fills its area** (owner: "why does the UI skewed to the left instead of using all the spaces properly? make sure all the other pages are standardized and update the antaraX kit to make sure there are no unnecessary spaces", on Juru's Post a job, which sat in the left 980px of a wide screen). In every customer app, AXLE and client project the content spans the page from gutter to gutter: no cap on the page or a wrapper; more room means more columns; prose keeps a reading measure and a single field the width of what it holds, inside a layout that spans the page. Dashboard kit 1.24.0 (app/SPEC.md §11d, axle/SPEC.md §6.4, project/SPEC.md §8c), checked by its `check-shell.mjs` from 1280px.
 ## 27 November 2026
 
 - **Pictures, comparing models, ratings and a printed conversation in the chat app** (owner, haziqfaris: the chat app with "more extra capabilities", then "go do all"; AwanGan decision 0070; Dashboard kit 1.23.0, `astryx/templates/`). A made picture shows with its receipt and a Download button. Comparing models puts two or three answers side by side, each with its own receipt, with a Keep button for the one that becomes the reply; below 768px the columns are tabs. Every answer has Helpful and Not helpful (app SPEC §9), with reasons from a fixed list so nothing typed is stored with a rating. A conversation prints from a plain sheet for paper. First built in AwanGan's Assist.
